@@ -189,3 +189,21 @@
     filter:drop-shadow(0 0 5px #3DF2F2);
   }
 }
+
+@media (max-width: 1200px) {
+  .zagant1_inborder,
+  .zagant1_incontainer {
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+  
+  .zagant1_incontainer::after {
+    background-image: none;
+  }
+
+  .zagant1_text::before,
+  .zagant1_text::after {
+    display: none;
+  }
+}
+
