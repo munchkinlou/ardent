@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+
+.wyvernt3_container {
+	position: relative;
+  width: 700px;
+  margin: 20px auto;
+  padding: 0 0 630px;
+  border: 3px solid;
+  border-image: linear-gradient(to bottom,
+    rgba(64, 210, 255, 0.8) 0%,
+    rgba(64, 210, 255, 0.8) 20%,
+    rgb(0, 164, 115) 70%,
+    rgba(8, 32, 64, 0.8)) 1;  
+  background: #000000 url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/740ee9a0-4bd5-4423-997f-d7fcdb1799c8/djuq3r1-37b117f9-6bee-421d-b5ee-f8341f60d487.png/v1/fit/w_828,h_1056,q_70,strp/dezigre_no_mark_by_seadragoness_djuq3r1-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTYzMSIsInBhdGgiOiJcL2ZcLzc0MGVlOWEwLTRiZDUtNDQyMy05OTdmLWQ3ZmNkYjE3OTljOFwvZGp1cTNyMS0zN2IxMTdmOS02YmVlLTQyMWQtYjVlZS1mODM0MWY2MGQ0ODcucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.eckVeL-c2nFn58IE2w4UYditjKthxuKJCHrmV_ZKDhs') no-repeat bottom border-box;
+  background-size: 110%;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.85), 20px 20px 50px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.wyvernt3_container::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 900px;
+    height: 100px;
+    background: linear-gradient(to top, transparent 0%, #000 100%);
+    pointer-events: none;
+}
+
+.wyvernt3_fade {
+    padding: 0px;
+	background: linear-gradient(to bottom, #000000 0%, #000000 61%, transparent 100%);
+    min-height: 100px;
+	margin: 0px;
+}
+
+.wyvernt3_infade {
+  position: relative;
+  min-height: 100px;
+  padding: 40px;
+  margin: 0;
+  z-index: 10;
+  -webkit-mask-image: linear-gradient(to top, transparent 0%, black 40%, black);
+  mask-image: linear-gradient(to top, transparent 0%, black 30%, black 40%);
+  overflow: hidden;
+}
+
+.wyvernt3_infade::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  box-shadow:
+    0 -5px 10px rgba(62, 205, 255, 0.6),
+    inset 2px 0 10px 1px rgba(62, 205, 255, 0.8),
+    inset -2px 0 10px 1px rgba(62, 205, 255, 0.8);
+}
+
+.wyvernt3_infade video {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 800px;
+  transform: scaleY(-1);
+  z-index: -1;
+  object-fit: cover;
+  opacity: 0.8;
+  mask-image: linear-gradient(to top, black 50%, transparent 70%);
+  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 70%);
+}
+
+.wyvernt3_incontainer {
+  position: relative;
+  padding: 30px;
+  border: 2px solid;
+  border-bottom: 0;
+  border-image: linear-gradient(to bottom,
+    rgba(172, 234, 253, 0.8) 0%,
+    rgba(64, 210, 255, 0.8) 60%,
+    transparent 80%) 1;
+  background-size: 70%;
+  min-height: 100px;
+  margin: 0;
+  z-index: 10;
+}
+
+.wyvernt3_text {
+  font-family: 'Quicksand';  
+  font-size: 15px;
+  color: #fff;
+  padding: 20px 20px 0;
+  text-shadow: 0 0 1px #e89f95;
+  text-align: justify;
+  z-index: 5;
+  margin: -20px 0px 80px 0px;
+}
+
+.wyvernt3_diag {
+  font-family: 'Croissant One';
+  font-size: 20px;
+  color: #0A79C8;
+  font-weight: bold;
+}
+
+.wyvernt3_speech {
+  font-family: 'Croissant One';
+  font-size: 30px;
+  color: #0A79C8;
+  text-align: center;
+  font-weight: bold;
+  margin: -110px 0 80px 0;
+}
+
+.wyvernt1_divider {
+  height: 2px;
+  width: 100%;
+  max-width: 400px;
+  margin: 5px auto;
+  background: linear-gradient(to right, transparent, white 50%, transparent);
+  background-size: 100%;
+}
+
+.wyvernt3_star1,
+.wyvernt3_star2 {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Seadragoness/Wyvern/white-star.png?updatedAt=1748067614988') no-repeat center/contain;
+  filter: drop-shadow(0 0 3px white);
+  opacity: 0;
+  vertical-align: middle;
+  animation: wyvernt3_blinkFade 6s ease-in-out infinite;
+}
+
+.wyvernt3_star2 { animation-delay: 2s; }
+
+@keyframes wyvernt3_blinkFade {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@media screen and (max-width: 1199px) {
+  .wyvernt3_infade video {
+    display: none;
+  }
+  
+  .wyvernt3_infade::after {
+    display: none;
+  }
+
+  .wyvernt3_container::after {
+    display: none;
+  }
+}
