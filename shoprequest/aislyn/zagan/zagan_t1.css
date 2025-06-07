@@ -191,14 +191,18 @@
 }
 
 @media (max-width: 1200px) {
-  .zagant1_inborder,
+  .zagant1_inborder {
+    display: none;
+  }
+
   .zagant1_incontainer {
     mask-image: none;
     -webkit-mask-image: none;
   }
-  
+
+  .zagant1_incontainer::before,
   .zagant1_incontainer::after {
-    background-image: none;
+    display: none;
   }
 
   .zagant1_text::before,
@@ -206,4 +210,5 @@
     display: none;
   }
 }
+
 
