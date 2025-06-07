@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+
+.wyvernt2_gradborder {
+  padding: 1.5px;
+  background: linear-gradient(to bottom,
+    rgba(8, 32, 64, 0.8),
+    rgba(95, 75, 215, 0.8),
+    rgba(64, 210, 255, 0.8),
+    rgba(8, 32, 64, 0.8));
+  box-sizing: border-box;
+  width: 700px;
+  margin: 20px auto;
+  border-radius: 20px;
+box-shadow:
+  10px 10px 10px rgba(0, 0, 0, 0.85),
+  20px 20px 50px rgba(0, 0, 0, 0.5);
+
+}
+
+.wyvernt2_container {
+  border-radius: 20px;
+  max-width: 700px;
+  min-height: 800px;
+  padding: 300px 0 30px 0;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #000 url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/740ee9a0-4bd5-4423-997f-d7fcdb1799c8/djvxtq4-61e2fd8d-f1d9-43da-9bc4-93dec80f0de6.png/v1/fit/w_750,h_480,q_70,strp/wolf__2_by_muns11_djq2uwm3_by_seadragoness_djvxtq4-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODE4IiwicGF0aCI6IlwvZlwvNzQwZWU5YTAtNGJkNS00NDIzLTk5N2YtZDdmY2RiMTc5OWM4XC9kanZ4dHE0LTYxZTJmZDhkLWYxZDktNDNkYS05YmM0LTkzZGVjODBmMGRlNi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.abTKqWT95BaSHpORXvNQ5naiONEmfcrUB753ZcGBIPA') no-repeat top;
+  background-size: 100%;
+  z-index: 0;
+}
+
+.wyvernt2_container::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 300px;
+  height: 300px;
+  background: linear-gradient(to top, transparent 0%, #10284b 50%, transparent 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.wyvernt2_feathers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 400px;
+  background: transparent url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Seadragoness/Wyvern/t2feathers.png?updatedAt=1749002068677') no-repeat top;
+  background-size: 100%;
+  filter: drop-shadow(0 0 2px rgba(62, 205, 255, 1));
+  animation: wyvernt2_featherglow 6s ease-in-out infinite;
+  opacity: 0;
+  z-index: 10;
+  pointer-events: none;
+}
+
+@keyframes wyvernt2_featherglow {
+  0%, 100% {
+    opacity: 0;
+    filter: drop-shadow(0 0 6px rgba(62, 205, 255, 0.5));
+  }
+  50% {
+    opacity: 1;
+    filter: drop-shadow(0 0 6px rgba(62, 205, 255, 0.5)) drop-shadow(0 0 4px rgba(55, 190, 205, 0.4));
+  }
+}
+
+.wyvernt2_infade {
+  position: absolute;
+  top: 150px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  padding: 40px;
+  margin: 0;
+  z-index: 1;
+  -webkit-mask-image: linear-gradient(to top, transparent 200px, black 300px);
+  mask-image: linear-gradient(to top, transparent 200px, black 300px);
+  overflow: hidden;
+  transform: scaleY(-1);
+  border-radius: 20px;
+}
+
+.wyvernt2_infade::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  border-radius: 20px;
+  box-shadow:
+    0 -5px 10px rgba(62, 205, 255, 0.6),
+    inset 2px 0 10px 1px rgba(86, 127, 241, 0.8),
+    inset -2px 0 10px 1px rgba(99, 144, 240, 0.8);
+}
+
+.wyvernt2_infade video {
+  position: absolute;
+  top: 130px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  transform: scaleY(-1);
+  z-index: 2;
+  object-fit: none;
+  object-position: center 150px;
+  opacity: 0.8;
+  mask-image: linear-gradient(to bottom, transparent 101.5px, black 151.5px);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 101.5px, black 151.5px);
+}
+
+.wyvernt2_ingradborder {
+  position: relative;
+  padding: 1.5px;
+  border-radius: 20px;
+  background: linear-gradient(to bottom,
+    rgba(8, 32, 64, 0) 0%,
+    rgba(8, 32, 64, 0) 10%,
+    rgba(8, 32, 64, 0.4) 25%,
+    rgba(8, 32, 64, 0.8) 35%,
+    rgba(105, 132, 255, 0.8) 50%,
+    rgba(105, 132, 255, 0.8) 100%);
+  box-sizing: border-box;
+  width: 85%;
+  margin: 80px auto 20px auto;
+  z-index: 2;
+}
+
+.wyvernt2_incontainer {
+  position: relative;
+  border-radius: 20px;
+  width: 100%;
+  min-height: 400px;
+  padding: 110px 20px;
+  box-sizing: border-box;
+  overflow: visible;
+  background: linear-gradient(to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 10%,
+    rgba(0, 0, 0, 0.4) 25%,
+    rgba(0, 0, 0, 0.8) 35%,
+    black 50%);
+  z-index: 4;
+}
+
+.wyvernt2_text {
+  font-family: 'Quicksand';  
+  font-size: 15px;
+  color: #fff;
+  padding: 20px 20px 0;
+  text-shadow: 0 0 1px #e89f95;
+  text-align: justify;
+  z-index: 5;
+  margin: -40px 0 0 0;
+}
+
+.wyvernt2_diag {
+  font-family: 'Croissant One';
+  font-size: 20px;
+  color: #0A79C8;
+  font-weight: bold;
+}
+
+.wyvernt2_speech {
+  font-family: 'Croissant One';
+  font-size: 30px;
+  color: #0A79C8;
+  text-align: center;
+  font-weight: bold;
+  margin: -10px 0 -120px 0;
+}
+
+.wyvernt2_divider {
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    white 50%,
+    transparent 100%
+  );
+  line-height: normal;	
+}
+
+.wyvernt2_star1,
+.wyvernt2_star2 {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Seadragoness/Wyvern/white-star.png?updatedAt=1748067614988') no-repeat center/contain;
+  filter: drop-shadow(0 0 3px white);
+  opacity: 0;
+  vertical-align: middle;
+  animation: wyvernt2_blinkFade 6s ease-in-out infinite;
+}
+
+.wyvernt2_star2 { animation-delay: 2s; }
+
+@keyframes wyvernt2_blinkFade {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@media screen and (max-width: 1199px) {
+  .wyvernt2_infade video {
+    display: none;
+  }
+  
+  .wyvernt2_infade::after {
+    display: none;
+  }
+
+  .wyvernt2_container::after {
+    display: none;
+  }
+}
