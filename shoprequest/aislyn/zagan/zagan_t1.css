@@ -190,24 +190,18 @@
   }
 }
 
-@media (max-width: 1200px) {
-  .zagant1_inborder,
-  .zagant1_incontainer::after {
-    display: none;
-  }
 
-  .zagant1_incontainer {
+@media (max-width: 1200px) {
+  
+.zagant1_incontainer, .zagant1_inborder {
     mask-image: none;
     -webkit-mask-image: none;
   }
 
-  .zagant1_incontainer::before {
-    background: transparent;
+  .zagant1_incontainer::before, .zagant1_incontainer::after, .zagant1_text::before,
+  .zagant1_text::after {
+    display: none;
   }
 
-  .zagant1_text::before,
-  .zagant1_text::after {
-    background: none;
-  }
 }
 
