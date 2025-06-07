@@ -192,8 +192,6 @@
 
 @media (max-width: 1200px) {
   .zagant1_inborder,
-  .zagant1_text::before,
-  .zagant1_text::after,
   .zagant1_incontainer::after {
     display: none;
   }
@@ -206,6 +204,10 @@
   .zagant1_incontainer::before {
     background: transparent;
   }
-}
 
+  .zagant1_text::before,
+  .zagant1_text::after {
+    background: none;
+  }
+}
 
