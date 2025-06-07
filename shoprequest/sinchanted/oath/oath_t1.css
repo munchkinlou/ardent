@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
+
+.oatht1_wrap {
+  position: relative;
+  width: 700px;
+  margin: 0 auto;
+}
+
+.oatht1_oathimg {
+  position: absolute;
+  top: -345px;
+  left: -20px;
+  width: 100%;
+  height: 350px;
+  background: transparent url('https://i.postimg.cc/prw7j8gb/untitled-by-dreamcatcher2728-djsptwo-fullview.png') no-repeat center;
+  background-size: 80% auto;
+  z-index: 4;
+  pointer-events: none;
+  filter: drop-shadow(0 0 2px white) drop-shadow(0 0 6px rgba(96, 11, 34, 0.6));
+  animation: oatht1_glow 3s infinite ease-in-out;
+}
+
+@keyframes oatht1_glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 2px rgb(96, 11, 34)) drop-shadow(0 0 5px rgba(96, 11, 34, 1)) drop-shadow(0 0 10px rgba(96, 11, 34, 0.7));
+  }
+  50% {
+    filter: drop-shadow(0 0 2px rgb(96, 11, 34)) drop-shadow(0 0 8px rgba(96, 11, 34, 1)) drop-shadow(0 0 20px rgba(96, 11, 34, 0.5));
+  }
+}
+
+.oatht1_borderimg {
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  width: 100%;
+  height: calc(100% + 40px);
+  background: transparent;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.oatht1_borderimg::before,
+.oatht1_borderimg::after {
+  content: '';
+  background: url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Sinchanted/Oath/border.png?updatedAt=1748991534105') no-repeat top;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.oatht1_borderimg::before {
+  top: -60px;
+  background-size: 80% auto;
+  filter: drop-shadow(0 0 3px rgba(128, 0, 32, 0.5))
+          drop-shadow(0 0 7px rgba(128, 0, 32, 0.3))
+          drop-shadow(0 5px 15px rgba(0, 0, 0, 0.4));
+}
+
+.oatht1_borderimg::after {
+  bottom: -60px;
+  transform: scaleY(-1);
+  background-size: 80% auto;
+  filter: drop-shadow(0 0 3px rgba(128, 0, 32, 0.5))
+          drop-shadow(0 0 7px rgba(128, 0, 32, 0.3))
+          drop-shadow(0 0 0 rgba(152, 17, 10, 0.8))
+          drop-shadow(0 5px 15px rgba(0, 0, 0, 0.4));
+}
+
+.oatht1_gradborder, .oatht1_container, .oatht1_ingradborder, .oatht1_incontainer {
+  box-sizing: border-box;
+  position: relative;
+  mask: 
+    radial-gradient(ellipse 70px 60px at 0 0, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 0 0,
+    radial-gradient(ellipse 70px 60px at 100% 0, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 100% 0,
+    radial-gradient(ellipse 70px 60px at 100% 100%, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 100% 100%,
+    radial-gradient(ellipse 70px 60px at 0 100%, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 0 100%;
+  -webkit-mask: 
+    radial-gradient(ellipse 70px 60px at 0 0, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 0 0,
+    radial-gradient(ellipse 70px 60px at 100% 0, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 100% 0,
+    radial-gradient(ellipse 70px 60px at 100% 100%, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 100% 100%,
+    radial-gradient(ellipse 70px 60px at 0 100%, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 0 100%;
+  mask-size: 51% 51%;
+  -webkit-mask-size: 51% 51%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+
+.oatht1_gradborder, .oatht1_ingradborder {
+  box-sizing: border-box;
+  background: linear-gradient(to bottom,
+    #3E0848,
+    #840B39,
+    #A13310,
+    #A6710F,
+    #750F10,
+    #AE4C0F,
+    #98110A);
+}
+
+.oatht1_gradborder {
+  padding: 2px;
+
+  width: 700px;
+  margin: 330px auto 50px auto;
+  box-shadow:
+    10px 10px 10px rgba(0, 0, 0, 0.85),
+    20px 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.oatht1_container {
+  width: 100%;
+  min-height: 400px;
+  padding: 10px 0;
+  background: #231114;
+  background-size: 100%;
+  z-index: 1;
+  position: relative;
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+
+.oatht1_ingradborder {
+  padding: 1.5px;
+  width: 98%;
+  margin: 0 auto 0 auto;
+  z-index: 2;
+}
+
+.oatht1_incontainer {
+  width: 100%;
+  min-height: 400px;
+  padding: 80px 50px 70px 50px;
+  box-sizing: border-box;
+  overflow: visible;
+  background: #160b10 url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Sinchanted/Oath/dark.png?updatedAt=1748991548565') no-repeat bottom;
+  background-size: cover;
+}
+
+.oatht1_text {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  border: 1px solid rgba(96, 11, 34, 0.5);
+  padding: 0 40px 0 40px;
+  font-family: 'Libre Caslon Display', cursive;
+  font-size:18px;
+  line-height:1.3;
+  text-align:justify;
+  margin: -20px 0 0 0;
+  line-height: 1.5;
+}
+
+.oatht1_divider {
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    transparent 20%,
+    white 50%,
+    transparent 80%
+  );
+  line-height: normal;	
+}
+
+.oatht1_diag {
+  font-size: 25px;
+  color: #12EAEA;
+  font-weight: bold;
+}
+
+.oatht1_speech {
+  font-family: 'Libre Caslon Display', cursive;
+  font-size: 25px;
+  text-align: center;
+  color: #12EAEA;
+  font-weight: bold;
+  margin:-20px 0 -20px 0;
+}
+
+@media (max-width: 1199px) {
+  .oatht1_gradborder, 
+  .oatht1_container, 
+  .oatht1_ingradborder, 
+  .oatht1_incontainer {
+    mask: none;
+    -webkit-mask: none;
+  }
+}
