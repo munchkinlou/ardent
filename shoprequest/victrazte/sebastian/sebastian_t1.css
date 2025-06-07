@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Babylonica&display=swap');
+@import url('https://fonts.cdnfonts.com/css/margesh');
+
+.sebastiant1_container {
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  width: 95%;
+  max-width: 640px;
+  min-height: 800px;
+  margin: 20px auto;
+  padding: 600px 0 30px 0;
+  overflow: hidden;
+  border: 5px solid;
+  border-image: linear-gradient(to bottom, #f2a035, #9E371B, #f2a035) 1;
+  background-color: #09060D;
+  background-image: url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Victrazte/Sebastian/IMG_4505.png?updatedAt=1748193100510'), url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Victrazte/Sebastian/flames.jpg?updatedAt=1749165017472');
+  background-position: 0 -32px, right 500px;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 1300px, cover;
+  box-shadow:
+    10px 10px 10px rgba(0, 0, 0, 0.85),
+    20px 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.sebastiant1_container::after {
+    content: '';
+    position: absolute;
+    top: 460px;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to top, #09060D 50%, transparent 100%);
+    pointer-events: none;
+}
+
+.sebastiant1_incontainer {
+  position: relative;
+  z-index: 3;
+  box-sizing: border-box;
+  width: 90%;
+  min-height: 400px;
+  margin: -80px auto 0 auto;
+  padding: 50px 20px;
+  overflow: visible;
+  border: 5px solid;
+  border-image: linear-gradient(to bottom, #f2a035, #9E371B, #f2a035) 1;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.sebastiant1_title {
+    position: absolute;
+    top: 370px;
+    z-index: 3; 
+    width: 95%; 
+    color: #E1D6B6;
+    font-family: 'Babylonica';
+    font-size: 120px;
+    text-align: right;
+    text-shadow: 0 0 5px #f2a035, 0 0 10px #f2a035;
+}
+
+.sebastiant1_text {
+	position: relative;
+	margin: 10px 30px 0 30px;
+	padding: 0 20px;
+	color: white;
+	font-family: 'Margesh';
+	font-size:16px;
+	line-height: 1.4;
+	text-align:justify;
+  letter-spacing: 0.5px;
+}
+
+.sebastiant1_text::before,
+.sebastiant1_text::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, #DAA520, transparent);
+}
+
+.sebastiant1_text::before {
+  left: 0;
+}
+
+.sebastiant1_text::after {
+  right: 0;
+}
+
+.sebastiant1_diag {
+	font-family: 'Margesh';
+	font-size:20px;
+	color: transparent;
+	background: linear-gradient(to bottom, #F0E68C, #e6b230, #F0E68C);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.sebastiant1_speech {
+ 	margin: -75px 0 -90px 0;
+  text-align: center;
+  font-family: 'Babylonica';
+	font-size: 60px;
+  color: transparent;
+	background: linear-gradient(to bottom, #F0E68C, #DAA520, #F0E68C);
+    -webkit-background-clip: text;
+    background-clip: text;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
+}
+
+.sebastiant1_fire {
+    display: inline-block;
+    width: 35px; 
+    height: 35px; 
+    margin: 0 10px;
+    vertical-align: middle; 
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e682fd34-dcb4-4563-8370-6bb2e3ad5528/dcoq3p9-4c8e362d-5758-4926-b8c6-3305a6842eda.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2U2ODJmZDM0LWRjYjQtNDU2My04MzcwLTZiYjJlM2FkNTUyOFwvZGNvcTNwOS00YzhlMzYyZC01NzU4LTQ5MjYtYjhjNi0zMzA1YTY4NDJlZGEuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Md6Pz3JELos11oKPXfzlp8wCfda01b7T99XMWn4E00s');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 1200px) {
+  .sebastiant1_container::after,
+  .sebastiant1_title,
+  .sebastiant1_text::before,
+  .sebastiant1_text::after {
+    display: none;
+  }
+}
+
