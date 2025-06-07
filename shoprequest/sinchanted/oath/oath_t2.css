@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
+@import url('https://fonts.cdnfonts.com/css/plainblack');
+
+.Oatht2_wrap {
+	position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin: 100px auto 100px auto;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+}
+
+.Oatht2_overlayimg {
+  position: absolute;
+  bottom: -50px;
+  left: -10px;
+  width: 700px;
+  height: 550px;
+  background: transparent url('https://i.postimg.cc/T2K3r6ZC/untitled-by-dreamcatcher2728-djsptnf-fullview.png') no-repeat center center;
+  background-size: contain; 
+  z-index: 5;
+  filter: drop-shadow(0 2px 5px #600b22);
+}
+
+.Oatht2_overlaytitle {
+  position: absolute;
+  top: 40px;
+  left: 100px;
+  width: 500px;
+  height: 230px;
+  padding-top: 40px;
+  z-index: 5;
+  filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.5))
+          drop-shadow(0 0 1px rgba(0, 0, 0, 0.3))
+          drop-shadow(0 5px 1px rgba(0, 0, 0, 0.4));
+  font-family: 'PlainBlack', sans-serif;
+  font-size: 90px;
+  text-align: center;
+  line-height: 0.6;
+  background: linear-gradient(to right, #AC360F 20%,#A77E0D 50%, #AC360F 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.Oatht2_borderimg {
+  position: absolute;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 200px;
+  height: calc(100% + 40px);
+  background: transparent;
+  z-index: 4;
+  pointer-events: none;
+}
+
+.Oatht2_borderimg::before,
+.Oatht2_borderimg::after {
+  content: '';
+  left: -105px;
+  background: url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Sinchanted/Oath/top.png?updatedAt=1749083958330') no-repeat top;
+  pointer-events: none;
+  position: absolute;
+  width: 450px;
+  height: 300px;
+  filter: drop-shadow(0 0 1px rgba(128, 0, 32, 0.5))
+  drop-shadow(0 0 1px rgba(128, 0, 32, 0.3))
+  drop-shadow(0 5px 1px rgba(0, 0, 0, 0.4));
+}
+
+.Oatht2_borderimg::before {
+  top: -60px;
+  background-size: 80% auto;
+
+  transform: rotate(45deg);
+}
+
+.Oatht2_borderimg::after {
+  bottom: -20px;
+  transform: scaleY(-1) rotate(45deg);
+  background-size: 80% auto;
+}
+
+
+.Oatht2_gradborder {
+  position: relative;
+  width: 480px;
+  background: linear-gradient(to bottom,
+     #600b22,
+     #98110A,
+     #AE4C0F,
+     #750F10,
+     #A6710F,
+     #A13310,
+     #840B39,
+     #3E0848,
+     #600b22
+  );
+  clip-path: polygon(
+    50% 0%,
+    100% 180px,
+    100% calc(100% - 180px),
+    50% 100%,
+    0% calc(100% - 180px),
+    0% 180px
+  );
+  padding-top: 6px;
+  padding-bottom: 6px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+
+.Oatht2_container {
+	  position: relative;
+    width: 470px;
+    background: white url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Sinchanted/Oath/smoke.jpg?updatedAt=1749083933517') no-repeat center center / cover;
+    clip-path: polygon(
+      50% 0%,
+      100% 175px,
+      100% calc(100% - 175px),
+      50% 100%,
+      0% calc(100% - 175px),
+      0% 175px
+    );
+    padding-top: 175px;
+    padding-bottom: 100px;
+    box-sizing: border-box;
+	margin: 0 auto;
+  }
+
+
+.Oatht2_incontainer {
+    padding: 20px 30px;
+    background: rgba(0,0,0,0.6);
+    min-height: 100px;
+	margin: 10px 40px 100px 40px;
+	border-radius: 10px;
+	box-shadow: 0 0 25px rgba(107, 7, 32, 0.8);
+  }
+  
+.Oatht2_text{
+	  text-align:justify;
+  font-family:'Libre Caslon Display';
+  font-size: 18px;
+  color:#ffe6f3;
+  text-shadow: 0px 0px 1px #e89f95;
+  line-height: 1.2;
+  margin: 0 0 80px 0;
+}
+
+.Oatht2_divider {
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    white 50%,
+    transparent 100%
+  );
+  margin: 5px 0;
+  line-height: normal;	
+}
+
+.Oatht2_speech {
+  position: relative;
+  font-family: 'Libre Caslon Display';
+  color: #12EAEA;
+  font-size: 40px;
+  text-align: center;
+  margin: -30px 0 0 0;
+}
+
+.Oatht2_diag {
+  font-size: 23px;
+  font-weight: bold;
+  color: #12EAEA;
+}
+
+@media (max-width: 1200px) {
+  .Oatht2_gradborder {
+    clip-path: none;
+  }
+  .Oatht2_container {
+    clip-path: none;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+  }
+
+  .Oatht2_overlaytitle {
+    display: none !important;
+    line-height: 0.8;
+    overflow: visible;
+  }
+
+  .Oatht2_borderimg {
+    display: none !important;
+  }
+
+  .Oatht2_incontainer {
+    margin: 10px 20px;
+  }
+}
