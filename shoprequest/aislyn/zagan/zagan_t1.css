@@ -199,7 +199,7 @@
   }
 
   .zagant1_incontainer::before, .zagant1_incontainer::after, .zagant1_text::before,
-  .zagant1_text::after {
+  .zagant1_text::after, zagant1_container::before, zagant1_container::after {
     display: none;
   }
 
