@@ -105,6 +105,7 @@
   background-size: 95%;
 }
 
+
 @media (max-width: 1200px) {
   .londont2_title {
     background-image: none;
@@ -114,5 +115,8 @@
   .londont2_text {
     border: none;
   }
-}
 
+  .londont2_container::before {
+    display: none;
+  }
+}
