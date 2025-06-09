@@ -107,6 +107,7 @@
   mask-size: 100% 270px, 100% 270px, 100% calc(100% - 540px);
 }
 
+
 @media (max-width: 1200px) {
   .kivarat1_border,
   .kivarat1_container {
@@ -114,13 +115,8 @@
     mask-image: none;
   }
 
-  .kivarat1_container {
-    padding: 50px 0;
-  }
-
-  .kivarat1_incontainer {
-    margin-top: 20px;
+  .kivarat1_img {
+    display: none;
   }
 }
-
 
