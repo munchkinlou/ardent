@@ -106,3 +106,28 @@
   mask-repeat: no-repeat;
   mask-size: 100% 270px, 100% 270px, 100% calc(100% - 540px);
 }
+
+@media (max-width: 1200px) {
+  .kivarat1_img {
+    display: none;
+  }
+
+  .kivarat1_border,
+  .kivarat1_container {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  .kivarat1_speech {
+    position: static;
+    margin: 20px auto;
+  }
+
+  .kivarat1_incontainer {
+    margin: 10px;
+    border: none;
+    backdrop-filter: none;
+    border-image: none;
+    box-shadow: none;
+  }
+}
