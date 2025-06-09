@@ -109,27 +109,34 @@
 
 
 @media (max-width: 1200px) {
+  .kivarat1_img {
+    display: none;
+  }
+
   .kivarat1_border,
   .kivarat1_container {
     -webkit-mask-image: none;
     mask-image: none;
   }
 
-  .kivarat1_img {
-    display: none;
-  }
-
   .kivarat1_speech {
     position: static;
     margin: 20px auto;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    color: #333;
+    text-shadow: none;
   }
 
   .kivarat1_container {
-    padding: 20px 0;
+    padding: 10px;
+    background-image: none; 
   }
 
   .kivarat1_incontainer {
-    margin: 20px 40px;
+    margin: 10px;
+    background: rgba(0,0,0,0.8); 
+    border: none;
+    backdrop-filter: none;
+    border-image: none;
+    box-shadow: none;
   }
 }
