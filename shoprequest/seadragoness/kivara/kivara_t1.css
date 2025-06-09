@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
 
 .kivarat1_content {
-	position: relative;
+  position: relative;
   width: 100%;
   max-width: 600px;
   margin: 200px auto 20px auto;
@@ -58,12 +58,12 @@
 }
 
 .kivarat1_text{
-	text-align:justify;
+  text-align:justify;
   font-family:'Forum';
   font-size: 18px;
   color:#ffffff;
   line-height: 1.2;
-  margin: 50px 20px 50px 20px;
+  margin: 50px 20px 40px 20px;
 }
 
 .kivarat1_speech {
@@ -78,7 +78,7 @@
 }
 
 .kivarat1_diag {
-	font-family: 'Elsie';
+  font-family: 'Elsie';
   font-size: 23px;
   color: white;
   font-weight: bold;
