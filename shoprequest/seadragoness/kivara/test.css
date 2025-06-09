@@ -113,5 +113,14 @@
     -webkit-mask-image: none;
     mask-image: none;
   }
+
+  .kivarat1_container {
+    padding: 50px 0;
+  }
+
+  .kivarat1_incontainer {
+    margin-top: 20px;
+  }
 }
+
 
