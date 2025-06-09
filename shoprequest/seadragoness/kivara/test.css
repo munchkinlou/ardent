@@ -118,5 +118,15 @@
   .kivarat1_img {
     display: none;
   }
+
+  .kivarat1_speech {
+    position: static;
+    margin: 20px auto;
+    text-shadow: none;
+  }
+
+  .kivarat1_incontainer {
+    margin-top: 20px;
+  }
 }
 
