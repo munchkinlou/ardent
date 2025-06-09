@@ -122,11 +122,14 @@
   .kivarat1_speech {
     position: static;
     margin: 20px auto;
-    text-shadow: none;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  }
+
+  .kivarat1_container {
+    padding: 20px 0;
   }
 
   .kivarat1_incontainer {
-    margin-top: 20px;
+    margin: 20px 40px;
   }
 }
-
