@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
+.kivarat1_content {
+	position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 200px auto 20px auto;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+  filter: drop-shadow(0 8px 10px rgba(0,0,0,0.75));
+}
+
+.kivarat1_img {
+  position: absolute;
+  top: -168px;
+  left: 30px;
+  width: 100%;
+  height: 650px;
+  background: transparent url('https://i.imgur.com/ZTwhjU8.png') no-repeat center center;
+  background-size: contain; 
+  z-index: 1;
+  pointer-events: none;
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.6));
+}
+
+.kivarat1_border {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(#503C35,#F4F1ED, #BFB5AE, #F4F1ED, #503C35);
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.kivarat1_container {
+  position: relative;
+  width: 100%;
+  background: white url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Seadragoness/Kivara/sunrise-sea.jpg?updatedAt=1749499914432') no-repeat center center;
+  padding: 250px 0 250px 0;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+
+.kivarat1_incontainer {
+  padding: 20px 30px;
+  background: rgba(0,0,0,0.7);
+  min-height: 100px;
+  margin: 125px 40px 40px 40px;
+  border: 5px solid;
+  border-image: linear-gradient(#503C35,#F4F1ED, #BFB5AE, #F4F1ED, #503C35) 1;
+  box-shadow: 8px 8px 15px rgba(0,0,0,0.5);
+  backdrop-filter: blur(5px);
+}
+
+.kivarat1_text{
+	text-align:justify;
+  font-family:'Forum';
+  font-size: 18px;
+  color:#ffffff;
+  line-height: 1.2;
+  margin: 50px 20px 40px 20px;
+}
+
+.kivarat1_speech {
+  position: relative;
+  margin: -50px auto -170px auto;
+  font-family: 'Elsie';
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 2px #C18B4B;
+  font-size: 50px;
+  text-align: center;
+}
+
+.kivarat1_diag {
+	font-family: 'Elsie';
+  font-size: 23px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #C18B4B;
+}
+
+@media (min-width: 1201px) {
+  .kivarat1_border {
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 280'%3e%3cpath d='M300,0 C412,140 600,140 600,280 L0,280 C0,140 188,140 300,0 Z'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 280'%3e%3cpath d='M0,0 L600,0 C600,140 412,140 300,280 C188,140 0,140 0,0 Z'/%3e%3c/svg%3e"), linear-gradient(black, black);
+    -webkit-mask-position: top center, bottom center, 0 280px;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 280px, 100% 280px, 100% calc(100% - 560px);
+    mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 280'%3e%3cpath d='M300,0 C412,140 600,140 600,280 L0,280 C0,140 188,140 300,0 Z'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 280'%3e%3cpath d='M0,0 L600,0 C600,140 412,140 300,280 C188,140 0,140 0,0 Z'/%3e%3c/svg%3e"), linear-gradient(black, black);
+    mask-position: top center, bottom center, 0 280px;
+    mask-repeat: no-repeat;
+    mask-size: 100% 280px, 100% 280px, 100% calc(100% - 560px);
+  }
+
+  .kivarat1_container {
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 580 270'%3e%3cpath d='M290,0 C398,135 580,135 580,270 L0,270 C0,135 182,135 290,0 Z'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 580 270'%3e%3cpath d='M0,0 L580,0 C580,135 398,135 290,270 C182,135 0,135 0,0 Z'/%3e%3c/svg%3e"), linear-gradient(black, black);
+    -webkit-mask-position: top center, bottom center, 0 270px;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 270px, 100% 270px, 100% calc(100% - 540px);
+    mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 580 270'%3e%3cpath d='M290,0 C398,135 580,135 580,270 L0,270 C0,135 182,135 290,0 Z'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 580 270'%3e%3cpath d='M0,0 L580,0 C580,135 398,135 290,270 C182,135 0,135 0,0 Z'/%3e%3c/svg%3e"), linear-gradient(black, black);
+    mask-position: top center, bottom center, 0 270px;
+    mask-repeat: no-repeat;
+    mask-size: 100% 270px, 100% 270px, 100% calc(100% - 540px);
+  }
+}
