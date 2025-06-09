@@ -122,18 +122,10 @@
   .kivarat1_speech {
     position: static;
     margin: 20px auto;
-    color: #333;
-    text-shadow: none;
-  }
-
-  .kivarat1_container {
-    padding: 10px;
-    background-image: none; 
   }
 
   .kivarat1_incontainer {
     margin: 10px;
-    background: rgba(0,0,0,0.8); 
     border: none;
     backdrop-filter: none;
     border-image: none;
