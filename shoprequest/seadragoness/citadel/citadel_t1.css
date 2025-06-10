@@ -136,8 +136,8 @@
 }
 
 @media (max-width: 1200px) {
-  .citadelt1_infade {
+  .citadelt1_infade,
+  .citadelt1_container::after {
     display: none;
   }
 }
-
