@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+
+.citadelt1_border {
+  margin: 20px auto;
+  padding: 2px;
+  width: 700px;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.85), 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to bottom, #FFD700, #C67229 600px, #87CEEB 900px, #4682B4);
+}
+
+.citadelt1_container {
+  position: relative;
+  z-index: 0;
+  max-width: 700px;
+  min-height: 800px;
+  padding: 650px 0 30px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #041119 url('https://i.imgur.com/4hnpvjO.png') no-repeat top;
+  background-size: 100%;
+}
+
+.citadelt1_container::after {
+  content: '';
+  position: absolute;
+  top: 830px;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  height: 300px;
+  background: linear-gradient(to top, transparent 0, #071c2a 50%, transparent 100%);
+  pointer-events: none;
+}
+
+.citadelt1_ingradborder {
+  position: relative;
+  z-index: 6;
+  margin: 80px auto 20px auto;
+  padding: 2px;
+  width: 85%;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, transparent 0, transparent 10%, #87ceeb 50%, #4682b4 100%);
+}
+
+.citadelt1_incontainer {
+  position: relative;
+  z-index: 6;
+  padding: 110px 20px;
+  width: 100%;
+  min-height: 400px;
+  box-sizing: border-box;
+  overflow: visible;
+  background: linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, 1) 200px, #000 400px);
+}
+
+.citadelt1_infade {
+  position: absolute;
+  top: 700px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  padding: 40px;
+  margin: 0;
+  height: auto;
+  overflow: hidden;
+  transform: scaleY(-1);
+  -webkit-mask-image: linear-gradient(to top, transparent 200px, #000 300px);
+  mask-image: linear-gradient(to top, transparent 200px, #000 300px);
+}
+
+.citadelt1_infade::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  box-shadow: 0 -5px 10px rgba(196, 239, 255, 0.6), inset 2px 0 10px 1px rgba(119, 141, 201, 0.8), inset -2px 0 10px 1px rgba(135, 206, 235, 0.8);
+  pointer-events: none;
+}
+
+.citadelt1_infade video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+  transform: scaleY(-1);
+}
+
+.citadelt1_text {
+  margin: -40px 0 0 0;
+  padding: 20px 50px;
+  z-index: 5;
+  font-family: 'Bellefair';
+  font-size: 20px;
+  color: #fff;
+  text-align: justify;
+}
+
+.citadelt1_text::after {
+  content: '';
+  display: block;
+  height: 2px;
+  line-height: normal;
+  margin: 30px 0 0 0;
+  background: linear-gradient(to right, transparent 10%, #f0f8ff 50%, transparent 90%);
+}
+
+.citadelt1_diag {
+  display: inline-block;
+  font-family: 'Germania One';
+  font-size: 25px;
+  font-weight: bold;
+  color: transparent;
+  background: linear-gradient(to bottom, #db9963, #c67229);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.citadelt1_speech {
+  margin: -30px 0 -120px 0;
+  font-family: 'Germania One';
+  font-size: 40px;
+  font-weight: bold;
+  color: transparent;
+  text-align: center;
+  background: linear-gradient(to bottom, #db9963, #c67229);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
