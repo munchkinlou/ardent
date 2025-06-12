@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+
+.wyvernt5_content {
+  width: 100%;
+  max-width: 700px;
+  margin: 50px 0 100px auto;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background: transparent;
+  box-sizing: border-box;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.85));
+}
+
+.wyvernt5_img {
+  position: absolute;
+  bottom: -50px;
+  left: -340px;
+  width: 700px;
+  height: 700px;
+  background: transparent url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/740ee9a0-4bd5-4423-997f-d7fcdb1799c8/djsfp37-0642eba0-e5e1-4e6a-bf13-7ce691b18960.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzc0MGVlOWEwLTRiZDUtNDQyMy05OTdmLWQ3ZmNkYjE3OTljOFwvZGpzZnAzNy0wNjQyZWJhMC1lNWUxLTRlNmEtYmYxMy03Y2U2OTFiMTg5NjAucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.yHpQe8CrdWjiA8NEKntBSfLWBRdGvaCOZYfTZ0zm67o') no-repeat center center;
+  background-size: contain;
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0 0 10px rgba(91, 164, 247, 0.85));
+}
+
+.wyvernt5_border {
+  position: relative;
+  width: 480px;
+  margin: 20px auto;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.85), 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to bottom, #4682B4, #87CEEB, #4682B4);
+  clip-path: polygon(
+    50% 0%,
+    100% 180px,
+    100% calc(100% - 180px),
+    50% 100%,
+    0% calc(100% - 180px),
+    0% 180px
+  );
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.wyvernt5_container {
+  position: relative;
+  width: 470px;
+  background: white url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Seadragoness/Wyvern/starrynight.jpg?updatedAt=1749741526783') no-repeat center center / cover;
+  clip-path: polygon(
+    50% 0%,
+    100% 175px,
+    100% calc(100% - 175px),
+    50% 100%,
+    0% calc(100% - 175px),
+    0% 175px
+  );
+  padding-top: 175px;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.wyvernt5_inborder {
+  position: relative;
+  z-index: 6;
+  margin: 20px auto 20px auto;
+  padding: 2px;
+  width: 85%;
+  box-sizing: border-box;
+  background: linear-gradient(to top, transparent 0, transparent 10%, #87ceeb 50%, #4682b4 100%);
+}
+
+.wyvernt5_incontainer {
+  position: relative;
+  z-index: 6;
+  padding: 30px;
+  width: 100%;
+  min-height: 400px;
+  box-sizing: border-box;
+  overflow: visible;
+  background: linear-gradient(to top, transparent 0, rgba(0, 0, 0, 1) 200px, #000 400px);
+}
+
+.wyvernt5_text {
+  text-align: justify;
+  font-family: 'Quicksand';
+  font-size: 17px;
+  color: #ffffff;
+  text-shadow: 0px 0px 1px #e89f95;
+  line-height: 1.2;
+  margin: 0 0 20px 0;
+}
+
+.wyvernt5_divider {
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    white 50%,
+    transparent 100%
+  );
+  margin: 5px 0;
+  line-height: normal;
+}
+
+.wyvernt5_speech {
+  position: relative;
+  font-family: 'Croissant One';
+  color: #9DD1FE;
+  font-size: 40px;
+  text-align: center;
+  margin: -30px 0 0 0;
+}
+
+.wyvernt5_diag {
+  font-size: 18px;
+  font-family: 'Croissant One';
+  font-weight: bold;
+  color: #9DD1FE;
+}
