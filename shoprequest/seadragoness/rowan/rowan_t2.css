@@ -1,0 +1,116 @@
+@import url('https://fonts.cdnfonts.com/css/snowman-house');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.rowant2_img {
+  position: absolute;
+  bottom: -30px;
+  left: -112px;
+  width: 710px;
+  height: 620px;
+  background: transparent url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/740ee9a0-4bd5-4423-997f-d7fcdb1799c8/djvzolr-29e0c027-953b-424d-b4f9-17d1b4ae8868.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzc0MGVlOWEwLTRiZDUtNDQyMy05OTdmLWQ3ZmNkYjE3OTljOFwvZGp2em9sci0yOWUwYzAyNy05NTNiLTQyNGQtYjRmOS0xN2QxYjRhZTg4NjgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.n6jJHOdfsOWhJ4eAIuIuJtwDO6cxMHiNZF15NXwfeLQ') no-repeat bottom center;
+  background-size: 100%;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.rowant2_border {
+  position: relative;
+  width: 530px;
+  margin: 20px auto 650px auto;
+  padding: 6px 6px 420px 6px;
+  overflow: visible;
+  background: #000000;
+  box-shadow: 0 0 15px black;
+  z-index: 1;
+}
+
+.rowant2_container {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  overflow: hidden;
+  background: rgb(233, 233, 233);
+}
+
+.rowant2_inborder {
+  z-index: 4;
+  width: 98%;
+  margin: 0 auto;
+  padding: 5px;
+  background: black;
+}
+
+
+.rowant2_incontainer {
+  padding: 20px 20px 40px 20px;
+  isolation: isolate;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.rowant2_incontainer::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00834D;
+  outline: 2px solid black;
+}
+
+.rowant2_text{
+  position: relative;
+  z-index: 5;
+  padding: 40px 50px 40px 50px;
+  font-family:'Quicksand', sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #ffffff;
+  text-align:justify;
+  background: #272036;
+  border-radius: 40px;
+  text-shadow: none;
+  border: 4px solid black;
+  text-shadow: 0 0 5px #000000;
+  filter: drop-shadow(5px 5px 0px #000);
+}
+
+.rowant2_text::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  right: 40px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #272036;
+}
+
+.rowant2_diag {
+  font-family: 'Snowman House', sans-serif;
+  font-size: 25px;
+  color: #229cee;
+  font-weight: bold;
+  text-shadow: 0 0 5px #000000;
+}
+
+.rowant2_speech {
+  display: block;
+  margin: -30px auto -50px auto;
+  font-family: 'Snowman House', sans-serif;
+  font-size: 40px;
+  color: #229cee;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 0 0 5px #000000;
+}
+
+.divider {
+  width: 90%;
+  height: 2px;
+  background: rgb(0, 0, 0);
+  margin: 10px auto;
+}
