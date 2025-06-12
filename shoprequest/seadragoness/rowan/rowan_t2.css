@@ -114,3 +114,12 @@
   background: rgb(0, 0, 0);
   margin: 10px auto;
 }
+
+@media (max-width: 1200px) {
+  .rowant2_incontainer::before {
+    background: none;
+  }
+  .rowant2_text, .rowant2_diag, .rowant2_speech {
+    text-shadow: none;
+  }
+}
