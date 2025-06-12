@@ -16,7 +16,7 @@
 .rowant2_border {
   position: relative;
   width: 530px;
-  margin: 20px auto 650px auto;
+  margin: 20px auto 20px auto;
   padding: 6px 6px 420px 6px;
   overflow: visible;
   background: #000000;
@@ -99,7 +99,7 @@
 
 .rowant2_speech {
   display: block;
-  margin: -30px auto -50px auto;
+  margin: -60px auto -50px auto;
   font-family: 'Snowman House', sans-serif;
   font-size: 40px;
   color: #229cee;
@@ -108,7 +108,7 @@
   text-shadow: 0 0 5px #000000;
 }
 
-.divider {
+.rowant2_div {
   width: 90%;
   height: 2px;
   background: rgb(0, 0, 0);
