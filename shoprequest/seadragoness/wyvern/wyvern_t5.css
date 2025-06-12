@@ -121,3 +121,13 @@
   font-weight: bold;
   color: #9DD1FE;
 }
+
+@media (max-width: 1200px) {
+  .wyvernt5_border, 
+  .wyvernt5_container, 
+  .wyvernt5_inborder, 
+  .wyvernt5_incontainer {
+    mask: none;
+    -webkit-mask: none;
+  }
+}
