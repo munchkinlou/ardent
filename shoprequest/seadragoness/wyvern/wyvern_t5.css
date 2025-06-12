@@ -124,10 +124,7 @@
 
 @media (max-width: 1200px) {
   .wyvernt5_border, 
-  .wyvernt5_container, 
-  .wyvernt5_inborder, 
-  .wyvernt5_incontainer {
-    mask: none;
-    -webkit-mask: none;
+  .wyvernt5_container {
+    clip-path: none;
   }
 }
