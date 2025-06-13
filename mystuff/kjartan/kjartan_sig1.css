@@ -8,12 +8,12 @@
   position: relative;
   background: transparent;
   width: 400px;
-  height: 400px;
+  height: 200px;
   margin: 0 auto;
 }
 
 .kjartansig_img {
-	background-image: url('IMG_03482.png');
+	background-image: url('https://ik.imagekit.io/arl59/Ardent/Kjartan/IMG_03482.png?updatedAt=1749793318720');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
