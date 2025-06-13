@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=My+Soul&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+.telblaithint1_content {
+  width: 100%;
+  max-width: 700px;
+  margin: 10px auto 250px auto;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+.telblaithint1_img {
+  position: absolute;
+  bottom: -250px;
+  left: -135px;
+  width: 700px;
+  height: 600px;
+  background: transparent url('https://images2.imgbox.com/aa/c0/4wY4oAUp_o.png') no-repeat center center;
+  background-size: contain;
+  z-index: 10;
+  pointer-events: none;
+  filter: drop-shadow(0 0 8px rgba(231, 192, 141, 0.65));
+}
+
+.telblaithint1_border {
+  position: relative;
+  width: 480px;
+  margin: 20px auto;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.85), 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to bottom, #F2BF92, #A9797D, #1D1137);
+  padding-top: 6px;
+  padding-bottom: 6px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.85));
+}
+
+.telblaithint1_container {
+  position: relative;
+  width: 470px;
+  background: white url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Hermes/TelBlaithin/29887.jpg?updatedAt=1749845876287') no-repeat center center / cover;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.telblaithint1_inborder {
+  position: relative;
+  z-index: 6;
+  margin: 40px auto 30px auto;
+  padding: 2px;
+  width: 85%;
+  box-sizing: border-box;
+  background: linear-gradient(to top, transparent 0, transparent 10%, #1D1137, #A9797D, #F2BF92);
+}
+
+.telblaithint1_incontainer {
+  position: relative;
+  z-index: 6;
+  padding: 30px;
+  width: 100%;
+  min-height: 400px;
+  box-sizing: border-box;
+  overflow: visible;
+  background: linear-gradient(to top, transparent 0, #130a24 200px);
+}
+
+.telblaithint1_text {
+  text-align: justify;
+  font-family: 'Red Hat Display';
+  font-size: 17px;
+  color: #ffffff;
+  text-shadow: 0px 0px 1px #e89f95;
+  line-height: 1.2;
+  margin: 0 0 20px 0;
+}
+
+.telblaithint1_divider {
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    white 50%,
+    transparent 100%
+  );
+  margin: 5px 0;
+  line-height: normal;
+}
+
+.telblaithint1_speech {
+  position: relative;
+  font-family: 'My Soul';
+  color: #60B2D6;
+  font-size: 45px;
+  text-align: center;
+  margin: -50px 0 -40px 0;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.65);
+}
+
+.telblaithint1_diag {
+  font-size: 25px;
+  font-family: 'My Soul';
+  font-weight: bold;
+  color: #60B2D6;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.65);
+}
