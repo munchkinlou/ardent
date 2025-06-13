@@ -13,12 +13,12 @@
 }
 
 .kjartansig_img {
-	background-image: url('https://ik.imagekit.io/arl59/Ardent/Kjartan/IMG_03482.png?updatedAt=1749793318720');
+	background-image: url('IMG_03482.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 250px;
+  height: 400px;
   top: 0;
   left: 0;
   z-index: 1;
@@ -30,7 +30,7 @@
 	border: 1px solid white;
 	border-image: linear-gradient(to right, transparent, white, transparent) 1;
   width: 300px;
-  height: 20px;
+  height: 40px;
 	font-family: 'Kjartan', cursive;
 	font-size: 20px;
   letter-spacing: 2px;
@@ -78,39 +78,4 @@
 .kjartansig_hoverlink:hover .kjartansig_hoverlinkimg,
 .kjartansig_hoverlink:focus-within .kjartansig_hoverlinkimg {
   display: block;
-}
-
-@media (max-width: 500px) {
-  .kjartansig_container {
-    width: 98%;
-    height: auto;
-    min-width: 0;
-    margin: 0 auto;
-  }
-  .kjartansig_img {
-    height: 180px;
-    min-height: 100px;
-    max-height: 250px;
-    width: 100%;
-  }
-  .kjartansig_title {
-    width: 95%;
-    font-size: 16px;
-    min-width: 0;
-    max-width: 98%;
-    padding: 1px;
-  }
-  .kjartansig_text {
-    width: 95%;
-    font-size: 8px;
-    min-width: 0;
-    max-width: 98%;
-    padding: 8px 0;
-    height: auto;
-  }
-  .kjartansig_hoverlinkimg {
-    width: 60px;
-    min-width: 32px;
-    max-width: 100px;
-  }
 }
