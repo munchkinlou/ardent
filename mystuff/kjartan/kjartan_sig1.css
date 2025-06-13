@@ -73,8 +73,7 @@
   left: 50%;
   bottom: 100%;
   transform: translateX(-50%) translateY(-8px);
-  width: 200px;
-  height: 50px;
+  width: 120px;
   border: 2px solid #ccc;
   background: #fff;
   z-index: 10;
@@ -86,3 +85,37 @@
   display: block;
 }
 
+@media (max-width: 500px) {
+  .kjartansig_container {
+    width: 98%;
+    height: auto;
+    min-width: 0;
+    margin: 0 auto;
+  }
+  .kjartansig_img {
+    height: 200px;
+    min-height: 120px;
+    max-height: 350px;
+    width: 100%;
+  }
+  .kjartansig_title {
+    width: 95%;
+    font-size: 14px;
+    min-width: 0;
+    max-width: 98%;
+    padding: 1px;
+  }
+  .kjartansig_text {
+    width: 95%;
+    font-size: 14px;
+    min-width: 0;
+    max-width: 98%;
+    padding: 8px 0;
+    height: auto;
+  }
+  .kjartansig_hoverlinkimg {
+    width: 60px;
+    min-width: 32px;
+    max-width: 100px;
+  }
+}
