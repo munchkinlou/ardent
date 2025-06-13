@@ -18,7 +18,7 @@
 }
 
 .kjartansig_img {
-	background-image: url('IMG_03482.png');
+	background-image: url('https://ik.imagekit.io/arl59/Ardent/Kjartan/IMG_03482.png?updatedAt=1749793318720');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -35,7 +35,7 @@
 	border: 1px solid white;
 	border-image: linear-gradient(to right, transparent, white, transparent) 1;
   width: 300px;
-  height: 20px;
+  height: 40px;
 	font-family: 'Kjartan', cursive;
 	font-size: 20px;
   letter-spacing: 2px;
