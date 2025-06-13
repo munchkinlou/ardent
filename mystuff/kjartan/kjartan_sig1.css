@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@font-face {
+  font-family: 'Kjartan';
+  src: url('RagnaRunesPersonalUseRegular-Rp7AV.otf') format('truetype');
+}
+
+.kjartansig_container {
+  position: relative;
+  background: transparent;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.kjartansig_img {
+	background-image: url('IMG_03482.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 250px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.kjartansig_title {
+	background-color: white; background: linear-gradient(to right, transparent 0%, white 45%, white 55%, transparent 100%);
+	padding: 1px 0 5px 0;
+	border: 1px solid white;
+	border-image: linear-gradient(to right, transparent, white, transparent) 1;
+  width: 300px;
+  height: 20px;
+	font-family: 'Kjartan', cursive;
+	font-size: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 0 auto;
+  color: rgb(51, 51, 51);
+}
+
+.kjartansig_text {
+  padding: 10px 0;
+  width: 300px;
+  height: 20px;
+	font-family: 'Amarante', serif;
+	font-size:10px;
+  text-align: center;
+  text-shadow:
+  -0.5px -0.1px 0 #000;
+  margin: 0 auto;
+}
+
+.kjartansig_link {
+  text-decoration: none;
+  font-style: normal;
+  color: rgb(202, 202, 202);
+}
+  
+.kjartansig_hoverlink {
+  position: relative;
+  display: inline-block;
+}
+
+.kjartansig_hoverlinkimg {
+  display: none;
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  transform: translateX(-50%) translateY(-8px);
+  width: 120px;
+  border: 2px solid #ccc;
+  background: #fff;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.kjartansig_hoverlink:hover .kjartansig_hoverlinkimg,
+.kjartansig_hoverlink:focus-within .kjartansig_hoverlinkimg {
+  display: block;
+}
+
+@media (max-width: 500px) {
+  .kjartansig_container {
+    width: 98%;
+    height: auto;
+    min-width: 0;
+    margin: 0 auto;
+  }
+  .kjartansig_img {
+    height: 180px;
+    min-height: 100px;
+    max-height: 250px;
+    width: 100%;
+  }
+  .kjartansig_title {
+    width: 95%;
+    font-size: 16px;
+    min-width: 0;
+    max-width: 98%;
+    padding: 1px;
+  }
+  .kjartansig_text {
+    width: 95%;
+    font-size: 8px;
+    min-width: 0;
+    max-width: 98%;
+    padding: 8px 0;
+    height: auto;
+  }
+  .kjartansig_hoverlinkimg {
+    width: 60px;
+    min-width: 32px;
+    max-width: 100px;
+  }
+}
