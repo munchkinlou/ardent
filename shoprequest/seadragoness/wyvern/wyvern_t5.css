@@ -124,6 +124,11 @@
 }
 
 @media (max-width: 1200px) {
+
+  .wyvernt5_content {
+    filter: none;
+  }
+  
   .wyvernt5_border, 
   .wyvernt5_container {
     clip-path: none;
