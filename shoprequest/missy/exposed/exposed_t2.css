@@ -34,7 +34,7 @@
 .exposedt2_container {
   position: relative;
   width: 100%;
-  background: #0B0D10 url('https://i.ibb.co/Fbg1CTM7/IMG-20250604-WA0022.jpg') no-repeat -55px -80px / 118%;
+  background: #0B0D10 url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Missy/Exposed/IMG-20250604-WA0022.jpg?updatedAt=1749940784836') no-repeat -55px -80px / 118%;
   clip-path: polygon(
     50% 0%,
     100% 175px,
@@ -164,7 +164,16 @@
     clip-path: none;
   }
 
-  .exposedt2_img {
-    filter: none;
+  .exposedt2_container::before,
+  .exposedt2_container::after,
+  .exposedt2_incontainer::after {
+    display: none !important;
+  }
+
+  .exposedt2_inborder,
+  .exposedt2_incontainer {
+    mask-image: none !important;
+    -webkit-mask-image: none !important;
+    background: none !important;
   }
 }
