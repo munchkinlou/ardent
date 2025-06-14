@@ -126,6 +126,11 @@
 }
 
 @media (max-width: 1200px) {
+
+  .exposedt1_content {
+    filter: none;
+  }
+
   .exposedt1_img {
     display: none;
   }
@@ -140,10 +145,6 @@
     display: none;
   }
 
-.exposedt1_text, .exposedt1_speech, .exposedt1_diag {
-  text-shadow: none;
-}
-  
   .exposedt1_incontainer {
     margin: 10px;
     border: none;
