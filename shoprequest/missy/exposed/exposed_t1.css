@@ -140,6 +140,10 @@
     display: none;
   }
 
+.exposedt1_text, .exposedt1_speech, .exposedt1_diag {
+  text-shadow: none;
+}
+  
   .exposedt1_incontainer {
     margin: 10px;
     border: none;
