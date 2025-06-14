@@ -143,9 +143,9 @@
   .exposedt1_incontainer {
     margin: 10px;
     border: none;
-    backdrop-filter: none;
     border-image: none;
     box-shadow: none;
+    filter: none;
   }
 
 }
