@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+
+.exposedt1_content {
+	position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 200px auto 20px auto;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+  filter: drop-shadow(0 8px 10px rgba(0,0,0,0.75));
+}
+
+.exposedt1_img {
+  position: absolute;
+  bottom: 170px;
+  left: -110px;
+  width: 100%;
+  height: 700px;
+  background: transparent url('https://i.ibb.co/WW7G8Cxv/IMG-1444.png') no-repeat center center;
+  background-size: 100%; 
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.6));
+}
+
+.exposedt1_border {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to top,#000000, #68694B, #A8A897, #68694B, #000000);
+  padding: 8px 8px 0 8px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.exposedt1_container {
+  position: relative;
+  width: 100%;
+  background: #363737;
+  padding: 220px 0 900px 0;
+  box-sizing: border-box;
+  background: black url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Missy/Exposed/paint?updatedAt=1749870799363') no-repeat center center;
+  background-size: cover;
+  margin: 0 auto;
+  pointer-events: none;
+}
+
+.exposedt1_inborder {
+  position: relative;
+  z-index: 6;
+  margin: -5px auto 20px auto;
+  padding: 3px;
+  width: 85%;
+  box-sizing: border-box;
+  background: linear-gradient(to top, transparent 0, transparent 10%, #445537 50%, #505e45 80%, #656649 100%);
+  border-radius: 30px;
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.6));
+}
+
+.exposedt1_incontainer {
+  border-radius: 30px;
+  position: relative;
+  z-index: 6;
+  padding: 0.5px 10px 20px 10px;
+  width: 100%;
+  min-height: 400px;
+  box-sizing: border-box;
+  overflow: visible;
+  background: linear-gradient(to top, transparent 0, rgba(0, 0, 0, 1) 200px, #000 400px);
+}
+
+.exposedt1_text{
+	text-align:justify;
+  font-family:'Comfortaa';
+  font-size: 16px;
+  color:#ffffff;
+  line-height: 1.2;
+  margin: 20px 20px 40px 20px;
+}
+
+.exposedt1_speech {
+  position: relative;
+  margin: -5px 0 -590px 0;
+  font-family: 'Eagle Lake';
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 2px #0a0906;
+  font-size: 50px;
+  text-align: center;
+  line-height: 1;
+  left: 160px;
+}
+
+.exposedt1_diag {
+	font-family: 'Eagle Lake';
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.exposedt1_border {
+  -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 270'%3e%3cpath d='M250,0 C342,135 500,135 500,270 L0,270 C0,135 158,135 250,0 Z'/%3e%3c/svg%3e"), linear-gradient(black, black);
+  -webkit-mask-position: top center, 0 270px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 270px, 100% calc(100% - 540px);
+  mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 270'%3e%3cpath d='M250,0 C342,135 500,135 500,270 L0,270 C0,135 158,135 250,0 Z'/%3e%3c/svg%3e"), linear-gradient(black, black);
+  mask-position: top center, 0 270px;
+  mask-repeat: no-repeat;
+  mask-size: 100% 270px, 100% calc(100% - 540px);
+}
+
+.exposedt1_container {
+  -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 270'%3e%3cpath d='M250,0 C342,135 500,135 500,270 L0,270 C0,135 158,135 250,0 Z'/%3e%3c/svg%3e"), linear-gradient(black, black);
+  -webkit-mask-position: top center, 0 260px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 270px, 100% calc(100% - 540px);
+  mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 270'%3e%3cpath d='M250,0 C342,135 500,135 500,270 L0,270 C0,135 158,135 250,0 Z'/%3e%3c/svg%3e"), linear-gradient(black, black);
+  mask-position: top center, 0 260px;
+  mask-repeat: no-repeat;
+  mask-size: 100% 270px, 100% calc(100% - 540px);
+
+}
+
+@media (max-width: 1200px) {
+  .exposedt1_img {
+    display: none;
+  }
+
+  .exposedt1_border,
+  .exposedt1_container {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  .exposedt1_speech {
+    display: none;
+  }
+
+  .exposedt1_incontainer {
+    margin: 10px;
+    border: none;
+    backdrop-filter: none;
+    border-image: none;
+    box-shadow: none;
+  }
+
+}
