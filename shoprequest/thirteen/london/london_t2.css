@@ -114,9 +114,18 @@
 
   .londont2_text {
     border: none;
+    font-size: 14px;
   }
 
   .londont2_container::before {
     display: none;
+  }
+
+  .londont2_diag {
+    font-size: 16px;
+  }
+
+  .londont2_speech {
+    font-size: 16px;
   }
 }
