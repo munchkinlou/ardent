@@ -19,7 +19,7 @@
   width: 500px;
   margin: 20px auto;
   box-sizing: border-box;
-  background: linear-gradient(to bottom, #000000, #42551d, rgb(0, 0, 0));
+  background: linear-gradient(to bottom, #000000, #1D642C, rgb(0, 0, 0));
   clip-path: polygon(
     50% 0%,
     100% 180px,
@@ -43,7 +43,7 @@
     0% calc(100% - 180px),
     0% 175px
   );
-  padding: 420px 0 20px;
+  padding: 450px 0 20px;
   box-sizing: border-box;
   margin: 0 auto;
 }
@@ -77,9 +77,9 @@
   padding: 2px;
   width: 85%;
   box-sizing: border-box;
-  background: linear-gradient(to top, transparent 0, transparent 10%, #6B8E23 50%, #123524 100%);
+  background: linear-gradient(to top, transparent 0, transparent 10%, rgba(29, 100, 44,0.8) 50%, #123524 100%);
   mask-image:
-    radial-gradient(ellipse 90% 320px at 50% -120px, transparent 70%, black 100%);
+    radial-gradient(ellipse 90% 320px at 50% -120px, transparent 70%, #000000 100%);
   -webkit-mask-image:
     radial-gradient(ellipse 90% 320px at 50% -120px, transparent 70%, black 100%);
   mask-composite: intersect;
