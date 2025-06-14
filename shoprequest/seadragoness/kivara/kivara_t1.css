@@ -109,8 +109,13 @@
 }
 
 @media (max-width: 1200px) {
+  .kivarat1_content {
+    filter: none;
+  }
+
   .kivarat1_img {
     display: none;
+    filter: none;
   }
 
   .kivarat1_border,
