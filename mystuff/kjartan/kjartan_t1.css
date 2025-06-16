@@ -159,4 +159,9 @@
   .kjartant1_container::after {
     display: none;
   }
+
+  .kjartant1_text, .kjartant1_speech, .kjartant1_nordic, .kjartant1_spanish {
+    text-shadow: none;
+  }
+
 }
