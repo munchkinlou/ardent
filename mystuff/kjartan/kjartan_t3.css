@@ -81,7 +81,7 @@
 .kjartant3_speech {
   font-family: 'Amarante';
   text-align:center;
-	font-size: 18px;
+	font-size: 16px;
 	color: #f2bc33;
 	text-align: center;
 	margin: 10px 0 -50px 0;
@@ -92,20 +92,20 @@
 .kjartant3_diag {
   display: inline-block;
   font-family: 'Amarante';
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   color: #f2bc33;
 }
 
 .kjartant3_nordic {
   color: #15d3e8;
-  font-size: 16px;
+  font-size: 15px;
   font-family: 'Eagle Lake';
 }
 
 .kjartant3_spanish {
   color: #eb7c21;
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'Dosis';
 }
 
