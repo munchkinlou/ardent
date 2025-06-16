@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+
+body {
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: left bottom;
+}
+
+h1 {
+	color: white;
+	position: relative;
+	z-index: 1;
+	font-family: "Eagle Lake", cursive;
+	text-transform: capitalize !important;
+	font-size: 35px;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+}
+
+h1 i {
+	font-style: normal !important;
+}
+
+.profav {
+    min-width: 250px;
+	border: 5px double #ffffff;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.profav img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+	object-position: left center;
+}
+
+.blocky {
+	position: relative;
+	padding: 10px 20px 25px;
+	margin: 2px auto;
+	font-size: 16px;
+	z-index: 0;
+	text-align: center;
+	backdrop-filter: blur(2px);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), 0 5px 10px rgba(0, 0, 0, 0.5);
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+	border: 5px double rgb(255, 255, 255);
+	font-family: 'Amarante', sans-serif;
+}
+
+.blocky u {
+    text-decoration: none !important;
+}
+
+.blocky > span {
+	display: block;
+	font-size: 10px;
+	text-shadow: -0.5px -0.5px 0 rgba(0, 0, 0, 0.7);
+	right: 0;
+	left: 0;
+	bottom: 4px;
+	z-index: 0;
+	color: #695753;
+	font-family: 'Eagle Lake', cursive;
+}
+
+.blocky a {
+	position: relative;
+	z-index: 2;
+	top: 5px;
+	font-family: arial;
+	padding: 0px 0 0;
+	text-transform: uppercase;
+	font-size: 12px;
+	display: inline-block;
+	font-weight: bold;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+	color: #2b282b !important;
+	transition: color 0.2s ease;
+}
+
+.blocky a:hover {
+	color: #ffffff !important;
+}
+
+.blocky a,
+.blocky a:visited,
+.blocky a:hover,
+.blocky a u,
+.blocky span[style*="text-decoration: underline;"] {
+	text-decoration: none !important;
+}
+
+
+.thead {
+	text-shadow: none !important;
+	border: 4px double rgb(255, 255, 255);
+	text-align: center;
+}
+
+.sip_tbl_head,
+.sip_tbl_th,
+.sip_tbl_td {
+	background: rgba(111,105, 112, 0.7);
+	color: rgb(255, 255, 255) !important;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+}
+
+.tabnav,
+.navbar-header,
+.navbar-collapse {
+	background: linear-gradient(
+		to right,
+		transparent,
+		rgba(111,105, 112, 0.7),
+		transparent
+	);
+	backdrop-filter: blur(2px);
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.tabnav a,
+.navbar-header a,
+.navbar-collapse a {
+	transition: color 0.2s ease, background 0.2s ease;
+}
+
+
+.dropdown-menu {
+	background: rgba(43, 40, 43, 0.8);
+	color: rgb(255, 255, 255) !important;
+}
+
+.dropdown-menu a {
+	color: rgb(255, 255, 255) !important;
+	transition: color 0.2s ease, background 0.2s ease;
+}
+
+.dropdown-menu a:hover {
+	text-shadow: 0 0 6px rgb(173, 173, 173), 0 0 2px #fff;
+}
+
+
+.app_title {
+	text-align: center;
+	font-family: 'Eagle Lake', cursive;
+	font-size: 25px;
+	color: #ffffff;
+	filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.appimg, .perimg {
+	display: block;
+	width: 100%;
+	height: auto;
+	filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+	pointer-events: none;
+}
+
+.perimg {
+	width: 98%;
+	margin: 10px auto;
+	border: 5px double rgb(255, 255, 255);
+
+}
+
+.divider {
+	width: 200px;
+	margin: 10px auto;
+	height: 2px;
+	background: linear-gradient(to right, transparent 0%, white 50%, transparent 100%);
+}
+
+p {
+	font-family: 'Amarante', sans-serif;
+	text-align: justify;
+	margin: 20px 40px;
+	font-size: 16px;
+	color: #ffffff;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+}
+
+
+.misc_info_group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+.misc_info_item {
+  flex: 1 1 300px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.misc_info_group details {
+  width: 100%;
+  background: rgba(25,20,24,0.4);
+  border-radius: 8px;
+  color: white;
+  margin-bottom: 0;
+  font-family: 'Redressed', cursive;
+  font-size: 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border: none;
+  overflow: hidden;
+}
+
+.misc_info_group summary {
+  cursor: pointer;
+  padding: 8px;
+  outline: none;
+  border: none;
+  user-select: none;
+  transition: background 0.2s, text-shadow 0.2s;
+  border-radius: 8px;
+}
+
+.misc_info_group summary:hover, .misc_info_group details[open] summary {
+  text-shadow: 0 0 5px white;
+  background: rgba(25,20,24,0.6);
+}
+
+.misc_info_group .collapse-content {
+  text-align: center;
+  margin-top: 10px;
+  font-family: 'Times New Roman', serif;
+  font-size: 13px;
+  padding: 0 8px 8px 8px;
+}
+
+.misc_info_group img {
+  display: block;
+  margin: 0 auto 8px auto;
+}
+
