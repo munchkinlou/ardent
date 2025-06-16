@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
 
@@ -85,7 +84,7 @@
 	font-size: 18px;
 	color: #f2bc33;
 	text-align: center;
-	margin: 10px 0 -100px 0;
+	margin: 10px 0 -80px 0;
 	text-shadow: 0 0 4px black;
   font-weight: bold;
 }
