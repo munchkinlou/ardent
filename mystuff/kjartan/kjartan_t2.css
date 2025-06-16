@@ -116,12 +116,15 @@
 }
 
 .kjartant2_diag {
+  display: inline-block;
+  font-family: 'Amarante';
   font-size: 20px;
+  font-weight: bold;
+  color: transparent;
   background: linear-gradient(to bottom, #7B3028, #DF9350, #7B3028);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
-  color: transparent;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
 }
 
 .kjartant2_roll {
@@ -282,3 +285,13 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .kjartant2_con::after {
+    display: none;
+  }
+
+  .kjartant2_diag, .kjartant2_speech, .kjartant2_nordic, .kjartant2_spanish {
+    filter: none;
+  }
+
+}
