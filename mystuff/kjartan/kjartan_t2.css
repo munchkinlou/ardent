@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+
+.kjartant2_bor {
+  padding: 1.5px;
+  background: linear-gradient(to bottom,
+  rgba(70, 5, 5, 0.8),
+  rgba(140, 15, 15, 0.8),
+  rgba(70, 5, 5, 0.8));
+  box-sizing: border-box;
+  width: 700px;
+  margin: 20px auto;
+  box-shadow:
+  10px 10px 10px rgba(0, 0, 0, 0.85),
+  20px 20px 50px rgba(0, 0, 0, 0.5);
+
+}
+
+.kjartant2_con {
+  width: 100%;
+  min-height: 500px;
+  padding: 270px 20px 30px 20px;
+  position: relative;
+  box-sizing: border-box;
+  overflow: visible;
+  background: #050101 url('https://ik.imagekit.io/arl59/Ardent/Kjartan/Kjartan2.png?updatedAt=1748212894170') no-repeat top;
+  background-size: 100%;
+  z-index: 1;
+  
+}
+
+.kjartant2_con::after {
+  content: '';
+  position: absolute;
+  top: 300px;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  height: 300px;
+  background: linear-gradient(to top, transparent 0, #050101 50%, transparent 100%);
+  pointer-events: none;
+}
+
+
+.kjartant2_inbor {
+  position: relative;
+  padding: 1.5px;
+  background: linear-gradient(to bottom,
+  rgba(70, 5, 5, 0.8),
+  rgba(140, 15, 15, 0.8),
+  rgba(70, 5, 5, 0.8));
+  box-sizing: border-box;
+  width: 90%;
+  margin: 140px auto 0 auto;
+  z-index: 2;
+}
+
+.kjartant2_incon {
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  padding: 50px 20px;
+  box-sizing: border-box;
+  overflow: visible;
+  background: black;
+  z-index: 3;
+  
+}
+
+.kjartant2_text {
+	color: #DFC7C9;
+	font-family: 'amarante';
+	font-size:14px;
+	line-height:1.4;
+	text-align:justify;
+	margin: -30px 20px 0px 20px;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(to right, transparent 0%, white 50%, transparent 100%);
+  border-image-slice: 1;
+}
+
+.kjartant2_speech {
+  font-family: 'Amarante';
+  font-size: 20px;
+  text-align: center;
+  margin: 0px 0 -50px 0;
+  background: linear-gradient(to bottom, #7B3028, #DF9350, #7B3028);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.kjartant2_diag {
+  font-size: 20px;
+  background: linear-gradient(to bottom, #7B3028, #DF9350, #7B3028);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.kjartan2_roll {
+	background: linear-gradient(to right, transparent, black, transparent);
+	padding: 5px 0 5px 0;
+	width: auto;
+	border: 1px solid white;
+  border-image: linear-gradient(to right, transparent, rgba(140, 15, 15, 0.8), transparent) 1;
+	color: white;
+	text-align:center;
+	margin: 10px auto;
+	font-family:'Amarante';
+	text-transform: uppercase;
+	letter-spacing: 10px;
+}
+
+.kjartant2_particles {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.kjartant2_particles {
+  position: absolute;
+  top: 350px;
+  left: 0;
+  width: 100%;
+  height: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.kjartant2_e {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: rgba(235, 64, 52, 1);
+  border-radius: 50%;
+  box-shadow:
+    0 0 6px rgba(235, 64, 52, 0.9),
+    0 0 12px rgba(235, 64, 52, 0.8),
+    0 0 20px rgba(235, 64, 52, 0.7),
+	    0 0 20px rgba(235, 64, 52, 0.7);
+  opacity: 0;
+  pointer-events: none;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.kjartant2_e1 {
+  bottom: 5%;
+  left: 15%;
+  animation-name: kjartant2eRise1;
+  animation-duration: 6s;
+  animation-delay: 0s;
+}
+.kjartant2_e2 {
+  bottom: 5%;
+  left: 35%;
+  animation-name: kjartant2_eRise2;
+  animation-duration: 5s;
+  animation-delay: 1s;
+}
+.kjartant2_e3 {
+  bottom: 5%;
+  left: 55%;
+  animation-name: kjartant2_eRise3;
+  animation-duration: 7s;
+  animation-delay: 0.5s;
+}
+.kjartant2_e4 {
+  bottom: 5%;
+  left: 75%;
+  animation-name: kjartant2_eRise4;
+  animation-duration: 6.5s;
+  animation-delay: 2s;
+}
+.kjartant2_e5 {
+  bottom: 5%;
+  left: 50%;
+  animation-name: kjartant2eRise5;
+  animation-duration: 8s;
+  animation-delay: 1.5s;
+}
+
+@keyframes kjartant2_eRise1 {
+  0% {
+    opacity: 0;
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-30px) scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-60px) scale(1);
+  }
+}
+@keyframes kjartant2_eRise2 {
+  0% {
+    opacity: 0;
+    transform: translateY(0px) scale(0.9);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-25px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50px) scale(0.95);
+  }
+}
+@keyframes kjartant2_eRise3 {
+  0% {
+    opacity: 0;
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-40px) scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-80px) scale(1);
+  }
+}
+@keyframes kjartant2_eRise4 {
+  0% {
+    opacity: 0;
+    transform: translateY(0px) scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-20px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-40px) scale(0.9);
+  }
+}
+@keyframes kjartant2_eRise5 {
+  0% {
+    opacity: 0;
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-35px) scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-70px) scale(1);
+  }
+}
