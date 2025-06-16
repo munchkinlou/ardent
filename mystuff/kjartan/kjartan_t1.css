@@ -153,14 +153,13 @@
   background: linear-gradient(to bottom, #423D49, #21222D);
 }
 
-
 @media (max-width: 1200px) {
   .kjartant1_infade,
   .kjartant1_container::after {
     display: none;
   }
 
-  .kjartant1_text, .kjartant1_speech, .kjartant1_nordic, .kjartant1_spanish {
+  .kjartant1_diag, .kjartant1_speech, .kjartant1_nordic, .kjartant1_spanish {
     filter: none;
   }
 
