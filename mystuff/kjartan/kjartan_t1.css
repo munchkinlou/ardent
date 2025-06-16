@@ -21,6 +21,7 @@
   overflow: hidden;
   background: #13161D url('https://ik.imagekit.io/arl59/Ardent/Kjartan/cmm_for_Andy_2.png?updatedAt=1750037427255') no-repeat top;
   background-size: 110%;
+  pointer-events: none;
 }
 
 .kjartant1_con::after {
