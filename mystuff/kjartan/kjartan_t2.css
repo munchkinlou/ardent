@@ -100,6 +100,19 @@
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
 }
 
+
+.kjartant2_diag {
+  display: inline-block;
+  font-family: 'Amarante';
+  font-size: 20px;
+  font-weight: bold;
+  color: transparent;
+  background: linear-gradient(to bottom, #7B3028, #DF9350, #7B3028);
+  -webkit-background-clip: text;
+  background-clip: text;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
 .kjartant2_nordic {
   background: linear-gradient(to bottom, #a12a2a, #eb4034, #a12a2a);
   -webkit-background-clip: text;
@@ -116,17 +129,6 @@
   font-size: 22px;
 }
 
-.kjartant2_diag {
-  display: inline-block;
-  font-family: 'Amarante';
-  font-size: 20px;
-  font-weight: bold;
-  color: transparent;
-  background: linear-gradient(to bottom, #7B3028, #DF9350, #7B3028);
-  -webkit-background-clip: text;
-  background-clip: text;
-  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
-}
 
 .kjartant2_roll {
 	background: linear-gradient(to right, transparent, black, transparent);
