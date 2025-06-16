@@ -284,6 +284,10 @@
     display: none;
   }
 
+  .kjartant2_con{
+    padding: 0;
+  }
+
   .kjartant2_diag, .kjartant2_speech, .kjartant2_nordic, .kjartant2_spanish {
     filter: none;
   }
