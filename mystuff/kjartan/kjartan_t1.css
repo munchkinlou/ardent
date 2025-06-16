@@ -155,8 +155,7 @@
 }
 
 @media (max-width: 1200px) {
-  .kjartant1_infade,
-  .kjartant1_container::after {
+  .kjartant1_con::after {
     display: none;
   }
 
