@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+.kjartant3_bor {
+  padding: 4px;
+  background: linear-gradient(to right, #4a4a4a, white, #4a4a4a);
+  box-sizing: border-box;
+  width: 555px;
+  margin: 100px auto 5px auto;
+}
+
+.kjartant3_con {
+  min-height: 300px;
+  padding: 30px 0 30px 0;
+  position: relative;
+  box-sizing: border-box;
+  overflow: visible;
+  background: black url('https://ik.imagekit.io/arl59/Ardent/Kjartan/mist.jpg?updatedAt=1747274483452') repeat-y top center;
+  background-size: cover;
+  z-index: 1;
+}
+
+.kjartant3_img {
+  position: absolute;
+  top: -104px;
+  left: -125px;
+  width: 100%;
+  min-height: 550px;
+  background: transparent url('https://ik.imagekit.io/arl59/Ardent/Kjartan/KjartanDialogue2.png?updatedAt=1748225304909') no-repeat;
+  background-size: 40%;
+  z-index: 10;
+  pointer-events: none;
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.6));
+}
+
+.kjartant3_inbor {
+  position: relative;
+  padding: 1.5px;
+  backdrop-filter: blur(30px);
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: 85%;
+  margin: 0px auto 0 auto;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.kjartant3_incon {
+  position: relative;
+  width: 100%;
+  min-height: 200px;
+  padding: 50px 20px;
+  box-sizing: border-box;
+  overflow: visible;
+  background: transparent;
+  z-index: 3;
+  
+}
+
+.kjartant3_text {
+	color: white;
+  text-align:justify;
+	font-family: 'amarante';
+	font-size:14px;
+	line-height:1.2;
+	text-align:justify;
+	margin: -20px 20px 0px 20px;
+	text-shadow: 0 0 4px black;
+}
+
+.kjartant3_text::after {
+  content: '';
+  display: block;
+  height: 2px;
+  line-height: normal;
+  margin: 10px 0 -10px 0;
+  background: linear-gradient(to right, transparent 10%, #B0B7C6 50%, transparent 90%);
+}
+
+.kjartant3_speech {
+  font-family: 'Amarante';
+  text-align:center;
+	font-size: 18px;
+	color: #f2bc33;
+	text-align: center;
+	margin: 0px 0 -50px 0;
+	text-shadow: 0 0 4px black;
+  font-weight: bold;
+}
+
+.kjartant3_diag {
+  display: inline-block;
+  font-family: 'Amarante';
+  font-size: 18px;
+  font-weight: bold;
+  color: #f2bc33;
+}
+
+.kjartant3_nordic {
+  color: #15d3e8;
+  font-size: 16px;
+  font-family: 'Eagle Lake';
+}
+
+.kjartant3_spanish {
+  color: #eb7c21;
+  font-size: 20px;
+  font-family: 'Dosis';
+}
