@@ -72,7 +72,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: normal;
-  max-width: 350px;
+  max-width: 320px;
   box-sizing: border-box;
 }
 
