@@ -5,7 +5,7 @@
 
 body {
 	position: relative;
-	background-repeat: no-repeat;
+	background-repeat: repeat-y;
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: left bottom;
@@ -36,11 +36,13 @@ h1 i {
 }
 
 .profav img {
-	width: 100%;
-	height: 100%;
+    content: url('https://ik.imagekit.io/arl59/Ardent/Kjartan/Andy_winter.png?updatedAt=1750138175064') !important;
+	width: 250px;
+	height: 320px;;
 	object-fit: cover;
 	display: block;
 	object-position: left center;
+	pointer-events: none;
 }
 
 .blocky {
