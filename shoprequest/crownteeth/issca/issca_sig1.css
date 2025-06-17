@@ -47,7 +47,7 @@
 .isscasig_img {
   position: absolute;
   top: -25px;
-  left: 0px;
+  left: 20px;
   transform: none;
   margin-right: 0;
   width: 200px;
@@ -59,7 +59,7 @@
 .isscasig_text {
   display: block;
   color: #fff;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 400;
   font-family: 'Comic Neue', cursive;
   text-shadow: 0 0 8px #000, 0 0 2px #000000,0 0 2px #000000;
@@ -94,9 +94,9 @@
   }
   .isscasig_img {
     position: static;
-    width: 60vw;
-    max-width: 90vw;
-    min-width: 120px;
+    width: 40vw;
+    max-width: 60vw;
+    min-width: 80px;
     margin: 0 auto 8px auto;
     top: 0;
     left: 0;
@@ -116,9 +116,9 @@
 
 @media (max-width: 420px) {
   .isscasig_img {
-    width: 90vw;
-    min-width: 80px;
-    max-width: 95vw;
+    width: 60vw;
+    min-width: 50px;
+    max-width: 80vw;
   }
   .isscasig_text {
     font-size: 0.95rem;
