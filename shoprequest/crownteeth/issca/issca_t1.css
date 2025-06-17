@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+.isscat1_bor {
+  margin: 20px auto;
+  padding:0.8px;
+  width: 700px;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.85), 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(
+    to bottom,
+    #FCD8A4 0%,
+    #FCD8A4 30%,
+    #fffbe6 60%,
+    #e6b87a 100%
+  );
+}
+
+.isscat1_con {
+  position: relative;
+  z-index: 0;
+  width: 699px;
+  min-height: 100px;
+  padding: 488px 14px 10px 11px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-image: url('https://i.imgur.com/sHajzi9.jpeg'), url('abstract-neb.jpg');
+  background-position: top center, center center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100%, cover;
+  pointer-events: none;
+}
+
+.isscat1_con::after {
+  content: '';
+  position: absolute;
+  top: 475px;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  height: 60px;
+  background: linear-gradient(to bottom, transparent 0, #060405 20%, transparent 100%);
+  pointer-events: none;
+}
+
+.isscat1_incon {
+  position: relative;
+  border: 0.6px solid rgba(184, 178, 130, 0.5);
+  z-index: 6;
+  padding: 20px 20px 120px;
+  width: 100%;
+  min-height: 100px;
+  box-sizing: border-box;
+  overflow: visible;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.isscat1_text {
+  margin: 0;
+  padding: 20px 30px;
+  z-index: 5;
+  font-family: 'Comic Neue';
+  font-size: 14px;
+  color: #fff;
+  text-align: justify;
+}
+
+.isscat1_text::before {
+  content: '';
+  display: block;
+  height: 2px;
+  line-height: normal;
+  margin: -10px 0 10px 0;
+  background: linear-gradient(to right, transparent 10%, #5477d8 50%, transparent 90%);
+}
+
+.isscat1_text::after {
+  content: '';
+  display: block;
+  height: 2px;
+  line-height: normal;
+  margin: 10px 0 -10px 0;
+  background: linear-gradient(to right, transparent 10%, #5477d8 50%, transparent 90%);
+}
+
+.isscat1_diag {
+  display: inline-block;
+  font-family: 'Caveat';
+  font-size: 24px;
+  font-weight: bold;
+  color: #F4CF9C;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.isscat1_speech {
+  margin: -30px 0 -130px 0;
+  font-family: 'Caveat';
+  font-size: 30px;
+  font-weight: bold;
+  color: #F4CF9C;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.isscat1_star {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('white-star.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0 0 3px #ffe6f3);
+  opacity: 1;
+  vertical-align: middle;
+}
+
+.isscat1_star1, .isscat1_star2, .isscat1_star3, .isscat1_star4, .isscat1_star5 {
+	 position: absolute;
+	   width: 30px;
+  height: 30px;
+   background-size: contain;
+  background-repeat: no-repeat;
+  animation: isscat1_subtleGlow 3s ease-in-out infinite;
+  opacity: 0;
+  background-image: url('white-star.png');
+  z-index: 5;
+}
+
+.isscat1_star1 {
+  top: 50px;
+  right: 270px;
+  animation: isscat1_blinkFade 4s ease-in-out infinite;
+  animation-delay: 0s;
+}
+
+.isscat1_star2 {
+  top: 220px;
+  left: 120px;
+  animation: isscat1_blinkFade 6s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.isscat1_star3 {
+  top: 300px;
+  right: 60px;
+  animation: isscat1_blinkFade 5s ease-in-out infinite;
+  animation-delay: 2.5s;
+}
+
+.isscat1_star4 {
+  top: 20px;
+  left: 10px;
+  animation: isscat1_blinkFade 7s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+.isscat1_star5 {
+  bottom: 20px;
+  right: 30px;
+  animation: isscat1_blinkFade 8s ease-in-out infinite;
+  animation-delay: 3s;
+}
+
+@keyframes isscat1_blinkFade {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes isscat1_subtleGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 2px white) drop-shadow(0 0 6px rgba(55, 190, 205, 0.6));
+  }
+  50% {
+    filter: drop-shadow(0 0 2px white) drop-shadow(0 0 10px rgba(55, 190, 205, 0.9));
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .isscat1_con::after {
+    display: none !important;
+  }
+}
