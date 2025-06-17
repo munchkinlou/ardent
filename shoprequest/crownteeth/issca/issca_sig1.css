@@ -36,6 +36,7 @@
   z-index: 0;
   filter: grayscale(40%);
   border-radius: inherit;
+  transform: scaleX(-1);
 }
 
 .isscasig_ban > * {
