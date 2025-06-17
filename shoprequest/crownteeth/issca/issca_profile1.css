@@ -344,3 +344,7 @@ p {
 	margin-bottom: 12px;
 	object-fit: cover;
 }
+
+@media (max-width: 1200px) {  
+	.profav { display: none }
+}
