@@ -71,7 +71,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: normal;
-  max-width: 300px;
+  max-width: 350px;
   box-sizing: border-box;
 }
 
