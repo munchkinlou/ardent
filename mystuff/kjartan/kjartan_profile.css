@@ -248,3 +248,7 @@ p {
   margin: 0 auto 8px auto;
 }
 
+@media (max-width: 1200px) {  
+	.profav { display: none }
+}
+
