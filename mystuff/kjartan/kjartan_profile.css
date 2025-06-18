@@ -106,6 +106,7 @@ p {
 
 .profav {
 	min-width: 250px;
+	min-height: 320px;
 	border: 5px double #ffffff;
 	overflow: hidden;
 	display: flex;
@@ -115,12 +116,11 @@ p {
 }
 
 .profav img {
-	content: url('https://ik.imagekit.io/arl59/Ardent/Kjartan/Andy_winter.png?updatedAt=1750138175064') !important;
-	width: 250px;
-	height: 320px;;
+	width: 100%;
+	height: 100%;
 	object-fit: cover;
 	display: block;
-	object-position: left center;
+	object-position: center center;
 	pointer-events: none;
 }
 
@@ -304,7 +304,7 @@ p {
 
 .artcompendium_credit {
 	position: absolute;
-	left: 0; right: 0; bottom: 0;
+	left: 0; right: 0; top: 0;
 	background: rgba(30, 30, 30, 0.85);
 	color: #fff;
 	font-size: 15px;
@@ -312,7 +312,7 @@ p {
 	text-align: center;
 	opacity: 0;
 	pointer-events: none;
-	border-radius: 0 0 8px 8px;
+	border-radius: 8px 8px 0 0;
 	transition: opacity 0.2s;
 	z-index: 2;
 }
@@ -322,45 +322,6 @@ p {
 	opacity: 1;
 	pointer-events: auto;
 }
-
-.lightbox_overlay {
-	position: fixed;
-	z-index: 10;
-	left: 0; top: 0; width: 100vw; height: 100vh;
-	background: rgba(20,20,20,0.95);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	transition: opacity 0.2s;
-}
-
-.lightbox_img {
-	max-width: 90vw;
-	max-height: 80vh;
-	border-radius: 12px;
-	margin-bottom: 16px;
-}
-
-.lightbox_close {
-	position: absolute;
-	top: 32px;
-	right: 48px;
-	font-size: 3rem;
-	color: #fff;
-	cursor: pointer;
-	z-index: 10000;
-	user-select: none;
-}
-
-.lightbox_credit {
-	color: #fff;
-	font-size: 1.2rem;
-	text-align: center;
-	margin-bottom: 16px;
-	text-shadow: 0 2px 8px #000;
-}
-
 @media (max-width: 600px) {
 	.misc_info_item_fullwidth .collapse_content {
 		max-height: 300px;
@@ -373,3 +334,4 @@ p {
 @media (max-width: 1200px) {  
 	.profav { display: none }
 }
+
