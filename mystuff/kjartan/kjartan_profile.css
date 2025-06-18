@@ -202,16 +202,15 @@ p {
 }
 
 .misc_info_group {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	gap: 10px;
 	margin: 20px auto;
 	max-width: 1000px;
 }
 
-.misc_info_item {
-	flex: 1 1 300px;
+.misc_info_item,
+.misc_info_item_fullwidth {
 	padding: 15px;
 	box-sizing: border-box;
 }
@@ -258,29 +257,25 @@ p {
 	margin: 0 auto 8px auto;
 }
 
-
 .misc_info_item_fullwidth {
-	flex: 0 0 100%;
+	grid-column: span 3;
+	margin-top: 10px;
 	width: 100%;
 	max-width: 100%;
-	margin-top: 10px;
+	padding: 15px;
+	box-sizing: border-box;
 }
 
 .misc_info_item_fullwidth .collapse_content {
-	height: 350px;
-	max-height: 350px;
 	overflow-x: auto;
 	overflow-y: hidden;
 	display: flex;
 	flex-wrap: nowrap;
 	gap: 10px;
-	justify-content: flex-start;
 	align-items: center;
-	scrollbar-color: #888 #222;
-	scrollbar-width: thin;
-	width: 100%;
-	min-width: 0;
-	padding: 0 8px;
+	height: 350px;
+	max-height: 350px;
+	padding: 0 15px;
 }
 
 .misc_info_item_fullwidth .collapse_content > .artcompendium_img_wrap {
@@ -295,7 +290,6 @@ p {
 	flex: 0 0 auto;
 	object-fit: cover;
 }
-
 
 .artcompendium_img_wrap {
 	position: relative;
@@ -340,4 +334,11 @@ p {
 @media (max-width: 1200px) {  
 	.profav { display: none }
 }
+
+@media (max-width: 900px) {
+	.misc_info_item_fullwidth {
+		grid-column: 1 / -1;
+	}
+}
+
 
