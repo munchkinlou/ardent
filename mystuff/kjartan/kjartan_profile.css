@@ -106,7 +106,7 @@ p {
 
 .profav {
 	width: 250px;
-	height: 310px;
+	height: 320px;
 	border: 5px double #ffffff;
 	overflow: hidden;
 	display: flex;
@@ -289,6 +289,7 @@ p {
 	margin-bottom: 0;
 	flex: 0 0 auto;
 	object-fit: cover;
+	pointer-events: none;
 }
 
 .artcompendium_img_wrap {
@@ -340,4 +341,3 @@ p {
 		grid-column: 1 / -1;
 	}
 }
-
