@@ -267,8 +267,8 @@ p {
 }
 
 .misc_info_item_fullwidth .collapse_content {
-	height: 400px;
-	max-height: 400px;
+	height: 350px;
+	max-height: 350px;
 	overflow-x: auto;
 	overflow-y: hidden;
 	display: flex;
@@ -280,7 +280,7 @@ p {
 	scrollbar-width: thin;
 	width: 100%;
 	min-width: 0;
-	padding-right: 8px;
+	padding: 0 8px;
 }
 
 .misc_info_item_fullwidth .collapse_content > .artcompendium_img_wrap {
@@ -317,7 +317,7 @@ p {
 	text-align: center;
 	opacity: 0;
 	pointer-events: none;
-	border-radius: 8px 8px 0 0;
+	border-radius: 8px;
 	transition: opacity 0.2s;
 	z-index: 2;
 }
