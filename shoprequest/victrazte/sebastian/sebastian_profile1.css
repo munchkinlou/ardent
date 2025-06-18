@@ -85,3 +85,10 @@ p {
 		flex: 1 1 100%;
 	}
 }
+
+@media (max-width: 1200px) {
+	body {
+		background-size: 100% auto;
+	}
+	.profav { display: none }
+}
