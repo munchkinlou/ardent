@@ -345,6 +345,9 @@ p {
 	object-fit: cover;
 }
 
-@media (max-width: 1200px) {  
+@media (max-width: 1200px) {
+	body {
+		background-size: 100% auto;
+	}
 	.profav { display: none }
 }
