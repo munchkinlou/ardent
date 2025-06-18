@@ -105,8 +105,8 @@ p {
 }
 
 .profav {
-	max-width: 200px;
-	max-height: 320px;
+	min-width: 250px;
+	min-height: 330px;
 	border: 5px double #ffffff;
 	overflow: hidden;
 	display: flex;
@@ -302,6 +302,11 @@ p {
 	display: inline-block;
 }
 
+.misc_artcompendium {
+	width: 100%;
+	display: block;
+}
+
 .artcompendium_credit {
 	position: absolute;
 	left: 0; right: 0; top: 0;
@@ -322,6 +327,7 @@ p {
 	opacity: 1;
 	pointer-events: auto;
 }
+
 @media (max-width: 600px) {
 	.misc_info_item_fullwidth .collapse_content {
 		max-height: 300px;
@@ -334,4 +340,3 @@ p {
 @media (max-width: 1200px) {  
 	.profav { display: none }
 }
-
