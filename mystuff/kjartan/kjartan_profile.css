@@ -106,7 +106,7 @@ p {
 
 .profav {
 	min-width: 250px;
-	min-height: 330px;
+	min-height: 310px;
 	border: 5px double #ffffff;
 	overflow: hidden;
 	display: flex;
@@ -315,10 +315,10 @@ p {
 	font-size: 15px;
 	padding: 8px 10px;
 	text-align: center;
-	opacity: 0;
-	pointer-events: none;
+	opacity: 1;
+	pointer-events: auto;
 	border-radius: 8px;
-	transition: opacity 0.2s;
+	transition: none;
 	z-index: 2;
 }
 
@@ -340,3 +340,4 @@ p {
 @media (max-width: 1200px) {  
 	.profav { display: none }
 }
+
