@@ -105,8 +105,8 @@ p {
 }
 
 .profav {
-	min-width: 250px;
-	min-height: 310px;
+	width: 250px;
+	height: 310px;
 	border: 5px double #ffffff;
 	overflow: hidden;
 	display: flex;
@@ -275,7 +275,7 @@ p {
 	align-items: center;
 	height: 350px;
 	max-height: 350px;
-	padding: 0 15px;
+	padding: 0 15px 10px;
 }
 
 .misc_info_item_fullwidth .collapse_content > .artcompendium_img_wrap {
@@ -340,5 +340,4 @@ p {
 		grid-column: 1 / -1;
 	}
 }
-
 
