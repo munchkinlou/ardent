@@ -106,7 +106,7 @@ p {
 
 .profav {
 	min-width: 250px;
-	min-height: 320px;
+	min-height: 300px;
 	border: 5px double #ffffff;
 	overflow: hidden;
 	display: flex;
