@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+
+body {
+	position: relative;
+	background-repeat: repeat-y;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+}
+
+.body img {
+    pointer-events: none;
+}
+
+h1 {
+	color: white;
+	position: relative;
+	z-index: 1;
+	font-family: "Eagle Lake", sans-serif;
+	text-transform: capitalize !important;
+	font-size: 35px;
+	text-shadow:
+        2px 2px 4px rgba(0,0,0,0.7),
+        4px 4px 12px rgba(0,0,0,0.5);
+}
+
+h1 i {
+	font-style: normal !important;
+}
+
+nav {
+    background: rgba(43, 40, 43, 0.8) !important;
+}
+
+nav a {
+    transition: color 0.2s ease, background 0.2s ease;
+}
+
+nav a:hover {
+    color: #FDFECA !important;
+    transition: color 0.2s ease, background 0.2s ease;
+}
+
+.dropdown-menu {
+	background: rgba(43, 40, 43, 0.8) !important;
+	color: rgb(255, 255, 255) !important;
+}
+
+#content {
+    border: 3px solid rgba(3, 3, 3, 0.5);
+    border-radius: 10px;
+}
+
+.tabnav,
+.navbar_header,
+.navbar_collapse {
+	background: linear-gradient(
+		to right,
+		transparent,
+		rgba(43, 40, 43, 0.8),
+		transparent);
+	backdrop-filter: blur(2px);
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.tabnav a,
+.navbar_header a,
+.navbar_collapse a {
+	transition: color 0.2s ease, background 0.2s ease;
+}
+
+.tabnav a:hover,
+.navbar_header a:hover,
+.navbar_collapse a:hover {
+    color: #FDFECA !important;
+}
+
+.profav {
+	filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+    max-width: 250px;
+    max-height: 300px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    pointer-events: none;
+}
+
+.profav img {
+    content: url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Missy/Exposed/IMG-1444.png?updatedAt=1749871777877');
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	display: block;
+	object-position: center center;
+}
+
+.blocky {
+	font-size: 14px;
+	text-align: center;
+	backdrop-filter: blur(2px);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), 0 5px 10px rgba(0, 0, 0, 0.5);
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+	font-family: 'Comfortaa', sans-serif;
+    border-radius: 0 40px 0 40px;
+    border: 3px solid rgba(3, 3, 3, 0.5);
+}
+
+.blocky u {
+	text-decoration: none !important;
+}
+
+.blocky > span {
+	display: block;
+	font-size: 12px;
+	text-shadow: -0.5px -0.5px 0 rgba(0, 0, 0, 0.7);
+	right: 0;
+	left: 0;
+	bottom: 4px;
+	z-index: 0;
+	color: #1A1D16;
+	font-family: 'Eagle Lake', cursive;
+}
+
+.blocky a {
+	position: relative;
+	z-index: 2;
+	top: 0px;
+	font-family: arial;
+	text-transform: uppercase;
+	font-size: 12px;
+	display: inline-block;
+	font-weight: bold;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+	color: #FDFECA !important;
+	transition: color 0.2s ease;
+}
+
+.blocky a:hover {
+	color: #ffffff !important;
+}
+
+.blocky a,
+.blocky a:visited,
+.blocky a:hover,
+.blocky a u,
+.blocky span[style*="text-decoration: underline;"] {
+	text-decoration: none !important;
+}
+
+.thead {
+    font-family: 'Eagle Lake', sans-serif;
+	text-shadow: none !important;
+	border: 3px solid rgba(3, 3, 3, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), 0 5px 10px rgba(0, 0, 0, 0.5);
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+	text-align: center;
+}
+
+.sip_tbl_head,
+.sip_tbl_th,
+.sip_tbl_td {
+	background: rgba(53,60,45,0.4);
+	color: rgb(255, 255, 255) !important;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+}
+
+.info_img_container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    z-index: 2;
+}
+
+.info_quote {
+    font-family: 'Eagle Lake', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #ffffff;
+    margin: 20px auto 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+    text-align: center;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.info_img_container:hover .info_quote {
+    color: white;
+    filter: drop-shadow(0 0 15px rgba(255, 0, 0, 0.8));
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.info_imgpng {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+    transition: transform 0.5s ease, filter 0.5s ease;
+    pointer-events: none;
+}
+
+.info_imgpng:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 15px rgba(255, 0, 0, 0.8));
+}
+
+.info_app {
+    width: 95.5%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(43, 40, 43, 0.8);
+    border-radius: 0 40px 0 40px;
+    border: 3px solid rgba(3, 3, 3, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), 0 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.info_app::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Missy/Exposed/319.png?updatedAt=1750392564508');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    z-index: -1;
+    border-radius: 0 40px 0 40px;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+}
+
+.info_app:hover::before {
+    filter: grayscale(0%);
+}
+
+.info_imgper {
+    display: block;
+    width: 99.4%;
+    margin: 0 auto;
+    height: auto;
+    border: 3px solid rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    filter: grayscale(100%);
+    border-radius: 0 40px 0 0;
+    transition: filter 0.5s ease;
+  }
+
+  .info_imgper img {
+    object-fit: fill;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+  }
+  
+
+.info_per {
+    margin-top: 10px;
+    width: 95.5%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(43, 40, 43, 0.8);
+    border-radius: 0 0 0 40px;
+    border: 3px solid rgba(3, 3, 3, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), 0 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border: 3px solid rgba(0, 0, 0, 0.5);
+}
+
+.info_per::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Missy/Exposed/dipizfa-f2ff52eb-5958-4d8f-9992-c9afe2478ec1.png?updatedAt=1750394478964');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+    z-index: -1;
+    border-radius: 0 0 0 40px;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+}
+
+p {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 12px !important;
+    line-height: 1.5;
+    color: #d4d4d4;
+    margin: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.profile_container:hover .info_imgpng {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 15px rgba(255, 0, 0, 0.8));
+}
+
+.profile_container:hover .info_quote {
+    color: white;
+    filter: drop-shadow(0 0 15px rgba(255, 0, 0, 0.8));
+}
+
+.profile_container:hover .info_app::before {
+    filter: grayscale(0%);
+}
+
+.profile_container:hover .info_per::before {
+    filter: grayscale(0%);
+}
+
+.profile_container:hover .info_imgper {
+    filter: grayscale(0%);
+}
+
+.divider {
+    height: 2px;
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      white 50%,
+      transparent 100%
+    );
+    margin: 5px 0;
+    line-height: normal;
+  }
+  
+  .info_color, .info_color2 {
+    display: inline-block;
+    font-size: 13px !important;
+    font-weight: bold;
+    text-shadow:none;
+    padding: 2px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .info_color {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .info_color2 {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+.info_quote span {
+    display: block;
+}
+
+.quote_line_1 {
+    text-align: left;
+}
+
+.quote_line_2 {
+    text-align: right;
+}
+
+.corner_img {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    top: -150px;
+    right: -15px;
+    pointer-events: none;
+    z-index: 10;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+  }
+
+
+  .misc_row {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	align-items: stretch;
+}
+
+  .misc_box {
+	flex: 1 1 0;
+	max-width: 50%;
+	min-width: 200px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	background-color: #1B1A1A;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+  .misc_ban {
+	margin: 5px;
+	border-radius: 10px;
+	border: 4px solid white;
+	align-self: stretch;
+	height:150px;
+	background: url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Missy/Exposed/Expo_eyes.jpg?updatedAt=1750436352085');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-color: white;
+	position: relative;
+	overflow: hidden;
+  }
+
+.misc_subtitle {
+	font-family: 'redressed', cursive;
+	font-size: 20px;
+	color: #FDFECA;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+	text-align: center;
+    margin: 5px 0 -15px;
+}
+
+.misc_info_item_fullwidth {
+	width: 100%;
+	padding: 15px;
+	box-sizing: border-box;
+	display: flex;
+    flex-direction: column;
+}
+
+.misc_info_item_fullwidth .compendium_content {
+	overflow-x: auto;
+	overflow-y: hidden;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	gap: 10px;
+	align-items: center;
+	padding: 20px 15px 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 3px solid rgba(0, 0, 0, 0.5);
+	height: 500px;
+}
+
+.misc_info_item_fullwidth .compendium_content > .artcompendium_img_wrap {
+	flex: 0 0 auto;
+}
+
+.misc_info_item_fullwidth .compendium_content img {
+	height: 100%;
+	width: auto;
+	border-radius: 8px;
+	flex: 0 0 auto;
+	object-fit: cover;
+	pointer-events: none;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+    border-radius: 20px;
+}
+
+.artcompendium_img_wrap {
+	position: relative;
+	display: flex;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.misc_artcompendium {
+	width: 100%;
+	display: block;
+}
+
+.artcompendium_img_wrap:hover .artcompendium_credit,
+.artcompendium_img_wrap:focus-within .artcompendium_credit {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+@media (max-width: 600px) {
+	.misc_info_item_fullwidth .compendium_content {
+		max-height: 300px;
+	}
+	.misc_info_item_fullwidth .compendium_content img {
+		max-width: 90vw;
+	}
+}
+
+@media (max-width: 1200px) {
+	body {
+		background-size: 100% auto;
+	}
+	.profav { display: none }
+}
+
+@media (max-width: 900px) {
+	.misc_info_item_fullwidth {
+		grid-column: 1 / -1;
+	}
+	.misc_row {
+		flex-direction: column;
+		align-items: center;
+	}
+	.misc_box {
+		max-width: 100%;
+		width: 95%;
+	}
+}
+
