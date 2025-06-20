@@ -428,6 +428,7 @@ p {
 	box-sizing: border-box;
 	display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .misc_info_item_fullwidth .compendium_content {
@@ -482,9 +483,6 @@ p {
 	.misc_info_item_fullwidth .compendium_content {
 		max-height: 300px;
 	}
-	.misc_info_item_fullwidth .compendium_content img {
-		max-width: 90vw;
-	}
 }
 
 @media (max-width: 1200px) {
@@ -507,4 +505,3 @@ p {
 		width: 95%;
 	}
 }
-
