@@ -39,8 +39,10 @@ h1 i {
 .sip_tbl_th,
 .sip_tbl_td {
 	background-color: rgba(56, 55, 54, 0.5);
+	border: 10px double #1B1B1B;
 	color: #ffffff !important;
 }
+
 
 .tabnav,
 .navbar_header,
