@@ -38,8 +38,8 @@ h1 i {
 .sip_tbl_head,
 .sip_tbl_th,
 .sip_tbl_td {
-	background: rgba(204, 204, 194, 0.6);
-	color: #1B1B1B !important;
+	background-color: rgba(56, 55, 54, 0.5);
+	color: #ffffff !important;
 }
 
 .tabnav,
