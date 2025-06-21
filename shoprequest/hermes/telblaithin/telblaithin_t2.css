@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=My+Soul&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+.telblaithin2_bor {
+  padding: 2px;
+  background: linear-gradient(to top,
+  rgba(4, 12, 35, 1),
+  rgba(110, 21, 59, 0.8),
+  rgba(110, 21, 59, 0.8),
+  rgba(4, 12, 35, 1));
+  box-sizing: border-box;
+  width: 700px;
+  margin: 20px auto;
+  box-shadow:
+  10px 10px 10px rgba(0, 0, 0, 0.85),
+  20px 20px 50px rgba(0, 0, 0, 0.5);
+
+}
+
+.telblaithin2_con {
+  width: 100%;
+  min-height: 500px;
+  padding: 280px 20px 20px 20px;
+  position: relative;
+  box-sizing: border-box;
+  overflow: visible;
+  background: #040C23 url('https://images2.imgbox.com/28/7a/viYgXCCe_o.png') no-repeat top;
+  background-size: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.telblaithin2_con::after {
+  content: '';
+  position: absolute;
+  top: 300px;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  height: 300px;
+  background: linear-gradient(to top, transparent 0, #040C23 50%, transparent 100%);
+  pointer-events: none;
+}
+
+
+.telblaithin2_inbor {
+  position: relative;
+  padding: 1px;
+  background: linear-gradient(to top,
+  rgba(248, 234, 144, 0.8),
+  rgba(4, 12, 35, 0.8));
+  box-sizing: border-box;
+  width: 100%;
+  margin: 140px auto 0 auto;
+  z-index: 2;
+}
+
+.telblaithin2_incon {
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  padding: 50px 20px;
+  box-sizing: border-box;
+  overflow: visible;
+  background: linear-gradient(to top,
+  #261430,
+  rgba(4, 12, 35, 0.9));
+  z-index: 3;
+  
+}
+
+.telblaithin2_bgvid {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.1;
+  z-index: 1;
+  pointer-events: none;
+  padding: 0;
+  -webkit-mask-image: linear-gradient(to top, black 70%, transparent 100%);
+  mask-image: linear-gradient(to top, black 70%, transparent 100%);
+}
+
+
+.telblaithin2_text {
+	color: #DFC7C9;
+	font-family: 'Red Hat Display';
+	font-size:14px;
+	line-height:1.3;
+	text-align:justify;
+	margin: -30px 20px 0px 20px;
+}
+
+.telblaithin2_text::after {
+  content: '';
+  display: block;
+  height: 2px;
+  line-height: normal;
+  margin: 10px 0 -10px 0;
+  background: linear-gradient(to right, transparent 10%, #B0B7C6 50%, transparent 90%);
+}
+
+
+.telblaithin2_speech {
+  margin: 0px 0 -50px 0;
+  font-family: 'My Soul';
+  font-size: 30px;
+  font-weight: bold;
+  color: transparent;
+  text-align: center;
+  background: linear-gradient(to bottom, #7B3028, #DF9350, #7B3028);
+  -webkit-background-clip: text;
+  background-clip: text;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+
+.telblaithin2_diag {
+  display: inline-block;
+  font-family: 'My Soul';
+  font-size: 22px;
+  font-weight: bold;
+  color: transparent;
+  background: linear-gradient(to bottom, #7B3028, #DF9350, #7B3028);
+  -webkit-background-clip: text;
+  background-clip: text;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+
+
+@media (max-width: 1200px) {
+  .telblaithin2_con::after {
+    display: none;
+  }
+
+
+  .telblaithin2_diag, .telblaithin2_speech, .telblaithin2_nordic, .telblaithin2_spanish {
+    filter: none;
+  }
+
+  .telblaithin2_bgvid {
+    display: none;
+  }
+
+}
