@@ -80,12 +80,23 @@
   line-height: 1.2;
 }
 
+.telblaithin_top {
+  display: block;
+  font-size: 8px;
+  text-align: left;
+  font-family: 'Red Hat Display';
+  padding: 0 20px;
+  min-width: 120px;
+  max-width: 550px;
+  width: 100%;
+  z-index: 0;
+  margin: 0 0 -8px;
+}
+
 .telblaithin_sigwarnimg {
   display: block;
   font-size: 8px;
-  margin-right: auto;
-  margin-left: -30px;
-  margin-top: 10px;
+  margin: -8px auto 0 -30px;
   text-align: center;
   font-family: 'Red Hat Display';
   padding: 0 20px;
