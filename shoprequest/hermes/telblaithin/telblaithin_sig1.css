@@ -10,9 +10,8 @@
   box-sizing: border-box;
   width: 100%;
   max-width: 550px;
-  margin: 0 auto 40px;
+  margin: 50px auto;
   position: relative;
-  padding-top: 80px;
 }
 
 .telblaithin_sig_ban {
@@ -33,7 +32,7 @@
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Hermes/TelBlaithin/5.png?updatedAt=1750538701477') center/cover no-repeat;
+  background: url('5.png') center/cover no-repeat;
   z-index: 0;
   border-radius: inherit;
   transform: scaleX(-1);
@@ -55,43 +54,42 @@
   z-index: 2;
 }
 
-.telblaithin_sig_text {
+.telblaithin_box {
   display: block;
+  min-width: 120px;
+  max-width: 350px;
+  width: 100%;
+  height: 80%;
+  margin: 15px;
+  overflow: hidden;
+  background-color: rgba(29, 17, 55,0.7);
+  border: 3px solid #1D1137;
+  box-sizing: border-box;
+}
+
+.telblaithin_sig_text {
   color: #fff;
   font-size: 15px;
   font-weight: 400;
   font-family: 'My Soul', cursive;
   text-shadow: 0 0 8px #000, 0 0 2px #000000,0 0 2px #000000;
-  padding: 0 20px;
-  min-width: 120px;
-  max-width: 350px;
-  width: 100%;
-  padding: 10px;
   word-break: break-word;
   text-align: center;
-  margin-right: auto;
-  margin-left: 10px;
-  overflow: hidden;
-  text-overflow: ellipsis;
   white-space: normal;
-  box-sizing: border-box;
-  background-color: rgba(29, 17, 55,0.7);
-  border: 3px solid #1D1137;
+  margin: -12px 0 0 0;
 }
 
 .telblaithin_sigwarnimg {
   display: block;
-  font-size: 10px;
-  color: #fff;
+  font-size: 8px;
   margin-right: auto;
-  margin-left: -20px;
+  margin-left: -30px;
   margin-top: 10px;
   text-align: center;
   font-family: 'Red Hat Display';
-  text-shadow: 0 0 8px #000, 0 0 2px #000000,0 0 2px #000000;
   padding: 0 20px;
   min-width: 120px;
-  max-width: 350px;
+  max-width: 380px;
   width: 100%;
   z-index: 0;
 }
