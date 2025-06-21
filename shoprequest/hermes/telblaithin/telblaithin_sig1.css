@@ -82,27 +82,22 @@
 
 .telblaithin_top {
   display: block;
-  font-size: 8px;
+  font-size: 9px;
   text-align: left;
   font-family: 'Red Hat Display';
-  min-width: 120px;
-  max-width: 550px;
-  width: 100%;
   z-index: 0;
-  margin: 0 0 -8px 0;
+  margin: 0 auto -8px 0;
+  letter-spacing: 0.1px;
 }
 
 .telblaithin_sigwarnimg {
   display: block;
-  font-size: 8px;
-  margin: -8px 0 0 0;
+  font-size: 9px;
+  margin: -8px auto 0 0;
   text-align: left;
   font-family: 'Red Hat Display';
-  padding: 0 20px;
-  min-width: 120px;
-  max-width: 550px;
-  width: 100%;
   z-index: 0;
+  letter-spacing: 0.1px;
 }
 
 @media (max-width: 700px) {
