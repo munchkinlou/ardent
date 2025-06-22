@@ -7,10 +7,11 @@
   text-align: center;
   font-family: 'Mrs Saint Delafield', cursive;
   font-size: 40px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
 }
 
 .c_andysignature {
-  width: auto;
+  width: 300px;
   height: 300px;
   margin: 0 -100px;
 }
@@ -22,12 +23,12 @@
 
 .andysignature_tooltiptext {
   visibility: hidden;
-  width: 150px;
+  width: auto;
   color: #333;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   text-align: center;
-  padding: 8px 0;
+  padding: 8px 10px;
   position: absolute;
   z-index: 2;
   bottom: 0;
