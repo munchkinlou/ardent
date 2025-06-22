@@ -25,7 +25,7 @@
 .andysignature_tooltip {
   position: relative;
   display: inline-block;
-  pointer-events: none;
+  opacity: 1;
 }
 
 .andysignature_tooltiptext {
@@ -55,18 +55,10 @@
 }
 
 .c_andysignature_spoiler {
-  background-color: black;
+  filter: brightness(0);
+  transition: filter 0.3s ease-in-out;
 }
 
-.c_andysignature_spoiler img {
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.c_andysignature_spoiler:hover {
-  background-color: transparent;
-}
-
-.c_andysignature_spoiler:hover img {
-  opacity: 1;
+.andysignature_tooltip:hover .c_andysignature_spoiler {
+  filter: brightness(1);
 }
