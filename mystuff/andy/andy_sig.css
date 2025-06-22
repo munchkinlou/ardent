@@ -2,7 +2,7 @@
 
 .andysignature {
   background-color: transparent;
-  padding: 10px 0 0 0;
+  padding: 10px 0 0;
   box-sizing: border-box;
   text-align: center;
   font-family: 'Mrs Saint Delafield', cursive;
@@ -10,8 +10,9 @@
 }
 
 .c_andysignature {
-  width: auto;
-  height: 230px;
+  width: 150px;
+  height: auto;
+  margin: 0 -50px;
 }
 
 .andysignature_tooltip {
@@ -44,4 +45,13 @@
 .andysignature_tooltip:hover .andysignature_tooltiptext {
   visibility: visible;
   opacity: 1;
+}
+
+.c_andysignature_spoiler {
+  filter: brightness(0);
+  transition: filter 0.3s ease-in-out;
+}
+
+.andysignature_tooltip:hover .c_andysignature_spoiler {
+  filter: brightness(1);
 }
