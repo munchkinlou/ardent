@@ -12,11 +12,13 @@
 .c_andysignature {
   width: auto;
   height: 230px;
+  object-fit: contain;
 }
 
 .andysignature_tooltip {
   position: relative;
   display: inline-block;
+  pointer-events: none;
 }
 
 .andysignature_tooltiptext {
@@ -38,12 +40,6 @@
   font-family: 'arial', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
-  pointer-events: none;
-}
-
-.andysignature_tooltip:hover .andysignature_tooltiptext {
-  visibility: visible;
-  opacity: 1;
 }
 
 .andysignature_tooltip:hover .andysignature_tooltiptext {
