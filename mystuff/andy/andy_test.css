@@ -9,12 +9,22 @@
   font-size: 40px;
 }
 
+.character_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
 .c_andysignature_container {
   width: 230px;
-  margin: 0 0 30px;
   height: 230px;
-  display: inline-block;
-  vertical-align: middle;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.c_andysignature_container + .c_andysignature_container {
+  margin-left: -90px;
 }
 
 .c_andysignature {
@@ -24,7 +34,6 @@
 }
 
 .andysignature_tooltip {
-  position: relative;
   display: inline-block;
   opacity: 1;
 }
