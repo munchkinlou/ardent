@@ -9,16 +9,33 @@
   font-size: 40px;
 }
 
-.c_andysignature {
+.character_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.c_andysignature_container {
   width: 230px;
   height: 230px;
-  object-fit: contain;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.c_andysignature_container + .c_andysignature_container {
+  margin-left: -90px;
+}
+
+.c_andysignature {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .andysignature_tooltip {
-  position: relative;
   display: inline-block;
-  pointer-events: none;
+  opacity: 1;
 }
 
 .andysignature_tooltiptext {
@@ -34,7 +51,7 @@
   bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.3s;
   font-size: 10px;
   font-family: 'arial', sans-serif;
