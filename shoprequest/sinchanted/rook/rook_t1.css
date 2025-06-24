@@ -177,8 +177,14 @@
 
 @media (max-width: 1200px) {
 
-  .rookt1_content {
-    filter: none;
+  .rookt1_content,
+  .rookt1_img,
+  .rookt1_inbor,
+  .rookt1_incon,
+  .rookt1_text,
+  .rookt1_title {
+    filter: none !important;
+    box-shadow: none !important;
   }
 
   .rookt1_img {
