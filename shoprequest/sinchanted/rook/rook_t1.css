@@ -102,7 +102,7 @@
   line-height: 1.2;
   margin: 20px 20px 0 20px;
   background: linear-gradient(to bottom, #000000, #000000, #000000) ;
-  padding: 20px 20px 670px 20px;
+  padding: 20px 30px 670px;
   border-radius: 10px;
   border: 3px solid;
   border-image: linear-gradient(to bottom, #630404, #000000, transparent) 1;
@@ -156,7 +156,7 @@
 
 .rookt1_title {
   position: absolute;
-  top: 120px;
+  top: 150px;
   left: 0;
   width: 500px;
   height: 230px;
