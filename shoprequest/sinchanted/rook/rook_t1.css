@@ -186,21 +186,15 @@
   }
 
   .rookt1_bor,
-  .rookt1_con {
+  .rookt1_con,
+  .rookt1_incon,
+  .rookt1_inbor {
     -webkit-mask-image: none;
     mask-image: none;
   }
 
-  .rookt1_speech {
+  .rookt1_title {
     display: none;
-  }
-
-  .rookt1_incon {
-    margin: 10px;
-    border: none;
-    border-image: none;
-    box-shadow: none;
-    filter: none;
   }
 
 }
