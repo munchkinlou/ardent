@@ -433,7 +433,7 @@ p {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
 	box-sizing: border-box;
     background-color: #1B1A1A;
     border: 3px solid rgba(3, 3, 3, 0.5);
