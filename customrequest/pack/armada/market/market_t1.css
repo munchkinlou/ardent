@@ -335,3 +335,8 @@ input[type="radio"][name="tabset"] { display: none; }
   color: #222;
 }
 
+.armada_tabs_vertical_fixed input[type="radio"][name="tabset"] {
+  display: none !important;
+}
+
+
