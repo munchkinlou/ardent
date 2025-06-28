@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+
+
+.citadelt2_content {
+  width: 100%;
+  max-width: 700px;
+  margin: 300px auto 50px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background: transparent;
+  box-sizing: border-box;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.85));
+}
+
+.citadelt2_img {
+  position: absolute;
+  top: -350px;
+  left: -10px;
+  width: 700px;
+  height: 1000px;
+  background: transparent url('https://i.imgur.com/jjzn9Wb.png') no-repeat center center;
+  background-size: contain;
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0 0 20px rgba(255,255,255,0)) brightness(1);
+  animation: citadel-glow 7s linear infinite;
+}
+
+@keyframes citadel-glow {
+  0% {
+    filter: drop-shadow(0 0 8px #fff) brightness(1.02);
+  }
+  25% {
+    filter: drop-shadow(0 0 16px #fff) brightness(1.5);
+  }
+  50% {
+    filter: drop-shadow(0 0 30px #fff) brightness(2);
+  }
+  75% {
+    filter: drop-shadow(0 0 16px #fff) brightness(1.5);
+  }
+  100% {
+    filter: drop-shadow(0 0 8px #fff) brightness(1.02);
+  }
+}
+
+.citadelt2_bor {
+  position: relative;
+  width: 480px;
+  margin: 20px auto;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.85), 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background: black;
+  clip-path: polygon(
+    50% 0%,
+    100% 180px,
+    100% calc(100% - 180px),
+    50% 100%,
+    0% calc(100% - 180px),
+    0% 180px
+  );
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.citadelt2_con {
+  position: relative;
+  width: 470px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 40%, rgba(0,0,0,1) 100%), url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Seadragoness/Citadel/moutainssnow.png?updatedAt=1751079719595');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  clip-path: polygon(
+    50% 0%,
+    100% 175px,
+    100% calc(100% - 175px),
+    50% 100%,
+    0% calc(100% - 175px),
+    0% 175px
+  );
+  padding-top: 400px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.citadelt2_inbor {
+  position: relative;
+  z-index: 6;
+  margin: 0 auto;
+  padding: 2px;
+  width: 85%;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #000 0, #000 20%, white 50%, #ADA673 100%);
+  clip-path: polygon(
+    50% 0%,
+    100% 180px,
+    100% calc(100% - 145px),
+    50% 100%,
+    0% calc(100% - 145px),
+    0% 180px
+  );
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.85));
+}
+
+.citadelt2_incon {
+  position: relative;
+  z-index: 6;
+  padding: 130px 40px 30px;
+  width: 100%;
+  min-height: 400px;
+  box-sizing: border-box;
+  overflow: visible;
+  background: black;
+  clip-path: polygon(
+    50% 0%,
+    100% 180px,
+    100% calc(100% - 145px),
+    50% 100%,
+    0% calc(100% - 145px),
+    0% 180px
+  );
+}
+.citadelt2_incon::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 30px solid #fff;
+  z-index: 7;
+}
+
+.citadelt2_text {
+  text-align: justify;
+  font-family: 'Bellefair';
+  font-size: 17px;
+  color: #4B9BE7;
+  text-shadow: 0px 0px 1px #e89f95;
+  line-height: 1.2;
+  margin: 50px 0 20px 0;
+}
+
+.citadelt2_divider {
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    white 50%,
+    transparent 100%
+  );
+  margin: 5px 0;
+  line-height: normal;
+}
+
+@keyframes white-glow {
+  0% {
+    text-shadow: 0 0 4px #ADA673, 0 0 2px #ADA673;
+  }
+  50% {
+    text-shadow: 0 0 16px #ADA673, 0 0 8px #ADA673;
+  }
+  100% {
+    text-shadow: 0 0 4px #ADA673, 0 0 2px #ADA673;
+  }
+}
+
+.citadelt2_divider{
+  width: 100%;
+  border-top: 1px solid transparent;
+  border-image: linear-gradient(to right, transparent 0%, #ADA673 50%, transparent 100%);
+  border-image-slice: 1;
+  margin-bottom: 10px;
+}
+
+.citadelt2_speech {
+  position: relative;
+  font-family: 'Germania One';
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 0 0 8px #fff, 0 0 2px #ADA673;
+  margin: -30px 0 0 0;
+  animation: white-glow 8s ease-in-out infinite;
+}
+
+.citadelt2_diag {
+  font-size: 18px;
+  font-family: 'Germania One';
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0 0 8px #fff, 0 0 2px #ADA673;
+  animation: white-glow 8s ease-in-out infinite;
+}
+
+@media (max-width: 1200px) {
+  .citadelt2_content {
+    filter: none;
+  }
+
+  .citadelt2_bor, 
+  .citadelt2_con, 
+  .citadelt2_inbor, 
+  .citadelt2_incon {
+    clip-path: none;
+  }
+
+  .citadelt2_img {
+    filter: none;
+  }
+
+  .citadelt2_incon::before {
+    display: none;
+  }
+}
