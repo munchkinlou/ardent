@@ -130,4 +130,14 @@
     display: none;
   }
 
+  .wyvernt6_content {
+    filter: none;
+  }
+
+  .wyvernt6_con::before {
+    display: none;
+  }
+
+}
+
 }
