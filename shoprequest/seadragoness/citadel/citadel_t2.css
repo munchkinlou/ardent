@@ -84,6 +84,7 @@
   padding-bottom: 50px;
   box-sizing: border-box;
   margin: 0 auto;
+  pointer-events: none;
 }
 
 .citadelt2_inbor {
@@ -201,7 +202,7 @@
 }
 
 @media (max-width: 1200px) {
-  .citadelt2_content {
+  .citadelt2_content, .citadelt2_inbor {
     filter: none;
   }
 
