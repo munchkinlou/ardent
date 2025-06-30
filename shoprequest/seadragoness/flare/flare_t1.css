@@ -141,11 +141,11 @@
 }
 
 .flaret1_diag {
+  color: transparent;
   background: linear-gradient(to bottom, #ffe066 0%, #ffae42 50%, #caa501 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
-  color: transparent;
+  text-shadow: none;
 }
 
 .flaret1_diagb {
@@ -172,8 +172,10 @@
     padding: 0;
   }
 
-  .flaret1_bgvid {
+  .flaret1_bgvid, .flaret1_con::after {
     display:none;
   }
+  
 }
+
 
