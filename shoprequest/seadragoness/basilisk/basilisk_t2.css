@@ -137,3 +137,22 @@ background: linear-gradient(to bottom, #000000, #7F8BC7, #48768D, #151D1F);
   background-clip: text;
   filter: drop-shadow(0 0 5px #43e0e6);
 }
+
+@media (max-width: 1200px) {
+  .basiliskt2_diag, .basiliskt2_diagb {
+    filter: none;
+  }
+
+  .basiliskt2_inbor, .basiliskt2_incon {
+    border-radius: 0;
+  }
+
+  .basiliskt2_con::after {
+    display: none;
+  }
+
+  .basiliskt2_text::before, .basiliskt2_text::after {
+    display: none;
+  }
+
+}
