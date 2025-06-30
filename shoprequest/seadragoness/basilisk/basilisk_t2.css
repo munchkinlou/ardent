@@ -139,11 +139,11 @@ background: linear-gradient(to bottom, #000000, #7F8BC7, #48768D, #151D1F);
 }
 
 @media (max-width: 1200px) {
-  .basiliskt2_diag, .basiliskt2_diagb {
+  .basiliskt2_diag, .basiliskt2_diagb, .basiliskt2_speech, .basiliskt2_text {
     filter: none;
   }
 
-  .basiliskt2_inbor, .basiliskt2_incon {
+  .basiliskt2_bor, .basiliskt2_con, .basiliskt2_inbor, .basiliskt2_incon {
     border-radius: 0;
   }
 
