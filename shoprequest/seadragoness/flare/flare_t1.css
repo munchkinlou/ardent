@@ -123,6 +123,7 @@
 }
 
 .flaret1_speech {
+  color: transparent;
   position: relative;
   margin: -40px auto 0 20px;
   font-family: 'FireBlast';
