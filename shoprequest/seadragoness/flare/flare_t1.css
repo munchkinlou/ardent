@@ -155,3 +155,25 @@
   background-clip: text;
   text-shadow: none;
 }
+
+@media (max-width: 1200px) {
+  .flaret1_content {
+    margin: 0;
+    filter: none;
+  }
+
+  .flaret1_bor,
+  .flaret1_con,
+  .flaret1_incon,
+  .flaret1_text {
+    -webkit-mask-image: none;
+    mask-image: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .flaret1_bgvid {
+    display:none;
+  }
+}
+
