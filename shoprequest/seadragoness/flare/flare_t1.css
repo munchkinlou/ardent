@@ -1,0 +1,157 @@
+@font-face {
+  font-family: 'FireBlast';
+  src: url('FireBlast-51Dwz.otf') format('truetype');
+}
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+.andy_tc {
+  display:block;
+  text-align:center;
+  font-size:10px;
+}
+
+.flaret1_content {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 50px auto -40px auto;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+  filter: drop-shadow(0 8px 10px rgba(0,0,0,0.75));
+}
+
+.flaret1_img {
+  position: absolute;
+  bottom: 10px;
+  left: -270px;
+  width: 210%;
+  height: 800px;
+  background: transparent url('https://i.imgur.com/t4kGrGh.png') no-repeat center center;
+  background-size: contain; 
+  z-index: 1;
+  pointer-events: none;
+  filter:
+    drop-shadow(0 0 4px #ffae42cc)
+    drop-shadow(0 0 8px #d3420d88);
+}
+
+.flaret1_bor {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom, #d1a90a 0%, #8f1b0b 40%, transparent 100%);
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 750 320'%3e%3cpath d='M0 320Q565 320 750 320 747 209 660 189 685 229 635 249 590 115 375 0 160 115 115 249 65 229 85 189 3 209 0 320Z'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 740 320'%3e%3cpath transform='scale(1,-1) translate(0,-320)' d='M0 397Q565 405 750 402 747 209 660 189 685 229 635 249 590 115 375 0 160 115 115 249 65 229 85 189 3 209 0 397Z'/%3e%3c/svg%3e"), linear-gradient(black, black);
+  -webkit-mask-position: center -28px, bottom center, 0 220px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 270px, 100% 290px, 100% calc(100% - 500px);
+  mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 750 320'%3e%3cpath d='M0 320Q565 320 750 320 747 209 660 189 685 229 635 249 590 115 375 0 160 115 115 249 65 229 85 189 3 209 0 320Z'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 750 320'%3e%3cpath transform='scale(1,-1) translate(0,-320)' d='M0 397Q565 405 750 402 747 209 660 189 685 229 635 249 590 115 375 0 160 115 115 249 65 229 85 189 3 209 0 397Z'/%3e%3c/svg%3e"), linear-gradient(black, black);
+  mask-position: center -28px, bottom center, 0 210px;
+  mask-repeat: no-repeat;
+  mask-size: 100% 270px, 100% 330px, 100% calc(100% - 530px);
+}
+
+.flaret1_con {
+  position: relative;
+  width: 100%;
+  background: rgb(0, 0, 0) url('') no-repeat center center;
+  padding: 130px 40px 10px;
+  box-sizing: border-box;
+  margin: -20px auto 0;
+  pointer-events: none;
+  -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 750 320'%3e%3cpath d='M0 320Q565 320 750 320 747 209 688 192 693 233 635 249 590 115 375 0 160 115 115 249 54 231 55 187 3 209 0 320Z'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 750 320'%3e%3cpath transform='scale(1,-1) translate(0,-320)' d='M0 320Q565 320 750 320 747 209 688 192 693 233 635 249 590 115 375 0 160 115 115 249 54 231 55 187 3 209 0 320Z'/%3e%3c/svg%3e"), linear-gradient(black, black);
+  -webkit-mask-position: center -28px, bottom center, 0 220px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 320px, 100% 340px, 100% calc(100% - 520px);
+  mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 750 320'%3e%3cpath d='M0 320Q565 320 750 320 747 209 688 192 693 233 635 249 590 115 375 0 160 115 115 249 54 231 55 187 3 209 0 320Z'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 750 320'%3e%3cpath transform='scale(1,-1) translate(0,-320)' d='M0 320Q565 320 750 320 747 209 688 192 693 233 635 249 590 115 375 0 160 115 115 249 54 231 55 187 3 209 0 320Z'/%3e%3c/svg%3e"), linear-gradient(black, black);
+  mask-position: center -28px, bottom center, 0 230px;
+  mask-repeat: no-repeat;
+  mask-size: 100% 320px, 100% 340px, 100% calc(100% - 500px);
+  overflow: hidden;
+}
+
+.flaret1_con::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1000px;
+  pointer-events: none;
+  z-index: 1;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.5) 100%);
+}
+
+.flaret1_bgvid {
+  position: absolute;
+  bottom: 500px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 500px);
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.3;
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
+}
+
+.flaret1_incon {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 20px 30px 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) calc(100% - 500px), transparent 100%);
+  min-height: 100px;
+  margin: 135px 0 40px;
+  border: 3px solid;
+  border-image: linear-gradient(to bottom, #d1a90a 0%, #B91D09 40%, #0E0D0D 80%, transparent 100%) 1;
+  box-shadow: 8px 8px 15px rgba(0,0,0,0.5);
+}
+
+.flaret1_text{
+  text-align:justify;
+  font-family:'Spectral';
+  font-size: 18px;
+  color:#ffffff;
+  line-height: 1.3;
+  margin: 0 0 520px;
+}
+
+.flaret1_speech {
+  position: relative;
+  margin: -40px auto 0 20px;
+  font-family: 'FireBlast';
+  font-size: 60px;
+  text-align: left;
+  background: linear-gradient(to bottom, #ffe066 0%, #ffae42 50%, #caa501 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.flaret1_diag, .flaret1_diagb {
+  font-family: 'FireBlast';
+  font-size: 26px;
+}
+
+.flaret1_diag {
+  background: linear-gradient(to bottom, #ffe066 0%, #ffae42 50%, #caa501 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.flaret1_diagb {
+  color: transparent;
+  background: linear-gradient(to right, #fbb13c, #d60808);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: none;
+}
