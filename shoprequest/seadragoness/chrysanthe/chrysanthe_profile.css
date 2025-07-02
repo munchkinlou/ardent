@@ -3,7 +3,4 @@
     src: url('Bailenson-4B0ep.otf') format('truetype');
   }
 
-
-h1 {
-	font-family: "Bailenson", sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
