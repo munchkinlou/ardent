@@ -533,45 +533,6 @@ input[type="radio"][name="tabset"] {
     border-image: none !important;
     border: none !important;
     text-shadow: none !important;
-    color: #111 !important;
+    font-size: 14px !important;
   }
-  .amt1_market_title, .amt1_stalltitle, .amt1_itemtitle, .amt1_commissiontitle, .amt1_commissionbox_title, .amt1_bulletin_subtitle, .amt1_credit h2 {
-    color: #111 !important;
-    font-size: 6vw !important;
-    font-family: sans-serif !important;
-    font-weight: bold !important;
-    letter-spacing: 0 !important;
-    text-transform: none !important;
-  }
-  .amt1_msg, .amt1_msgbox, .amt1_stallinfo, .amt1_bulletin_item, .amt1_commissionboxcol, .amt1_credit, .amt1_creditcol {
-    color: #222 !important;
-    font-size: 4vw !important;
-    font-family: sans-serif !important;
-    font-weight: normal !important;
-  }
-  .amt1_commissionbox_icon_img, .amt1_market_img, .amt1_stallimg {
-    display: none !important;
-  }
-  .armada_stall_button {
-    background: none !important;
-    color: #111 !important;
-    border: 1px solid #aaa !important;
-    border-radius: 4px !important;
-    font-size: 4vw !important;
-    font-family: sans-serif !important;
-    margin: 2vw 0 !important;
-    padding: 2vw 4vw !important;
-  }
-  .amt1_bor, .amt1_con, .amt1_stallbox, .amt1_commissionbox {
-    background: none !important;
-    border: none !important;
-    box-shadow: none !important;
-    padding: 2vw !important;
-    margin: 2vw 0 !important;
-  }
-  .amt1_credit h2 {
-    font-size: 5vw !important;
-    margin: 2vw 0 !important;
-  }
-}
-
+  .amt1_market_title, .amt1_stalltitle, .amt1_itemtitle, .amt1_commissiontitle, .amt1_commissio
