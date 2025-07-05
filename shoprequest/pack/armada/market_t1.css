@@ -606,9 +606,9 @@ input[type="radio"][name="tabset"] {
     display: flex !important;
     flex-direction: column !important;
   }
-  .amt1_commissionbox {
-    width: 90% !important;
-    margin: 0px auto 10px !important;
+  .amt1_commissionboxcol > * {
+    flex: unset !important;
+    min-width: 0 !important;
   }
   .amt1_creditcol {
     display: flex !important;
@@ -625,14 +625,16 @@ input[type="radio"][name="tabset"] {
   .amt1_commissiontitle,
   .amt1_commissionboxes,
   .amt1_commissionbox,
+  .amt1_commissionboxcol,
+  .amt1_msgbox,
   .amt1_credit,
   .amt1_creditcol {
     display: flex !important;
     flex-direction: column !important;
-    width: 100% !important;
-    align-items: center !important;
-    justify-content: center !important;
-    margin: 0 auto !important;
-    box-sizing: border-box !important;
+  }
+  .amt1_commissionboxcol > * {
+    flex: unset !important;
+    min-width: 0 !important;
   }
 }
+
