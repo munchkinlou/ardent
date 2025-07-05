@@ -132,7 +132,7 @@
   min-width: 200px;
   z-index: 20;
   background: white;
-  background-image: url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Pack/Armada/signpost.jpg?updatedAt=1751729431160');
+  background-image: url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Pack/Armada/signpost.jpg?updatedAt=1751759803243');
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -407,7 +407,7 @@ input[type="radio"][name="tabset"] {
 .armada_stall_button {
   display: block;
   padding: 10px;
-  background: url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Pack/Armada/signpost.jpg?updatedAt=1751729431160') repeat;
+  background: url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Pack/Armada/signpost.jpg?updatedAt=1751759803243') repeat;
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -524,6 +524,7 @@ input[type="radio"][name="tabset"] {
   gap: 10px;
 }
 
+
 @media (max-width: 1200px) {
   .amt1_market_title,
   .amt1_bor,
@@ -634,5 +635,6 @@ input[type="radio"][name="tabset"] {
     max-width: 100% !important;
   }
 }
+
 
 
