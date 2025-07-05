@@ -1,0 +1,519 @@
+@font-face {
+  font-family: 'MountainKing';
+  src: url('MountainKingRegular-woBYn.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Monster';
+  src: url('MonsterOfFantasy-eZg4p.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Whirlywood';
+  src: url('Whirlywood-9pRy.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'WindyWood';
+  src: url('WindyWoodDemo-nEvO.ttf') format('truetype');
+}
+
+.amt1_bor,
+.amt1_con {
+  width: 100%;
+  max-width: 700px;
+  box-sizing: border-box;
+}
+
+.amt1_bor {
+  padding:4px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.85), 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background: #000000;
+  margin: 50px auto 13px;
+}
+
+.amt1_con {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 0px;
+  position: relative;
+  z-index: 0;
+  min-height: 100px;
+  padding: 10px 10px 0px;
+  overflow: visible;
+  background: url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Pack/Armada/marblebg.jpg?updatedAt=1751729287819');
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.amt1_market_title {
+  position: absolute;
+  margin: 0 auto;
+  top: -40px;
+  display: inline-block;
+  color: #ffffff;
+  font-family: 'MountainKing';
+  font-size: 100px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  white-space: nowrap;
+  z-index: 10;
+  text-align: center;
+  width: 673px;
+  background: linear-gradient(125deg, #eaf3fa 0%, #bcd0e6 10%, #8fa9c7 20%, #6b7a8f 35%, #7792ad 43%, #ad8559 60%, #c49a6c 75%, #ffdbac 90%, #8c6239 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  filter: drop-shadow(-2px -2px 0 #000) drop-shadow(2px -2px 0 #000) drop-shadow(-2px 2px 0 #000) drop-shadow(2px 2px 0 #000);
+}
+
+.amt1_market_img {
+  width: 100%;
+  height: 450px;
+  display: block;
+  margin: 0 auto;
+  border: 3px solid;
+  border-image: linear-gradient(to bottom, #000000 0%, #ad8559 20%, #c49a6c 50%, #ffdbac 80%, #8c6239 100%) 1;
+  background: url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Pack/Armada/patron_reward._june25._seadragoness.CLIENT.png?updatedAt=1751729321373') no-repeat center center;
+  background-size: cover;
+  background-color: #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.amt1_msgbox {
+  width: 100%;
+  margin-bottom: 10px;
+  background: white;
+  background: linear-gradient(135deg, #ad8559 0%, #c49a6c 35%, #ffdbac 65%, #8c6239 100%);
+  padding: 3px;
+  box-shadow: 0 2px 8px rgba(100, 100, 150, 0.08);
+  display: block;
+}
+
+.amt1_msg {
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 1);
+  text-align: center;
+  color: #dbdbdb;
+  font-size: 18px;
+  font-family: 'Whirlywood';
+  letter-spacing: 1px;
+  padding: 40px 20px 20px;
+  background-image: url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Pack/Armada/planks_vertical.png?updatedAt=1751729378068');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: rgb(27, 15, 5);
+  border-radius: 8px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.amt1_stall {
+  position: relative;
+  z-index: 6;
+  width: 99%;
+  min-height: 100px;
+  box-sizing: border-box;
+  overflow: visible;
+  height: 100%;
+  background: transparent;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+  margin: 0 4px;
+}
+
+.amt1_stalltitle {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 200px;
+  z-index: 20;
+  background: white;
+  background-image: url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Pack/Armada/signpost.jpg?updatedAt=1751729431160');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: rgb(27, 15, 5);
+  color: #ffffff;
+  font-family: 'Monster', 'Arial', sans-serif;
+  font-size: 18px;
+  padding: 10px 40px 8px;
+  border-radius: 30px / 10px;
+  text-align: center;
+  border: 1.5px groove #2e2e2e;
+  filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5));
+  text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+  letter-spacing: 3px;
+  text-transform: lowercase;
+  width: fit-content;
+  white-space: nowrap;
+}
+
+.amt1_stallimg {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  margin: 0 auto 0;
+  background: var(--stallimg) no-repeat bottom center;
+  background-size: contain;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8));
+  background-color: rgb(27, 19, 14);
+  border-radius: 10px;
+  z-index: 2;
+  transform: var(--stalltransform);
+}
+
+.amt1_stall_columns {
+  display: flex;
+  gap: 3px;
+  width: 98%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.amt1_stallbox {
+  width: 90.5%;
+  margin: 10px auto 0;
+  border: 10px solid;
+  border-image: url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Pack/Armada/planks_vertical.png?updatedAt=1751729378068') 30 round;
+  background: rgb(31, 18, 10);
+  padding: 10px;
+  display: block;
+  box-shadow: inset 0 4px 24px 0 rgba(0,0,0,0.7);
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.amt1_stallinfo {
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: 'Whirlywood';
+  letter-spacing: 1px;
+  line-height: 1.2;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.amt1_itemcolumns {
+  display: flex;
+  gap: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.amt1_itemcolumns > * {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.amt1_itemtitle {
+  font-family: 'Monster';
+  font-size: 12px;
+  text-align: center;
+  margin: 0 10px;
+  padding: 5px 0 5px;
+  background: url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Pack/Armada/planks_vertical.png?updatedAt=1751729378068') repeat;
+  background-size: cover;
+  background-position: center bottom;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 5px;
+  color: #ffdbac;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.amt1_commissiontitle {
+  font-family: 'Monster';
+  font-size: 20px;
+  letter-spacing: 10px;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 auto 10px;
+  padding: 2px 20px;
+  text-transform: lowercase;
+  background: url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Pack/Armada/planks_vertical.png?updatedAt=1751729378068') repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.85);
+  border: 3px solid;
+  border-image: linear-gradient(135deg, #ad8559 0%, #c49a6c 35%, #ffdbac 65%, #8c6239 100%) 1;
+  width: 100%;
+  box-sizing: border-box;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.amt1_commissionboxes {
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  width: 100%;
+  pointer-events: auto;
+}
+
+.amt1_commissionbox {
+  flex: 1 1 0;
+  min-width: 0;
+  margin-bottom: 10px;
+  border: 10px solid;
+  border-image: url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Pack/Armada/planks_vertical.png?updatedAt=1751729378068') 30 round;
+  background: rgb(26, 19, 13);
+filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+  color: #fff;
+  padding: 0 20px 5px;
+  text-align: center;
+  font-family: 'Whirlywood', 'Times New Roman', serif;
+  font-size: 14px;
+  outline: 1px solid #382919;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1));
+}
+
+.amt1_commissionbox_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px 10px;
+  color: #ffffff;
+  background: transparent;
+  font-family: 'WindyWood';
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+  text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(to right, transparent, #fff, transparent) 1 0 0 0;
+  border-image-slice: 1;
+  margin: 0 0 10px;
+}
+
+.amt1_commissionbox_icon_img {
+  display: block;
+  margin: 0 auto 8px auto;
+  width: 80px;
+  height: 80px;
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 1));
+  object-fit: cover;
+}
+
+.amt1_commissionboxcol {
+  display: flex;
+  gap: 8px;
+  margin: 0 0 10px;
+  padding: 2px;
+  font-family: 'Whirlywood';
+  font-size: 16px;
+  text-align: center;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+  text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+}
+
+.amt1_commissionboxcol > * {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.amt1_credit {
+  width: 100%;
+  margin: -5px auto 5px;
+  display: block;
+  font-family: 'Whirlywood';
+  font-size: 12px;
+  color: #9b9b9b;
+  text-align: center;
+  padding: 2px 20px 10px;
+  line-height: 1.5;
+  width: 100%;
+  box-sizing: border-box;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.amt1_credit h2 {
+  font-size: 14px;
+  color: #9b9b9b;
+  text-align: center;
+  padding: 2px 20px 10px;
+  line-height: 1.1;
+  margin-bottom: -5px;
+}
+
+.amt1_creditcol {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.armada_stall_tabs_wrap {
+  display: grid;
+  grid-template-columns: 130px 1.5fr;
+  gap: 0;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.armada_stall_tab {
+  display: flex;
+  flex-direction: column;
+  min-width: 125px;
+  max-width: 125px;
+  margin-right: 0.5em;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.armada_stall_buttons {
+  grid-row: 1;
+  grid-column: 2;
+  width: 100%;
+  box-sizing: border-box;
+}
+.armada_tab_pane{
+  display: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#tab1:checked ~ .armada_stall_content #content1,
+#tab2:checked ~ .armada_stall_content #content2,
+#tab3:checked ~ .armada_stall_content #content3,
+#tab4:checked ~ .armada_stall_content #content4,
+#tab5:checked ~ .armada_stall_content #content5,
+#tab6:checked ~ .armada_stall_content #content6,
+#tab7:checked ~ .armada_stall_content #content7 {
+  display: block;
+}
+
+input[type="radio"][name="tabset"] { display: none; }
+.armada_stall_button {
+  display: block;
+  padding: 10px;
+  background: url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Pack/Armada/signpost.jpg?updatedAt=1751729431160') repeat;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: rgb(27, 15, 5);
+  color: #fff;
+  border-radius: 10px;
+  margin-bottom: 6px;
+  font-family: 'Monster', 'Times New Roman', serif;
+  font-size: 9px;
+  text-align: center;
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.5));
+  transition: background 0.2s, color 0.2s;
+}
+
+.armada_stall_button:hover {
+  color: #ffe066;
+}
+
+#tab1:checked ~ .armada_stall_tab label[for="tab1"],
+#tab2:checked ~ .armada_stall_tab label[for="tab2"],
+#tab3:checked ~ .armada_stall_tab label[for="tab3"],
+#tab4:checked ~ .armada_stall_tab label[for="tab4"],
+#tab5:checked ~ .armada_stall_tab label[for="tab5"],
+#tab6:checked ~ .armada_stall_tab label[for="tab6"],
+#tab7:checked ~ .armada_stall_tab label[for="tab7"] {
+  filter: grayscale(100%);
+  font-style: italic;
+}
+
+.amt1_bulletin {
+  display: flex;
+  gap: 10px;
+  min-height: 210px;
+  background: url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Pack/Armada/planks_horizontal.png?updatedAt=1751729565737') repeat;
+  background-size: cover;
+  box-shadow: 0 4px 16px rgba(120, 90, 40, 0.10);
+  padding: 50px 16px 16px;
+  border-radius: 10px;
+  align-items: flex-start;
+  border: 3px groove #271b16;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.amt1_bulletin_post {
+  flex: 1 1 48%;
+  min-width: 0;
+  padding: 16px;
+  background: url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Pack/Armada/paper.jpg?updatedAt=1751729527087') repeat;
+  background-size: cover;
+  background-color: rgba(255,255,255,0.85);
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+  margin: 0 4px;
+  border-radius: 5px;
+  border: 1px solid #e2c590;
+  height: auto;
+  min-height: 0;
+}
+
+.amt1_bulletin_subtitle {
+  font-family: 'Windywood';
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+  margin: 0 0 4px;
+  filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.5));
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #000000;
+  
+}
+
+
+.amt1_bulletin_item {
+  font-family: 'Whirlywood';
+  font-size: 14px;
+  color: #000000;
+  text-align: center;
+  border-bottom: 1px dashed #000000;
+  padding: 4px 0;
+}
+
+.amt1_msg, .amt1_msgbox {
+  box-sizing: border-box;
+  position: relative;
+  mask: 
+    radial-gradient(ellipse 40px 30px at 0 0, transparent 39px, rgba(0, 0, 0, 0.4) 39.5px, black 40px) 0 0,
+    radial-gradient(ellipse 40px 30px at 100% 0, transparent 39px, rgba(0, 0, 0, 0.4) 39.5px, black 40px) 100% 0,
+    radial-gradient(ellipse 40px 30px at 100% 100%, transparent 39px, rgba(0, 0, 0, 0.4) 39.5px, black 40px) 100% 100%,
+    radial-gradient(ellipse 40px 30px at 0 100%, transparent 39px, rgba(0, 0, 0, 0.4) 39.5px, black 40px) 0 100%;
+  -webkit-mask: 
+    radial-gradient(ellipse 40px 30px at 0 0, transparent 39px, rgba(0, 0, 0, 0.4) 39.5px, black 40px) 0 0,
+    radial-gradient(ellipse 40px 30px at 100% 0, transparent 39px, rgba(0, 0, 0, 0.4) 39.5px, black 40px) 100% 0,
+    radial-gradient(ellipse 40px 30px at 100% 100%, transparent 39px, rgba(0, 0, 0, 0.4) 39.5px, black 40px) 100% 100%,
+    radial-gradient(ellipse 40px 30px at 0 100%, transparent 39px, rgba(0, 0, 0, 0.4) 39.5px, black 40px) 0 100%;
+  mask-size: 51% 51%;
+  -webkit-mask-size: 51% 51%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+
+.amt1_credit h2 {
+  font-size: 14px;
+  color: #9b9b9b;
+  text-align: center;
+  padding: 2px 20px 10px;
+  line-height: 1.1;
+  margin-bottom: -5px;
+}
+
+.amt1_creditcol {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
