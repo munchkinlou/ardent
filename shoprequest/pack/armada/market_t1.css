@@ -397,7 +397,13 @@ filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
   display: block;
 }
 
-input[type="radio"][name="tabset"] { display: none; }
+input[type="radio"][name="tabset"] {
+  display: none !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+}
+
 .armada_stall_button {
   display: block;
   padding: 10px;
