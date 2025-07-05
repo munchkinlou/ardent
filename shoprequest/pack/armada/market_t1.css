@@ -523,7 +523,6 @@ input[type="radio"][name="tabset"] {
   align-items: flex-start;
   gap: 10px;
 }
-
 @media (max-width: 1200px) {
   body, .amt1_bor, .amt1_con, .amt1_market_title, .amt1_market_img, .amt1_msgbox, .amt1_msg, .amt1_stall, .amt1_stalltitle, .amt1_stallimg, .amt1_stall_columns, .amt1_stallbox, .amt1_stallinfo, .amt1_itemcolumns, .amt1_itemtitle, .amt1_commissiontitle, .amt1_commissionboxes, .amt1_commissionbox, .amt1_commissionbox_title, .amt1_commissionbox_icon_img, .amt1_commissionboxcol, .amt1_credit, .amt1_creditcol, .amt1_bulletin, .amt1_bulletin_post, .amt1_bulletin_subtitle, .amt1_bulletin_item, .armada_stall_tabs_wrap, .armada_stall_tab, .armada_stall_button, .armada_tab_pane {
     background: none !important;
@@ -535,4 +534,89 @@ input[type="radio"][name="tabset"] {
     text-shadow: none !important;
     font-size: 14px !important;
   }
-  .amt1_market_title, .amt1_stalltitle, .amt1_itemtitle, .amt1_commissiontitle, .amt1_commissio
+  .amt1_market_title, .amt1_stalltitle, .amt1_itemtitle, .amt1_commissiontitle, .amt1_commissionbox_title, .amt1_bulletin_subtitle, .amt1_credit h2 {
+    font-size: 14px !important;
+    font-weight: bold !important;
+    letter-spacing: 0 !important;
+    text-transform: none !important;
+  }
+  .amt1_msg, .amt1_msgbox, .amt1_stallinfo, .amt1_bulletin_item, .amt1_commissionboxcol, .amt1_credit, .amt1_creditcol {
+    font-size: 14px !important;
+    font-weight: normal !important;
+  }
+  .amt1_commissionbox_icon_img, .amt1_market_img, .amt1_stallimg, .amt1_stalltitle {
+    display: none !important;
+  }
+  .armada_stall_tabs_wrap {
+    display: block !important;
+    grid-template-columns: unset !important;
+    flex-direction: column !important;
+  }
+  .armada_stall_tab {
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: unset !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    display: flex !important;
+    gap: 0 !important;
+    justify-content: stretch !important;
+    align-items: stretch !important;
+    white-space: nowrap !important;
+    max-width: 100%;
+  }
+  .armada_stall_content {
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    display: block !important;
+    border: 1px solid #000 !important;
+  }
+  .armada_stall_button {
+    flex: 1 1 0 !important;
+    width: auto !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    white-space: normal !important;
+    text-align: center !important;
+    padding: 8px 0 !important;
+    box-sizing: border-box !important;
+    display: block !important;
+  }
+  .amt1_bor, .amt1_con, .amt1_stallbox {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 8px !important;
+    margin: 8px 0 !important;
+  }
+  .amt1_credit h2 {
+    font-size: 14px !important;
+    margin: 20px 0 !important;
+  }
+  .amt1_commissiontitle {
+    font-size: 14px !important;
+    margin: 50px 0 10px !important;
+  }
+  .amt1_commissionboxes {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .amt1_commissionbox {
+    width: 90% !important;
+    margin: 0px auto 10px !important;
+  }
+  .amt1_creditcol {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 auto !important;
+    gap: 0 !important;
+    padding: 0 !important;
+  }
+  .amt1_creditcol span {
+    margin: 0 auto !important;
+  }
+}
+
