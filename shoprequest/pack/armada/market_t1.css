@@ -599,7 +599,10 @@ input[type="radio"][name="tabset"] {
     font-size: 14px !important;
     margin: 50px 0 10px !important;
   }
-  .amt1_commissionboxes {
+  .amt1_commissionboxes,
+  .amt1_commissionbox,
+  .amt1_commissionboxcol,
+  .amt1_creditcol {
     display: flex !important;
     flex-direction: column !important;
   }
@@ -633,4 +636,3 @@ input[type="radio"][name="tabset"] {
     box-sizing: border-box !important;
   }
 }
-
