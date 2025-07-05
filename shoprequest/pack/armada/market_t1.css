@@ -523,18 +523,8 @@ input[type="radio"][name="tabset"] {
   align-items: flex-start;
   gap: 10px;
 }
-
 @media (max-width: 1200px) {
-  body, .amt1_bor, .amt1_market_title, .amt1_market_img, .amt1_msgbox, .amt1_msg, .amt1_stall, .amt1_stalltitle, .amt1_stallimg, .amt1_stall_columns, .amt1_stallbox, .amt1_stallinfo, .amt1_itemcolumns, .amt1_itemtitle, .amt1_commissiontitle, .amt1_commissionbox, .amt1_commissionbox_title, .amt1_commissionbox_icon_img, .amt1_commissionboxcol, .amt1_credit, .amt1_bulletin, .amt1_bulletin_post, .amt1_bulletin_subtitle, .amt1_bulletin_item, .armada_stall_tabs_wrap, .armada_stall_tab, .armada_stall_button, .armada_tab_pane {
-    background: none !important;
-    background-image: none !important;
-    box-shadow: none !important;
-    filter: none !important;
-    border-image: none !important;
-    border: none !important;
-    text-shadow: none !important;
-    font-size: 14px !important;
-  }
+
   .amt1_market_title, .amt1_stalltitle, .amt1_itemtitle, .amt1_commissiontitle, .amt1_commissionbox_title, .amt1_bulletin_subtitle, .amt1_credit h2 {
     font-size: 14px !important;
     font-weight: bold !important;
