@@ -636,5 +636,14 @@ input[type="radio"][name="tabset"] {
     flex: unset !important;
     min-width: 0 !important;
   }
+  .amt1_con {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+  .amt1_commissionboxes,
+  .amt1_creditcol {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
 }
-
