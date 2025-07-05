@@ -525,130 +525,53 @@ input[type="radio"][name="tabset"] {
 }
 
 @media (max-width: 1200px) {
-  .amt1_bor,
-  .amt1_con {
-    max-width: 100vw;
-    padding: 0 2vw;
+  body, .amt1_bor, .amt1_con, .amt1_market_title, .amt1_market_img, .amt1_msgbox, .amt1_msg, .amt1_stall, .amt1_stalltitle, .amt1_stallimg, .amt1_stall_columns, .amt1_stallbox, .amt1_stallinfo, .amt1_itemcolumns, .amt1_itemtitle, .amt1_commissiontitle, .amt1_commissionboxes, .amt1_commissionbox, .amt1_commissionbox_title, .amt1_commissionbox_icon_img, .amt1_commissionboxcol, .amt1_credit, .amt1_creditcol, .amt1_bulletin, .amt1_bulletin_post, .amt1_bulletin_subtitle, .amt1_bulletin_item, .armada_stall_tabs_wrap, .armada_stall_tab, .armada_stall_button, .armada_tab_pane {
+    background: none !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    filter: none !important;
+    border-image: none !important;
+    border: none !important;
+    text-shadow: none !important;
+    color: #111 !important;
   }
-  .amt1_market_title {
-    font-size: 38vw;
-    width: 98vw;
-    min-width: unset;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -20px;
-    white-space: normal;
-    text-align: center;
-  }
-  .amt1_market_img {
-    height: 38vw;
-    min-height: 180px;
-    max-height: 250px;
-  }
-  .amt1_msgbox {
-    padding: 2vw;
-  }
-  .amt1_msg {
-    font-size: 4vw;
-    padding: 8vw 2vw 4vw;
-  }
-  .amt1_stall {
-    margin: 0 0 10px 0;
-    min-width: 0;
-    width: 100%;
-  }
-  .amt1_stalltitle {
-    font-size: 5vw;
-    min-width: 0;
-    padding: 2vw 6vw 2vw;
-    left: 50%;
-    transform: translateX(-50%);
-    width: fit-content;
-    max-width: 90vw;
-    white-space: normal;
-  }
-  .amt1_stallimg {
-    height: 32vw;
-    min-height: 120px;
-    max-height: 180px;
-  }
-  .amt1_stall_columns,
-  .amt1_itemcolumns,
-  .amt1_commissionboxes,
-  .amt1_commissionboxcol,
-  .amt1_creditcol,
-  .amt1_bulletin {
-    flex-direction: column !important;
-    display: flex !important;
-    gap: 8px !important;
-    width: 100% !important;
-    align-items: stretch !important;
-  }
-  .amt1_stallbox,
-  .amt1_commissionbox {
-    width: 100% !important;
-    min-width: 0 !important;
-    margin: 8px 0 0 0 !important;
-    padding: 3vw 2vw !important;
-  }
-  .amt1_itemtitle,
-  .amt1_commissionbox_title {
-    font-size: 4vw !important;
-    padding: 2vw 0 !important;
-  }
-  .amt1_commissiontitle {
+  .amt1_market_title, .amt1_stalltitle, .amt1_itemtitle, .amt1_commissiontitle, .amt1_commissionbox_title, .amt1_bulletin_subtitle, .amt1_credit h2 {
+    color: #111 !important;
     font-size: 6vw !important;
-    padding: 2vw 0 !important;
+    font-family: sans-serif !important;
+    font-weight: bold !important;
+    letter-spacing: 0 !important;
+    text-transform: none !important;
   }
-  .amt1_commissionbox_icon_img {
-    width: 16vw !important;
-    height: 16vw !important;
-    min-width: 48px;
-    min-height: 48px;
-    max-width: 80px;
-    max-height: 80px;
-  }
-  .amt1_credit {
-    font-size: 3vw !important;
-    padding: 2vw 0 4vw !important;
-  }
-  .amt1_credit h2 {
+  .amt1_msg, .amt1_msgbox, .amt1_stallinfo, .amt1_bulletin_item, .amt1_commissionboxcol, .amt1_credit, .amt1_creditcol {
+    color: #222 !important;
     font-size: 4vw !important;
-    padding: 2vw 0 2vw !important;
+    font-family: sans-serif !important;
+    font-weight: normal !important;
   }
-  .armada_stall_tabs_wrap {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 0 !important;
-    width: 100% !important;
-  }
-  .armada_stall_tab {
-    flex-direction: row !important;
-    min-width: 0 !important;
-    max-width: 100vw !important;
-    width: 100% !important;
-    margin: 0 0 8px 0 !important;
-    overflow-x: auto;
-    justify-content: flex-start;
+  .amt1_commissionbox_icon_img, .amt1_market_img, .amt1_stallimg {
+    display: none !important;
   }
   .armada_stall_button {
-    font-size: 3vw !important;
-    padding: 2vw 3vw !important;
-    min-width: 80px;
-    margin-bottom: 0 !important;
-    margin-right: 8px !important;
-    border-radius: 8px !important;
-  }
-  .amt1_bulletin_post {
-    padding: 2vw !important;
-    font-size: 3.5vw !important;
-  }
-  .amt1_bulletin_subtitle {
+    background: none !important;
+    color: #111 !important;
+    border: 1px solid #aaa !important;
+    border-radius: 4px !important;
     font-size: 4vw !important;
-    padding-bottom: 1vw !important;
+    font-family: sans-serif !important;
+    margin: 2vw 0 !important;
+    padding: 2vw 4vw !important;
   }
-  .amt1_bulletin_item {
-    font-size: 3.5vw !important;
-    padding: 1vw 0 !important;
+  .amt1_bor, .amt1_con, .amt1_stallbox, .amt1_commissionbox {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 2vw !important;
+    margin: 2vw 0 !important;
+  }
+  .amt1_credit h2 {
+    font-size: 5vw !important;
+    margin: 2vw 0 !important;
   }
 }
+
