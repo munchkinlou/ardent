@@ -525,7 +525,7 @@ input[type="radio"][name="tabset"] {
 }
 
 @media (max-width: 1200px) {
-  body, .amt1_bor, .amt1_con, .amt1_market_title, .amt1_market_img, .amt1_msgbox, .amt1_msg, .amt1_stall, .amt1_stalltitle, .amt1_stallimg, .amt1_stall_columns, .amt1_stallbox, .amt1_stallinfo, .amt1_itemcolumns, .amt1_itemtitle, .amt1_commissiontitle, .amt1_commissionboxes, .amt1_commissionbox, .amt1_commissionbox_title, .amt1_commissionbox_icon_img, .amt1_commissionboxcol, .amt1_credit, .amt1_creditcol, .amt1_bulletin, .amt1_bulletin_post, .amt1_bulletin_subtitle, .amt1_bulletin_item, .armada_stall_tabs_wrap, .armada_stall_tab, .armada_stall_button, .armada_tab_pane {
+  body, .amt1_bor, .amt1_market_title, .amt1_market_img, .amt1_msgbox, .amt1_msg, .amt1_stall, .amt1_stalltitle, .amt1_stallimg, .amt1_stall_columns, .amt1_stallbox, .amt1_stallinfo, .amt1_itemcolumns, .amt1_itemtitle, .amt1_commissiontitle, .amt1_commissionbox, .amt1_commissionbox_title, .amt1_commissionbox_icon_img, .amt1_commissionboxcol, .amt1_credit, .amt1_bulletin, .amt1_bulletin_post, .amt1_bulletin_subtitle, .amt1_bulletin_item, .armada_stall_tabs_wrap, .armada_stall_tab, .armada_stall_button, .armada_tab_pane {
     background: none !important;
     background-image: none !important;
     box-shadow: none !important;
@@ -541,7 +541,7 @@ input[type="radio"][name="tabset"] {
     letter-spacing: 0 !important;
     text-transform: none !important;
   }
-  .amt1_msg, .amt1_msgbox, .amt1_stallinfo, .amt1_bulletin_item, .amt1_commissionboxcol, .amt1_credit, .amt1_creditcol {
+  .amt1_msg, .amt1_msgbox, .amt1_stallinfo, .amt1_bulletin_item, .amt1_commissionboxcol, .amt1_credit {
     font-size: 14px !important;
     font-weight: normal !important;
   }
@@ -584,7 +584,7 @@ input[type="radio"][name="tabset"] {
     box-sizing: border-box !important;
     display: block !important;
   }
-  .amt1_bor, .amt1_con, .amt1_stallbox {
+  .amt1_bor, .amt1_stallbox {
     background: none !important;
     border: none !important;
     box-shadow: none !important;
@@ -599,51 +599,18 @@ input[type="radio"][name="tabset"] {
     font-size: 14px !important;
     margin: 50px 0 10px !important;
   }
-  .amt1_commissionboxes,
-  .amt1_commissionbox,
-  .amt1_commissionboxcol,
-  .amt1_creditcol {
-    display: flex !important;
-    flex-direction: column !important;
-  }
-  .amt1_commissionboxcol > * {
-    flex: unset !important;
-    min-width: 0 !important;
-  }
-  .amt1_creditcol {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    margin: 0 auto !important;
-    gap: 0 !important;
-    padding: 0 !important;
-  }
-  .amt1_creditcol span {
-    margin: 0 auto !important;
-  }
-  .amt1_commissiontitle,
-  .amt1_commissionboxes,
-  .amt1_commissionbox,
-  .amt1_commissionboxcol,
-  .amt1_msgbox,
-  .amt1_credit,
-  .amt1_creditcol {
-    display: flex !important;
-    flex-direction: column !important;
-  }
-  .amt1_commissionboxcol > * {
-    flex: unset !important;
-    min-width: 0 !important;
-  }
   .amt1_con {
     flex-direction: column !important;
     align-items: stretch !important;
   }
   .amt1_commissionboxes,
   .amt1_creditcol {
+    display: flex !important;
+    flex-direction: column !important;
     width: 100% !important;
     min-width: 0 !important;
     max-width: 100% !important;
   }
 }
+
+
