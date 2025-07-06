@@ -508,7 +508,7 @@ input[type="radio"][name="tabset"] {
   -webkit-mask-repeat: no-repeat;
 }
 
-.amt1_credit h2 {
+.amt1_credith2 {
   font-size: 14px;
   color: #9b9b9b;
   text-align: center;
@@ -524,6 +524,18 @@ input[type="radio"][name="tabset"] {
   gap: 10px;
 }
 
+.amt1_link {
+  color: #4470a9;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s, text-shadow 0.2s;
+}
+
+.amt1_link:hover {
+  color: #ffe066;
+  text-shadow: none;
+  transition: color 0.2s, text-shadow 0.2s;
+}
 
 @media (max-width: 1200px) {
   .amt1_market_title,
