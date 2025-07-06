@@ -525,15 +525,15 @@ input[type="radio"][name="tabset"] {
 }
 
 .amt1_link {
-  color: #4470a9;
-  text-decoration: none;
+  color: #4470a9 !important;
+  text-decoration: none !important;
   font-weight: bold;
   transition: color 0.2s, text-shadow 0.2s;
 }
 
 .amt1_link:hover {
-  color: #ffe066;
-  text-shadow: none;
+  color: #ffe066 !important;
+  text-shadow: none !important;
   transition: color 0.2s, text-shadow 0.2s;
 }
 
