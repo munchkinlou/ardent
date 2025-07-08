@@ -44,11 +44,12 @@
   min-height: 400px;
   box-sizing: border-box;
   overflow: visible;
-  background: linear-gradient(to bottom,#706586 250px, #363045);
+  background: linear-gradient(to bottom,#706586, #363045);
   border: 1px solid;
   border-image: linear-gradient(to bottom, #fff, #87CEEB) 1;
   filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.8));
 }
+
 
 .Kjartant4_infade {
   position: absolute;
