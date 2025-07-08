@@ -79,7 +79,7 @@
   margin: 20px 0 0;
   z-index: 5;
   font-family: 'Amarante';
-  font-size: 16px;
+  font-size: 14px;
   color: #fff;
   text-align: justify;
 }
@@ -105,7 +105,7 @@
 .Kjartant4_diag {
   display: inline-block;
   font-family: 'Amarante';
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   color: transparent;
   background: linear-gradient(to top, #F5F29C, #D7583F);
@@ -117,7 +117,7 @@
 .Kjartant4_speech {
   margin: -10px 0 -110px 0;
   font-family: 'Amarante';
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   color: transparent;
   text-align: center;
@@ -133,7 +133,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   font-family: 'Eagle Lake';
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .Kjartant4_spanish {
@@ -142,7 +142,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   font-family: 'Dosis';
-  font-size: 22px;
+  font-size: 20px;
 }
 
 @media (max-width: 1200px) {
