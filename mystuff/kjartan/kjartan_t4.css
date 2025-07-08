@@ -16,11 +16,12 @@
   z-index: 0;
   max-width: 700px;
   min-height: 800px;
-  padding: 650px 0 30px 0;
+  padding: 800px 50px 50px;
   box-sizing: border-box;
   overflow: hidden;
   background: #2A3354 url('https://ik.imagekit.io/arl59/Ardent/Kjartan/Andy_winter.png?updatedAt=1750138175064') no-repeat top;
   background-size: 100%;
+
 }
 
 .Kjartant4_con::after {
@@ -35,25 +36,18 @@
   pointer-events: none;
 }
 
-.Kjartant4_inbor {
-  position: relative;
-  z-index: 6;
-  margin: 80px auto 20px auto;
-  padding: 2px;
-  width: 85%;
-  box-sizing: border-box;
-  background: linear-gradient(to bottom, transparent 0, transparent 10%, #87ceeb 50%, #4682b4 100%);
-}
-
 .Kjartant4_incon {
   position: relative;
   z-index: 6;
-  padding: 110px 20px;
+  padding: 20px 50px 120px;
   width: 100%;
   min-height: 400px;
   box-sizing: border-box;
   overflow: visible;
-  background: linear-gradient(to bottom, transparent 0, #706586 250px, #363045);
+  background: linear-gradient(to bottom,#706586 250px, #363045);
+  border: 1px solid;
+  border-image: linear-gradient(to bottom, #fff, #87CEEB) 1;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.8));
 }
 
 .Kjartant4_infade {
@@ -82,8 +76,7 @@
 }
 
 .Kjartant4_text {
-  margin: -40px 0 0 0;
-  padding: 20px 50px;
+  margin: 20px 0 0;
   z-index: 5;
   font-family: 'Amarante';
   font-size: 16px;
@@ -96,7 +89,16 @@
   display: block;
   height: 2px;
   line-height: normal;
-  margin: 30px 0 0 0;
+  margin: 20px 0 0;
+  background: linear-gradient(to right, transparent 10%, #f0f8ff 50%, transparent 90%);
+}
+
+.Kjartant4_text::before {
+  content: '';
+  display: block;
+  height: 2px;
+  line-height: normal;
+  margin: 0 0 20px;
   background: linear-gradient(to right, transparent 10%, #f0f8ff 50%, transparent 90%);
 }
 
@@ -149,3 +151,4 @@
     display: none;
   }
 }
+
