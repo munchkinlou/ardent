@@ -150,6 +150,10 @@
   .Kjartant4_infade,
   .Kjartant4_con::after {
     display: none;
+    padding: 0;
+  }
+
+  .Kjartant4_incon {
+    filter:none;
   }
 }
-
