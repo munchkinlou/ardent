@@ -53,7 +53,7 @@
   min-height: 400px;
   box-sizing: border-box;
   overflow: visible;
-  background: linear-gradient(to bottom, transparent 0, #706586 150px, #363045);
+  background: linear-gradient(to bottom, transparent 0, #706586 250px, #363045);
 }
 
 .Kjartant4_infade {
@@ -68,8 +68,8 @@
   height: auto;
   overflow: hidden;
   transform: scaleY(-1);
-  -webkit-mask-image: linear-gradient(to top, transparent 200px, #000 300px);
-  mask-image: linear-gradient(to top, transparent 200px, #000 300px);
+  -webkit-mask-image: linear-gradient(to top, transparent 100px, #000 150px);
+  mask-image: linear-gradient(to top, transparent 100px, #000 200px);
 }
 
 .Kjartant4_infade::after {
@@ -77,7 +77,7 @@
   position: absolute;
   inset: 0;
   z-index: 5;
-  box-shadow: 0 -5px 10px rgba(196, 239, 255, 0.6), inset 2px 0 10px 1px rgba(119, 141, 201, 0.8), inset -2px 0 10px 1px rgba(135, 206, 235, 0.8);
+  box-shadow: 0 -5px 10px rgba(255, 255, 255, 0.6), inset 2px 0 10px 1px rgba(255, 255, 255, 0.8), inset -2px 0 10px 1px rgba(135, 206, 235, 0.8);
   pointer-events: none;
 }
 
