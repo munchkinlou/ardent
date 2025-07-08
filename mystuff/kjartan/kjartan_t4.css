@@ -15,7 +15,7 @@
   position: relative;
   z-index: 0;
   max-width: 700px;
-  min-height: 800px;
+  min-height: 100px;
   padding: 800px 50px 50px;
   box-sizing: border-box;
   overflow: hidden;
@@ -49,7 +49,6 @@
   border-image: linear-gradient(to bottom, #fff, #87CEEB) 1;
   filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.8));
 }
-
 
 .Kjartant4_infade {
   position: absolute;
