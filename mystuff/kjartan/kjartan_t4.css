@@ -126,6 +126,7 @@
 }
 
 .Kjartant4_nordic {
+  color: transparent;
   background: linear-gradient(to bottom, #5578a1, #46badd, #5578a1);
   -webkit-background-clip: text;
   background-clip: text;
@@ -134,6 +135,7 @@
 }
 
 .Kjartant4_spanish {
+  color: transparent;
   background: linear-gradient(to bottom, #5578a1, #46badd, #5578a1);
   -webkit-background-clip: text;
   background-clip: text;
