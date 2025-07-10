@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@font-face {
+  font-family: 'HorrorNewYear';
+  src: url('HorrorNewYear-BWzpl.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.dagont1_con {
+  position: relative;
+  margin: 20px auto 0;
+  padding: 3px;
+  width: 700px;
+  min-height: 100px;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.85), 20px 20px 50px rgba(0, 0, 0, 0.5);
+  padding: 30px 30px 450px;
+  background: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/acb69457-2e5c-444f-b6f8-7df5d9829ac2/djv5zeh-ae81ab7a-0f24-401e-b2dc-8889af3d8bb8.png/v1/fill/w_894,h_894,q_70,strp/dagonmistyforest_by_spiritsfromafar_djv5zeh-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcL2FjYjY5NDU3LTJlNWMtNDQ0Zi1iNmY4LTdkZjVkOTgyOWFjMlwvZGp2NXplaC1hZTgxYWI3YS0wZjI0LTQwMWUtYjJkYy04ODg5YWYzZDhiYjgucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.AE2GzcV9y_Vhxx6IMXuK00qEC1Xlg6gjpAVwI5Jt9x8') no-repeat bottom, linear-gradient(to top, #0B101A 0%, #0B101A 800px, #080a0f 850px, #050507 900px, #020203 950px, black 100%);
+  background-size: 100%;
+  border: 3px solid;
+  border-image: linear-gradient(to bottom, #5D2E2E 0%, #5D2E2E 20%, black 100%) 1;
+  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.8), inset 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+
+.dagont1_con::after {
+  content: '';
+  position: absolute;
+  bottom: 550px;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  height: 300px;
+  background: linear-gradient(to top, transparent 0, #0A1119 50%, transparent 100%);
+  pointer-events: none;
+}
+
+.dagont1_inbor {
+  position: relative;
+  z-index: 6;
+  margin: 0 auto;
+  padding: 2px;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(to top, transparent 0, transparent 10%, #3C2E2E 50%, #554A46 100%);
+}
+
+.dagont1_incon {
+  position: relative;
+  z-index: 6;
+  padding: 60px 40px 280px;
+  width: 100%;
+  min-height: 400px;
+  box-sizing: border-box;
+  overflow: visible;
+  background: linear-gradient(to top, transparent 0, transparent 100px, rgba(27, 29, 28, 0.9) 200px, rgba(46, 48, 47, 0.9) 450px);
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.dagont1_vidbg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  opacity: 0.6;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 10%, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0.3) 60%, transparent 80%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 10%, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0.3) 60%, transparent 80%, transparent 100%);
+}
+
+.dagont1_text {
+  margin: -40px 0 0 0;
+  z-index: 5;
+  font-family: 'Bellefair';
+  font-size: 20px;
+  color: #fff;
+  text-align: justify;
+}
+
+.dagont1_text::after {
+  content: '';
+  display: block;
+  height: 2px;
+  line-height: normal;
+  margin: 20px 0 5px 0;
+  background: linear-gradient(to right, transparent 10%, #8f736a 50%, transparent 90%);
+}
+
+.dagont1_diag {
+  display: inline-block;
+  font-family: 'HorrorNewYear';
+  font-size: 30px;
+  font-weight: bold;
+  color: transparent;
+  background: linear-gradient(to bottom, #b8a99e, #8f736a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+}
+
+.dagont1_speech {
+  margin: -40px 0 -140px 0;
+  font-family: 'HorrorNewYear';
+  font-size: 50px;
+  font-weight: bold;
+  color: transparent;
+  text-align: center;
+  background: linear-gradient(to bottom, #b8a99e, #8f736a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+}
+
+@media (max-width: 1200px) {
+  .dagont1_infade,
+  .dagont1_container::after {
+    display: none;
+  }
+
+  .dagont1_vidbg {
+    display: none;
+  }
+}
