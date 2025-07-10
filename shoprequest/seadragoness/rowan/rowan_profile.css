@@ -1,0 +1,336 @@
+@import url('https://fonts.cdnfonts.com/css/maulysia');
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+
+nav {
+    background: rgba(3,6,15,0.8) !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+nav a {
+    transition: color 0.2s ease, background 0.2s ease;
+    color: #275481 !important;
+    transition: color 0.2s ease, background 0.2s ease;
+}
+
+nav a:hover {
+    color: #fff !important;
+    transition: color 0.2s ease, background 0.2s ease;
+}
+
+.dropdown-menu {
+	background: rgba(39,53,69,0.8) !important;
+	color: rgba(3,6,15,0.8) !important;
+}
+
+.dropdown-menu a {
+    color: #ffffff !important;
+    transition: color 0.3s ease, background 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    transform: scale(1.05);
+    color: white !important;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.7) !important;
+    transition: color 0.3s ease, background 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+h1 {
+    color: transparent;
+    filter: drop-shadow(2px 2px 0.5px #000000);
+    background: linear-gradient(to bottom, #8CE7FF 0%, #2765a7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    z-index: 1;
+    text-transform: capitalize !important;
+    font-size: 43px;
+    font-family: 'Maulysia', sans-serif !important;
+}
+
+h1 i {
+	font-style: normal !important;
+}
+
+.tabnav,
+.navbar_header,
+.navbar_collapse {
+	background: linear-gradient(to right, transparent 30%, rgba(192, 196, 209, 0.8) 100%);
+    backdrop-filter: blur(2px);
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    padding: 3px;
+    border-radius: 4px;
+}
+
+.tabnav a,
+.navbar_header a,
+.navbar_collapse a {
+    color: #1A1729 !important;
+	transition: color 0.2s ease, background 0.2s ease;
+}
+
+.tabnav a:hover,
+.navbar_header a:hover,
+.navbar_collapse a:hover {
+    transform: scale(1.05) !important;
+    color: #8AC9E6 !important;
+    transition: color 0.3s ease, background 0.3s ease, transform 0.3s ease;
+}
+
+.tabnav a.active {
+    color: #8AC9E6 !important;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.7) !important;
+    transition: color 0.3s ease, background 0.3s ease, transform 0.3s ease;
+}
+
+.profav {
+    filter: drop-shadow(0 0 4px #000000) drop-shadow(0 0 8px #020202);
+    width: 250px !important;
+    height: 350px !important;
+}
+
+.profav img {
+    content: url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Seadragoness/Rowan/Quickportrait_seadragoness_2.png?updatedAt=1752028848428');
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+	object-position: center center;
+    border-radius: 20px;
+    border: 2px solid rgba(183, 205, 226, 0.5);
+}
+
+.blocky {
+	backdrop-filter: blur(2px);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), 0 5px 10px rgba(0, 0, 0, 0.5), inset 0 0 10px rgba(37, 70, 109, 0.5);
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+    border-radius: 40px 0;
+    border: 2px solid rgba(183, 205, 226, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px 25px;
+    flex-wrap: wrap;
+    font-family: "Delius", sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+.blocky u {
+	text-decoration: none !important;
+}
+
+.blocky > span {
+    filter: drop-shadow(2px 2px 0.5px #000000);
+    font-family: "Croissant One", cursive;
+    text-shadow: none !important;
+    font-size: 18px;
+    left: 10px;
+    right: auto;
+    bottom: 2px;
+    z-index: 0; 
+    color: #2765a7;
+    background: linear-gradient(to bottom, #bdc2d1 0%, #8b94af 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.blocky a {
+	position: relative;
+	z-index: 2;
+	top: 5px;
+	font-family: arial;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+	color: #8AC9E6 !important;
+	transition: color 0.2s ease;
+    display: inline-block;
+}
+
+.blocky a:hover {
+	color: #58c9e6 !important;
+}
+
+.blocky a,
+.blocky a:visited,
+.blocky a:hover,
+.blocky a u,
+.blocky span[style*="text-decoration: underline;"] {
+	text-decoration: none !important;
+}
+
+.thead {
+    font-family: 'Maulysia', sans-serif;
+    font-size: 30px;
+	text-shadow: none !important;
+	text-align: center;
+    text-transform: capitalize !important;
+    padding: 5px;
+    color: #66a9c0;
+    text-shadow: 2px 2px 0.5px #000000;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), 0 5px 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(183, 205, 226, 0.5);
+}
+
+.thead b {
+    font-weight: 100 !important;
+}
+
+.sip_tbl_head,
+.sip_tbl_th,
+.sip_tbl_td {
+	background: rgba(3,6,15,0.6);
+	color: rgb(202, 202, 202) !important;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+}
+
+.info_imgglow {
+    filter: drop-shadow(0 0 2px #8AC9E6) drop-shadow(0 0 4px #4d70a8);
+}
+
+.info_appwrap {
+    position: relative;
+    display: flex;
+    width: 60%;
+    margin: 0 20px;
+    padding: 20px;
+}
+
+.info_appimg {
+    width: 40%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    margin: 0 20px;
+}
+
+.info_con {
+    flex: 1;
+}
+
+.info_text {
+    font-size: 14px;
+    font-family: 'Delius', sans-serif !important;
+    color: white;
+    line-height: 1.2;
+    text-align: justify;
+    filter: drop-shadow(2px 2px 0.5px #3d2312);
+    text-shadow: none !important;
+    border: 2px solid;
+    border-image: linear-gradient(var(--gradient-direction, to left), #8CE7FF, #2765a7, transparent) 1;
+    padding: 40px;
+}
+
+.info_title {
+    color: transparent;
+    filter: drop-shadow(2px 2px 0.5px #000000);
+    background: linear-gradient(to bottom, #8CE7FF 0%, #2765a7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    z-index: 1;
+    text-transform: capitalize !important;
+    font-size: 43px;
+    font-family: 'Maulysia', sans-serif !important;
+    text-shadow: none !important;
+    text-align: center;
+}
+
+.info_subtitle {
+    font-family: "Croissant One", cursive;
+    font-size: 16px;
+    color: #8CE7FF;
+    line-height: 1.2;
+    text-align: justify;
+    text-shadow: none !important;
+}
+
+.misc_img {
+    max-width:800px;
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    margin: 0 20px;
+}
+
+.misc_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.misc_box {
+    flex: 1;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.misc_box_left {
+    order: 1;
+}
+
+.misc_box_center {
+    order: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.misc_box_right {
+    order: 3;
+}
+
+.misc_text {
+    font-family: 'Croissant One', cursive !important;
+    font-size: 20px;
+    color: white;
+    line-height: 1.2;
+    text-align: center;
+    filter: drop-shadow(2px 2px 0.5px #3d2312);
+    text-shadow: none !important;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, transparent, #8CE7FF, transparent) 1;
+    padding: 10px 20px;
+}
+
+.misc_subtitle {
+    font-family: 'Delius', sans-serif !important;
+    font-size: 15px;
+    color: #8CE7FF;
+    line-height: 1.2;
+    text-align: center;
+    text-shadow: none !important;
+    margin-top: 8px;
+    filter: drop-shadow(1px 1px 0.5px #3d2312);
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1200px) {
+  .info_appwrap {
+    flex-direction: column;
+  }
+  
+  .misc_container {
+    flex-direction: column;
+  }
+
+  .info_appimg {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    margin: 0 20px;
+  }
+}
