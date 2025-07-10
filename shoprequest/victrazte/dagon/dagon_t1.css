@@ -114,6 +114,12 @@
   filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
 }
 
+.andy_credit {
+  display: block;
+  text-align: center;
+  font-size: 10px;
+}
+
 @media (max-width: 1200px) {
   .dagont1_infade,
   .dagont1_container::after {
