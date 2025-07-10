@@ -6,6 +6,12 @@
   font-style: normal;
 }
 
+.andy_tc {
+  display: block;
+  text-align: center;
+  font-size: 10px;
+}
+
 .dagont1_con {
   position: relative;
   margin: 20px auto 0;
@@ -112,12 +118,6 @@
   -webkit-background-clip: text;
   background-clip: text;
   filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
-}
-
-.andy_credit {
-  display: block;
-  text-align: center;
-  font-size: 10px;
 }
 
 @media (max-width: 1200px) {
