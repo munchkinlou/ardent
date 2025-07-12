@@ -1,0 +1,136 @@
+@import url('https://fonts.cdnfonts.com/css/flower-garden');
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+
+.oliviert1_border {
+  width: 650px;
+  margin: 20px auto 10px;
+  padding: 2px;
+  border-radius: 380px 380px 0 0;
+  background: linear-gradient(180deg, #A5854C, #F2D49B, #A5854C);
+  box-shadow: 0 0 15px black;
+  overflow: visible;
+  position: relative;
+}
+
+.oliviert1_container {
+	position: relative;
+  padding: 740px 40px 40px 40px;
+  border-radius: 380px 380px 0 0;
+  background: white;
+  overflow: visible;
+  z-index: 1;
+}
+
+.oliviert1_overlay {
+  position: absolute;
+  top:-40px;
+  left: -117px;
+  width: 130%;
+  height: 800px;
+  background: url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Victrazte/Olivier/olivier-edit2.png?updatedAt=1752337642051') no-repeat center border-box;
+  background-size: 125% contain;
+  pointer-events: none;
+  background-color: transparent;
+  z-index: 2;
+}
+
+.oliviert1_inborder, .oliviert1_incontainer {
+  box-sizing: border-box;
+  position: relative;
+  mask: 
+    radial-gradient(ellipse 70px 60px at 0 0, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 0 0,
+    radial-gradient(ellipse 70px 60px at 100% 0, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 100% 0,
+    radial-gradient(ellipse 70px 60px at 100% 100%, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 100% 100%,
+    radial-gradient(ellipse 70px 60px at 0 100%, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 0 100%;
+  -webkit-mask: 
+    radial-gradient(ellipse 70px 60px at 0 0, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 0 0,
+    radial-gradient(ellipse 70px 60px at 100% 0, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 100% 0,
+    radial-gradient(ellipse 70px 60px at 100% 100%, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 100% 100%,
+    radial-gradient(ellipse 70px 60px at 0 100%, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 0 100%;
+  mask-size: 51% 51%;
+  -webkit-mask-size: 51% 51%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+
+.oliviert1_inborder{
+	position: relative;
+	padding: 3px;
+	background: linear-gradient(180deg, #A5854C, #F2D49B, #A5854C);
+	z-index: 2;
+  width: 98%;
+  margin: 0 auto;
+  isolation: isolate;
+}
+
+.oliviert1_incontainer {
+    padding: 20px 50px 20px 50px;
+    min-height: 400px;
+    background:
+        url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Victrazte/Olivier/t1_border.png?updatedAt=1749185206092') no-repeat top 20px center,
+        url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Victrazte/Olivier/t1_border.png?updatedAt=1749185206092') no-repeat bottom 20px center,
+        #494448;
+    background-size: 80%, 80%, 100%;
+    overflow: visible;
+}
+
+.oliviert1_title {
+  position: absolute;
+  top: 580px;
+  left: 0;
+  width: 100%;
+  padding: 0 40px;
+  box-sizing: border-box;
+  font-family: 'Flower Garden', cursive;
+  font-size: 120px;
+  color: #F2D49B;
+  text-align: center;
+  text-shadow: 1px 1px 3px black;
+  z-index: 10;
+}
+
+.oliviert1_text{
+	  text-align:justify;
+  font-family:'Viaoda Libre';
+  font-size: 16px;
+  color:white;
+  margin: 80px 10px 80px 10px;
+  padding: 20px 30px;
+  text-shadow: 0 0 2px #ffffff;
+  border: #0C0201 10px double;
+  z-index: 5;
+}
+
+.oliviert1_diag {
+  font-family: 'Viaoda Libre';
+  font-size: 20px;
+  color: #F2D49B;
+  text-shadow: 0px 1px 1px black;
+  font-weight: bold;
+}
+
+.oliviert1_speech {
+  font-family: 'Viaoda Libre';
+  font-size: 40px;
+  color: #F2D49B;
+  text-align: center;
+  margin: -100px 0 40px 0;
+  text-shadow: 1px 1px 2px black;
+  font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  .oliviert1_inborder, .oliviert1_incontainer {
+    mask: none;
+    -webkit-mask: none;
+  }
+  .oliviert1_incontainer {
+    background-image: none;
+  }
+  .oliviert1_title {
+    display: none;
+  }
+  .oliviert1_border, .oliviert1_container {
+    border-radius: 0;
+  }
+}
