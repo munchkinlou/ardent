@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+
+nav {
+    background: rgba(209,209,207, 0.9) !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+nav a {
+    transition: color 0.2s ease, background 0.2s ease;
+    color: #555555 !important;
+    transition: color 0.2s ease, background 0.2s ease;
+}
+
+nav a:hover {
+    color: #ffffff !important;
+    transition: color 0.2s ease, background 0.2s ease;
+}
+
+.dropdown_menu a {
+    color: #6D402B !important;
+    transition: color 0.3s ease, background 0.3s ease;
+}
+
+.dropdown_menu a:hover {
+    color: #ffffff !important;
+    transition: color 0.3s ease, background 0.3s ease;
+}
+
+h1 {
+    color: transparent;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.8));
+    background: linear-gradient(to bottom, #ffffff 0%, #D8D0CB 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    z-index: 1;
+    text-transform: capitalize !important;
+    font-size: 45px;
+    font-family: 'Eagle Lake', sans-serif !important;
+    font-weight: bold;
+}
+
+h1 i {
+	font-style: normal !important;
+}
+
+.tabnav,
+.navbar_header,
+.navbar_collapse {
+	background: linear-gradient(to right, transparent, rgba(209,209,207, 0.9), transparent);
+    backdrop-filter: blur(2px);
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    padding: 6px 3px 0;
+    border-radius: 4px;
+    height: 30px;
+}
+
+.tabnav a,
+.navbar_header a,
+.navbar_collapse a {
+    color: #38333C !important;
+	transition: color 0.2s ease, background 0.2s ease;
+}
+
+.tabnav a:hover,
+.navbar_header a:hover,
+.navbar_collapse a:hover {
+    transform: scale(1.05) !important;
+    color: #6D402B !important;
+    transition: color 0.3s ease, background 0.3s ease, transform 0.3s ease;
+}
+
+.tabnav a.active {
+    color: #1A1729 !important;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.7) !important;
+    transition: color 0.3s ease, background 0.3s ease, transform 0.3s ease;
+}
+
+.profav {
+    filter: drop-shadow(0 0 4px #000000) drop-shadow(0 0 8px #020202);
+    width: 250px !important;
+    height: 350px !important;
+}
+
+.profav img {
+    content: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/acb69457-2e5c-444f-b6f8-7df5d9829ac2/djupgkk-4efb8e8a-32dc-4044-800f-6edd0a924fe4.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2FjYjY5NDU3LTJlNWMtNDQ0Zi1iNmY4LTdkZjVkOTgyOWFjMlwvZGp1cGdray00ZWZiOGU4YS0zMmRjLTQwNDQtODAwZi02ZWRkMGE5MjRmZTQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.0Hcy06KdQWfjUbeI_6FjxqfsDVGBPibk2NaPbiEJYvA');
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	display: block;
+	object-position: center center;
+    border-radius: 20px;
+}
+
+.blocky {
+	backdrop-filter: blur(2px);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), 0 5px 10px rgba(0, 0, 0, 0.5), inset 0 0 10px rgba(37, 70, 109, 0.5);
+    border-radius: 20px;
+    border: 2px solid #723B27;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px 25px;
+    flex-wrap: wrap;
+    font-family: "Viaoda Libre", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    overflow: visible;
+}
+
+
+.blocky u {
+	text-decoration: none !important;
+}
+
+.blocky > span {
+    filter: drop-shadow(2px 2px 0.5px rgba(0, 0, 0, 0.6));
+    font-family: "Almendra SC", cursive;
+    text-shadow: none !important;
+    font-size: 16px;
+    left: 0;
+    right: 0;
+    bottom: 2px;
+    z-index: 0; 
+    color: #A99485;
+}
+
+.blocky a {
+	position: relative;
+	z-index: 2;
+	top: 5px;
+	font-family: arial;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+	color: #ACDCAA !important;
+	transition: color 0.2s ease;
+    display: inline-block;
+}
+
+.blocky a:hover {
+	color: #ffffff !important;
+}
+
+.blocky a,
+.blocky a:visited,
+.blocky a:hover,
+.blocky a u,
+.blocky span[style*="text-decoration: underline;"] {
+	text-decoration: none !important;
+}
+
+.thead {
+    font-family: 'Almendra SC', sans-serif;
+    font-size: 20px;
+	text-align: center;
+    text-transform: capitalize !important;
+    padding: 5px;
+    color: #D8D0CB;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5) !important;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), 0 5px 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid #723B27;
+}
+
+.thead b {
+    font-weight: 100 !important;
+}
+
+.sip_tbl_head,
+.sip_tbl_th,
+.sip_tbl_td {
+	background: rgba(15,20,23,0.9);
+	color: #e5e5e5 !important;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+}
+
+.info_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.info_appimg {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0 0 4px #763E2F);
+}
+
+.info_text {
+    font-family: 'Cormorant Upright', serif;
+    font-size: 18px;
+    text-align: justify;
+    padding: 5px;
+    color: #D8D0CB;
+    padding: 0 40px;
+}
+
+.info_title {
+    font-family: 'Eagle Lake', sans-serif !important;
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize !important;
+    color: #D8D0CB;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5) !important;
+    filter: drop-shadow(0 0 4px #000000);
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #ACDCAA, transparent);
+    margin: 5px auto;
+}
+
+.misc_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin: 20px 0;
+    min-width: 100%;
+}
+
+.box_1,
+.box_2,
+.box_3 {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    color: #D8D0CB;
+    text-align: center;
+    min-width: 0;
+    width: 100%;
+}
+
+.misc_subtitle {
+    font-family: 'Eagle Lake';
+}
+
+.misc_text {
+    font-family: 'Cormorant Upright', serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+    color: #D8D0CB;
+    padding: 0 40px;
+}
