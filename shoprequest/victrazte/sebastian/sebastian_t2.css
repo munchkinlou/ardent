@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&display=swap');
+
+.sebastiant2_content {
+	position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 250px auto 10px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+  filter: drop-shadow(0 8px 10px rgba(0,0,0,0.75));
+}
+
+.sebastiant2_img {
+  position: absolute;
+  top: -250px;
+  left: -80px;
+  width: 130%;
+  height: 650px;
+  background: transparent url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/acb69457-2e5c-444f-b6f8-7df5d9829ac2/djy7p8x-f3ed9acb-b4a2-4605-a854-3f5ee9b3ca4b.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2FjYjY5NDU3LTJlNWMtNDQ0Zi1iNmY4LTdkZjVkOTgyOWFjMlwvZGp5N3A4eC1mM2VkOWFjYi1iNGEyLTQ2MDUtYTg1NC0zZjVlZTliM2NhNGIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.gZ-VzLqjMR42BuhIRQfWFh9Ah7aqTCqtmeRIEEUWSZ4') no-repeat center top;
+  background-size: 100%; 
+  z-index: 5;
+  pointer-events: none;
+}
+
+.sebastiant2_bor {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to top, #000000 0%, #372416 50%, #562401 100%);
+  padding: 5px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.sebastiant2_con {
+  position: relative;
+  width: 100%;
+  background: url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Victrazte/Sebastian/background?updatedAt=1752349243164') no-repeat bottom left;
+  background-size: cover;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  pointer-events: none;
+  margin: 0 auto;
+}
+
+.sebastiant2_con > * {
+  position: relative;
+  z-index: 2;
+}
+
+.sebastiant2_incon {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 20px 20px 0;
+  width: 100%;
+  min-height: 400px;
+  box-sizing: border-box;
+  background: rgba(0,0,0,0.5);
+  height: auto;
+  box-shadow: 0 0 10px 10px rgba(205, 68, 0, 0.2);
+}
+
+.sebastiant2_text, .sebastiant2_speech, .sebastiant2_diag {
+  position: relative;
+  z-index: 2;
+}
+
+.sebastiant2_text {
+  text-align: justify;
+  font-family: 'Almendra';
+  font-size: 13px;
+  color: #e5dfc4;
+  line-height: 1.2;
+  margin: -20px 0 0;
+  padding: 350px 20px 0;
+}
+
+.sebastiant2_speech {
+  display: block;
+  position: relative;
+  margin: -20px 0 10px 0;
+  font-family: 'Cormorant Infant';
+  font-weight: bold;
+  color: #f35c2e;
+  text-shadow: 1px 1px 2px #0a0906;
+  font-size: 30px;
+  text-align: center;
+  line-height: 1;
+}
+
+.sebastiant2_diag {
+  color: #f35c2e;
+	font-family: 'Cormorant Infant';
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+
+@media (max-width: 1200px) {
+
+  .sebastiant2_content {
+    filter: none;
+  }
+
+  .sebastiant2_con::before {
+    display: none;
+  }
+
+}
