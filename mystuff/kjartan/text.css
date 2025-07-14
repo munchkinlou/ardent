@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@font-face {
+  font-family: 'Kjartan';
+  src: url('RagnaRunesPersonalUseRegular-Rp7AV.otf') format('truetype');
+}
+
+.kjartansig_container {
+  position: relative;
+  background: transparent;
+  width: 600px;
+  height: 400px;
+  margin: 0 auto 10px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: visible;
+  box-sizing: border-box;
+  gap: 20px;
+}
+
+.kjartansig_text_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 0;
+  padding-left: 20px;
+  order: 1;
+  gap: 10px;
+}
+
+.kjartansig_img {
+	background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6686631c-3c46-4e40-b13a-732a8cddb909/dk5ekl1-eaedea4e-105b-4559-87cc-c30ff5331b57.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzY2ODY2MzFjLTNjNDYtNGU0MC1iMTNhLTczMmE4Y2RkYjkwOVwvZGs1ZWtsMS1lYWVkZWE0ZS0xMDViLTQ1NTktODdjYy1jMzBmZjUzMzFiNTcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.35cV_wMoLJIT1gvoa4oPToGB31xtTiCDntF3Wys2ekE');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 400px;
+  margin-left: auto;
+  z-index: 1;
+  pointer-events: none;
+  order: 2;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.kjartansig_title {
+	background: url('https://ik.imagekit.io/arl59/Ardent/Kjartan/mist.jpg?updatedAt=1747274483452');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 1px 0 5px 0;
+	border: 1px solid white;
+	border-image: linear-gradient(to right, transparent, white, transparent) 1;
+  width: 250px;
+  height: 40px;
+	font-family: 'Kjartan', cursive;
+	font-size: 23px;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: -5px 0 -10px;
+  color: rgb(254, 254, 254);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.kjartansig_text {
+  padding: 10px 0;
+  width: 250px;
+  height: 20px;
+	font-family: 'Amarante', serif;
+	font-size:10px;
+  text-align: center;
+  text-shadow:
+  -0.5px -0.1px 0 #000;
+  margin: 0;
+}
+
+.kjartansig_link {
+  text-decoration: none;
+  font-style: normal;
+  color: rgb(202, 202, 202);
+}
+
+.kjartansig_hoverlink {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.kjartansig_hoverlinkimg {
+  display: block;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  transform: translateX(-50%) translateY(-8px);
+  width: 120px;
+  max-width: 200px;
+  min-width: 60px;
+  border: 2px solid #ccc;
+  background: #fff;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: opacity 0.25s ease;
+}
+
+.kjartansig_hoverlink:hover .kjartansig_hoverlinkimg,
+.kjartansig_hoverlink:focus-within .kjartansig_hoverlinkimg {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (max-width: 500px) {
+  .kjartansig_container {
+    width: 98%;
+    height: auto;
+    min-width: 0;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .kjartansig_text_container {
+    order: 1;
+  }
+  .kjartansig_img {
+    height: 200px;
+    min-height: 120px;
+    max-height: 350px;
+    width: 100%;
+    order: 2;
+  }
+  .kjartansig_title {
+    width: 95%;
+    font-size: 14px;
+    min-width: 0;
+    max-width: 98%;
+    padding: 1px;
+  }
+  .kjartansig_text {
+    width: 95%;
+    font-size: 14px;
+    min-width: 0;
+    max-width: 98%;
+    padding: 8px 0;
+    height: auto;
+  }
+  .kjartansig_hoverlinkimg {
+    width: 60px;
+    min-width: 32px;
+    max-width: 100px;
+  }
+}
