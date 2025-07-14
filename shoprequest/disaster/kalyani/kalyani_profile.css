@@ -1,13 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap');
 
-body {
-background-repeat: repeat-y;
-background-size: 100% auto;
-background-attachment: fixed;
-background-position: center;
-}
-
 h1 {
 font-family: 'Princess Sofia';
 text-transform: capitalize !important;
