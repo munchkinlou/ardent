@@ -193,3 +193,17 @@
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
 }
+
+@media (max-width: 1200px) {
+    .kalliast1_img,
+    .kalliast1_border,
+    .kalliast1_inborder,
+    .kalliast1_incontainer {
+        mask: none;
+        -webkit-mask: none;
+    }
+    .kalliast1_bgvid {
+        display: none;
+    }
+}
+
