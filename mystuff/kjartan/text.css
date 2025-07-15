@@ -7,7 +7,7 @@
 .kjartansig_container {
   position: relative;
   background: transparent;
-  width: 600px;
+  width: 700px;
   height: 400px;
   margin: 0 auto 10px auto;
   display: flex;
@@ -16,7 +16,7 @@
   justify-content: flex-start;
   overflow: visible;
   box-sizing: border-box;
-  gap: 20px;
+  gap: 0;
 }
 
 .kjartansig_text_container {
@@ -52,7 +52,7 @@
 	padding: 1px 0 5px 0;
 	border: 1px solid white;
 	border-image: linear-gradient(to right, transparent, white, transparent) 1;
-  width: 250px;
+  width: 350px;
   height: 40px;
 	font-family: 'Kjartan', cursive;
 	font-size: 23px;
@@ -69,10 +69,10 @@
 
 .kjartansig_text {
   padding: 10px 0;
-  width: 250px;
+  width: 350px;
   height: 20px;
 	font-family: 'Amarante', serif;
-	font-size:10px;
+	font-size:12px;
   text-align: center;
   text-shadow:
   -0.5px -0.1px 0 #000;
