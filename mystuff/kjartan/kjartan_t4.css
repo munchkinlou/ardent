@@ -16,7 +16,7 @@
   z-index: 0;
   max-width: 700px;
   min-height: 100px;
-  padding: 800px 50px 50px;
+  padding: 800px 30px 30px;
   box-sizing: border-box;
   overflow: hidden;
   background: #2A3354 url('https://ik.imagekit.io/arl59/Ardent/Kjartan/Andy_winter.png?updatedAt=1750138175064') no-repeat top;
@@ -39,7 +39,7 @@
 .Kjartant4_incon {
   position: relative;
   z-index: 6;
-  padding: 20px 50px 120px;
+  padding: 20px 40px 120px;
   width: 100%;
   min-height: 400px;
   box-sizing: border-box;
@@ -105,7 +105,7 @@
 .Kjartant4_diag {
   display: inline-block;
   font-family: 'Amarante';
-  font-size: 18px;
+  font-size: 17px;
   font-weight: bold;
   color: transparent;
   background: linear-gradient(to top, #F5F29C, #D7583F);
@@ -117,7 +117,7 @@
 .Kjartant4_speech {
   margin: -10px 0 -110px 0;
   font-family: 'Amarante';
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   color: transparent;
   text-align: center;
@@ -134,6 +134,7 @@
   background-clip: text;
   font-family: 'Eagle Lake';
   font-size: 16px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
 }
 
 .Kjartant4_spanish {
@@ -143,7 +144,14 @@
   background-clip: text;
   font-family: 'Dosis';
   font-size: 20px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
 }
+
+
+.Kjartant4_text, .Kjartant4_diag,  .Kjartant4_nordic, .Kjartant4_spanish, .Kjartant4_speech br {
+  line-height: 1.2;
+}
+
 
 @media (max-width: 1200px) {
   .Kjartant4_infade,
@@ -160,4 +168,3 @@
     padding:0;
   }
 }
-
