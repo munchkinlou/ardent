@@ -205,5 +205,8 @@
     .kalliast1_bgvid {
         display: none;
     }
+    .kalliast1_incontainer::before {
+        display: none;
+    }
 }
 
