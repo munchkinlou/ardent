@@ -21,6 +21,7 @@
   overflow: hidden;
   background: #2A3354 url('https://ik.imagekit.io/arl59/Ardent/Kjartan/Andy_winter.png?updatedAt=1750138175064') no-repeat top;
   background-size: 100%;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
 
 }
 
@@ -39,15 +40,15 @@
 .Kjartant4_incon {
   position: relative;
   z-index: 6;
-  padding: 20px 40px 120px;
+  padding: 40px 60px 120px;
   width: 100%;
-  min-height: 400px;
   box-sizing: border-box;
   overflow: visible;
-  background: linear-gradient(to bottom,#706586, #363045);
+  background: linear-gradient(to bottom,#332d41, #272330);
   border: 1px solid;
   border-image: linear-gradient(to bottom, #fff, #87CEEB) 1;
   filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.8));
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
 .Kjartant4_infade {
@@ -71,17 +72,18 @@
   position: absolute;
   inset: 0;
   z-index: 5;
-  box-shadow: 0 -5px 10px rgba(255, 255, 255, 0.6), inset 2px 0 10px 1px rgba(255, 255, 255, 0.8), inset -2px 0 10px 1px rgba(135, 206, 235, 0.8);
+  box-shadow: 0 -5px 5px rgba(255, 255, 255, 0.6), inset 2px 0 5px 1px rgba(255, 255, 255, 0.8), inset -2px 0 5px 1px rgba(255, 255, 255, 0.8);
   pointer-events: none;
 }
 
 .Kjartant4_text {
-  margin: 20px 0 0;
+  margin: 0;
   z-index: 5;
   font-family: 'Amarante';
-  font-size: 14px;
+  font-size: 12px;
   color: #fff;
   text-align: justify;
+  line-height: 1.2;
 }
 
 .Kjartant4_text::after {
@@ -89,7 +91,7 @@
   display: block;
   height: 2px;
   line-height: normal;
-  margin: 20px 0 0;
+  margin: 10px 0 0;
   background: linear-gradient(to right, transparent 10%, #f0f8ff 50%, transparent 90%);
 }
 
@@ -98,30 +100,30 @@
   display: block;
   height: 2px;
   line-height: normal;
-  margin: 0 0 20px;
+  margin: 0 0 10px;
   background: linear-gradient(to right, transparent 10%, #f0f8ff 50%, transparent 90%);
 }
 
 .Kjartant4_diag {
-  display: inline-block;
   font-family: 'Amarante';
-  font-size: 17px;
+  font-size: 14px;
   font-weight: bold;
   color: transparent;
-  background: linear-gradient(to top, #F5F29C, #D7583F);
+  background: linear-gradient(to bottom, #F5F29C, #d17664);
   -webkit-background-clip: text;
   background-clip: text;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+  line-height: 1;
 }
 
 .Kjartant4_speech {
-  margin: -10px 0 -110px 0;
+  margin: 5px 0 -120px 0;
   font-family: 'Amarante';
-  font-size: 20px;
+  font-size: 14px;
   font-weight: bold;
   color: transparent;
   text-align: center;
-  background: linear-gradient(to top, #F5F29C, #D7583F);
+  background: linear-gradient(to top, #e8d261, #c96b58);
   -webkit-background-clip: text;
   background-clip: text;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
@@ -129,12 +131,14 @@
 
 .Kjartant4_nordic {
   color: transparent;
-  background: linear-gradient(to bottom, #5578a1, #46badd, #5578a1);
+  background: linear-gradient(to top, #5578a1, #46badd, #5578a1);
   -webkit-background-clip: text;
   background-clip: text;
   font-family: 'Eagle Lake';
-  font-size: 16px;
+  font-size: 14px;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+  line-height: 1;
+  font-weight: bold;
 }
 
 .Kjartant4_spanish {
@@ -143,15 +147,11 @@
   -webkit-background-clip: text;
   background-clip: text;
   font-family: 'Dosis';
-  font-size: 20px;
+  font-size: 16px;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+  line-height: 1;
+  font-weight: bold;
 }
-
-
-.Kjartant4_text, .Kjartant4_diag,  .Kjartant4_nordic, .Kjartant4_spanish, .Kjartant4_speech br {
-  line-height: 1.2;
-}
-
 
 @media (max-width: 1200px) {
   .Kjartant4_infade,
