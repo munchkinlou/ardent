@@ -8,7 +8,7 @@
   margin: 20px auto;
   padding: 3px;
   overflow: hidden;
-  border-radius: 40px;
+  border-radius: 50px;
   background: linear-gradient(to bottom, rgba(154, 96, 181,0.8), rgba(255,255,255,0.8), rgba(154, 96, 181,0.8));
   box-shadow:
     10px 10px 10px rgba(0, 0, 0, 0.85),
@@ -24,7 +24,7 @@
   min-height: 800px;
   padding: 550px 0 30px 0;
   overflow: hidden;
-  border-radius: 40px;
+  border-radius: 50px;
 
   background: #09060D url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/acb69457-2e5c-444f-b6f8-7df5d9829ac2/djm9ssp-5ec62444-510b-492c-84c1-667a4cce3139.png/v1/fill/w_1083,h_738,q_70,strp/for_ego_3_by_spiritsfromafar_djm9ssp-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODczIiwicGF0aCI6IlwvZlwvYWNiNjk0NTctMmU1Yy00NDRmLWI2ZjgtN2RmNWQ5ODI5YWMyXC9kam05c3NwLTVlYzYyNDQ0LTUxMGItNDkyYy04NGMxLTY2N2E0Y2NlMzEzOS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.DIkZ4j__7NCShihS2-FJgBfaobLTEMgv-7os3JszPPY') no-repeat top;
   background-size: 100%;
@@ -82,7 +82,7 @@
   background-size: 80px, 160px;
   background-repeat: no-repeat, no-repeat;
   filter: drop-shadow(0 0 8px rgba(163, 59, 191, 0.7));
-  opacity: 0.6;
+  opacity: 0.2;
   pointer-events: none;
 }
 
@@ -103,30 +103,49 @@
 	position: relative;
 	color: white;
 	font-family: 'Delius Swash Caps';
-	font-size:14px;
+	font-size:12px;
 	line-height:1.2;
 	text-align:justify;
-	margin: 40px 75px 40px 75px;
+	margin: 30px 20px 20px;
 	padding: 0 20px;
 	border-style: solid;
 	border-width: 0 2px;
-	border-image: linear-gradient(to bottom, transparent, rgba(154, 96, 181, 0.8), rgba(255, 255, 255, 0.8), rgba(154, 96, 181, 0.8), transparent) 1;
+	border-image: linear-gradient(to right, transparent, rgba(154, 96, 181, 0.8), rgba(255, 255, 255, 0.8), rgba(154, 96, 181, 0.8), transparent) 1;
+}
+
+.kamarit1_text::after {
+	content: '';
+	position: absolute;
+	bottom: -15px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 60%;
+	height: 2px;
+	background: linear-gradient(to right, 
+		transparent 0%, 
+		rgba(154, 96, 181, 0.6) 20%, 
+		rgba(255, 255, 255, 0.8) 50%, 
+		rgba(154, 96, 181, 0.6) 80%, 
+		transparent 100%);
+	border-radius: 1px;
+	box-shadow: 0 0 8px rgba(163, 59, 191, 0.5);
 }
 
 .kamarit1_diag {
 	font-family: 'Delius Swash Caps';
-	font-size:18px;
+	font-size:16px;
 	background: linear-gradient(to bottom, #F0E68C, #e6b230, #F0E68C);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    line-height: 0.9;
 }
 
 .kamarit1_speech {
     font-family: 'Send Flowers';
 	font-size: 40px;
   	text-align: center;
- 	margin: -100px 0 -40px 0;
+ 	margin: -50px 0 -50px 0;
 	background: linear-gradient(to bottom, #F0E68C, #DAA520, #F0E68C);
     -webkit-background-clip: text;
     background-clip: text;
@@ -137,26 +156,13 @@
 
 .kamarit1_speechflower {
     display: inline-block;
-    width: 35px; 
-    height: 35px; 
+    width: 25px; 
+    height: 25px; 
     margin: 0 10px;
     vertical-align: middle;
     background-image: url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Victrazte/Kamari/flower.png?updatedAt=1747869655112');
     background-size: contain;
     background-repeat: no-repeat;
-}
-
-.kamarit1_divider {
-  width: 20%;
-  height: 2px;
-  margin: -65px auto 60px auto;
-  line-height: normal;	
-  background: linear-gradient(
-    to right,
-    transparent 0%,
-    transparent 50%,
-    transparent 100%
-  );
 }
 
 .kamarit1_flower {
@@ -275,3 +281,4 @@
     border-style: none;
   }
 }
+
