@@ -95,10 +95,10 @@
 
 .citadelt1_text {
   margin: -40px 0 0 0;
-  padding: 20px 50px;
+  padding: 20px 20px 0;
   z-index: 5;
   font-family: 'Bellefair';
-  font-size: 20px;
+  font-size: 16px;
   color: #fff;
   text-align: justify;
 }
@@ -108,13 +108,13 @@
   display: block;
   height: 2px;
   line-height: normal;
-  margin: 30px 0 0 0;
+  margin: 20px 0 0 0;
   background: linear-gradient(to right, transparent 10%, #f0f8ff 50%, transparent 90%);
 }
 
 .citadelt1_diag {
   font-family: 'Germania One';
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   color: transparent;
   background: linear-gradient(to bottom, #db9963, #c67229);
