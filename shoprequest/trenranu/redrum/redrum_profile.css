@@ -472,7 +472,13 @@ h1 i {
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
   }
 
+
   @media (max-width: 600px) {
+	body {
+		background-size: 100% auto;
+		background-repeat: repeat-y;
+	}
+	
 	.misc_info_item_fullwidth .compendium_content {
 		max-height: 300px;
 	}
@@ -502,6 +508,7 @@ h1 i {
 }
 
 @media (max-width: 900px) {
+    
 	.misc_info_item_fullwidth {
 		grid-column: 1 / -1;
 	}
