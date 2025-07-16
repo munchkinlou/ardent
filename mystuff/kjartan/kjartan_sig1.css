@@ -115,7 +115,7 @@
   pointer-events: auto;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .kjartansig_container {
     width: 98%;
     height: auto;
