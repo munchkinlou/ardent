@@ -95,11 +95,11 @@
 .wyvernt6_text {
   text-align: justify;
   font-family: 'Quicksand';
-  font-size: 14px;
+  font-size: 12px;
   color: #DBE7F4;
   line-height: 1.2;
   margin: -20px 0 0;
-  padding: 20px 20px 390px;
+  padding: 20px 10px 390px;
 }
 
 .wyvernt6_speech {
@@ -110,7 +110,7 @@
   font-weight: bold;
   color: #3DC8F6;
   text-shadow: 1px 1px 2px #0a0906;
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
   line-height: 1;
 }
@@ -118,7 +118,7 @@
 .wyvernt6_diag {
   color: #3DC8F6;
 	font-family: 'Croissant One';
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
   text-shadow: 1px 1px 2px #000000;
 }
@@ -139,3 +139,4 @@
   }
 
 }
+
