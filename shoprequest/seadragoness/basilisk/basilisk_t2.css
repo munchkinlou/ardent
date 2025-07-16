@@ -17,13 +17,14 @@ background: linear-gradient(to bottom, #000000, #7F8BC7, #48768D, #151D1F);
   z-index: 0;
   width: 100%;
   height: auto;
-  padding: 20px 20px 690px;
+  padding: 30px 30px 690px;
   border-radius: 100px 0 100px 0;
   box-sizing: border-box;
   overflow: hidden;
   background: url('https://i.imgur.com/CvOxRUA.jpeg') no-repeat center calc(100% + 100px);
   background-size: 110%;
   pointer-events: none;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
 .basiliskt2_con::after {
@@ -46,7 +47,7 @@ background: linear-gradient(to bottom, #000000, #7F8BC7, #48768D, #151D1F);
   width: 100%;
   min-height: 100px;
   box-sizing: border-box;
-  border-radius: 90px 0 0;
+  border-radius: 90px 10px 10px;
   background: linear-gradient(
     to bottom,
     #aee9f9 0%,
@@ -61,13 +62,14 @@ background: linear-gradient(to bottom, #000000, #7F8BC7, #48768D, #151D1F);
 .basiliskt2_incon {
   position: relative;
   z-index: 6;
-  padding: 50px 20px 120px;
-  border-radius: 90px 0 0;
+  padding: 40px 30px 120px;
+  border-radius: 90px 10px 10px;
   width: 100%;
   min-height: 100px;
   box-sizing: border-box;
   overflow: visible;
-  background: linear-gradient(50deg, rgba(25,30,33,0.85), rgba(20,53,58,0.85), rgba(25,30,33,0.85));
+  background: linear-gradient(to bottom, rgba(4, 23, 31, 0.85), rgba(15, 44, 48, 0.85));
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
 .basiliskt2_text,
@@ -79,7 +81,7 @@ background: linear-gradient(to bottom, #000000, #7F8BC7, #48768D, #151D1F);
 
 .basiliskt2_text {
   margin: 0;
-  padding: 20px 20px;
+  padding: 20px 30px;
   font-family: 'Merriweather';
   font-size: 13px;
   color: #fff;
@@ -106,14 +108,14 @@ background: linear-gradient(to bottom, #000000, #7F8BC7, #48768D, #151D1F);
 }
 
 .basiliskt2_diag, .basiliskt2_diagb {
-  display: inline-block;
   font-size: 18px;
   font-weight: bold;
   color: transparent;
   background: linear-gradient(to bottom, #36BBC9 0%, #43e0e6 50%, #36BBC9 100%);
   -webkit-background-clip: text;
   background-clip: text;
-  filter: drop-shadow(0 0 5px #43e0e6);
+  filter: drop-shadow(0 0 3px #43e0e6);
+  line-height: 1;
 }
 
 .basiliskt2_diag {
@@ -126,7 +128,7 @@ background: linear-gradient(to bottom, #000000, #7F8BC7, #48768D, #151D1F);
 
 
 .basiliskt2_speech {
-  margin: -10px 0 -110px 0;
+  margin: -25px 0 -135px 0;
   font-family: 'Megrim';
   font-size: 30px;
   font-weight: bold;
