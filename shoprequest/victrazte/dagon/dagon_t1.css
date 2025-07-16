@@ -77,11 +77,11 @@
 }
 
 .dagont1_text {
+  color: #fff;
   margin: -40px 0 0 0;
   z-index: 5;
   font-family: 'Bellefair';
-  font-size: 20px;
-  color: #fff;
+  font-size: 18px;
   text-align: justify;
   line-height:1;
 }
@@ -96,15 +96,16 @@
 }
 
 .dagont1_diag {
+  color: transparent;
   display: inline-block;
   font-family: 'HorrorNewYear';
-  font-size: 30px;
+  font-size: 26px;
   font-weight: bold;
-  color: transparent;
   background: linear-gradient(to bottom, #b8a99e, #8f736a);
   -webkit-background-clip: text;
   background-clip: text;
   filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+  line-height: 0.9;
 }
 
 .dagont1_speech {
