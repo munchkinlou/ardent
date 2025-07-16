@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+.redrumt1_content {
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto 0 auto;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background: transparent;
+  box-sizing: border-box;
+  filter: drop-shadow(0 0 0px rgba(0,0,0,1)) drop-shadow(0 0 2px rgba(0,0,0,1)) drop-shadow(0 0 10px rgba(0,0,0,1));
+}
+
+
+.redrumt1_bor {
+  position: relative;
+  width: 500px;
+  margin: 20px auto;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #000000, #791512, black);
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% calc(100% - 180px),
+    50% 100%,
+    0% calc(100% - 180px)
+  ); 
+  padding: 10px;
+}
+
+.redrumt1_con {
+  position: relative;
+  width: 100%;
+  background: #661718 url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4da2081b-4ea4-4f1c-a1d6-e4e32bd6d624/dk4wtqp-34a3cb90-1943-4d70-97fb-788254684599.png/v1/fit/w_828,h_1452,q_70,strp/redrum_by_blacknemera_by_trensperencii_dk4wtqp-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTkzMCIsInBhdGgiOiJcL2ZcLzRkYTIwODFiLTRlYTQtNGYxYy1hMWQ2LWU0ZTMyYmQ2ZDYyNFwvZGs0d3RxcC0zNGEzY2I5MC0xOTQzLTRkNzAtOTdmYi03ODgyNTQ2ODQ1OTkucG5nIiwid2lkdGgiOiI8PTExMDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.jvAVL367puC6ps7uNxSHqJ3HK5OsVF0JMW25HHavDAQ');
+  background-size: 110%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% calc(100% - 180px),
+    50% 100%,
+    0% calc(100% - 180px)
+  );
+  padding: 20px 20px 790px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+
+}
+
+
+.redrumt1_inbor {
+  position: relative;
+  z-index: 6;
+  margin: 0 auto;
+  padding: 2px;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(to top, #590302, black);
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% calc(100% - 160px),
+    50% calc(100% - 80px),
+    0% calc(100% - 160px)
+  );
+}
+
+.redrumt1_incon {
+  padding: 20px;
+  position: relative;
+  z-index: 6;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: visible;
+  background: #2a0103;
+  padding: 10px 20px 80px;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% calc(100% - 160px),
+    50% calc(100% - 80px),
+    0% calc(100% - 160px)
+  );
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.redrumt1_text {
+  text-align: justify;
+  font-family: 'Lora';
+  font-size: 13px;
+  color: #FFFFDF;
+  filter: drop-shadow(0 0 0px rgba(0,0,0,1)) drop-shadow(0 0 2px rgba(0,0,0,1)) drop-shadow(0 0 10px rgba(0,0,0,1));
+  line-height: 1.2;
+  margin: 0;
+}
+
+.redrumt1_divider {
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    white 50%,
+    transparent 100%
+  );
+  margin: 5px 0;
+  line-height: normal;
+}
+
+.redrumt1_speech {
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #ca1d1a 50%, transparent 100%) 1;
+  position: relative;
+  font-family: 'Special Elite';
+  color: #ca1d1a;
+  font-size: 30px;
+  text-align: center;
+  margin: 0 0 10px 0;
+  filter: drop-shadow(0 0 0px rgba(0,0,0,1)) drop-shadow(0 0 2px rgba(0,0,0,1));
+}
+
+.redrumt1_diag {
+  font-size: 16px;
+  font-family: 'Special Elite';
+  color: #ca1d1a;
+  filter: drop-shadow(0 0 0px rgba(0,0,0,1)) drop-shadow(0 0 2px rgba(0,0,0,1));
+  line-height: 0.9;
+}
+
+@media (max-width: 1200px) {
+  .redrumt1_content {
+    filter: none;
+  }
+
+  .redrumt1_bor, 
+  .redrumt1_con, .redrumt1_inbor, .redrumt1_incon {
+    clip-path: none;
+  }
+
+  .redrumt1_text,
+  .redrumt1_speech,
+  .redrumt1_diag {
+    filter: none;
+  }
+
+}
