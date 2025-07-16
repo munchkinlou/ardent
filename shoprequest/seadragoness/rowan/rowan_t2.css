@@ -63,9 +63,9 @@
 .rowant2_text{
   position: relative;
   z-index: 5;
-  padding: 40px 50px 40px 50px;
+  padding: 30px 30px 40px;
   font-family:'Quicksand', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.3;
   color: #ffffff;
   text-align:justify;
@@ -91,10 +91,11 @@
 
 .rowant2_diag {
   font-family: 'Snowman House', sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   color: #229cee;
   font-weight: bold;
   text-shadow: 0 0 5px #000000;
+  line-height: 0.9;
 }
 
 .rowant2_speech {
