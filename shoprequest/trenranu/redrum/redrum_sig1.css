@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+
+.redrum_sig_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 700px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.redrum_sig_ban {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  border: 2px solid black;
+  box-shadow: 0 0 5px rgba(0,0,0,0.6);
+  filter: none;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: visible;
+}
+
+.redrum_sig_ban::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/TrenRanu/Redrum/background.jpg?updatedAt=1752524508853');
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  z-index: 0;
+  border-radius: inherit;
+}
+
+.redrum_sig_ban > * {
+  position: relative;
+  z-index: 1;
+}
+
+.redrum_sig_img {
+  position: absolute;
+  top: -40px;
+  right: -50px;
+  transform: none;
+  margin-right: 0;
+  width: 320px;
+  height: auto;
+  z-index: 2;
+  filter: drop-shadow(0 0 0px rgba(0,0,0,1)) drop-shadow(0 0 2px rgba(0,0,0,1)) drop-shadow(0 0 10px rgba(0,0,0,1));
+}
+
+.redrum_box {
+  display: block;
+  min-width: 120px;
+  max-width: 500px;
+  width: 100%;
+  height: 80%;
+  margin: 15px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid;
+  border-image: linear-gradient(to right, transparent, #ca1d1a 50%, transparent 100%) 1;
+  box-sizing: border-box;
+}
+
+.redrum_sig_text {
+  color: #fff;
+  font-size: 13px;
+  font-family: 'Special Elite', cursive;
+  text-shadow: 0 0 8px #000, 0 0 2px #000000,0 0 2px #000000;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.redrum_sigwarnimg {
+  display: block;
+  font-size: 13px;
+  margin: -8px auto 0 10px;
+  text-align: left;
+  font-family: 'Special Elite';
+  font-weight: bold;
+  text-decoration: underline;
+  z-index: 0;
+  letter-spacing: 0.1px;
+}
+
+@media (max-width: 700px) {
+  .redrum_sig_main {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    padding: 0 4vw;
+    padding-top: 40px;
+  }
+  .redrum_sig_ban {
+    height: auto;
+    min-height: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 12px 0 8px 0;
+  }
+  .redrum_sig_img {
+    position: static;
+    width: 40vw;
+    max-width: 60vw;
+    min-width: 80px;
+    margin: 0 auto 8px auto;
+    top: 0;
+    left: 0;
+    transform: none;
+    display: block;
+  }
+  .redrum_sig_text {
+    margin:0;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    min-width: 0;
+    max-width: 100%;
+    padding: 0 4vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .redrum_sig_img {
+    width: 100%;
+    max-width:  400px;
+  }
+  .redrum_sig_text {
+    font-size: 0.95rem;
+    padding: 0 2vw;
+    margin:0;
+  }
+}
