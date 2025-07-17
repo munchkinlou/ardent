@@ -91,7 +91,7 @@
   letter-spacing: 0.1px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .redrum_sig_main {
     width: 100%;
     min-width: 0;
