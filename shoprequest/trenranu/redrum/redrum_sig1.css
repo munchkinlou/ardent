@@ -92,6 +92,27 @@
 }
 
 @media (max-width: 900px) {
+
+.redrum_sig_text {
+    color: #fff;
+    font-size: clamp(0.7rem, 1.5vw, 1.1rem);
+    font-family: 'Special Elite', cursive;
+    text-shadow: 0 0 0.6vw #000, 0 0 0.2vw #000, 0 0 0.2vw #000;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.redrum_box {
+    min-width: 120px;
+    max-width: clamp(320px, 65vw, 500px);
+    width: 80%;
+    margin: 15px 0 15px 10px;
+    align-self: flex-start;
+}
+
+}
+
+@media (max-width: 600px) {
   .redrum_sig_main {
     width: 100%;
     min-width: 0;
@@ -107,11 +128,17 @@
     justify-content: flex-start;
     padding: 12px 0 8px 0;
   }
+  .redrum_box {
+    width: 100%;
+    max-width: 95%;
+    align-self: flex-start;
+    padding: 0;
+    margin: 0 auto;
+  }
   .redrum_sig_img {
     position: static;
-    width: 40vw;
-    max-width: 60vw;
-    min-width: 80px;
+    width: 100%;
+    max-width: 400px;
     margin: 0 auto 8px auto;
     top: 0;
     left: 0;
@@ -122,23 +149,10 @@
     margin:0;
     align-items: center;
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.96rem;
     min-width: 0;
     max-width: 100%;
-    padding: 0 4vw;
-  }
-}
-
-@media (max-width: 600px) {
-  .redrum_sig_img {
-    width: 100%;
-    max-width:  400px;
-  }
-  .redrum_sig_text {
-    font-size: 0.95rem;
     padding: 0 2vw;
-    margin:0;
   }
 }
 
-}
