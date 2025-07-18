@@ -1,5 +1,5 @@
 window.onload = () => {
-  const container = document.querySelector('.blocky');
+  const container = document.querySelector('.info_container');
   const canvas = document.createElement('canvas');
   canvas.className = 'flower-canvas';
   canvas.style.position = 'absolute';
@@ -31,7 +31,7 @@ window.onload = () => {
     return {
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height,
-      radius: Math.random() * 8 + 4,
+      radius: Math.random() * 4 + 2,
       dx: (Math.random() - 0.5) * 0.2,
       dy: Math.random() * 0.2 + 0.05,
       life: lifespan,
@@ -59,8 +59,8 @@ window.onload = () => {
           light.x, light.y, light.radius * 2
         );
         
-        const mainColor = `hsla(${light.hue}, ${light.saturation}%, ${light.lightness}%, ${light.alpha * 0.8})`;
-        const glowColor = `hsla(${light.hue}, ${light.saturation - 20}%, ${light.lightness - 20}%, ${light.alpha * 0.3})`;
+        const mainColor = `hsla(${light.hue}, ${light.saturation}%, ${light.lightness}%, ${light.alpha * 0.4})`;
+        const glowColor = `hsla(${light.hue}, ${light.saturation - 20}%, ${light.lightness - 20}%, ${light.alpha * 0.15})`;
         
         gradient.addColorStop(0, mainColor);
         gradient.addColorStop(0.5, glowColor);
