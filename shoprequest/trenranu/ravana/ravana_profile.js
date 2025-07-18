@@ -1,5 +1,5 @@
 window.onload = () => {
-  const containers = document.querySelectorAll('content');
+  const containers = document.querySelectorAll('.info_container');
   
   containers.forEach((container, index) => {
     const canvas = document.createElement('canvas');
