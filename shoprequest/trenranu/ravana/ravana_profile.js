@@ -26,10 +26,9 @@ window.onload = () => {
 
     function createLight() {
       const lifespan = Math.random() * 400 + 300;
-      const isPurple = Math.random() > 0.5;
-      const hue = isPurple ? Math.random() * 60 + 250 : 30;
-      const saturation = isPurple ? 80 : 56;
-      const lightness = isPurple ? 70 : 44;
+      const hue = Math.random() * 60 + 250; // Purple: 250-310
+      const saturation = 80;
+      const lightness = 70;
       
       return {
         x: Math.random() * canvas.width,
