@@ -25,7 +25,7 @@ window.onload = () => {
     const lights = [];
 
     function createLight() {
-      const lifespan = Math.random() * 400 + 300;
+      const lifespan = Math.random() * 800 + 600;
       const hue = Math.random() * 60 + 250; // Purple: 250-310
       const saturation = 80;
       const lightness = 70;
@@ -34,8 +34,8 @@ window.onload = () => {
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
         radius: Math.random() * 4 + 2,
-        dx: (Math.random() - 0.5) * 0.2,
-        dy: Math.random() * 0.2 + 0.05,
+        dx: (Math.random() - 0.5) * 0.1,
+        dy: -(Math.random() * 0.3 + 0.2),
         life: lifespan,
         maxLife: lifespan,
         age: 0,
