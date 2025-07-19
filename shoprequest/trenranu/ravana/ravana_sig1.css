@@ -64,7 +64,7 @@
 .ravana_sig_img {
   position: absolute;
   top: -140%;
-  left: -30%;
+  left: -35%;
   transform: none;
   margin-right: 0;
   width: 90%;
@@ -79,12 +79,12 @@
 
 .ravana_sig_text {
   color: #fff;
-  font-size: clamp(4px, 2vw, 10px);
+  font-size: clamp(6px, 1.5vw, 10px);
   font-family: 'Special Elite', cursive;
   text-shadow: 0 0 8px #000, 0 0 2px #000000,0 0 2px #000000;
   text-align: center;
   line-height: 1.4;
-  padding-left: 50%;
+  padding-left: 45%;
   padding-right: 10px;
 }
 
@@ -133,4 +133,5 @@
     padding: 0 2vw;
   }
 }
+
 
