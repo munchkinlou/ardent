@@ -9,7 +9,7 @@
   box-sizing: border-box;
   width: 100%;
   max-width: 700px;
-  margin: 220px auto;
+  margin: 100px auto 80px;
   position: relative;
   overflow: visible;
 }
@@ -95,7 +95,7 @@
     min-width: 0;
     max-width: 100%;
     padding: 0 4vw;
-    padding-top: 40px;
+    margin: 0 auto;
   }
   .ravana_sig_ban {
     height: auto;
@@ -130,8 +130,9 @@
     font-size: 10px;
     min-width: 0;
     max-width: 100%;
-    padding: 0 2vw;
+    padding: 4px 2vw;
   }
 }
+
 
 
