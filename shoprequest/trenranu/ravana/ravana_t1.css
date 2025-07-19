@@ -26,7 +26,8 @@ box-shadow:
   background: #080A16 url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4da2081b-4ea4-4f1c-a1d6-e4e32bd6d624/dk4r5yv-387b550f-0daf-4208-ba20-6db56671a3c9.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRkYTIwODFiLTRlYTQtNGYxYy1hMWQ2LWU0ZTMyYmQ2ZDYyNFwvZGs0cjV5di0zODdiNTUwZi0wZGFmLTQyMDgtYmEyMC02ZGI1NjY3MWEzYzkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.OlxxXNA-80p_PYN43DgQcClMVO61GSy5zqlpf-5TnvY') no-repeat top;
   background-size: 100%;
   z-index: 0;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8); 
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+  pointer-events: none;
 }
 
 .ravanat1_con::after {
