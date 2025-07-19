@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
+:root {
+  --ravana-sig-img-url: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4da2081b-4ea4-4f1c-a1d6-e4e32bd6d624/dk4wqej-f7ae7915-6a03-486d-9620-3517a4f2bbca.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRkYTIwODFiLTRlYTQtNGYxYy1hMWQ2LWU0ZTMyYmQ2ZDYyNFwvZGs0d3Flai1mN2FlNzkxNS02YTAzLTQ4NmQtOTYyMC0zNTE3YTRmMmJiY2EucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.0XTF_tJZxl7C-m0yWQDcIFpEyZaZLgljyfz8Kia-mlg');
+}
 
 .ravana_sig_main {
   display: flex;
@@ -70,7 +73,7 @@
   width: 90%;
   height: 340%;
   z-index: 2;
-  background: transparent url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4da2081b-4ea4-4f1c-a1d6-e4e32bd6d624/dk4wqej-f7ae7915-6a03-486d-9620-3517a4f2bbca.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRkYTIwODFiLTRlYTQtNGYxYy1hMWQ2LWU0ZTMyYmQ2ZDYyNFwvZGs0d3Flai1mN2FlNzkxNS02YTAzLTQ4NmQtOTYyMC0zNTE3YTRmMmJiY2EucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.0XTF_tJZxl7C-m0yWQDcIFpEyZaZLgljyfz8Kia-mlg');
+  background: transparent var(--ravana-sig-img-url);
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
@@ -133,6 +136,4 @@
     padding: 4px 2vw;
   }
 }
-
-
 
