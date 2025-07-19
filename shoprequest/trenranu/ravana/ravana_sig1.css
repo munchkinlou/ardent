@@ -11,6 +11,7 @@
   max-width: 700px;
   margin: 220px auto;
   position: relative;
+  overflow: visible;
 }
 
 .ravana_sig_ban {
@@ -24,7 +25,7 @@
   z-index: 1;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   overflow: visible;
 }
 
@@ -45,65 +46,48 @@
   z-index: 1;
 }
 
-.ravana_sig_img {
-  position: absolute;
-  top: -100%;
-  left: -25%;
-  transform: none;
-  width: 450px;
-  height: auto;
-  z-index: 10;
-  filter: drop-shadow(0 0 0px rgba(162,137,248,1)) drop-shadow(0 0 5px rgba(162,137,248,1));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .ravana_box {
   width: 100%;
   height: 80%;
   margin: 0 auto;
-  overflow: hidden;
   background-color: rgba(0, 0, 0, 0.7);
   border: 2px solid;
   border-image: linear-gradient(to right, transparent, #A489FB 50%, transparent 100%) 1;
   box-sizing: border-box;
+  overflow: hidden;
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.ravana_sig_img {
+  position: absolute;
+  top: -140%;
+  left: -30%;
+  transform: none;
+  margin-right: 0;
+  width: 90%;
+  height: 340%;
+  z-index: 2;
+  background: transparent url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4da2081b-4ea4-4f1c-a1d6-e4e32bd6d624/dk4wqej-f7ae7915-6a03-486d-9620-3517a4f2bbca.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRkYTIwODFiLTRlYTQtNGYxYy1hMWQ2LWU0ZTMyYmQ2ZDYyNFwvZGs0d3Flai1mN2FlNzkxNS02YTAzLTQ4NmQtOTYyMC0zNTE3YTRmMmJiY2EucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.0XTF_tJZxl7C-m0yWQDcIFpEyZaZLgljyfz8Kia-mlg');
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0 0 0px #A48DFA) drop-shadow(0 0 4px #A48DFA);
 }
 
 .ravana_sig_text {
   color: #fff;
-  font-size: 10px;
+  font-size: clamp(4px, 2vw, 10px);
   font-family: 'Special Elite', cursive;
   text-shadow: 0 0 8px #000, 0 0 2px #000000,0 0 2px #000000;
   text-align: center;
   line-height: 1.4;
-  display: block;
-  height: 100%;
-  width: 60%;
-  margin: 13px -20px 0 auto;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  padding-left: 50%;
+  padding-right: 10px;
 }
 
-@media (max-width: 900px) {
-
-.ravana_sig_text {
-    color: #fff;
-    font-size: clamp(0.3rem, 2vw, 0.6rem);
-    width: clamp(60%, 90vw, 60%);
-}
-
-.ravana_sig_img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: clamp(60%, 90vw, 80%);
-  top: clamp(-120%, -15vw, -80%);
-}
-
-}
 
 @media (max-width: 600px) {
   .ravana_sig_main {
@@ -111,10 +95,11 @@
     min-width: 0;
     max-width: 100%;
     padding: 0 4vw;
-    margin: 0 auto;
+    padding-top: 40px;
   }
   .ravana_sig_ban {
     height: auto;
+    min-height: 100px;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
@@ -128,24 +113,24 @@
     margin: 0 auto;
   }
   .ravana_sig_img {
-    position: static;
-    width: 100%;
-    max-width: 400px;
+    position: relative;
     margin: 0 auto 8px auto;
     top: 0;
     left: 0;
+    height: 200px;
+    width: 100%;
     transform: none;
     display: block;
+    background-position: center;
   }
   .ravana_sig_text {
-    margin:0 auto;
+    margin:0;
     align-items: center;
     text-align: center;
-    font-size: 8px;
+    font-size: 10px;
     min-width: 0;
     max-width: 100%;
-    padding: 10px 0;
-    width: 100%;
-    transform: translateY(0%);
+    padding: 0 2vw;
   }
 }
+
