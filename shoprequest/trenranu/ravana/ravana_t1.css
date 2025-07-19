@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+
+.ravanat1_bor {
+  padding: 2px;
+  background: linear-gradient(to bottom,
+    #090A17,
+    #5f4bd7,
+    #40d2ff,
+    #64b4ff);
+  box-sizing: border-box;
+  width: 800px;
+  margin: 20px auto;
+box-shadow:
+  10px 10px 10px rgba(0, 0, 0, 0.85),
+  20px 20px 50px rgba(0, 0, 0, 0.5);
+
+}
+
+.ravanat1_con {
+  max-width: 100%;
+  padding: 440px 30px 30px;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #080A16 url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4da2081b-4ea4-4f1c-a1d6-e4e32bd6d624/dk4r5yv-387b550f-0daf-4208-ba20-6db56671a3c9.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRkYTIwODFiLTRlYTQtNGYxYy1hMWQ2LWU0ZTMyYmQ2ZDYyNFwvZGs0cjV5di0zODdiNTUwZi0wZGFmLTQyMDgtYmEyMC02ZGI1NjY3MWEzYzkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.OlxxXNA-80p_PYN43DgQcClMVO61GSy5zqlpf-5TnvY') no-repeat top;
+  background-size: 100%;
+  z-index: 0;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8); 
+}
+
+.ravanat1_con::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 390px;
+  height: 350px;
+  background: linear-gradient(to bottom, transparent 0%, #272C4A 20%, transparent 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.ravanat1_infade {
+  position: absolute;
+  top: 150px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  padding: 40px;
+  margin: 0;
+  z-index: 1;
+  -webkit-mask-image: linear-gradient(to top, transparent 200px, black 300px);
+  mask-image: linear-gradient(to top, transparent 200px, black 300px);
+  overflow: hidden;
+  transform: scaleY(-1);
+}
+
+.ravanat1_infade::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  box-shadow:
+    0 -5px 10px rgba(100, 180, 255, 0.6),
+    0 -8px 15px rgba(100, 180, 255, 0.4),
+    inset 2px 0 10px 1px rgba(100, 180, 255, 0.8),
+    inset -2px 0 10px 1px rgba(100, 180, 255, 0.8),
+    inset 0 0 20px rgba(100, 180, 255, 0.3);
+}
+
+.ravanat1_inbor {
+  position: relative;
+  padding: 1.5px;
+  border-radius: 20px;
+  background: linear-gradient(to bottom,
+    transparent 0%,
+    rgba(54, 46, 60, 0.8) 100px,
+    rgba(51, 39, 63, 0.8) 100%);
+  box-sizing: border-box;
+  width: 100%;
+  margin:0 auto;
+  z-index: 2;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 60px);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 60px);
+}
+
+.ravanat1_incon {
+  position: relative;
+  border-radius: 20px;
+  width: 100%;
+  min-height: 50px;
+  padding: 60px 20px 10px;
+  box-sizing: border-box;
+  overflow: visible;
+  background: linear-gradient(to bottom,
+    transparent 0%,
+    #000000 300px,
+    black 100%);
+  z-index: 4;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 60px);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 60px);
+}
+
+.ravanat1_text {
+  font-family: 'Lora';  
+  font-size: 12px;
+  color: #c7c7f4;
+  padding: 5px 20px 0;
+  text-align: justify;
+  z-index: 5;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #5bb3ff, transparent) 1;
+}
+
+.ravanat1_diag {
+  font-family: 'Eagle Lake';
+  font-size: 12px;
+  color: transparent;
+  background: linear-gradient(to bottom, #BFFFFF, #48A9FF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.ravanat1_speech {
+  font-family: 'Eagle Lake';
+  font-size: 20px;
+  color: transparent;
+  text-align: center;
+  font-weight: bold;
+  background: linear-gradient(to bottom, #BFFFFF, #48A9FF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: bold;
+  margin: -20px 0 -30px 0;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .ravanat1_infade video {
+    display: none;
+  }
+  
+  .ravanat1_infade::after {
+    display: none;
+  }
+
+  .ravanat1_con::after {
+    display: none;
+  }
+  .ravanat1_speech, .ravanat1_diag {
+    color: #48A9FF !important;
+    text-shadow: 0 0 3px #000000 !important;
+  }
+}
