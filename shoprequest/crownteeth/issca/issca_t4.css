@@ -176,8 +176,6 @@
   transform: none;
 }
 
-
-
 @media (max-width: 1200px) {
 
   .isscat4_content {
@@ -187,7 +185,7 @@
   .isscat4_title1, .isscat4_title2, .isscat4_title3 {
     position: static;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 1;
     margin: 10px 0;
     border-bottom: none;
@@ -198,4 +196,10 @@
     -webkit-mask: none;
   }
 
+  .isscat4_speech::before {
+    margin: 0 auto;
+  }
+  
+
+}
 }
