@@ -6,10 +6,10 @@
 }
 
 .isscat4_content {
-	position: relative;
+  position: relative;
   width: 100%;
   max-width: 450px;
-  margin: 350px auto 40px;
+  margin: 350px auto 10px;
   position: relative;
   overflow: visible;
   padding: 0;
