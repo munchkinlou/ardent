@@ -141,21 +141,25 @@ box-shadow:
   margin: -20px 0 -30px 0;
 }
 
-
 @media screen and (max-width: 1200px) {
-  .ravanat1_infade video {
-    display: none;
-  }
   
-  .ravanat1_infade::after {
+  .ravanat1_infade, .ravanat1_infade::after {
     display: none;
   }
 
   .ravanat1_con::after {
     display: none;
   }
+
+  .ravanat1_incon, .ravanat1_inbor {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
   .ravanat1_speech, .ravanat1_diag {
     color: #48A9FF !important;
     text-shadow: 0 0 3px #000000 !important;
   }
+}
+
 }
