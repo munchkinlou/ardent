@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.cdnfonts.com/css/pp-pangaia');
+
+.cassiopeiat1_content {
+	position: relative;
+  width: 100%;
+  max-width: 555px;
+  margin: 300px auto;
+  position: relative;
+  overflow: visible;
+  padding: 50px 40px;
+  background:transparent;
+  box-sizing: border-box;
+  filter: drop-shadow(0 2px 5px rgba(0,0,0,0.75));
+  border: 1px solid;
+  border-image: linear-gradient(to right, transparent 0%, transparent 40%, #ffffff 45%, #ffffff 50%, transparent 60%, transparent 100%) 1;
+}
+
+.cassiopeiat1_content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid;
+  border-image: linear-gradient(to bottom, transparent 0px, transparent 230px, #ffffff 340px, #ffffff calc(100% - 320px), transparent calc(100% - 230px), transparent 100%) 1;
+}
+
+.cassiopeiat1_frame {
+  position: absolute;
+  top: -22px;
+  left:-20px;
+  width: 107.5%;
+  height: calc(100% + 7px);
+  background-image: url('https://ik.imagekit.io/arl60/Ardent/shop/LadyWillow/Cassiopeia/border.png?updatedAt=1753134005334'), url('https://ik.imagekit.io/arl60/Ardent/shop/LadyWillow/Cassiopeia/border2.png?updatedAt=1753134011949');
+  background-position: left top, right top;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 40%, 40%;
+  background-color: transparent;
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0 4px 8px rgba(255, 255, 255, 0.75));
+  
+}
+
+.cassiopeiat1_frame::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: calc(100% + 35px);
+  background-image: url('https://ik.imagekit.io/arl60/Ardent/shop/LadyWillow/Cassiopeia/border.png?updatedAt=1753134005334'), url('https://ik.imagekit.io/arl60/Ardent/shop/LadyWillow/Cassiopeia/border2.png?updatedAt=1753134011949');
+  background-position: left top, right top;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 40%, 40%;
+  background-color: transparent;
+  pointer-events: none;
+  filter: drop-shadow(0 4px 8px rgba(255, 255, 255, 0.75));
+  transform: scaleY(-1);
+  z-index: 6;
+}
+
+.cassiopeiat1_img {
+  position: absolute;
+  top: 70px;
+  left: 55px;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://i.imgur.com/fTYo9zP.png');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: transparent;
+  pointer-events: none;
+  filter: drop-shadow(0 4px 8px rgba(255, 255, 255, 0.75));
+  z-index: 7;
+}
+
+
+.cassiopeiat1_bor {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to top, #ffffff 100%);
+  padding: 3px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.cassiopeiat1_con {
+  position: relative;
+  width: 100%;
+  background: black url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/starrynight.png?updatedAt=1753128434523') no-repeat center bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  pointer-events: none;
+  margin: 0 auto;
+}
+
+.cassiopeiat1_con > * {
+  position: relative;
+  z-index: 2;
+}
+
+.cassiopeiat1_incon {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 20px 15px 0;
+  width: 100%;
+  min-height: 400px;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, rgba(149, 36, 149, 0.4), rgba(45, 9, 45, 0.6));
+  height: auto;
+  box-shadow: inset 0 0 10px rgba(48, 9, 48, 0.5), inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.cassiopeiat1_bgvid {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.3;
+  transform: scaleX(-1);
+  pointer-events: none;
+}
+
+.cassiopeiat1_text, .cassiopeiat1_speech, .cassiopeiat1_diag {
+  position: relative;
+  z-index: 2;
+}
+
+.cassiopeiat1_text {
+  text-align: justify;
+  font-family: 'Bellefair';
+  font-size: 14px;
+  color: #dadada;
+  line-height: 1.2;
+  margin: -20px 0 0;
+  padding: 60px 20px 30px;
+}
+
+.cassiopeiat1_text::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 10px;
+  background: linear-gradient(to right, transparent, #ffffff, transparent);
+}
+
+.cassiopeiat1_speech {
+  margin: -20px auto 0px;
+  font-family: 'PP Pangaia';
+  font-size: 30px;
+  font-weight: bold;
+  color: transparent;
+  text-align: center;
+  background: linear-gradient(to bottom, #ffffff, #aaaaaa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.5)) drop-shadow(0 0 3px rgba(0, 0, 0, 0.5));
+}
+
+.cassiopeiat1_speech::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 30px 0 -10px;
+  background: linear-gradient(to right, transparent, #ffffff, #8a8a8a, transparent);
+}
+
+.cassiopeiat1_diag {
+  font-family: 'PP Pangaia';
+  font-size: 13px;
+  font-weight: bold;
+  color: transparent;
+  background: linear-gradient(to bottom, #ffffff, #7b7b7b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.5)) drop-shadow(0 0 3px rgba(0, 0, 0, 0.5));
+  line-height: 1.4;
+}
+
+
+.cassiopeiat1_bor, .cassiopeiat1_con, .cassiopeiat1_incon {
+  box-sizing: border-box;
+  position: relative;
+  mask: 
+    radial-gradient(ellipse 75px 70px at 0 0, transparent 70px, rgba(0, 0, 0, 0.2) 72px, rgba(0, 0, 0, 0.6) 74px, black 75px) 0 0,
+    radial-gradient(ellipse 75px 70px at 100% 0, transparent 70px, rgba(0, 0, 0, 0.2) 72px, rgba(0, 0, 0, 0.6) 74px, black 75px) 100% 0,
+    radial-gradient(ellipse 75px 70px at 100% 100%, transparent 70px, rgba(0, 0, 0, 0.2) 72px, rgba(0, 0, 0, 0.6) 74px, black 75px) 100% 100%,
+    radial-gradient(ellipse 75px 70px at 0 100%, transparent 70px, rgba(0, 0, 0, 0.2) 72px, rgba(0, 0, 0, 0.6) 74px, black 75px) 0 100%;
+  -webkit-mask: 
+    radial-gradient(ellipse 75px 70px at 0 0, transparent 70px, rgba(0, 0, 0, 0.2) 72px, rgba(0, 0, 0, 0.6) 74px, black 75px) 0 0,
+    radial-gradient(ellipse 75px 70px at 100% 0, transparent 70px, rgba(0, 0, 0, 0.2) 72px, rgba(0, 0, 0, 0.6) 74px, black 75px) 100% 0,
+    radial-gradient(ellipse 75px 70px at 100% 100%, transparent 70px, rgba(0, 0, 0, 0.2) 72px, rgba(0, 0, 0, 0.6) 74px, black 75px) 100% 100%,
+    radial-gradient(ellipse 75px 70px at 0 100%, transparent 70px, rgba(0, 0, 0, 0.2) 72px, rgba(0, 0, 0, 0.6) 74px, black 75px) 0 100%;
+  mask-size: 51% 51%;
+  -webkit-mask-size: 51% 51%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+
+@media (max-width: 1200px) {
+
+  .cassiopeiat1_bor, .cassiopeiat1_con, .cassiopeiat1_incon {
+    mask: none;
+    -webkit-mask: none;
+  }
+
+  .cassiopeiat1_bgvid {
+    display: none;
+  }
+
+  .cassiopeiat1_frame {
+    display: none;
+  }
+
+  .cassiopeiat1_content, .cassiopeiat1_content::before {
+    border: none;
+    padding: 0;
+    filter: none;
+  }
+
+}
+
