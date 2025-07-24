@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
+
+
+.andyc {
+  display:block;
+  text-align:center;
+  font-size:10px;
+  margin: 0 auto;
+}
+
+.astariont1_content {
+	position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 10px auto 180px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+  filter: drop-shadow(0 8px 10px rgba(0,0,0,0.75));
+}
+
+.astariont1_img {
+  position: absolute;
+  bottom: -212px;
+  left: -130px;
+  width: 165%;
+  height: 450px;
+  background: transparent url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6686631c-3c46-4e40-b13a-732a8cddb909/dk7a2cp-ede22cdd-e579-4b86-8e30-f8b6f15c6441.png/v1/fill/w_1280,h_923/paint__munchkinlou__base__vlinny_by_munchkinlou_dk7a2cp-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTIzIiwicGF0aCI6IlwvZlwvNjY4NjYzMWMtM2M0Ni00ZTQwLWIxM2EtNzMyYThjZGRiOTA5XC9kazdhMmNwLWVkZTIyY2RkLWU1NzktNGI4Ni04ZTMwLWY4YjZmMTVjNjQ0MS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.U5P0WFlhYTZEz3a__KIj-BAwI1E5ixOmU4V7dNIDBYE') no-repeat center top;
+  background-size: 100%; 
+  z-index: 5;
+  pointer-events: none;
+}
+
+.astariont1_bor {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom, #EDC19B, #000000);
+  padding: 5px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.astariont1_con {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  pointer-events: none;
+  margin: 0 auto;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.astariont1_con::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/starrynight.png?updatedAt=1753128434523') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  filter: grayscale(100%) saturate(0%) brightness(0.5);
+  pointer-events: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.astariont1_con > * {
+  position: relative;
+  z-index: 2;
+}
+
+.astariont1_incon {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 20px 30px 50px;
+  width: 100%;
+  min-height: 400px;
+  box-sizing: border-box;
+  background: rgba(0,0,0,0.8);
+  height: auto;
+  box-shadow: 0 0 10px 10px rgba(122, 122, 122, 0.2);
+  text-align: justify;
+  font-family: 'Amarante';
+  font-size: 12px;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.astariont1_incon star {
+  color: #DBBA9C;
+	font-family: 'Amarante';
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #000000;
+  line-height: 0.9;
+}
+
+.astariont1_speech {
+  display: block;
+  position: relative;
+  margin: -20px 0 -70px 0;
+  padding-right: 10px;
+  font-family: 'Love Light';
+  font-weight: bold;
+  color: #DBBA9C;
+  text-shadow: 1px 1px 2px #0a0906;
+  font-size: 50px;
+  text-align: right;
+  line-height: 1;
+}
+
+.astariont1_speech::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 100%;
+  height: 2px;
+  margin: 20px auto 0;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.5), transparent);
+}
