@@ -11,8 +11,7 @@
 
 .astariont1_content {
 	position: relative;
-  width: 100%;
-  max-width: 400px;
+  width: 400px;
   margin: 10px auto 180px;
   position: relative;
   overflow: visible;
@@ -127,3 +126,22 @@
   margin: 20px auto 0;
   background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.5), transparent);
 }
+
+@media (max-width: 1200px) {
+
+  .astariont1_content {
+    filter: none;
+  }
+
+  .astariont1_con::before {
+    display: none;
+  }
+
+  .astariont1_speech {
+    text-align: center;
+    padding:0;
+  }
+
+}
+
+
