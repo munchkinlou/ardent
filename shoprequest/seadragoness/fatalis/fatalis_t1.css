@@ -215,3 +215,11 @@
   gap: 5px;
   justify-content: center;
 }
+
+@media (max-width: 1200px) {
+  .fatalist1_con::before, .fatalist1_inf::after, .fatalist1_inf {
+    display: none;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+}
