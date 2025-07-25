@@ -139,7 +139,7 @@
 }
 
 .fatalist1_incon polt {
-  display: inline;
+  display: inline-block;
   font-family: 'Oregano';  
   font-size: 16px;
   color: #da9842;
@@ -153,6 +153,8 @@
   background-clip: text;
   text-fill-color: transparent;
   filter: drop-shadow(1px 1px 1px rgba(139, 44, 97, 0.4));
+  white-space: normal;
+  word-wrap: break-word;
 }
 
 .fatalist1_incon bal {
