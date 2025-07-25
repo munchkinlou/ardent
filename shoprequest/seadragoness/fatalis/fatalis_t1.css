@@ -132,15 +132,6 @@
   filter: drop-shadow(0px 1px 0.5px rgba(0, 0, 0, 0.7));
 }
 
-.fatalist1_text polty {
-  display: inline;
-  font-family: 'Oregano';  
-  font-size: 16px;
-  color: #f1a533;
-  text-shadow: none;
-  filter: drop-shadow(0px 0px 1px rgba(121, 100, 8, 0.4));
-}
-
 .fatalist1_text bal {
   display: inline;
   font-family: 'Grenze Gotisch';  
@@ -167,6 +158,16 @@
   text-shadow: none;
   filter: drop-shadow(1px 1px 1px rgba(6, 73, 255, 0.4));
 }
+
+.fatalist1_text polty {
+  display: inline;
+  font-family: 'Almendra';  
+  font-size: 16px;
+  color: #f1a533;
+  text-shadow: none;
+  filter: drop-shadow(0px 0px 1px rgba(121, 100, 8, 0.4));
+}
+
 
 
 .fatalist1_spch {
