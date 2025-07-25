@@ -135,8 +135,9 @@
 .fatalist1_text bal {
   display: inline;
   font-family: 'Grenze Gotisch';  
-  font-size: 17px;
+  font-size: 18px;
   color: #252525;
+  font-weight: bold;
   text-shadow: none;
   filter: drop-shadow(0 0 1px rgba(254, 170, 38, 0.7));
 }
