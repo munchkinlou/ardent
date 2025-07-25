@@ -138,21 +138,23 @@
   filter: drop-shadow(1px 1px 0.5px rgba(0, 0, 0, 0.7));
 }
 
-.fatalist1_incon polt {
-  display: inline;
-  font-family: 'Almendra';  
-  font-size: 15px;
-  color: #f5a63f;
+.fatalist1_incon polty {
+  display: inline-block;
+  font-family: 'Oregano';  
+  font-size: 16px;
+  color: #da9842;
   font-weight: bold;
   z-index: 5;
   line-height: 1;
   text-shadow: none;
-  background: linear-gradient(to bottom, rgb(247, 170, 56), rgb(248, 194, 79));
+  background: linear-gradient(to bottom, rgb(182, 67, 90), rgb(201, 97, 118));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-  filter: drop-shadow(1px 1px 0.5px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(1px 1px 1px rgba(139, 44, 97, 0.4));
+  white-space: normal;
+  word-wrap: break-word;
 }
 
 .fatalist1_incon bal {
