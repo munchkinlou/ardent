@@ -114,7 +114,6 @@
   font-size: 14px;
   color: #da7ae2;
   z-index: 5;
-  line-height: 1;
   text-shadow: none;
   background: linear-gradient(to bottom, rgb(255, 142, 240), rgb(224, 132, 212));
   -webkit-background-clip: text;
@@ -127,28 +126,19 @@
 .fatalist1_text cit {
   display: inline;
   font-family: 'Almendra';  
-  font-size: 15px;
-  color: #f5a63f;
-  z-index: 5;
-  line-height: 1;
+  font-size: 16px;
+  color: #1775f0;
   text-shadow: none;
-  background: linear-gradient(to bottom, rgb(247, 170, 56), rgb(248, 194, 79));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-  filter: drop-shadow(1px 1px 0.5px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(0px 1px 0.5px rgba(0, 0, 0, 0.7));
 }
 
 .fatalist1_text polty {
   display: inline;
   font-family: 'Oregano';  
   font-size: 16px;
-  color: #ca438d;
-  z-index: 5;
-  line-height: 1;
+  color: #f1a533;
   text-shadow: none;
-  filter: drop-shadow(1px 1px 1px rgba(139, 44, 97, 0.4));
+  filter: drop-shadow(0px 0px 1px rgba(121, 100, 8, 0.4));
 }
 
 .fatalist1_text bal {
@@ -156,8 +146,6 @@
   font-family: 'Grenze Gotisch';  
   font-size: 17px;
   color: #252525;
-  z-index: 5;
-  line-height: 1;
   text-shadow: none;
   filter: drop-shadow(0 0 1px rgba(254, 170, 38, 0.7));
 }
@@ -166,15 +154,8 @@
   display: inline;
   font-family: 'Cormorant Infant';  
   font-size: 16px;
-  color: #20a0eb;
-  z-index: 5;
-  line-height: 1;
+  color: #1ec1e6;
   text-shadow: none;
-  background: linear-gradient(to bottom, rgb(15, 205, 230), rgb(66, 119, 233));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
   filter: drop-shadow(1px 1px 1.2px rgba(54, 54, 54, 0.4));
 }
 
@@ -183,23 +164,17 @@
   font-family: 'Gabriela';  
   font-size: 13px;
   color: #000000;
-  z-index: 5;
-  line-height: 1;
   text-shadow: none;
   filter: drop-shadow(1px 1px 1px rgba(6, 73, 255, 0.4));
 }
 
 
 .fatalist1_spch {
-  margin: 10px 0 200px;
-  height: 45px;
+  margin: 0 0 200px;
+  height: 35px;
   text-align: center;
   background: linear-gradient(to right,transparent 0%, rgba(255, 255, 255, 0.6), transparent 100%);
-  padding: 0 40px;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  justify-content: center;
+  padding: 0 40px 20px;
 }
 
 @media (max-width: 1200px) {
