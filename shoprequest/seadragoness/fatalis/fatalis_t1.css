@@ -109,7 +109,6 @@
   font-family: 'Delius Swash Caps';  
   font-size: 14px;
   color: #da7ae2;
-  text-align: justify;
   z-index: 5;
   line-height: 1;
   text-shadow: none;
@@ -127,7 +126,6 @@
   font-family: 'Almendra';  
   font-size: 15px;
   color: #f5a63f;
-  text-align: justify;
   font-weight: bold;
   z-index: 5;
   line-height: 1;
@@ -145,7 +143,6 @@
   font-family: 'Oregano';  
   font-size: 16px;
   color: #da9842;
-  text-align: justify;
   font-weight: bold;
   z-index: 5;
   line-height: 1;
@@ -163,7 +160,6 @@
   font-family: 'Grenze Gotisch';  
   font-size: 17px;
   color: #252525;
-  text-align: justify;
   font-weight: bold;
   z-index: 5;
   line-height: 1;
@@ -176,7 +172,6 @@
   font-family: 'Cormorant Infant';  
   font-size: 16px;
   color: #20a0eb;
-  text-align: justify;
   font-weight: bold;
   z-index: 5;
   line-height: 1;
@@ -194,7 +189,6 @@
   font-family: 'Gabriela';  
   font-size: 13px;
   color: #000000;
-  text-align: justify;
   font-weight: bold;
   z-index: 5;
   line-height: 1;
