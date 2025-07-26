@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+.andyc {
+  display:block;
+  text-align:center;
+  font-size:10px;
+  margin: 0 auto;
+}
+
+.wyvernt7_content {
+  position: relative;
+  width: 500px;
+  margin: -100px auto -60px auto;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+  filter: drop-shadow(0 8px 10px rgba(0,0,0,0.75));
+}
+
+.wyvernt7_img {
+  position: absolute;
+  bottom: 15px;
+  left: -130px;
+  width: 160%;
+  height: 600px;
+  background: transparent url('https://i.imgur.com/cIGOTlT.png') no-repeat center center;
+  background-size: contain; 
+  z-index: 1;
+  pointer-events: none;
+  filter: drop-shadow(-5px -5px 6px rgba(34, 96, 230, 0.5));
+}
+
+.wyvernt7_bor {
+  position: relative;
+  width: 100%;
+  background: #000;
+  padding: 2px 5px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 280'%3e%3cpath d='M0,280 Q300,0 600,280 Z'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 280'%3e%3cpath d='M0,0 Q300,280 600,0 Z'/%3e%3c/svg%3e"), linear-gradient(black, black);
+  -webkit-mask-position: top center, bottom center, 0 250px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 270px, 100% 290px, 100% calc(100% - 510px);
+  mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 280'%3e%3cpath d='M0,280 Q300,0 600,280 Z'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 280'%3e%3cpath d='M0,0 Q300,280 600,0 Z'/%3e%3c/svg%3e"), linear-gradient(black, black);
+  mask-position: top center, bottom center, 0 250px;
+  mask-repeat: no-repeat;
+  mask-size: 100% 270px, 100% 330px, 100% calc(100% - 530px);
+}
+
+.wyvernt7_con {
+  position: relative;
+  width: 100%;
+  background: white url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/starrynight.jpg?updatedAt=1753495763500') no-repeat center center;
+  padding: 20px 0;
+  box-sizing: border-box;
+  margin: -20px auto 0;
+  pointer-events: none;
+  -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 580 270'%3e%3cpath d='M0,270 Q290,0 580,270 Z'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 580 270'%3e%3cpath d='M0,0 Q290,270 580,0 Z'/%3e%3c/svg%3e"), linear-gradient(black, black);
+  -webkit-mask-position: top center, bottom center, 0 270px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 320px, 100% 340px, 100% calc(100% - 560px);
+  mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 580 270'%3e%3cpath d='M0,270 Q290,0 580,270 Z'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 580 270'%3e%3cpath d='M0,0 Q290,270 580,0 Z'/%3e%3c/svg%3e"), linear-gradient(black, black);
+  mask-position: top center, bottom center, 0 270px;
+  mask-repeat: no-repeat;
+  mask-size: 100% 320px, 100% 340px, 100% calc(100% - 550px);
+}
+
+
+.wyvernt7_incon {
+  padding: 120px 40px 330px;
+  background: rgba(22, 22, 22, 0.5);
+  min-height: 100px;
+  margin: 135px 20px 80px 20px;
+  border: 2px solid #A9D0FB;
+  border-radius: 30px;
+  box-shadow: 8px 8px 15px rgba(0,0,0,0.5), inset 0 0 10px rgba(33, 174, 218, 0.5);
+  text-align:justify;
+  font-family:'Quicksand';
+  font-size: 13px;
+  color:#ffffff;
+  line-height: 1.2;
+}
+
+.wyvernt7_incon speak {
+  display: inline;
+  color: #3DC8F6;
+	font-family: 'Croissant One';
+  font-size: 14px;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.wyvernt7_spch {
+  position: relative;
+  margin: 0px auto 10px;
+  font-family: 'Croissant One';
+  color: #3DC8F6;
+  text-shadow: 1px 1px 2px #0a0906;
+  font-size: 30px;
+  text-align: center;
+  line-height: 1;
+}
+
+.wyvernt7_spch::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 100%;
+  height: 2px;
+  margin: 10px auto 0;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.5), transparent);
+}
+
+.wyvernt7_spch star1, .wyvernt7_spch star2 {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Seadragoness/Wyvern/white-star.png?updatedAt=1748067614988');
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0 0 3px white);
+  opacity: 0;
+  animation: wyvernt7_blinkFade 6s ease-in-out infinite;
+  vertical-align: middle;
+}
+
+.wyvernt7_spch star1 {
+  animation-delay: 0s;
+}
+
+.wyvernt7_spch star2 {
+  animation-delay: 2s;
+}
+
+@keyframes wyvernt7_blinkFade {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+
+
+@media (max-width: 1200px) {
+  .wyvernt7_content {
+    filter: none;
+  }
+
+  .wyvernt7_img {
+    display: none;
+    filter: none;
+  }
+
+  .wyvernt7_bor,
+  .wyvernt7_con {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  .wyvernt7_spch {
+    position: static;
+    margin: 20px auto;
+  }
+
+  .wyvernt7_incon {
+    margin: 10px;
+    border: none;
+    backdrop-filter: none;
+    border-image: none;
+    box-shadow: none;
+  }
+}
