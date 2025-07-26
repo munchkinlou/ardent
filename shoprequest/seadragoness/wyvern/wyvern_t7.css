@@ -152,7 +152,7 @@
     filter: none;
   }
 
-  .wyvernt7_img {
+  .wyvernt7_img, .wyvernt7_spch::before {
     display: none;
     filter: none;
   }
