@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.andyc {
+  display:block;
+  text-align:center;
+  font-size:10px;
+  margin: 0 auto;
+}
+
+.wyvernt8_content {
+	position: relative;
+  width: 600px;
+  margin: 150px auto 20px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+  filter: drop-shadow(0 8px 10px rgba(0,0,0,0.75));
+}
+
+.wyvernt8_img {
+  position: absolute;
+  top: -90px;
+  left: -230px;
+  width: 160%;
+  height: 600px;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/shop/Seadragoness/Wyvern/clouds.png?updatedAt=1753632889105') no-repeat center top;
+  background-size: 100%; 
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
+}
+
+.wyvernt8_img::before {
+  content: '';
+  position: absolute;
+  top: -170px;
+  left: 130px;
+  width: 70%;
+  height: 130%;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/shop/Seadragoness/Wyvern/n7M3K8F.png?updatedAt=1753633502136') no-repeat center;
+  background-size: contain;
+  pointer-events: none;
+  filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
+}
+
+.wyvernt8_bor {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom, #031c3a 300px,
+  #8FB9E8);
+  padding: 5px;
+  border-radius: 300px 300px 10px 10px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.wyvernt8_con {
+  position: relative;
+  width: 100%;
+  padding: 400px 20px 20px;
+  box-sizing: border-box;
+  background: black;
+  border-radius: 300px 300px 10px 10px;
+  pointer-events: none;
+  margin: 0 auto;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.wyvernt8_con::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/starrynight.jpg?updatedAt=1753495763500') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  pointer-events: none;
+  overflow: hidden;
+  border-radius: 300px 300px 10px 10px;
+}
+
+
+.wyvernt8_con > * {
+  position: relative;
+  z-index: 2;
+}
+
+.wyvernt8_incon {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 20px 30px 50px;
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.6);
+  height: auto;
+  box-shadow: 0 0 10px 10px rgba(122, 122, 122, 0.2);
+  text-align: justify;
+  font-family: 'Quicksand';
+  font-size: 13px;
+  color: #ffffff;
+  line-height: 1.2;
+  border: 5px groove #3DC8F6;
+}
+
+.wyvernt8_incon speak {
+  color: #3DC8F6;
+	font-family: 'Croissant One';
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #000000;
+  line-height: 0.9;
+}
+
+.wyvernt8_spch {
+  display: block;
+  position: relative;
+  margin: -10px 0 -50px 0;
+  font-family: 'Croissant One';
+  font-weight: bold;
+  color: #3DC8F6;
+  text-shadow: 1px 1px 2px #0a0906;
+  font-size: 30px;
+  text-align: center;
+  line-height: 1;
+}
+
+.wyvernt8_spch::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 100%;
+  height: 2px;
+  margin: 10px auto 0;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.5), transparent);
+}
+
+.wyvernt8_spch star1, .wyvernt8_spch star2 {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Seadragoness/Wyvern/white-star.png?updatedAt=1748067614988');
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0 0 3px white);
+  opacity: 0;
+  animation: wyvernt8_blinkFade 6s ease-in-out infinite;
+  vertical-align: middle;
+}
+
+.wyvernt8_spch star1 {
+  animation-delay: 0s;
+}
+
+.wyvernt8_spch star2 {
+  animation-delay: 2s;
+}
+
+@keyframes wyvernt8_blinkFade {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+
+
+@media (max-width: 1200px) {
+
+  .wyvernt8_content {
+    filter: none;
+  }
+
+  .wyvernt8_con::before {
+    display: none;
+  }
+
+  .wyvernt8_speech {
+    text-align: center;
+    padding:0;
+  }
+
+}
+
