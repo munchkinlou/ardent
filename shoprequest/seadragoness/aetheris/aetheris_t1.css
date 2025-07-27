@@ -1,0 +1,155 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Milonga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+.andyc {
+  display:block;
+  text-align:center;
+  font-size:10px;
+  margin: 0 auto;
+}
+
+.aetherist1_content {
+	position: relative;
+  width: 600px;
+  margin: 300px auto 20px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+  filter: drop-shadow(0 8px 10px rgba(0,0,0,0.75));
+}
+
+.aetherist1_img {
+  position: absolute;
+  top: -160px;
+  left: -130px;
+  width: 150%;
+  height: 600px;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/shop/Seadragoness/Aetheris/Clouds.png?updatedAt=1753632846196') no-repeat center top;
+  background-size: 100%; 
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
+}
+
+.aetherist1_img::before {
+  content: '';
+  position: absolute;
+  top: -150px;
+  left: 100px;
+  width: 70%;
+  height: 130%;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/shop/Seadragoness/Aetheris/comm._mar25._seadragoness._p3.CLIENT3.png?updatedAt=1753626602799') no-repeat center;
+  background-size: contain;
+  pointer-events: none;
+  filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
+}
+
+.aetherist1_bor {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom, white 300px,
+  #FF9E41);
+  padding: 5px;
+  border-radius: 300px 300px 10px 10px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.aetherist1_con {
+  position: relative;
+  width: 100%;
+  padding: 400px 20px 20px;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #ffffff 300px, #FF9E41);
+  border-radius: 300px 300px 10px 10px;
+  pointer-events: none;
+  margin: 0 auto;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.aetherist1_con::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/watercolorsky?updatedAt=1753449024882') no-repeat bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  pointer-events: none;
+  border-radius: 300px 300px 10px 10px;
+  overflow: hidden;
+}
+
+.aetherist1_con > * {
+  position: relative;
+  z-index: 2;
+}
+
+.aetherist1_incon {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 20px 30px 50px;
+  width: 100%;
+  box-sizing: border-box;
+  background: rgb(23, 23, 24);
+  height: auto;
+  box-shadow: 0 0 10px 10px rgba(122, 122, 122, 0.2);
+  text-align: justify;
+  font-family: 'Milonga';
+  font-size: 13px;
+  color: #ffffff;
+  line-height: 1.2;
+  border: 5px groove #1A84D0;
+}
+
+.aetherist1_incon speak {
+  color: #FF6E13;
+	font-family: 'Sour Gummy';
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #000000;
+  line-height: 0.9;
+}
+
+.aetherist1_spch {
+  display: block;
+  position: relative;
+  margin: -20px 0 -70px 0;
+  font-family: 'Sour Gummy';
+  font-weight: bold;
+  color: #FF6E13;
+  text-shadow: 1px 1px 2px #0a0906;
+  font-size: 40px;
+  text-align: center;
+  line-height: 1;
+}
+
+.aetherist1_spch::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 100%;
+  height: 2px;
+  margin: 20px auto 0;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.5), transparent);
+}
+
+@media (max-width: 1200px) {
+
+  .aetherist1_content {
+    filter: none;
+  }
+
+  .aetherist1_con::before {
+    display: none;
+  }
+
+}
+
