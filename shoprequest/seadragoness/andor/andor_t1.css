@@ -10,7 +10,7 @@
 .andort1_content {
   position: relative;
   width: 450px;
-  margin: 10px auto -310px 80px;
+  margin: 10px auto -310px 100px;
   position: relative;
   overflow: visible;
   padding: 0;
@@ -145,17 +145,12 @@
 
   .andort1_bor,
   .andort1_con,
-  .andort1_incon,
-  .andort1_text {
+  .andort1_con::before,
+  .andort1_incon {
     -webkit-mask-image: none;
     mask-image: none;
     margin: 0;
     padding: 0;
-  }
-
-  .andort1_speech {
-    text-align: center;
-    margin: 0 auto;
   }
 
 }
