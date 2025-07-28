@@ -38,7 +38,7 @@
   position: relative;
   width: 100%;
   height: auto;
-  background: linear-gradient(to bottom, #352A21, #CEA47F, #352A21);
+  background: linear-gradient(to bottom, #1f1711, #CEA47F, #352A21);
   padding: 5px;
   box-sizing: border-box;
   border-radius: 10px;
@@ -146,12 +146,15 @@
 
   .andort1_bor,
   .andort1_con,
-  .andort1_con::before,
   .andort1_incon {
     -webkit-mask-image: none;
     mask-image: none;
     margin: 0;
     padding: 0;
+  }
+
+  .andort1_con::before {
+    display: none;
   }
 
 }
