@@ -10,7 +10,7 @@
 .andort1_content {
   position: relative;
   width: 450px;
-  margin: 10px auto -310px 100px;
+  margin: 10px auto 0 10%;
   position: relative;
   overflow: visible;
   padding: 0;
@@ -21,7 +21,7 @@
 
 .andort1_img {
   position: absolute;
-  bottom: 290px;
+  bottom: -10px;
   left: 300px;
   width: 150%;
   height: 400px;
@@ -42,6 +42,7 @@
   padding: 5px;
   box-sizing: border-box;
   border-radius: 10px;
+  margin: 0 0 -310px;
 }
 
 .andort1_con {
