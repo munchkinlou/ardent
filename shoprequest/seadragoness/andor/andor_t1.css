@@ -112,8 +112,8 @@
   line-height: 0.9;
   font-family: 'Texturina';
   font-size: 16px;
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
-
 
 .andort1_bor {
   -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 750 320'%3e%3cpath d='M0 320Q565 320 750 320 747 209 660 189 685 229 635 249 590 115 375 0 160 115 115 249 65 229 85 189 3 209 0 320Z'/%3e%3c/svg%3e"), linear-gradient(black, black);
