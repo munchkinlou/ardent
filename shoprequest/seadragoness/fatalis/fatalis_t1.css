@@ -191,12 +191,12 @@
       mask-image: none;
     }
 
-  .fatalist1_con::before {
+  .fatalist1_con::before, .fatalist1_con::after {
     display: none;
   }
   
   .fatalist1_text bal {
     color: #000000;
   }
-  
+
 }
