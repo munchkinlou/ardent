@@ -110,6 +110,7 @@
   background-clip: text;
   text-shadow: none;
   line-height: 0.9;
+  filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
 }
 
 .kjartant5_incon nor {
@@ -119,6 +120,7 @@
   font-weight: bold;
   text-shadow: 1px 1px 2px #000000;
   line-height: 0.9;
+  filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
 }
 
 .kjartant5_incon spa {
@@ -128,6 +130,7 @@
   font-weight: bold;
   text-shadow: 1px 1px 2px #000000;
   line-height: 0.9;
+  filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
 }
 
 .kjartant5_speech {
@@ -147,6 +150,7 @@
   text-shadow: none;
   font-size: 40px;
   line-height: 1.1;
+  filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
 }
 
 .kjartant5_speech::before {
@@ -171,4 +175,6 @@
   }
 
 }
+
+
 
