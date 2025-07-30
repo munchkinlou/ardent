@@ -45,7 +45,7 @@
   left: 210px;
   width: 80%;
   height: 200px;
-  background: transparent url('paper.png') no-repeat center top;
+  background: transparent url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Pack/Armada/qbimg.png?updatedAt=1753910422660') no-repeat center top;
   background-size: 100%; 
   z-index: 5;
   pointer-events: none;
@@ -78,7 +78,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('planks_vertical.png') no-repeat center;
+  background: url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Pack/Armada/planks_vertical.png?updatedAt=1751729378068') no-repeat center;
   background-size: cover;
   pointer-events: none;
   border-radius: 10px;
@@ -97,7 +97,8 @@
   padding: 20px 30px 10px;
   width: 100%;
   box-sizing: border-box;
-  background: url('texture2.jpg') no-repeat center;
+  background: url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Pack/Armada/texture2.jpg?updatedAt=1753910567877') no-repeat center;
+  background-size: cover;
   height: auto;
   border: 5px solid #E5DED7;
   box-shadow: 0 0 10px 10px rgba(122, 122, 122, 0.2), inset 0 0 0 1px rgba(0,0,0,0.2);
@@ -118,10 +119,10 @@
   line-height: 0.9;
 }
 
-.mpost_speech {
+.mpost_incon type {
   display: block;
   position: relative;
-  margin: -40px 0 -10px 0;
+  margin: -15px 0 25px 0;
   padding-right: 10px;
   font-family: 'Monster';
   font-weight: bold;
@@ -132,27 +133,13 @@
   line-height: 1;
 }
 
-.mpost_speech::after {
+.mpost_incon type::after {
   content: '';
   position: absolute;
-  bottom: 20px;
+  bottom: -20px;
   left: 0;
   width: 100%;
   height: 2px;
   margin: 0 auto;
   border-bottom: 2px dashed black;
 }
-
-/*
-@media (max-width: 1200px) {
-
-  .mpost_content {
-    filter: none;
-  }
-
-  .mpost_con::before {
-    display: none;
-  }
-
-}
-
