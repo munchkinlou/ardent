@@ -143,3 +143,26 @@
   margin: 0 auto;
   border-bottom: 2px dashed black;
 }
+
+@media (max-width: 1200px) {
+
+  .mpost_content {
+    filter: none;
+  }
+
+  .mpost_con::before {
+    display: none;
+  }
+
+  .mpost_incon, .mpost_bor {
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+
+  .mpostc {
+    color: #000000;
+    text-align: center;
+  }
+
+}
