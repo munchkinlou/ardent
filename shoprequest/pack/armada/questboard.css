@@ -1,0 +1,158 @@
+@font-face {
+  font-family: 'MountainKing';
+  src: url('MountainKingRegular-woBYn.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Monster';
+  src: url('MonsterOfFantasy-eZg4p.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Whirlywood';
+  src: url('Whirlywood-9pRy.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'WindyWood';
+  src: url('WindyWoodDemo-nEvO.ttf') format('truetype');
+}
+
+
+.mpostc {
+  display:block;
+  text-align:left;
+  font-size:11px;
+  color: #ad8f6a;
+  text-shadow: 0px 0px 1px #000000;
+  margin: 2px auto -10px;
+  text-transform: lowercase;
+  font-family: 'WindyWood';
+}
+
+.mpost_content {
+	position: relative;
+  width: 400px;
+  margin: 30px auto 60px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+  filter: drop-shadow(0 4px 5px rgba(0,0,0,0.75));
+}
+
+.mpost_img {
+  position: absolute;
+  bottom: -100px;
+  left: 210px;
+  width: 80%;
+  height: 200px;
+  background: transparent url('paper.png') no-repeat center top;
+  background-size: 100%; 
+  z-index: 5;
+  pointer-events: none;
+}
+
+.mpost_bor {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to top, #9b724d, #836346);
+  padding: 3px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  outline: 2px solid #462e14;
+}
+
+.mpost_con {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  pointer-events: none;
+  margin: 0 auto;
+
+}
+
+.mpost_con::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('planks_vertical.png') no-repeat center;
+  background-size: cover;
+  pointer-events: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.mpost_con > * {
+  position: relative;
+  z-index: 2;
+}
+
+.mpost_incon {
+  position: relative;
+  overflow: hidden;
+  padding: 20px 30px 10px;
+  width: 100%;
+  box-sizing: border-box;
+  background: url('texture2.jpg') no-repeat center;
+  height: auto;
+  border: 5px solid #E5DED7;
+  box-shadow: 0 0 10px 10px rgba(122, 122, 122, 0.2), inset 0 0 0 1px rgba(0,0,0,0.2);
+  text-align: center;
+  font-family: 'Whirlywood';
+  font-size: 12px;
+  color: #000000;
+  line-height: 1.2;
+  outline: 2px solid #858585;
+}
+
+.mpost_incon subtitle {
+  color: #000000;
+	font-family: 'WindyWood';
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 0px 0px 1px #000000;
+  line-height: 0.9;
+}
+
+.mpost_speech {
+  display: block;
+  position: relative;
+  margin: -40px 0 -10px 0;
+  padding-right: 10px;
+  font-family: 'Monster';
+  font-weight: bold;
+  color: #000000;
+  text-shadow: 1px 1px 2px #0a0906;
+  font-size: 40px;
+  text-align: center;
+  line-height: 1;
+}
+
+.mpost_speech::after {
+  content: '';
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  margin: 0 auto;
+  border-bottom: 2px dashed black;
+}
+
+/*
+@media (max-width: 1200px) {
+
+  .mpost_content {
+    filter: none;
+  }
+
+  .mpost_con::before {
+    display: none;
+  }
+
+}
+
