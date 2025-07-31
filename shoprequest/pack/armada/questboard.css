@@ -110,7 +110,7 @@
   outline: 2px solid #858585;
 }
 
-.mpost_incon subtitle {
+.mpost_incon u {
   color: #000000;
 	font-family: 'WindyWood';
   font-size: 14px;
@@ -119,7 +119,7 @@
   line-height: 0.9;
 }
 
-.mpost_incon type {
+.mpost_incon subtitle {
   display: block;
   position: relative;
   margin: -15px 0 25px 0;
@@ -128,12 +128,12 @@
   font-weight: bold;
   color: #000000;
   text-shadow: 1px 1px 2px #0a0906;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
   line-height: 1;
 }
 
-.mpost_incon type::after {
+.mpost_incon subtitle::after {
   content: '';
   position: absolute;
   bottom: -20px;
@@ -143,6 +143,7 @@
   margin: 0 auto;
   border-bottom: 2px dashed black;
 }
+
 
 @media (max-width: 1200px) {
 
@@ -166,3 +167,4 @@
   }
 
 }
+
