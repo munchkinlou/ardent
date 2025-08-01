@@ -10,7 +10,7 @@
 	position: relative;
   width: 100%;
   width: 350px;
-  margin: 50px 100px 460px auto;
+  margin: 50px auto 460px;
   position: relative;
   overflow: visible;
   padding: 0;
@@ -22,7 +22,7 @@
 .chrysanthet1_img {
   position: absolute;
   bottom: -430px;
-  left: -380px;
+  left: -170px;
   width: 180%;
   height: 850px;
   background: transparent url('Chryssa_water2.png') no-repeat center center;
@@ -39,7 +39,7 @@
   padding: 2px;
   border-radius: 10px;
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 0 -200px 0 auto;
   outline: 1px solid #e08001;
 }
 
