@@ -64,7 +64,7 @@
   border: 1px solid #66bef0;
   padding: 20px 30px 40px;
   width: 100%;
-  min-height: 400px;
+  min-height: 200px;
   box-sizing: border-box;
   background: none;
   height: auto;
@@ -171,3 +171,4 @@
   }
 
 }
+
