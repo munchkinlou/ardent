@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&display=swap');
+
+
+.astraiost1_content {
+	position: relative;
+  width: 100%;
+  width: 470px;
+  margin: 50px auto 120px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+  filter: drop-shadow(0 8px 10px rgba(0,0,0,0.75));
+}
+
+.astraiost1_img {
+  position: absolute;
+  bottom: -150px;
+  left: -20px;
+  width: 150%;
+  height: 500px;
+  background: transparent url('https://i.imgur.com/BtPWf3s.png') no-repeat center center;
+  background-size: 100%; 
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0 4px 5px rgba(115, 74, 190, 0.75));
+}
+
+.astraiost1_bor {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom, #181818, #60626B);
+  padding: 5px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.astraiost1_con {
+  position: relative;
+  width: 100%;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/celestial_aurora.png?updatedAt=1754024869393') no-repeat bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 20px 20px 200px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  pointer-events: none;
+  margin: 0 auto;
+  box-shadow: inset 0 0 5px 5px rgba(37, 37, 37, 0.5);
+}
+
+.astraiost1_con > * {
+  position: relative;
+  z-index: 2;
+}
+
+.astraiost1_incon {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 20px 30px 40px;
+  width: 100%;
+  min-height: 400px;
+  box-sizing: border-box;
+  background: none;
+  height: auto;
+  background: rgba(22, 22, 22, 0.9);
+  box-shadow: 0 0 10px 10px rgba(89, 145, 190, 0.5);
+  border: 3px solid #5fa5bd;
+  text-align: justify;
+  font-family: 'Cormorant Infant';
+  font-size: 13px;
+  color: #DBE7F4;
+  line-height: 1.1;
+}
+
+.astraiost1_text, .astraiost1_speech, .astraiost1_diag {
+  position: relative;
+  z-index: 2;
+}
+
+.astraiost1_incon speak {
+  color: #977ce7;
+	font-family: 'Cormorant Garamond';
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1;
+  background: linear-gradient(to bottom, #7ecbe2, #977ce7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+}
+
+
+.astraiost1_speech {
+  display: block;
+  position: relative;
+  margin: 15px 0 -30px 0;
+  padding-left: 10px;
+  font-family: 'Cormorant Garamond';
+  font-weight: bold;
+  color: #977ce7;
+  text-transform: uppercase;
+  font-size: 25px;
+  text-align: left;
+  line-height: 1;
+  background: linear-gradient(to bottom, #7ecbe2, #977ce7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+}
+
+.astraiost1_speech::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  margin: -5px 0 0;
+  background: linear-gradient(to right, transparent, #4EBED5 50%, transparent);
+  z-index: 5;
+  pointer-events: none;
+}
+
+
+
+@media (max-width: 1200px) {
+
+
+
+}
