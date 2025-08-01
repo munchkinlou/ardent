@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap');
+@font-face {
+    font-family: 'Bailenson';
+    src: url('Bailenson-4B0ep.otf') format('truetype');
+}
+
+
+.chrysanthet1_content {
+	position: relative;
+  width: 100%;
+  width: 350px;
+  margin: 50px 100px 460px auto;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+  filter: drop-shadow(0 8px 10px rgba(0,0,0,0.75));
+}
+
+.chrysanthet1_img {
+  position: absolute;
+  bottom: -430px;
+  left: -380px;
+  width: 180%;
+  height: 850px;
+  background: transparent url('Chryssa_water2.png') no-repeat center center;
+  background-size: 100%; 
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0 4px 5px rgba(34, 233, 247, 0.75));
+}
+
+.chrysanthet1_bor {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom, #F9DE6F, #986324);
+  padding: 2px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  outline: 1px solid #e08001;
+}
+
+.chrysanthet1_con {
+  position: relative;
+  width: 100%;
+  background: url('marcos-paulo-prado-588l4wraJQo-unsplash.jpg') no-repeat bottom center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  pointer-events: none;
+  margin: 0 auto;
+  box-shadow: inset 0 0 5px 5px rgba(37, 37, 37, 0.5);
+}
+
+.chrysanthet1_con > * {
+  position: relative;
+  z-index: 2;
+}
+
+.chrysanthet1_incon {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid #77b6b9;
+  padding: 20px 30px 40px;
+  width: 100%;
+  min-height: 400px;
+  box-sizing: border-box;
+  background: none;
+  height: auto;
+  background: linear-gradient(to bottom, rgba(53, 54, 53, 0.9), rgba(14, 14, 14, 0.9));
+  box-shadow: 0 0 10px 5px rgba(89, 145, 190, 0.8);
+  text-align: justify;
+  font-family: 'Ysabeau Infant';
+  font-size: 13px;
+  color: #ffffff;
+  line-height: 1.1;
+}
+
+.chrysanthet1_text, .chrysanthet1_speech, .chrysanthet1_diag {
+  position: relative;
+  z-index: 2;
+}
+
+.chrysanthet1_incon speak {
+  color: #977ce7;
+	font-family: 'Ysabeau Infant';
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1;
+  background: linear-gradient(to bottom, #dcb741, #af9541);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  filter: drop-shadow(0 0 1px rgba(241, 193, 73, 0.4));
+}
+
+
+.chrysanthet1_speech {
+  display: block;
+  position: relative;
+  margin: -40px 0 -70px 0;
+  font-family: 'Bailenson';
+  font-weight: bold;
+  color: transparent;
+  text-transform: capitalize;
+  font-size: 55px;
+  text-align: center;
+  line-height: 1;
+  background: linear-gradient(to bottom, #dcb741, #af9541);
+  -webkit-background-clip: text;
+  background-clip: text;
+  filter: drop-shadow(0 0 2px rgba(241, 193, 73, 0.5));
+}
+
+.chrysanthet1_speech::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  margin: 40px 0 0;
+  background: linear-gradient(to right, transparent, #77b6b9 50%, transparent);
+  z-index: 5;
+  pointer-events: none;
+
+}
+
+
+
+@media (max-width: 1200px) {
+
+  .chrysanthet1_incon {
+    border: none;
+  }
+
+}
