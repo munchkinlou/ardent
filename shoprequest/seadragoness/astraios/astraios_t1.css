@@ -91,6 +91,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  text-fill-color: transparent;
   filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
 }
 
@@ -111,6 +112,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  text-fill-color: transparent;
   filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
 }
 
@@ -131,6 +133,11 @@
 
 @media (max-width: 1200px) {
 
-
+  .astraiost1_speech {
+    color: black;
+    text-align: center;
+    padding: 0;
+  }
 
 }
+
