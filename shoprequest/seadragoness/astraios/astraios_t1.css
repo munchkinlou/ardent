@@ -17,7 +17,7 @@
 
 .astraiost1_img {
   position: absolute;
-  bottom: -150px;
+  bottom: -160px;
   left: -20px;
   width: 150%;
   height: 500px;
@@ -91,7 +91,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
   filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
 }
 
@@ -103,16 +102,14 @@
   padding-left: 10px;
   font-family: 'Cormorant Garamond';
   font-weight: bold;
-  color: #977ce7;
+  color: transparent;
   text-transform: uppercase;
   font-size: 25px;
   text-align: left;
   line-height: 1;
   background: linear-gradient(to bottom, #7ecbe2, #977ce7);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
   filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
 }
 
@@ -134,10 +131,15 @@
 @media (max-width: 1200px) {
 
   .astraiost1_speech {
-    color: black;
+
     text-align: center;
     padding: 0;
   }
 
+  .astraiost1_incon {
+    border: none;
+  }
+
 }
+
 
