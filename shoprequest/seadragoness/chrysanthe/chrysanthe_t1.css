@@ -137,8 +137,13 @@
 
 @media (max-width: 1200px) {
 
+  .chrysanthet1_bor {
+    outline: none;
+  }
+
   .chrysanthet1_incon {
     border: none;
   }
 
 }
+
