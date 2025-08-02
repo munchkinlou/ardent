@@ -21,7 +21,7 @@
   left: 30px;
   width: 260px;
   height: 400px;
-  background: transparent url('Andy_png_.png') no-repeat top;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Andy/Andy_png_.png?updatedAt=1754099193801') no-repeat top;
   background-size: contain; 
   z-index: 5;
   pointer-events: none;
@@ -31,10 +31,10 @@
 .andyshop_img2 {
   position: absolute;
   bottom: -55px;
-  right: -80px;
+  right:120px;
   width: 200px;
   height: 200px;
-  background: transparent url('LouCheeb1.png') no-repeat top;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Andy/LouCheeb1.png?updatedAt=1754099178605') no-repeat top;
   background-size: contain; 
   z-index: 5;
   pointer-events: none;
@@ -56,7 +56,7 @@
 .andyshop_con {
   width: 100%;
   box-sizing: border-box;
-  background: black url('fantasy-marine-landscape-with-bioluminescent-nature.jpg') no-repeat bottom left;
+  background: black url('https://ik.imagekit.io/arl60/Ardent/personal/Andy/marine-fantasy.jpg?updatedAt=1754099169750') no-repeat bottom left;
   background-size: cover;
   background-attachment: fixed;
   padding: 20px;
@@ -87,6 +87,7 @@
   width: 90%;
   margin: 20px auto 0;
   filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
+  text-transform: capitalize !important;
 }
 
 .andyshop_incon h2 {
@@ -118,7 +119,7 @@
   padding: 10px 50px 0;
 }
 
-.andyshop_info code {
+.andyshop_info requestform {
   border-radius: 5px;
   font-family: 'Didact Gothic', monospace;
   font-size: 10px;
@@ -204,6 +205,11 @@
   text-align: center;
   transition: background 0.3s ease;
   margin: 0 auto;
+  text-decoration: none !important;
+}
+
+.andyshop_collapse_button a {
+  color: white !important;
 }
 
 .andyshop_collapse_button:hover {
@@ -396,5 +402,17 @@
 .andyshop_form_container {
   flex: 0 0 400px;
   max-width: 400px;
+}
+
+@media (max-width: 1200px) {
+
+  .andyshop_incon {
+    outline: none !important;
+  }
+
+  .andyshop_table {
+    margin: 0 auto !important;
+  }
+
 }
 
