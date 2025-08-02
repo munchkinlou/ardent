@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&display=swap');
+
+.andyshopthread {
+	position: relative;
+  width: 100%;
+  width: 800px;
+  margin: 20px auto;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+  filter: drop-shadow(0 8px 10px rgba(0,0,0,0.75));
+}
+
+.andyshop_img {
+  position: absolute;
+  bottom: 40px;
+  left: 30px;
+  width: 260px;
+  height: 400px;
+  background: transparent url('Andy_png_.png') no-repeat top;
+  background-size: contain; 
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0 4px 5px rgba(194, 130, 243, 0.75));
+}
+
+.andyshop_img2 {
+  position: absolute;
+  bottom: -55px;
+  right: -80px;
+  width: 200px;
+  height: 200px;
+  background: transparent url('LouCheeb1.png') no-repeat top;
+  background-size: contain; 
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0 4px 5px rgba(194, 130, 243, 0.75));
+}
+
+.andyshop_bor {
+  background: white;
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgb(0, 0, 0);
+  padding: 3px;
+  box-sizing: border-box;
+  border: 3px solid;
+  border-image: linear-gradient(to bottom, rgb(67, 31, 87), rgb(199, 105, 199), rgb(160, 103, 199)) 1;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.5), 10px 10px 10px rgba(0,0,0,0.8);
+}
+
+.andyshop_con {
+  width: 100%;
+  box-sizing: border-box;
+  background: black url('fantasy-marine-landscape-with-bioluminescent-nature.jpg') no-repeat bottom left;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 20px;
+  margin: 0 auto;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.andyshop_incon {
+  background: rgba(0, 0, 0, 0.65);
+  border-radius: 5px;
+  border: 2px groove rgb(67, 38, 100);
+  outline: 1px solid rgb(142, 103, 186);
+  margin: 0 auto;
+  height: auto;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.andyshop_incon h1 {
+  font-family: 'Mrs Saint Delafield', cursive;
+	font-size: 40px;
+	text-align:center;
+	color: rgb(255, 255, 255);
+	background: linear-gradient(to right, transparent, rgb(65, 58, 132), transparent);
+	padding: 6px 0 0;
+	width: auto;
+	border: 1px solid white;
+	border-image: linear-gradient(to right, transparent, white, transparent) 1;
+  width: 90%;
+  margin: 20px auto 0;
+  filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
+}
+
+.andyshop_incon h2 {
+  background: linear-gradient(to right, transparent, rgb(65, 58, 132), transparent);
+  font-family: 'Cormorant Infant', serif;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px 0;
+}
+
+.andyshop_incon h3 {
+  font-family: 'Cormorant Infant', serif;
+  color: white;
+  font-size: 13.5px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom:-5px;
+}
+
+
+.andyshop_info {
+  font-family: 'Cormorant Infant', serif;
+  color: white;
+  font-size: 13px;
+  text-align: justify;
+  padding: 10px 50px 0;
+}
+
+.andyshop_info code {
+  border-radius: 5px;
+  font-family: 'Didact Gothic', monospace;
+  font-size: 10px;
+  color: #ffffff;
+}
+
+.andyshop_info a {
+  color: #e8d986 !important;
+  text-decoration: none !important;
+  font-family: 'Didact Gothic', sans-serif !important;
+  text-transform: uppercase;
+  font-size: 9px;
+  transition: text-shadow 0.3s ease;
+}
+
+.andyshop_info a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 5px #b473ff, 0 0 10px #b473ff, 0 0 15px #b473ff;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.andyshop_info a:visited {
+  color: #b473ff;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.andyshop_divider {
+  width: 80%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.8), transparent);
+  margin: 10px auto 20px;
+}
+
+.andyshop_collapse_button_container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.andyshop_collapse_button_container .andyshop_collapse_button {
+  flex: 1;
+  width: 150px;
+}
+
+.andyshop_collapse_button_container .andyshop_collapse_content {
+  position: relative;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 5px;
+}
+
+
+.andyshop_collapse_toggle {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.andyshop_collapse_button {
+  display: block;
+  padding: 10px 15px;
+  width: 200px;
+  background-color: rgba(180, 115, 255, 0.5);
+  color: white;
+  font-family: 'Arial', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.3s ease;
+  margin: 0 auto;
+}
+
+.andyshop_collapse_button:hover {
+  background-color: #944ce3;
+  text-shadow: 0 0 10px white;
+}
+
+
+.andyshop_collapse_content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+
+.andyshop_collapse_toggle:checked ~ .andyshop_collapse_content {
+  max-height: 1000px;
+  opacity: 1;
+}
+
+.andyshop_box {
+  flex: 1 1 300px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  overflow: visible;
+  min-width: 330px;
+  min-height: 40px;
+}
+
+.andyshop_demoimg {
+  display: inline-block;
+  width: 100px;
+  height: auto;
+  box-shadow: 0 0 0 transparent;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-origin: center center;
+  will-change: transform, box-shadow;
+}
+
+.andyshop_glowimage:hover {
+  filter: drop-shadow(0 0 6px #b473ff) drop-shadow(0 0 12px #b473ff);
+  transition: filter 0.3s ease;
+}
+
+.andyshop_zoomimage:hover {
+  transform: scale(1.1);
+}
+
+.andyshop_spinimage_hover:hover {
+  display: inline-block;
+  animation: andyshop_spin 2s linear infinite;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+.andyshop_image_container {
+  position: relative;
+  display: inline-block;
+}
+
+.andyshop_hover_text {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.7);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 5px;
+  white-space: nowrap;
+  pointer-events: none;
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 14px;
+}
+
+.andyshop_image_container:hover .andyshop_hover_text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.andyshop_image_overlay_container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  width: 100px;
+  height: auto;
+  display: inline-block;
+}
+
+.andyshop_image_overlay_container img {
+  display: block;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+.andyshop_overlay_box {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+.andyshop_image_overlay_container:hover .andyshop_overlay_box {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.andyshop_image_overlay_container:hover .andyshop_demoimg {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #b473ff;
+}
+
+@keyframes andyshop_spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.andyshop_table {
+  width: 80%;
+  margin: 10px auto;
+  border-collapse: collapse;
+  text-align: center;
+  color: white;
+  font-size: 10px;
+}
+
+.andyshop_header {
+  background-color:rgba(90, 41, 127, 0.8);
+  color: #ffffff;
+}
+
+.andyshop_row td:nth-child(1),
+.andyshop_header th:nth-child(1),
+.andyshop_row td:nth-child(3),
+.andyshop_header th:nth-child(3) {
+  background-color: rgba(82, 82, 82, 0.5);
+  width: 20%;
+}
+
+.andyshop_row td:nth-child(2),
+.andyshop_header th:nth-child(2) {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.andyshop_cell {
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  padding: 2px;
+}
+
+
+.andyshop_flex_container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 20px auto;
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.andyshop_sheet_container {
+  flex: 0 0 350px;
+}
+
+.andyshop_sheet_container iframe {
+  width: 100%;
+  height: 500px;
+  border: 3px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  zoom: 0.55;
+}
+
+.andyshop_form_container {
+  flex: 0 0 400px;
+  max-width: 400px;
+}
+
