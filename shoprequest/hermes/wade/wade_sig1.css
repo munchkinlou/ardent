@@ -1,6 +1,7 @@
+
 @import url('https://fonts.cdnfonts.com/css/crazy-cartoon');
 
-.redrum_sig_main {
+.wade_sig_main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,7 +14,7 @@
   overflow: visible;
 }
 
-.redrum_sig_ban {
+.wade_sig_ban {
   position: relative;
   margin: 0 auto;
   width: 60%;
@@ -29,7 +30,7 @@
   border-radius: 12px;
 }
 
-.redrum_sig_ban::before {
+.wade_sig_ban::before {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
@@ -41,12 +42,12 @@
   border-radius: 10px;
 }
 
-.redrum_sig_ban > * {
+.wade_sig_ban > * {
   position: relative;
   z-index: 1;
 }
 
-.redrum_box {
+.wade_box {
   width: 100%;
   height: 80%;
   margin: 0 auto;
@@ -61,7 +62,7 @@
 }
 
 
-.redrum_sig_img {
+.wade_sig_img {
   position: absolute;
   top: -30%;
   right: -15%;
@@ -77,7 +78,7 @@
   filter: drop-shadow(0 0 0px rgba(0,0,0,1)) drop-shadow(0 0 2px rgba(0,0,0,1)) drop-shadow(0 0 10px rgba(0,0,0,1));
 }
 
-.redrum_sig_img2 {
+.wade_sig_img2 {
   position: absolute;
   top: -60%;
   right: -40%;
@@ -93,7 +94,7 @@
   filter: drop-shadow(0 0 0px rgba(0,0,0,1)) drop-shadow(0 0 2px rgba(0,0,0,1)) drop-shadow(0 0 10px rgba(0,0,0,1));
 }
 
-.redrum_sig_text {
+.wade_sig_text {
   color: #fff;
   font-size: clamp(11px, 1.5vw, 13px);
   font-family: 'Crazy Cartoon', sans-serif;
@@ -106,14 +107,14 @@
 
 
 @media (max-width: 600px) {
-  .redrum_sig_main {
+  .wade_sig_main {
     width: 100%;
     min-width: 0;
     max-width: 100%;
     padding: 0 4vw;
     margin: 0 auto;
   }
-  .redrum_sig_ban {
+  .wade_sig_ban {
     height: auto;
     min-height: 100px;
     flex-direction: column;
@@ -121,14 +122,14 @@
     justify-content: flex-start;
     padding: 12px 0 8px 0;
   }
-  .redrum_box {
+  .wade_box {
     width: 100%;
     max-width: 95%;
     align-self: flex-start;
     padding: 0;
     margin: 0 auto;
   }
-  .redrum_sig_img {
+  .wade_sig_img {
     position: relative;
     margin: 0 auto 8px auto;
     top: 0;
@@ -140,7 +141,7 @@
     background-position: center;
   }
 
-  .redrum_sig_img2 {
+  .wade_sig_img2 {
     position: absolute;
     margin: 0 auto 8px auto;
     top: 0;
@@ -152,7 +153,7 @@
     opacity: 0.9;
     background-position: center;
   }
-  .redrum_sig_text {
+  .wade_sig_text {
     margin:0;
     align-items: center;
     text-align: center;
