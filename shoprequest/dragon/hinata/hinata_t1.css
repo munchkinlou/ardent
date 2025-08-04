@@ -160,8 +160,11 @@
 }
 
 
-
 @media (max-width: 1200px) {
+
+  .hinatat1_content {
+    filter: none;
+  }
 
   .hinatat1_bor {
     outline: none;
@@ -185,6 +188,10 @@
   .hinatat1_bor, .hinatat1_con, .hinatat1_incon {
     mask: none;
     -webkit-mask: none;
+  }
+
+  .hinatat1_incon speak {
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
   }
 
 }
