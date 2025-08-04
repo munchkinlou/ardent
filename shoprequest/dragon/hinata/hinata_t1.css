@@ -193,6 +193,7 @@
     filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
   }
 
+
   .hinatat1_content credit {
     display:block;
     text-align:center;
@@ -200,6 +201,8 @@
     text-transform: uppercase;
     font-size: 9px;
     font-weight: bold;
+    bottom: auto;
+    left: auto;
   }
 
   .hinatat1_speech {
