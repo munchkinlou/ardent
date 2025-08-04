@@ -115,7 +115,7 @@ h1 i {
     padding: 20px 10px 26px;
     flex-wrap: wrap;
     font-family: "Cormorant Garamond", cursive;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     position: relative;
     overflow: visible;
@@ -225,7 +225,7 @@ h1 i {
 
 .infoapp p, .infoper p {
     color: #ffffff;
-    font-size: 16px;
+    font-size: 18px;
     font-family: "Cormorant Garamond", cursive;
     text-align: justify;
     padding: 20px;
@@ -330,7 +330,7 @@ h1 i {
     padding: 10px 0;
     flex-wrap: wrap;
     font-family: "Cormorant Garamond", cursive;
-    font-size: 16px;
+    font-size: 20px;
     text-align: center;
     position: relative;
     overflow: visible;
