@@ -112,7 +112,7 @@
   z-index: 10;
   height: 300px;
   background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.8), transparent);
-  padding: 30px 10px 30px;
+  padding: 20px 10px 30px;
   border-left: 1px solid;
   border-right: 1px solid;
   border-image: linear-gradient(to bottom, transparent, rgb(237, 89, 240), transparent) 1;
