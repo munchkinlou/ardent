@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Kings&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/migatsu');
+
+nav {
+    background: rgba(217, 217, 217, 0.4) !important;
+    box-shadow: 0 0 10px rgba(210,168,178, 0.5), 0 0 10px rgba(82, 187, 219, 0.5);
+}
+
+nav a {
+    transition: color 0.2s ease, background 0.2s ease;
+    color: #ffffff !important;
+    transition: color 0.2s ease, background 0.2s ease;
+}
+
+nav a:hover {
+    color: #ffa4f0 !important;
+    transition: color 0.2s ease, background 0.2s ease;
+}
+
+#content {
+    background: transparent !important;
+}
+
+h1 {
+    filter: drop-shadow(2px 2px 0.5px #000000);
+    color: white;
+    position: relative;
+    z-index: 1;
+    font-family: 'Kings', sans-serif;
+    text-transform: capitalize !important;
+    font-size: 55px;
+    line-height: 1.2;
+    margin: 0 0 -5px;
+    background: linear-gradient(60deg,
+        #87CEEB 0%,
+        #E0F6FF 25%,
+        #87CEEB 50%,
+        #E0F6FF 75%,
+        #87CEEB 100%
+    );
+    background-size: 400% 400%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none !important;
+}
+
+h1 i {
+	font-style: normal !important;
+}
+
+.tabnav,
+.navbar_header,
+.navbar_collapse {
+	background: linear-gradient(to right, transparent 30%, rgba(46,58,74, 0.6) 100%);
+    backdrop-filter: blur(2px);
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    padding: 8px 2px 0;
+    border-radius: 4px;
+    height: 35px;
+    overflow: visible;
+}
+
+.tabnav a,
+.navbar_header a,
+.navbar_collapse a {
+    color: #ffffff !important;
+	transition: color 0.2s ease, background 0.2s ease;
+}
+
+.tabnav a:hover,
+.navbar_header a:hover,
+.navbar_collapse a:hover {
+    transform: scale(1.05) !important;
+    color: #ffa4f0 !important;
+    transition: color 0.3s ease, background 0.3s ease, transform 0.3s ease;
+}
+
+.tabnav a.active {
+    color: #ffa4f0 !important;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.7) !important;
+    transition: color 0.3s ease, background 0.3s ease, transform 0.3s ease;
+}
+
+.tab {
+    border-image: linear-gradient(to right, transparent, #ffa4f0, transparent) 1;
+}
+
+.profav {
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+    width: 250px !important;
+    height: 350px !important;
+}
+
+.profav img {
+    content: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0850e243-5970-4164-a7bb-741bd2351866/dk9a8lc-b60001da-79ca-45a0-9f5a-d04b77736fc7.png/v1/fill/w_1280,h_1791/hinata_ookamina_by_jinxx_black_dk9a8lc-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTc5MSIsInBhdGgiOiJcL2ZcLzA4NTBlMjQzLTU5NzAtNDE2NC1hN2JiLTc0MWJkMjM1MTg2NlwvZGs5YThsYy1iNjAwMDFkYS03OWNhLTQ1YTAtOWY1YS1kMDRiNzc3MzZmYzcucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.yCu2L_3Te3r6HGcwqGuP7RdNmYq6CBhq2iqg4P3I4dk');
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+	object-position: center center;
+    border-radius: 20px;
+}
+
+.blocky {
+	backdrop-filter: blur(2px);
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+         border: 2px solid #b0d4e6;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px 26px;
+    flex-wrap: wrap;
+    font-family: "Migatsu", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    overflow: visible;
+    z-index: 1;
+         box-shadow: 0 0 10px rgba(176, 212, 230, 0.5), 0 0 10px rgba(144, 180, 198, 0.5), inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.blocky u {
+	text-decoration: none !important;
+}
+
+
+.blocky > span {
+    filter: drop-shadow(2px 2px 0.5px rgba(0, 0, 0, 0.6));
+    font-family: "Cinzel Decorative", cursive;
+    text-shadow: none !important;
+    font-size: 16px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    padding: 2px 0;
+    color: #d4e6f1;
+    text-transform: capitalize;
+    background: linear-gradient(to right, transparent, rgba(201, 186, 233, 0.4), transparent);
+    border-radius: 0 0 10px 10px;
+}
+  
+.blocky a {
+    position: relative;
+    z-index: 3;
+    font-family: arial;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    color: #ffa4f0 !important;
+    transition: color 0.2s ease;
+  }
+  
+  .blocky a:hover {
+    color: #ffffff !important;
+  }
+  
+  .blocky a,
+  .blocky a:visited,
+  .blocky a:hover,
+  .blocky a u,
+  .blocky span[style*="text-decoration: underline;"] {
+    text-decoration: none !important;
+  }
+  
+.thead {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 18px;
+	text-align: center;
+    text-transform: capitalize !important;
+    padding: 10px 0;
+    color: #d4e6f1;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5) !important;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), 0 5px 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid #b0d4e6;
+}
+
+.thead b {
+    font-weight: 100 !important;
+}
+
+.sip_tbl_head,
+.sip_tbl_th,
+.sip_tbl_td {
+	background: rgba(46,58,74, 0.8);
+    border: 1px solid rgba(176, 212, 230, 0.4);
+	color: #ffffff !important;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+}
+
+.infoapp, .infoper {
+    width: 100%;;
+    margin: 0 auto;
+    height: auto;
+    cursor: pointer;
+    position: relative;
+}
+
+.infoapp_img {
+    width: 100%;
+    height: 800px;
+    cursor: pointer;
+    background: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0850e243-5970-4164-a7bb-741bd2351866/dk9a8s7-e4f01380-332f-4897-b634-6623f7835f35.png/v1/fit/w_828,h_1354,q_70,strp/hinata_dragon_weigmannor_by_jinxx_black_dk9a8s7-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTgwMCIsInBhdGgiOiJcL2ZcLzA4NTBlMjQzLTU5NzAtNDE2NC1hN2JiLTc0MWJkMjM1MTg2NlwvZGs5YThzNy1lNGYwMTM4MC0zMzJmLTQ4OTctYjYzNC02NjIzZjc4MzVmMzUucG5nIiwid2lkdGgiOiI8PTExMDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.r2XC1urv8-thwjBlXCvIUl3ZoER64ttbGZth2ViQABE');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.6s ease;
+    border-radius: 20px;
+    border: 1px solid black;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+}
+
+.infoapp_img.flipped {
+    background: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0850e243-5970-4164-a7bb-741bd2351866/dk9ahvf-ba7f90b9-afbc-41a3-99b9-d529fde3eb35.png/v1/fit/w_828,h_1070,q_70,strp/hattori_hinata_the_dragon_koi_by_jinxx_black_dk9ahvf-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTY1NCIsInBhdGgiOiJcL2ZcLzA4NTBlMjQzLTU5NzAtNDE2NC1hN2JiLTc0MWJkMjM1MTg2NlwvZGs5YWh2Zi1iYTdmOTBiOS1hZmJjLTQxYTMtOTliOS1kNTI5ZmRlM2ViMzUucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.Lx8WZ7g8ZPlUlB5ev9cu9nGWjy6uZnRuj7vklCKCmo4');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+}
+
+.infoapp p, .infoper p {
+    color: #ffffff;
+    font-size: 16px;
+    font-family: "Migatsu", sans-serif;
+    text-align: justify;
+    padding: 20px;
+    line-height: 1;
+}
+
+.infoapp subtitle, .infoper subtitle, .misc_box subtitle {
+    margin: 0 auto;
+    font-family: "Kings", sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+}
+
+.infoapp subtitle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.infoper subtitle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.infoapp submessage, .infoper submessage, .misc_box submessage {
+    display: block;
+    text-align: center;
+    filter: drop-shadow(2px 2px 0.5px rgba(0, 0, 0, 0.6));
+    font-family: "Cinzel Decorative", cursive;
+    text-shadow: none !important;
+    font-size: 20px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    padding: 2px 0;
+    color: #d4e6f1;
+    text-transform: capitalize;
+    background: linear-gradient(to right, transparent, rgba(201, 186, 233, 0.4), transparent);
+    border-radius: 10px;
+}
+
+.msic_box submessage {
+    margin: 0 auto -10px;
+}
+
+.infoper_img {
+    margin: 0 auto;
+    width: 100%;
+    height: 800px;
+    cursor: pointer;
+    background: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0850e243-5970-4164-a7bb-741bd2351866/dk9af9p-f9aab77e-bf9c-4481-9874-1568e6924b8e.png/v1/fit/w_828,h_1144,q_70,strp/moonlight_by_angryhamster00_by_jinxx_black_dk9af9p-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTc2NyIsInBhdGgiOiJcL2ZcLzA4NTBlMjQzLTU5NzAtNDE2NC1hN2JiLTc0MWJkMjM1MTg2NlwvZGs5YWY5cC1mOWFhYjc3ZS1iZjljLTQ0ODEtOTg3NC0xNTY4ZTY5MjRiOGUucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.l06OvGot6ef6Ps3BE2QPsBN1PEyqZQ4w08M2i_0pr3E');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.6s ease;
+    border-radius: 20px;
+    border: 1px solid black;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+}
+
+.tohide {
+    display: none;
+}
+
+.misc_row {
+	display: flex;
+	justify-content: center;
+	gap: 5px;
+	align-items: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.misc_box {
+	flex: 0 1 50%;
+	width: 100%;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: stretch;
+    gap: 10px;
+}
+
+.misc_info {
+	width: 100%;
+	backdrop-filter: blur(2px);
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+    border: 2px solid #b0d4e6;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    flex-wrap: wrap;
+    font-family: "Migatsu", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    overflow: visible;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(176, 212, 230, 0.5), 0 0 10px rgba(144, 180, 198, 0.5), inset 0 0 10px rgba(0, 0, 0, 0.2);
+    background: rgba(46,58,74, 0.5);
+}
+
+.misc_img {
+    width: auto;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.misc_info_item_fullwidth {
+	width: 100%;
+	padding: 15px;
+	box-sizing: border-box;
+	display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.misc_info_item_fullwidth .compendium_content {
+    backdrop-filter: blur(2px);
+	overflow-x: auto;
+	overflow-y: hidden;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	gap: 10px;
+	align-items: center;
+	padding: 20px 15px 40px;
+    background-color: rgba(46,58,74, 0.5);
+    border: 2px solid #b0d4e6;
+    border-radius: 10px;
+	height: 550px;
+}
+
+.misc_info_item_fullwidth .compendium_content > .artcompendium_img_wrap {
+	flex: 0 0 auto;
+}
+
+.misc_info_item_fullwidth .compendium_content img {
+	height: 100%;
+	width: auto;
+	border-radius: 8px;
+	flex: 0 0 auto;
+	object-fit: cover;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+    border-radius: 20px;
+}
+
+.artcompendium_img_wrap {
+	position: relative;
+	display: flex;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.misc_artcompendium {
+	width: 100%;
+	display: block;
+}
+
+.artcompendium_img_wrap:hover .artcompendium_credit,
+.artcompendium_img_wrap:focus-within .artcompendium_credit {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.corner_img {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    pointer-events: none;
+    z-index: 10;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+@media (max-width: 1200px) {
+
+	.profav { display: none }
+
+    .corner_img {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    
+	.misc_info_item_fullwidth {
+		grid-column: 1 / -1;
+	}
+	.misc_row {
+		flex-direction: column;
+		align-items: center;
+	}
+	.misc_box {
+		max-width: 100%;
+		width: 95%;
+	}
+}
