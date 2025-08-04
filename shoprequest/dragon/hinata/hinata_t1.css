@@ -159,7 +159,6 @@
   -webkit-mask-repeat: no-repeat;
 }
 
-
 @media (max-width: 1200px) {
 
   .hinatat1_content {
@@ -192,6 +191,15 @@
 
   .hinatat1_incon speak {
     filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+  }
+
+  .hinatat1_content credit {
+    display:block;
+    text-align:center;
+    font-family: arial;
+    text-transform: uppercase;
+    font-size: 9px;
+    font-weight: bold;
   }
 
 }
