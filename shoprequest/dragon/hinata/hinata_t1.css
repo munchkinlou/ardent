@@ -34,7 +34,7 @@
   left: -230px;
   width: 180%;
   height: 850px;
-  background: transparent url('cherry_blossoms_by_dezigre_by_jinxx_black_dk9agsz-414w-2x.png') no-repeat center center;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/shop/Dragon/Hinata/cherry_blossoms_by_dezigre_by_jinxx_black_dk9agsz-414w-2x.png?updatedAt=1754299823124') no-repeat center center;
   background-size: 100%; 
   z-index: 0;
   pointer-events: none;
@@ -180,6 +180,11 @@
   .hinatat1_incon {
     -ms-overflow-style: none;
     scrollbar-width: none;
+  }
+
+  .hinatat1_bor, .hinatat1_con, .hinatat1_incon {
+    mask: none;
+    -webkit-mask: none;
   }
 
 }
