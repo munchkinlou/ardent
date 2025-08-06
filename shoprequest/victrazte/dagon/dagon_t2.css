@@ -195,10 +195,24 @@
     clip-path: none;
   }
 
-  .dagont2_text,
-  .dagont2_speech,
-  .dagont2_diag {
-    filter: none;
+  .dagont2_content t {
+    display: none;
   }
 
-}
+  .dagont2_content sp {
+    display: block;
+    position: relative;
+    bottom: auto;
+    left: auto;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .dagont2_content credit {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin: 20px auto 0;
+    text-align: center;
+    transform: none;
+  }
