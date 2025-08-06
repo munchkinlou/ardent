@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=My+Soul&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
+.kiyomit1_content {
+	position: relative;
+  width: 450px;
+  margin: 150px auto 10px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+  filter: drop-shadow(0 8px 10px rgba(0,0,0,0.75));
+}
+
+.kiyomit1_content credit {
+  margin: 5px auto 0 5px;
+  display:block;
+  text-align:left;
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.kiyomit1_content credit::before {
+  content: 'code by andy ';
+}
+
+.kiyomit1_content t {
+  position: absolute;
+  margin: 0 auto;
+  top: 250px;
+  left:60px;
+  font-size: 80px;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'My Soul';
+  text-align: center;
+  line-height: 1;
+  z-index: 10;
+  color:transparent;
+  background: linear-gradient(to right, #ffffff, #dae5f1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.7)) drop-shadow(0 0 8px rgba(0,0,0,0.4));
+}
+
+.kiyomit1_img {
+  position: absolute;
+  top: -130px;
+  left: -150px;
+  width: 160%;
+  height: 500px;
+  background: transparent url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/acb69457-2e5c-444f-b6f8-7df5d9829ac2/dk5vt54-83878437-c48a-4bb1-b0e3-18ec8d8c5dba.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2FjYjY5NDU3LTJlNWMtNDQ0Zi1iNmY4LTdkZjVkOTgyOWFjMlwvZGs1dnQ1NC04Mzg3ODQzNy1jNDhhLTRiYjEtYjBlMy0xOGVjOGQ4YzVkYmEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.bk6es76bhwhfgXBjQs0zLxICmbXO9348GVhdEK9wLNE') no-repeat center top;
+  background-size: contain; 
+  z-index: 5;
+  pointer-events: none;
+}
+
+.kiyomit1_bor {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to top, #000000 300px,
+  #d1d1d1);
+  padding: 5px;
+  border-radius: 300px 300px 10px 10px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.kiyomit1_con {
+  position: relative;
+  width: 100%;
+  padding: 310px 20px 20px;
+  box-sizing: border-box;
+  background: black;
+  border-radius: 300px 300px 10px 10px;
+  pointer-events: none;
+  margin: 0 auto;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.kiyomit1_con::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/thundercloud.png?updatedAt=1754449693858') no-repeat bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  pointer-events: none;
+  overflow: hidden;
+  border-radius: 300px 300px 10px 10px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+
+.kiyomit1_con > * {
+  position: relative;
+  z-index: 2;
+}
+
+.kiyomit1_incon {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 20px 30px 50px;
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.6);
+  height: auto;
+  box-shadow: 0 0 10px 10px rgba(122, 122, 122, 0.2);
+  text-align: justify;
+  font-family: 'Cormorant Garamond';
+  font-size: 13px;
+  color: #ffffff;
+  line-height: 1.2;
+  border: 5px groove #dcdcdc;
+}
+
+.kiyomit1_incon speak {
+  color: #ffffff;
+	font-family: 'Merienda';
+  font-size: 13px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #000000;
+  line-height: 0.9;
+}
+
+.kiyomit1_spch {
+  display: block;
+  position: relative;
+  margin: 5px 0 -45px 0;
+  font-family: 'Merienda';
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px #0a0906;
+  font-size: 18px;
+  text-align: center;
+  line-height: 1;
+}
+
+.kiyomit1_spch::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 100%;
+  height: 2px;
+  margin: 0px auto 0;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.5), transparent);
+}
+
+
+@media (max-width: 1200px) {
+
+  .kiyomit1_content {
+    filter: none;
+  }
+
+  .kiyomit1_con::before {
+    display: none;
+  }
+
+  .kiyomit1_speech {
+    text-align: center;
+    padding:0;
+  }
+
+}
+
