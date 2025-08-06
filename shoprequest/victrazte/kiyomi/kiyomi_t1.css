@@ -173,5 +173,9 @@
     padding:0;
   }
 
+  .kiyomit1_content t {
+    display: none;
+  }
+
 }
 
