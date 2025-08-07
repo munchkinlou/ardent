@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+
+.bluebellt1_content {
+	position: relative;
+  width: 100%;
+  width: 350px;
+  margin: 30px auto 30px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+}
+
+.bluebellt1_content credit {
+  position: absolute;
+  top: 40px;
+  left: 510px;
+  width: 100px;
+  display:block;
+  text-align:center;
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
+  z-index: 10;
+  transform: rotate(90deg);
+}
+
+.bluebellt1_content credit::before {
+  content: 'code by andy ';
+}
+
+.bluebellt1_img {
+  position: absolute;
+  bottom: -44px;
+  left: -255px;
+  width: 150%;
+  height: 100%;
+  background: transparent url('https://images2.imgbox.com/04/e9/lqNwRX8e_o.png') no-repeat bottom;
+  background-size: 100%; 
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0 4px 5px rgba(122, 169, 226, 0.75));
+}
+
+.bluebellt1_img::before {
+  content: '';
+  position: absolute;
+  bottom: 45px;
+  left: 535px;
+  width: 100%;
+  height: 150px;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/Hermes/Bluebell/bluebell1.png?updatedAt=1754596812006') no-repeat bottom;
+  background-size: contain;
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.5));
+}
+
+.bluebellt1_img::after {
+  content: '';
+  position: absolute;
+  top: -73px;
+  left: 190px;
+  width: 100%;
+  height: 100px;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/Hermes/Bluebell/bluebell2.png?updatedAt=1754596811902') no-repeat bottom;
+  background-size: contain;
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.5));
+}
+
+.bluebellt1_bor {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom, #1C2433, #8190AF);
+  padding: 3px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin: 0 -200px 0 auto;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+}
+
+.bluebellt1_con {
+  position: relative;
+  width: 100%;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/bluebells.jpg?updatedAt=1754596839045') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  pointer-events: none;
+  margin: 0 auto;
+  box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.bluebellt1_con > * {
+  position: relative;
+  z-index: 2;
+}
+
+.bluebellt1_incon {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 4px groove #FBC043;
+  padding: 20px 30px 20px;
+  width: 100%;
+  min-height: 450px;
+  box-sizing: border-box;
+  background: none;
+  height: auto;
+  background: linear-gradient(to bottom, rgba(46,57,78, 0.9), rgba(29,37,53, 0.9));
+  box-shadow: 0 0 10px rgba(89, 145, 190, 0.8);
+  text-align: justify;
+  font-family: 'Merriweather';
+  font-size: 10px;
+  color: #ffffff;
+  line-height: 1.3;
+}
+
+.bluebellt1_text, .bluebellt1_speech, .bluebellt1_diag {
+  position: relative;
+  z-index: 2;
+}
+
+.bluebellt1_incon speak {
+  color: #977ce7;
+	font-family: 'Delius';
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+  background: linear-gradient(to bottom, #B8FF2C, #50B040);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+
+.bluebellt1_incon sp {
+  position: relative;
+  font-family: 'Delius';
+  font-size: 18px;
+  display: block;
+  text-align: center;
+  bottom: -10px;
+  color: transparent;
+  background: linear-gradient(to bottom, #B8FF2C, #50B040);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-fill-color: transparent;
+  filter: drop-shadow(0 0 0px rgba(0,0,0,1)) drop-shadow(0 0 2px rgba(0,0,0,1));
+  z-index: 10;
+}
+
+.bluebellt1_incon sp::after {
+  content: 'Speech';
+  filter: drop-shadow(0 0 0px rgba(0,0,0,1)) drop-shadow(0 0 2px rgba(0,0,0,1));
+}
+
+.bluebellt1_incon d {
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(to right, transparent, #FDC243 50%, transparent 100%);
+  height: 1px;
+}
+
+
+
+
+@media (max-width: 1200px) {
+
+  .bluebellt1_bor {
+    outline: none;
+  }
+
+  .bluebellt1_incon {
+    border: none;
+  }
+
+  .bluebellt1_img::before, .bluebellt1_img::after {
+    display: none;
+  }
+
+}
