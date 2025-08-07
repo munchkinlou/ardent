@@ -172,6 +172,7 @@
 
 
 
+
 @media (max-width: 1200px) {
 
   .bluebellt1_bor {
@@ -180,10 +181,32 @@
 
   .bluebellt1_incon {
     border: none;
+    min-height: 0px;
   }
 
   .bluebellt1_img::before, .bluebellt1_img::after {
     display: none;
   }
+
+  .bluebellt1_incon speak {
+    filter: drop-shadow(0 0 0px rgba(0,0,0,1));
+  }
+
+  .bluebellt1_content credit {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 0 auto;
+    width: 100px;
+    display:block;
+    text-align:center;
+    font-family: arial;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    z-index: 10;
+    transform: none;
+  }
+  
 
 }
