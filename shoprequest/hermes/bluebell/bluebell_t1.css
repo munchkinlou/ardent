@@ -190,7 +190,7 @@
   }
 
   .bluebellt1_incon speak {
-    filter: drop-shadow(0 0 0px rgba(0,0,0,1));
+    filter: drop-shadow(0 0 0px rgba(0,0,0,1)) drop-shadow(0 0 2px rgba(0,0,0,1));
   }
 
   .bluebellt1_content credit {
