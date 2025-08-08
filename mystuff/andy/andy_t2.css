@@ -25,20 +25,19 @@
 
 .andyt2_img {
   position: absolute;
-  top: -240px;
-  left: 0;
+  top: -230px;
   z-index: 5;
   pointer-events: none;
   filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
+  width: 450px;
+  height: 450px;
 
   --image: url('https://ik.imagekit.io/arl60/Ardent/personal/Andy/LouCheeb1.png?updatedAt=1754099178605');
-  --imageheight: 450px;
-  --imagewidth: 100%;
+  --position: 0px;
 
   background: transparent var(--image) no-repeat bottom;
   background-size: contain;
-  width: var(--imagewidth);
-  height: var(--imageheight);
+  left: var(--position);
 }
 
 .andyt2_con {
