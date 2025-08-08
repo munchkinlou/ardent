@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@font-face {
+  font-family: 'Kjartan';
+  src: url('RagnaRunesPersonalUseRegular-Rp7AV.otf') format('truetype');
+}
+
+.kjartans2_sig_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 700px;
+  margin: 100px auto 80px;
+  position: relative;
+  overflow: visible;
+}
+
+.kjartans2_sig_ban {
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
+  height: 150px;
+  border: 2px solid black;
+  box-shadow: 0 0 5px rgba(0,0,0,0.6);
+  filter: none;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: visible;
+}
+
+.kjartans2_sig_ban::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('5141e2f60f22d8926ee15d26c07ea69b.png');
+  background-size: 110%;
+  background-position: -70px calc(100% - 32%);
+  background-repeat: no-repeat;
+  z-index: 0;
+  border-radius: inherit;
+}
+
+.kjartans2_sig_ban > * {
+  position: relative;
+  z-index: 1;
+}
+
+.kjartans2_box {
+  width: 100%;
+  height: 80%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 2px solid;
+  border-image: linear-gradient(to right, transparent, #54312E 50%, transparent 100%) 1;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.kjartans2_sig_img {
+  position: absolute;
+  top: -55%;
+  left: 75%;
+  transform: none;
+  margin-right: 0;
+  width: 50%;
+  height: 200%;
+  z-index: 2;
+  background: transparent var(--kjartans2-sig-img-url);
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0 0 5px rgba(0,0,0,1)) drop-shadow(0 0 2px rgba(0,0,0,1));
+}
+
+.kjartans2_sig_text {
+  color: #fff;
+  font-size: clamp(10px, 1.5vw, 11px);
+  font-family: 'Amarante';
+  text-shadow: 0 0 8px #000, 0 0 2px #000000,0 0 2px #000000;
+  text-align: center;
+  line-height: 1.4;
+  padding-top: 5px;
+  padding-left: 5%;
+  padding-right: 150px;
+}
+
+
+@media (max-width: 600px) {
+  .kjartans2_sig_main {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    padding: 0 4vw;
+    margin: 0 auto;
+  }
+  .kjartans2_sig_ban {
+    height: auto;
+    min-height: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 12px 0 8px 0;
+    background-size: cover;
+  }
+  .kjartans2_sig_ban::before {
+    background-size: 105%;
+    background-position: center calc(100% - 20%);
+  }
+  .kjartans2_box {
+    width: 100%;
+    align-self: flex-start;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .kjartans2_sig_text {
+    margin:0;
+    align-items: center;
+    text-align: center;
+    font-size: 10px;
+    min-width: 0;
+    max-width: 100%;
+    padding: 0px 2vw 1vw;
+    order: 1;
+    height: 100px;
+  }
+  .kjartans2_sig_img {
+    position: relative;
+    margin: 8px auto 0 auto;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 100%;
+    transform: none;
+    display: block;
+    order: 2;
+    background: none;
+  }
+}
