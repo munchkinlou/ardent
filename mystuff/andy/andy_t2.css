@@ -1,0 +1,111 @@
+
+.andyt2_content {
+	position: relative;
+  width: 450px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+
+  --height: 200px;
+
+  margin: var(--height) auto 10px;
+}
+
+.andyt2_content credit {
+  margin: 5px 5px 0 auto;
+  display:block;
+  text-align:right;
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.andyt2_img {
+  position: absolute;
+  top: -240px;
+  left: 0;
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
+
+  --image: url('https://ik.imagekit.io/arl60/Ardent/personal/Andy/LouCheeb1.png?updatedAt=1754099178605');
+  --imageheight: 450px;
+  --imagewidth: 100%;
+
+  background: transparent var(--image) no-repeat bottom;
+  background-size: contain;
+  width: var(--imagewidth);
+  height: var(--imageheight);
+}
+
+.andyt2_con {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border-radius: 300px 300px 10px 10px;
+  margin: 0 auto;
+  text-align: justify;
+  font-family: 'Garamond';
+  font-size: 13px;
+  line-height: 1.2;
+  padding: 200px 30px 50px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+
+  --contentbg: rgb(80, 80, 80);
+  --contentborder: #dcdcdc;
+  --textcolor: #d0d0d0;
+  --speakcolor: #ffffff;
+
+  background: var(--contentbg);
+  border: 5px solid var(--contentborder);
+  color: var(--textcolor);
+}
+
+.andyt2_con > * {
+  position: relative;
+  z-index: 2;
+}
+
+.andyt2_con speak {
+	font-family: 'Times New Roman';
+  font-size: 13px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #000000;
+  line-height: 0.9;
+
+  color: var(--speakcolor);
+}
+
+.andyt2_spch {
+  display: block;
+  position: relative;
+  margin: 5px 0 -45px 0;
+  text-align: center;
+}
+
+.andyt2_spch::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 2px;
+  margin: 0px auto 0;
+
+  background: linear-gradient(to right, transparent, var(--contentborder), transparent);
+}
+
+
+@media (max-width: 1200px) {
+
+  .andyt2_con {
+    border-radius: 0px;
+  }
+
+}
+
