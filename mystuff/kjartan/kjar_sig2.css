@@ -23,6 +23,7 @@
   width: 90%;
   height: 150px;
   border: 2px solid black;
+  background: black;
   box-shadow: 0 0 5px rgba(0,0,0,0.6);
   filter: none;
   z-index: 1;
@@ -36,7 +37,7 @@
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: url('5141e2f60f22d8926ee15d26c07ea69b.png');
+  background: url('https://ik.imagekit.io/arl60/Ardent/personal/Kjartan/5141e2f60f22d8926ee15d26c07ea69b.png?updatedAt=1754697287831');
   background-size: 110%;
   background-position: -70px calc(100% - 32%);
   background-repeat: no-repeat;
@@ -73,11 +74,11 @@
   width: 50%;
   height: 200%;
   z-index: 2;
-  background: transparent var(--kjartans2-sig-img-url);
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Kjartan/KjartanAndCo.png?updatedAt=1754697329345');
   background-size: contain;
   background-position: left;
   background-repeat: no-repeat;
-  filter: drop-shadow(0 0 5px rgba(0,0,0,1)) drop-shadow(0 0 2px rgba(0,0,0,1));
+  filter: drop-shadow(0 0 10px rgba(0,0,0,0.5)) drop-shadow(0 0 2px rgba(0,0,0,1));
 }
 
 .kjartans2_sig_text {
