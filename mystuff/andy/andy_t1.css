@@ -54,24 +54,27 @@
 
   text-align:justify;
   font-family:'Nunito Sans';
-  font-size: 12px;
   padding: 10px 30px 20px;
   z-index: 5;
   
   --textcolor: white;
     color: var(--textcolor);
+
+  --fontsize: 12px;
+  font-size: var(--fontsize);
 }
 
 .andyt1_content {
   --speakcolor: #ffffff;
+  --speaksize: 13px;
 }
 
 .andyt1_content speak {
   font-family: 'georgia';
-  font-size: 13px;
   font-weight: bold;
   text-shadow: 0 0 5px rgba(0,0,0,0.5);
   color: var(--speakcolor);
+  font-size: var(--speaksize);
 }
 
 .andyt1_speech {
@@ -96,4 +99,3 @@
     display: none;
   }
 }
-
