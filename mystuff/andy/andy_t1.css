@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+.andyt1_c {
+  display:block;
+  text-align:center;
+  font-size:10px;
+  text-transform: uppercase;
+  font-family: arial;
+  font-weight: bold;
+}
+
+.andyt1_container {
+  position: relative;
+  width: 700px;
+  margin: 20px auto 0;
+  --bgborder: #64B788;
+  --bgimage: none;
+  --bgcolor: white;
+  --imageheight: 500px;
+  --fadecolor: transparent;
+
+  border: var(--bgborder) 3px solid;
+  background: var(--bgcolor) var(--bgimage) no-repeat top border-box;
+  background-size: 110%;
+  overflow: visible;  
+  padding: var(--imageheight) 20px 20px;
+  
+  z-index: 0;
+}
+
+.andyt1_container:before {
+  content: '';
+  position: absolute;
+  top: 0;    
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent calc(var(--imageheight) - 120px), var(--fadecolor) calc(var(--imageheight) - 30px));
+  z-index: 5;
+}
+
+.andyt1_content{
+	position: relative;
+	padding: 10px 5px;
+	z-index: 10;
+  box-shadow:inset 0 0 10px rgba(0,0,0,0.5);
+	
+	--contentbg: #295C57;
+	--contentborder: #64B788;
+	
+		  background: var(--contentbg);
+		  border: 2px solid var(--contentborder);
+
+  text-align:justify;
+  font-family:'Nunito Sans';
+  font-size: 12px;
+  padding: 0 20px 20px 20px;
+  z-index: 5;
+  
+  --textcolor: white;
+    color: var(--textcolor);
+}
+
+.andyt1_content {
+  --speakcolor: #ffffff;
+}
+
+.andyt1_content speak {
+  font-family: 'georgia';
+  font-size: 13px;
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
+  color: var(--speakcolor);
+}
+
+.andyt1_speech {
+  font-family: 'georgia';
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  margin: -10px 0 -20px;
+}
+
+.andyt1_speech::before {
+  content: '';
+  display: block;
+  width: 30%;
+  height: 1px;
+  margin: 10px auto 0;
+  background: linear-gradient(to right, transparent, var(--contentborder) 50%, transparent 100%);
+}
