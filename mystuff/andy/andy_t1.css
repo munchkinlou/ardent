@@ -90,3 +90,10 @@
   margin: 10px auto 0;
   background: linear-gradient(to right, transparent, var(--contentborder) 50%, transparent 100%);
 }
+
+@media (max-width:1200px) {
+  .andyt1_container:before {
+    display: none;
+  }
+}
+
