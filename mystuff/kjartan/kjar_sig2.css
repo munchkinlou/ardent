@@ -109,10 +109,9 @@
     align-items: center;
     justify-content: flex-start;
     padding: 12px 0 8px 0;
-    background-size: cover;
   }
   .kjartans2_sig_ban::before {
-    background-size: 105%;
+    background-size: cover;
     background-position: center calc(100% - 20%);
   }
   .kjartans2_box {
