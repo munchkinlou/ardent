@@ -112,7 +112,7 @@
   }
   .kjartans2_sig_ban::before {
     background-size: cover;
-    background-position: center calc(100% - 20%);
+    background-position: 30% 100%;
   }
   .kjartans2_box {
     width: 100%;
