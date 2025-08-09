@@ -90,7 +90,7 @@
   line-height: 1.4;
   padding-top: 5px;
   padding-left: 5%;
-  padding-right: 150px;
+  padding-right: 50px;
 }
 
 
@@ -109,6 +109,7 @@
     align-items: center;
     justify-content: flex-start;
     padding: 12px 0 8px 0;
+
   }
   .kjartans2_sig_ban::before {
     background-size: cover;
