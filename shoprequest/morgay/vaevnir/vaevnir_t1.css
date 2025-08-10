@@ -173,6 +173,15 @@
     filter: none;
   }
 
+  .vaevnirt1_content credit {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin: 20px auto 0;
+    text-align: center;
+    transform: none;
+  }
+
   .vaevnirt1_img,
   .vaevnirt1_content::after,
   .vaevnirt1_bor::before  {
@@ -184,6 +193,7 @@
   .vaevnirt1_incon {
     -webkit-mask-image: none;
     mask-image: none;
+    margin: 0 auto;
   }
 
   .vaevnirt1_incon spch {
@@ -193,17 +203,7 @@
     display: block;
     font-size: 60px;
     text-align: center;
-    transform: rotate(0deg);
-  }
-
-  .vaevnirt1_content credit {
-    position: relative;
-    top: auto;
-    left: auto;
-    width: 100px;
-    display:block;
-    text-align:center;
-    transform: rotate(0deg);
+    transform: none;
   }
 
 }
