@@ -43,6 +43,9 @@
   font-weight: bold;
 }
 
+.vaevnirt1_content credit::before {
+  content: 'code by andy';
+}
 
 .vaevnirt1_img {
   position: absolute;
