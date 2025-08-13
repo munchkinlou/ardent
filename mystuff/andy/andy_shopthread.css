@@ -233,6 +233,11 @@
   opacity: 1;
 }
 
+.andyshop_collapse_toggle:checked + label + .andyshop_collapse_content {
+    display: block;
+}
+
+
 .andyshop_box {
   flex: 1 1 300px;
   border-radius: 10px;
