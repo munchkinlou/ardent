@@ -217,6 +217,9 @@
   text-shadow: 0 0 10px white;
 }
 
+.andyshop_collapse_button.clicked {
+    background-color: rgb(65, 58, 132);
+}
 
 .andyshop_collapse_content {
   max-height: 0;
