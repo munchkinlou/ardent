@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
+
+nav {
+    background: rgba(0, 0, 0, 0.8) !important;
+    box-shadow: 0 0 10px rgba(230, 67, 124,0.5), 0 0 10px rgba(230, 96, 143, 0.5);
+}
+
+nav a {
+    transition: color 0.2s ease, background 0.2s ease;
+    color: #ffffff !important;
+    transition: color 0.2s ease, background 0.2s ease;
+}
+
+nav a:hover {
+    color: rgb(230, 67, 124) !important;
+    transition: color 0.2s ease, background 0.2s ease;
+}
+
+#content {
+    background: transparent !important;
+    overflow: visible;
+}
+
+h1 {
+    filter: drop-shadow(2px 2px 0.5px #000000);
+    color: white;
+    position: relative;
+    z-index: 1;
+    font-family: 'Love Light', sans-serif;
+    text-transform: capitalize !important;
+    font-size: 60px;
+    line-height: 1;
+    height: auto;
+    background: linear-gradient(to bottom,
+        rgb(241, 136, 173),
+        rgb(238, 106, 152),
+        rgb(230, 67, 124)
+    );
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none !important;
+    margin: 0 auto !important;
+    overflow: visible;
+    margin: -25px 0 0 !important;
+}
+
+h1 i {
+	font-style: normal !important;
+}
+
+.tabnav,
+.navbar_header,
+.navbar_collapse {
+	background: linear-gradient(to right, transparent 40%, rgba(0,0,0,0.8) 60%);
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    border-radius: 4px;
+    height: 30px;
+    padding: 5px 5px 0;
+}
+
+.tabnav a,
+.navbar_header a,
+.navbar_collapse a {
+    color: #ffffff !important;
+	transition: color 0.2s ease, background 0.2s ease;
+}
+
+.tabnav a:hover,
+.navbar_header a:hover,
+.navbar_collapse a:hover {
+    transform: scale(1.05) !important;
+    color: #c990ac !important;
+    transition: color 0.3s ease, background 0.3s ease, transform 0.3s ease;
+}
+
+.tabnav a.active {
+    color: #c990ac !important;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.7) !important;
+    transition: color 0.3s ease, background 0.3s ease, transform 0.3s ease;
+}
+
+.tab {
+    border: none;
+}
+
+.profav {
+    background: rgba(0, 0, 0, 0.5);
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+    width: 300px !important;
+    height: 400px !important;
+}
+
+.profav img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-position: center;
+    border-radius: 20px;
+    object-fit: contain;
+}
+
+.blocky::before {
+    border: 30px solid;
+}
+
+.profav::after {
+    border: 50px solid;
+}
+
+.blocky::before, .profav::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-image: url('https://ik.imagekit.io/arl60/Ardent/shop/Morgay/Vaevnir/frame.png?updatedAt=1755025540494') 70 stretch;
+    pointer-events: none;
+}
+
+
+.blocky {
+	backdrop-filter: blur(2px);
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    flex-wrap: wrap;
+    font-family: "Cormorant Garamond", cursive;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    overflow: visible;
+    z-index: 1;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+}
+
+
+.blocky u {
+	text-decoration: none !important;
+}
+
+
+.blocky > span {
+    filter: drop-shadow(2px 2px 0.5px rgba(0, 0, 0, 0.6));
+    font-family: "Petit Formal Script", cursive;
+    text-shadow: none !important;
+    font-size: 16px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    padding: 2px 0;
+    color: #c990ac;
+    text-align: center;
+    text-transform: capitalize;
+    background: linear-gradient(to right, transparent, rgba(90, 90, 90, 0.4), transparent);
+}
+  
+.blocky a {
+    position: relative;
+    z-index: 3;
+    font-family: arial;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    color: #e6437cff !important;
+    transition: color 0.2s ease;
+  }
+  
+  .blocky a:hover {
+    color: #ffffff !important;
+  }
+  
+  .blocky a,
+  .blocky a:visited,
+  .blocky a:hover,
+  .blocky a u,
+  .blocky span[style*="text-decoration: underline;"] {
+    text-decoration: none !important;
+  }
+  
+.thead {
+    font-family: "Petit Formal Script", cursive;
+    font-size: 18px;
+	text-align: center;
+    text-transform: capitalize !important;
+    padding: 10px 0;
+    color: rgb(238, 106, 152);
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5) !important;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.thead b {
+    font-weight: 100 !important;
+}
+
+.sip_tbl_head,
+.sip_tbl_th,
+.sip_tbl_td {
+	background: rgba(0,0,0, 0.6);
+	color: #ffffff !important;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+}
+
+
+.info_appimg {
+    filter: drop-shadow(0 0 10px rgba(238, 106, 152,0.6));
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.blocky:hover .info_appimg {
+    transform: scale(1.05) rotate(-5deg);
+    filter: drop-shadow(0 0 15px rgba(241, 31, 105, 0.5));
+}
+
+.divider {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, rgb(248, 182, 205), transparent);
+}
+
+.blocky p {
+    text-align: justify;
+    line-height: 1.1;
+    padding: 0 20px 10px;
+}
+
+.blocky h2 {
+    font-family: "Petit Formal Script", cursive;
+    font-size: 18px;
+	text-align: center;
+    text-transform: capitalize !important;
+    color: rgb(252, 149, 185) !important;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5) !important;
+    margin: -10px 0 3px;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to right, transparent, rgb(248, 182, 205), transparent) 1;
+}
+
+.misc_img {
+     filter: hue-rotate(-30deg) drop-shadow(0 0 10px rgba(238, 106, 152,0.6));
+     width: 100%;
+     height: 200px;
+     object-fit: contain;
+}
+
+.misc_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.misc_box {
+    flex: 1;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.misc_box_left {
+    order: 1;
+}
+
+.misc_box_center {
+    order: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.misc_box_right {
+    order: 3;
+}
+
+.misc_text {
+    font-size: 20px;
+    color: white;
+    line-height: 1.2;
+    text-align: center;
+    filter: drop-shadow(2px 2px 0.5px #000000);
+    text-shadow: none !important;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, transparent, rgb(248, 182, 205), transparent) 1;
+    padding: 10px 20px;
+}
+
+.misc_subtitle {
+    font-family: 'Forum', sans-serif !important;
+    font-size: 15px;
+    color: rgb(252, 149, 185);
+    line-height: 1.2;
+    text-align: center;
+    text-shadow: none !important;
+    margin-top: 8px;
+    filter: drop-shadow(1px 1px 0.5px #3d2312);
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 1200px) {
+
+	.profav { display: none }
+
+}
