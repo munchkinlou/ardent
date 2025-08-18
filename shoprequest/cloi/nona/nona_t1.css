@@ -172,6 +172,7 @@
   filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.8));
 }
 
+
 @media (max-width: 1200px) {
 
   .nonat1_content {
@@ -190,7 +191,7 @@
     text-shadow: 0 0 1px rgba(0,0,0,0.5);
   }
 
-.nonat1_bor, .nonat1_bor t::before {
+.nonat1_bor t, .nonat1_bor t::before {
   display: none;
 }
 
@@ -206,5 +207,6 @@
 }
   
 }
+
 
 
