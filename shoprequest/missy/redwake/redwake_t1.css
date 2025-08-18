@@ -144,17 +144,14 @@
 
   .redwaket1_content credit {
     position: relative;
-    bottom:auto;
-    left:auto;
+    top:auto;
+    right:auto;
     margin: 0 auto;
     display:block;
-    text-align:center;
-    transform: left;
+    text-align:right;
     font-size: 8px;
 
   }
-
-
 
 }
 
