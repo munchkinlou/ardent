@@ -138,7 +138,7 @@
 
 .oatht1_con {
   width: 100%;
-  min-height: 400px;
+  height: 300px;
   padding: 10px 0;
   background: #231114;
   background-size: 100%;
@@ -216,6 +216,7 @@
   font-size: 25px;
 }
 
+
 @media (max-width: 1200px) {
 
 .oatht1_content::before,
@@ -241,4 +242,5 @@
     font-size: 8px;
    transform: none;
   }
+
 }
