@@ -8,7 +8,7 @@
   box-sizing: border-box;
   width: 100%;
   max-width: 800px;
-  margin: 120px auto 40px;
+  margin: 70px auto 40px;
   position: relative;
   overflow: visible;
 }
@@ -70,19 +70,19 @@
 
 .overkills1_sig_img {
   position: absolute;
-  top: -60%;
-  left: -38%;
+  top: -25%;
+  right: -35%;
   transform: none;
   margin-right: 0;
-  width: 70%;
-  height: 100%;
+  width: 60%;
+  height: 80%;
   z-index: 2;
   background: transparent url('https://ik.imagekit.io/arl60/Ardent/shop/Missy/Overkill/Overkill-DCheeb2.png?updatedAt=1755552413347');
   background-size: contain;
   background-position: left;
   background-repeat: no-repeat;
   animation: sig_overkillglow 6s ease-in-out infinite;
-  transform: scalex(-1);
+  transform: rotate(10deg);
 }
 
 @keyframes sig_overkillglow {
