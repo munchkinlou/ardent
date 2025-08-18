@@ -243,9 +243,8 @@
    transform: none;
   }
 
-.oatht1_incon {
-  min-height: auto;
+.oatht1_con,.oatht1_incon {
+  min-height: 50px;
 }
-
 
 }
