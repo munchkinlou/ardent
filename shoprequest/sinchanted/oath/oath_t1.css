@@ -239,6 +239,6 @@
     text-align:center;
     transform: left;
     font-size: 8px;
-
+   transform: none;
   }
 }
