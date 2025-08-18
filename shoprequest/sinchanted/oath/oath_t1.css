@@ -1,12 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/plainblack');
 
-.oatht1_wrap {
+.oatht1_content {
   position: relative;
   width: 700px;
-  margin: 0 auto;
+  margin: 350px auto 80px;
 }
 
-.oatht1_oathimg {
+.oatht1_content t {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100px;
+  padding-top: 40px;
+  z-index: 5;
+  filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.5))
+          drop-shadow(0 0 1px rgba(0, 0, 0, 0.3))
+          drop-shadow(0 5px 1px rgba(0, 0, 0, 0.4));
+  font-family: 'PlainBlack', sans-serif;
+  font-size: 80px;
+  text-align: center;
+  line-height: 0.6;
+  background: linear-gradient(to right, #AC360F 20%,#A77E0D 50%, #AC360F 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.oatht1_content credit {
+  position: absolute;
+  bottom: 100px;
+  right: -47px;
+  display:block;
+  margin: 5px auto 0;
+  text-align:center;
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
+  transform: rotate(270deg);
+}
+
+.oatht1_img {
   position: absolute;
   top: -345px;
   left: -20px;
@@ -14,7 +52,7 @@
   height: 350px;
   background: transparent url('https://i.postimg.cc/prw7j8gb/untitled-by-dreamcatcher2728-djsptwo-fullview.png') no-repeat center;
   background-size: 80% auto;
-  z-index: 4;
+  z-index: 0;
   pointer-events: none;
   filter: drop-shadow(0 0 2px white) drop-shadow(0 0 6px rgba(96, 11, 34, 0.6));
   animation: oatht1_glow 3s infinite ease-in-out;
@@ -29,37 +67,27 @@
   }
 }
 
-.oatht1_borderimg {
-  position: absolute;
-  top: -20px;
-  left: 0px;
-  width: 100%;
-  height: calc(100% + 40px);
-  background: transparent;
-  z-index: 5;
-  pointer-events: none;
-}
-
-.oatht1_borderimg::before,
-.oatht1_borderimg::after {
+.oatht1_content::before,
+.oatht1_content::after {
   content: '';
   background: url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Sinchanted/Oath/border.png?updatedAt=1748991534105') no-repeat top;
   position: absolute;
   left: 0;
   width: 100%;
   height: 100%;
+    z-index: 5; 
 }
 
-.oatht1_borderimg::before {
-  top: -60px;
+.oatht1_content::before {
+  top: -80px;
   background-size: 80% auto;
   filter: drop-shadow(0 0 3px rgba(128, 0, 32, 0.5))
           drop-shadow(0 0 7px rgba(128, 0, 32, 0.3))
           drop-shadow(0 5px 15px rgba(0, 0, 0, 0.4));
 }
 
-.oatht1_borderimg::after {
-  bottom: -60px;
+.oatht1_content::after {
+  bottom: -80px;
   transform: scaleY(-1);
   background-size: 80% auto;
   filter: drop-shadow(0 0 3px rgba(128, 0, 32, 0.5))
@@ -68,7 +96,7 @@
           drop-shadow(0 5px 15px rgba(0, 0, 0, 0.4));
 }
 
-.oatht1_gradborder, .oatht1_container, .oatht1_ingradborder, .oatht1_incontainer {
+.oatht1_bor, .oatht1_con, .oatht1_inbor, .oatht1_incon {
   box-sizing: border-box;
   position: relative;
   mask: 
@@ -87,7 +115,7 @@
   -webkit-mask-repeat: no-repeat;
 }
 
-.oatht1_gradborder, .oatht1_ingradborder {
+.oatht1_bor, .oatht1_inbor {
   box-sizing: border-box;
   background: linear-gradient(to bottom,
     #3E0848,
@@ -99,17 +127,16 @@
     #98110A);
 }
 
-.oatht1_gradborder {
+.oatht1_bor {
   padding: 2px;
-
   width: 700px;
-  margin: 330px auto 50px auto;
+  margin: 0 auto;
   box-shadow:
     10px 10px 10px rgba(0, 0, 0, 0.85),
     20px 20px 50px rgba(0, 0, 0, 0.5);
 }
 
-.oatht1_container {
+.oatht1_con {
   width: 100%;
   min-height: 400px;
   padding: 10px 0;
@@ -122,68 +149,83 @@
 }
 
 
-.oatht1_ingradborder {
+.oatht1_inbor {
   padding: 1.5px;
   width: 98%;
   margin: 0 auto 0 auto;
   z-index: 2;
 }
 
-.oatht1_incontainer {
+.oatht1_incon {
   width: 100%;
   min-height: 400px;
-  padding: 80px 50px 70px 50px;
+  padding: 110px 40px 65px;
   box-sizing: border-box;
   overflow: visible;
-  background: #160b10 url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Sinchanted/Oath/dark.png?updatedAt=1748991548565') no-repeat bottom;
+  background: #000000 url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Sinchanted/Oath/dark.png?updatedAt=1748991548565') no-repeat center;
   background-size: cover;
+  background-attachment: fixed;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
 }
+
 
 .oatht1_text {
   color: #fff;
-  background: rgba(0, 0, 0, 0.4);
+  background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(69, 16, 26, 0.8));
   border-radius: 10px;
-  border: 1px solid rgba(96, 11, 34, 0.5);
-  padding: 0 40px 0 40px;
-  font-family: 'Libre Caslon Display', cursive;
-  font-size:18px;
+  border: 1px solid rgba(244, 0, 65, 0.5);
+  padding: 10px 20px;
+  font-size:14px;
   line-height:1.3;
+  font-weight: 250;
+  font-family: "Fraunces", serif;
   text-align:justify;
   margin: -20px 0 0 0;
-  line-height: 1.5;
+  line-height: 1.2;
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.8), 0 0 15px rgba(162, 47, 66, 0.5);
 }
 
-.oatht1_divider {
-  height: 2px;
-  background: linear-gradient(
-    to right,
-    transparent 20%,
-    white 50%,
-    transparent 80%
-  );
-  line-height: normal;	
-}
-
-.oatht1_diag {
-  font-size: 25px;
+.oatht1_text speak {
+  font-family: 'Libre Caslon Display', cursive;
+  font-size: 20px;
   color: #12EAEA;
   font-weight: bold;
+  line-height: 1;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.85);
 }
 
 .oatht1_speech {
-  font-family: 'Libre Caslon Display', cursive;
-  font-size: 25px;
-  text-align: center;
-  color: #12EAEA;
-  font-weight: bold;
-  margin:-20px 0 -20px 0;
+  position: relative;
+  margin:0 0 -10px 0;
+  text-align:center;
 }
 
-@media (max-width: 1199px) {
-  .oatht1_gradborder, 
-  .oatht1_container, 
-  .oatht1_ingradborder, 
-  .oatht1_incontainer {
+.oatht1_speech::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 1.5px;
+  margin: 0px auto 0;
+  background: linear-gradient(to right, transparent, #f5ad3a, transparent);  
+}
+
+.oatht1_speech speak {
+  font-size: 25px;
+}
+
+
+@media (max-width: 1200px) {
+
+.oatht1_content t {
+  display: none;
+}
+  .oatht1_bor, 
+  .oatht1_con, 
+  .oatht1_inbor, 
+  .oatht1_incon {
     mask: none;
     -webkit-mask: none;
   }
