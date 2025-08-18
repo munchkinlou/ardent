@@ -40,7 +40,7 @@
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: url('https://ik.imagekit.io/arl60/Ardent/shop/Missy/Aodhan/Aodhan-Chibi1.png?updatedAt=1755543019593');
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/Missy/Aodhan/Aodhan.png?updatedAt=1755543012390');
   background-size: 100%;
   background-position: -20px calc(100% - 60%);
   background-repeat: no-repeat;
@@ -78,7 +78,7 @@
   width: 50%;
   height: 200%;
   z-index: 2;
-  background: transparent url('https://ik.imagekit.io/arl60/Ardent/shop/Missy/Aodhan/Aodhan.png?updatedAt=1755543012390');
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/shop/Missy/Aodhan/Aodhan-Chibi1.png?updatedAt=1755543019593');
   background-size: contain;
   background-position: left;
   background-repeat: no-repeat;
@@ -154,3 +154,4 @@
   }
 
 }
+
