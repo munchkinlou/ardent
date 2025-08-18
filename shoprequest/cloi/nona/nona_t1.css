@@ -172,7 +172,6 @@
   filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.8));
 }
 
-
 @media (max-width: 1200px) {
 
   .nonat1_content {
@@ -188,8 +187,24 @@
   }
 
   .nonat1_incon speak {
-    filter: drop-shadow(0 0 3px rgba(0,0,0,0.80));
+    text-shadow: 0 0 1px rgba(0,0,0,0.5);
   }
 
+.nonat1_bor, .nonat1_bor t::before {
+  display: none;
 }
+
+.nonat1_bor credit {
+  position: relative;
+  bottom:auto;
+  left:auto;
+  margin: 0 auto;
+  display:block;
+  text-align:center;
+  transform: left;
+  font-size: 8px;
+}
+  
+}
+
 
