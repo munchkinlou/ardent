@@ -33,7 +33,7 @@
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: url('IMG-20250407-153105-038.png');
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/Missy/Rouge/IMG-20250407-153105-038.png?updatedAt=1755553398313');
   background-size: 120%;
   background-position: -40px calc(100% - 57%);
   background-repeat: no-repeat;
@@ -71,7 +71,7 @@
   width: 50%;
   height: 200%;
   z-index: 2;
-  background: transparent url('missy-fullbody-silly.png');
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/shop/Missy/Rouge/missy-fullbody-silly.png?updatedAt=1755553392041');
   background-size: contain;
   background-position: left;
   background-repeat: no-repeat;
