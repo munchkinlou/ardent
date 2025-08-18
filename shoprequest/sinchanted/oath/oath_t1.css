@@ -216,9 +216,10 @@
   font-size: 25px;
 }
 
-
 @media (max-width: 1200px) {
 
+.oatht1_content::before,
+.oatht1_content::after,
 .oatht1_content t {
   display: none;
 }
@@ -228,5 +229,16 @@
   .oatht1_incon {
     mask: none;
     -webkit-mask: none;
+  }
+  .oatht1_content credit {
+    position: relative;
+    bottom:auto;
+    left:auto;
+    margin: 0 auto;
+    display:block;
+    text-align:center;
+    transform: left;
+    font-size: 8px;
+
   }
 }
