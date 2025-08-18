@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+.overkills1_sig_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 800px;
+  margin: 120px auto 40px;
+  position: relative;
+  overflow: visible;
+}
+
+.overkills1_sig_main p {
+  font-family: "Comfortaa", sans-serif;
+  font-size:12px;
+  text-align:right;
+  margin: 5px 30px 0 auto;
+}
+
+.overkills1_sig_ban {
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
+  height: 200px;
+  border: 2px solid black;
+  background: black;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  filter: none;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: visible;
+}
+
+.overkills1_sig_ban::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/Missy/Overkill/Overkill-DCheeb2.png?updatedAt=1755552413347');
+  background-size: 100%;
+  background-position: 40% calc(100% - 30%);
+  background-repeat: no-repeat;
+  z-index: 0;
+  border-radius: inherit;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.overkills1_sig_ban > * {
+  position: relative;
+  z-index: 1;
+}
+
+.overkills1_box {
+  width: 100%;
+  height: 80%;
+  margin: 0 auto;
+  background-color: rgba(41, 1, 1, 0.6);
+  border: 1.5px solid;
+  border-image: linear-gradient(to right, transparent, #55d8cb 50%, transparent 100%) 1;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overkills1_sig_img {
+  position: absolute;
+  top: -60%;
+  left: -38%;
+  transform: none;
+  margin-right: 0;
+  width: 70%;
+  height: 100%;
+  z-index: 2;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/shop/Missy/Overkill/Missy_2.png?updatedAt=1755552406399');
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  animation: sig_overkillglow 6s ease-in-out infinite;
+  transform: scalex(-1);
+}
+
+@keyframes sig_overkillglow {
+  0%, 100% {
+    filter: drop-shadow(0 0 2px white) drop-shadow(0 0 6px rgba(97, 209, 157, 0.6));
+  }
+  50% {
+    filter: drop-shadow(0 0 2px white) drop-shadow(0 0 15px rgba(73, 201, 146, 0.9));
+  }
+}
+
+
+.overkills1_sig_text {
+  color: #bff0d4;
+  font-size: clamp(10px, 1.5vw, 12px);
+  font-family: "Comfortaa", sans-serif;
+  text-shadow: 0 0 8px #000, 0 0 2px #000000,0 0 2px #000000,0 0 2px #000000;
+  text-align: center;
+  line-height: 1.2;
+  padding: 5px;
+  font-weight:100;
+}
+
+.overkills1_sig_text b {
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .overkills1_sig_main {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    padding: 0 4vw;
+    margin: 0 auto;
+  }
+.overkills1_sig_main p {
+  text-align:center;
+  margin: 5px 10px;
+}
+  .overkills1_sig_ban {
+    height: 300px;
+    padding: 12px 0 8px 0;
+
+  }
+  .overkills1_sig_ban::before {
+    background-size: cover;
+    background-position: bottom;
+  }
+  .overkills1_box {
+    width: 100%;
+    height: 90%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .overkills1_sig_text {
+    margin:0;
+    align-items: center;
+    text-align: center;
+    font-size: 10px;
+    width: 100%;
+    padding: 2px 5px;
+    order: 1;
+    height: auto;
+  }
+  .overkills1_sig_img  {
+    display:none;
+  }
+
+}
