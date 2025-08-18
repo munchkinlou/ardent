@@ -242,9 +242,10 @@
     font-size: 8px;
    transform: none;
   }
-
+  
 .oatht1_con,.oatht1_incon {
-  min-height: 50px;
+  min-height: 10px;
 }
+
 
 }
