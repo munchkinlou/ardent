@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+.kamajis1_sig_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 670px;
+  margin: 100px auto 80px;
+  position: relative;
+  overflow: visible;
+}
+
+.kamajis1_sig_main p {
+  font-family: "Comfortaa", sans-serif;
+  font-size:12px;
+  text-align:left;
+  margin: 5px auto 0 30px;
+}
+
+.kamajis1_sig_ban {
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
+  height: 150px;
+  border: 2px solid black;
+  background: black;
+  box-shadow: 0 0 5px rgba(0,0,0,0.6);
+  filter: none;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: visible;
+}
+
+.kamajis1_sig_ban::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/Missy/Kamaji/SAVE-20250723-180744.jpg?updatedAt=1755552237419');
+  background-size: 100%;
+  background-position: -80px calc(100% - 45%);
+  background-repeat: no-repeat;
+  z-index: 0;
+  border-radius: inherit;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.kamajis1_sig_ban > * {
+  position: relative;
+  z-index: 1;
+}
+
+.kamajis1_box {
+  width: 100%;
+  height: 80%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1.5px solid;
+  border-image: linear-gradient(to right, transparent, #13dcff 50%, transparent 100%) 1;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.kamajis1_sig_img {
+  position: absolute;
+  top: -50%;
+  left: 68%;
+  transform: none;
+  margin-right: 0;
+  width: 45%;
+  height: 180%;
+  z-index: 2;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/shop/Missy/Kamaji/Kamaji-bd.png?updatedAt=1755552244120');
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  animation: sig_kamajiglow 6s ease-in-out infinite;
+}
+
+@keyframes sig_kamajiglow {
+  0%, 100% {
+    filter: drop-shadow(0 0 2px white) drop-shadow(0 0 6px rgba(232, 128, 255, 0.6));
+  }
+  50% {
+    filter: drop-shadow(0 0 2px white) drop-shadow(0 0 15px rgba(183, 60, 236, 0.9));
+  }
+}
+
+
+.kamajis1_sig_text {
+  color: #d2a3ec;
+  font-size: clamp(10px, 1.5vw, 11px);
+  font-family: "Comfortaa", sans-serif;
+  text-shadow: 0 0 8px #000, 0 0 2px #000000,0 0 2px #000000;
+  text-align: center;
+  line-height: 1.2;
+  padding-top: 5px;
+  padding-left: 0%;
+  font-weight:100;
+  padding-right: 170px;
+}
+
+.kamajis1_sig_text b {
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .kamajis1_sig_main {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    padding: 0 4vw;
+    margin: 0 auto;
+  }
+.kamajis1_sig_main p {
+  text-align:center;
+  margin: 5px auto;
+}
+  .kamajis1_sig_ban {
+    height: 300px;
+    padding: 12px 0 8px 0;
+
+  }
+  .kamajis1_sig_ban::before {
+    background-size: 130%;
+    background-position: center;
+  }
+  .kamajis1_box {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: auto auto 0;
+  }
+  .kamajis1_sig_text {
+    margin:0;
+    align-items: center;
+    text-align: center;
+    font-size: 10px;
+    width: 100%;
+    padding: 2px;
+    order: 1;
+    height: auto;
+  }
+  .kamajis1_sig_img  {
+    display:none;
+  }
+
+}
