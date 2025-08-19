@@ -184,6 +184,7 @@
   .nephilimt1_con, .nephilimt1_inbor, .nephilimt1_incon {
     clip-path: none;
     filter: none;
+    min-height: 10px;
   }
 
 .nephilimt1_incon video {
@@ -208,7 +209,7 @@
   .nephilimt1_content credit {
     position: relative;
     bottom: auto;
-    left: auto;
+    right: auto;
     margin: 0 auto;
     text-align: center;
     transform: none;
