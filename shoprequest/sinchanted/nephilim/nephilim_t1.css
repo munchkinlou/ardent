@@ -132,6 +132,7 @@
   z-index: -1;
   object-fit: cover;
   opacity: 0.3;
+  pointer-events:none;
 }
 
 .nephilimt1_incon d {
