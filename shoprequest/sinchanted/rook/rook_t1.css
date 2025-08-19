@@ -160,7 +160,7 @@
   width: 70%;
   height: 1px;
   margin: 0 auto;
-  background: linear-gradient(to right, transparent, #f0f0f0 50%, transparent);
+  background: linear-gradient(to right, transparent, #565E73 50%, transparent);
   z-index: 5;
   pointer-events: none;
 }
