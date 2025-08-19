@@ -120,7 +120,7 @@
 
   }
   .nikes1_ban::before {
-    background-size: 120%;
+    background-size: 110%;
   background-position: 50% calc(100% - 5%);
   }
   .nikes1_box {
