@@ -183,24 +183,25 @@
     clip-path: none;
   }
 
-  .nephilimt1_content t {
-    display: none;
-  }
-
+.nephilimt1_incon video {
+  display: none;
+}
   .nephilimt1_content sp {
     display: block;
     position: relative;
     bottom: auto;
     left: auto;
-    padding-left: 0;
     text-align: center;
   }
 
+.nephilimt1_content speak {
+  font-size: 40px;
+}
   .nephilimt1_content credit {
     position: relative;
     bottom: auto;
     left: auto;
-    margin: 20px auto 0;
+    margin: 0 auto;
     text-align: center;
     transform: none;
   }
