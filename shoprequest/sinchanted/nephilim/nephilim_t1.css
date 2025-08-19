@@ -46,7 +46,7 @@
   left: -185px;
   width: 140%;
   height: 800px;
-  background: transparent url('63Cqloq.png') no-repeat center bottom;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/shop/Sinchanted/Nephilim/63Cqloq.png?updatedAt=1755624659039') no-repeat center bottom;
   background-size: contain; 
   z-index: 5;
   pointer-events: none;
@@ -73,7 +73,7 @@
 .nephilimt1_con {
   position: relative;
   width: 100%;
-  background: #000000 url('https://ik.imagekit.io/arl60/Ardent/shop/Sinchanted/Nephilim/63Cqloq.png?updatedAt=1755624659039');
+  background: #000000 url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/darkforest.jpg?updatedAt=1755625446564');
   background-size: cover;
   background-attachment: fixed;
   background-position: bottom;
