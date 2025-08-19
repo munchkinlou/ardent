@@ -15,6 +15,20 @@
   filter: drop-shadow(0 8px 10px rgba(0,0,0,0.75));
 }
 
+.rookt1_content credit {
+  position: absolute;
+  bottom:80px;
+  right: -60px;
+  width: 100px;
+  display:block;
+  text-align:left;
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
+  z-index: 10;
+  transform: rotate(-270deg);
+}
 
 
 .rookt1_img {
@@ -100,7 +114,7 @@
 .rookt1_text {
   text-align: justify;
   font-family: 'bentham';
-  font-size: 14px !important;
+  font-size: 14px;
   color: #ffffff;
   line-height: 1.2;
   margin: 20px 10px 0;
@@ -120,6 +134,11 @@
   text-shadow: 1px 1px 2px #000000; 
   line-height:1;
 }
+
+.rookt1_speech speak {
+  font-size: 35px !important;
+}
+
 
 /* OLD */
 .rookt1_diag {
@@ -159,9 +178,6 @@
   line-height: 1;
 }
 
-.rookt1_speech speak {
-  font-size: 35px !important;
-}
 
 
 .rookt1_bor {
@@ -239,5 +255,16 @@
   .rookt1_title {
     display: none;
   }
+
+  .rookt1_content credit {
+  position: relative;
+  bottom:auto;
+  right:auto;
+  margin: 0 auto;
+  display:block;
+  text-align:center;
+  transform: none;
+  font-size: 8px;
+}
 
 }
