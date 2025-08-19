@@ -133,6 +133,7 @@
   object-fit: cover;
   opacity: 0.3;
   pointer-events:none;
+  user-select: none;
 }
 
 .nephilimt1_incon d {
