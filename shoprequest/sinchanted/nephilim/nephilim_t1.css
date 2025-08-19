@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@font-face {
+  font-family: 'nephilim_t1';
+  src: url('BuGothicHybrid-xyd5.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.nephilimt1_content {
+  width: 100%;
+  width: 400px;
+  margin: 50px auto 260px auto;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background: transparent;
+  box-sizing: border-box;
+  filter: drop-shadow(0 0 0px rgba(0,0,0,1)) drop-shadow(0 0 5px rgba(0,0,0,1));
+}
+
+
+.nephilimt1_content credit {
+  position: absolute;
+  bottom: 25px;
+  right: -140px;
+  width: 100px;
+  display:block;
+  text-align:left;
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
+  z-index: 10;
+  transform: rotate(-270deg);
+}
+
+.nephilimt1_content credit::before {
+  content: 'code by andy ';
+}
+
+
+.nephilimt1_img {
+  position: absolute;
+  bottom: -100px;
+  left: -185px;
+  width: 140%;
+  height: 800px;
+  background: transparent url('63Cqloq.png') no-repeat center bottom;
+  background-size: contain; 
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0 0 0px rgba(0,0,0,1)) drop-shadow(0 0 2px rgb(99, 67, 129));
+}
+
+
+.nephilimt1_bor {
+  position: relative;
+  width: 100%;
+  margin: 0 auto 0 80px;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #000000, #22142a, black);
+  clip-path: polygon(
+    0% 100%,
+    100% 100%,
+    100% 100px,
+    50% 0%,
+    0% 100px
+  ); 
+  padding: 10px;
+}
+
+.nephilimt1_con {
+  position: relative;
+  width: 100%;
+  background: #000000 url('https://ik.imagekit.io/arl60/Ardent/shop/Sinchanted/Nephilim/63Cqloq.png?updatedAt=1755624659039');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  clip-path: polygon(
+    0% 100%,
+    100% 100%,
+    100% 100px,
+    50% 0%,
+    0% 100px
+  );
+  padding: 110px 20px 0;
+  box-sizing: border-box;
+  margin: 0 auto;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+
+}
+
+.nephilimt1_inbor {
+  position: relative;
+  z-index: 6;
+  margin: 0 auto;
+  padding: 5px 4px 2px;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, rgba(60, 38, 67, 0.6), rgba(0,0,0,0.6));
+  box-shadow: 0 0 5px rgb(118, 77, 144), inset 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.nephilimt1_incon {
+  padding: 20px;
+  position: relative;
+  z-index: 6;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: visible;
+  background: transparent;
+  padding: 5px 20px 150px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+  text-align: justify;
+  font-family: 'Bellefair';
+  font-size: 13px;
+  color: #dadada;
+  filter: drop-shadow(0 0 0px rgba(0,0,0,1)) drop-shadow(0 0 2px rgba(0,0,0,1)) drop-shadow(0 0 10px rgba(0,0,0,1));
+  line-height: 1.2;
+  margin: 0;
+}
+
+.nephilimt1_incon video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  opacity: 0.2;
+}
+
+.nephilimt1_incon d {
+  display: block;
+  margin: -10px auto 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/Sinchanted/Nephilim/divider.png?updatedAt=1755624662877') no-repeat;
+  background-position: center;
+  background-size:contain;
+  width: 100%;
+  height: 20px;
+  filter: drop-shadow(0 0 0px rgba(0,0,0,1)) drop-shadow(0 0 2px rgba(0,0,0,1));
+}
+
+.nephilimt1_incon speak {
+  font-size: 19px !important;
+  font-family: 'bellefair' !important;
+  color: #835b91 !important;
+  filter: drop-shadow(0 0 0px rgba(0,0,0,1)) drop-shadow(0 0 2px rgba(0,0,0,1));
+  line-height: 0.9;
+}
+
+.nephilimt1_content sp {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  left: 220px;
+  filter: drop-shadow(0 0 0px rgba(0,0,0,1)) drop-shadow(0 0 2px rgba(0,0,0,1));
+  z-index: 10;
+}
+
+.nephilimt1_content speak {
+  font-family: 'nephilim_t1';
+  color: transparent;
+  background: linear-gradient(to bottom, rgb(106, 87, 168),rgb(98, 57, 113));
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 60px;
+}
+
+
+@media (max-width: 1200px) {
+  .nephilimt1_content {
+    filter: none;
+  }
+
+  .nephilimt1_bor, 
+  .nephilimt1_con, .nephilimt1_inbor, .nephilimt1_incon {
+    clip-path: none;
+  }
+
+  .nephilimt1_content t {
+    display: none;
+  }
+
+  .nephilimt1_content sp {
+    display: block;
+    position: relative;
+    bottom: auto;
+    left: auto;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .nephilimt1_content credit {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin: 20px auto 0;
+    text-align: center;
+    transform: none;
+  }
+
+}
