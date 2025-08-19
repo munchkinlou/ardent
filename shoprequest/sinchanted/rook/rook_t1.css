@@ -80,11 +80,11 @@
 
   -webkit-mask-position: top center, 0 235px;
   -webkit-mask-repeat: no-repeat;
-  -webkit-mask-size: 100% 270px, 100% calc(100% - 540px);
+  mask-size: 100% 270px, 100% 100%;
   mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 270'%3e%3cpath d='M250 0C400 62 500 142 500 270L0 270C0 142 100 62 250 0Z'/%3e%3c/svg%3e"), linear-gradient(black, black);
   mask-position: top center, 0 235px;
   mask-repeat: no-repeat;
-  mask-size: 100% 270px, 100% calc(100% - 540px);
+  mask-size: 100% 270px, 100% 100%;
   height: auto;
 }
 
@@ -103,11 +103,11 @@
   -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 270'%3e%3cpath d='M250 0C400 62 500 142 500 270L0 270C0 142 100 62 250 0Z'/%3e%3c/svg%3e"), linear-gradient(black, black);
   -webkit-mask-position: top center, 0 235px;
   -webkit-mask-repeat: no-repeat;
-  -webkit-mask-size: 100% 270px, 100% calc(100% - 540px);
+  mask-size: 100% 270px, 100% 100%;
   mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 270'%3e%3cpath d='M250 0C400 62 500 142 500 270L0 270C0 142 100 62 250 0Z'/%3e%3c/svg%3e"), linear-gradient(black, black);
   mask-position: top center, 0 235px;
   mask-repeat: no-repeat;
-  mask-size: 100% 270px, 100% calc(100% - 540px);
+  mask-size: 100% 270px, 100% 100%;
   height: auto;
 }
 
