@@ -100,7 +100,7 @@
 .rookt1_text {
   text-align: justify;
   font-family: 'bentham';
-  font-size: 14px;
+  font-size: 14px !important;
   color: #ffffff;
   line-height: 1.2;
   margin: 20px 10px 0;
@@ -159,6 +159,9 @@
   line-height: 1;
 }
 
+.rookt1_speech speak {
+  font-size: 35px !important;
+}
 
 
 .rookt1_bor {
