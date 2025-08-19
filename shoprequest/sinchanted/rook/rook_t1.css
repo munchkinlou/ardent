@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nova+Cut&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
 @import url('https://fonts.cdnfonts.com/css/black-family');
+@import url('https://fonts.googleapis.com/css2?family=Bentham&display=swap');
 
 .rookt1_content {
 	position: relative;
-  width: 100%;
   width: 500px;
-  margin: 50px auto -210px auto;
+  margin: 50px auto 190px auto;
   position: relative;
   overflow: visible;
   padding: 0;
@@ -15,18 +15,21 @@
   filter: drop-shadow(0 8px 10px rgba(0,0,0,0.75));
 }
 
+
+
 .rookt1_img {
   position: absolute;
-  bottom: 200px;
+  bottom: -200px;
   left: -60px;
   width: 120%;
   height: 550px;
-  background: transparent url('https://i.postimg.cc/SRN1CyGz/Sin-Rook-Throne2.png') no-repeat center center;
+  background: transparent url('https://i.postimg.cc/SRN1CyGz/Sin-Rook-Throne2.png') no-repeat center bottom;
   background-size: 100%; 
   z-index: 5;
   pointer-events: none;
   filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.6));
 }
+
 
 .rookt1_bor {
   position: relative;
@@ -60,13 +63,14 @@
   border-radius: 30px;
   filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.6));
   -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 270'%3e%3cpath d='M250 0C400 62 500 142 500 270L0 270C0 142 100 62 250 0Z'/%3e%3c/svg%3e"), linear-gradient(black, black);
+
   -webkit-mask-position: top center, 0 235px;
   -webkit-mask-repeat: no-repeat;
-  -webkit-mask-size: 100% 270px, 100% calc(100% - 520px);
+  -webkit-mask-size: 100% 270px, 100% calc(100% - 540px);
   mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 270'%3e%3cpath d='M250 0C400 62 500 142 500 270L0 270C0 142 100 62 250 0Z'/%3e%3c/svg%3e"), linear-gradient(black, black);
   mask-position: top center, 0 235px;
   mask-repeat: no-repeat;
-  mask-size: 100% 270px, 100% calc(100% - 520px);
+  mask-size: 100% 270px, 100% calc(100% - 540px);
   height: auto;
 }
 
@@ -77,7 +81,6 @@
   z-index: 6;
   padding: 180px 10px 0px 10px;
   width: 100%;
-  min-height: 400px;
   box-sizing: border-box;
   background:
     linear-gradient(to bottom, rgba(0,0,0,0) 100px, #000 100%),
@@ -86,70 +89,98 @@
   -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 270'%3e%3cpath d='M250 0C400 62 500 142 500 270L0 270C0 142 100 62 250 0Z'/%3e%3c/svg%3e"), linear-gradient(black, black);
   -webkit-mask-position: top center, 0 235px;
   -webkit-mask-repeat: no-repeat;
-  -webkit-mask-size: 100% 270px, 100% 100%;
+  -webkit-mask-size: 100% 270px, 100% calc(100% - 540px);
   mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 270'%3e%3cpath d='M250 0C400 62 500 142 500 270L0 270C0 142 100 62 250 0Z'/%3e%3c/svg%3e"), linear-gradient(black, black);
   mask-position: top center, 0 235px;
   mask-repeat: no-repeat;
-  mask-size: 100% 270px, 100% 100%;
+  mask-size: 100% 270px, 100% calc(100% - 540px);
   height: auto;
 }
 
 .rookt1_text {
   text-align: justify;
-  font-family: 'arial';
+  font-family: 'bentham';
   font-size: 14px;
   color: #ffffff;
   line-height: 1.2;
-  margin: 20px 20px 0 20px;
+  margin: 20px 10px 0;
   background: linear-gradient(to bottom, #000000, #000000, #000000) ;
-  padding: 20px 30px 670px;
+  padding: 20px 30px 280px;
   border-radius: 10px;
   border: 3px solid;
   border-image: linear-gradient(to bottom, #630404, #000000, transparent) 1;
   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
 }
 
+.rookt1_text speak {
+   color: #CBBC35;
+	font-family: 'Nova Cut';
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #000000; 
+  line-height:1;
+}
+
+/* OLD */
+.rookt1_diag {
+  color: #CBBC35;
+	font-family: 'Nova Cut';
+  font-size: 19px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #000000;
+  line-height:1;
+}
+/* OLD */
+
+.rookt1_speech::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 1px;
+  margin: 0 auto;
+  background: linear-gradient(to right, transparent, #f0f0f0 50%, transparent);
+  z-index: 5;
+  pointer-events: none;
+}
+
 .rookt1_speech {
   display: block;
   position: relative;
-  margin: -20px 0 10px 0;
+  margin: -15px 0 10px 0;
   font-family: 'Nova Cut';
   font-weight: bold;
   color: #CBBC35;
   text-shadow: 1px 1px 2px #0a0906;
-  font-size: 40px;
+  font-size: 35px;
   text-align: center;
   line-height: 1;
 }
 
-.rookt1_diag {
-  color: #CBBC35;
-	font-family: 'Nova Cut';
-  font-size: 20px;
-  font-weight: bold;
-  text-shadow: 1px 1px 2px #000000;
-}
+
 
 .rookt1_bor {
   -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 270'%3e%3cpath d='M250 0C400 62 500 142 500 270L0 270C0 142 100 62 250 0Z'/%3e%3c/svg%3e"), linear-gradient(black, black);
   -webkit-mask-position: top center, 0 270px;
   -webkit-mask-repeat: no-repeat;
-  -webkit-mask-size: 100% 270px, 100% calc(100% - 540px);
+  -webkit-mask-size: 100% 270px, 100% 100% 100%;
   mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 270'%3e%3cpath d='M250 0C400 62 500 142 500 270L0 270C0 142 100 62 250 0Z'/%3e%3c/svg%3e"), linear-gradient(black, black);
   mask-position: top center, 0 270px;
   mask-repeat: no-repeat;
-  mask-size: 100% 270px, 100% calc(100% - 540px);
+  mask-size: 100% 270px, 100% 100% 100%;
 }
 
 .rookt1_con {
   -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 270'%3e%3cpath d='M250 0C400 62 500 142 500 270L0 270C0 142 100 62 250 0Z'/%3e%3c/svg%3e"), linear-gradient(black, black);
   -webkit-mask-position: top center, 0 255px;
   -webkit-mask-repeat: no-repeat;
-  -webkit-mask-size: 100% 270px, 100% calc(100% - 540px);
+  -webkit-mask-size: 100% 270px, 100% 100%;
   mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 270'%3e%3cpath d='M250 0C400 62 500 142 500 270L0 270C0 142 100 62 250 0Z'/%3e%3c/svg%3e"), linear-gradient(black, black);
   mask-position: top center, 0 255px;
   mask-repeat: no-repeat;
-  mask-size: 100% 270px, 100% calc(100% - 540px);
+  mask-size: 100% 270px, 100% 100%;
 
 }
 
@@ -173,6 +204,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  pointer-events: none;
 }
 
 @media (max-width: 1200px) {
@@ -194,9 +226,11 @@
   .rookt1_bor,
   .rookt1_con,
   .rookt1_incon,
-  .rookt1_inbor {
+  .rookt1_inbor, .rookt1_text {
     -webkit-mask-image: none;
     mask-image: none;
+    padding: 0;
+    margin: 0 auto;
   }
 
   .rookt1_title {
