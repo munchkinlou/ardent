@@ -130,7 +130,7 @@
   height: 100%;
   z-index: -1;
   object-fit: cover;
-  opacity: 0.2;
+  opacity: 0.3;
 }
 
 .nephilimt1_incon d {
@@ -188,6 +188,11 @@
 .nephilimt1_incon video {
   display: none;
 }
+
+.nephilimt1_incon speak {
+  filter: drop-shadow(0 0 0px rgba(0,0,0,0.5));
+}
+  
   .nephilimt1_content sp {
     display: block;
     position: relative;
