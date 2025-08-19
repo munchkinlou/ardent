@@ -1,26 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+@font-face {
+  font-family: 'Kjar_Viking';
+  src: url('VikingNormal-36VL.otf') format('truetype');
+}
+
 
 .kjartant2_bor {
+  position: relative;
   padding: 1.5px;
   background: linear-gradient(to bottom,
-  rgba(70, 5, 5, 0.8),
+  rgba(0, 0, 0, 0.8),
   rgba(140, 15, 15, 0.8),
-  rgba(70, 5, 5, 0.8));
+  rgba(0, 0, 0, 0.8));
   box-sizing: border-box;
   width: 700px;
-  margin: 20px auto;
+  margin: 20px auto 30px;
   box-shadow:
   10px 10px 10px rgba(0, 0, 0, 0.85),
-  20px 20px 50px rgba(0, 0, 0, 0.5);
+  10px 10px 20px rgba(0, 0, 0, 0.5),
+  inset 0 0 10px black;
 
+}
+
+.kjartant2_bor credit {
+  position: absolute;
+  bottom: -30px;
+  left:50%;
+  transform: translateX(-50%);
+  display:block;
+  text-align:right;
+  text-transform:uppercase;
+  font-size:10px;
+  font-weight: bold;
+  font-family: arial;
 }
 
 .kjartant2_con {
   width: 100%;
-  min-height: 500px;
-  padding: 270px 20px 30px 20px;
+  height: autp;
+  padding: 400px 20px 0px;
   position: relative;
   box-sizing: border-box;
   overflow: visible;
@@ -30,29 +50,15 @@
   pointer-events: none;
 }
 
-.kjartant2_con::after {
-  content: '';
-  position: absolute;
-  top: 300px;
-  right: 0;
-  left: 0;
-  z-index: 1;
-  height: 300px;
-  background: linear-gradient(to top, transparent 0, #050101 50%, transparent 100%);
-  pointer-events: none;
-}
-
-
 .kjartant2_inbor {
   position: relative;
   padding: 1.5px;
   background: linear-gradient(to bottom,
-  rgba(70, 5, 5, 0.8),
+  rgba(0, 0, 0, 0.8),
   rgba(140, 15, 15, 0.8),
-  rgba(70, 5, 5, 0.8));
+  rgba(0, 0, 0, 0.8));
   box-sizing: border-box;
-  width: 90%;
-  margin: 140px auto 0 auto;
+  width: 100%;
   z-index: 2;
 }
 
@@ -60,74 +66,77 @@
   position: relative;
   width: 100%;
   min-height: 100px;
-  padding: 50px 20px;
+  padding: 10px 20px;
   box-sizing: border-box;
   overflow: visible;
-  background: black;
+  background: linear-gradient(to top, black,  rgb(29, 1, 1));
   z-index: 3;
+  box-shadow: inset 0 0 10px black;
+
+  	color: #ebebeb;
+	font-family: 'amarante';
+	font-size:12px;
+	line-height:1.4;
+	text-align:justify;
   
 }
 
-.kjartant2_text {
-	color: #DFC7C9;
-	font-family: 'amarante';
-	font-size:14px;
-	line-height:1.4;
-	text-align:justify;
-	margin: -30px 20px 0px 20px;
+.kjartant2_incon speak {
+  color: transparent;
+	font-family: 'Amarante';
+  font-size: 15px;
+  color: transparent;
+  background: linear-gradient(to bottom, #f6a62c, #c15710);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: none;
+  line-height: 0.9;
+  filter: drop-shadow(0 0 3px rgba(0,0,0,0.8));
 }
 
-.kjartant2_text::after {
-  content: '';
-  display: block;
-  height: 2px;
-  line-height: normal;
-  margin: 10px 0 -10px 0;
-  background: linear-gradient(to right, transparent 10%, #B0B7C6 50%, transparent 90%);
+.kjartant2_incon nor {
+  color: #60e9f3;
+	font-family: 'Forum';
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #000000;
+  filter: drop-shadow(0 0 3px rgba(0,0,0,0.8));
 }
 
+.kjartant2_incon spa {
+  color: #e68160;
+	font-family: 'Forum';
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #000000;
+  filter: drop-shadow(0 0 3px rgba(0,0,0,0.8));
+}
 
-.kjartant2_speech {
-  margin: 0px 0 -50px 0;
-  font-family: 'Amarante';
-  font-size: 20px;
+.kjartant2_spch {
+  position: relative;
+  margin: -15px 0 -20px 0;
+  font-family: 'Kjar_Viking';
+  font-size:30px;
   font-weight: bold;
   color: transparent;
   text-align: center;
-  background: linear-gradient(to bottom, #7B3028, #DF9350, #7B3028);
+  background: linear-gradient(to bottom, #f6a62c, #c15710);
   -webkit-background-clip: text;
   background-clip: text;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+  line-height: 0.9;
 }
 
-
-.kjartant2_diag {
-  font-family: 'Amarante';
-  font-size: 20px;
-  font-weight: bold;
-  color: transparent;
-  background: linear-gradient(to bottom, #7B3028, #DF9350, #7B3028);
-  -webkit-background-clip: text;
-  background-clip: text;
-  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+.kjartant2_spch::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  background: linear-gradient(to right, transparent, #7B3028, transparent);
+  height: 1.2px;
+  width: 60%;
 }
-
-.kjartant2_nordic {
-  background: linear-gradient(to bottom, #a12a2a, #eb4034, #a12a2a);
-  -webkit-background-clip: text;
-  background-clip: text;
-  font-family: 'Eagle Lake';
-  font-size: 18px;
-}
-
-.kjartant2_spanish {
-  background: linear-gradient(to bottom, #a12a2a, #eb4034, #a12a2a);
-  -webkit-background-clip: text;
-  background-clip: text;
-  font-family: 'Dosis';
-  font-size: 22px;
-}
-
 
 .kjartant2_roll {
 	background: linear-gradient(to right, transparent, black, transparent);
@@ -283,12 +292,65 @@
     display: none;
   }
 
-  .kjartant2_con{
-    padding: 0;
-  }
 
   .kjartant2_diag, .kjartant2_speech, .kjartant2_nordic, .kjartant2_spanish {
     filter: none;
   }
 
+}
+
+
+
+.kjartant2_diag {
+  display: inline-block;
+  font-family: 'Amarante';
+  font-size: 20px;
+  font-weight: bold;
+  color: transparent;
+  background: linear-gradient(to bottom, #7B3028, #DF9350, #7B3028);
+  -webkit-background-clip: text;
+  background-clip: text;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.kjartant2_nordic {
+  background: linear-gradient(to bottom, #a12a2a, #eb4034, #a12a2a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: 'Eagle Lake';
+  font-size: 18px;
+}
+
+.kjartant2_spanish {
+  background: linear-gradient(to bottom, #a12a2a, #eb4034, #a12a2a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: 'Dosis';
+  font-size: 22px;
+}
+
+
+.kjartant2_speech {
+  position: relative;
+  margin: -15px 0 -20px 0;
+  font-family: 'Amarante';
+  font-size: 20px;
+  font-weight: bold;
+  color: transparent;
+  text-align: center;
+  background: linear-gradient(to bottom, #7B3028, #DF9350, #7B3028);
+  -webkit-background-clip: text;
+  background-clip: text;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.kjartant2_speech::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translate(-50%);
+  background: linear-gradient(to right, transparent, #7B3028, transparent);
+  height: 1.2px;
+  width: 50%;
 }
