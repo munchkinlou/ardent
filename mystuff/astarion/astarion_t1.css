@@ -7,12 +7,15 @@
   text-align:center;
   font-size:10px;
   margin: 0 auto;
+  text-transform: uppercase;
+  font-family:arial;
+  font-weight: bold;
 }
 
 .astariont1_content {
 	position: relative;
   width: 400px;
-  margin: 10px auto 180px;
+  margin: 10px auto 10px;
   position: relative;
   overflow: visible;
   padding: 0;
@@ -23,12 +26,12 @@
 
 .astariont1_img {
   position: absolute;
-  bottom: -212px;
-  left: -130px;
-  width: 165%;
-  height: 450px;
-  background: transparent url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6686631c-3c46-4e40-b13a-732a8cddb909/dk7a2cp-ede22cdd-e579-4b86-8e30-f8b6f15c6441.png/v1/fill/w_1280,h_923/paint__munchkinlou__base__vlinny_by_munchkinlou_dk7a2cp-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTIzIiwicGF0aCI6IlwvZlwvNjY4NjYzMWMtM2M0Ni00ZTQwLWIxM2EtNzMyYThjZGRiOTA5XC9kazdhMmNwLWVkZTIyY2RkLWU1NzktNGI4Ni04ZTMwLWY4YjZmMTVjNjQ0MS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.U5P0WFlhYTZEz3a__KIj-BAwI1E5ixOmU4V7dNIDBYE') no-repeat center top;
-  background-size: 100%; 
+  bottom: 10px;
+  left: -85px;
+  width: 100%;
+  height: 150px;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Astarion/AstarionbyPinkyPoodle.png?updatedAt=1755814326655') no-repeat center top;
+  background-size: contain; 
   z-index: 5;
   pointer-events: none;
 }
@@ -105,7 +108,7 @@
   display: block;
   position: relative;
   margin: -20px 0 -70px 0;
-  padding-right: 10px;
+  padding-right: 15px;
   font-family: 'Love Light';
   font-weight: bold;
   color: #DBBA9C;
@@ -126,6 +129,8 @@
   background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.5), transparent);
 }
 
+
+
 @media (max-width: 1200px) {
 
   .astariont1_content {
@@ -142,5 +147,4 @@
   }
 
 }
-
 
