@@ -127,6 +127,7 @@
   text-shadow: 0 0 1px rgba(0,0,0,0.5);
   border-top: 1px solid;
   border-image: linear-gradient(to right, transparent, rgb(226, 162, 99), transparent) 1;
+  text-shadow: 0 0 2px rgba(7, 0, 0, 0.8);
 }
 
 
@@ -136,6 +137,7 @@
   font-weight: bold;
   line-height: 1;
   color: #FFD485;
+  text-shadow: 0 0 2px rgba(7, 0, 0, 0.8);
 }
 
 .evanescet1_spch {
