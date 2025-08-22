@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+
+.evanescet1_content {
+	position: relative;
+  width: 450px;
+  margin: 60px auto 40px;
+  position: relative;
+  overflow: visible;
+  background:transparent;
+  box-sizing: border-box;
+}
+
+.evanescet1_content credit::before {
+  content: 'code by andy ';
+}
+
+.evanescet1_img {
+  position: absolute;
+  top: -49px;
+  left: -40px;
+  width: 120%;
+  height: 500px;
+  transform: rotate(-1deg);
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Evanesce/Number32%20.png?updatedAt=1755835029313') no-repeat center top;
+  background-size: contain; 
+  z-index: 4;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.8));
+  pointer-events: none;
+}
+
+.evanescet1_bor {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom, #556953,
+  #000000);
+  padding: 3px;
+  border-radius: 300px 300px 20px 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+.evanescet1_bor t {
+  position: absolute;
+  top: 350px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 72%;
+  height: auto;
+  padding: 40px 0 50px;
+  z-index: 5;
+  filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.5))
+          drop-shadow(0 0 1px rgba(0, 0, 0, 0.3))
+          drop-shadow(0 2px 1px rgba(0, 0, 0, 0.4));
+  font-family: "Fleur De Leah", cursive;
+  font-size: 80px;
+  text-align: center;
+  line-height: 0.6;
+  background: linear-gradient(to top, #FFD485, #ffffff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.evanescet1_bor credit {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display:block;
+  margin: 5px auto 0;
+  text-align:center;
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+
+.evanescet1_con {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background: black;
+  border-radius: 300px 300px 20px 20px;
+  pointer-events: none;
+  margin: 0 auto;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.evanescet1_con::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/2150918797.jpg?updatedAt=1755835068482') no-repeat bottom;
+  background-size: 100%;
+  background-attachment: fixed;
+  pointer-events: none;
+  overflow: hidden;
+  border-radius: 300px 300px 20px 20px;
+  box-shadow: inset 0 0 10px rgba(7, 0, 0, 0.8);
+}
+
+.evanescet1_inbor {
+  border-radius: 300px 300px 10px 10px;
+  position: relative;
+  padding: 420px 35px 20px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 400px, rgba(56, 30, 22, 0.6));
+  box-shadow: inset 0 0 10px rgba(7, 0, 0, 0.8);
+  border: 3px solid #000000;
+}
+
+.evanescet1_incon {
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
+  text-align: justify;
+  font-family: "Amarante", cursive;
+  font-size: 11px;
+  color: rgb(226, 220, 214);
+  line-height: 1.2;
+  text-shadow: 0 0 1px rgba(0,0,0,0.5);
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, rgb(226, 162, 99), transparent) 1;
+}
+
+
+.evanescet1_incon speak {
+	font-family: "Amarante", serif;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1;
+  color: #FFD485;
+}
+
+.evanescet1_spch {
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, rgb(226, 162, 99), transparent) 1;
+  display: block;
+  position: relative;
+  margin: 0px 0 -15px 0;
+  text-align: center;
+}
+
+.evanescet1_spch speak {
+  font-size: 17px;
+}
+
+@media (max-width: 1200px) {
+
+  .evanescet1_content {
+    filter: none;
+  }
+
+  .evanescet1_con::before, .evanescet1_spch::before, .evanescet1_img::after {
+    display: none;
+  }
+
+ .evanescet1_con, .evanescet1_bor, .evanescet1_incon, .evanescet1_inbor  {
+    border-radius: 0;
+  }
+
+  .evanescet1_incon speak {
+    text-shadow: 0 0 1px rgba(0,0,0,0.5);
+  }
+
+.evanescet1_bor t, .evanescet1_bor t::before {
+  display: none;
+}
+
+.evanescet1_bor credit {
+  position: relative;
+  bottom:auto;
+  left:auto;
+  margin: 0 auto;
+  display:block;
+  text-align:center;
+  transform: none;
+  font-size: 8px;
+}
+  
+}
+
