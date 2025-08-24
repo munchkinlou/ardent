@@ -47,7 +47,7 @@
 .overkillt1_bor t {
   position: absolute;
   width: 100%;
-  top: 615px;
+  top: 600px;
   display:block;
   text-align:center;
   text-transform:uppercase;
@@ -128,7 +128,7 @@
   background-clip: text;
   text-shadow: none;
   line-height: 0.9;
-  filter: drop-shadow(0 0 3px rgba(0,0,0,1));
+  filter: drop-shadow(0 0 2px black);
 }
 
 .overkillt1_spch {
@@ -139,7 +139,7 @@
   background: linear-gradient(to bottom, #FF0006, #720406);
   -webkit-background-clip: text;
   background-clip: text;
-  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 1));
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 1));
   line-height: 0.9;
 }
 
