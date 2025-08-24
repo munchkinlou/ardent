@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@font-face {
+  font-family: 'overkill_t1';
+  src: url('Heatizen-EaVBj.ttf') format('truetype');
+}
+
+
+.overkillt1_content {
+  position: relative;
+  width: 700px;
+  height: auto;
+  margin: 20px auto;
+  filter: drop-shadow(10px 10px 10px black);
+}
+
+.overkillt1_content credit {
+  position: absolute;
+  top: 100px;
+  left:-45px;
+  transform: rotate(270deg);
+  display:block;
+  margin: 0 auto;
+  text-align:center;
+  text-transform:uppercase;
+  font-size:10px;
+  font-weight: bold;
+  font-family: arial;
+}
+
+
+.overkillt1_bor {
+  position: relative;
+  padding: 3px;
+  background: linear-gradient(to bottom,
+  rgba(0, 0, 0, 0.8),
+  rgba(255, 9, 9, 0.8),
+  rgba(0, 0, 0, 0.8));
+  box-sizing: border-box;
+  box-shadow:
+  10px 10px 10px rgba(0, 0, 0, 0.85),
+  10px 10px 20px rgba(0, 0, 0, 0.5),
+  inset 0 0 10px black;
+
+}
+
+
+.overkillt1_bor t {
+  position: absolute;
+  width: 100%;
+  top: 615px;
+  display:block;
+  text-align:center;
+  text-transform:uppercase;
+  font-size:80px;
+  font-weight: bold;
+  font-family: 'overkill_t1';
+  color: transparent;
+  background: linear-gradient(to bottom, #b70306, #3e0203);
+  -webkit-background-clip: text;
+  background-clip: text;
+  filter: drop-shadow(0 0 5px black);
+  z-index: 10;
+}
+
+.overkillt1_con {
+  width: 100%;
+  height: autp;
+  padding: 640px 10px 0px;
+  position: relative;
+  box-sizing: border-box;
+  overflow: visible;
+  background: #050101 url('https://ik.imagekit.io/arl60/Ardent/shop/Missy/Overkill/Photo%206-8-2025,%2012%2018%2005%20pm.jpg?updatedAt=1755998242517') no-repeat top;
+  background-size: 100%;
+  z-index: 1;
+  box-shadow: inset 0 0 10px black;
+  pointer-events: none;
+}
+
+.overkillt1_con::after {
+  content: '';
+  position: absolute;
+  top: 0;    
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent 620px, #1F0302 670px, black);
+  z-index: 2;
+}
+
+
+.overkillt1_inbor {
+  position: relative;
+  padding: 1.5px;
+  background: linear-gradient(to bottom,
+  rgba(96, 5, 5, 0.8),
+  #FF0006,
+  rgba(0, 0, 0, 0.8));
+  box-sizing: border-box;
+  width: 100%;
+  z-index: 3;
+}
+
+.overkillt1_incon {
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  padding: 55px 20px 25px;
+  box-sizing: border-box;
+  overflow: visible;
+  background: linear-gradient(to top, black, #250105);
+  z-index: 3;
+  box-shadow: inset 0 0 10px black;
+  color: #f8e3dc;
+  font-family: 'Comfortaa';
+	font-size:10px;
+	line-height:1.4;
+	text-align:center;
+  
+}
+
+.overkillt1_incon speak {
+  color: transparent;
+  font-family: 'Comfortaa';
+  font-size: 13px;
+  color: transparent;
+  background: linear-gradient(to bottom, #FF0006, #ff5d60);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: none;
+  line-height: 0.9;
+  filter: drop-shadow(0 0 3px rgba(0,0,0,0.8));
+}
+
+.overkillt1_spch {
+  position: relative;
+  margin: 10px 0 -10px 0;
+  color: transparent;
+  text-align: center;
+  background: linear-gradient(to bottom, #FF0006, #720406);
+  -webkit-background-clip: text;
+  background-clip: text;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+  line-height: 0.9;
+}
+
+.overkillt1_spch speak {
+  font-size: 15px;
+}
+
+.overkillt1_spch::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translate(-50%);
+  background: linear-gradient(to right, transparent, #FF0006, transparent);
+  height: 1.2px;
+  width: 60%;
+}
+
+.overkillt1_bor, .overkillt1_con {
+    box-sizing: border-box;
+  position: relative;
+  mask: 
+    radial-gradient(ellipse 70px 60px at 0 0, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 0 0,
+    radial-gradient(ellipse 70px 60px at 100% 0, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 100% 0,
+    radial-gradient(ellipse 70px 60px at 100% 100%, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 100% 100%,
+    radial-gradient(ellipse 70px 60px at 0 100%, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 0 100%;
+  -webkit-mask: 
+    radial-gradient(ellipse 70px 60px at 0 0, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 0 0,
+    radial-gradient(ellipse 70px 60px at 100% 0, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 100% 0,
+    radial-gradient(ellipse 70px 60px at 100% 100%, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 100% 100%,
+    radial-gradient(ellipse 70px 60px at 0 100%, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 0 100%;
+  mask-size: 51% 51%;
+  -webkit-mask-size: 51% 51%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+
+.overkillt1_inbor, .overkillt1_incon {
+    box-sizing: border-box;
+  position: relative;
+  mask: 
+    radial-gradient(ellipse 0px 60px at 0 0, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 0 0,
+    radial-gradient(ellipse 00px 60px at 100% 0, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 100% 0,
+    radial-gradient(ellipse 50px 50px at 100% 100%, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 100% 100%,
+    radial-gradient(ellipse 50px 50px at 0 100%, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 0 100%;
+  -webkit-mask: 
+    radial-gradient(ellipse 0px 60px at 0 0, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 0 0,
+    radial-gradient(ellipse 00px 60px at 100% 0, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 100% 0,
+    radial-gradient(ellipse 50px 50px at 100% 100%, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 100% 100%,
+    radial-gradient(ellipse 50px 50px at 0 100%, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 0 100%;
+  mask-size: 51% 51%;
+  -webkit-mask-size: 51% 51%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;  
+}
+
+@media (max-width: 1200px) {
+
+.overkillt1_content {
+  filter: none;
+}
+
+.overkillt1_content credit {
+  position: relative;
+  top: auto;
+  left: auto;
+  transform: none;
+}
+
+.overkillt1_bor t {
+  position: relative;
+  width: 100%;
+  top: 0;
+  display:block;
+  text-align:center;
+  margin: 0 auto 10px;
+}
+
+
+}
+
