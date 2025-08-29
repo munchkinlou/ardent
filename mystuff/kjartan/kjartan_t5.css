@@ -11,6 +11,8 @@
   text-align:center;
   font-size:10px;
   margin: 0 auto;
+  text-transform: uppercase;
+  font-family: arial;
 }
 
 .kjartant5_content {
@@ -31,7 +33,7 @@
   left: -300px;
   width: 165%;
   height: 600px;
-  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Kjartan/IMG_1651.png?updatedAt=1753534387171') no-repeat center top;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Kjartan/Kjartan_Andy2armor.png?updatedAt=1756444805009') no-repeat center top;
   background-size: 80%; 
   z-index: 5;
   pointer-events: none;
@@ -159,7 +161,7 @@
   top: 0;
   left: 10px;
   width: 100%;
-  height: 2px;
+  height: 1.5px;
   margin: 0px auto 0;
   background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.5), transparent);
 }
