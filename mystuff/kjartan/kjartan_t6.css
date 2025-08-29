@@ -184,7 +184,7 @@
 .kjartant6 credit {
   position: relaive;
   bottom: auto;
-  right: -auto;
+  right: auto;
   display:block;
   transform: none;
 }
