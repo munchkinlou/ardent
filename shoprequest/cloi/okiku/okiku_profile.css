@@ -422,17 +422,3 @@ h1 i {
         display: none;
     }
 }
-
-.profav img {
-    display: none;
-
-    content: url('https://ik.imagekit.io/arl60/Ardent/shop/Cloi/Okiku/f2u_base___pensive__psd__by_srinyx_dhbkxjw.png?updatedAt=1756393395068');
-
-/*contain for pngs, cover for images with bgs */
-	object-fit: contain !important; 
-
-}
-
-.profav {
-    display: none;
-}
