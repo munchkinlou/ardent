@@ -421,4 +421,9 @@ h1 i {
     .corner_img {
         display: none;
     }
+
+	h1::before {
+        display: none;
+	}
+	
 }
