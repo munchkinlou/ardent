@@ -59,7 +59,7 @@ h1::before {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: none !important;
-    padding: 10px 0 20px;
+    padding: 20px 0 20px;
 }
 
 h1 i {
