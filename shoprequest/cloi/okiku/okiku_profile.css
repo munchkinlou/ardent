@@ -47,7 +47,6 @@ h1::before {
     width: 100%;
     z-index: 1;
     font-family: 'okiku', sans-serif;
-    text-transform: capitalize !important;
     font-size: 100px;
     line-height: 1;
     height: auto;
