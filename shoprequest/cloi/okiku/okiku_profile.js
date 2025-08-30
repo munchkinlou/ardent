@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
           blocky.style.backdropFilter = 'none';
           blocky.style.padding = '0';
           blocky.classList.add('nobefore');
-          blocky.style.margin = '20px 10px 0';
+          blocky.style.margin = '20px 10px';
       }
   });
 });
