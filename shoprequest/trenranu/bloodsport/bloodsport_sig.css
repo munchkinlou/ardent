@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.bloodsports1_sig_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto 40px;
+  position: relative;
+  overflow: visible;
+}
+
+.bloodsports1_sig_main p {
+  font-family: "Comfortaa", sans-serif;
+  font-size:12px;
+  text-align:right;
+  margin: 5px 30px 0 auto;
+}
+
+.bloodsports1_sig_ban {
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
+  height: 120px;
+  border: 2px solid black;
+  background: black;
+  box-shadow: 0 0 5px rgba(0,0,0,0.6);
+  filter: none;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: visible;
+}
+
+.bloodsports1_sig_ban::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('https://images.unsplash.com/photo-1619665481428-101a5daa4d15?q=80&w=1288&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: 120%;
+  background-position: 40% calc(100% - 80%);
+  background-repeat: no-repeat;
+  z-index: 0;
+  border-radius: inherit;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.bloodsports1_sig_ban > * {
+  position: relative;
+  z-index: 1;
+}
+
+.bloodsports1_box {
+  width: 100%;
+  height: 80%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1.5px solid;
+  border-image: linear-gradient(to right, transparent, #FFB11C 50%, transparent 100%) 1;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bloodsports1_sig_img {
+  position: absolute;
+  top: -30%;
+  right: -46%;
+  transform: none;
+  margin-right: 0;
+  width: 70%;
+  height: 140%;
+  z-index: 2;
+  background: transparent url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4da2081b-4ea4-4f1c-a1d6-e4e32bd6d624/dk9pa6k-1fbbd768-7736-45b1-83a1-7743a28bb03d.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRkYTIwODFiLTRlYTQtNGYxYy1hMWQ2LWU0ZTMyYmQ2ZDYyNFwvZGs5cGE2ay0xZmJiZDc2OC03NzM2LTQ1YjEtODNhMS03NzQzYTI4YmIwM2QucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ePBrHD9DKV-auiS7qxTfoBFjSihS03GPN5df5HqRiC8');
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  animation: sig_bloodsportglow 6s ease-in-out infinite;
+}
+
+@keyframes sig_bloodsportglow {
+  0%, 100% {
+    filter: drop-shadow(0 0 2px white) drop-shadow(0 0 6px rgba(86, 228, 241, 0.6));
+  }
+  50% {
+    filter: drop-shadow(0 0 2px white) drop-shadow(0 0 15px rgba(71, 220, 240, 0.9));
+  }
+}
+
+
+.bloodsports1_sig_text {
+  color: #ffffff;
+  font-size: clamp(10px, 1.5vw, 12px);
+  font-family: "Tomorrow", sans-serif;
+  text-shadow: 0 0 8px #000, 0 0 2px #000000,0 0 2px #000000;
+  text-align: center;
+  line-height: 1.2;
+  padding-top: 5px;
+  padding-left: 20px;
+  font-weight:400;
+  padding-right: 120px;
+}
+
+.bloodsports1_sig_text b {
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .bloodsports1_sig_main {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    padding: 0 4vw;
+    margin: 0 auto;
+  }
+.bloodsports1_sig_main p {
+  text-align:center;
+  margin: 5px 10px;
+}
+  .bloodsports1_sig_ban {
+    height: auto;
+    min-height: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 12px 0 8px 0;
+  }
+  .bloodsports1_sig_ban::before {
+    background-size: cover;
+    background-position: center;
+  }
+  .bloodsports1_box {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: auto auto 0;
+  }
+  .bloodsports1_sig_text {
+    margin:0;
+    align-items: center;
+    text-align: center;
+    font-size: 10px;
+    width: 100%;
+    padding: 2px;
+    order: 1;
+    height: auto;
+  }
+  .bloodsports1_sig_img  {
+    position: relative;
+    margin: 0 auto 8px auto;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 100%;
+    transform: none;
+    display: block;
+    background-position: center;
+  }
+
+}
+
