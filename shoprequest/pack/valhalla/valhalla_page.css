@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruthie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+
+nav {
+    background: rgba(9,23,52, 0.4) !important;
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.6));
+}
+
+nav a {
+    color: #588ee0 !important;
+    transition: color 0.2s ease;
+    margin: 0;
+}
+
+nav a:hover {
+    color: #d88004 !important;
+    transform: none !important;
+    transition: color 0.2s ease;
+}
+
+#content {
+    background: transparent !important;
+    padding: 0;
+}
+
+header .title {
+    font-family: "Love Light", cursive !important;
+    text-transform: capitalize;
+    margin: 20px auto -20px;
+    font-size: 120px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+
+}
+
+.thead h1 {
+    position:relative;
+    font-family: "Ruthie", cursive;
+    font-weight: 100 !important;
+    font-size:100px;
+    margin: 0 auto;
+}
+
+.thead h2 {
+    margin: 10px auto 0;
+    font-family: "Eagle Lake", serif;
+    font-size: 20px;
+}
+
+.packbanner {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    background-image: url('https://ik.imagekit.io/arl60/Ardent/shop/BrienaSkysong/Valhalla/wolf-8800549_1920.jpg?updatedAt=1756138792453') !important;
+    background-repeat: no-repeat !important;
+    background-position: 0 calc(100% - 60%) !important;
+    background-size: cover !important;
+    background-attachment: local;
+    box-sizing: border-box;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+    border: 1px solid #ff9430;
+    overflow: visible;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(54, 180, 252, 0.8);
+    padding: 50px 0;
+}
+
+.packwrap {
+    font-family: "Saira", sans-serif;
+    font-weight: 100;
+}
+
+.packwrap > h2:first-of-type {
+    display:none;
+}
+
+/* first table under banner*/
+.packwrap > div:nth-of-type(3) {
+    position:relative;
+    background-color: rgba(9, 0, 20,0.6) !important;
+    box-sizing: border-box;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+    border: 1px solid #70c1ff;
+    overflow: visible;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(54, 180, 252, 0.8);
+    font-family: "Saira", sans-serif;
+    font-weight: 100;
+    text-align: justify;
+    padding: 20px;
+}
+
+.packwrap > div:nth-of-type(3)::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        url('https://ik.imagekit.io/arl60/Ardent/shop/Pack/Valhalla/border1.png?updatedAt=1756790944112'),
+        url('https://ik.imagekit.io/arl60/Ardent/shop/Pack/Valhalla/border3.png?updatedAt=1756790956708'),
+        url('https://ik.imagekit.io/arl60/Ardent/shop/Pack/Valhalla/border2.png?updatedAt=1756790950983'),
+        url('https://ik.imagekit.io/arl60/Ardent/shop/Pack/Valhalla/border4.png?updatedAt=1756792225572');
+    background-repeat: no-repeat, no-repeat, no-repeat,no-repeat;
+    background-attachment: local, local, local, local;
+    background-size: 150px 150px, 150px 150px, 150px 150px, 150px 150px;
+    background-position: top right, bottom left, bottom right, top left;
+    width:100%;
+    height:auto;
+    pointer-events: none;
+}
+
+
+.packwrap > div:nth-of-type(3) h2 {
+    padding: 20px 0 0;
+    font-family: "Ruthie", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align:center;
+    font-size: 50px;
+    width: auto;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+    border-bottom: 1.5px solid;
+    border-image: linear-gradient(to right, transparent 20%, white, transparent 80%) 1;
+}
+
+.packwrap > div:nth-of-type(3) iframe {
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.7));
+}
+
+
+/* end of first paragaph */
+
+/* territories & Former Leaders */
+    /*TERRITORY*/
+.packwrap > div.flex.fill:nth-of-type(4) {
+    background-color: rgba(9, 0, 20,0.6) !important;
+   /* background-image: url('https://www.ardently.org/images/lands/100.jpg') !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-attachment: local;*/
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+    border: 1px solid #fa80bb;
+    overflow: visible;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(54, 180, 252, 0.8);
+    padding: 0 0 20px !important;
+    margin: 0 auto;
+}
+        /*FORMER LEADERS
+.packwrap > div:nth-of-type(4)  {
+    background: rgba(39,0,79, 0.6) !important;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+    border: 1px solid #ff9430;
+    overflow: visible;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(54, 180, 252, 0.8);
+    padding: 0 0 20px !important;
+    margin: 10px auto;
+    z-index: 1;
+}
+*/
+
+.packwrap > div.flex.fill:nth-of-type(4) h2,  .packwrap > div:nth-of-type(5) h2 {
+    font-family: "Italianno", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align:center;
+    font-size: 50px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+    border-bottom: 1.5px solid;
+    border-image: linear-gradient(to right, transparent 20%, white, transparent 80%) 1;
+    margin: 0 auto 20px;
+}
+
+.flex ul, .packwrap > div:nth-of-type(5) ul {
+    text-align:center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.flex ul li,  .packwrap > div:nth-of-type(5) li {
+  display: inline-block;
+  margin-right: 10px;
+  background-color: rgba(9, 0, 20,0.6);
+  border-radius: 10px;
+  padding: 3px 10px;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+  font-family: "Eagle Lake", serif;
+  font-size: calc(15px + 0.090625vw);
+  letter-spacing: 1.2;
+  box-shadow: 0 0 10px rgba(255, 81, 252, 0.6);
+  transition: background 0.5s ease;
+}
+
+.flex ul li:hover,  .packwrap > div:nth-of-type(5) li:hover {
+    transform: none !important;
+    background-color: rgba(231, 93, 7, 0.6);
+}
+
+.flex ul li:last-child {
+  margin-right: 0;
+}
+
+/* end of territories & Former Leaders */
+
+
+/*Notes: Adding Former leader IDs migrates general rules and below under #content; removing re-adds them under packwrap*/
+
+/* Rules & Info */
+
+/* .packwrap > div.flex.fill:nth-of-type(4) */
+/* #content > div.flex.fill:nth-of-type(2) */
+
+.packwrap > div.flex.fill:nth-of-type(5) {
+
+    margin: 15px auto 0;
+    padding: 0;
+    align-items: stretch;
+    gap: 10px;
+    background-color: rgba(9, 0, 20,0.8);
+    border: 1px solid #70c1ff;
+    box-shadow: 0 0 10px rgba(54, 180, 252, 0.8);
+    padding: 20px 10px 10px;
+    /*
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    */
+}
+
+#content > .packwrap > div.flex.fill:nth-of-type(5) > div:nth-of-type(1) h2, .packwrap > div.flex.fill:nth-of-type(5) > div:nth-of-type(2) h2 {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    background-image: url('https://ik.imagekit.io/arl60/Ardent/shop/BrienaSkysong/Valhalla/space-8335254.jpg?updatedAt=1754854137343') !important;
+    background-repeat: no-repeat !important;
+    background-position: 0 calc(100% - 60%) !important;
+    background-size: cover !important;
+    background-attachment: local;
+    border: 1px solid #410671;
+    border-radius: 10px;
+    overflow: visible;
+    box-shadow: 0 0 10px rgba(54, 180, 252, 0.8);
+    font-family: "Italianno", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align:center;
+    font-size: 50px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+    margin: 0 auto;
+    padding: 5px;
+    width: 95%;
+}
+
+#content > .packwrap > div.flex.fill:nth-of-type(5) > div:nth-of-type(1), #content > .packwrap > div.flex.fill:nth-of-type(5) > div:nth-of-type(2) {
+    margin: 0 !important;
+}
+
+    /* Sections */
+
+.info {
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+    overflow: visible;
+    z-index: 1;
+    padding: 20px;
+    text-align:justify;
+}
+
+    /* INFO CONTENT */ 
+
+.collapse_button {
+display: block;
+padding: 10px 15px;
+width: 100%;
+background-color: rgba(23, 1, 45, 0.8);
+color: white;
+cursor: pointer;
+transition: background 0.3s ease;
+margin: 0 auto -10px;
+border-radius: 5px;
+border: 1.5px solid rgb(221, 115, 2);
+box-shadow: 0 0 10px rgba(54, 180, 252, 0.8);
+
+font-family: "Eagle Lake", serif;
+font-weight: 400;
+font-style: normal;
+text-align:center;
+font-size: 16px;
+text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+
+text-decoration: none !important;
+}
+
+.collapse_button:hover {
+  background-color: rgba(255, 136, 0,0.5);
+  text-shadow: 0 0 10px white;
+}
+
+.collapse_ter {
+    display: block;
+    padding: 20px 15px 0;
+    width: 100%;
+    height: 80px !important;
+    color: white;
+    border: 1px solid #48275f;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6), 0 0 10px rgb(32, 4, 48);
+    cursor: pointer;
+    border-radius: 5px;
+
+    font-family: "Eagle Lake", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align:center;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+
+    --terimage: none;
+    background: black var(--terimage) no-repeat center;
+    background-size:cover;
+    background-attachment: local;   
+
+}
+
+.collapse_rule {
+  display: inline-block;
+  font-family: "Eagle Lake", serif;
+  padding: 0 10px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  font-size: 15px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+  margin-bottom: -10px;
+  cursor: pointer;
+
+  color: #bedcf3;
+}
+
+.collapse_rule:hover {
+  color: #da7b44;
+  transition: color 0.3s ease;
+}
+
+.collapse_content > .law {
+    line-height:1;
+    text-align:justify;
+    padding: 0 20px 0 10px;
+    margin-top: 30px;
+    margin-bottom:0;
+    margin-left: 20px;
+    border-left: 1.5px solid;
+    border-image: linear-gradient(to bottom,transparent, white,transparent) 1;
+}
+
+.collapse_content > p {
+    line-height:1;
+    text-align:justify;
+    padding: 20px;
+    margin: 0 auto 10px;
+    background-color: rgba(9, 0, 20,0.3);
+    border-radius:  10px;
+    border: 1.5px solid rgb(136, 181, 206);
+}
+
+
+.collapse_toggle {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.collapse_content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+
+.collapse_toggle:checked ~ .collapse_content {
+  max-height: 1000px;
+  opacity: 1;
+}
+
+.collapse_toggle:checked + label + .collapse_content {
+    display: block;
+}
+
+.info table {
+  width: 100%;
+  margin: 10px auto;
+  border-collapse: collapse;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  border: 1.5px solid rgb(221, 115, 2);
+  box-shadow: 0 0 10px rgba(54, 180, 252, 0.8);
+}
+
+.info tr {
+  color: #ffffff !important;
+}
+
+.info th {
+  background-color:rgba(85, 18, 96, 0.6);
+  padding: 2px;
+  color: #ffffff !important;
+  border: 1.5px solid rgb(221, 115, 2);
+}
+
+.info td {
+  background-color:rgba(40, 2, 51, 0.6);
+  border-left: 1px solid rgb(221, 115, 2);
+  border-right: 1px solid rgb(221, 115, 2);
+}
+
+/* End of Rules & Info */
+
+/* News/Relations/Ranks */
+
+/* #content
+    .packwrap */
+
+.packwrap> h2 {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    background-image: url('https://ik.imagekit.io/arl60/Ardent/shop/BrienaSkysong/Valhalla/space-8335254.jpg?updatedAt=1754854137343') !important;
+    background-repeat: no-repeat !important;
+    background-position: 0 calc(100% - 60%) !important;
+    background-size: cover !important;
+    background-attachment: local;
+    border: 1px solid #410671;
+    border-radius: 10px;
+    overflow: visible;
+    box-shadow: 0 0 10px rgba(54, 180, 252, 0.8);
+    font-family: "Italianno", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align:center;
+    font-size: 50px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+    padding: 5px;
+}
+
+.packwrap > ul {
+    background-color: rgba(9, 0, 20,0.8) !important;
+    box-sizing: border-box;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+    border: 1px solid #0d3a5c;
+    overflow: visible;
+    z-index: 1;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(54, 180, 252, 0.8);
+}
+
+.packwrap > ul:first-of-type {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ff9430;
+}
+
+.packwrap > ul:first-of-type > li {
+    list-style: none;
+    line-height:1;
+    text-align:justify;
+    padding: 20px;
+    margin: 5px auto 10px;
+    background-color: rgba(9, 0, 20,0.3);
+    border-radius:  10px;
+    border: 1.5px solid #47008E;
+    box-shadow: 0 0 10px #47008E;
+}
+
+.packwrap > ul:first-of-type > li b {
+display:block;
+  font-family: "Italianno", cursive;
+  font-size:25px;
+  margin: 0 auto -10px;
+  text-align:center !important;
+  margin: 0 auto 5px;
+}
+
+.packwrap > ul:first-of-type > li a {
+    text-decoration: none;
+    font-family: arial;
+    font-size:12px;
+    text-transform: uppercase;
+    color: rgb(44, 202, 255) !important;
+    transition: color 0.5s ease;
+}
+
+.packwrap > ul:first-of-type > li a:hover {
+    color: rgb(255, 162, 0) !important;
+    transition: color 0.5s ease;
+    letter-spacing: 0px;
+}
+
+.packwrap > ul:first-of-type > li span {
+    text-decoration: none !important;
+}
+
+
+.packwrap > ul:nth-of-type(2) li {
+  list-style: none;
+  text-align:center;
+  font-size:14px;
+  font-family: "saira", serif;
+  margin: 0 auto 5px;
+}
+
+.packwrap > ul:nth-of-type(2) li i {
+    font-size: 20px;
+    margin-right:5px;
+}
+
+.packwrap > ul:nth-of-type(2) li b {
+  font-family: "Italianno", cursive;
+  font-size:35px;
+  line-height: 1;
+}
+
+.packwrap > ul:nth-of-type(2) li b::after {
+  content: "\A";
+  white-space: pre;
+}
+
+.packwrap > ul:nth-of-type(2) li a {
+    display: inlne-block;
+    transition: transform 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.packwrap > ul:nth-of-type(2) li a:hover {
+    transform: scale(2.5) !important;
+    letter-spacing: 1.5px;
+}
+
+.packwrap > ul:nth-of-type(2) li > .pack {
+    line-height:1;
+    text-align:justify;
+    padding: 20px;
+    margin: 5px auto 15px;
+    background-color: rgba(9, 0, 20,0.3);
+    border-radius:  10px;
+    --packcolor: white;
+    border: 1.5px solid var(--packcolor);
+    box-shadow: 0 0 10px var(--packcolor);
+}
+
+.packwrap details .thead {
+    background: rgba(9, 0, 20,0.8) !important;
+    box-sizing: border-box;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+  border: 1.5px solid rgb(136, 181, 206);
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(54, 180, 252, 0.8);
+    border-radius: 10px;
+}
+
+.packwrap details {
+    position:relative;
+    overflow: visible;
+    margin: 0 auto;
+}
+
+.rank{
+text-align:justify;
+  padding: 15px;
+  margin: 10px;
+  background-color: rgba(9, 0, 20, 0.9);
+  border-radius: 5px;
+  border: 1.5px solid rgb(136, 181, 206);
+    border: 1px solid #0d3a5c;
+    box-shadow: 0 0 10px rgba(54, 180, 252, 0.8);
+}
+
+.requirement {
+    text-align:center;
+  border: 1.5px solid rgba(3, 188, 255, 0.342);
+  background-color: rgba(9, 0, 20, 0.2);
+  margin: 10px -10px -10px;
+  padding: 10px;
+  font-size: 10px;
+  text-transform:uppercase;
+}
+
+.divider1 {
+    display:block;
+    background: url('https://ik.imagekit.io/arl60/Ardent/shop/Pack/Valhalla/divider1.png?updatedAt=1756793150149') no-repeat center;
+    background-size: contain;
+    width:60%;
+    height:30px;
+    margin: 0 auto;
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
+}
+
+.divider2 {
+    display:block;
+    background: url('https://ik.imagekit.io/arl60/Ardent/shop/Pack/Valhalla/divider3.png?updatedAt=1756793159723') no-repeat center;
+    background-size: contain;
+    width:60%;
+    height:40px;
+    margin: 0 auto;
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
+}
+
+.divider3 {
+    display:block;
+    background: url('https://ik.imagekit.io/arl60/Ardent/shop/Pack/Valhalla/divider2.png?updatedAt=1756793159593') no-repeat center;
+    background-size: contain;
+    width:60%;
+    height:30px;
+    margin: 0 auto;
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
+}
+
+
+/* End of News/Relations/Ranks */
