@@ -37,7 +37,7 @@
   left: -160px;
   width: 135%;
   height: 550px;
-  background: transparent url('Nyx_char_bgless2.png') no-repeat center bottom;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/shop/nyx/runar/Nyx_char_bgless2.png?updatedAt=1756946327784') no-repeat center bottom;
   background-size: contain; 
   z-index: 5;
   pointer-events: none;
@@ -158,7 +158,8 @@
   }
 
 .runart1 credit {
-  position: relaive;
+  position: relative;
+  display:block;
   bottom: auto;
   right: -auto;
   display:block;
