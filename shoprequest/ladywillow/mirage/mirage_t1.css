@@ -60,7 +60,7 @@
   left: -90px;
   width: 140%;
   height: 800px;
-  background: transparent url('Mirageavviei.png') no-repeat bottom;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/shop/LadyWillow/Mirage/Mirageavviei.png?updatedAt=1757345381516') no-repeat bottom;
   background-size: contain; 
   z-index: 5;
   pointer-events: none;
@@ -140,7 +140,7 @@
   color: #ffffff;
   line-height: 1.2;
   background: rgba(0, 0, 0, 0.7) ;
-  padding: 40px 30px 300px;
+  padding: 50px 30px 300px;
   border-radius: 10px;
   border: 1.5px solid;
   border-image: linear-gradient(to bottom, black, #adadad, #000000, transparent) 1;
