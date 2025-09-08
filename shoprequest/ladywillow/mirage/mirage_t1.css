@@ -56,11 +56,11 @@
 
 .miraget1_img {
   position: absolute;
-  bottom: -22%;
-  left: -22%;
+  bottom: -280px;
+  left: -90px;
   width: 140%;
   height: 800px;
-  background: transparent url('https://ik.imagekit.io/arl60/Ardent/shop/LadyWillow/Mirage/Mirageavviei.png?updatedAt=1757345381516') no-repeat bottom;
+  background: transparent url('Mirageavviei.png') no-repeat bottom;
   background-size: contain; 
   z-index: 5;
   pointer-events: none;
@@ -209,12 +209,11 @@
 
 @media (max-width: 1200px) {
 
-  .miraget1_content,
+  .miraget1,
   .miraget1_img,
   .miraget1_inbor,
   .miraget1_incon,
-  .miraget1_text,
-  .miraget1_title {
+  .miraget1_text {
     filter: none !important;
     box-shadow: none !important;
   }
