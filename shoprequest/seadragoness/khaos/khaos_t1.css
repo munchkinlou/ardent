@@ -56,8 +56,8 @@
 
 .khaost1_img {
   position: absolute;
-  bottom: -3%;
-  left: -3%;
+  bottom: -100px;
+  left: -15px;
   width: 110%;
   height: 800px;
   background: transparent url('https://ik.imagekit.io/arl60/Ardent/shop/Seadragoness/Khaos/Sea2_headshot-crown.png?updatedAt=1757366153544') no-repeat bottom;
@@ -140,7 +140,7 @@
   color: #ffffff;
   line-height: 1.2;
   background: rgba(0, 0, 0, 0.7) ;
-  padding: 40px 30px 550px;
+  padding: 40px 30px 500px;
   border-radius: 10px;
   border: 1.5px solid;
   border-image: linear-gradient(to bottom, black, #adadad, #000000, transparent) 1;
