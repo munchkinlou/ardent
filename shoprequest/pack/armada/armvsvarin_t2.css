@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@font-face {
+  font-family: 'silvarint1';
+  src: url('Distropiax-WpYMA.ttf');
+}
+@font-face {
+  font-family: 'armvsvarint2';
+  src: url('SpinebitingRegular-lwwd.ttf');
+}
+
+.armvsvarint2 {
+	position: relative;
+  width: 700px;
+  margin: 20px auto 10px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+  filter: drop-shadow(0 8px 10px rgba(0,0,0,0.75));
+
+  --npcimg: url('https://ik.imagekit.io/arl60/Ardent/shop/Pack/Armada/Silvarin/image.png?updatedAt=1757372642187');
+
+}
+
+.armvsvarint2 credit {
+  margin: 5px auto 0;
+  display:block;
+  text-align:center;
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.armvsvarint2 credit::before {
+  content: 'code by andy ';
+}
+
+.armvsvarint2 armada {
+  position: absolute;
+  margin: 0 auto;
+  top: 250px;
+  left:-150px;
+  font-size: 63px;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'armvsvarint2';
+  text-align: center;
+  text-transform:uppercase;
+  line-height: 1;
+  z-index: 10;
+  color:transparent;
+  background: linear-gradient(to bottom, #93b8cf, #3e4b4e);
+  -webkit-background-clip: text;
+  background-clip: text;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.7)) drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.7));
+}
+
+.armvsvarint2 silvarin {
+  position: absolute;
+  margin: 0 auto;
+  top: 240px;
+  left:140px;
+  font-size: 90px;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'silvarint1';
+  text-align: center;
+  line-height: 1;
+  z-index: 10;
+  color:transparent;
+  background: linear-gradient(to bottom, #ed6c02, #ffa946);
+  -webkit-background-clip: text;
+  background-clip: text;
+  filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.7)) drop-shadow(0 0 8px rgba(0,0,0,0.4));
+}
+
+.armvsvarint2_img {
+  position: absolute;
+  top: -15px;
+  left: -30px;
+  right:0;
+  width: 110%;
+  height: 400px;
+  background: transparent var(--charimg) no-repeat center left;
+  background-size: contain; 
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0 0 10px rgba(0,0,0,0.8));
+}
+
+.armvsvarint2_img::after {
+  content:'';
+  position: absolute;
+  top:35px;
+  right:-70px;
+  width: 100%;
+  height: 90%;
+  background: transparent var(--npcimg) no-repeat bottom right;
+  background-size: contain; 
+  pointer-events: none;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.8));
+}
+
+.armvsvarint2_bor {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to left, rgb(230, 125, 5)40%, white, rgb(136, 209, 229)60%);
+  padding: 3px;
+  border-radius: 400px 400px 0 0;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.armvsvarint2_con {
+  position: relative;
+  width: 100%;
+  padding: 340px 10px 10px;
+  box-sizing: border-box;
+  background: black;
+  border-radius: 400px 400px 0 0;
+  pointer-events: none;
+  margin: 0 auto;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.armvsvarint2_con::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/Pack/Armada/armada.png?updatedAt=1757380882903') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  pointer-events: none;
+  overflow: hidden;
+  border-radius: 400px 400px 10px 10px;
+  filter:grayscale(0.3) saturate(1.2);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8), inset 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+
+.armvsvarint2_con > * {
+  position: relative;
+  z-index: 2;
+}
+
+.armvsvarint2_incon {
+  position: relative;
+  overflow: hidden;
+  padding: 20px 30px 50px;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, rgba(34, 34, 46, 0.8),rgba(0, 0, 14, 0.8));
+  height: auto;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5), inset 0 0 5px rgb(0, 0, 0);
+  text-align: justify;
+  font-family: "Nunito", sans-serif;
+  font-size: 13px;
+  color: #ffffff;
+  line-height: 1.2;
+  border: 2px solid;
+  border-image:linear-gradient(to bottom, black, rgb(1, 1, 36)) 1;
+}
+
+.armvsvarint2_incon speak, .armvsvarint2_incon npc {
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #000000;
+  line-height: 0.9;
+}
+
+.armvsvarint2_incon speak {
+  color: #99c9f0;
+}
+
+.armvsvarint2_incon npc {
+  color: #cf7805;
+}
+
+.armvsvarint2_spch {
+  display: block;
+  position: relative;
+  margin: 5px 0 -55px 0;
+  font-weight: bold;
+  font-family: 'times new roman';
+  color: #ffffff;
+  text-shadow: 1px 1px 2px #0a0906;
+  font-size: 18px;
+  text-align: center;
+  line-height: 1;
+  padding-right:45px;
+  letter-spacing: 4px;
+}
+
+.armvsvarint2_spch speak, .armvsvarint2_spch npc {
+  font-size:20px;
+}
+
+.armvsvarint2_spch::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1.2px;
+  background: linear-gradient(90deg, transparent, rgb(136, 209, 229) 45%, white, rgb(238, 103, 14) 55%, transparent);
+}
+
+
+@media (max-width: 1200px) {
+
+  .armvsvarint2 {
+    filter: none;
+  }
+
+  .armvsvarint2_con::before {
+    display: none;
+  }
+
+  .armvsvarint2_speech {
+    text-align: center;
+    padding:0;
+  }
+
+.armvsvarint2 armada, .armvsvarint2 silvarin {
+  display: none;
+}
+  
+.armvsvarint2_bor, .armvsvarint2_con::before, .armvsvarint2_con {
+  border-radius:0px;
+}
+
+}
