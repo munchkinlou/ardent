@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap');
+
+.cassiant1_content {
+	position: relative;
+  width: 450px;
+  margin: 60px auto 40px;
+  position: relative;
+  overflow: visible;
+  background:transparent;
+  box-sizing: border-box;
+}
+
+.cassiant1_content credit::before {
+  content: 'code by andy ';
+}
+
+.cassiant1_img {
+  position: absolute;
+  top: -20px;
+  left: -40px;
+  width: 130%;
+  height: 550px;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Pertinax/cassian.png?updatedAt=1757653666000') no-repeat center top;
+  background-size: contain; 
+  z-index: 4;
+  filter: drop-shadow(0 0 5px rgba(204, 204, 204, 0.8));
+  pointer-events: none;
+}
+
+.cassiant1_bor {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom, #000000,
+  #8f9ca0);
+  padding: 3px;
+  border-radius: 300px 300px 20px 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+.cassiant1_bor credit {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display:block;
+  margin: 5px auto 0;
+  text-align:center;
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+
+.cassiant1_con {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background: black;
+  border-radius: 300px 300px 20px 20px;
+  pointer-events: none;
+  margin: 0 auto;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.cassiant1_con::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://images.unsplash.com/photo-1597353811858-fbb7ce0a9ca6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  pointer-events: none;
+  overflow: hidden;
+  border-radius: 300px 300px 20px 20px;
+  box-shadow: inset 0 0 10px rgba(7, 0, 0, 0.8);
+}
+
+.cassiant1_inbor {
+  border-radius: 300px 300px 10px 10px;
+  position: relative;
+  padding: 350px 35px 20px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 400px, rgba(20, 20, 20, 0.6));
+  box-shadow: inset 0 0 10px rgba(7, 0, 0, 0.8);
+  border: 3px solid #000000;
+}
+
+.cassiant1_incon {
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
+  text-align: justify;
+  font-family: "Lexend", sans-serif;
+  font-size: 11px;
+  color: rgb(226, 220, 214);
+  line-height: 1.2;
+  text-shadow: 0 0 1px rgba(0,0,0,0.5);
+  border-top: 1px solid;
+  text-shadow: 0 0 2px rgba(7, 0, 0, 0.8);
+  border-image: linear-gradient(to right, transparent, rgb(121, 121, 121), transparent) 1;
+}
+
+
+.cassiant1_incon speak {
+  font-family: "Gelasio", serif;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1;
+  color: #a9bfd3;
+  text-shadow: 0 0 2px rgba(7, 0, 0, 0.8);
+}
+
+.cassiant1_spch {
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, rgb(121, 121, 121), transparent) 1;
+  display: block;
+  position: relative;
+  margin: 0px 0 -15px 0;
+  text-align: center;
+}
+
+.cassiant1_spch speak {
+  font-size: 17px;
+}
+
+@media (max-width: 1200px) {
+
+  .cassiant1_content {
+    filter: none;
+  }
+
+  .cassiant1_con::before, .cassiant1_spch::before, .cassiant1_img::after {
+    display: none;
+  }
+
+ .cassiant1_con, .cassiant1_bor, .cassiant1_incon, .cassiant1_inbor  {
+    border-radius: 0;
+  }
+
+  .cassiant1_incon speak {
+    text-shadow: 0 0 1px rgba(0,0,0,0.5);
+  }
+
+.cassiant1_bor credit {
+  position: relative;
+  bottom:auto;
+  left:auto;
+  margin: 0 auto;
+  display:block;
+  text-align:center;
+  transform: none;
+  font-size: 8px;
+}
+  
+}
+
