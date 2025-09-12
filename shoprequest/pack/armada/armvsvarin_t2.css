@@ -94,17 +94,19 @@
   filter: drop-shadow(0 0 10px rgba(0,0,0,0.8));
 }
 
-.armvsvarint2_img::after {
-  content:'';
+
+.armvsvarint2_img2 {
   position: absolute;
-  top:35px;
-  right:-70px;
+  top: 20px;
+  left: 100px;
+  right:0;
   width: 100%;
-  height: 90%;
+  height: 360px;
   background: transparent var(--npcimg) no-repeat bottom right;
   background-size: contain; 
+  z-index: 5;
   pointer-events: none;
-  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.8));
+  filter: drop-shadow(0 0 10px rgba(0,0,0,0.8));
 }
 
 .armvsvarint2_bor {
