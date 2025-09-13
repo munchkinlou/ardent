@@ -6,19 +6,12 @@
 }
 
 
-.andyc {
-  display:block;
-  text-align:center;
-  font-size:10px;
-  margin: 0 auto;
-  text-transform: uppercase;
-  font-family: arial;
-}
+
 
 .kjartant5_content {
 	position: relative;
   width: 400px;
-  margin: 30px auto 10px;
+  margin: 30px auto 30px;
   position: relative;
   overflow: visible;
   padding: 0;
@@ -27,17 +20,32 @@
   filter: drop-shadow(0 8px 10px rgba(0,0,0,0.75));
 }
 
+.kjartant5_content credit {
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  left:0;
+  width: 100%;
+  display:block;
+  text-align:center;
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+  z-index: 10;
+}
+
 .kjartant5_img {
   position: absolute;
-  bottom: -80px;
+  bottom: -40px;
   left: -300px;
   width: 165%;
   height: 600px;
-  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Kjartan/Kjartan_Andy2armor.png?updatedAt=1756444805009') no-repeat center top;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Kjartan/Kjartan_Andy2armor.png?updatedAt=1756444805009') no-repeat center bottom;
   background-size: 80%; 
   z-index: 5;
   pointer-events: none;
-  filter: drop-shadow(-10px -10px px rgba(0,0,0,0.75));
+  filter: drop-shadow(0 0 10px rgba(0,0,0,0.75));
 }
 
 .kjartant5_bor {
@@ -45,7 +53,6 @@
   width: 100%;
   background: linear-gradient(to bottom, #CBDDFA, #ECCCB4);
   padding: 5px;
-  border-radius: 10px;
   box-sizing: border-box;
   margin: 0 -220px 0 auto;
 }
@@ -53,9 +60,8 @@
 .kjartant5_con {
   position: relative;
   width: 100%;
-  padding: 20px;
+  padding: 10px;
   box-sizing: border-box;
-  border-radius: 10px;
   pointer-events: none;
   margin: 0 auto;
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
@@ -72,7 +78,6 @@
   background-size: cover;
   background-attachment: fixed;
   pointer-events: none;
-  border-radius: 10px;
   overflow: hidden;
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -86,7 +91,7 @@
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  padding: 20px 30px 50px;
+  padding: 10px 20px 50px;
   width: 100%;
   min-height: 450px;
   box-sizing: border-box;
@@ -111,7 +116,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   text-shadow: none;
-  line-height: 0.9;
+  line-height: 1;
   filter: drop-shadow(0 0 3px rgba(0,0,0,0.8));
 }
 
@@ -143,7 +148,7 @@
 }
 
 .kjartant5_speech kjar {
-  display: inline;
+  display: block;
   font-family: 'Kjar_Viking';
   color: transparent;
   background: linear-gradient(to bottom, #FFDC75, #EA9250);
@@ -163,7 +168,7 @@
   width: 100%;
   height: 1.5px;
   margin: 0px auto 0;
-  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.5), transparent);
+  background: linear-gradient(to right, transparent, #FFDC75, transparent);
 }
 
 @media (max-width: 1200px) {
@@ -180,4 +185,15 @@
   min-height: 10px;
 }
 
+}
+
+/* old */
+
+.andyc {
+  display:block;
+  text-align:center;
+  font-size:10px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-family: arial;
 }
