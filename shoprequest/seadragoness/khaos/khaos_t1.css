@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
 @font-face {
@@ -61,7 +60,10 @@
   left: -15px;
   width: 110%;
   height: 800px;
-  background: transparent url('https://ik.imagekit.io/arl60/Ardent/shop/Seadragoness/Khaos/Sea2_headshot-crown.png?updatedAt=1757366153544') no-repeat bottom;
+
+--img:url('https://ik.imagekit.io/arl60/Ardent/shop/Seadragoness/Khaos/Sea2_headshot-crown.png?updatedAt=1757366153544');
+
+  background: transparent var(--img) no-repeat bottom;
   background-size: contain; 
   z-index: 5;
   pointer-events: none;
