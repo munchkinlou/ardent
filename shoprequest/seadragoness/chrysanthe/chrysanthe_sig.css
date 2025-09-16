@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@font-face {
+  font-family: 'chrysanthes1';
+  src: url('BlessedDay-dylK.otf');
+}
+
+.chrysanthes1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 670px;
+  margin: 90px auto 70px;
+  position: relative;
+  overflow: visible;
+}
+
+.chrysanthes1 p {
+  font-family: "Comfortaa", sans-serif;
+  font-size:12px;
+  text-align:left;
+  margin: 5px auto 0 30px;
+}
+
+.chrysanthes1_con {
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
+  height: 150px;
+  border: 2px solid rgb(192, 130, 16);
+  background: black;
+  border-radius:20px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.6);
+  filter: none;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: visible;
+}
+
+.chrysanthes1_con::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('https://images.unsplash.com/photo-1460501501851-d5946a18e552?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+  border-radius: inherit;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.chrysanthes1_con > * {
+  position: relative;
+  z-index: 1;
+}
+
+.chrysanthes1_incon {
+  width: 100%;
+  height: 80%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1.5px solid;
+  border-image: linear-gradient(to right, transparent, #13dcff 50%, transparent 100%) 1;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.chrysanthes1_img {
+  position: absolute;
+  top: -52%;
+  right: 65%;
+  transform: none;
+  margin-right: 0;
+  width: 45%;
+  height: 200%;
+  z-index: 2;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/shop/Seadragoness/Chrysanthe/IMG_1804.png?updatedAt=1758037150088');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: sig_kamajiglow 6s ease-in-out infinite;
+}
+
+@keyframes sig_kamajiglow {
+  0%, 100% {
+    filter: drop-shadow(0 0 2px white) drop-shadow(0 0 6px rgba(155, 244, 247, 0.6));
+  }
+  50% {
+    filter: drop-shadow(0 0 2px white) drop-shadow(0 0 15px rgba(193, 233, 235, 0.9));
+  }
+}
+
+.chrysanthes1_text {
+  color: #fadc57;
+  font-family: arial;
+  text-shadow: 0 0 8px #000, 0 0 2px #000000,0 0 2px #000000;
+  text-align: center;
+  line-height: 0.8;
+  padding-top: 5px;
+  padding-left: 20%;
+  font-weight:100;
+  padding-right: 0%;
+}
+
+.chrysanthes1_text t {
+    filter: drop-shadow(2px 2px 0.5px #3d2312);
+    color: white;
+    position: relative;
+    z-index: 1;
+    font-family: "chrysanthes1", sans-serif;
+    text-transform: capitalize !important;
+    font-size: clamp(40px, 1.5vw, 45px);
+    background: linear-gradient(90deg,
+        #F7C358 0%,
+        #FFF6D1 12%,
+        #E1B65B 25%,
+        #DDAF55 38%,
+        #FFF6D1 50%,
+        #E1B65B 62%,
+        #DDAF55 75%,
+        #FFF6D1 88%,
+        #F7C358 100%
+    );
+    background-size: 400% 400%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none !important;
+}
+
+
+.chrysanthes1_text t2 {
+  font-family: "Style Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(16px, 1.5vw, 18px);
+  color: #ffde96;
+}
+
+.chrysanthes1_text b {
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .chrysanthes1 {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    padding: 0 4vw;
+    margin: 0 auto;
+  }
+.chrysanthes1 p {
+  text-align:center;
+  margin: 5px auto;
+}
+  .chrysanthes1_con {
+    height: auto;
+    min-height: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 12px 0 8px 0;
+    overflow: hidden;
+
+  }
+  .chrysanthes1_con::before {
+    background-size: cover;
+    background-position: center;
+  }
+  .chrysanthes1_incon {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: auto auto 0;
+  }
+  .chrysanthes1_text {
+    margin:0;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 2px;
+    order: 1;
+    height: auto;
+  }
+  .chrysanthes1_img {
+        position: relative;
+    margin: 0 auto 8px auto;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 100%;
+    transform: none;
+    display: block;
+    background-position: center;
+  }
+
+}
