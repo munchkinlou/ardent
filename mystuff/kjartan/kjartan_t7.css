@@ -186,4 +186,12 @@
   min-height: 10px;
 }
 
+.kjartant7 credit {
+  position:relative;
+  inset: auto;
+  display:block;
+  text-align:center;
+  transform: none;
+}
+
 }
