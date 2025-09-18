@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+
+.nonat2_content {
+	position: relative;
+  width: 450px;
+  margin: 60px auto 40px;
+  position: relative;
+  overflow: visible;
+  background:transparent;
+  box-sizing: border-box;
+}
+
+.nonat2_content credit::before {
+  content: 'code by andy ';
+}
+
+.nonat2_img {
+  position: absolute;
+  bottom: -30px;
+  left: 220px;
+  width: 100%;
+  height: 350px;
+  transform: rotate(-1deg);
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/shop/Cloi/Nona/Nona2.png?updatedAt=1758217946851') no-repeat center bottom;
+  background-size: contain; 
+  z-index: 4;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.8));
+  pointer-events: none;
+}
+
+.nonat2_bor {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom, #35393B,
+  #C7BF90);
+  padding: 3px;
+  border-radius: 300px 300px 20px 20px;
+  box-sizing: border-box;
+  margin: 0 auto 0 -140px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+.nonat2_bor t {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 72%;
+  height: auto;
+  padding: 40px 0 50px;
+  z-index: 5;
+  filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.5))
+          drop-shadow(0 0 1px rgba(0, 0, 0, 0.3))
+          drop-shadow(0 2px 1px rgba(0, 0, 0, 0.4));
+  font-family: "Fleur De Leah", cursive;
+  font-size: 60px;
+  text-align: center;
+  line-height: 0.6;
+  background: linear-gradient(to top, #35393B, #696758);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.nonat2_bor t::before {
+  position: absolute;
+  content: '';
+  bottom:0px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/Cloi/Nona/border.png?updatedAt=1755482567672') no-repeat center;
+  background-size:contain;
+  width: 100%;
+  height: 50px;
+  opacity: 0.6;
+}
+
+.nonat2_bor credit {
+  position: absolute;
+  bottom: -20px;
+  left: 5px;
+  display:block;
+  margin: 5px auto 0;
+  text-align:center;
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+
+.nonat2_con {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #131313 430px, black 600px);
+  border-radius: 300px 300px 20px 20px;
+  pointer-events: none;
+  margin: 0 auto;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.nonat2_con::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/flowerpattern.jpg?updatedAt=1755482503583') no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  pointer-events: none;
+  overflow: hidden;
+  border-radius: 300px 300px 20px 20px;
+  box-shadow: inset 0 0 10px rgba(7, 0, 0, 0.8);
+}
+
+.nonat2_inbor {
+  border-radius: 300px 300px 20px 20px;
+  position: relative;
+  padding: 190px 35px 20px;
+  background: linear-gradient(to top, rgba(228, 228, 228,0.8), rgba(235, 230, 195,0.8));
+  box-shadow: inset 0 0 10px rgba(7, 0, 0, 0.8);
+  border: 3px solid #d9d9d9;
+}
+
+.nonat2_incon {
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
+  text-align: justify;
+  font-family: "Delius", cursive;
+  font-size: 11px;
+  color: #2d2d2d;
+  line-height: 1.2;
+  text-shadow: 0 0 1px rgba(0,0,0,0.5);
+  border-top: 1px dashed #35393B;
+}
+
+
+.nonat2_incon speak {
+	font-family: "Gabriela", serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 0.9;
+  color: #811b3b;
+}
+
+.nonat2_spch {
+  border-top: 1px dashed #35393B;
+  display: block;
+  position: relative;
+  margin: 0px 0 -15px 0;
+  text-align: center;
+}
+
+.nonat2_spch speak {
+  font-size: 17px;
+}
+
+@media (max-width: 1200px) {
+
+  .nonat2_content {
+    filter: none;
+  }
+
+  .nonat2_con::before, .nonat2_spch::before, .nonat2_img::after {
+    display: none;
+  }
+
+ .nonat2_con, .nonat2_bor, .nonat2_incon, .nonat2_inbor  {
+    border-radius: 0;
+  }
+
+  .nonat2_incon speak {
+    text-shadow: 0 0 1px rgba(0,0,0,0.5);
+  }
+
+.nonat2_bor t, .nonat2_bor t::before {
+  display: none;
+}
+
+.nonat2_bor credit {
+  position: relative;
+  bottom:auto;
+  left:auto;
+  margin: 0 auto;
+  display:block;
+  text-align:center;
+  transform: left;
+  font-size: 8px;
+}
+  
+}
+
