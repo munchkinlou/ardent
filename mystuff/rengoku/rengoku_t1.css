@@ -137,7 +137,6 @@
 }
 
 
-
 @media (max-width: 1200px) {
 
   .rengokut1_content {
@@ -160,6 +159,10 @@
   margin: 0 auto;
 }
 
+.rengokut1_incon {
+  min-height:10px;
+}
 
 }
+
 
