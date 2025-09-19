@@ -224,4 +224,12 @@
     display:none;
   }
 
+.balrogt1 credit {
+  position: relative;
+  inset:auto;
+  display:block;
+  text-align:center;
+  transform: none;
+}
+
 }
