@@ -7,7 +7,7 @@
 .rengokut1_content {
 	position: relative;
   width: 400px;
-  margin: 50px auto 10px;
+  margin: 50px auto 20px 100px;
   position: relative;
   overflow: visible;
   padding: 0;
@@ -28,15 +28,15 @@
 
 .rengokut1_img {
   position: absolute;
-  bottom: -27px;
-  left: -200px;
+  bottom: -50px;
+  left: 250px;
   width: 160%;
   height: 500px;
-  background: transparent url('') no-repeat center top;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Rengoku/RengokuShaded2.png?updatedAt=1758297026977') no-repeat center bottom;
   background-size: contain; 
   z-index: 5;
   pointer-events: none;
-  filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.8));
 }
 
 .rengokut1_bor {
@@ -111,6 +111,7 @@
   border: 2px solid #efca50;
   padding: 20px 30px 120px;
   width: 100%;
+  min-height:320px;
   box-sizing: border-box;
   background: rgba(0,0,0,0.8);
   height: auto;
