@@ -201,7 +201,6 @@
   overflow: hidden; 
 }
 
-
 @media (max-width: 1200px) {
   .balrogt1 {
     margin: 0;
@@ -221,7 +220,7 @@
     padding: 0;
   }
 
-  .balrogt1_incon video, .balrogt1_con::after {
+  .balrogt1_con video, .balrogt1_con::after {
     display:none;
   }
 
