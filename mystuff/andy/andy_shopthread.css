@@ -30,11 +30,11 @@
 
 .andyshop_img2 {
   position: absolute;
-  bottom: -55px;
-  right:120px;
-  width: 200px;
-  height: 200px;
-  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Andy/LouCheeb1.png?updatedAt=1754099178605') no-repeat top;
+  bottom: -50px;
+  right:60px;
+  width: 300px;
+  height: 300px;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Andy/LouComputer.png?updatedAt=1758330467435') no-repeat bottom;
   background-size: contain; 
   z-index: 5;
   pointer-events: none;
