@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+
+.citadelt4 {
+  width: 100%;
+  width: 450px;
+  margin: 50px auto 280px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background: transparent;
+  box-sizing: border-box;
+  filter: drop-shadow(0 0 0px rgba(0,0,0,1)) drop-shadow(0 0 5px rgba(0,0,0,1));
+}
+
+
+.citadelt4 credit {
+  position: absolute;
+  bottom: 160px;
+  left: -60px;
+  width: 100px;
+  display:block;
+  text-align:left;
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
+  z-index: 10;
+  transform: rotate(-90deg);
+}
+
+.citadelt4_img {
+  position: absolute;
+  bottom: -230px;
+  left: -240px;
+  width: 200%;
+  height:650px;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/shop/Seadragoness/Citadel/citadel_armor.png?updatedAt=1758327749458') no-repeat bottom;
+  background-size: contain; 
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0 0 5px rgb(0, 0, 0, 0.8));
+  transform:rotate(-10deg);
+}
+
+
+.citadelt4_bor {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background: linear-gradient(to top, #000000, #f3e897, white);
+  clip-path: polygon(
+    0% 100%,
+    100% 100%,
+    100% 110px,
+    50% 0%,
+    0% 110px
+  );
+  padding: 1.5px;
+}
+
+.citadelt4_con {
+  position: relative;
+  width: 100%;
+  background: #000000 url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/moutainssnow.png?updatedAt=1758327675986');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  clip-path: polygon(
+    50% 0%,
+    100% 110px,
+    100% 100%,
+    0% 100%,
+    0% 110px
+  );
+  padding: 15px 10px 10px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+
+}
+
+.citadelt4_con video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  opacity: 0.3;
+  pointer-events:none;
+  user-select: none;
+}
+
+.citadelt4_inbor {
+  position: relative;
+  z-index: 6;
+  margin: 0 auto;
+  padding: 5px 4px 2px;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(4, 29, 60, 0.6), rgba(0,0,0,0.8));
+  box-shadow: 0 0 5px rgb(165, 236, 239);
+  clip-path: polygon(
+    50% 0%,
+    100% 100px,
+    100% 100%,
+    0% 100%,
+    0% 100px
+  );
+}
+
+.citadelt4_incon {
+  padding: 20px;
+  position: relative;
+  z-index: 6;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: visible;
+  background: transparent;
+  padding: 100px 20px 380px;
+  box-shadow: inset 0 0 10px rgba(16, 69, 118, 0.8);
+  text-align: justify;
+  font-family: 'Bellefair';
+  font-size: 16px;
+  color: #dadada;
+  filter: drop-shadow(0 0 0px rgba(0,0,0,1)) drop-shadow(0 0 2px rgba(0,0,0,1)) drop-shadow(0 0 10px rgba(0,0,0,1));
+  line-height: 1.2;
+  margin: 0;
+  clip-path: polygon(
+    50% 0%,
+    100% 100px,
+    100% 100%,
+    0% 100%,
+    0% 100px
+  );
+}
+
+.citadelt4_spch::before {
+  position:absolute;
+  content:'';
+  top:0;
+  left:50%;
+  transform:translateX(-50%);
+  margin:-5px auto 0;
+  width:100%;
+  height:1.1px;
+  background:linear-gradient(to right, transparent, rgb(99, 216, 255),transparent);
+}
+
+.citadelt4_spch {
+  position: relative;
+  text-align: center;
+  line-height: 1;
+  margin: 5px auto 0;
+  filter: drop-shadow(0 0 2px rgba(0,0,0,1));
+  z-index: 10;
+}
+
+.citadelt4_spch speak, .citadelt4_incon speak {
+  font-family: 'Germania One';
+  color: transparent;
+  background: linear-gradient(to bottom, rgb(252, 221, 67),rgb(251, 176, 119));
+  -webkit-background-clip: text;
+  background-clip: text;
+  filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));
+  line-height:1;
+}
+
+.citadelt4_incon speak {
+  font-size: 16px;
+}
+
+.citadelt4_spch speak {
+  font-size:30px;
+}
+
+@media (max-width: 1200px) {
+  .citadelt4 {
+    filter: none;
+  }
+
+  .citadelt4_bor, 
+  .citadelt4_con, .citadelt4_inbor, .citadelt4_incon {
+    clip-path: none;
+    filter: none;
+  }
+
+.citadelt4_incon video {
+  display: none;
+}
+
+.citadelt4_incon speak {
+  filter: drop-shadow(0 0 0px rgba(0,0,0,0.5));
+}
+  .citadelt4 credit {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin: 0 auto;
+    text-align: center;
+    transform: none;
+  }
+
+}
