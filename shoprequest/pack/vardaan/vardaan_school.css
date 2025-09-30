@@ -739,7 +739,7 @@
 .varschool_stack br,
 .varcontent br,
 .varcontent ul br {
-  display:none; !important;
+  display:none !important;
 }
 
 
