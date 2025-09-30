@@ -1,0 +1,742 @@
+@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bentham&display=swap');
+
+.varschool {
+	position: relative;
+  width: 98%;
+  margin: 20px auto;
+  overflow: visible;
+  box-sizing: border-box;
+}
+
+.varschool_bor {
+  position:relative;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3px;
+
+  background: linear-gradient(to bottom, rgb(243, 224, 163),rgb(231, 246, 169));
+
+  border-radius:10px;
+
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.5), 10px 10px 10px rgba(0,0,0,0.8);
+}
+
+.varschool_con {
+  position:relative;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 10px 0;
+
+  background: rgb(231, 228, 219) url('https://ik.imagekit.io/arl60/Ardent/shop/Pack/Vardaan/background.png?updatedAt=1759196765980') repeat-y center;
+  background-size: cover;
+  background-attachment: fixed;
+  border-radius:10px;
+
+  box-shadow: 0 0 5px rgba(0,0,0,0.2), inset 0 0 10px rgba(0, 0, 0, 0.9);
+
+  overflow:hidden;
+}
+
+.varschool_con::before {
+  content:'';
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+
+  border-radius:10px;
+
+  background:rgba(170, 170, 108, 0.365);
+
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.9);
+
+  pointer-events:none;
+}
+
+.varschool_h1frame {
+  margin: 10px auto 20px;
+  width: 100%;
+  height: clamp(180px, 40vw, 450px);
+
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/shop/Pack/Vardaan/frame1.png?updatedAt=1759196835948') center no-repeat;
+  background-size: 90% 100%;
+
+  display: flex;
+  justify-content: center;
+
+  filter:drop-shadow(0 0 5px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+}
+
+.varschool_con h1 {
+  width: 95%;
+  margin: 10px auto;
+  padding: 30px;
+
+  font-family: "Uncial Antiqua", system-ui;
+  font-weight: 400;
+  font-size: clamp(24px, 5vw, 60px);
+  text-transform: capitalize !important;
+  text-align: center;
+  line-height: 1;
+
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.4));
+
+  color: transparent;
+  background: linear-gradient(to right, #e0c96f, #feea90, #b9a65a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.varschool_message, .varschool_message2 {
+  position:relative;
+  margin: 0 2%;
+  padding:20px;
+
+  background:rgb(239, 237, 222);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9), inset 0 0 10px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+
+  font-family: "Bentham", serif;
+  font-weight: 400;
+  color: rgb(42, 42, 42);
+  font-size: 15px;
+  text-align: center;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+
+  border-radius:50px;
+  outline: 1px solid rgb(241, 220, 143);
+}
+
+.varschool_message2{
+  border-radius:10px;
+  margin:0 1%;
+}
+
+.varschool_message::after {
+  content:'';
+  position:absolute;
+  top:-5px;
+  left:-5px;
+  width:calc(100% + 5px);
+  height:calc(100% + 5px);
+
+  border-radius:55px;
+  border: 3px dotted rgba(255, 255, 255, 0.857);
+
+  pointer-events: none;
+
+}
+
+.varschool_message quote {
+  display:block;
+  font-family: "Fleur De Leah", cursive;
+  font-weight: 400;
+  line-height:1.1;
+
+  color: rgb(67, 65, 56);
+  font-size: 35px;
+}
+
+.varschool_con h2 {
+  width:100%;
+  background: linear-gradient(to right, transparent, rgb(236, 221, 133), transparent);
+
+  border: 2px solid;
+  border-image: linear-gradient(to right, transparent, rgb(255, 255, 255), transparent) 1;
+
+  font-family: "Uncial Antiqua", system-ui;
+  font-weight: 400;
+
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+
+  padding: 5px 0;
+  margin: 10px auto 5px;
+}
+
+.varschool_con h3 {
+  width:100%;
+  display:block;
+
+  font-size: clamp(30px, 5vw, 75px);
+  text-align: center;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  font-family: "Fleur De Leah", cursive;
+  font-weight: 400;
+  line-height:1.1;
+
+  color: #fff0b5;
+  text-shadow: 0 0 10px rgb(0, 0, 0), 0 0 10px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.8);
+
+  filter: drop-shadow(0 0 5px rgba(234, 212, 165, 0.405));
+
+  padding: 5px 0;
+  margin: 20px auto;
+}
+
+.varschool_con h3::before {
+  position:absolute;
+  content: '';
+  inset:0;
+  height:100%;
+  width:100%;
+
+  background: linear-gradient(to right, transparent, rgba(232, 214, 144, 0.37), transparent);
+
+  pointer-events:none;
+
+}
+
+
+.varschool_incon {
+  position:relative;
+  margin: 0 auto;
+  height: 100%;
+  padding:20px;
+
+  background:rgb(239, 237, 222);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9), inset 0 0 10px rgba(0, 0, 0, 0.6);
+
+
+  border-radius:20px;
+  outline: 1px solid rgb(241, 220, 143);
+
+  font-family: "Bentham", serif;
+  font-weight: 400;
+  color: rgb(42, 42, 42);
+  font-size: 15px;
+  text-align: center;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.varschool_incon t {
+  display: block;
+  line-height:0.1;
+  font-weight:bold;
+  margin-top:5px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.varschool_frameprof {
+  position: relative;
+  margin: 20px auto 60px;
+  width: 220px;
+  height: 350px;
+
+  background: rgb(239, 237, 222);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 150px 150px 10px 10px;
+  border: 1.2px solid rgb(235, 223, 160);
+
+  box-shadow:inset 0 0 10px rgba(0, 0, 0, 0.8);
+
+  filter:drop-shadow(0 0 5px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+
+  background: rgb(239, 237, 222) var(--bg) no-repeat center;
+  background-size:cover;
+
+  --bg:none;
+
+  transition: background 0.6s ease, opacity 0.3s ease;
+}
+
+.varschool_frameprof::after {
+  content:'';
+  position:absolute;
+  width:145%;
+  height:130%;
+  top:-10%;
+  left:-22%;
+
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/shop/Pack/Vardaan/frame2.png?updatedAt=1759196848669') center no-repeat;
+  background-size: contain;
+
+  filter:drop-shadow(0 0 5px rgba(0, 0, 0, 0.2)) drop-shadow(0 0 5px rgba(0, 0, 0, 0.2)) drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+  
+  pointer-events: none;
+}
+
+.varschool_frameprof prof {
+  width: 95%;
+  margin: 0 auto;
+  padding: 30px;
+
+  font-family: "Uncial Antiqua", system-ui;
+  font-weight: 400;
+  font-size: clamp(10px, 5vw, 20px);
+  text-transform: capitalize !important;
+  text-align: center;
+  line-height: 1;
+
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.4));
+
+  color: #000000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  opacity:0;
+}
+
+.varschool_frameprof prof a, .varschool_frameprof prof a:visited {
+  text-decoration: none !important;
+  color: rgb(44, 32, 2) !important;
+}
+
+.varschool_frameprof sk {
+  display: block;
+  padding:5px;
+
+  background:rgb(255, 255, 255);
+  color: rgb(36, 36, 36);
+  font-family: 'Arial', sans-serif;
+  text-transform: uppercase;
+  text-align: center;  
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 8px;
+
+  border-radius: 5px;
+  margin-top:10px;
+}
+
+.varschool_message::before, .varschool_message2::before, .varschool_incon::before, .varschool_frameprof::before {
+  content:'';
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+
+  border-radius:25px;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/Pack/Vardaan/fili.png?updatedAt=1759196885628') center;
+  background-size: cover;
+  filter:sepia(1);
+  opacity: 0.05;
+
+  box-shadow:inset 0 0 10px rgba(0, 0, 0, 0.8);
+
+  pointer-events: none;
+}
+
+.varschool_frameprof::before {
+  border-radius: 150px 150px 10px 10px;
+  opacity:0;
+  filter:none;
+  transition: opacity 1s ease;
+}
+
+.varschool_frameprof:hover::before {
+  background: rgb(239, 237, 222) url('https://ik.imagekit.io/arl60/Ardent/shop/Pack/Vardaan/fili.png?updatedAt=1759196885628') center;
+  background-size: cover;
+  opacity:0.1;
+  filter:none;
+  transition: opacity 1s ease;
+}
+
+.varschool_frameprof:hover {
+  background:rgb(239, 237, 222);
+  transition: background 1s ease;
+}
+
+.varschool_frameprof:hover prof {
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+.varschool_bor subnote {
+  display:block;
+  padding: 3px 0;
+
+  font-family: "Bentham", serif;
+  font-weight: 400;
+  color: rgb(42, 42, 42);
+  font-size: 15px;
+  text-align: center;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+}
+
+
+.varschool_stack {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 10px;
+  width: 100%;
+  margin: 10px auto 10px 5px;
+
+  --items: 47%;
+}
+
+.varschool_stackitem {
+  flex: 0 1 var(--items);
+  padding: 1px;
+  display: flex;
+  flex-direction:column;
+  justify-content:baseline;
+  align-items:stretch;
+}
+
+.varschool_stackitem label, .varschool_con label {
+  margin: 0 auto;
+  padding: 0;
+  width:90%;
+
+  color: rgb(36, 36, 36);
+  text-align: center;  
+  text-decoration: none !important;
+  line-height: 1;
+
+  border: none;
+  border-radius: 5px;
+
+  filter: drop-shadow(0 0 5px rgba(0,0,0,0.6));
+
+  pointer-events:auto;
+  cursor: pointer;
+}
+
+.varschool_con label {
+  margin: 0 auto;
+}
+
+.varschool_con old {
+  display: block;
+  margin: -10px auto 0;
+  padding:5px 1px;
+  width:98%;
+
+  background:rgb(239, 237, 222);
+  color: rgb(66, 66, 66);
+  font-family: "Uncial Antiqua", system-ui;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+
+  outline: 1px solid rgb(100, 100, 100);
+
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6);
+
+  transition: background 0.3s ease, transform 0.5s ease, letter-spacing 0.5s ease; 
+}
+
+.varschool_stackitem class {
+  display: block;
+  margin: 0 auto 0 -5px;
+  padding:10px 5px;
+  width:100%;
+
+  background:rgb(239, 237, 222);
+  color: rgb(66, 66, 66);
+  font-family: "Rochester", cursive;
+  font-weight: 400; 
+  font-size: 25px;
+  text-align: center;
+
+  border-radius: 10px;
+  outline: 1px solid rgb(100, 100, 100);
+
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6);
+
+  transition: background 0.3s ease, transform 0.5s ease, letter-spacing 0.5s ease; 
+}
+
+.varschool_stackitem sk {
+  padding:5px;
+
+  background:rgb(255, 255, 255);
+  color: rgb(36, 36, 36);
+  font-family: 'Arial', sans-serif;
+  text-transform: uppercase;
+  text-align: center;  
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 8px;
+
+  border-radius: 5px;
+}
+
+.varschool_stackitem label a {
+  color: white !important;
+}
+
+.varschool_stackitem label:hover class {
+  background-color: white;
+  transform: scale(1.01);
+  letter-spacing: 1px;
+}
+
+.varschool_con label:hover old {
+  background-color: white;
+  letter-spacing: 1px;
+}
+
+.varschool_stackitem input[type="checkbox"], .varschool_con input[type="checkbox"] {
+  display:none;
+}
+
+.varschool_stackitem > .varcontent, .varschool_con > .varcontent {
+  margin: 15px 10px 0;
+  width: auto;
+  max-height:0;
+
+  opacity: 0;
+  padding: 0 20px;
+
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6), inset 0 0 10px rgba(0, 0, 0, 0.6);
+
+  border-radius: 5px;
+
+  font-family: "Bentham", serif;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  color: rgb(42, 42, 42);
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+
+  scrollbar-width: thin;
+  scrollbar-color: #dedede #f1f1f100;
+  
+  overflow-y:auto;
+
+  transition: max-height 0.5s ease, padding 0.5s ease;
+}
+
+.varcontent::-webkit-scrollbar {
+  width: 10px;
+}
+
+.varcontent::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.varcontent::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+.varcontent::-webkit-scrollbar-thumb:hover {
+  background: #f0f0f0;
+}
+
+.varschool_con > .varcontent {
+  text-align:left;
+  margin: 0 12px;
+}
+
+.varschool_con > .varcontent table {
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+.varcontent a {
+  text-decoration: none !important;
+  font-weight: bold;
+  color: rgb(44, 44, 44);
+  transition: letter-spacing 0.3s ease, color 0.3s ease;
+}
+
+.varcontent a:hover {
+  color: rgb(157, 135, 91);
+  letter-spacing: 1.3px;
+  text-shadow: 0 0 2px rgba(234, 225, 185, 0.9);
+  transition: letter-spacing 0.3s ease, color 0.3s ease;
+}
+
+.varschool_stackitem .varcontent ul {
+  margin: 0 auto;
+  text-align:left;
+  padding-left:5px;
+}
+
+.varschool_stackitem input[type="checkbox"]:checked + label + .varcontent, .varschool_con input[type="checkbox"]:checked + label + .varcontent {
+  max-height: 500px;
+  opacity: 1;
+  padding: 15px 20px;
+}
+
+.varschool_stackitem input[type="checkbox"]:checked ~ .varcontent, .varschool_con input[type="checkbox"]:checked ~ .varcontent {
+  max-height: 500px !important;
+  opacity: 1 !important;
+  padding: 15px 20px !important;
+}
+
+.varschool_signup {
+  position: relative;
+  margin: 50px auto;
+  width: 280px;
+  height: 280px;
+  padding: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  font-family: "Bentham", serif;
+  font-weight: 400;
+  color: rgb(42, 42, 42);
+  font-size: 18px;
+  text-align: center;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+
+
+  background: rgb(237, 236, 223);
+
+  border: 1.2px solid rgb(235, 223, 160);
+  border-radius:35px 0;
+
+  box-shadow:inset 0 0 10px rgba(113, 107, 107, 0.8);
+
+  filter:drop-shadow(0 0 5px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+}
+.varschool_signup i {
+  margin-top:10px;
+}
+
+.varschool_signup::after {
+  content:'';
+  position:absolute;
+  width:130%;
+  height:130%;
+  top:-15%;
+  left:-14%;
+
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/shop/Pack/Vardaan/frame3.png?updatedAt=1759196862720') center no-repeat;
+  background-size: contain;
+
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.8));
+  
+  pointer-events: none;
+}
+
+.varschool_con table {
+  width: 98.5%;
+  margin: 20px auto 0;
+
+  border-collapse: collapse;
+
+  color: rgb(29, 29, 29);
+  font-size: 15px;
+  text-align:left;
+  font-family: "Bentham", serif;
+  font-weight: 400;
+  line-height: 1;
+
+  border: 2px solid rgb(201, 197, 175);
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.varschool_con th {
+  background-color:rgba(58, 54, 41, 0.8);
+  color: #ffffff;
+  padding: 5px;
+
+  font-family: 'Arial', sans-serif;
+  text-transform: uppercase;
+  text-align: center;  
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.varschool_con td:nth-child(1),
+.varschool_con td:nth-child(3),
+.varschool_con td:nth-child(4) {
+  background: linear-gradient(to bottom, rgb(252, 250, 241), rgba(200, 200, 200, 1));
+  width: 15%;
+  text-align:center;
+  color: rgb(29, 29, 29);
+  padding: 5px;
+
+  box-shadow: inset 0 0 5px rgba(125, 125, 125, 0.6);
+}
+
+.varschool_con td:nth-child(1) {
+  font-family: "Uncial Antiqua", system-ui;
+  font-weight: 400;
+}
+
+.varschool_con td:nth-child(2) {
+  background: linear-gradient(to bottom, rgba(52, 52, 52, 1), rgba(0, 0, 0, 1));
+  color: #fff;
+  padding: 0 10px;
+
+  box-shadow: inset 0 0 5px rgba(125, 125, 125, 0.6);
+}
+
+.varschool_con table br {
+  line-height:0.5;
+}
+
+
+
+.varcontent table {
+  width:100%;
+  margin: 20px auto 0;
+}
+
+.varcontent td {
+  width:auto !important;
+  background: rgba(28, 28, 28, 0.889) !important;
+  color: #fff !important;
+  box-shadow: inset 0 0 2px rgba(231, 231, 231, 0.6) !important;
+}
+
+.varcontent td:nth-child(2){
+  text-align:center !important;
+}
+
+.varcontent td:nth-child(3){
+  text-align:left !important;
+  padding: 10px 0 0 !important;
+}
+
+.varschool_con credit {
+  display: block;
+  text-align:center;
+  width:98%;
+  background:rgba(232, 230, 215, 0.882);
+  margin: 10px auto 5px;
+  padding: 5px;
+  border-radius: 40px;
+  font-weight:bold;
+  font-family:arial;
+  text-transform: uppercase;
+  font-size:10px;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+}
+
+
+@media (max-width: 1200px) {
+
+
+}
