@@ -5,6 +5,7 @@
 
 .varschool {
 	position: relative;
+  border-radius:10px;
   width: 98%;
   margin: 20px auto;
   overflow: hidden;
