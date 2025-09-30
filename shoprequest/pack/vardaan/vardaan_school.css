@@ -753,7 +753,7 @@ display:inline-block;
 .varschool_message br,
 .varschool_stack br,
 .varschool_stackitem > .varcontent br, 
-,varschool_con > .varcontent br {
+.varschool_con > .varcontent br {
   line-height: 0 !important;
 }
 
