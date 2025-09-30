@@ -7,7 +7,7 @@
 	position: relative;
   width: 98%;
   margin: 20px auto;
-  overflow: visible;
+  overflow: hidden;
   box-sizing: border-box;
 }
 
@@ -528,6 +528,7 @@ display:inline-block;
   scrollbar-color: #dedede #f1f1f100;
   
   overflow-y:auto;
+  overflow-x:auto;
 
   transition: max-height 0.5s ease, padding 0.5s ease;
 }
