@@ -738,10 +738,10 @@
 .varschool_message br,
 .varschool_stack br,
 .varcontent br,
-.varcontent ul br,
-.varcontent li br {
-  line-height:0;
+.varcontent ul br {
+  display:none; !important;
 }
+
 
 @media (max-width: 1200px) {
 
