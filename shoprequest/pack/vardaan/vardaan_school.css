@@ -756,10 +756,6 @@ display:inline-block;
   line-height: 0 !important;
 }
 
-.varcontent table br {
-	line-height:0.6 !important;
-}
-
 @media (max-width: 1200px) {
 
 .varschool_con {
