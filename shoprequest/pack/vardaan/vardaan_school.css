@@ -502,7 +502,7 @@
 }
 
 .varschool_stackitem input[type="checkbox"], .varschool_con input[type="checkbox"] {
-  display:none;
+  display:none !important;
 }
 
 .varschool_stackitem > .varcontent, .varschool_con > .varcontent {
