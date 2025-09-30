@@ -758,7 +758,6 @@ display:inline-block;
   line-height: 0 !important;
 }
 
-
 @media (max-width: 1200px) {
 
   .varschool_con::before,
@@ -766,7 +765,8 @@ display:inline-block;
   .varschool_message::before,
   .varschool_message2::before,
   .varschool_incon::before,
-  .varschool_frameprof::before {
+  .varschool_frameprof::before,
+  .varschool_frameprof::after {
     display: none;
   }
 
@@ -776,6 +776,19 @@ display:inline-block;
 
   .varschool_stack {
   flex-direction: column;
+  }
+
+  .varschool_stackitem {
+    margin: 10px auto;
+  }
+
+  .varschool_frameprof prof {
+    opacity: 1;
+  }
+
+  .varschool_frameprof {
+    height: auto;
+    border-radius:0px;
   }
 
 }
