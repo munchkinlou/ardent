@@ -737,9 +737,10 @@
 .varschool_con br,
 .varschool_message br,
 .varschool_stack br,
-.varcontent br,
-.varcontent ul br,
-.varcontent li br {
+.varschool_stackitem > .varcontent br,
+.varschool_con > .varcontent br, 
+.varschool_stackitem > .varcontent ul br,
+.varschool_con > .varcontent ul li {
   line-height: 0 !important;
 }
 
