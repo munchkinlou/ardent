@@ -468,6 +468,8 @@
 
 .varschool_stackitem sk {
   padding:5px;
+display:inline-block;
+	margin-top:10px;
 
   background:rgb(255, 255, 255);
   color: rgb(36, 36, 36);
