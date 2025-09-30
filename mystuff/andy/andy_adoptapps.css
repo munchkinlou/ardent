@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @font-face {
@@ -256,7 +257,7 @@
     display: none;
   }
 
-  .andyappt1_con speech {
+.andyappt1_con chartitle {
     position: relative;
     bottom: auto;
     left: auto;
@@ -264,6 +265,7 @@
     text-align: center;
     transform: none;
   }
+
 .andyappt1 credit {
   margin: 0 auto;
 }
@@ -278,6 +280,12 @@
 
 .andyappt1_incon {
   min-height:10px;
+}
+
+.andyappt1 label {
+  margin:0 auto;
+  height:auto;
+  background: transparent !important;
 }
 
 }
