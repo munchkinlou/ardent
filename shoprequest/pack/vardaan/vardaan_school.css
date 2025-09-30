@@ -122,6 +122,10 @@
   margin:0 1%;
 }
 
+.varschool_message br {
+  line-height:0;
+}
+
 .varschool_message::after {
   content:'';
   position:absolute;
