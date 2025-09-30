@@ -764,6 +764,10 @@ display:inline-block;
 
 @media (max-width: 1200px) {
 
+.varschool_con {
+  overflow-x:auto !important;
+}
+
   .varschool_con::before,
   .varschool_message::after,
   .varschool_message::before,
