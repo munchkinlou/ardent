@@ -235,7 +235,7 @@
   display: block;
   line-height:0.1;
   font-weight:bold;
-  margin-top:5px;
+  margin-top:-5px;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 2px;
