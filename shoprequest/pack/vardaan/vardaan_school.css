@@ -742,5 +742,17 @@
 
 @media (max-width: 1200px) {
 
+  .varschool_con::before,
+  .varschool_message::after {
+    display: none;
+  }
+
+  .varschool_message, .varschool_message2 {
+    outline:none;
+  }
+
+  .varschool_stack {
+  flex-direction: row;
+  }
 
 }
