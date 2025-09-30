@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
@@ -118,10 +117,6 @@
   outline: 1px solid rgb(241, 220, 143);
 }
 
-.varschool_message br {
-  line-height:0;
-}
-
 .varschool_message2{
   border-radius:10px;
   margin:0 1%;
@@ -235,7 +230,7 @@
   display: block;
   line-height:0.1;
   font-weight:bold;
-  margin: 5px auto;
+  margin-top:5px auto;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -561,6 +556,13 @@
 
 }
 
+.varcontent ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .varcontent a {
   text-decoration: none !important;
   font-weight: bold;
@@ -698,6 +700,12 @@
   box-shadow: inset 0 0 5px rgba(125, 125, 125, 0.6);
 }
 
+.varschool_con table br {
+  line-height:0.5;
+}
+
+
+
 .varcontent table {
   width:100%;
   margin: 20px auto 0;
@@ -737,10 +745,7 @@
 .varschool_con br,
 .varschool_message br,
 .varschool_stack br,
-.varschool_stackitem > .varcontent br,
-.varschool_con > .varcontent br, 
-.varschool_stackitem > .varcontent ul br,
-.varschool_con > .varcontent ul li {
+.varschool_stackitem > .varcontent br {
   line-height: 0 !important;
 }
 
