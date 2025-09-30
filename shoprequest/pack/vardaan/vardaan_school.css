@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
@@ -79,7 +80,7 @@
 
   font-family: "Uncial Antiqua", system-ui;
   font-weight: 400;
-  font-size: clamp(24px, 5vw, 60px);
+  font-size: clamp(26px, 5vw, 60px);
   text-transform: capitalize !important;
   text-align: center;
   line-height: 1;
@@ -117,13 +118,13 @@
   outline: 1px solid rgb(241, 220, 143);
 }
 
+.varschool_message br {
+  line-height:0;
+}
+
 .varschool_message2{
   border-radius:10px;
   margin:0 1%;
-}
-
-.varschool_message br {
-  line-height:0;
 }
 
 .varschool_message::after {
@@ -739,14 +740,19 @@
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
 }
 
+
 @media (max-width: 1200px) {
 
   .varschool_con::before,
-  .varschool_message::after {
+  .varschool_message::after,
+  .varschool_message::before,
+  .varschool_message2::before,
+  .varschool_incon::before,
+  .varschool_frameprof::before {
     display: none;
   }
 
-  .varschool_message, .varschool_message2 {
+  .varschool_message, .varschool_message2, .varschool_incon {
     outline:none;
   }
 
