@@ -737,7 +737,8 @@
 .varschool_con br,
 .varschool_message br,
 .varschool_stack br,
-.varcontent br {
+.varcontent br,
+.varcontent ul br {
   line-height:0;
 }
 
