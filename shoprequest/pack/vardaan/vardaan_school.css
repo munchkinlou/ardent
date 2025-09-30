@@ -426,10 +426,10 @@
 }
 
 .varschool_con old {
-  display: block;
-  margin: 10px auto;
+display:block !important;
+	margin: 20px auto !important;
+	width:100% !important;
   padding:5px 1px;
-  width:98%;
 
   background:rgb(239, 237, 222);
   color: rgb(66, 66, 66);
@@ -574,13 +574,13 @@ display:inline-block;
 .varcontent a {
   text-decoration: none !important;
   font-weight: bold;
-  color: rgb(44, 44, 44);
+  color: rgb(44, 44, 44) !important;
   transition: letter-spacing 0.3s ease, color 0.3s ease;
 }
 
 .varcontent a:hover {
   color: rgb(157, 135, 91);
-  letter-spacing: 1.3px;
+  letter-spacing: 1.1px;
   text-shadow: 0 0 2px rgba(234, 225, 185, 0.9);
   transition: letter-spacing 0.3s ease, color 0.3s ease;
 }
