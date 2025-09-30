@@ -561,7 +561,13 @@
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
+  font-size:0;
 }
+
+.varcontent ul li {
+  font-size:16px;
+}
+
 
 .varcontent a {
   text-decoration: none !important;
