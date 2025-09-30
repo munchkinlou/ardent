@@ -758,7 +758,7 @@ display:inline-block;
 
 @media (max-width: 1200px) {
 
-.varschool_con {
+.varschool_con, .varcontent {
   overflow-x:auto !important;
 }
 
