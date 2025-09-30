@@ -530,7 +530,6 @@ display:inline-block;
   scrollbar-color: #dedede #f1f1f100;
   
   overflow-y:auto;
-  overflow-x:auto;
 
   transition: max-height 0.5s ease, padding 0.5s ease;
 }
