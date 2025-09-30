@@ -734,10 +734,12 @@
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
 }
 
-.varschool_con br, .varschool_message br, .varschool_stack br {
+.varschool_con br,
+.varschool_message br,
+.varschool_stack br,
+.varcontent br {
   line-height:0;
 }
-
 
 @media (max-width: 1200px) {
 
