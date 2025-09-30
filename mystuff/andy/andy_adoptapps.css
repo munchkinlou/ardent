@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@font-face {
+  font-family: 'andyadoptapp';
+  src: url('VikingNormal-36VL.otf') format('truetype');
+}
+
+.andyappt1 {
+	position: relative;
+  width: 400px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+
+  --borbg: none;
+  --conbg: none;
+  --inconbor: none;
+  --ingconbg: none;
+  --inconglow: none;
+  --charcolor: none;
+  --textcolor: none;
+  --titlecolor:none;
+}
+
+.andyappt1 credit {
+  display:block;
+  text-align:center;
+  text-transform:uppercase;
+  font-size:10px;
+  font-weight: bold;
+  margin: 10px auto;
+  font-family: arial;
+}
+
+.andyappt1 img {
+  position: absolute;
+  object-fit:contain;
+  z-index:10;
+  filter: drop-shadow(0 0px 3px rgba(0,0,0,0.75)) drop-shadow(0 0px 3px rgba(0,0,0,0.75));
+}
+
+.andyappt1_bor {
+  position: relative;
+  width: 100%;
+  background: var(--borbg);
+  padding: 3px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
+.andyappt1_con {
+  position: relative;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  pointer-events: none;
+  margin: 0 auto;
+  overflow: hidden;
+  background: var(--conbg);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.andyappt1_con chartitle {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-right: 10px;
+  font-family: 'andyadoptapp';
+  font-weight: bold;
+  text-shadow: none;
+  font-size: 40px;
+  color: transparent;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(to right, transparent, var(--inconbor), transparent) 1;
+  padding: 30px 0 0;
+  background: var(--titlecolor);
+  -webkit-background-clip: text;
+  background-clip: text;
+  line-height: 1;
+  filter: drop-shadow(0 10px 10px rgba(0,0,0,0.8));
+  z-index:10;
+}
+
+.andyappt1_con > * {
+  position: relative;
+  z-index: 2;
+}
+
+.andyappt1_incon {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 2px solid var(--inconbor);
+  padding: 70px 10px 0;
+  width: 100%;
+  min-height:320px;
+  box-sizing: border-box;
+  background: var(--inconbg);
+  height: auto;
+  box-shadow: 0 0 5px 5px var(--inconglow), inset 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-family: 'Amarante';
+  font-size: 15px;
+  color: var(--textcolor);
+  line-height: 1.2;
+}
+
+.andyappt1_incon b {
+  display:block;
+  margin-top:6px;
+  margin-bottom:2px;
+  color: var(--charcolor);
+  font-family: "Lato", sans-serif;
+  font-weight:400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size:11px;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+}
+
+
+.andyapp_info {
+  position:relative;
+  margin:auto;
+  width:85%;
+  display:block;
+  text-align:justify;
+  font-size:15px;
+  padding: 0 40px;
+  font-family: lato;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-image: linear-gradient(to bottom, transparent, red, transparent) 1;
+}
+
+.andyapp_info b {
+  display:block;
+  font-size:20px;
+  text-align:center;
+  font-family: 'andyadoptapp';
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+.andyapp_info sub {
+  display:block;
+  font-family: "Lato", sans-serif;
+  font-weight:bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+.andyappt1 label {
+  display:block;
+  margin: 0 auto -60px -5px;
+  padding: 5px;
+  width: 100%;
+
+  color: var(--charcolor);
+  text-align: center;  
+  text-decoration: none !important;
+  line-height: 1;
+  font-family: "Lato", sans-serif;
+  font-weight:400px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size:11px;
+
+  border-radius: 5px;
+
+  background:var(--inconbg);
+
+  filter: drop-shadow(0 0 5px var(--inconglow));
+
+  pointer-events:auto;
+  cursor: pointer;
+}
+
+.andyappt1 input[type="checkbox"] {
+  display:none !important;
+}
+
+.andyappt1_stats {
+  margin: 60px auto -25px;
+  width: auto;
+  max-height:0;
+
+  opacity: 0;
+  padding: 0 5px;
+
+  background: var(--conbg);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6), inset 0 0 10px rgba(0, 0, 0, 0.6);
+
+  border-radius: 5px;
+
+  font-family: "Amarante", serif;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: left;
+  color: var(--textcolor);
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+
+  transition: max-height 0.5s ease, padding 0.5s ease;
+}
+
+.andyappt1_stats b {
+  font-size:11px;
+  margin: 5px 0;
+}
+
+.andyappt1_stats br {
+  line-height:0 !important;
+}
+
+.andyappt1_stats ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size:0;
+}
+
+.andyappt1_stats li {
+  font-size:16px;
+}
+
+.andyappt1_incon input[type="checkbox"]:checked + label + .andyappt1_stats {
+  max-height: 500px;
+  opacity: 1;
+  padding: 15px 20px;
+}
+
+.andyappt1_incon input[type="checkbox"]:checked ~ .andyappt1_stats {
+  max-height: 500px !important;
+  opacity: 1 !important;
+  padding: 15px 20px !important;
+}
+
+
+
+@media (max-width: 1200px) {
+
+  .andyappt1 {
+    filter: none;
+    margin: 0 auto;
+  }
+
+  .andyappt1_con::before {
+    display: none;
+  }
+
+  .andyappt1_con speech {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    display: block;
+    text-align: center;
+    transform: none;
+  }
+.andyappt1 credit {
+  margin: 0 auto;
+}
+
+.andyappt1 img {
+  position:relative;
+  inset:auto !important;
+  width:100% !important;
+  height:auto !important;
+}
+
+
+.andyappt1_incon {
+  min-height:10px;
+}
+
+}
+
