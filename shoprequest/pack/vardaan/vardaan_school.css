@@ -718,7 +718,7 @@ display:inline-block;
 
 .varcontent table {
   width:100%;
-  margin: 20px auto 0;
+  margin: 20px auto;
 }
 
 .varcontent td {
@@ -768,7 +768,8 @@ display:inline-block;
   .varschool_message2::before,
   .varschool_incon::before,
   .varschool_frameprof::before,
-  .varschool_frameprof::after {
+  .varschool_frameprof::after,
+  .varschool_signup::after {
     display: none;
   }
 
