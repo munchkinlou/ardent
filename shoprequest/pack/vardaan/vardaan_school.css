@@ -423,13 +423,13 @@
 
 .varschool_con label {
   margin: 0 auto;
-	display:block !important;
-	width:100%;
+  width: 100%;
+  display:auto;
 }
 
 .varschool_con old {
   display: block;
-  margin: -10px auto 0;
+  margin: 10px auto 5px;
   padding:5px 1px;
   width:98%;
 
@@ -770,7 +770,7 @@ display:inline-block;
   .varschool_frameprof::before,
   .varschool_frameprof::after,
   .varschool_signup::after {
-    display: none;
+    display: none !important;
   }
 
   .varschool_message, .varschool_message2, .varschool_incon {
@@ -787,11 +787,16 @@ display:inline-block;
 
   .varschool_frameprof prof {
     opacity: 1;
+    filter:none;
   }
 
   .varschool_frameprof {
     height: auto;
     border-radius:0px;
   }
+
+.varcontent ul {
+  align-items:center;
+}
 
 }
