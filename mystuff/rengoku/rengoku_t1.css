@@ -7,7 +7,7 @@
 .rengokut1_content {
 	position: relative;
   width: 400px;
-  margin: 50px auto 20px;
+  margin: 50px auto 40px 10%;
   position: relative;
   overflow: visible;
   padding: 0;
@@ -22,21 +22,21 @@
   text-transform:uppercase;
   font-size:10px;
   font-weight: bold;
-  margin: 10px auto 0 -200px;
+  margin: 10px auto;
   font-family: arial;
 }
 
 .rengokut1_img {
   position: absolute;
   bottom: -50px;
-  left: 140px;
-  width: 160%;
+  left: 300px;
+  width: 130%;
   height: 500px;
-  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Rengoku/RengokuShaded2.png?updatedAt=1758297026977') no-repeat center bottom;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Rengoku/dude1.png?updatedAt=1759421649381') no-repeat center bottom;
   background-size: contain; 
   z-index: 5;
   pointer-events: none;
-  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.8));
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 2px rgba(0, 0, 0, 0.8));
 }
 
 .rengokut1_bor {
@@ -46,7 +46,7 @@
   padding: 5px;
   border-radius: 10px;
   box-sizing: border-box;
-  margin: 0 auto 0 -100px;
+  margin: 0 auto;
 }
 
 .rengokut1_con {
@@ -70,7 +70,7 @@
   width: 100%;
   height: 400px;
   background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Rengoku/fire.png?updatedAt=1755231359185') no-repeat center top;
-  opacity:0.9;
+  opacity:0.7;
   background-size: contain; 
   z-index: 5;
   filter: drop-shadow(0 10px 10px rgba(0,0,0,0.8));
@@ -137,6 +137,7 @@
 }
 
 
+
 @media (max-width: 1200px) {
 
   .rengokut1_content {
@@ -164,5 +165,4 @@
 }
 
 }
-
 
