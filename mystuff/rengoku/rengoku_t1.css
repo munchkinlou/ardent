@@ -7,7 +7,7 @@
 .rengokut1_content {
 	position: relative;
   width: 400px;
-  margin: 50px auto 40px clamp(0px, 8vw, 200px);
+  margin: 50px auto 40px clamp(0px, 5vw, 300px);
   position: relative;
   overflow: visible;
   padding: 0;
