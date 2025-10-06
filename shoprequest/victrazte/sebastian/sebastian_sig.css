@@ -76,10 +76,10 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  animation: sig1_chryssaglow 6s ease-in-out infinite;
+  animation: sig1_sebasglow 6s ease-in-out infinite;
 }
 
-@keyframes sig1_chryssaglow {
+@keyframes sig1_sebasglow {
   0%, 100% {
     filter: drop-shadow(0 0 2px #ffd700) drop-shadow(0 0 6px rgba(255, 167, 0, 0.6));
   }
