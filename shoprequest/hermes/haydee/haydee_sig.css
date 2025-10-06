@@ -127,10 +127,6 @@
     overflow: hidden;
     margin: 0 auto;
   }
-  .haydees1_con::before {
-    background-size: cover;
-    background-position: center;
-  }
   .haydees1_incon {
     width: 100%;
     height: auto;
