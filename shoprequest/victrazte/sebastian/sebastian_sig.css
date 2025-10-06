@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+
+.sebastians1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 670px;
+  margin: 90px auto 70px;
+  position: relative;
+  overflow: visible;
+}
+
+.sebastians1_con {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 120px;
+  border: 2px solid rgb(0, 0, 0);
+  background: black;
+  border-radius:20px 0;
+  box-shadow: 0 0 5px rgba(0,0,0,0.6);
+  filter: none;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: visible;
+}
+
+.sebastians1_con::before {
+  content:'';
+  position: absolute;
+  inset:0;
+  background: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/acb69457-2e5c-444f-b6f8-7df5d9829ac2/dkfozt0-6fb0f903-c180-415c-8c10-c0424915658a.png/v1/fill/w_1276,h_514,q_80,strp/ych_eyes_of_fire_by_wiegmannor_dk5goee_by_victrazte_dkfozt0-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTE0IiwicGF0aCI6Ii9mL2FjYjY5NDU3LTJlNWMtNDQ0Zi1iNmY4LTdkZjVkOTgyOWFjMi9ka2ZvenQwLTZmYjBmOTAzLWMxODAtNDE1Yy04YzEwLWMwNDI0OTE1NjU4YS5wbmciLCJ3aWR0aCI6Ijw9MTI3NiJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.j6zYLBcHh86u2lNMpR-c8JL3QRh3V3f-Zr3ysJIjzJ0');
+  background-size: cover;
+  background-position: 100% 70%;
+  background-repeat: no-repeat;
+  z-index: 0;
+  border-radius: inherit;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.sebastians1_con > * {
+  position: relative;
+  z-index: 1;
+}
+
+.sebastians1_incon {
+  width: 100%;
+  height: 80%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1.5px solid;
+  border-image: linear-gradient(to right, black, #be3102 50%, black 100%) 1;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.sebastians1_img {
+  position: absolute;
+  top: 30%;
+  right: -20%;
+  transform: none;
+  margin-right: 0;
+  width: 45%;
+  height: 100%;
+  z-index: 2;
+  background: transparent url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/acb69457-2e5c-444f-b6f8-7df5d9829ac2/djrdp46-df6d2bb4-8bab-42be-bf50-54e0ccd2f3f4.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi9hY2I2OTQ1Ny0yZTVjLTQ0NGYtYjZmOC03ZGY1ZDk4MjlhYzIvZGpyZHA0Ni1kZjZkMmJiNC04YmFiLTQyYmUtYmY1MC01NGUwY2NkMmYzZjQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.JParz_q7Cg6gbu8a_ST7bQgiXtlXDdXROPrKRPmx02A');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: sig1_chryssaglow 6s ease-in-out infinite;
+}
+
+@keyframes sig1_chryssaglow {
+  0%, 100% {
+    filter: drop-shadow(0 0 2px #ffd700) drop-shadow(0 0 6px rgba(255, 167, 0, 0.6));
+  }
+  50% {
+  filter: drop-shadow(0 0 2px #ffb300) drop-shadow(0 0 15px rgba(255, 159, 36, 0.9));
+  }
+}
+
+.sebastians1_text {
+  color: #ffbf00;
+  font-family: "Aladin", system-ui;
+  font-weight: 400;
+  text-shadow: 0 0 8px #000, 0 0 2px #000000,0 0 2px #000000;
+  text-align: center;
+  line-height: 0.8;
+  padding-top: 5px;
+  font-weight:100;
+  font-size:20px;
+  padding-right: 0%;
+  opacity:0.9;
+}
+
+.sebastians1_text b {
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .sebastians1 {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    padding: 0 4vw;
+    margin: 0 auto;
+  }
+  .sebastians1_con {
+    height: auto;
+    min-height: 150px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 12px 0 8px 0;
+    overflow: hidden;
+
+  }
+  .sebastians1_con::before {
+    background-size: cover;
+    background-position: bottom;
+  }
+  .sebastians1_incon {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0 auto auto;
+  }
+  .sebastians1_text {
+    margin:0;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 2px;
+    order: 1;
+    height: auto;
+  }
+  .sebastians1_img {
+    display:none;
+  }
+
+}
