@@ -173,6 +173,8 @@
   position: relative;
   inset:auto;
 }
-
+.nereust2_bor, .nereust2_con, .nereust2_con::before, .nereust2_incon {
+  border-radius: 0;
+}
 
 }
