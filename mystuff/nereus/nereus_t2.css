@@ -10,8 +10,8 @@
 
 .nereust2 {
 	position: relative;
-  width: 450px;
-  margin: 30px auto 30px;
+  width: 400px;
+  margin: 50px auto 30px;
   position: relative;
   overflow: visible;
   padding: 0;
@@ -37,10 +37,10 @@
 
 .nereust2_img {
   position: absolute;
-  top: -40px;
+  top: -60px;
   left: -100px;
-  width: 135%;
-  height: 500px;
+  width: 140%;
+  height: 550px;
   background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Nereus/angy.png?updatedAt=1757873735847') no-repeat center top;
   background-size: contain; 
   z-index: 5;
@@ -61,7 +61,7 @@
 .nereust2_con {
   position: relative;
   width: 100%;
-  padding: 380px 10px 10px;
+  padding: 10px;
   box-sizing: border-box;
   pointer-events: none;
   margin: 0 auto;
@@ -95,8 +95,8 @@
 .nereust2_incon {
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
-  padding: 10px 20px 0;
+  border-radius: 300px 300px 10px 10px;
+  padding: 400px 20px 0;
   width: 100%;
   box-sizing: border-box;
   background: rgba(0,0,0,0.8);
@@ -105,13 +105,13 @@
   text-align: justify;
   font-family: 'Amarante';
   font-size: 12px;
-  color: #ffffff;
+  color: #ebebeb;
   line-height: 1.2;
   border: 1px solid #000000;
 }
 
 .nereust2_incon speak {
-  color: #FFDC75;
+  color: #ffffff;
 	font-family: 'Amarante';
   font-size: 14px;
   color: transparent;
@@ -168,5 +168,11 @@
 .nereust2_incon {
   min-height: 10px;
 }
+
+.nereust2 credit {
+  position: relative;
+  inset:auto;
+}
+
 
 }
