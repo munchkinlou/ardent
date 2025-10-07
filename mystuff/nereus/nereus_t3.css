@@ -1,7 +1,8 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
 @font-face {
-  font-family: 'Kjar_Viking';
+  font-family: 'nereust3';
   src: url('VikingNormal-36VL.otf') format('truetype');
 }
 
@@ -140,7 +141,7 @@
 
 .nereust3_speech speak {
   display: inline;
-  font-family: 'Kjar_Viking';
+  font-family: 'nereust3';
 
   text-shadow: none;
   font-size: 40px;
