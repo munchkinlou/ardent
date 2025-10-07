@@ -1,14 +1,28 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Griffy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap');
+@font-face {
+    font-family: 'kalliast1';
+    src: url('CatcallingDemo-WyP8V.ttf');
+}
 
 .kalliast1_content {
-    width: 100%;
-    max-width: 800px;
+    width: 800px;
     margin: 0 auto;
     position: relative;
     box-sizing: border-box;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.kalliast1_content credit {
+    display:block;
+    font-size:10px;
+    text-transform: uppercase;
+    font-weight:bold;
+    font-family:arial;
+    margin: -5px auto 0;
+    text-align: center;
 }
 
 .kalliast1_img {
@@ -41,7 +55,7 @@
     content: '';
     position: absolute;
     inset: 5px;
-    background: url('https://ik.imagekit.io/arl60/Ardent/shop/Bunni/Kallias/Kallias_ghosts.png?updatedAt=1759850219333') no-repeat center center;
+    background: url('https://i.ibb.co/p6tFphPD/Kallias-ghosts.png') no-repeat center center;
     background-size: cover;
     z-index: -1;
     clip-path: polygon(0% 0%, 100% 0%, 100% 98%, 50% 100%, 0% 98%);
@@ -67,7 +81,7 @@
     overflow: visible;
 }
 
-.kalliast1_bgvid {
+.kalliast1_bgvid, .kallias_container video {
     position: absolute;
     top: 0;
     left: 0;
@@ -138,9 +152,9 @@
     box-shadow: 0 0 3px rgba(240, 220, 209, 0.3);
 }
 
-.kalliast1_diag {
-    font-family: 'Griffy';
-    font-size: 16px;
+.kalliast1_diag, .kalliast1_text speak {
+    font-family: 'kalliast1';
+    font-size: 20px;
     font-weight: bold;
     background: linear-gradient(to bottom, #3AEAE6, #3AEAE6);
     -webkit-background-clip: text;
@@ -151,7 +165,7 @@
     line-height: 1.1;
 }
 
-.kalliast1_spirits {
+.kalliast1_spirits, .kalliast1_text spirits, .kalliast1_speech spirits {
     font-family: 'Euphoria Script';
     font-size: 20px;
     font-weight: bold;
@@ -166,7 +180,7 @@
 
 
 .kalliast1_speech {
-    font-family: 'Griffy';
+    font-family: 'kalliast1';
     font-size: 25px;
     text-align: center;
     margin: -10px 0 -100px 0;
@@ -219,5 +233,3 @@
         filter: none;
     }
 }
-
-
