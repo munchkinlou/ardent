@@ -51,7 +51,7 @@
 .nereust4_bor {
   position: relative;
   width: 100%;
-  background: linear-gradient(to bottom, #000000, #8bdeff);
+  background: linear-gradient(to top, #000000, #8bdeff);
   padding: 4px;
   box-sizing: border-box;
   margin: 0 auto;
