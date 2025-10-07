@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+@font-face {
+  font-family: 'Kjar_Viking';
+  src: url('VikingNormal-36VL.otf') format('truetype');
+}
+
+.nereust3 {
+	position: relative;
+  width: 700px;
+  height: 750px;
+  margin: 20px auto 40px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+}
+
+
+.nereust3 credit {
+  position: absolute;
+  bottom: -25px;
+  right: 0;
+  width: 100%;
+  display:block;
+  text-align:center;
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.nereust3_bor {
+  position: relative;
+  width: 100%;
+  height:100%;
+  background: linear-gradient(to bottom, #5f7187, #32503c 90%);
+  padding: 3px;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+.nereust3_con {
+  position: relative;
+  width: 100%;
+  height:100%;
+  padding: 20px 20px 240px 350px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  background: black;
+}
+
+.nereust3_con::before {
+  position:absolute;
+  content:'';
+  width:100%;
+  height:100%;
+  inset:0;
+
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+
+  background: url('https://ik.imagekit.io/arl60/Ardent/personal/Nereus/NereusForest1.png?updatedAt=1759806091132') no-repeat bottom;
+  background-size: 145%;
+  background-position: -240px -350px;
+  background-attachment: local;
+  z-index:1;
+}
+
+.nereust3_con > * {
+  position: relative;
+  z-index: 2;
+}
+
+.nereust3_incon {
+  position: relative;
+  overflow: hidden;
+  padding: 10px 15px 10px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, rgba(70, 76, 81, 0.846), rgba(0, 0, 0, 0.469));
+
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.9), inset 0 0 10px rgba(0, 0, 0, 0.8);
+
+  backdrop-filter: blur(2px);
+
+  text-align: justify;
+  font-family: 'Amarante';
+  font-size: 12px;
+  color: #eaeaea;
+  line-height: 1.2;
+  border: 1px solid;
+  border-image: linear-gradient(to top, black, rgb(255, 255, 255)) 1;
+
+  height:auto;
+  max-height:100%;
+  overflow-y:auto;
+
+  scrollbar-width:thin;
+  scrollbar-color: rgba(137, 137, 137, 0.891) rgba(0, 0, 0, 0);
+}
+
+.nereust3_incon::-webkit-scrollbar {
+  width: 8px;
+}
+
+.nereust3_incon::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+  border-radius: 4px;
+}
+
+.nereust3_incon::-webkit-scrollbar-thumb {
+  background: rgba(137, 137, 137, 0.891);
+  border-radius: 4px;
+}
+
+.nereust3_incon::-webkit-scrollbar-thumb:hover {
+  background: rgba(137, 137, 137, 0.891);
+}
+.nereust3_incon speak {
+  color: #FFDC75;
+	font-family: 'Amarante';
+  font-size: 14px;
+  text-align: center;
+  text-shadow: none;
+  line-height: 0.9;
+  filter: drop-shadow(0 0 3px rgba(0,0,0,0.8));
+}
+
+.nereust3_speech {
+  display: block;
+  position: relative;
+  margin: 10px 0 -50px 0;
+  text-align: center;
+}
+
+.nereust3_speech speak {
+  display: inline;
+  font-family: 'Kjar_Viking';
+
+  text-shadow: none;
+  font-size: 40px;
+  line-height: 1.1;
+  filter: drop-shadow(0 0 3px rgba(0,0,0,0.8)) drop-shadow(0 0 3px rgba(171, 206, 231, 0.8));
+}
+
+.nereust3_incon speak, .nereust3_speech speak {
+  color: transparent;
+  background: linear-gradient(to bottom, #7fd2f1, #a6f4f5);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.nereust3_speech::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 100%;
+  height: 1.2px;
+  margin: 0px auto 0;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.5), transparent);
+}
+
+@media (max-width: 1200px) {
+
+.nereust3 {
+  width: 100%;
+  height: auto;
+}
+
+.nereust3_con {
+  padding: 0;
+}
+
+  .nereust3_con::before {
+    display: none;
+  }
+
+.nereust3_incon {
+  overflow-y:visible;
+}
+
+.nereust3 credit {
+  position: relative;
+  inset:auto;
+  display:block;
+  transform: none;
+}
+
+}
+
