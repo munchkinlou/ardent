@@ -11,7 +11,7 @@
 .nereust2 {
 	position: relative;
   width: 400px;
-  margin: 50px auto 30px;
+  margin: 100px auto 50px;
   position: relative;
   overflow: visible;
   padding: 0;
@@ -37,15 +37,16 @@
 
 .nereust2_img {
   position: absolute;
-  top: -60px;
-  left: -100px;
-  width: 140%;
-  height: 550px;
+  top: -120px;
+  left: -120px;
+  width: 150%;
+  height: 600px;
   background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Nereus/angy.png?updatedAt=1757873735847') no-repeat center top;
   background-size: contain; 
   z-index: 5;
   pointer-events: none;
   filter: drop-shadow(0 0 10px rgba(0,0,0,0.75));
+  transform: rotate(5deg);
 }
 
 .nereust2_bor {
@@ -99,7 +100,7 @@
   padding: 400px 20px 0;
   width: 100%;
   box-sizing: border-box;
-  background: rgba(0,0,0,0.8);
+  background: linear-gradient(to bottom, rgb(3, 3, 42), black);
   height: auto;
   box-shadow: 0 0 10px 10px rgba(77, 219, 255, 0.2);
   text-align: justify;
