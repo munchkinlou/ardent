@@ -119,7 +119,7 @@ filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.8));
 	font-family: "Gabriela", serif;
   font-size: 12px;
   font-weight: bold;
-  line-height: 0.9;
+  line-height: 1;
   color: transparent;
   background: linear-gradient(to bottom, #7FAEC1, #99F6C8);
   -webkit-background-clip: text;
