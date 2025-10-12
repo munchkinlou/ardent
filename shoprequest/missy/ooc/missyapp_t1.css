@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
+.missyappt1 {
+  position: relative;
+  width: 800px;
+  margin: 20px auto 40px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+}
+
+
+.missyappt1 credit {
+  position: absolute;
+  bottom: -25px;
+  right: 0;
+  width: 100%;
+  display:block;
+  text-align:center;
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.missyappt1_bor {
+  position: relative;
+  width: 100%;
+  height:auto;
+  background: var(--bordercolor);
+  padding: 3px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+.missyappt1_con {
+  position: relative;
+  width: 100%;
+  height:auto;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  background: var(--conbgcolor);
+}
+
+.missyappt1_con::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+  background: var(--conbgimage) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: local;
+  z-index: 1;
+  filter: var(--conbgedit);
+  opacity:0.6;
+}
+
+.missyappt1_con > * {
+  position: relative;
+  z-index: 2;
+}
+
+.missyappt1_top {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
+  gap: 0px;
+  height:450px;
+  background: var(--topbg);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9), inset 0 0 10px rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(0.9px);
+  border: 1px solid var(--topborder);
+}
+
+.missyappt1_image {
+  position:relative;
+  width:60%;
+  margin:0 auto;
+}
+
+.missyappt1_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: left;
+  filter: drop-shadow(0 0 3px var(--imageglow));
+}
+
+.missyappt1_incon {
+  position: relative;
+  overflow: hidden;
+  overflow-y: hidden;
+  padding: 0 0 0 20px;
+  width: 40%;
+  box-sizing: border-box;
+
+  text-align: center;
+  font-family: "Comfortaa", sans-serif;
+  font-weight:400;
+  font-size: 12px;
+  color: var(--textcolor);
+
+  line-height: 1.2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.missyappt1_incon b {
+  display: block;
+  text-transform: uppercase;
+  font-size: 10px;
+  margin-top: 10px;
+  color: var(--boldcolor);
+
+  font-weight: 600;
+  text-shadow: 0 0 3px rgba(0,0,0,0.2);
+}
+
+.missyappt1_info {
+  margin: 20px auto 0;
+  text-align: center;
+  font-family: "Comfortaa", sans-serif;
+  font-weight:400;
+  font-size: 12px;
+  color:var(--textcolor);
+  padding: 0 20px;
+
+  border: 2px solid;
+  border-image:linear-gradient(to bottom, transparent, 
+  rgb(48, 81, 70), transparent) 1;
+}
+
+.missyappt1_info b {
+  display: block;
+  font-family:'Redressed', cursive;
+  font-size: 20px;
+  color: var(--boldcolor);
+  font-weight: 600;
+  text-shadow: 0 0 3px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 1200px) {
+
+.missyappt1 {
+  width: 100%;
+  height: auto;
+}
+
+.missyappt1_con {
+  padding: 0;
+}
+
+  .missyappt1_con::before {
+    display: none;
+  }
+
+.missyappt1_incon {
+  overflow-y:visible;
+  margin: 0 auto;
+}
+
+.missyappt1 credit {
+  position: relative;
+  inset:auto;
+  display:block;
+  transform: none;
+}
+
+.missyappt1_top {
+  height:auto;
+  flex-direction: column;
+}
+
+
+}
+
