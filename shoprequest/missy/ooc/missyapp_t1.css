@@ -59,7 +59,7 @@
   background: var(--conbgimage) no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: local;
+  background-attachment: fixed;
   z-index: 1;
   filter: var(--conbgedit);
   opacity:0.6;
