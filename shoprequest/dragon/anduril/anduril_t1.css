@@ -52,7 +52,7 @@
   position: relative;
   width: 100%;
   height:100%;
-  padding: 30px 30px 220px 440px;
+  padding: 30px 30px 200px 440px;
   box-sizing: border-box;
   margin: 0 auto;
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
@@ -100,34 +100,31 @@
   z-index: 2;
 }
 
-.andurilt1_inbor {
-  position: relative;
-  overflow: hidden;
+.andurilt1_incon {
+  box-sizing: border-box;
+  width: 100%;
+  height:auto;
+  max-height:100%;
+
   background: linear-gradient(to top, transparent , #000039cf 100px, #01011dcf);
   backdrop-filter: blur(2px);
-  max-height: 100%;
-  height: auto;
   border-top: 1.5px solid;
   border-left: 1.5px solid;
   border-right: 1.5px solid;
   border-image: linear-gradient(to bottom, rgb(137, 117, 148), transparent) 1;
-  padding: 10px 5px 10px 20px;
-}
+  padding: 10px 15px 10px 20px;
 
-.andurilt1_incon {
-  position: relative;
-  width: 100%;
-  box-sizing: border-box;
+
   text-align: justify;
   font-family:georgia;
   font-size: 11px;
   color: #eaeaea;
   line-height: 1.3;
-  height: 100%;
-  padding-right:10px;
+
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: rgba(137, 137, 137, 0.891) rgba(0, 0, 0, 0);
+
 }
 
 .andurilt1_incon::-webkit-scrollbar {
@@ -219,10 +216,10 @@
   transform: none;
 }
 
-	.andurilt1_con video {
+.andurilt1_con video {
   display:none;
 }
 
-
 }
+
 
