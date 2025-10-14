@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@font-face {
+  font-family: 'andurilt1';
+  src: url('Aurahives-pg5EK.otf');
+}
+
+
+.andurilt1 {
+	position: relative;
+  width: 800px;
+  height: 570px;
+  margin: 20px auto 40px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+}
+
+
+.andurilt1 credit {
+  position: absolute;
+  bottom: -25px;
+  right: 0;
+  width: 100%;
+  display:block;
+  text-align:center;
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.andurilt1_bor {
+  position: relative;
+  width: 100%;
+  height:100%;
+  background: linear-gradient(to bottom, #010041, #1C153B);
+  padding: 3px;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+
+
+  border-radius:20px 0;
+  overflow:hidden;
+}
+
+.andurilt1_con {
+  position: relative;
+  width: 100%;
+  height:100%;
+  padding: 30px 30px 220px 440px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  background: black;
+
+    border-radius:20px 0;
+}
+
+.andurilt1_con video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  object-fit: cover;
+  opacity: 0.2;
+  pointer-events:none;
+  user-select: none;
+}
+
+.andurilt1_con::before {
+  position:absolute;
+  content:'';
+  width:100%;
+  height:100%;
+  inset:0;
+
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/Dragon/Anduril/finished_ych_by_zilkesee_dkhsz45.png?updatedAt=1760428746763') no-repeat bottom;
+  background-size: cover;
+  background-position: center;
+  background-attachment: local;
+  z-index:1;
+
+    border-radius:20px 0;
+
+  filter:brightness(1.1);
+
+}
+
+.andurilt1_con > * {
+  position: relative;
+  z-index: 2;
+}
+
+.andurilt1_inbor {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to top, transparent , #000039cf 100px, #01011dcf);
+  backdrop-filter: blur(2px);
+  max-height: 100%;
+  height: auto;
+  border-top: 1.5px solid;
+  border-left: 1.5px solid;
+  border-right: 1.5px solid;
+  border-image: linear-gradient(to bottom, rgb(137, 117, 148), transparent) 1;
+  padding: 10px 5px 10px 20px;
+}
+
+.andurilt1_incon {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: justify;
+  font-family:georgia;
+  font-size: 11px;
+  color: #eaeaea;
+  line-height: 1.3;
+  height: 100%;
+  max-height: 100%;
+  padding-right:10px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(137, 137, 137, 0.891) rgba(0, 0, 0, 0);
+}
+
+.andurilt1_incon::-webkit-scrollbar {
+  width: 8px;
+}
+
+.andurilt1_incon::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+  border-radius: 4px;
+}
+
+.andurilt1_incon::-webkit-scrollbar-thumb {
+  background: rgba(137, 137, 137, 0.891);
+  border-radius: 4px;
+}
+
+.andurilt1_incon::-webkit-scrollbar-thumb:hover {
+  background: rgba(137, 137, 137, 0.891);
+}
+.andurilt1_incon speak {
+  color: #FFDC75;
+  font-family: 'Merienda';
+  font-weight:400;
+  font-size:11px;
+  text-align: center;
+  text-shadow: none;
+  line-height: 0.9;
+  filter: drop-shadow(0 0 3px rgba(0,0,0,0.8));
+}
+
+.andurilt1_speech {
+  display: block;
+  position: relative;
+  margin: 10px 0 -50px 0;
+  text-align: center;
+}
+
+.andurilt1_speech speak {
+  display: inline;
+  font-family: 'andurilt1';
+
+  text-shadow: none;
+  font-size: 35px;
+  line-height: 1.1;
+  filter: drop-shadow(0 0 3px rgba(0,0,0,0.8)) drop-shadow(0 0 3px rgba(171, 206, 231, 0.8));
+}
+
+.andurilt1_incon speak, .andurilt1_speech speak {
+  color: transparent;
+  background: linear-gradient(to bottom, #DC7C45, #FFD187);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.andurilt1_speech::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 100%;
+  height: 1.2px;
+  margin: 0px auto 0;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.5), transparent);
+}
+
+@media (max-width: 1200px) {
+
+.andurilt1 {
+  width: 100%;
+  height: auto;
+}
+
+.andurilt1_con {
+  padding: 0;
+}
+
+  .andurilt1_con::before {
+    display: none;
+  }
+
+.andurilt1_incon {
+  overflow-y:visible;
+}
+
+.andurilt1 credit {
+  position: relative;
+  inset:auto;
+  display:block;
+  transform: none;
+}
+
+}
+
