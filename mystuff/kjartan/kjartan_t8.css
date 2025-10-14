@@ -7,7 +7,7 @@
 
 .kjartant8 {
 	position: relative;
-  width: 400px;
+  width: 550px;
   margin: 120px auto 50px;
   position: relative;
   overflow: visible;
@@ -34,8 +34,8 @@
 
 .kjartant8_img {
   position: absolute;
-  top: -120px;
-  left: -130px;
+  top: -130px;
+  left: -150px;
   width: 150%;
   height: 550px;
   background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Kjartan/Andy_-_Kjartan_bust.png?updatedAt=1760415721746') no-repeat center top;
