@@ -5,7 +5,7 @@
   src: url(CryptHorror-BLlLV.ttf);
 }
 
-.runart1 {
+.shadowt1 {
 	position: relative;
   width: 450px;
   margin: 20px auto 130px;
@@ -17,7 +17,7 @@
 }
 
 
-.runart1 credit {
+.shadowt1 credit {
   position: absolute;
   width: 100%;
   display:block;
@@ -33,7 +33,7 @@
   justify-content: center;
 }
 
-.runart1_img {
+.shadowt1_img {
   position: absolute;
   bottom: -135px;
   left: -170px;
@@ -47,7 +47,7 @@
   filter: drop-shadow(0 0 2px rgba(0,0,0,0.9));
 }
 
-.runart1_bor {
+.shadowt1_bor {
   position: relative;
   width: 100%;
   background: linear-gradient(to bottom, #000000, #000000 90%);
@@ -57,7 +57,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
-.runart1_con {
+.shadowt1_con {
   position: relative;
   width: 100%;
   padding: 15px;
@@ -67,7 +67,7 @@
   background: black;
 }
 
-.runart1_con::before{
+.shadowt1_con::before{
   content:'';
   position:absolute;
   inset:0;
@@ -79,12 +79,12 @@
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.9);
 }
 
-.runart1_con > * {
+.shadowt1_con > * {
   position: relative;
   z-index: 2;
 }
 
-.runart1_incon {
+.shadowt1_incon {
   position: relative;
   overflow: hidden;
   padding: 15px 25px 350px;
@@ -102,7 +102,7 @@
   border-image: linear-gradient(to bottom, rgb(137, 196, 228), #000000) 1;
 }
 
-.runart1_incon speak {
+.shadowt1_incon speak {
   color: #FFDC75;
   font-family: "Grenze Gotisch", serif;
   font-size: 20px;
@@ -116,7 +116,7 @@
   filter: drop-shadow(0 0 3px rgba(0,0,0,0.8));
 }
 
-.runart1_incon d {
+.shadowt1_incon d {
   display: block;
   margin: 0 auto;
   padding: 0;
@@ -129,7 +129,7 @@
   filter: drop-shadow(0 0 1px rgba(0,0,0,1)) grayscale(1) brightness(0.7);
 }
 
-.runart1_speech {
+.shadowt1_speech {
   display: block;
   position: absolute;
   margin: 0 auto;
@@ -139,7 +139,7 @@
   z-index:10;
 }
 
-.runart1_speech speak {
+.shadowt1_speech speak {
   display: inline;
   font-family: 'shadowt1';
   letter-spacing: 6px;
@@ -156,15 +156,15 @@
 
 @media (max-width: 1200px) {
 
-  .runart1_content {
+  .shadowt1_content {
     filter: none;
   }
 
-  .runart1_con::before {
+  .shadowt1_con::before {
     display: none;
   }
 
-.runart1 credit {
+.shadowt1 credit {
   position: relative;
   display:block;
   bottom: auto;
