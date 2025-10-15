@@ -168,10 +168,16 @@
   position: relative;
   display:block;
   bottom: auto;
-  right: -auto;
+  right: auto;
   display:block;
   transform: none;
 }
 
+	.shadowt1_speech {
+  position: relative;
+  inset:auto;
+}
+
+	
 }
 
