@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+
+.duskt1 {
+	position: relative;
+  width: 550px;
+  margin: 20px auto 30px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+}
+
+.duskt1 credit {
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  left:0;
+  width: 100%;
+  display:block;
+  text-align:center;
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.duskt1_bor {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to top, #3b4445);
+  padding: 4px;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  box-shadow: 5px 5px 5px rgba(72, 72, 72, 0.75);
+}
+
+.duskt1_con {
+  position: relative;
+  width: 100%;
+  padding: 2px;
+  box-sizing: border-box;
+  pointer-events: none;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, #D0C3AB);
+  overflow:hidden;
+}
+
+.duskt1_con > * {
+  position: relative;
+  z-index: 5;
+}
+
+.duskt1_inbor {
+  position: relative;
+  z-index: 6;
+  margin: 0 auto;
+  padding: 410px 20px 20px;
+  width: 100%;
+  min-height: 100px;
+  box-sizing: border-box;
+  background: white;
+
+}
+
+.duskt1_inbor video {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+
+  pointer-events:none;
+}
+
+
+.duskt1_inbor::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #deeced 60px, transparent 130px);
+  background-size: 100%;
+  background-attachment: contain;
+  pointer-events: none;
+  overflow: hidden;
+  z-index:2;
+}
+
+.duskt1_inbor::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent 360px, #D3C7B3 400px, rgb(233, 224, 208));
+  background-size: 100%;
+  background-attachment: contain;
+  pointer-events: none;
+  overflow: hidden;
+  z-index:2;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.75);
+}
+
+.duskt1_incon {
+  position: relative;
+  padding: 5px 15px 0;
+  min-height: 100px;
+  margin: 0px;
+  z-index: 10;
+  text-align: justify;
+  font-family: "Forum", serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #6a4021;;
+  line-height: 1.1;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, transparent, #ede4d7, transparent);
+  border: 2px solid;
+  border-top:none;
+  border-image:linear-gradient(to bottom, transparent, white, transparent) 1;
+  }
+
+.duskt1_incon speak, .duskt1_speech speak {
+  font-family: "Amarante", serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #333231;
+  text-align: center;
+  text-shadow: 0 0 0.5px rgb(44, 44, 44);
+  line-height: 1;
+  filter: drop-shadow(0 0 1px #c9a980 );
+}
+
+.duskt1_speech {
+  display: block;
+  position: relative;
+  margin: 10px auto -15px;
+  text-align: center;
+}
+
+.duskt1_speech speak {
+  font-size: 24px;
+}
+
+
+.duskt1_speech::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 100%;
+  height: 1.1px;
+  margin: 0px auto 0;
+  background: linear-gradient(to right, transparent, #ffffff, transparent);
+}
+
+.duskt1_bor, .duskt1_con, .duskt1_inbor {
+  border-radius: 300px 300px 10px 10px;
+  overflow:hidden;
+}
+
+@media (max-width: 1200px) {
+  
+.duskt1_inbor::before, .duskt1_inbor::after, .duskt1_inbor video {
+    display: none;
+  }
+
+.duskt1 credit {
+  position: relative;
+  inset:auto;
+}
+.duskt1_bor, .duskt1_con, .duskt1_inbor  {
+  border-radius: 0;
+}
+
+}
