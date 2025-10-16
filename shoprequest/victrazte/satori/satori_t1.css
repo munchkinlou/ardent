@@ -1,0 +1,180 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+.satorit1 {
+	position: relative;
+  width: 450px;
+  margin: 20px auto 130px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+}
+
+
+.satorit1 credit {
+  position: absolute;
+  width: 100%;
+  display:block;
+
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+
+  bottom:-20px;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  left:30px;
+}
+
+.satorit1_img {
+  position: absolute;
+  bottom: -165px;
+  left: -255px;
+  width: 190%;
+  height: 550px;
+  background: transparent url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/acb69457-2e5c-444f-b6f8-7df5d9829ac2/dkls07b-9812f3c8-47fb-4f36-a16e-9552aeacabf9.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi9hY2I2OTQ1Ny0yZTVjLTQ0NGYtYjZmOC03ZGY1ZDk4MjlhYzIvZGtsczA3Yi05ODEyZjNjOC00N2ZiLTRmMzYtYTE2ZS05NTUyYWVhY2FiZjkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.q8hhWjoPe9Q2-niyP3aeHgNuVLxdZfn8rNaW4_vT7kQ') no-repeat bottom;
+  background-size: contain; 
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0 0 2px rgba(0,0,0,0.9));
+}
+
+.satorit1_bor {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom, #000000, #000000 90%);
+  padding: 3px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.satorit1_con {
+  position: relative;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  pointer-events: none;
+  margin: 0 auto;
+  background: black;
+}
+
+.satorit1_con::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  background:url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/resource-database-vtqHbCY4lTM-unsplash.jpg?updatedAt=1760642470820') no-repeat left;
+  background-size:cover;
+  background-attachment:fixed;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+.satorit1_con > * {
+  position: relative;
+  z-index: 2;
+}
+
+.satorit1_incon {
+  position: relative;
+  overflow: hidden;
+  padding: 15px 25px 290px;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #0f111b, rgba(116, 77, 77, 0.5), rgba(0, 0, 0, 0.698));
+  height: auto;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.8);
+  text-align: justify;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 15px;
+  color: #eaeaea;
+  line-height: 1.2;
+  border: 2px solid;
+  border-image: linear-gradient(to bottom, white, #000000) 1;
+}
+
+.satorit1_incon speak {
+  color: #FFDC75;
+  font-family: "Winky Rough", sans-serif;
+  font-size: 18px;
+  color: transparent;
+  text-align: center;
+  background: linear-gradient(to bottom, #f00, #d75656);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: none;
+  line-height: 0.9;
+  filter: drop-shadow(0 0 3px rgba(0,0,0,0.8));
+}
+
+.satorit1_incon d {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(to right, transparent, white, transparent);
+  background-position: center;
+  background-size:contain;
+  width: 100%;
+  height: 1.5px;
+}
+
+.satorit1_speech {
+  display: block;
+  position: absolute;
+  margin: 0 auto;
+  text-align: center;
+  bottom: 185px;
+  z-index: 10;
+  left: 45px;
+}
+
+.satorit1_speech speak {
+  display: inline;
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+  color: transparent;
+  background: linear-gradient(to bottom, #f00, #d75656);
+    background-clip: border-box;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: none;
+  font-size: 50px;
+  line-height: 1.1;
+  filter: drop-shadow(0 0 3px rgba(0,0,0,0.8)) drop-shadow(0 0 3px rgba(0,0,0,0.8));
+  transform: rotate(50deg);
+}
+
+@media (max-width: 1200px) {
+
+  .satorit1_content {
+    filter: none;
+  }
+
+  .satorit1_con::before {
+    display: none;
+  }
+
+.satorit1 credit {
+  position: relative;
+  display:block;
+  bottom: auto;
+  right: -auto;
+  display:block;
+  transform: none;
+}
+
+.satorit1_speech {
+  position: relative;
+  inset:auto;
+}
+
+}
+
