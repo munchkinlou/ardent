@@ -165,10 +165,10 @@
 .satorit1 credit {
   position: relative;
   display:block;
-  bottom: auto;
-  right: -auto;
+  justify-content: center;
+  left:auto;
   display:block;
-  transform: none;
+  
 }
 
 .satorit1_speech {
