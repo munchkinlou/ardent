@@ -154,9 +154,9 @@
 .duskt1_speech::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 10px;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
   height: 1.1px;
   margin: 0px auto 0;
   background: linear-gradient(to right, transparent, #ffffff, transparent);
