@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+
+.kamaskint1 {
+  margin: 20px auto;
+  position: relative;
+  width: 800px;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.kamaskint1 credit {
+  position: relative;
+  bottom:-8px;
+
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+  display:block;
+
+  text-align:center;
+  text-transform:uppercase;
+  font-size:10px;
+  font-weight: bold;
+  font-family: arial;
+}
+
+
+.kamaskint1_bor {
+  position:relative;
+  padding: 1.2px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+  background: linear-gradient(to right, white, #DA8A6C);
+  border-radius:20px;
+}
+
+.kamaskint1_con {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: auto;
+  padding: 500px 20px 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #081318 url('https://ik.imagekit.io/arl60/Ardent/shop/Victrazte/Kamari/kamaskin.png?updatedAt=1760655473869') no-repeat left top;
+  background-size:100%;
+  border-radius:20px;
+}
+
+.kamaskint1_con::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent 490px, #11051B 540px, black 100%);
+  pointer-events: none;
+
+  box-shadow: inset 0 0 30px #991a99c4;
+}
+
+.kamaskint1_incon {
+  position: relative;
+  padding: 10px 20px 0;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #1b0929 20px, #2a0a30f5);
+  box-shadow: inset 0 0 10px #321649;
+  font-family: "Quicksand", sans-serif;
+  font-size: 10px;
+  color: #fff;
+  text-align: justify;
+  z-index: 5;
+  border-radius: 10px;
+
+}
+
+.kamaskint1_incon kam, .kamaskint1_spch kam {
+  color: transparent;
+	font-family: 'Delius Swash Caps';
+  font-size: 13px;
+  color: transparent;
+  background: linear-gradient(to bottom, #f3e285, #dac343);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: none;
+  line-height: 0.9;
+  filter: drop-shadow(0 0 2px black);
+}
+
+.kamaskint1_incon bas, .kamaskint1_spch bas {
+  color: transparent;
+  font-family: "New Rocker", system-ui;
+  font-weight: 400;
+  font-size: 15px;
+  color: transparent;
+  background: linear-gradient(to bottom, #df894c, #b9703c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: none;
+  line-height: 0.9;
+  filter: drop-shadow(0 0 2px black);
+}
+
+
+.kamaskint1_spch {
+  position:inherit;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.kamaskint1_spch kam {
+  font-size: 16px;
+}
+
+.kamaskint1_spch bas {
+  font-size: 18px;
+}
+
+
+.kamaskint1_spch::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%);
+  background: linear-gradient(to right, transparent, #f3e285, #cd6113, transparent);  height: 1.2px;
+  width: 60%;
+}
+
+@media (max-width: 1200px) {
+
+.kamaskint1 credit {
+  position: relative;
+  top: auto;
+  right: auto;
+  transform: none;
+}
+
+.kamaskint1_inf, .kamaskint1_inf::after, .kamaskint1_con::after {
+  display:none;
+}
+
+}
