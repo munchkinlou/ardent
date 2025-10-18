@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.odettes1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 600px;
+  margin: 90px auto;
+  position: relative;
+  overflow: visible;
+}
+
+.odettes1_con {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 120px;
+  border: 2px solid #110d1f;
+  background: rgb(29, 25, 48);
+  box-shadow: 0 0 5px rgba(0,0,0,0.6);
+  filter: none;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.odettes1_con::before {
+  content:'';
+  position: absolute;
+  inset:0;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/2632725_8741.jpg?updatedAt=1760754138078');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  z-index: 0;
+  box-shadow: inset 0 0 10px rgb(0, 0, 0);
+  filter: saturate(0.6);
+}
+
+.odettes1_con > * {
+  position: relative;
+  z-index: 1;
+}
+
+.odettes1_incon {
+  width: 100%;
+  height: 80%;
+  margin: 0 auto;
+  background-color: #0507098c;
+  border: 1.5px solid;
+  border-image:linear-gradient(to right, transparent, #9EC9F0, transparent) 1;
+  border-left:none;
+  border-right:none;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.odettes1_img {
+  position: absolute;
+  top: auto;
+  left: auto;
+  right:auto;
+  transform: none;
+  margin-right: 0;
+  width: 100%;
+  height: 230%;
+  z-index: 2;
+  background: transparent var(--image);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0 0 5px rgba(140, 43, 195, 0.6)) drop-shadow(0 0 3px rgba(123, 206, 214, 0.6));
+
+  transition: transform 1.5s ease, filter 1.5s ease;
+}
+
+.odettes1_img:hover {
+  transform: scale(1.1) rotate(-5deg);
+  filter: drop-shadow(0 0 5px rgba(51, 99, 255, 0.6)) drop-shadow(0 0 3px rgba(146, 137, 207, 0.6));
+}
+
+@media (max-width: 750px) {
+  .odettes1 {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    padding: 0 4vw;
+    margin: 0 auto;
+  }
+  .odettes1_con {
+    height: auto;
+    min-height: 150px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 12px 0 8px 0;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  .odettes1_con::before {
+    background-size: cover;
+    background-position: top;
+  }
+  .odettes1_incon {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: auto;
+  }
+  .odettes1_text {
+    margin:0;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 2px;
+    order: 1;
+    height: auto;
+  }
+  .odettes1_img {
+        position: relative;
+    margin: 0 auto;
+    top: auto;
+    left: auto;
+    height: 250px;
+    width: 100%;
+    transform: none;
+    display: block;
+    background-position: center;
+
+}
+}
