@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Milonga&display=swap');
+@font-face {
+  font-family: odettet1;
+  src: url('ChristmasCarolPersonalRegular-lgzPD.otf');
+}
+
+.odettet1 {
+	position: relative;
+  width: 500px;
+  margin: 360px auto 30px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+}
+
+
+.odettet1 credit {
+  position: absolute;
+  width: 100%;
+  display:block;
+
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+
+  bottom:-20px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.odettet1 t {
+  position: absolute;
+  display:block;
+  top: 270px;
+  left:-100px;
+
+  width:100%;
+  height:auto;
+
+  font-family: 'odettet1', cursive;
+  font-size:120px;
+  text-align: center;
+  
+  color: transparent;
+  background: linear-gradient(to bottom, #7fe8e8, #50a2ea);
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  filter:drop-shadow(0 0 2px rgba(0,0,0,0.5)) drop-shadow(0 0 5px rgba(0,0,0,0.5));
+
+  z-index:10;
+}
+
+.odettet1 t::before{
+  content:'';
+  position:absolute;
+  bottom:20px;
+  left:52%;
+  transform: translateX(-50%);
+
+  width:50%;
+  height:1.1px;
+
+}
+
+.odettet1_img {
+  position: absolute;
+  top: -200px;
+  right: 0px;
+  width: 190%;
+  height: 500px;
+
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0 0 10px rgba(126, 180, 238, 0.9));
+}
+
+.odettet1_img::after {
+  content:'';
+  position: absolute;
+  top: -80;
+  left: 10;
+  width: 112%;
+  height: 130%;
+  z-index:1;
+
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/shop/KatG6/Odette/ody.png?updatedAt=1760907825089') no-repeat top;
+  background-size:contain;
+}
+
+.odettet1_img::before {
+  content: '';
+  position: absolute;
+  top: 150;
+  left: 200;
+  width: 100%;
+  height: 83%;
+  z-index: -1;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/fogcloud.png?updatedAt=1760907890331') no-repeat center;
+  background-size: contain;
+  filter: hue-rotate(320deg) saturate(0.4);
+  opacity: 0.6;
+}
+
+
+.odettet1_bor {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom, #000000, #000000 90%);
+  padding: 3px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.odettet1_con {
+  position: relative;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  pointer-events: none;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, #050914, #000);
+  overflow: hidden;
+}
+
+.odettet1_con > * {
+  position: relative;
+  z-index: 2;
+}
+
+.odettet1_incon {
+  position: relative;
+  overflow: hidden;
+  padding: 360px 25px 15px;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #11193842, #050714d1);
+  height: auto;
+  box-shadow: 0 0 5px 5px #2652769e, inset 0 0 10px rgba(0, 0, 0, 0.8);
+  text-align: justify;
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #eaeaea;
+  line-height: 1.2;
+}
+
+.odettet1_speech {
+  display: block;
+  position: relative;
+  margin: 0 auto -10px;
+  text-align: center;
+  z-index:10;
+}
+
+.odettet1_incon speak, .odettet1_speech speak {
+  color: #FFDC75;
+  font-family: "Milonga", serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: transparent;
+  text-align: center;
+  background: linear-gradient(to bottom, #7fe8e8, #50a2ea);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: none;
+  line-height: 0.9;
+  filter: drop-shadow(0 0 3px rgba(0,0,0,0.8));
+}
+
+.odettet1_speech speak {
+  font-size: 20px;
+}
+
+.odettet1_speech::before{
+  content:'';
+  position:absolute;
+  top:0px;
+  left:50%;
+  transform: translateX(-50%);
+
+  width:50%;
+  height:1.1px;
+
+  background: linear-gradient(to right, transparent, #7ea8c7, transparent);
+}
+
+
+.odettet1_con video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  object-fit: cover;
+  opacity: 0.3;
+  pointer-events:none;
+  user-select: none;
+}
+
+.odettet1_bor, .odettet1_con, .odettet1_incon, .odettet1_con::before {
+    border-radius: 300px 300px 10px 10px;
+}
+
+@media (max-width: 1200px) {
+
+  .odettet1 {
+    filter: none;
+    margin: 0 auto;
+  }
+
+  .odettet1_con::before {
+    display: none;
+  }
+
+.odettet1 credit {
+  position: relative;
+  display:block;
+  inset:auto;
+  display:block;
+  transform: none;
+  text-align: center;
+}
+
+.odettet1_speech {
+  position: relative;
+  inset:auto;
+}
+
+.odettet1_img {
+  display: none;
+}
+.odettet1 t {
+  position: relative;
+  inset:auto;
+}
+
+.odettet1_bor, .odettet1_con, .odettet1_incon, .odettet1_con::before {
+    border-radius: 0;
+}
+
+.odettet1_incon {
+  padding:10px;
+}
+
+
+}
+
