@@ -172,7 +172,11 @@
 .nereust4 credit {
   position: relative;
   inset:auto;
+transform:none;
 }
 
+.nereust4_bor, .nereust4_con, .nereust4_con::before, .nereust4_incon {
+	border-radius:0;
+}
 
 }
