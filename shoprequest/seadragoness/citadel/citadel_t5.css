@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+
+
+.citadelt5 {
+  width: 100%;
+  max-width: 700px;
+  margin: 60px auto 50px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background: transparent;
+  box-sizing: border-box;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.85));
+}
+
+.citadelt5 credit {
+  position: absolute;
+  top: 400px;
+  right: 50px;
+  width: 100px;
+  display: block;
+  text-align: left;
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
+  z-index: 10;
+  transform: rotate(-270deg);
+}
+
+.citadelt5_img {
+  position: absolute;
+  top: -80px;
+  left: -30px;
+  width: 120%;
+  height: 700px;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/shop/Seadragoness/Citadel/cit.png?updatedAt=1761151963292') no-repeat center center;
+  background-size: contain;
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0 0 8px #9F9A7C);
+}
+
+.citadelt5_bor {
+  position: relative;
+  width: 480px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.85), 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background: black;
+  clip-path: polygon(
+    50% 0%,
+    100% 180px,
+    100% calc(100% - 150px),
+    50% 100%,
+    0% calc(100% - 150px),
+    0% 180px
+  );
+  padding: 5px;
+}
+
+.citadelt5_con {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom, #2C4A68, #17151a);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  clip-path: polygon(
+    50% 0%,
+    100% 175px,
+    100% calc(100% - 150px),
+    50% 100%,
+    0% calc(100% - 150px),
+    0% 175px
+  );
+  padding-top: 50px;
+  padding-bottom: 200px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  pointer-events: none;
+
+  padding: 20px 10px 15px;
+}
+
+.citadelt5_inbor {
+  position: relative;
+  z-index: 6;
+  margin: 0 auto;
+  padding: 2px;
+  width: 100%;
+  box-sizing: border-box;
+  background: #BFB895;
+  clip-path: polygon(
+    50% 0%,
+    100% 165px,
+    100% calc(100% - 140px),
+    50% 100%,
+    0% calc(100% - 140px),
+    0% 165px
+  );
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.85));
+}
+
+.citadelt5_incon {
+  position: relative;
+  z-index: 6;
+  padding: 530px 25px 100px;
+  width: 100%;
+  min-height: 400px;
+  box-sizing: border-box;
+  overflow: visible;
+  background: linear-gradient(to bottom, #0c0d11, #252938, #0c0d11);
+  clip-path: polygon(
+    50% 0%,
+    100% 163px,
+    100% calc(100% - 140px),
+    50% 100%,
+    0% calc(100% - 140px),
+    0% 163px
+  );
+
+  text-align: justify;
+  font-family: 'Bellefair';
+  font-size: 17px;
+  color: #5989ba;
+  line-height: 1.2;
+}
+
+.citadelt5_incon::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 30px solid #fff;
+  z-index: 7;
+}
+
+.citadelt5_speech {
+  position: relative;
+  font-family: 'Germania One';
+  text-align: center;
+  margin: 0 auto -30px;
+}
+
+.citadelt5_speech::before {
+  content:'';
+  position:absolute;
+  top:0;
+  left:50%;
+  transform: translateX(-50%);
+
+  width:50%;
+  height:1.2px;
+
+  background: linear-gradient(to right, transparent, #9F9A7C, transparent);
+}
+
+
+.citadelt5_incon speak {
+  font-size: 18px;
+  font-family: 'Germania One';
+  font-weight: bold;
+  color: #E99F60;
+}
+
+.citadelt5_speech speak {
+  font-size: 28px;
+}
+
+
+@media (max-width: 1200px) {
+  .citadelt5_content, .citadelt5_inbor {
+    filter: none;
+  }
+
+  .citadelt5_bor, 
+  .citadelt5_con, 
+  .citadelt5_inbor, 
+  .citadelt5_incon {
+    clip-path: none;
+    padding:15px;
+  }
+
+  .citadelt5_bor, .citadelt5_inbor {
+    padding:2px;
+  }
+
+  .citadelt5_img {
+    filter: none;
+  }
+
+  .citadelt5_incon::before {
+    display: none;
+  }
+
+  .citadelt5_img {
+    display: none;
+  }
+}
