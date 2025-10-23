@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap');
+@font-face {
+  font-family: noraht1;
+  src: url('Bliamer-JpWxK.otf');
+}
+
+.noraht1 {
+	position: relative;
+  width: 400px;
+  margin: 20px auto 80px;
+  position: relative;
+  overflow: visible;
+  background:transparent;
+  box-sizing: border-box;
+}
+
+.noraht1_img {
+  position: absolute;
+  bottom: -76px;
+  left: -59px;
+  width: 140%;
+  height: 600px;
+  transform: rotate(-1deg);
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/shop/Cloi/Norah/norah.png?updatedAt=1761160394762') no-repeat top;
+    background-size: auto;
+  background-size: contain;
+  z-index: 4;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 5px rgba(0, 0, 0, 0.8));
+  pointer-events: none;
+}
+
+.noraht1_bor {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom, #4F0606, #000);
+  padding: 3px;
+  border-radius: 0 0 300px 300px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+.noraht1_bor t {
+  position: absolute;
+  bottom: 41px;
+  left: 41%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: auto;
+  padding: 40px 0 50px;
+  z-index: 5;
+  filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.5)) drop-shadow(0 0 1px rgba(0, 0, 0, 0.3)) drop-shadow(0 2px 1px rgba(0, 0, 0, 0.4));
+  font-family: "noraht1", cursive;
+  font-size: 106px;
+  text-align: center;
+  line-height: 0.6;
+  background: linear-gradient(to top, #5e0606, #430303);
+    background-clip: border-box;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.noraht1_bor t::before {
+  position: absolute;
+  content: '';
+  bottom:0px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url('divider') no-repeat center;
+  background-size:contain;
+  width: 100%;
+  height: 50px;
+  opacity: 0.6;
+}
+
+.noraht1_bor credit {
+  position: absolute;
+  bottom: -20px;
+  left:50%;
+  transform:translateX(-50%);
+  display:block;
+  margin: 5px auto 0;
+  text-align:center;
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+
+.noraht1_con {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #131313 430px, black 600px);
+  border-radius: 0 0 300px 300px;
+  pointer-events: none;
+  margin: 0 auto;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.noraht1_con::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/11060628_47500.jpg?updatedAt=1761260211360') no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  pointer-events: none;
+  overflow: hidden;
+  border-radius: 0 0 300px 300px;
+  box-shadow: inset 0 0 10px rgba(7, 0, 0, 0.8);
+  filter:brightness(0.6);
+}
+
+.noraht1_inbor {
+  border-radius: 0 0 300px 300px;
+  position: relative;
+  padding: 10px 20px 500px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(48, 48, 48, 0.82));
+  box-shadow: inset 0 0 10px rgba(7, 0, 0, 0.8);
+  border: 3px solid #140404;
+}
+
+.noraht1_incon {
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
+  text-align: justify;
+  font-family: "Grenze", serif;
+  font-weight: 400;
+  font-size: 11px;
+  color: #adadad;
+  line-height: 1.2;
+  text-shadow: 0 0 1px rgba(0,0,0,0.5);
+}
+
+
+.noraht1_incon speak {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 400;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 0.9;
+  color: #F2C230;
+}
+
+.noraht1_spch {
+  display: block;
+  position: relative;
+  margin: 0px 0 -15px 0;
+  text-align: center;
+}
+
+.noraht1_spch::before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+
+  width:100%;
+  height:20px;
+
+  background:url('https://ik.imagekit.io/arl60/Ardent/shop/assets/2.png?updatedAt=1761259622322s') center no-repeat;
+  background-size: contain;
+
+  filter:brightness(4);
+
+  margin-top:-10px;
+}
+
+.noraht1_spch speak {
+  font-size: 17px;
+}
+
+@media (max-width: 1200px) {
+
+  .noraht1 {
+    filter: none;
+    margin: 0 auto;
+  }
+
+  .noraht1_con::before, .noraht1_spch::before, .noraht1_img::after {
+    display: none;
+  }
+
+ .noraht1_con, .noraht1_bor, .noraht1_incon, .noraht1_inbor  {
+    border-radius: 0;
+  }
+
+  .noraht1_inbor {
+    padding:10px;
+  }
+
+  .noraht1_incon speak {
+    text-shadow: 0 0 1px rgba(0,0,0,0.5);
+  }
+
+.noraht1_bor t, .noraht1_bor t::before {
+  display: none;
+}
+
+.noraht1_bor credit {
+  position: relative;
+  inset:auto;
+  transform:none;
+  margin: 0 auto;
+}
+
+.noraht1_img {
+  display:none;
+}
+  
+}
+
