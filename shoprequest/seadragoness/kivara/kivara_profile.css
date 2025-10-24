@@ -191,7 +191,6 @@ h1 i {
     height: auto;
     display: block;
     margin: 0 auto;
-    transform:scaleX(-1);
 }
 
 .info_appwrap:hover .info_imgglow {
