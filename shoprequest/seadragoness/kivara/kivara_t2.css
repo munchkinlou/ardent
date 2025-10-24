@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grenze:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.kivarat2 {
+  margin: 20px auto;
+  position: relative;
+  width: 800px;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.kivarat2 credit {
+  position: relative;
+  bottom: -10px;
+
+  display:block;
+  margin: 0 auto;
+  text-align:center;
+  text-transform:uppercase;
+  font-size:10px;
+  font-weight: bold;
+  font-family: arial;
+}
+
+
+.kivarat2_bor {
+  position:relative;
+  padding: 3px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.85), 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to bottom, #200E09, #615749);
+}
+
+.kivarat2_con {
+position: relative;
+  z-index: 0;
+  width: 100%;
+  height: auto;
+  padding: 360px 30px 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #081318 url('https://ik.imagekit.io/arl60/Ardent/shop/Seadragoness/Kivara/This_is_What_Autumn_Feels_Like.png?updatedAt=1761279767291') no-repeat left top;
+    background-size: auto;
+  background-size: 100%;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.kivarat2_con::after {
+content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent 340px, #453C38 360px, #1C1715 100%);
+  pointer-events: none;
+}
+
+.kivarat2_inf {
+  position: absolute;
+  top: 300px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  padding: 20px;
+  margin: 0;
+  height: auto;
+  overflow: hidden;
+  transform: scaleY(-1);
+  -webkit-mask-image: linear-gradient(to top, transparent 20px, #081117 300px, #282A38);
+  mask-image: linear-gradient(to top, transparent 20px, #000 300px);
+  z-index: 4;
+}
+
+.kivarat2_inf::after {
+ content: '';
+ position: absolute;
+ inset: 0;
+ z-index: 5;
+ box-shadow: 0 -5px 20px rgba(255, 180, 70, 0.6), inset 2px 0 20px rgba(255, 160, 60, 0.6), inset -2px 0 25px rgba(250, 140, 50, 0.6);
+ pointer-events: none;
+ animation: kivarat2_fire 5s ease-in-out infinite alternate;
+}
+
+@keyframes kivarat2_fire {
+ 0% {
+box-shadow:
+0 -2px 10px rgba(255, 140, 40, 0.4),
+inset 1px 0 10px rgba(255, 120, 30, 0.4),
+inset -1px 0 12px rgba(240, 100, 20, 0.4),
+0 -4px 18px rgba(255, 160, 50, 0.2),
+inset 0 0 15px rgba(255, 130, 40, 0.3);
+ }
+ 25% {
+box-shadow:
+0 -3px 16px rgba(255, 180, 70, 0.8),
+inset 1px 0 16px rgba(255, 160, 60, 0.7),
+inset -1px 0 18px rgba(250, 140, 50, 0.8),
+0 -6px 22px rgba(255, 200, 90, 0.4),
+inset 0 0 20px rgba(255, 170, 70, 0.5);
+ }
+ 50% {
+box-shadow:
+0 -4px 25px rgba(255, 210, 100, 1),
+inset 2px 0 25px rgba(255, 190, 80, 0.9),
+inset -2px 0 25px rgba(250, 170, 70, 1),
+0 -8px 25px rgba(255, 220, 120, 0.6),
+inset 0 0 25px rgba(255, 200, 90, 0.7);
+ }
+ 75% {
+box-shadow:
+0 -4px 22px rgba(255, 200, 90, 0.9),
+inset 2px 0 22px rgba(255, 180, 75, 0.8),
+inset -2px 0 24px rgba(245, 160, 65, 0.9),
+0 -8px 25px rgba(255, 220, 110, 0.5),
+inset 0 0 24px rgba(255, 190, 85, 0.6);
+ }
+ 100% {
+box-shadow:
+0 -5px 25px rgba(255, 220, 110, 1.2),
+inset 2px 0 25px rgba(255, 200, 90, 1),
+inset -2px 0 25px rgba(250, 180, 80, 1.1),
+0 -10px 25px rgba(255, 235, 140, 0.7),
+inset 0 0 25px rgba(255, 210, 100, 0.8),
+0 0 25px rgba(240, 150, 60, 0.3);
+ }
+}
+
+.kivarat2_incon {
+  position: relative;
+  z-index: 6;
+  padding: 0px 20px 0;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+background: linear-gradient(to bottom, transparent 20px, #20140F);
+  border-bottom: 2px solid;
+  border-left: 2px solid;
+  border-right: 2px solid;
+  border-image: linear-gradient(to bottom, transparent 20px, #675b5b 50px, #95866F) 1;
+  box-shadow: inset 0 0 10px #453C38;
+  font-family: "GFS Neohellenic", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height:1;
+  color: #fff;
+  text-align: justify;
+  z-index: 5;
+}
+
+.kivarat2_incon speak {
+  color: transparent;
+  font-family: "Grenze", serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: transparent;
+  background: linear-gradient(to bottom, rgb(232, 219, 150), #bfa042);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: none;
+  line-height: 0.9;
+  filter: drop-shadow(0 0 2px black);
+}
+
+.kivarat2_spch {
+  position:inherit;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.kivarat2_spch speak {
+  font-family: "Grenze", serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-weight: bold;
+  color: transparent;
+}
+
+.kivarat2_spch::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%);
+  background: linear-gradient(to right, transparent, #D4A444, transparent);
+  height: 1.2px;
+  width: 60%;
+}
+
+@media (max-width: 1200px) {
+
+.kivarat2 credit {
+  position: relative;
+  top: auto;
+  right: auto;
+  transform: none;
+}
+
+.kivarat2_inf, .kivarat2_inf::after, .kivarat2_con::after {
+  display:none;
+}
+
+.kivarat2_con {
+  background:none;
+  padding:10px;
+}
+
+}
