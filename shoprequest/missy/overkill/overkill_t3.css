@@ -196,23 +196,20 @@
   transform: none;
 }
 
-.overkillt3_bor t {
+.overkillt3 t {
   position: relative;
-  width: 100%;
-  top: 0;
-  display:block;
-  text-align:center;
-  margin: 0 auto 10px;
-  font-size:40px;
+  inset:auto;
+  font-size:45px;
+  width:100%;
 }
 
 .overkillt3_bor, .overkillt3_con, .overkillt3_inbor, .overkillt3_incon {
   mask: none;
   -webkit-mask: none;
+  padding:5px;
 }
 
 .overkillt3_con {
-  padding: 10px;
   background: none;
 }
 
