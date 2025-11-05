@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@font-face {
+  font-family: 'overkillt6' ;
+  src: url(Heatizen-EaVBj.ttf);
+}
+
+.overkillt6 {
+	position: relative;
+  width: 450px;
+  margin: 100px auto 10px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+  filter: drop-shadow(0 8px 10px rgba(0,0,0,0.75));
+}
+
+.overkillt6 credit {
+  margin: 5px auto 0 5px;
+  display:block;
+  text-align:center;
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.overkillt6 credit::before {
+  content: 'code by andy ';
+}
+
+.overkillt6_img {
+  position: absolute;
+  top: -115px;
+  left: -2px;
+  width: 109%;
+  height: 481px;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/shop/Missy/Overkill/OverkillCutesyChibi.png?updatedAt=1760140649106') no-repeat center top;
+  background-size: contain; 
+  z-index: 5;
+  pointer-events: none;
+}
+
+.overkillt6_bor {
+  position: relative;
+  width: 100%;
+  background: white;
+  padding: 3px;
+  border-radius: 300px 300px 10px 10px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.overkillt6_con {
+  position: relative;
+  width: 100%;
+  padding: 310px 10px 10px;
+  box-sizing: border-box;
+  background: black;
+  border-radius: 300px 300px 10px 10px;
+  pointer-events: none;
+  margin: 0 auto;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.overkillt6_con::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/blooddrip.jpg?updatedAt=1762267710921') no-repeat bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  pointer-events: none;
+  overflow: hidden;
+  border-radius: 300px 300px 10px 10px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+  filter: hue-rotate(20deg);
+  filter: hue-rotate(170deg) saturate(0.3);
+}
+
+
+.overkillt6_con > * {
+  position: relative;
+  z-index: 2;
+}
+
+.overkillt6_incon {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 20px 10px 50px;
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.6);
+  height: auto;
+  box-shadow: 0 0 10px 10px rgba(33, 135, 87, 0.2);
+  text-align: center;
+	font-family: 'comfortaa', serif;
+  font-size: 10px;
+  color: #d4ebd2;
+  line-height: 1.2;
+  border: 5px groove #0e3a3a;
+}
+
+.overkillt6_incon speak {
+  color: #F20519;
+	font-family: 'comfortaa', serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #000000;
+  line-height: 0.9;
+}
+
+.overkillt6_spch {
+  display: block;
+  position: relative;
+  margin: 5px 0 -45px 0;
+  text-align: center;
+  line-height: 1;
+}
+
+.overkillt6_spch speak {
+  font-family: 'overkillt6';
+  font-weight: bold;
+  color: #F20519;
+  text-shadow: 1px 1px 2px #0a0906;
+  font-size: 45px;
+}
+
+.overkillt6_spch::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 100%;
+  height: 1.3px;
+  margin: 0px auto 0;
+  background: linear-gradient(to right, transparent, #99A698, transparent);
+}
+
+
+@media (max-width: 1200px) {
+
+  .overkillt6 {
+    filter: none;
+    margin: 0 auto;
+  }
+
+  .overkillt6_img, .overkillt6_con::before {
+    display: none;
+  }
+
+  .overkillt6_bor, .overkillt6_con, .overkillt6_con::before {
+    border-radius:0;
+  }
+
+  .overkillt6_con {
+    padding: 5px;
+  }
+
+  .overkillt6_speech {
+    text-align: center;
+    padding:0;
+  }
+
+}
+
