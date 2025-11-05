@@ -144,11 +144,6 @@
   position: absolute;
   bottom: 170px;
   left: -3px;
-  color: transparent;
-  background: linear-gradient(to bottom, #C6070D, #771215);
-  -webkit-background-clip: text;
-  background-clip: text;
-  text-shadow: none !important;
   text-align: center;
   width:100%;
   line-height: 0.8;
@@ -159,6 +154,11 @@
   font-family: 'overkillt5';
   font-weight: bold;
   font-size: 60px;
+  color: transparent;
+  background: linear-gradient(to bottom, #C6070D, #771215);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: none !important;
 }
 
 @media (max-width: 1200px) {
@@ -177,8 +177,8 @@
   }
 
   .overkillt5_img,
-  .overkillt5::after,
-  .overkillt5_bor::before  {
+  .overkillt5_bor::before,
+  .overkillt5_bor::after  {
     display: none;
   }
 
@@ -203,7 +203,5 @@
     .overkillt5_speech br {
     font-size:0;
   }
-
-
 
 }
