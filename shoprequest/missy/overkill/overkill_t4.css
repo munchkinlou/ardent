@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@font-face {
+  font-family: 'overkillt4' ;
+  src: url(Heatizen-EaVBj.ttf);
+}
+
+.overkillt4 {
+	position: relative;
+  width: 500px;
+  margin: 100px auto 10px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+}
+
+
+.overkillt4 credit {
+  position: relative;
+  width: 100%;
+  display:block;
+
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+
+  margin-top:10px;
+}
+
+
+.overkillt4 t {
+  position: absolute;
+  width: 110%;
+  top: 450px;
+  left: -20px;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: 'overkillt4';
+  color: transparent;
+  background: linear-gradient(to bottom, #d71d20, #8c0b0e);
+    -webkit-background-clip: text;
+  background-clip: text;
+  filter: drop-shadow(0 0 2px black) drop-shadow(0 0 2px black);
+  z-index: 10;
+}
+
+
+.overkillt4_img {
+  position: absolute;
+  top: -80px;
+  left: -50px;
+  width: 120%;
+  height: 600px;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/shop/Missy/Overkill/IMG_29912.png?updatedAt=1760226799042') no-repeat top;
+  background-size: contain; 
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 2px rgba(0, 0, 0, 0.9));
+}
+
+.overkillt4_bor {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom, #980000, #000 90%);
+  padding: 3px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.overkillt4_con {
+  position: relative;
+  width: 100%;
+  padding: 15px 15px 0;
+  box-sizing: border-box;
+  pointer-events: none;
+  margin: 0 auto;
+  background: black;
+}
+
+.overkillt4_con::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  background:url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/blooddrip.jpg?updatedAt=1762267710921') no-repeat left;
+  background-size:cover;
+  background-attachment:fixed;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+.overkillt4_con > * {
+  position: relative;
+  z-index: 2;
+}
+
+.overkillt4_incon {
+  position: relative;
+  overflow: hidden;
+  padding: 500px 15px 0;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #0f111b, rgba(11, 41, 35, 0.5), rgba(0, 0, 0, 0.698));
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 10px;
+  color: #eaeaea;
+  line-height: 1.2;
+  border: 2px solid black;
+}
+
+.overkillt4_bor, .overkillt4_con, .overkillt4_con::before, .overkillt4_incon {
+  border-radius: 300px 300px 0 0;
+}
+
+
+.overkillt4_incon speak {
+  color: #FFDC75;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 11px;
+  color: transparent;
+  text-align: center;
+  background: linear-gradient(to bottom, #f00, #a90303);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: none;
+  line-height: 0.9;
+  filter: drop-shadow(0 0 3px rgba(0,0,0,0.8));
+}
+
+.overkillt4_incon d {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(to right, transparent, #f00, transparent);
+  width: 80%;
+  height: 1.5px;
+}
+
+.overkillt4_speech {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 10;
+  width: 60%;
+
+  border-top: 1.2px solid;
+  border-image: linear-gradient(to right, transparent, red, transparent) 1;
+}
+
+.overkillt4_speech speak {
+  display: inline;
+  letter-spacing: 6px;
+  color: transparent;
+  background: linear-gradient(to bottom, #f00, #a90303);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: none;
+  font-size: 15px;
+  line-height: 1.1;
+  filter: drop-shadow(0 0 3px rgba(0,0,0,0.8)) drop-shadow(0 0 3px rgba(0,0,0,0.8));
+  transform: rotate(50deg);
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+
+  .overkillt4 {
+    filter: none;
+    margin: 10px auto;
+  }
+
+  .overkillt4_con::before {
+    display: none;
+  }
+
+ .overkillt4 t {
+  position: relative;
+  inset:auto;
+  font-size: 40px;
+  width:100%;
+}
+ 
+.overkillt4_bor, .overkillt4_con, .overkillt4_con::before, .overkillt4_incon {
+  border-radius: 0;
+}
+
+.overkillt4 credit {
+  position: relative;
+  display:block;
+  inset:auto;
+  display:block;
+  transform: none;
+  text-align: center;
+}
+
+.overkillt4_speech {
+  position: relative;
+  inset:auto;
+}
+
+.overkillt4_img {
+  display: none;
+}
+.overkillt4_incon {
+  padding: 5px;
+}
+
+}
+
+
+
