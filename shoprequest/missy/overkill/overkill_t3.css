@@ -39,7 +39,7 @@
   background: linear-gradient(to top, #b70306, #3e0203);
   -webkit-background-clip: text;
   background-clip: text;
-  filter: drop-shadow(0 0 5px black);
+  filter: drop-shadow(0 0 2px black) drop-shadow(0 0 2px black);
   z-index: 10;
 }
 
