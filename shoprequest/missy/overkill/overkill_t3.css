@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@font-face {
+  font-family: 'overkillt3' ;
+  src: url(Heatizen-EaVBj.ttf);
+}
+
+.overkillt3 {
+  position: relative;
+  width: 700px;
+  height: auto;
+  margin: 40px auto 20px;
+  filter: drop-shadow(0px 0px 5px black);
+}
+
+.overkillt3 credit {
+  position: relative;
+  display:block;
+  margin: 10px auto 0;
+  text-align:center;
+  text-transform:uppercase;
+  font-size:10px;
+  font-weight: bold;
+  font-family: arial;
+}
+
+
+.overkillt3 t {
+  position: absolute;
+  width: 120%;
+  top: -25px;
+  left:-70px;
+  display:block;
+  text-align:center;
+  text-transform:uppercase;
+  font-size:85px;
+  font-weight: bold;
+  font-family: 'overkillt3';
+  color: transparent;
+  background: linear-gradient(to top, #b70306, #3e0203);
+  -webkit-background-clip: text;
+  background-clip: text;
+  filter: drop-shadow(0 0 5px black);
+  z-index: 10;
+}
+
+.overkillt3_bor {
+  position: relative;
+  padding: 3px;
+  background: linear-gradient(to bottom,
+  rgba(0, 0, 0, 0.8),
+  rgba(255, 9, 9, 0.8),
+  rgba(0, 0, 0, 0.8));
+  box-sizing: border-box;
+}
+
+.overkillt3_con {
+  width: 100%;
+  height: auto;
+  padding: 0 10px 700px;
+  position: relative;
+  box-sizing: border-box;
+  overflow: visible;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/Missy/Overkill/Missy_2.png?updatedAt=1755552406399') no-repeat bottom;
+  background-size: 100%;
+  z-index: 1;
+  box-shadow: inset 0 0 10px black;
+  pointer-events: none;
+}
+
+.overkillt3_con::after {
+  content: '';
+  position: absolute;
+  top: 0;    
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, transparent 600px, #360404 900px, black);
+  z-index: 2;
+}
+
+
+.overkillt3_inbor {
+  position: relative;
+  padding: 1.5px;
+  background: linear-gradient(to top, transparent 50px, rgba(96, 5, 5, 0.8), #FF0006, rgba(0, 0, 0, 0.8));
+  box-sizing: border-box;
+  width: 100%;
+  z-index: 3;
+}
+
+.overkillt3_incon {
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  padding: 70px 20px 30px;
+  box-sizing: border-box;
+  overflow: visible;
+  background: linear-gradient(to bottom, black, #250105, transparent);
+  z-index: 3;
+  color: #f8e3dc;
+  font-family: 'Comfortaa';
+	font-size:10px;
+	line-height:1.4;
+	text-align:center;
+  
+}
+
+.overkillt3_incon speak {
+  color: transparent;
+  font-family: 'Comfortaa';
+  font-size: 13px;
+  color: transparent;
+  background: linear-gradient(to bottom, #FF0006, #ff5d60);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: none;
+  line-height: 0.9;
+  filter: drop-shadow(0 0 2px black);
+}
+
+.overkillt3_spch {
+  position: relative;
+  margin: 10px 0 -10px 0;
+  color: transparent;
+  text-align: center;
+  background: linear-gradient(to bottom, #FF0006, #720406);
+  -webkit-background-clip: text;
+  background-clip: text;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 1));
+  line-height: 0.9;
+}
+
+.overkillt3_spch speak {
+  font-size: 15px;
+}
+
+.overkillt3_spch::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translate(-50%);
+  background: linear-gradient(to right, transparent, #FF0006, transparent);
+  height: 1.2px;
+  width: 60%;
+}
+
+.overkillt3_bor, .overkillt3_con {
+    box-sizing: border-box;
+  position: relative;
+  mask: 
+    radial-gradient(ellipse 70px 60px at 0 0, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 0 0,
+    radial-gradient(ellipse 70px 60px at 100% 0, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 100% 0,
+    radial-gradient(ellipse 70px 60px at 100% 100%, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 100% 100%,
+    radial-gradient(ellipse 70px 60px at 0 100%, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 0 100%;
+  -webkit-mask: 
+    radial-gradient(ellipse 70px 60px at 0 0, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 0 0,
+    radial-gradient(ellipse 70px 60px at 100% 0, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 100% 0,
+    radial-gradient(ellipse 70px 60px at 100% 100%, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 100% 100%,
+    radial-gradient(ellipse 70px 60px at 0 100%, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 0 100%;
+  mask-size: 51% 51%;
+  -webkit-mask-size: 51% 51%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+
+.overkillt3_inbor, .overkillt3_incon {
+    box-sizing: border-box;
+    position: relative;
+    mask: 
+        radial-gradient(ellipse 50px 50px at 0 0, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 0 0,
+        radial-gradient(ellipse 50px 50px at 100% 0, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 100% 0,
+        radial-gradient(ellipse 0px 60px at 100% 100%, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 100% 100%,
+        radial-gradient(ellipse 0px 60px at 0 100%, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 0 100%;
+    -webkit-mask: 
+        radial-gradient(ellipse 50px 50px at 0 0, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 0 0,
+        radial-gradient(ellipse 50px 50px at 100% 0, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 100% 0,
+        radial-gradient(ellipse 0px 60px at 100% 100%, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 100% 100%,
+        radial-gradient(ellipse 0px 60px at 0 100%, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 0 100%;
+    mask-size: 51% 51%;
+    -webkit-mask-size: 51% 51%;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;  
+}
+
+@media (max-width: 1200px) {
+
+.overkillt3 {
+  filter: none;
+}
+
+.overkillt3_content credit {
+  position: relative;
+  top: auto;
+  left: auto;
+  transform: none;
+}
+
+.overkillt3_bor t {
+  position: relative;
+  width: 100%;
+  top: 0;
+  display:block;
+  text-align:center;
+  margin: 0 auto 10px;
+  font-size:40px;
+}
+
+.overkillt3_bor, .overkillt3_con, .overkillt3_inbor, .overkillt3_incon {
+  mask: none;
+  -webkit-mask: none;
+}
+
+.overkillt3_con {
+  padding: 10px;
+  background: none;
+}
+
+}
