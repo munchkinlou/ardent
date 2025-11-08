@@ -1,4 +1,534 @@
+Fall down seven times, stand up eight
+<link rel="stylesheet" href="https://munchkinlou.github.io/ardent/shoprequest/pack/ryukai/ryukai_page.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kings&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @font-face {
     font-family: 'ryukai1';
     src: url('JapaneseNeotokyo-5yR2B.ttf');
 }
+
+
+
+/* 
+    font-family: 'ryukai1', serif;
+    font-weight: 400;
+
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+
+    font-family: "Kings", cursive;
+    font-weight: 400;
+
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+*/
+
+nav {
+    background: rgba(18, 30, 24, 0.4) !important;
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.6));
+}
+
+nav a {
+    color: #9af367 !important;
+    transition: color 0.2s ease;
+    margin: 0;
+}
+
+nav a:hover {
+    color: #d88004 !important;
+    transform: none !important;
+    transition: color 0.2s ease;
+}
+
+#content, #content .packwrap > #pack-preview {
+    background: #65794c70 !important;
+    padding: 40px !important;
+    margin: 20px auto;
+    box-shadow: inset 0 0 10px #162b16;
+    backdrop-filter: blur(1.5px);
+}
+
+.packwrap > #pack-preview {
+    background: none !important;
+    padding: 20px !important;
+    margin: 0 auto !important;
+    box-shadow: none !important;
+    backdrop-filteR: none !important;
+}
+
+#content .packwrap > #pack-preview::before {
+    display: none !important;
+}
+
+
+header .title {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 550;
+    text-transform: capitalize;
+    margin: 20px auto -20px;
+    font-size: 120px;
+    text-shadow: none !important;
+
+    background: linear-gradient(to bottom, #78ae44, #eae488);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none !important;
+    
+    filter:drop-shadow(0 0 5px black);
+}
+
+.thead h1, .packbanner h1 {
+    margin: auto;
+    position: absolute;
+    font-family: "ryukai1", cursive;
+    font-weight: 100 !important;
+    font-size: 100px;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background: linear-gradient(to bottom, #9cd861, #dcd347);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none !important;
+
+    filter:drop-shadow(0 0 5px black);
+}
+
+.thead h2, .packbanner h2 {
+    width:100%;
+    font-family: "Protest Revolution", sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 25px;
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: lowercase;
+    letter-spacing: 6px;
+    color: #b4e287 !important;
+}
+
+.packbanner {
+    background-color: transparent !important;
+    background-image:none;
+    box-sizing: border-box;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+    border: none;
+    overflow: visible;
+    z-index: 1;
+    padding: 0;
+    height:600px;
+    position:relative !important;
+}
+
+.packbanner::before {
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+
+    height:80%;
+    width:100%;
+
+    background-image: url('https://ik.imagekit.io/arl60/Ardent/shop/Pack/Ryukai/dragon_pack_icon.png?updatedAt=1762381968542') !important;
+    background-repeat: no-repeat !important;
+    background-position: center;
+    background-size: contain !important;
+    background-attachment: local;
+
+    filter:drop-shadow(0 0 5px #000) drop-shadow(0 0 5px black);
+}
+
+.packwrap {
+    font-family: "Saira", sans-serif;
+    font-weight: 100;
+}
+
+.packwrap > h2:first-of-type {
+    display:none;
+}
+
+
+
+/* first table under banner*/
+.packwrap > div:nth-of-type(3) {
+    position: relative;
+    background: linear-gradient(to bottom, #305530bf, #797e439e) !important;
+    box-sizing: border-box;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+    border: 1px solid #a2dc7a;
+    overflow: visible;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(168, 213, 115, 0.8);
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    text-align: justify;
+    padding: 40px 40px;
+    line-height: 1.1;
+    font-size: 18px;
+}
+
+
+.packwrap > div:nth-of-type(3) h2 {
+    padding: 20px 0 0;
+    font-family: "Ruthie", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align:center;
+    font-size: 50px;
+    width: auto;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+    border-bottom: 1.5px solid;
+    border-image: linear-gradient(to right, transparent 20%, white, transparent 80%) 1;
+}
+
+/* end of first paragaph */
+
+
+/* territories & Former Leaders */
+    /*TERRITORY*/
+.packwrap > div.flex.fill:nth-of-type(4) {
+    position:relative;
+    background: rgba(38, 58, 35, 0.91) !important;
+    border: 1px solid #a2dc7a;
+    overflow: visible;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(168, 213, 115, 0.8);
+    padding: 0 0 20px !important;
+    margin: 0 auto;
+}
+
+.packwrap > div.flex.fill:nth-of-type(4)::before {
+    content:'';
+    position:absolute;
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    background-image: url('https://ik.imagekit.io/arl60/Ardent/shop/Pack/Ryukai/20177371_6235570.jpg?updatedAt=1762545871399') !important;
+    background-repeat: no-repeat !important;
+    background-position: top !important;
+    background-size: cover !important;
+    background-attachment: local;
+    z-index:-1;
+
+    opacity: 0.8;
+    box-shadow: inset 0 0 10px black;
+    filter: hue-rotate(-20deg);
+}
+
+    /*FORMER LEADERS*/
+.packwrap > div:nth-of-type(5)  {
+    position:relative;
+    background: rgba(38, 58, 35, 0.91) !important;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+    border: 1px solid #a2dc7a;
+    overflow: visible;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(168, 213, 115, 0.8);
+    padding: 0 0 20px !important;
+    margin: 10px auto;
+    z-index: 1;
+}
+
+.packwrap > div:nth-of-type(5)::before {
+    content:'';
+    position:absolute;
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0850e243-5970-4164-a7bb-741bd2351866/dk9a8s7-e4f01380-332f-4897-b634-6623f7835f35.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8wODUwZTI0My01OTcwLTQxNjQtYTdiYi03NDFiZDIzNTE4NjYvZGs5YThzNy1lNGYwMTM4MC0zMzJmLTQ4OTctYjYzNC02NjIzZjc4MzVmMzUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.aT1e7y52awaRvK2eR9YOhbtMonUyyWBZH5RqldmAIS8') !important;
+    background-repeat: no-repeat !important;
+    background-position: 100% 37% !important;
+    background-size: cover !important;
+    background-attachment: local;
+    z-index:-1;
+
+    opacity: 0.8;
+    filter: hue-rotate(230deg) saturate(0.4);
+    box-shadow: inset 0 0 10px black;
+}
+
+    /*for both*/
+.packwrap > div.flex.fill:nth-of-type(4) h2,  .packwrap > div:nth-of-type(5) h2 {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    font-size: 32px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+    margin: 20px auto 10px;
+    color:#e9f3a3 !important;
+}
+
+.flex ul, .packwrap > div:nth-of-type(5) ul {
+    text-align:center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.flex ul li,  .packwrap > div:nth-of-type(5) li {
+    display: inline-block;
+    margin-right: 10px;
+    background-color: rgba(9, 0, 20,0.6);
+    border-radius: 10px;
+    padding: 3px 10px;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    font-size: calc(16px + 0.090625vw);
+    letter-spacing: 1.2px;
+    box-shadow: 0 0 10px rgba(205, 223, 156, 0.6);
+    transition: background 0.5s ease;
+}
+
+.flex ul li a,  .packwrap > div:nth-of-type(5) li a {
+    transition: color 0.5s ease;
+}
+
+.flex ul li a:hover,  .packwrap > div:nth-of-type(5) li a:hover {
+    color:yellow !important;
+}
+
+
+.flex ul li:hover,  .packwrap > div:nth-of-type(5) li:hover {
+    transform: none !important;
+    background-color: rgba(155, 201, 99, 0.6);
+}
+
+.flex ul li:last-child {
+  margin-right: 0;
+}
+
+/* end of territories & Former Leaders */
+
+/*Notes: Adding Former leader IDs migrates general rules and below under #content; removing re-adds them under packwrap*/
+
+/* Rules & Info */
+
+/* .packwrap > div.flex.fill:nth-of-type(4) */
+/* #content > div.flex.fill:nth-of-type(2) */
+
+#content > div.flex.fill:nth-of-type(2) {
+    margin: 15px auto;
+    padding: 0;
+    background-color: none !important;
+    border: 1px solid #a2dc7a;
+    box-shadow: 0 0 10px rgba(205, 223, 156, 0.6);
+    padding: 0;
+}
+
+#content > div.flex.fill:nth-of-type(2)  > div:nth-of-type(1), #content > div.flex.fill:nth-of-type(2)  > div:nth-of-type(2) {
+    margin: 0 !important;
+}
+
+/* End of Rules & Info */
+
+/* News/Relations/Ranks */
+    /* #content
+        .packwrap */
+
+#content > h2 {
+    margin: 5px auto;
+    background: linear-gradient(to right, #0f2d0fb8, #b0ab52b5, #0f2d0fb8) !important;
+    border: 1px solid #a2dc7a;
+    box-shadow: 0 0 10px rgba(205, 223, 156, 0.6);
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    font-size: 32px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+    padding: 10px;
+}
+
+#content > ul {
+    background: linear-gradient(to bottom, #6d925785, #4f6b2ea1) !important;
+    box-sizing: border-box;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+    border: 1px solid #a2dc7a;
+    overflow: visible;
+    z-index: 1;
+    padding: 20px;
+    border: 1px solid #a2dc7a;
+
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size:16px;
+
+    max-height: 300px;
+    overflow-y: auto;
+    scrollbar-color: rgba(201, 186, 233, 0.4) transparent;
+    scrollbar-width: thin; 
+}
+
+#content > ul::-webkit-scrollbar {
+    width: 12px;
+}
+
+#content > ul::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#content > ul::-webkit-scrollbar-thumb {
+    background: rgba(201, 186, 233, 0.4);
+    border-radius: 6px;
+}
+
+#content > ul::-webkit-scrollbar-thumb:hover {
+    background: rgba(201, 186, 233, 0.4);
+}
+
+
+/*news*/
+        #content > ul:first-of-type {
+            border: 1px solid #a2dc7a;
+        }
+
+        #content > ul:first-of-type > li {
+            list-style: none;
+            line-height:1;
+            text-align:justify;
+            padding: 10px;
+            margin: 5px auto 10px;    
+        }
+
+        #content > ul:first-of-type > li b {
+            display:block;
+            font-family: "Cinzel Decorative", serif;
+            font-weight: 400;
+            font-size:18px;
+            text-align:center !important;
+            margin: 0 auto 5px;
+            padding-bottom:2px;
+            border-bottom: 1.5px solid;
+            border-image: linear-gradient(to right, transparent, #dace9d, transparent) 1;
+        }
+
+        #content > ul:first-of-type > li a {
+            text-decoration: none;
+            font-family: arial;
+            font-size:12px;
+            text-transform: uppercase;
+            color: rgb(255, 247, 121) !important;
+            transition: color 0.5s ease;
+        }
+
+        #content > ul:first-of-type > li a:hover {
+            color: rgb(255, 162, 0) !important;
+            transition: color 0.5s ease;
+            letter-spacing: 0px;
+        }
+
+        #content > ul:first-of-type > li span {
+            text-decoration: none !important;
+        }
+
+
+/* relations */
+        #content > ul:nth-of-type(2) li {
+            list-style: none;
+            text-align:center;
+            font-size:11px;
+            font-family: "Lato", sans-serif;
+            font-weight: 400;
+            margin: 0 auto 5px;
+            letter-spacing:1.2px;
+            text-transform: uppercase;
+        }
+
+        #content > ul:nth-of-type(2) li i {
+            font-size: 20px;
+            margin-right:5px;
+        }
+
+        #content > ul:nth-of-type(2) li b {
+            font-family: "Protest Revolution", sans-serif !important;
+            font-weight: 400;
+            font-size:20px;
+            line-height: 1;
+            text-shadow: 0 0 2px black !important;
+        }
+
+        #content > ul:nth-of-type(2) li b::after {
+            content: "\A";
+            white-space: pre;
+        }
+
+        #content > ul:nth-of-type(2) li a {
+            display: inlne-block;
+            color: #e0e8b9 !important;
+            text-shadow: 0 0 2px black !important;
+            transition: transform 0.3s ease, letter-spacing 0.3s ease;
+        }
+
+        #content > ul:nth-of-type(2) li a:hover {
+            transform: scale(2.5) !important;
+            letter-spacing: 1.5px;
+        }
+
+        #content > ul:nth-of-type(2) li > .pack {
+            line-height:1;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+            text-align:justify;
+            padding: 10px 15px;
+            margin: 0 auto 15px;
+            background-color: rgba(14, 23, 14, 0.3);
+            --packcolor: white;
+            border: 1.5px solid var(--packcolor);
+            box-shadow: 0 0 10px var(--packcolor), inset 0 0 5px black;
+            font-family: "Cormorant Garamond", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-size:14px;
+        }
+
+/* ranks */
+        #content > div:has(> details > summary.thead) {
+            margin: 0 10px !important;
+        }
+
+        #content details .thead {
+            background: rgba(43, 77, 31, 0.8) !important;
+            box-sizing: border-box;
+            border: 3px solid rgb(126, 192, 149);
+            overflow: hidden;
+            z-index: 1;
+            box-shadow: 0 0 10px rgba(166, 206, 125, 0.8), inset 0 0 5px black;
+            border-radius: 11px;
+        }
+
+        #content details:first-of-type .thead {
+            margin-top: 10px;
+        }
+
+        #content details {
+            position:relative;
+            overflow: visible;
+            margin: 0 auto;
+        }
+
+/* End of News/Relations/Ranks */
