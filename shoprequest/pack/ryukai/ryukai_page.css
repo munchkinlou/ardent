@@ -738,8 +738,8 @@ header .title {
 }
 
 .collapse_content > .law {
-    line-height: 1.2;
-    text-align: justify;
+    line-height: 1.1;
+    text-align: left;
     padding: 0 10px 10px;
     margin: 20px 0 0;
     margin-bottom: 0;
