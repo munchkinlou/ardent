@@ -167,10 +167,10 @@ header .title {
 /* first table under banner*/
 .packwrap > div:nth-of-type(3) {
     position: relative;
-    background: linear-gradient(to bottom, #1a2535ab, #4d9e789e) !important;
+    background: linear-gradient(to top, #35695d8a, #92c4adad) !important;
     box-sizing: border-box;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
-    border: 3px groove #779bee;
+    border: 3px solid #9ec2cc;
     overflow: visible;
     z-index: 1;
     box-shadow: 0 0 10px rgba(168, 213, 115, 0.8);
