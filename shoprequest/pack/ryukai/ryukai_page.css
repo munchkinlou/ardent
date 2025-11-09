@@ -349,8 +349,8 @@ header .title {
 #content > h2 {
     margin: 5px auto;
     background: linear-gradient(to right, #0b2b29d1, #4b8e99b5, #0b2b29d1) !important;
-    border: 1px solid #7adcc0;
-    box-shadow: 0 0 10px rgba(205, 223, 156, 0.6);
+    box-shadow: 0 0 10px rgba(168, 213, 115, 0.8), inset 0 0 10px #000000ab;
+    border: 3px solid #9ec2cc;
     font-family: 'ryukai1', serif;
     font-weight: 400;
     font-style: normal;
@@ -365,11 +365,11 @@ header .title {
     background: linear-gradient(to top, #35695d8a, #92c4adad) !important;
     box-sizing: border-box;
 	text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
-    border: 1px solid #a2dc7a;
     overflow: visible;
     z-index: 1;
     padding: 20px;
-    border: 1px solid #a2dc7a;
+    box-shadow: 0 0 10px rgba(168, 213, 115, 0.8), inset 0 0 10px #000000ab;
+    border: 3px solid #9ec2cc;
 
     font-family: "Cormorant Garamond", serif;
     font-optical-sizing: auto;
@@ -655,7 +655,7 @@ header .title {
 
 .info_con, .info_con2 {
     flex: 1;
-    padding: 20px;
+    padding: 10px 20px 20px;
     margin: 10px 0 0;
 
     text-align: justify;
@@ -663,6 +663,10 @@ header .title {
     background: linear-gradient(to top, #35695d8a, #92c4adad) !important;
     box-shadow: 0 0 10px rgba(168, 213, 115, 0.8), inset 0 0 10px #000000ab;
     border: 3px solid #9ec2cc;
+}
+
+.info_con2 {
+    padding:20px;
 }
 
     /* CORE PHILOSOPHY */
@@ -951,4 +955,52 @@ input#F4:checked + .faction_con {
     background-size:cover;
     background-attachment: local;   
 
+}
+
+/* info normal buttons */
+
+.info_con input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.info_con label {
+    display: block;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+    margin-bottom: -12px;
+    cursor: pointer;
+    color: #fff77a;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.info_con label:hover {
+  color: #42f5bc;
+  transition: color 0.3s ease;
+}
+
+.info_con .button_con {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+
+.info_con input:checked ~ .button_con {
+  max-height: 1000px;
+  opacity: 1;
+}
+
+.info_con input:checked + label + .button_con {
+    display: block;
 }
