@@ -633,6 +633,8 @@ header .title {
     border: 3px solid #9ec2cc;
 }
 
+    /* CORE PHILOSOPHY */
+
 .info .tenets {
     width: 100%;
     max-width: 800px !important;
@@ -673,60 +675,7 @@ header .title {
     text-align: right;
 }
 
-    /* BUTTONS */ 
-
-.collapse_button {
-    display: block;
-    padding: 10px 15px;
-    width: 100%;
-    background-color: rgba(23, 1, 45, 0.8);
-    color: white;
-    cursor: pointer;
-    transition: background 0.3s ease;
-    margin: 0 auto -10px;
-    border-radius: 5px;
-    border: 1.5px solid rgb(221, 115, 2);
-    box-shadow: 0 0 10px rgba(54, 180, 252, 0.8);
-
-    font-family: "Eagle Lake", serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align:center;
-    font-size: 16px;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
-
-    text-decoration: none !important;
-}
-
-.collapse_button:hover {
-  background-color: rgba(255, 136, 0,0.5);
-  text-shadow: 0 0 10px white;
-}
-
-.collapse_ter {
-    display: block;
-    padding: 20px 15px 0;
-    width: 100%;
-    height: 80px !important;
-    color: white;
-    border: 1px solid #48275f;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6), 0 0 10px rgb(32, 4, 48);
-    cursor: pointer;
-    border-radius: 5px;
-
-    font-family: "Eagle Lake", serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align:center;
-    font-size: 30px;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
-
-    --terimage: none;
-    background: black var(--terimage) no-repeat center;
-    background-size:cover;
-    background-attachment: local;   
-
-}
+    /* LAWS */ 
 
 .collapse_rule {
     display: block;
@@ -747,6 +696,13 @@ header .title {
   transition: color 0.3s ease;
 }
 
+.collapse_content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+
 .collapse_content > .law {
     line-height: 1;
     text-align: justify;
@@ -757,17 +713,6 @@ header .title {
     border-bottom: 1.5px solid #d9d26b;
     font-size: 20px;
 }
-
-.collapse_content > p {
-    line-height:1;
-    text-align:justify;
-    padding: 20px;
-    margin: 0 auto 10px;
-    background-color: rgba(9, 0, 20,0.3);
-    border-radius:  10px;
-    border: 1.5px solid rgb(136, 181, 206);
-}
-
 
 .collapse_toggle {
   position: absolute;
@@ -780,13 +725,6 @@ header .title {
   border: 0;
 }
 
-.collapse_content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease, opacity 0.5s ease;
-  opacity: 0;
-}
-
 .collapse_toggle:checked ~ .collapse_content {
   max-height: 1000px;
   opacity: 1;
@@ -797,7 +735,8 @@ header .title {
 }
 
 
-/* RESOURCE BAR */
+    /* FOOD CACHE */
+
 .resource {
     position: relative;
     width: 100%;
@@ -861,7 +800,7 @@ header .title {
     margin-left:auto;
 }
 
-/* FACTIONS */
+    /* FACTIONS */
 
 input.faction_ctog,
 input#F1,
@@ -891,14 +830,15 @@ input#F4 + br {
     display: flex;
     align-items: stretch;
     justify-content: center;
-    margin-bottom: 10px;
+    margin: 20px auto -20px;
+    width: 90%;
 }
 
 .faction_collapse {
     margin: 0 auto;
     padding: 10px 20px;
-    height: 100px;
-    width: 100px;
+    height: 180px;
+    width: 180px;
     background-image: var(--icon);
     background-repeat: no-repeat;
     background-size: contain;
@@ -924,6 +864,14 @@ input#F4 + br {
     transition: max-height 0.5s ease, opacity 0.5s ease;
     opacity: 0;
     margin-top: 10px;
+}
+
+.faction_con faction {
+    text-transform: uppercase;
+    font-family: "ryukai1", cursive;
+    font-weight: 400;
+    color: #d2ff9d;
+    font-size:29px;
 }
 
 .faction_ctog:checked + .faction_con,
