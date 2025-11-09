@@ -541,7 +541,7 @@ header .title {
 .info_flexh {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: stretch;
     flex-direction: row;
 }
 
@@ -555,6 +555,7 @@ header .title {
 
     display: flex;
     flex-direction: column;
+    flex: 1;
 
     background-color: transparent;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
