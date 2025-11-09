@@ -621,7 +621,7 @@ header .title {
     box-shadow: inset 0 0 10px black;
 }
 
-.info_con .info_con2 {
+.info_con, .info_con2 {
     flex: 1;
     padding: 20px;
     margin: 10px 0 0;
