@@ -859,3 +859,63 @@ header .title {
     0 0 5px rgba(0, 0, 0, 0.8);
     margin-left:auto;
 }
+
+/* FACTIONS */
+
+.faction_ctog {
+    display: none;
+}
+
+.faction_buttons {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.faction_collapse {
+    margin: 0 auto;
+    padding: 10px 20px;
+    height:100px;
+    width:100px;
+
+    background-image: var(--icon);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    filter: drop-shadow(0 0 10px black);
+
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.faction_collapse:hover {
+    transform: scale(1.1);
+    border-color: #999;
+}
+
+.faction_collapse:active {
+    transform: scale(0.95);
+}
+
+.andyshop_collapse_content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+}
+
+.faction_ctog:checked + .andyshop_collapse_content {
+    max-height: 1000px;
+    opacity: 1;
+}
+
+.faction_con {
+    margin-top:10px;
+}
+
+.faction_info {
+    text-align: center;
+}
