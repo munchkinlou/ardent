@@ -959,7 +959,7 @@ input#F4:checked + .faction_con {
 
 /* info normal buttons */
 
-.info_con h3 {
+.info_con h3, .info_con2 h3 {
     font-size: 29px;
     text-align: center;
     margin: 5px auto -5px;
@@ -970,18 +970,18 @@ input#F4:checked + .faction_con {
     padding: 0 0 5px;
 }
 
-.info_con > h3:first-of-type {
+.info_con > h3:first-of-type, .info_con2 > h3:first-of-type {
     margin: 0 auto -5px;
 }
 
-.info_con f {
+.info_con f, .info_con2 f {
     font-family: 'ryukai1', serif;
     font-weight: 400;
     font-size: 27px;
     text-align: center;
 }
 
-.info_con input {
+.info_con input, .info_con2 input {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -992,7 +992,7 @@ input#F4:checked + .faction_con {
   border: 0;
 }
 
-.info_con label {
+.info_con label, .info_con2 label {
     display: block;
     font-weight: 400;
     font-style: normal;
@@ -1004,23 +1004,23 @@ input#F4:checked + .faction_con {
     text-align: center;
 }
 
-.info_con label:hover {
+.info_con label:hover, .info_con2 label:hover {
   color: #42f5bc;
   transition: color 0.3s ease;
 }
 
-.info_con .button_con {
+.info_con .button_con, .info_con2 .button_con  {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease, opacity 0.5s ease;
   opacity: 0;
 }
 
-.info_con input:checked ~ .button_con {
+.info_con input:checked ~ .button_con, .info_con2 input:checked ~ .button_con {
   max-height: 1000px;
   opacity: 1;
 }
 
-.info_con input:checked + label + .button_con {
+.info_con input:checked + label + .button_con, .info_con2 input:checked + label + .button_con {
     display: block;
 }
