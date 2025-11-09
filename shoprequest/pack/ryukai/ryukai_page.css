@@ -40,6 +40,7 @@ romaji {
 #content > div.flex.fill:nth-of-type(2) > div > .userhtml > br,
 .info > br,
 .info_con2 > br,
+.info_con2 > div > br,
 .resource_con > br {
     font-size:0;
 }
