@@ -619,7 +619,7 @@ header .title {
 
 .info_con {
     flex: 1;
-    padding: 20px 0;
+    padding: 20px;
     margin: 10px 0 0;
 
     text-align: justify;
