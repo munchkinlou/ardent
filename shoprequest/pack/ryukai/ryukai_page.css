@@ -748,6 +748,10 @@ header .title {
     font-size: 20px;
 }
 
+.collapse_content > .law br {
+    line-height: 1.2px
+}
+
 .collapse_toggle {
   position: absolute;
   width: 1px;
