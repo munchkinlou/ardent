@@ -31,6 +31,13 @@
     font-weight: 400;
 */
 
+romaji {
+    color: #eacc54;
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+}
+
+
 nav {
     background: rgba(18, 30, 24, 0.4) !important;
     filter: drop-shadow(0 0 5px rgba(0,0,0,0.6));
@@ -182,6 +189,13 @@ header .title {
     line-height: 1.1;
     font-size: 18px;
 }
+
+.packwrap > div:nth-of-type(3) strong {
+    color: #eacc54;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+}
+
 /* end of first paragaph */
 
 
