@@ -862,7 +862,27 @@ header .title {
 
 /* FACTIONS */
 
-.faction_ctog {
+input.faction_ctog,
+input#F1,
+input#F2,
+input#F3,
+input#F4 {
+    display: none !important;
+    position: absolute !important;
+    left: -9999px !important;
+    opacity: 0 !important;
+}
+
+.faction_buttons br {
+    display: none;
+}
+
+input.faction_ctog + br,
+br + input.faction_ctog,
+input#F1 + br,
+input#F2 + br,
+input#F3 + br,
+input#F4 + br {
     display: none;
 }
 
@@ -876,16 +896,13 @@ header .title {
 .faction_collapse {
     margin: 0 auto;
     padding: 10px 20px;
-    height:100px;
-    width:100px;
-
+    height: 100px;
+    width: 100px;
     background-image: var(--icon);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-
     filter: drop-shadow(0 0 10px black);
-
     color: white;
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -900,20 +917,21 @@ header .title {
     transform: scale(0.95);
 }
 
-.andyshop_collapse_content {
+.faction_con {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease, opacity 0.5s ease;
     opacity: 0;
+    margin-top: 10px;
 }
 
-.faction_ctog:checked + .andyshop_collapse_content {
-    max-height: 1000px;
+.faction_ctog:checked + .faction_con,
+input#F1:checked + .faction_con,
+input#F2:checked + .faction_con,
+input#F3:checked + .faction_con,
+input#F4:checked + .faction_con {
+    max-height: 2000px;
     opacity: 1;
-}
-
-.faction_con {
-    margin-top:10px;
 }
 
 .faction_info {
