@@ -39,9 +39,11 @@ romaji {
 
 #content > div.flex.fill:nth-of-type(2) > div > .userhtml > br,
 .info > br,
+.info_con > br,
 .resource_con > br {
     font-size:0;
 }
+
 
 nav {
     background: rgba(18, 30, 24, 0.4) !important;
