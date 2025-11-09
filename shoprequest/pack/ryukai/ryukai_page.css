@@ -567,6 +567,10 @@ header .title {
     line-height: 1.2;
 }
 
+.info > br {
+    font-size:0;
+}
+
 .info h2 {
     position: relative;
     margin: 0 auto;
@@ -802,8 +806,8 @@ header .title {
     border: 2px solid #f2f2f2;
     overflow: hidden;
     box-shadow: 
-    0 2px 8px rgba(0, 0, 0, 0.3),
-    inset 0 2px 5px rgba(0, 0, 0, 0.5);
+        0 2px 8px rgba(0, 0, 0, 0.3),
+        inset 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .resource_fill {
@@ -812,14 +816,25 @@ header .title {
     left: 0;
     height: 100%;
     width: var(--fill, 100%);
-    background: linear-gradient(to right, 
-    #d35400 0%, 
-    #dbdd43 50%, 
-    #bff312 100%
-    );
     box-shadow: 
     inset 0 2px 8px rgba(255, 255, 255, 0.4),
     inset 0 -2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.resource[style*="--status: red"] .resource_fill {
+  background-color: #e74c3c;
+}
+
+.resource[style*="--status: orange"] .resource_fill {
+  background-color: #f39c12;
+}
+
+.resource[style*="--status: yellow"] .resource_fill {
+  background-color: #f1c40f;
+}
+
+.resource[style*="--status: green"] .resource_fill {
+  background-color: #2ecc71;
 }
 
 .resource_con {
@@ -832,19 +847,6 @@ header .title {
     z-index: 1;
 }
 
-.resource label {
-    color: white;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-weight: bold;
-    font-size: 10px;
-    text-shadow: 
-    1px 1px 2px black,
-    0 0 5px rgba(0, 0, 0, 0.8);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
 .resource data {
     color: white;
     font-weight: bold;
@@ -854,4 +856,5 @@ header .title {
     text-shadow: 
     1px 1px 2px black,
     0 0 5px rgba(0, 0, 0, 0.8);
+    margin-left:auto;
 }
