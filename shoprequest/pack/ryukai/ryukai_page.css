@@ -960,11 +960,21 @@ input#F4:checked + .faction_con {
 /* info normal buttons */
 
 .info_con h3 {
-    font-size: 27px;
+    font-size: 29px;
     text-align: center;
+    margin: 5px auto -5px;
+    border-bottom: 5px groove #b8f2ffb5;
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    text-shadow: 0 0 5px black;
+    padding: 0 0 5px;
 }
 
-.info_con b {
+.info_con > h3:first-of-type {
+    margin: 0 auto -5px;
+}
+
+.info_con f {
     font-family: 'ryukai1', serif;
     font-weight: 400;
     font-size: 27px;
