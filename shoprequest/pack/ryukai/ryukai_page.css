@@ -959,6 +959,13 @@ input#F4:checked + .faction_con {
 
 /* info normal buttons */
 
+.info_con h3 {
+    font-size: 24px;
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    text-align: center;    
+}
+
 .info_con input {
   position: absolute;
   width: 1px;
