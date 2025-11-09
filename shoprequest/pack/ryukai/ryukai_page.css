@@ -351,8 +351,8 @@ header .title {
     background: linear-gradient(to right, #0b2b29d1, #4b8e99b5, #0b2b29d1) !important;
     border: 1px solid #7adcc0;
     box-shadow: 0 0 10px rgba(205, 223, 156, 0.6);
-    font-family: "Cinzel Decorative", serif;
-    font-weight: bolder;
+    font-family: 'ryukai1', serif;
+    font-weight: 400;
     font-style: normal;
     text-align: center;
     font-size: 32px;
@@ -516,6 +516,8 @@ header .title {
             z-index: 1;
             box-shadow: 0 0 10px rgba(166, 206, 125, 0.8), inset 0 0 5px black;
             border-radius: 11px;
+            font-family: "Cinzel Decorative", serif;
+            font-weight: 400;
         }
 
         #content details:first-of-type .thead {
@@ -535,7 +537,29 @@ header .title {
         #content details summary::-webkit-details-marker, #content details summary::marker {
             display: none;
         }
-        
+
+        .rank{
+            text-align:justify;
+            padding: 15px;
+            margin: 10px;
+            background-color: rgba(9, 0, 20, 0.9);
+            border-radius: 5px;
+            border: 1.5px solid rgb(136, 181, 206);
+            border: 1px solid #0d3a5c;
+            box-shadow: 0 0 10px rgba(54, 180, 252, 0.8);
+        }
+
+        .requirement {
+            text-align:center;
+            border: 1.5px solid rgba(3, 188, 255, 0.342);
+            background-color: rgba(9, 0, 20, 0.2);
+            margin: 10px -10px -10px;
+            padding: 10px;
+            font-size: 10px;
+            text-transform:uppercase;
+        }
+
+
 /* End of News/Relations/Ranks */
 
 /* INFORMATION */
@@ -697,7 +721,7 @@ header .title {
     color: #fff77a;
     font-family: "Cinzel Decorative", serif;
     font-weight: 400;
-    text-align: left;
+    text-align: center;
 }
 
 .collapse_rule:hover {
@@ -924,4 +948,3 @@ input#F4:checked + .faction_con {
     background-attachment: local;   
 
 }
-
