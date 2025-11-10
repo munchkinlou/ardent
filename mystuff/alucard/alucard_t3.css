@@ -126,7 +126,7 @@
   text-align: center;
   text-shadow: none;
   line-height: 0.9;
-  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.99)) drop-shadow(0 0 1px rgb(0, 0, 0));
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
 }
 
 .alucardt3_speech {
@@ -146,7 +146,7 @@
   text-shadow: none;
   font-size: 54px;
   line-height: 1.1;
-  filter: drop-shadow(0 0 3px rgba(0,0,0,0.8)) drop-shadow(0 0 2px rgba(0, 0, 0, 0.8));
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
 }
 
 .alucardt3_speech car {
@@ -203,3 +203,4 @@
 }
 
 }
+
