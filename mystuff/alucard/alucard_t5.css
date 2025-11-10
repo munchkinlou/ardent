@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+/*
+  font-family: "Love Light", cursive;
+  font-weight: 400;
+
+  font-family: "Amarante", serif;
+  font-weight: 400;
+
+  font-family: "Winky Rough", sans-serif;
+  font-weight: 400;
+*/
+
+.alucardt5 {
+	position: relative;
+  width: 800px;
+  margin: 20px auto 40px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+}
+
+
+.alucardt5 credit {
+  position: absolute;
+  bottom: -25px;
+  right: 0;
+  width: 100%;
+  display:block;
+  text-align:center;
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.alucardt5_bor {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom, #0E151B, #41593E);
+  padding: 3px;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+.alucardt5_con {
+  position: relative;
+  width: 100%;
+  padding: 480px 20px 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+
+  background: url('https://ik.imagekit.io/arl60/Ardent/personal/Alucard/103%20munchkinlou%20optimized.png?updatedAt=1762791021220') no-repeat;
+  background-size: 100%;
+  background-position: top;
+  background-attachment: local;
+}
+
+.alucardt5_con::before {
+  position:absolute;
+  content:'';
+  width:100%;
+  height:100%;
+  inset:0;
+
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 420px, #181F27 520px, #0F1319);
+
+  z-index:1;
+}
+
+.alucardt5_con > * {
+  position: relative;
+  z-index: 2;
+}
+
+.alucardt5_incon {
+  position: relative;
+  overflow: hidden;
+  padding: 10px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, rgba(0,0,0,0), #0E1319, #2e392b);
+  text-align: justify;
+  font-family: "Winky Rough", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #ffece7;
+  line-height: 1.2;
+  border: 1px solid;
+  border-image: linear-gradient(to bottom, rgba(0,0,0,0), #88B9B6) 1;
+  border-top:none;
+}
+
+.alucardt5_incon speak, .alucardt5_incon car  {
+  font-family: "Amarante", serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  text-shadow: none;
+  line-height: 0.9;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
+}
+
+.alucardt5_speech {
+  display: block;
+  position: relative;
+  margin: 10px 0 -20px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.alucardt5_speech speak, .alucardt5_speech car {
+  display: inline;
+  font-family: "Love Light", cursive;
+  font-weight: 400;
+  text-shadow: none;
+  font-size: 50px;
+  line-height: 1.1;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
+}
+
+.alucardt5_speech car {
+  display: block;
+  font-size: 29px;
+  text-transform: lowercase;
+  padding-left: 55px;
+  margin-top: -20px;
+}
+
+.alucardt5_incon speak, .alucardt5_speech speak {
+  color: transparent;
+  background: linear-gradient(to bottom, #64bf99, #63e1d0);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.alucardt5_incon car, .alucardt5_speech car {
+  color: transparent;
+  background: linear-gradient(to bottom, #eeae65, #f0790a);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.alucardt5_speech::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 100%;
+  height: 1.1px;
+  margin: 0px auto 0;
+  background: linear-gradient(to right, transparent, #88B9B6, transparent);
+}
+
+@media (max-width: 1200px) {
+
+.alucardt5_con {
+  padding: 0;
+  background:none;
+}
+
+  .alucardt5_con::before {
+    display: none;
+  }
+
+  .alucardt5_speech {
+  margin: 0 auto -30px;
+}
+
+
+.alucardt5 credit {
+  position: relative;
+  inset:auto;
+  display:block;
+  transform: none;
+  margin-top:10px;
+}
+
+}
+
