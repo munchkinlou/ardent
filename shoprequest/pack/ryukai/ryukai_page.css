@@ -1023,7 +1023,6 @@ input#F4:checked + .faction_con {
     color: #ffffff !important;
 }
 
-
 .info th {
     background-color: rgba(39, 85, 76, 0.6);
     padding: 2px;
@@ -1038,4 +1037,13 @@ input#F4:checked + .faction_con {
     background-color: rgba(86, 140, 157, 0.29);
     border-right: 1px solid #63dd6a;
     font-size:20px;
+}
+
+@media (max-width: 1200px) {
+
+.info_flexh {
+    flex-direction: column;
+}
+
+
 }
