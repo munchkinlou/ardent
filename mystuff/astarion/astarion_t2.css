@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+/*
+  font-family: "Love Light", cursive;
+  font-weight: 400;
+
+  font-family: "Amarante", serif;
+  font-weight: 400;
+
+  font-family: "Winky Rough", sans-serif;
+  font-weight: 400;
+*/
+
+.astariont2 {
+	position: relative;
+  width: 500px;
+  margin: 20px auto 40px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+}
+
+
+.astariont2 credit {
+  position: absolute;
+  bottom: -25px;
+  right: 0;
+  width: 100%;
+  display:block;
+  text-align:center;
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.astariont2_bor {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom, #D7C099, black);
+  padding: 3px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  border-radius: 400px 400px 0 0;
+  overflow:hidden;
+
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+.astariont2_con {
+  position: relative;
+  width: 100%;
+  padding: 500px 20px 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to bottom, black 600px, #1c0101);
+  border-radius: 400px 400px 0 0;
+
+}
+
+.astariont2_con::before {
+  position:absolute;
+  content:'';
+  width:100%;
+  height:100%;
+  inset:0;
+  border-radius: 400px 400px 0 0;
+
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+  background: url('https://ik.imagekit.io/arl60/Ardent/personal/Astarion/AstarionbyEdith.png?updatedAt=1755814301623') no-repeat;
+  background-size: 130%;
+  background-position: -60px 0px;
+  background-attachment: local;
+
+  z-index:1;
+}
+
+.astariont2_con > * {
+  position: relative;
+  z-index: 2;
+}
+
+.astariont2_incon {
+  position: relative;
+  overflow: hidden;
+  padding: 10px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, rgba(0,0,0,0), #300101);
+  text-align: justify;
+  font-family: "Winky Rough", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #ffece7;
+  line-height: 1.2;
+  border: 1px solid;
+  border-image: linear-gradient(to bottom, rgba(0,0,0,0), #A7633C, #FFFFE9) 1;
+  border-top:none;
+}
+
+.astariont2_incon speak {
+  font-family: "Amarante", serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  text-shadow: none;
+  line-height: 0.9;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
+}
+
+.astariont2_speech {
+  display: block;
+  position: relative;
+  margin: 0 0 -5px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.astariont2_speech speak {
+  display: inline;
+  font-family: "Love Light", cursive;
+  font-weight: 400;
+  text-shadow: none;
+  font-size: 35px;
+  line-height: 1.1;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
+}
+
+.astariont2_incon speak, .astariont2_speech speak {
+  color: transparent;
+  background: linear-gradient(to bottom, #FFFFE9, #A7633C);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.astariont2_speech::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 100%;
+  height: 1.1px;
+  margin: 0px auto 0;
+  background: linear-gradient(to right, transparent, #FFFFE9, transparent);
+}
+
+@media (max-width: 1200px) {
+
+.astariont2_con {
+  padding: 0;
+  background:none;
+}
+
+  .astariont2_con::before {
+    display: none;
+  }
+
+  .astariont2_speech {
+  margin: 0 auto -10px;
+}
+
+.astariont2_bor, .astariont2_con, .astariont2_con::before {
+  border-radius:0;
+}
+
+.astariont2 credit {
+  position: relative;
+  inset:auto;
+  display:block;
+  transform: none;
+  margin-top:10px;
+}
+
+}
+
