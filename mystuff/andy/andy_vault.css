@@ -36,7 +36,6 @@
 
 .andyvault > div {
     font-size:0;
-    margin-bottom:-30px;
 }
 
 .andyvault label {
@@ -98,7 +97,7 @@ br + .andytvault input {
     overflow: hidden;
     transition: max-height 0.5s ease, opacity 0.5s ease;
     opacity: 0;
-    padding:10px 0 50px;
+    padding:10px 0;
 }
 
 .andyvault input:checked + .andyvault_con {
