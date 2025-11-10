@@ -959,6 +959,10 @@ input#F4:checked + .faction_con {
 
 /* NORMAL BUTTON */
 
+.collapse_content > br {
+    font-size:0;
+}
+
 .info_con f, .info_con2 f  {
     font-family: 'ryukai1', serif;
     font-weight: 400;
