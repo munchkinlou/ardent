@@ -957,7 +957,7 @@ input#F4:checked + .faction_con {
 
 }
 
-/* EVENTS BUTTON */
+/* NORMAL BUTTON */
 
 .info_con f, .info_con2 f  {
     font-family: 'ryukai1', serif;
@@ -978,10 +978,10 @@ input#F4:checked + .faction_con {
     width: 100%;
     height: 80px !important;
     color: #e9f0be;
-    border: 1px solid #b0e37d;
+    border: 1px solid #e5e484;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6), 0 0 6px rgb(32, 4, 48);
     cursor: pointer;
-    border-radius: 50px;
+    border-radius: 15px/50px;
 
     font-family: "Protest Revolution", sans-serif;
     font-weight: 400;
@@ -990,5 +990,5 @@ input#F4:checked + .faction_con {
     font-size: 25px;
     text-shadow: 1px 1px 5px rgba(0,0,0,0.7), 0px 0px 8px rgba(0,0,0,0.5);
 
-    background: linear-gradient(to bottom, #e7ffbe8a, #3a6b4f75);
+    background: linear-gradient(to right, #305944, #6dbdc191);
 }
