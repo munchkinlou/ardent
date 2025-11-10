@@ -670,11 +670,12 @@ header .title {
 }
 
 .info_con3 {
-    max-height:300px;
+    height:270px;
     overflow:hidden;
     overflow-y:auto;
     scrollbar-color: rgba(255, 252, 209, 0.4) transparent;
-    scrollbar-width: thin; 
+    scrollbar-width: thin;
+    flex:none;
 }
 
 .info_con3::-webkit-scrollbar {
