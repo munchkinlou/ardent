@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+@font-face {
+  font-family: 'deadlock1';
+  src: url('VikingNormal-36VL.otf');
+}
+
+/*
+
+  font-family: "Amarante", serif;
+  font-weight: 400;
+
+  font-family: "deadlock1", serif;
+  font-weight: 400;
+
+  font-family: "Goudy Bookletter 1911", serif;
+  font-weight: 400;  
+
+*/
+
+.deadlockt1 {
+	position: relative;
+  width: 420px;
+  margin: 20px auto 50px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+}
+
+
+.deadlockt1 credit {
+  position: absolute;
+  width: 100%;
+  display:block;
+
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+
+  bottom:-20px;
+  right:70px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.deadlockt1_img {
+  position: absolute;
+  bottom: -87px;
+  left: -223px;
+  width: 191%;
+  height: 527px;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Deadlock/DxquGwJ.png?updatedAt=1762810379416') no-repeat bottom;
+  background-size: contain;
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 2px rgba(108, 171, 147, 0.63)) saturate(1.3);
+}
+
+.deadlockt1_bor {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom, #650101, black);
+  padding: 2px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  overflow:hidden;
+}
+
+.deadlockt1_con {
+  position: relative;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  pointer-events: none;
+  margin: 0 auto;
+}
+
+.deadlockt1_con::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  background: white url('https://ik.imagekit.io/arl60/Ardent/personal/Deadlock/2151542416.jpg?updatedAt=1762811360740') repeat-y;
+  background-size:100%;
+  background-position:top;
+  background-attachment:fixed;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.9);
+  /*! opacity: 1; */
+  filter: brightness(0.65);
+}
+
+.deadlockt1_con > * {
+  position: relative;
+  z-index: 2;
+}
+
+.deadlockt1_incon {
+  position: relative;
+  overflow: hidden;
+  padding: 10px 15px 400px;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #0d1817, #00000096);
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.8);
+  text-align: justify;
+  font-family: "Goudy Bookletter 1911", serif;
+  font-weight: 400;
+  font-size:13px;
+  color: #CBD6CF;
+  line-height: 1.2;
+}
+
+.deadlockt1_incon d {
+  display:block;
+  margin:0 auto;
+  width:100%;
+  height:10px;
+
+  border-top: 1.1px solid;
+  border-image: linear-gradient(to right, transparent, #cf2323,transparent) 1;
+}
+
+.deadlockt1_incon speak {
+  font-family: "Amarante", serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  text-shadow: none;
+  line-height: 0.9;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
+}
+
+.deadlockt1_speech {
+  display: block;
+  position:absolute;
+  bottom:352px;
+  left:91px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 0.8;
+  padding-top: 10px;
+}
+
+.deadlockt1_speech speak {
+  font-family: "deadlock1", sans-serif;
+  font-weight: 400;
+  text-shadow: none;
+  font-size: 29px;
+  line-height: 1.1;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
+}
+
+.deadlockt1_incon speak, .deadlockt1_speech speak {
+  color: #0000;
+  background: linear-gradient(to bottom, #3B8274, #72D9BC);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+@media (max-width: 1200px) {
+
+  .deadlockt1 {
+    filter: none;
+    margin: 10px auto;
+  }
+
+  .deadlockt1_con::before {
+    display: none;
+  }
+
+.deadlockt1 credit {
+  position: relative;
+  inset:auto;
+  display:block;
+  text-align: center;
+}
+
+.deadlockt1_speech {
+  position: relative;
+  inset:auto;
+  padding:0;
+}
+
+.deadlockt1_img {
+  display: none;
+}
+.deadlockt1_incon {
+  padding: 10px;
+}
+
+}
