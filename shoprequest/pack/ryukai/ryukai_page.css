@@ -1007,3 +1007,32 @@ input#F4:checked + .faction_con {
 
     background: linear-gradient(to right, #305944, #6dbdc191);
 }
+
+.info table {
+    width: 100%;
+    margin: 10px auto;
+    border-collapse: collapse;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    border: 1.5px solid #7bce5d;
+    box-shadow: 0 0 10px rgba(26, 188, 156, 0.8);
+}
+
+.info tr {
+    color: #ffffff !important;
+}
+
+.info th {
+    background-color: rgba(39, 85, 76, 0.6);
+    padding: 2px;
+    color: #ffffff !important;
+    border: 1.5px solid #e3db68;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+}
+
+.info td {
+    background-color: rgba(86, 140, 157, 0.29);
+    border-right: 1px solid #63dd6a;
+}
