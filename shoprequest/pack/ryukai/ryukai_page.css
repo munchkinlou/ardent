@@ -653,7 +653,7 @@ header .title {
     box-shadow: inset 0 0 10px black;
 }
 
-.info_con, .info_con2 {
+.info_con, .info_con2, .info_con3 {
     flex: 1;
     padding: 10px 20px 20px;
     margin: 10px 0 0;
@@ -667,6 +667,31 @@ header .title {
 
 .info_con2 {
     padding:20px;
+}
+
+.info_con3 {
+    max-height:300px;
+    overflow:hidden;
+    overflow-y:auto;
+    scrollbar-color: rgba(255, 252, 209, 0.4) transparent;
+    scrollbar-width: thin; 
+}
+
+.info_con3::-webkit-scrollbar {
+    width: 12px;
+}
+
+.info_con3::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.info_con3::-webkit-scrollbar-thumb {
+    background: rgba(255, 252, 209, 0.4);
+    border-radius: 6px;
+}
+
+.info_con3::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 252, 209, 0.4);
 }
 
     /* CORE PHILOSOPHY */
