@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+/*
+  font-family: "Love Light", cursive;
+  font-weight: 400;
+
+  font-family: "Amarante", serif;
+  font-weight: 400;
+
+  font-family: "Winky Rough", sans-serif;
+  font-weight: 400;
+*/
+
+.branwent2 {
+	position: relative;
+  width: 420px;
+  margin: 50px auto 40px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+}
+
+
+.branwent2 credit {
+  position: absolute;
+  width: 100%;
+  display:block;
+
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+
+  bottom:-22px;
+  left:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.branwent2_img {
+  position: absolute;
+  top: -12px;
+  left: -176px;
+  width: 182%;
+  height: 512px;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Branwen/IMG_1995.png?updatedAt=1762807789331') no-repeat top;
+  background-size: contain;
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.9)) drop-shadow(0 0 2px rgba(227, 198, 172, 0.9));
+}
+
+.branwent2_bor {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom, #F2DAC4, #441d11);
+  padding: 2px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  overflow:hidden;
+  border-radius: 300px 300px 0 0;
+}
+
+.branwent2_con {
+  position: relative;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  pointer-events: none;
+  margin: 0 auto;
+  border-radius: 300px 300px 0 0;
+}
+
+.branwent2_con::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  background: white url('https://ik.imagekit.io/arl60/Ardent/personal/Branwen/15441662_5608378.jpg?updatedAt=1762806267240') repeat-y;
+  background-size:100%;
+  background-position:center;
+  background-attachment:local;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.9);
+  border-radius: 30px;
+  opacity: 0.6;
+  border-radius: 300px 300px 0 0;
+}
+
+.branwent2_con > * {
+  position: relative;
+  z-index: 2;
+}
+
+.branwent2_incon {
+  position: relative;
+  overflow: hidden;
+  padding: 450px 15px 80px;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #211407, #251608cf);
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.8);
+  text-align: justify;
+  font-family: "Winky Rough", sans-serif;
+  font-weight: 400;
+  font-size:10px;
+  color: #fff0e1;
+  line-height: 1.2;
+  border-radius: 300px 300px 0 0;
+}
+
+.branwent2_incon d {
+  display:block;
+  margin:0 auto;
+  width:100%;
+  height:10px;
+
+  border-top: 1.1px solid;
+  border-image: linear-gradient(to right, transparent, #377e28, #83F5D0, #377e28, transparent) 1;
+}
+
+.branwent2_incon speak, .branwent2_incon car {
+  font-family: "Amarante", serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  text-shadow: none;
+  line-height: 0.9;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
+}
+
+.branwent2_speech {
+  display: block;
+  position:absolute;
+  bottom:-3px;
+  left:117px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 0.8;
+  padding-top: 10px;
+}
+
+.branwent2_speech speak, .branwent2_speech car {
+  font-family: "Love Light", cursive;
+  font-weight: 400;
+  text-shadow: none;
+  font-size: 49px;
+  line-height: 1.1;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
+}
+
+.branwent2_speech car {
+  display: block;
+  font-size: 28px;
+  text-transform: lowercase;
+  padding-left: 65px;
+  margin-top: -20px;
+}
+
+.branwent2_incon speak, .branwent2_speech speak {
+  color: transparent;
+  background: linear-gradient(to bottom, #377e28, #83F5D0);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.branwent2_incon car, .branwent2_speech car {
+  color: transparent;
+  background: linear-gradient(to bottom, #eeae65, #f0790a);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+@media (max-width: 1200px) {
+
+  .branwent2 {
+    filter: none;
+    margin: 10px auto;
+  }
+  
+  .branwent2_bor, .branwent2_con, .branwent2_con::before, .branwent2_incon {
+    border-radius:0;
+  }
+
+  .branwent2_con::before {
+    display: none;
+  }
+
+.branwent2 credit {
+  position: relative;
+  inset:auto;
+  display:block;
+  text-align: center;
+  transform:none;
+}
+
+.branwent2_speech {
+  position: relative;
+  inset:auto;
+  padding:0;
+  margin: -10px auto;
+}
+
+.branwent2_img {
+  display: none;
+}
+.branwent2_incon {
+  padding: 10px;
+}
+
+}
