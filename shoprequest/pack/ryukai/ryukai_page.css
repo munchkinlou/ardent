@@ -1023,6 +1023,7 @@ input#F4:checked + .faction_con {
     color: #ffffff !important;
 }
 
+
 .info th {
     background-color: rgba(39, 85, 76, 0.6);
     padding: 2px;
@@ -1030,9 +1031,11 @@ input#F4:checked + .faction_con {
     border: 1.5px solid #e3db68;
     font-family: "Cinzel Decorative", serif;
     font-weight: 400;
+    font-size:20px;
 }
 
 .info td {
     background-color: rgba(86, 140, 157, 0.29);
     border-right: 1px solid #63dd6a;
+    font-size:20px;
 }
