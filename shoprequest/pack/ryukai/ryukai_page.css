@@ -963,6 +963,17 @@ input#F4:checked + .faction_con {
     font-size:0;
 }
 
+.collapse_content > h3 {
+    font-size: 24px;
+    text-align: center;
+    color: #ffffb7;
+}
+
+.collapse_content > h4 {
+    font-size: 20px;
+    text-align: center;
+}
+
 .info_con f, .info_con2 f  {
     font-family: 'ryukai1', serif;
     font-weight: 400;
@@ -987,8 +998,8 @@ input#F4:checked + .faction_con {
     cursor: pointer;
     border-radius: 15px/50px;
 
-    font-family: "Protest Revolution", sans-serif;
-    font-weight: 400;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: bold;
     font-style: normal;
     text-align:center;
     font-size: 25px;
