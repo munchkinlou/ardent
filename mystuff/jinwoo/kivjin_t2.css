@@ -20,7 +20,7 @@
 .kivjint2 {
 	position: relative;
   width: 420px;
-  margin: 70px auto 40px;
+  margin: 120px auto 40px;
   position: relative;
   overflow: visible;
   padding: 0;
@@ -48,10 +48,10 @@
 
 .kivjint2_img {
   position: absolute;
-  top: -69px;
-  left: -125px;
+  top: -132px;
+  left: -151px;
   width: 179%;
-  height: 548px;
+  height: 605px;
   background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Jinwoo/Kivara_and_baby.png?updatedAt=1762838463936') no-repeat top;
   background-size: contain;
   z-index: 5;
@@ -125,7 +125,7 @@
   height:10px;
 
   border-top: 1.1px solid;
-  border-image: linear-gradient(to right, transparent, #377e28, #83F5D0, #377e28, transparent) 1;
+  border-image: linear-gradient(to right, transparent, white, transparent) 1;
 }
 
 .kivjint2_incon kiv, .kivjint2_incon jin {
