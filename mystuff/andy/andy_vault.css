@@ -100,6 +100,6 @@ br + .andytvault input {
 }
 
 .andyvault input:checked + .andyvault_con {
-    max-height: 1000px !important;
+    max-height: 1500px !important;
     opacity: 1 !important;
 }
