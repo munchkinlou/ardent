@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+@font-face {
+  font-family: 'Kjartan1';
+  src: url('VikingNormal-36VL.otf') format('truetype');
+}
+
+/*
+
+  font-family: "Amarante", serif;
+  font-weight: 400;
+
+  font-family: "Kjartan1", serif;
+  font-weight: 400;
+
+  font-family: 'Eagle Lake', serif;
+  font-weight: 400;
+
+  font-family: "Goudy Bookletter 1911", serif;
+  font-weight: 400;  
+
+*/
+
+
+.kjartant9_bor {
+    position:relative;
+  margin: 20px auto 50px;
+  padding: 3px;
+  width: 700px;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 10px black;
+  background: linear-gradient(to bottom, #FFF, #8f8f8f);
+}
+
+.kjartant9_bor credit {
+  position: absolute;
+  bottom: -25px;
+  right: 0;
+  left:0;
+  width: 100%;
+  display:block;
+  text-align:center;
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.kjartant9_con {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  padding: 900px 20px 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #2A3354 url('https://ik.imagekit.io/arl60/Ardent/personal/Kjartan/comm._oct2025._andy.CLIENT.png?updatedAt=1761370365336') no-repeat top;
+  background-size: 110%;
+  background-position: -30px -20px;
+  box-shadow: inset 0 0 20px rgba(170, 223, 255, 0.8);
+
+}
+
+.kjartant9_con::after {
+  content: '';
+  width:100%;
+  height:100%;
+  position: absolute;
+  inset:0;
+  background: linear-gradient(to bottom, transparent 850px, #111114 1000px, #04090B);
+  pointer-events: none;
+  box-shadow: inset 0 0 20px #5E5E5E;
+}
+
+.kjartant9_incon {
+  position: relative;
+  z-index: 6;
+  padding: 50px 20px 0;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: visible;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 15%, #1c1c20);
+  border: 2px solid;
+  border-image: linear-gradient(to bottom,transparent, #E6D8C1, #D7C69E) 1;
+  border-top: none;
+
+  font-family: "Goudy Bookletter 1911", serif;
+  font-weight: 400;
+  font-size: 11px;
+  color: #fff;
+  text-align: justify;
+  line-height:1.2;
+}
+
+
+.kjartant9_incon speak, .kjartant9_incon nor, .kjartant9_incon spa {
+	font-family: 'Amarante';
+  font-size: 14px;
+  line-height:1;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
+}
+
+.kjartant9_incon speak {
+  color: transparent;
+  background: linear-gradient(to bottom, #FFDC75, #EA9250);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.kjartant9_incon nor {
+  color: #60e9f3;
+}
+
+.kjartant9_incon spa {
+  color: #e68160;
+}
+
+
+.kjartant9_speech::before, .kjartant9_spch {
+  content: '';
+  display: block;
+  height: 1.1px;
+  line-height: normal;
+  margin: 0 auto;
+  width:100%;
+  background: linear-gradient(to right, transparent 10%, #C6B58C, #E8DFAF, #C6B58C, transparent 90%);
+}
+
+.kjartant9_spch {
+  margin: 0 auto 80px;
+  text-align: center;
+  font-family: 'Amarante';
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+.kjartant9_spch speak {
+  display: block;
+  margin: 0 auto -20px;
+  font-family: 'Kjartan1';
+  font-size:30px;
+}
+
+.kjartant9_spch nor {
+  font-family: 'Eagle Lake', serif;
+  font-weight: 400;
+  font-size:16px;
+}
+
+
+@media (max-width: 1200px) {
+  .kjartant9_infade,
+  .kjartant9_con::after {
+    display: none;
+    padding: 0;
+  }
+
+  .kjartant9_incon {
+    filter:none;
+    padding:10px;
+  }
+
+  .kjartant9_con {
+    padding:0;
+    background:none;
+  }
+}
