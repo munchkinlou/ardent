@@ -22,59 +22,58 @@
 
 */
 
-.kjartant6 {
+
+.kjartant5_content, .kjartant5 {
 	position: relative;
-  width: 450px;
-  margin: 20px auto 40px;
+  width: 400px;
+  margin: 30px 100px 30px auto;
   position: relative;
   overflow: visible;
   padding: 0;
   background:transparent;
   box-sizing: border-box;
-  /*! filter: drop-shadow(0 2px 2px rgba(0,0,0,1)); */
 }
 
-
-.kjartant6 credit {
+.kjartant5_content credit, .kjartant5 credit {
   position: absolute;
-  bottom: 225px;
-  right: -235px;
+  bottom: -25px;
+  right: 0;
+  left:0;
   width: 100%;
   display:block;
-  text-align:right;
+  text-align:center;
   font-family: arial;
   text-transform: uppercase;
   font-size: 11px;
   font-weight: bold;
   z-index: 10;
-  transform: rotate(-270deg);
 }
 
-.kjartant6_img {
+.kjartant5_img {
   position: absolute;
-  bottom: -130px;
-  left: -140px;
-  width: 130%;
-  height: 500px;
-  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Kjartan/Kjar_Bgless2.png?updatedAt=1756338580981') no-repeat center bottom;
-  background-size: contain; 
+  bottom: -40px;
+  right: 260px;
+  width: 165%;
+  height: 600px;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Kjartan/Kjartan_Andy2armor.png?updatedAt=1756444805009') no-repeat center bottom;
+  background-size: 80%; 
   z-index: 5;
   pointer-events: none;
-  transform: rotate(0deg);
-  filter: saturate(1.5) brightness(1.1) drop-shadow(0 0 5px black);
+  filter: drop-shadow(-5px 0px 1px rgba(0, 0, 0, 0.833));
 }
 
-.kjartant6_bor {
+.kjartant5_bor {
   position: relative;
   width: 100%;
-  background: linear-gradient(to bottom, #3c220b, #252525 90%);
+  background: linear-gradient(to bottom, #CBDDFA, #ECCCB4);
   padding: 5px;
   box-sizing: border-box;
   margin: 0 auto;
-  box-shadow: -5px -5px 5px black;
+
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.9);
 }
 
-.kjartant6_con {
+.kjartant5_con {
   position: relative;
   width: 100%;
   padding: 10px;
@@ -82,100 +81,92 @@
   pointer-events: none;
   margin: 0 auto;
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
-  background: black;
 }
 
-.kjartant6_con::before {
+.kjartant5_con::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('https://ik.imagekit.io/arl60/Ardent/personal/Kjartan/alena-aenami-serenity.jpg?updatedAt=1756337812096') no-repeat center;
+  background: url('https://ik.imagekit.io/arl60/Ardent/personal/Kjartan/mist.jpg?updatedAt=1753534365590') no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   pointer-events: none;
   overflow: hidden;
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.8);
-  filter: grayscale(0.3);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.kjartant6_con > * {
+.kjartant5_con > * {
   position: relative;
   z-index: 2;
 }
 
-.kjartant6_incon {
+.kjartant5_incon {
   position: relative;
   overflow: hidden;
-  padding: 5px 15px 350px;
+  padding: 10px 20px 50px;
   width: 100%;
+  min-height: 450px;
   box-sizing: border-box;
-  background: linear-gradient(to bottom, #181615, #211815f0, #000000d6);
+  background: rgba(0,0,0,0.8);
   height: auto;
-  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 10px 10px rgba(122, 122, 122, 0.2);
   text-align: justify;
   font-family: "Goudy Bookletter 1911", serif;
   font-weight: 400;  
   font-size: 11px;
   color: #ffffff;
   line-height: 1.2;
-  border: 2px solid;
-  border-image: linear-gradient(to top, black, rgb(255, 162, 42), white) 1;
+  border: 1px solid #707070;
 }
 
-.kjartant6_incon speak, .kjartant6_incon nor, .kjartant6_incon spa {
+.kjartant5_incon speak, .kjartant5_incon nor, .kjartant5_incon spa {
 	font-family: 'Amarante';
-  font-size: 12px;
-  text-align: center;
+  font-size: 14px;
+  line-height: 1;
   text-shadow: none;
-  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
+  filter: drop-shadow(0 0 3px rgba(0,0,0,0.8));
 }
 
-.kjartant6_incon speak {
+.kjartant5_incon speak {
   color: transparent;
   background: linear-gradient(to bottom, #FAF880, #EA9250);
   -webkit-background-clip: text;
   background-clip: text;
 }
 
-.kjartant6_incon nor {
+.kjartant5_incon nor {
   color: #60e9f3;
 }
 
-.kjartant6_incon spa {
+.kjartant5_incon spa {
   color: #e68160;
 }
 
-.kjartant6_speech {
+.kjartant5_speech {
   display: block;
   position: relative;
-  margin: 0 auto;
+  margin: 0px 0 -50px 0;
   text-align: center;
 }
 
-.kjartant6_speech kjar, .kjartant6_speech speak {
+.kjartant5_speech kjar, .kjartant5_speech speak {
   display: block;
   font-family: 'Kjar_Viking';
-  color: transparent;
-  background: linear-gradient(to bottom, #FFDC75, #EA9250);
-  -webkit-background-clip: text;
-  background-clip: text;
-  text-shadow: none;
   font-size: 40px;
   line-height: 1.1;
-  filter: drop-shadow(0 0 3px rgba(0,0,0,0.8));
-  margin-bottom:-20px;
+  margin: 0 auto -18px;
 }
 
-.kjartant6_speech nor {
+.kjartant5_speech nor {
   font-family: 'Eagle Lake', serif;
   font-weight: 400;
-  font-size:18px;
+  font-size:16px;
 }
 
-.kjartant6_speech::before {
+.kjartant5_speech::before {
   content: '';
   position: absolute;
   top: 0;
@@ -183,28 +174,43 @@
   width: 100%;
   height: 1.5px;
   margin: 0px auto 0;
-  background: linear-gradient(to right, transparent, rgba(255, 124, 29, 0.5), transparent);
+  background: linear-gradient(to right, transparent, #FFDC75, transparent);
 }
 
 @media (max-width: 1200px) {
 
-.kjartant6_con::before {
+  .kjartant5_content {
+    filter: none;
+    margin: 0 auto;
+  }
+
+  .kjartant5_con::before {
+    display: none;
+  }
+
+.kjartant5_incon {
+  min-height: 10px;
+}
+
+.kjartant5_img {
   display: none;
 }
 
-.kjartant6 credit {
+.kjartant5_content credit {
   position: relative;
   inset:auto;
+}
+
+
+}
+
+/* old */
+
+.andyc {
+  display:block;
   text-align:center;
-  transform: none;
-}
-
-.kjartant6_img {
-  display: none;
-}
-
-.kjartant6_incon {
-  padding:10px;
-}
-
+  font-size:10px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-family: arial;
 }
