@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+/*
+  font-family: "Love Light", cursive;
+  font-weight: 400;
+
+  font-family: "Amarante", serif;
+  font-weight: 400;
+
+  font-family: "Winky Rough", sans-serif;
+  font-weight: 400;
+*/
+
+.jinwoot3 {
+	position: relative;
+  width: 500px;
+  margin: 20px auto 150px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+}
+
+
+.jinwoot3 credit {
+  position: absolute;
+  width: 100%;
+  display:block;
+
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+
+  bottom:-20px;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+  right: 70px;
+}
+
+.jinwoot3_img {
+  position: absolute;
+  bottom: -133px;
+  left: -152px;
+  width: 156%;
+  height: 549px;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Jinwoo/c__lion_by_horrvs_s_toofs.png?updatedAt=1762832197456') no-repeat bottom;
+  background-size: contain;
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 2px rgba(0, 0, 0, 0.9));
+}
+
+.jinwoot3_bor {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom, #729ACC, #08091B);
+  padding: 2px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  overflow:hidden;
+}
+
+.jinwoot3_con {
+  position: relative;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  pointer-events: none;
+  margin: 0 auto;
+}
+
+.jinwoot3_con::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  background: white url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/starrynight.jpg?updatedAt=1753495763500') repeat-y;
+  background-size:100%;
+  background-position:bottom;
+  background-attachment:fixed;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.9);
+  filter: saturate(0.4);
+}
+
+.jinwoot3_con > * {
+  position: relative;
+  z-index: 2;
+}
+
+.jinwoot3_incon {
+  position: relative;
+  overflow: hidden;
+  padding: 10px 20px 245px;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #2b314bc4, #050918a8);
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.8);
+  text-align: justify;
+  font-family: "Winky Rough", sans-serif;
+  font-weight: 400;
+  font-size:12px;
+  color: #def0f1;
+  line-height: 1.2;
+  border-radius: 20px;
+}
+
+.jinwoot3_incon speak {
+  font-family: "Amarante", serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  text-shadow: none;
+  line-height: 0.9;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
+}
+
+.jinwoot3_speech {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 0.8;
+  border-top: 1.1px solid;
+  padding-top: 5px;
+  border-image: linear-gradient(to right, transparent, #f0d4a7,transparent) 1;
+}
+
+.jinwoot3_speech speak {
+  font-family: "Love Light", cursive;
+  font-weight: 400;
+  text-shadow: none;
+  font-size: 40px;
+  line-height: 1.1;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
+}
+
+.jinwoot3_incon speak, .jinwoot3_speech speak {
+  color: transparent;
+  background: linear-gradient(to bottom, #f0dab7, #dfb169);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+@media (max-width: 1200px) {
+
+  .jinwoot3 {
+    filter: none;
+    margin: 10px auto;
+  }
+
+  .jinwoot3_con::before {
+    display: none;
+  }
+
+.jinwoot3 credit {
+  position: relative;
+  inset:auto;
+  display:block;
+  text-align: center;
+}
+
+.jinwoot3_speech {
+  position: relative;
+  inset:auto;
+}
+
+.jinwoot3_img {
+  display: none;
+}
+.jinwoot3_incon {
+  padding: 10px;
+}
+
+}
