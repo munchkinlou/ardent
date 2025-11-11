@@ -27,7 +27,7 @@
     position:relative;
   margin: 20px auto 50px;
   padding: 3px;
-  width: 700px;
+  width: 800px;
   box-sizing: border-box;
   box-shadow: 5px 5px 10px black;
   background: linear-gradient(to bottom, #211107, #000);
@@ -52,12 +52,12 @@
   position: relative;
   z-index: 0;
   width: 100%;
-  padding: 400px 20px 20px;
+  padding: 420px 20px 20px;
   box-sizing: border-box;
   overflow: hidden;
   background: #2A3354 url('https://ik.imagekit.io/arl60/Ardent/personal/Kjartan/The_blacksmith_.png?updatedAt=1762891944885') no-repeat top;
-  background-size: 110%;
-  background-position: -30px -20px;
+  background-size: 100%;
+  background-position: top;
   box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8);
 
 }
@@ -68,7 +68,7 @@
   height:100%;
   position: absolute;
   inset:0;
-  background: linear-gradient(to bottom, transparent 400px, #111114 500px, #04090B);
+  background: linear-gradient(to bottom, transparent 420px, #111114 480px, #04090B);
   pointer-events: none;
   box-shadow: inset 0 0 10px black;
 }
@@ -160,7 +160,6 @@
   .kjartant10_incon {
     filter:none;
     padding:10px;
-    color:black;
   }
 
   .kjartant10_con {
