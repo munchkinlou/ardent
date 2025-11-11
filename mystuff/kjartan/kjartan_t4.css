@@ -23,7 +23,7 @@
 */
 
 
-.kjartant5_content {
+.kjartant5_content, .kjartant5 {
 	position: relative;
   width: 400px;
   margin: 30px 100px 30px auto;
@@ -34,7 +34,7 @@
   box-sizing: border-box;
 }
 
-.kjartant5_content credit {
+.kjartant5_content credit, .kjartant5 credit {
   position: absolute;
   bottom: -25px;
   right: 0;
