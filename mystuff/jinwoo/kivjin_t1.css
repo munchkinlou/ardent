@@ -347,7 +347,7 @@
   height:10px;
 
   border-top: 1.1px solid;
-  border-image: linear-gradient(to right, transparent, #377e28, #83F5D0, #377e28, transparent) 1;
+  border-image: linear-gradient(to right, transparent, #fcf6e0, transparent) 1;
 }
 
 .kivjint1_incon kiv, .kivjint1_incon jin {
