@@ -1,16 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
 @font-face {
   font-family: 'nereust2';
   src: url('VikingNormal-36VL.otf') format('truetype');
 }
 
-
-
-
 .nereust2 {
 	position: relative;
-  width: 400px;
+  width: 450px;
   margin: 100px auto 50px;
   position: relative;
   overflow: visible;
@@ -37,23 +34,23 @@
 
 .nereust2_img {
   position: absolute;
-  top: -120px;
-  left: -120px;
-  width: 150%;
-  height: 600px;
+  top: -119px;
+  left: -162px;
+  width: 161%;
+  height: 598px;
   background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Nereus/angy.png?updatedAt=1757873735847') no-repeat center top;
   background-size: contain; 
   z-index: 5;
   pointer-events: none;
-  filter: drop-shadow(0 0 10px rgba(0,0,0,0.75));
+  filter: drop-shadow(0 0 2px rgba(0,0,0,0.75));
   transform: rotate(5deg);
 }
 
 .nereust2_bor {
   position: relative;
   width: 100%;
-  background: linear-gradient(to bottom, #000000, #8bdeff);
-  padding: 4px;
+  background: linear-gradient(to bottom, #000, #0b0b0b);
+  padding: 3px;
   box-sizing: border-box;
   margin: 0 auto;
   border-radius: 300px 300px 0 0;
@@ -66,26 +63,9 @@
   box-sizing: border-box;
   pointer-events: none;
   margin: 0 auto;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 10px rgb(0, 0, 0);
   border-radius: 300px 300px 10px 10px;
-  background: linear-gradient(to bottom, rgb(1, 1, 46), black);
-}
-
-
-.nereust2_con::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('') no-repeat top;
-  background-size: 100%;
-  background-attachment: contain;
-  pointer-events: none;
-  overflow: hidden;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
-  border-radius: 300px 300px 0 0;
+  background: linear-gradient(to bottom, #B4D1FF, #7dbceb);
 }
 
 .nereust2_con > * {
@@ -100,49 +80,43 @@
   padding: 400px 20px 0;
   width: 100%;
   box-sizing: border-box;
-  background: linear-gradient(to bottom, rgb(3, 3, 42), black);
+  background: linear-gradient(to bottom, rgb(0, 0, 0), #252525);
   height: auto;
-  box-shadow: 0 0 10px 10px rgba(77, 219, 255, 0.2);
   text-align: justify;
-  font-family: 'Amarante';
-  font-size: 12px;
+  font-family: "Goudy Bookletter 1911", serif;
+  font-size: 11px;
   color: #ebebeb;
   line-height: 1.2;
   border: 1px solid #000000;
+  box-shadow: 0 0 10px black;
 }
 
 .nereust2_incon speak {
   color: #ffffff;
 	font-family: 'Amarante';
-  font-size: 14px;
+  font-size: 12px;
   color: transparent;
   text-align: center;
-  background: linear-gradient(to bottom, #53dcf1, #21d3ff);
+  background: linear-gradient(to bottom, #84f8fe, #9ae3ff);
   -webkit-background-clip: text;
   background-clip: text;
   text-shadow: none;
   line-height: 1;
-  filter: drop-shadow(0 0 3px rgba(0,0,0,0.8));
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
 }
 
 .nereust2_speech {
   display: block;
   position: relative;
-  margin: 10px auto -20px;
+  margin: 0 auto -20px;
   text-align: center;
 }
 
 .nereust2_speech speak {
   display: block;
   font-family: 'nereust2';
-  color: transparent;
-  background: linear-gradient(to bottom, #53dcf1, #21d3ff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  text-shadow: none;
   font-size: 40px;
   line-height: 1.1;
-  filter: drop-shadow(0 0 3px rgba(0,0,0,0.8));
 }
 
 .nereust2_speech::before {
@@ -153,27 +127,34 @@
   width: 100%;
   height: 1.1px;
   margin: 0px auto 0;
-  background: linear-gradient(to right, transparent, #09d0eb, transparent);
+  background: linear-gradient(to right, transparent, #2ea5df, transparent);
 }
 
 @media (max-width: 1200px) {
 
-  .nereust2 {
-    filter: none;
-  }
+.nereust2 {
+  filter: none;
+  margin: 10px auto;
+}
 
-  .nereust2_con::before {
-    display: none;
-  }
+.nereust2_con::before {
+  display: none;
+}
 
 .nereust2_incon {
-  min-height: 10px;
+  padding:10px;
 }
 
 .nereust2 credit {
   position: relative;
   inset:auto;
+  color: rgb(76, 76, 76);
 }
+
+.nereust2_img {
+  display:none;
+}
+
 .nereust2_bor, .nereust2_con, .nereust2_con::before, .nereust2_incon {
   border-radius: 0;
 }
