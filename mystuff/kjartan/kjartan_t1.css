@@ -32,6 +32,21 @@
   background: linear-gradient(to top, #ccc6c6, #1E1E26);
 }
 
+.kjartant1_bor credit {
+  position: absolute;
+  bottom: -25px;
+  right: 0;
+  left:0;
+  width: 100%;
+  display:block;
+  text-align:center;
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+  z-index: 10;
+}
+
 .kjartant1_con {
   position: relative;
   z-index: 0;
@@ -166,6 +181,11 @@
 
 .kjartant1_incon {
   padding: 10px;
+}
+
+.kjartant1_bor credit {
+  position: relative;
+  inset:auto;
 }
 
 }
