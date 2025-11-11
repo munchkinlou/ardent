@@ -69,7 +69,7 @@
   position: relative;
   box-sizing: border-box;
   overflow: visible;
-  background: black url('https://ik.imagekit.io/arl59/Ardent/Kjartan/mist.jpg?updatedAt=1747274483452') no-repeat bottom;
+  background: black url('https://ik.imagekit.io/arl59/Ardent/Kjartan/mist.jpg?updatedAt=1747274483452') no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   z-index: 1;
