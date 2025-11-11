@@ -1,9 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
 @font-face {
   font-family: 'Kjar_Viking';
   src: url('VikingNormal-36VL.otf') format('truetype');
 }
+
+/*
+
+  font-family: "Amarante", serif;
+  font-weight: 400;
+
+  font-family: "Kjar_Viking", serif;
+  font-weight: 400;
+
+  font-family: 'Eagle Lake', serif;
+  font-weight: 400;
+
+  font-family: "Goudy Bookletter 1911", serif;
+  font-weight: 400;  
+
+*/
 
 .kjartant6 {
 	position: relative;
@@ -14,7 +31,7 @@
   padding: 0;
   background:transparent;
   box-sizing: border-box;
-  filter: drop-shadow(0 4px 8px rgba(0,0,0,1));
+  /*! filter: drop-shadow(0 2px 2px rgba(0,0,0,1)); */
 }
 
 
@@ -44,22 +61,23 @@
   z-index: 5;
   pointer-events: none;
   transform: rotate(0deg);
-  filter: saturate(1.3);
+  filter: saturate(1.5) brightness(1.1) drop-shadow(0 0 5px black);
 }
 
 .kjartant6_bor {
   position: relative;
   width: 100%;
-  background: linear-gradient(to bottom, #ffffff, #000000 90%);
+  background: linear-gradient(to bottom, #3c220b, #252525 90%);
   padding: 5px;
   box-sizing: border-box;
   margin: 0 auto;
+  box-shadow: -5px -5px 5px black;
 }
 
 .kjartant6_con {
   position: relative;
   width: 100%;
-  padding: 10px 10px 360px;
+  padding: 10px;
   box-sizing: border-box;
   pointer-events: none;
   margin: 0 auto;
@@ -79,8 +97,8 @@
   background-attachment: fixed;
   pointer-events: none;
   overflow: hidden;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
-  filter: grayscale(0.5);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.8);
+  filter: grayscale(0.3);
 }
 
 .kjartant6_con > * {
@@ -91,64 +109,54 @@
 .kjartant6_incon {
   position: relative;
   overflow: hidden;
-  padding: 15px 25px 50px;
+  padding: 5px 15px 350px;
   width: 100%;
   box-sizing: border-box;
-  background: rgba(0,0,0,0.8);
+  background: linear-gradient(to bottom, #181615, #211815f0, #000000d6);
   height: auto;
   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.8);
   text-align: justify;
-  font-family: 'Amarante';
-  font-size: 12px;
+  font-family: "Goudy Bookletter 1911", serif;
+  font-weight: 400;  
+  font-size: 11px;
   color: #ffffff;
   line-height: 1.2;
-  border: 1px solid;
-  border-image: linear-gradient(to top, black, rgb(255, 255, 255)) 1;
+  border: 2px solid;
+  border-image: linear-gradient(to top, black, rgb(255, 162, 42), white) 1;
+}
+
+.kjartant6_incon speak, .kjartant6_incon nor, .kjartant6_incon spa {
+	font-family: 'Amarante';
+  font-size: 12px;
+  text-align: center;
+  text-shadow: none;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
 }
 
 .kjartant6_incon speak {
-  color: #FFDC75;
-	font-family: 'Amarante';
-  font-size: 14px;
   color: transparent;
-  text-align: center;
   background: linear-gradient(to bottom, #FAF880, #EA9250);
   -webkit-background-clip: text;
   background-clip: text;
-  text-shadow: none;
-  line-height: 0.9;
-  filter: drop-shadow(0 0 3px rgba(0,0,0,0.8));
 }
 
 .kjartant6_incon nor {
   color: #60e9f3;
-	font-family: 'Forum';
-  font-size: 15px;
-  font-weight: bold;
-  text-shadow: 1px 1px 2px #000000;
-  line-height: 0.9;
-  filter: drop-shadow(0 0 3px rgba(0,0,0,0.8));
 }
 
 .kjartant6_incon spa {
   color: #e68160;
-	font-family: 'Forum';
-  font-size: 15px;
-  font-weight: bold;
-  text-shadow: 1px 1px 2px #000000;
-  line-height: 0.9;
-  filter: drop-shadow(0 0 3px rgba(0,0,0,0.8));
 }
 
 .kjartant6_speech {
   display: block;
   position: relative;
-  margin: 0px 0 -50px 0;
+  margin: 0 auto;
   text-align: center;
 }
 
-.kjartant6_speech kjar {
-  display: inline;
+.kjartant6_speech kjar, .kjartant6_speech speak {
+  display: block;
   font-family: 'Kjar_Viking';
   color: transparent;
   background: linear-gradient(to bottom, #FFDC75, #EA9250);
@@ -158,6 +166,13 @@
   font-size: 40px;
   line-height: 1.1;
   filter: drop-shadow(0 0 3px rgba(0,0,0,0.8));
+  margin-bottom:-20px;
+}
+
+.kjartant6_speech nor {
+  font-family: 'Eagle Lake', serif;
+  font-weight: 400;
+  font-size:18px;
 }
 
 .kjartant6_speech::before {
@@ -168,26 +183,28 @@
   width: 100%;
   height: 1.5px;
   margin: 0px auto 0;
-  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.5), transparent);
+  background: linear-gradient(to right, transparent, rgba(255, 124, 29, 0.5), transparent);
 }
 
 @media (max-width: 1200px) {
 
-  .kjartant6 {
-    filter: none;
-  }
-
-  .kjartant6_con::before {
-    display: none;
-  }
+.kjartant6_con::before {
+  display: none;
+}
 
 .kjartant6 credit {
-  position: relaive;
-  bottom: auto;
-  right: auto;
-  display:block;
+  position: relative;
+  inset:auto;
+  text-align:center;
   transform: none;
 }
 
+.kjartant6_img {
+  display: none;
 }
 
+.kjartant6_incon {
+  padding:10px;
+}
+
+}
