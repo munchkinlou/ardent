@@ -23,13 +23,13 @@
   width: 500px;
   margin: 20px auto 30px;
   box-shadow:
-  10px 10px 10px rgba(0, 0, 0, 0.85), 5px 5px 5px rgba(0, 0, 0, 0.5), inset 0 0 10px black;
+  0px 0px 10px rgba(0, 0, 0, 0.85), inset 0 0 10px black;
 
 }
 
 .jinwoot1_bor credit {
   position: absolute;
-  bottom: -23px;
+  bottom: -20px;
   left:50%;
   transform: translateX(-50%);
   display:block;
