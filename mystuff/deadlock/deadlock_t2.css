@@ -95,13 +95,13 @@
   box-sizing: border-box;
   background: linear-gradient(to bottom, rgba(0,0,0,0), #162920AD);
   text-align: justify;
-  font-family: "Winky Rough", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  color: #ffece7;
+  font-family: "Goudy Bookletter 1911", serif;
+  font-weight: 400;  
+  font-size: 13px;
+  color: #afafaf;
   line-height: 1.2;
   border: 1px solid;
-  border-image: linear-gradient(to bottom, rgba(0,0,0,0), #68b39e) 1;
+  border-image: linear-gradient(to bottom, rgba(0,0,0,0), #8bbea9) 1;
   border-top:none;
 }
 
@@ -135,7 +135,7 @@
 
 .deadlockt2_incon speak, .deadlockt2_speech speak {
   color: transparent;
-  background: linear-gradient(to bottom, #eae4b2, #c8a980);
+  background: linear-gradient(to bottom, #67ccb0, #429948);
   -webkit-background-clip: text;
   background-clip: text;
 }
@@ -148,7 +148,7 @@
   width: 100%;
   height: 1.1px;
   margin: 0px auto 0;
-  background: linear-gradient(to right, transparent, #5E968B, transparent);
+  background: linear-gradient(to right, transparent, #6C9B8A, transparent);
 }
 
 @media (max-width: 1200px) {
@@ -163,7 +163,7 @@
   }
 
   .deadlockt2_speech {
-  margin: 0 auto -30px;
+  margin: 0 auto -10px;
 }
 
 
