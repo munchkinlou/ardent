@@ -1,32 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+@font-face {
+  font-family: 'Kjartan1';
+  src: url('VikingNormal-36VL.otf') format('opentype');
+}
 @font-face {
   font-family: 'Kjar_Viking';
-  src: url('VikingNormal-36VL.otf') format('truetype');
+  src: url('VikingNormal-36VL.otf') format('opentype');
 }
 
+/*
+
+  font-family: "Amarante", serif;
+  font-weight: 400;
+
+  font-family: "Kjartan1", serif;
+  font-weight: 400;
+
+  font-family: 'Eagle Lake', serif;
+  font-weight: 400;
+
+  font-family: "Goudy Bookletter 1911", serif;
+  font-weight: 400;  
+
+*/
 
 .kjartant2_bor {
   position: relative;
   padding: 1.5px;
   background: linear-gradient(to bottom,
-  rgba(0, 0, 0, 0.8),
-  rgba(140, 15, 15, 0.8),
-  rgba(0, 0, 0, 0.8));
+  rgb(0, 0, 0),
+  rgba(140, 15, 15, 0.8));
   box-sizing: border-box;
   width: 700px;
   margin: 20px auto 30px;
-  box-shadow:
-  10px 10px 10px rgba(0, 0, 0, 0.85),
-  10px 10px 20px rgba(0, 0, 0, 0.5),
-  inset 0 0 10px black;
+  box-shadow: 5px 5px 8px black;
 
 }
 
 .kjartant2_bor credit {
   position: absolute;
-  bottom: -30px;
+  bottom: -20px;
   left:50%;
   transform: translateX(-50%);
   display:block;
@@ -74,19 +90,21 @@
   box-shadow: inset 0 0 10px black;
 
   	color: #ebebeb;
-	font-family: 'amarante';
+  font-family: "Goudy Bookletter 1911", serif;
+  font-weight: 400;  
 	font-size:12px;
-	line-height:1.4;
+	line-height:1.3;
 	text-align:justify;
   
 }
 
 .kjartant2_incon speak {
   color: transparent;
-	font-family: 'Amarante';
-  font-size: 15px;
+  font-family: "Amarante", serif;
+  font-weight: 400;
+  font-size: 12px;
   color: transparent;
-  background: linear-gradient(to bottom, #f6a62c, #c15710);
+  background: linear-gradient(to bottom, #f4be52, #EA9250);
   -webkit-background-clip: text;
   background-clip: text;
   text-shadow: none;
@@ -95,9 +113,10 @@
 }
 
 .kjartant2_incon nor {
-  color: #60e9f3;
-	font-family: 'Forum';
-  font-size: 15px;
+  color: #35c0e0;
+  font-family: "Amarante", serif;
+  font-weight: 400;
+  font-size: 12px;
   font-weight: bold;
   text-shadow: 1px 1px 2px #000000;
   filter: drop-shadow(0 0 3px rgba(0,0,0,0.8));
@@ -105,8 +124,9 @@
 
 .kjartant2_incon spa {
   color: #e68160;
-	font-family: 'Forum';
-  font-size: 15px;
+  font-family: "Amarante", serif;
+  font-weight: 400;
+  font-size: 12px;
   font-weight: bold;
   text-shadow: 1px 1px 2px #000000;
   filter: drop-shadow(0 0 3px rgba(0,0,0,0.8));
@@ -114,17 +134,29 @@
 
 .kjartant2_spch {
   position: relative;
-  margin: -15px 0 -20px 0;
+  margin: -7px auto -20px;
   font-family: 'Kjar_Viking';
   font-size:30px;
   font-weight: bold;
   color: transparent;
   text-align: center;
-  background: linear-gradient(to bottom, #f6a62c, #c15710);
+  background: linear-gradient(to bottom, #FFDC75, #EA9250);
   -webkit-background-clip: text;
   background-clip: text;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
   line-height: 0.9;
+}
+
+.kjartant2_spch speak {
+  font-family: "Kjartan1", serif !important;
+  font-weight: 400;
+  font-size:30px !important; 
+}
+
+.kjartant2_spch nor {
+  font-family: 'Eagle Lake', serif;
+  font-weight: 400;
+  font-size:16px;
 }
 
 .kjartant2_spch::before {
@@ -152,7 +184,7 @@
 	letter-spacing: 10px;
 }
 
-.kjartant2_particles {
+.kjartant2_con particles {
   position: absolute;
   top: 350px;
   left: 0;
@@ -160,9 +192,10 @@
   height: 0;
   pointer-events: none;
   z-index: 10;
+  display: block;
 }
 
-.kjartant2_e {
+.kjartant2_con ember {
   position: absolute;
   width: 2px;
   height: 2px;
@@ -172,51 +205,56 @@
     0 0 6px rgba(235, 64, 52, 0.9),
     0 0 12px rgba(235, 64, 52, 0.8),
     0 0 20px rgba(235, 64, 52, 0.7),
-	    0 0 20px rgba(235, 64, 52, 0.7);
+    0 0 20px rgba(235, 64, 52, 0.7);
   opacity: 0;
   pointer-events: none;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  display: block;
 }
 
-.kjartant2_e1 {
+.kjartant2_con ember[data-id="1"] {
   bottom: 5%;
   left: 15%;
-  animation-name: kjartant2_eRise1;
+  animation-name: eRise1;
   animation-duration: 6s;
   animation-delay: 0s;
 }
-.kjartant2_e2 {
+
+.kjartant2_con ember[data-id="2"] {
   bottom: 5%;
   left: 35%;
-  animation-name: kjartant2_eRise2;
+  animation-name: eRise2;
   animation-duration: 5s;
   animation-delay: 1s;
 }
-.kjartant2_e3 {
+
+.kjartant2_con ember[data-id="3"] {
   bottom: 5%;
   left: 55%;
-  animation-name: kjartant2_eRise3;
+  animation-name: eRise3;
   animation-duration: 7s;
   animation-delay: 0.5s;
 }
-.kjartant2_e4 {
+
+.kjartant2_con ember[data-id="4"] {
   bottom: 5%;
   left: 75%;
-  animation-name: kjartant2_eRise4;
+  animation-name: eRise4;
   animation-duration: 6.5s;
   animation-delay: 2s;
 }
-.kjartant2_e5 {
+
+.kjartant2_con ember[data-id="5"] {
   bottom: 5%;
   left: 50%;
-  animation-name: kjartant2_eRise5;
+  animation-name: eRise5;
   animation-duration: 8s;
   animation-delay: 1.5s;
 }
 
-@keyframes kjartant2_eRise1 {
+@keyframes eRise1 {
   0% {
     opacity: 0;
     transform: translateY(0px) scale(1);
@@ -230,7 +268,8 @@
     transform: translateY(-60px) scale(1);
   }
 }
-@keyframes kjartant2_eRise2 {
+
+@keyframes eRise2 {
   0% {
     opacity: 0;
     transform: translateY(0px) scale(0.9);
@@ -244,7 +283,8 @@
     transform: translateY(-50px) scale(0.95);
   }
 }
-@keyframes kjartant2_eRise3 {
+
+@keyframes eRise3 {
   0% {
     opacity: 0;
     transform: translateY(0px) scale(1);
@@ -258,7 +298,8 @@
     transform: translateY(-80px) scale(1);
   }
 }
-@keyframes kjartant2_eRise4 {
+
+@keyframes eRise4 {
   0% {
     opacity: 0;
     transform: translateY(0px) scale(0.8);
@@ -272,7 +313,8 @@
     transform: translateY(-40px) scale(0.9);
   }
 }
-@keyframes kjartant2_eRise5 {
+
+@keyframes eRise5 {
   0% {
     opacity: 0;
     transform: translateY(0px) scale(1);
@@ -287,6 +329,7 @@
   }
 }
 
+
 @media (max-width: 1200px) {
   .kjartant2_con::after {
     display: none;
@@ -300,6 +343,7 @@
 }
 
 
+/* OLD SHIT */ 
 
 .kjartant2_diag {
   display: inline-block;
