@@ -20,10 +20,10 @@
   font-weight: 400;
 */
 
-.deadlockt2 {
+.deadlockt3 {
 	position: relative;
-  width: 800px;
-  margin: 20px auto 40px;
+  width: 420px;
+  margin: 120px auto 40px;
   position: relative;
   overflow: visible;
   padding: 0;
@@ -32,82 +32,106 @@
 }
 
 
-.deadlockt2 credit {
+.deadlockt3 credit {
   position: absolute;
-  bottom: -22px;
-  right: 0;
   width: 100%;
   display:block;
-  text-align:center;
+
   font-family: "Unica One", sans-serif;
   font-weight: 400;
   font-size: 12px;
   font-weight: bold;
-  z-index: 10;
+
+  bottom:-18px;
+  left:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.deadlockt2_bor {
+.deadlockt3_img {
+  position: absolute;
+  top: -118px;
+  left: -162px;
+  width: 182%;
+  height: 585px;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Deadlock/deadlock_bust.png?updatedAt=1761441407401') no-repeat top;
+  background-size: contain;
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0 0 2px rgb(255, 0, 0)) drop-shadow(0 0 2px rgba(0, 0, 0, 0.9));
+}
+
+.deadlockt3_bor {
   position: relative;
   width: 100%;
-  background: linear-gradient(to bottom, #202020, #092516 90%);
-  padding: 3px;
+  background: linear-gradient(to bottom, #000, #8f0000);
+  padding: 2px;
   box-sizing: border-box;
   margin: 0 auto;
-
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  overflow:hidden;
+  border-radius: 300px 300px 0 0;
 }
 
-.deadlockt2_con {
+.deadlockt3_con {
   position: relative;
   width: 100%;
-  padding: 530px 20px 20px;
+  padding: 15px;
   box-sizing: border-box;
+  pointer-events: none;
   margin: 0 auto;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
-
-  background: url('https://ik.imagekit.io/arl60/Ardent/personal/Deadlock/hYxd4yP.jpg?updatedAt=1762810391080') no-repeat;
-  background-size: 110%;
-  background-position: top;
-  background-attachment: local;
+  border-radius: 300px 300px 0 0;
 }
 
-.deadlockt2_con::before {
-  position:absolute;
+.deadlockt3_con::before{
   content:'';
+  position:absolute;
+  inset:0;
   width:100%;
   height:100%;
-  inset:0;
-
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
-  background: linear-gradient(to bottom, rgba(0,0,0,0) 420px, #111514 600px, #000);
-
-  z-index:1;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/resource-database-vtqHbCY4lTM-unsplash.jpg?updatedAt=1760642470820') no-repeat;
+  background-size:cover;
+  background-position:center;
+  background-attachment:local;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.9);
+  border-radius: 30px;
+  border-radius: 300px 300px 0 0;
 }
 
-.deadlockt2_con > * {
+.deadlockt3_con > * {
   position: relative;
   z-index: 2;
 }
 
-.deadlockt2_incon {
+.deadlockt3_incon {
   position: relative;
   overflow: hidden;
-  padding: 10px 20px;
+  padding: 445px 15px 50px;
   width: 100%;
   box-sizing: border-box;
-  background: linear-gradient(to bottom, rgba(0,0,0,0), #2A3430AD);
+  background: linear-gradient(to bottom, #0c0202, #460B0B8F, #000);
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.8);
   text-align: justify;
   font-family: "Didact Gothic", sans-serif;
   font-weight: 400;
-  font-size: 11px;
-  color: #afafaf;
+  font-size:11.5px;
+  color: #ADD9D7;
   line-height: 1.2;
-  border: 1px solid;
-  border-image: linear-gradient(to bottom, rgba(0,0,0,0), #8bbea9) 1;
-  border-top:none;
+  border-radius: 300px 300px 0 0;
 }
 
-.deadlockt2_incon speak {
+.deadlockt3_incon d {
+  display:block;
+  margin:0 auto;
+  width:100%;
+  height:10px;
+
+  border-top: 1.1px solid;
+  border-image: linear-gradient(to right, transparent, #f42f2f, transparent) 1;
+}
+
+.deadlockt3_incon speak {
   font-family: "Amarante", serif;
   font-weight: 400;
   font-size: 12px;
@@ -117,64 +141,68 @@
   filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
 }
 
-.deadlockt2_speech {
+.deadlockt3_speech {
   display: block;
-  position: relative;
-  margin: 10px 0 -10px;
-  padding-top: 5px;
+  position:absolute;
+  bottom:-13px;
+  left:135px;
+  margin: 0 auto;
   text-align: center;
+  line-height: 0.8;
+  padding-top: 10px;
 }
 
-.deadlockt2_speech speak {
-  display: inline;
+.deadlockt3_speech speak {
   font-family: "deadlock1", serif;
   font-weight: 400;
   text-shadow: none;
-  font-size: 41px;
+  font-size: 49px;
   line-height: 1.1;
   filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
 }
 
-.deadlockt2_incon speak, .deadlockt2_speech speak {
+.deadlockt3_incon speak, .deadlockt3_speech speak {
   color: transparent;
-  background: linear-gradient(to bottom, #67ccb0, #429948);
+  background: linear-gradient(to bottom, #ff2727, #9A2D2D);
   -webkit-background-clip: text;
   background-clip: text;
 }
 
-.deadlockt2_speech::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 10px;
-  width: 100%;
-  height: 1.1px;
-  margin: 0px auto 0;
-  background: linear-gradient(to right, transparent, #6C9B8A, transparent);
-}
-
 @media (max-width: 1200px) {
 
-.deadlockt2_con {
-  padding: 0;
-  background:none;
-}
+  .deadlockt3 {
+    filter: none;
+    margin: 10px auto;
+  }
+  
+  .deadlockt3_bor, .deadlockt3_con, .deadlockt3_con::before, .deadlockt3_incon {
+    border-radius:0;
+  }
 
-  .deadlockt2_con::before {
+  .deadlockt3_con::before {
     display: none;
   }
 
-  .deadlockt2_speech {
-  margin: 0 auto -10px;
-}
-
-
-.deadlockt2 credit {
+.deadlockt3 credit {
   position: relative;
   inset:auto;
   display:block;
-  transform: none;
-  margin-top:10px;
+  text-align: center;
+  transform:none;
+}
+
+.deadlockt3_speech {
+  position: relative;
+  inset:auto;
+  padding:0;
+  margin: -10px auto;
+}
+
+.deadlockt3_img {
+  display: none;
+}
+.deadlockt3_incon {
+  padding: 10px;
 }
 
 }
