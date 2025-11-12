@@ -1,21 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 @font-face {
   font-family: 'deadlock1';
   src: url('ACharmingFontExpanded-ZEpB.ttf');
 }
 
-/*
+/* 
+  font-family: "Unica One", sans-serif;
+  font-weight: 400;
+
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;
 
   font-family: "Amarante", serif;
   font-weight: 400;
 
   font-family: "deadlock1", serif;
   font-weight: 400;
-
-  font-family: "Goudy Bookletter 1911", serif;
-  font-weight: 400;  
-
 */
 
 .deadlockt3 {
@@ -35,12 +37,12 @@
   width: 100%;
   display:block;
 
-  font-family: arial;
-  text-transform: uppercase;
-  font-size: 11px;
+  font-family: "Unica One", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
   font-weight: bold;
 
-  bottom:-22px;
+  bottom:-18px;
   left:0;
   display: flex;
   align-items: center;
@@ -111,10 +113,10 @@
   background: linear-gradient(to bottom, #0c0202, #460B0B8F, #000);
   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.8);
   text-align: justify;
-  font-family: "Goudy Bookletter 1911", serif;
+  font-family: "Didact Gothic", sans-serif;
   font-weight: 400;
   font-size:11.5px;
-  color: #BDC1C4;
+  color: #ADD9D7;
   line-height: 1.2;
   border-radius: 300px 300px 0 0;
 }
@@ -126,13 +128,13 @@
   height:10px;
 
   border-top: 1.1px solid;
-  border-image: linear-gradient(to right, transparent, #fff6dc, transparent) 1;
+  border-image: linear-gradient(to right, transparent, #f42f2f, transparent) 1;
 }
 
 .deadlockt3_incon speak {
   font-family: "Amarante", serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
   text-shadow: none;
   line-height: 0.9;
@@ -161,7 +163,7 @@
 
 .deadlockt3_incon speak, .deadlockt3_speech speak {
   color: transparent;
-  background: linear-gradient(to bottom, #f00, #D13C3C);
+  background: linear-gradient(to bottom, #ff2727, #9A2D2D);
   -webkit-background-clip: text;
   background-clip: text;
 }
