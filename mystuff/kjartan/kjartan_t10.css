@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 @font-face {
   font-family: 'Kjartan1';
   src: url('VikingNormal-36VL.otf') format('truetype');
 }
 
 /*
+
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
 
   font-family: "Amarante", serif;
   font-weight: 400;
@@ -17,11 +21,10 @@
   font-family: 'Eagle Lake', serif;
   font-weight: 400;
 
-  font-family: "Goudy Bookletter 1911", serif;
-  font-weight: 400;  
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400; 
 
 */
-
 
 .kjartant10_bor {
     position:relative;
@@ -41,9 +44,8 @@
   width: 100%;
   display:block;
   text-align:center;
-  font-family: arial;
-  text-transform: uppercase;
   font-size: 11px;
+  font-family: "Unica One", sans-serif;
   font-weight: bold;
   z-index: 10;
 }
@@ -86,7 +88,8 @@
   border-top: none;
 
   font-family: "Goudy Bookletter 1911", serif;
-  font-weight: 400;
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400; 
   font-size: 11px;
   color: #fff;
   text-align: justify;
@@ -96,7 +99,7 @@
 
 .kjartant10_incon speak, .kjartant10_incon nor, .kjartant10_incon spa {
 	font-family: 'Amarante';
-  font-size: 14px;
+  font-size: 12px;
   line-height:1;
   filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
 }
@@ -138,7 +141,7 @@
 
 .kjartant10_spch speak {
   display: block;
-  margin: 0 auto -20px;
+  margin: 0 auto -25px;
   font-family: 'Kjartan1';
   font-size:30px;
 }
