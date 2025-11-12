@@ -119,7 +119,7 @@
 }
 
 
-.Kjartant4_speech::before, .Kjartant4_spch {
+.Kjartant4_speech::before, .Kjartant4_spch::before {
   content: '';
   display: block;
   height: 1.1px;
@@ -130,13 +130,14 @@
 }
 
 .Kjartant4_spch {
-  margin: 0 auto 80px;
+  display:block;
+  position:relative;
+  margin: 0 auto;
   text-align: center;
   font-family: 'Amarante';
   font-size: 16px;
   font-weight: bold;
 }
-
 
 .Kjartant4_spch speak {
   display: block;
