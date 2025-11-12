@@ -154,4 +154,12 @@
     padding:0;
   }
 
+.nereust1_content credit {
+  display:block;
+  position:relative;
+  inset:auto;
+  text-align:center;
+  transform:none;
+}
+
 }
