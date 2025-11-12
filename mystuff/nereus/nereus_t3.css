@@ -45,7 +45,7 @@
 .nereust3_con {
   position: relative;
   width: 100%;
-  padding: 20px 20px 220px;
+  padding: 20px 20px 480px;
   box-sizing: border-box;
   margin: 0 auto;
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
@@ -78,7 +78,7 @@
 .nereust3_incon {
   position: relative;
   overflow: hidden;
-  padding: 10px 20px 300px;
+  padding: 10px 20px 50px;
   width: 100%;
   box-sizing: border-box;
   text-align: justify;
