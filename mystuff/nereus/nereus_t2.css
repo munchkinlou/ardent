@@ -14,7 +14,6 @@
   padding: 0;
   background:transparent;
   box-sizing: border-box;
-  filter: drop-shadow(0 8px 10px rgba(0,0,0,0.75));
 }
 
 .nereust2 credit {
@@ -54,6 +53,7 @@
   box-sizing: border-box;
   margin: 0 auto;
   border-radius: 300px 300px 0 0;
+  box-shadow: 0 0 10px black;
 }
 
 .nereust2_con {
