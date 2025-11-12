@@ -1,26 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 @font-face {
-  font-family: 'Kjar_Viking';
+  font-family: 'Kjartan1';
   src: url('VikingNormal-36VL.otf') format('truetype');
 }
 
 /*
 
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
+
   font-family: "Amarante", serif;
   font-weight: 400;
 
-  font-family: "Kjar_Viking", serif;
+  font-family: "Kjartan1", serif;
   font-weight: 400;
 
   font-family: 'Eagle Lake', serif;
   font-weight: 400;
 
-  font-family: "Goudy Bookletter 1911", serif;
-  font-weight: 400;  
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400; 
 
 */
+
+
 
 .kjartant6 {
 	position: relative;
@@ -31,22 +37,19 @@
   padding: 0;
   background:transparent;
   box-sizing: border-box;
-  /*! filter: drop-shadow(0 2px 2px rgba(0,0,0,1)); */
 }
 
 
 .kjartant6 credit {
   position: absolute;
   bottom: 225px;
-  right: -235px;
+  right: -233px;
   width: 100%;
   display:block;
   text-align:right;
-  font-family: arial;
-  text-transform: uppercase;
   font-size: 11px;
-  font-weight: bold;
-  z-index: 10;
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;  z-index: 10;
   transform: rotate(-270deg);
 }
 
@@ -116,8 +119,8 @@
   height: auto;
   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.8);
   text-align: justify;
-  font-family: "Goudy Bookletter 1911", serif;
-  font-weight: 400;  
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400; 
   font-size: 11px;
   color: #ffffff;
   line-height: 1.2;
@@ -157,7 +160,7 @@
 
 .kjartant6_speech kjar, .kjartant6_speech speak {
   display: block;
-  font-family: 'Kjar_Viking';
+  font-family: 'Kjartan1';
   color: transparent;
   background: linear-gradient(to bottom, #FFDC75, #EA9250);
   -webkit-background-clip: text;
@@ -166,7 +169,7 @@
   font-size: 40px;
   line-height: 1.1;
   filter: drop-shadow(0 0 3px rgba(0,0,0,0.8));
-  margin-bottom:-20px;
+  margin-bottom:-30px;
 }
 
 .kjartant6_speech nor {
