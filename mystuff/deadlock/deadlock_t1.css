@@ -1,21 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 @font-face {
   font-family: 'deadlock1';
   src: url('ACharmingFontExpanded-ZEpB.ttf');
 }
 
-/*
+/* 
+  font-family: "Unica One", sans-serif;
+  font-weight: 400;
+
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;
 
   font-family: "Amarante", serif;
   font-weight: 400;
 
   font-family: "deadlock1", serif;
   font-weight: 400;
-
-  font-family: "Goudy Bookletter 1911", serif;
-  font-weight: 400;  
-
 */
 
 .deadlockt1 {
@@ -35,13 +37,13 @@
   width: 100%;
   display:block;
 
-  font-family: arial;
-  text-transform: uppercase;
-  font-size: 11px;
+  font-family: "Unica One", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
   font-weight: bold;
 
-  bottom:-20px;
-  right:70px;
+  bottom:-17px;
+  right:63px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -109,9 +111,9 @@
   background: linear-gradient(to bottom, #050a09, #172c27db, #050a09);
   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.8);
   text-align: justify;
-  font-family: "Goudy Bookletter 1911", serif;
+  font-family: "Didact Gothic", sans-serif;
   font-weight: 400;
-  font-size:13px;
+  font-size:11px;
   color: #CBD6CF;
   line-height: 1.2;
 }
@@ -129,7 +131,7 @@
 .deadlockt1_incon speak {
   font-family: "Amarante", serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
   text-shadow: none;
   line-height: 0.9;
