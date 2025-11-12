@@ -1,9 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 @font-face {
-  font-family: 'nereust2';
+  font-family: 'Nereus';
   src: url('VikingNormal-36VL.otf') format('truetype');
 }
+
+/*
+
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
+
+  font-family: "Amarante", serif;
+  font-weight: 400;
+
+  font-family: "Nereus", serif;
+  font-weight: 400;
+
+  font-family: 'Eagle Lake', serif;
+  font-weight: 400;
+
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400; 
+
+*/
+
 
 .nereust2 {
 	position: relative;
@@ -18,15 +40,14 @@
 
 .nereust2 credit {
   position: absolute;
-  bottom: -25px;
+  bottom: -20px;
   right: 0;
   left:0;
   width: 100%;
   display:block;
   text-align:center;
-  font-family: arial;
-  text-transform: uppercase;
   font-size: 11px;
+  font-family: "Unica One", sans-serif;
   font-weight: bold;
   z-index: 10;
 }
@@ -81,8 +102,9 @@
   background: linear-gradient(to bottom, rgb(0, 0, 0), #142b43, #050505);
   height: auto;
   text-align: justify;
-  font-family: "Goudy Bookletter 1911", serif;
-  font-size: 12px;
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;
+  font-size: 11px;
   color: #e6e6e6;
   line-height: 1.3;
   border: 2px solid #6692c0;
@@ -112,7 +134,7 @@
 
 .nereust2_speech speak {
   display: block;
-  font-family: 'nereust2';
+  font-family: 'Nereus';
   font-size: 40px;
   line-height: 1.1;
 }
