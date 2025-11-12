@@ -1,29 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 @font-face {
   font-family: 'rengoku';
   src: url('VikingNormal-36VL.otf') format('truetype');
 }
 
-.rengokut1_content {
+/*
+
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
+
+  font-family: "Amarante", serif;
+  font-weight: 400;
+
+  font-family: "rengoku", serif;
+  font-weight: 400;
+
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400; 
+
+*/
+
+.rengokut1_content, .rengokut1 {
 	position: relative;
   width: 400px;
-  margin: 50px auto 40px clamp(0px, 8vw, 250px);
+  margin: 50px auto 40px clamp(20px, 10vw, 250px);
   position: relative;
   overflow: visible;
   padding: 0;
   background:transparent;
   box-sizing: border-box;
-  filter: drop-shadow(0 8px 10px rgba(0,0,0,0.75));
 }
 
-.rengokut1_content credit {
+.rengokut1_content credit, .rengokut1 credit {
   display:block;
   text-align:center;
-  text-transform:uppercase;
   font-size:10px;
+  margin: 5px auto 0;
+  font-family: "Unica One", sans-serif;
   font-weight: bold;
-  margin: 10px auto;
-  font-family: arial;
 }
 
 .rengokut1_img {
@@ -47,6 +63,7 @@
   border-radius: 10px;
   box-sizing: border-box;
   margin: 0 auto;
+  box-shadow: 0 0 10px black;
 }
 
 .rengokut1_con {
@@ -109,7 +126,7 @@
   overflow: hidden;
   border-radius: 10px;
   border: 2px solid #efca50;
-  padding: 20px 30px 120px;
+  padding: 15px 25px 120px;
   width: 100%;
   min-height:320px;
   box-sizing: border-box;
@@ -117,8 +134,9 @@
   height: auto;
   box-shadow: 0 0 5px 5px rgba(237, 105, 52, 0.3), inset 0 0 10px rgba(0, 0, 0, 0.5);
   text-align: justify;
-  font-family: 'Amarante';
-  font-size: 12px;
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400; 
+  font-size: 11px;
   color: #dddddd;
   line-height: 1.2;
 }
@@ -129,7 +147,7 @@
   -webkit-background-clip: text;
   background-clip: text;
 	font-family: 'Amarante';
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   text-shadow: none !important;
   line-height: 0.9;
