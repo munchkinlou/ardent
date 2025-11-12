@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+@font-face {
+  font-family: 'nereust2';
+  src: url('VikingNormal-36VL.otf') format('truetype');
+}
+
+
+
+.nereust6 {
+	position: relative;
+  width: 450px;
+  margin: 20px auto 130px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+}
+
+.nereust6 credit {
+  position: absolute;
+  bottom: 275px;
+  right: -226px;
+  width: 96%;
+  display:block;
+  text-align:center;
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+  z-index: 10;
+  transform:rotate(90deg);
+}
+
+.nereust6_img {
+  position: absolute;
+  bottom: -69px;
+  left: -177px;
+  width: 196%;
+  height: 604px;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Nereus/Nereus_Adult_Shaded.png?updatedAt=1762897886796') no-repeat center top;
+  background-size: contain; 
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0 0 2px rgba(0,0,0,0.75));
+}
+
+.nereust6_bor {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom, #000, #0b0b0b);
+  padding: 3px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  border-radius: 0 0 300px 300px;
+  box-shadow: 0 0 10px black;
+}
+
+.nereust6_con {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  pointer-events: none;
+  margin: 0 auto;
+  border-radius: 0 0 300px 300px;
+  background: black;
+}
+
+.nereust6_con > * {
+  position: relative;
+  z-index: 2;
+}
+
+.nereust6_incon {
+  overflow: hidden;
+  border-radius: 0 0 300px 330px;
+  padding: 10px 20px 470px;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, rgb(0, 0, 0), #456274, #050505);
+  height: auto;
+  text-align: justify;
+  font-family: "Goudy Bookletter 1911", serif;
+  font-size: 12px;
+  color: #e6e6e6;
+  line-height: 1.3;
+  border: 2px solid #6692c0;
+  box-shadow: inset 0 0 10px black;
+}
+
+.nereust6_incon speak {
+  color: #ffffff;
+	font-family: 'Amarante';
+  font-size: 12px;
+  color: transparent;
+  text-align: center;
+  background: linear-gradient(to bottom, #89dfff, #4cafeb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: none;
+  line-height: 1;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
+}
+
+.nereust6_incon d {
+  display:block;
+  margin:0 auto;
+  width:100%;
+  height:10px;
+
+  border-top: 1.1px solid;
+  border-image: linear-gradient(to right, transparent, #3c6098, #55C7EA, #3c6098, transparent) 1;
+}
+
+
+.nereust6_speech {
+  display: block;
+  position: absolute;
+  margin: 0 auto -20px;
+  text-align: center;
+  bottom: 374px;
+  left: 196px;
+}
+
+.nereust6_speech speak {
+  display: block;
+  font-family: 'nereust2';
+  font-size: 34px;
+  line-height: 1.1;
+}
+
+@media (max-width: 1200px) {
+
+.nereust6 {
+  filter: none;
+  margin: 10px auto;
+}
+
+.nereust6::before {
+  display: none;
+}
+
+.nereust6_incon {
+  padding:10px;
+}
+
+.nereust6 credit {
+  position: relative;
+  inset:auto;
+  color: rgb(76, 76, 76);
+  transform:none;
+}
+
+.nereust6_img {
+  display:none;
+}
+
+.nereust6_bor, .nereust6_con, .nereust6_con::before, .nereust6_incon {
+  border-radius: 0;
+}
+
+}
