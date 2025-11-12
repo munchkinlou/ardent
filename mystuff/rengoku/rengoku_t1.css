@@ -158,14 +158,23 @@
 
 @media (max-width: 1200px) {
 
-  .rengokut1_content {
+  .rengokut1_content, .rengokut1 {
     filter: none;
+    margin: 0 auto;
   }
 
+  .rengokut1_img {
+    display: none;
+  }  
+  
   .rengokut1_con::before {
     display: none;
   }
 
+  .rengokut1_incon, .rengokut1_con {
+    padding: 10px;
+  }  
+  
   .rengokut1_con speech {
     position: relative;
     bottom: auto;
