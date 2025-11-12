@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
 @font-face {
-  font-family: 'nereust4';
+  font-family: 'nereust2';
   src: url('VikingNormal-36VL.otf') format('truetype');
 }
 
@@ -9,21 +9,20 @@
 
 .nereust4 {
 	position: relative;
-  width: 400px;
-  margin: 30px auto 250px;
+  width: 450px;
+  margin: 20px auto 130px;
   position: relative;
   overflow: visible;
   padding: 0;
   background:transparent;
   box-sizing: border-box;
-  filter: drop-shadow(0 8px 10px rgba(0,0,0,0.75));
 }
 
 .nereust4 credit {
   position: absolute;
-  bottom: 380px;
-  left: 210px;
-  width: 100%;
+  bottom: 246px;
+  right: -227px;
+  width: 96%;
   display:block;
   text-align:center;
   font-family: arial;
@@ -31,31 +30,32 @@
   font-size: 11px;
   font-weight: bold;
   z-index: 10;
-  transform: rotate(90deg);
+  transform:rotate(90deg);
 }
 
 .nereust4_img {
   position: absolute;
-  bottom: -270px;
-  left: -250px;
-  width: 200%;
-  height: 700px;
-  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Nereus/Andy_3.png?updatedAt=1759823244159') no-repeat bottom;
+  bottom: -142px;
+  left: -174px;
+  width: 157%;
+  height: 638px;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Nereus/Andy_3.png?updatedAt=1759823244159') no-repeat center top;
   background-size: contain; 
   z-index: 5;
   pointer-events: none;
-  filter: drop-shadow(0 0 10px rgba(0,0,0,0.75));
+  filter: drop-shadow(0 0 2px rgba(0,0,0,0.75));
   transform: rotate(10deg);
 }
 
 .nereust4_bor {
   position: relative;
   width: 100%;
-  background: linear-gradient(to top, #000000, #8bdeff);
-  padding: 4px;
+  background: linear-gradient(to bottom, #000, #0b0b0b);
+  padding: 3px;
   box-sizing: border-box;
   margin: 0 auto;
-  border-radius: 10px 10px 300px 300px;
+  border-radius: 0 0 300px 300px;
+  box-shadow: 0 0 10px black;
 }
 
 .nereust4_con {
@@ -65,26 +65,8 @@
   box-sizing: border-box;
   pointer-events: none;
   margin: 0 auto;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
-  border-radius: 10px 10px 300px 300px;
-  background: linear-gradient(to bottom, rgb(1, 1, 46), black);
-}
-
-
-.nereust4_con::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('') no-repeat top;
-  background-size: 100%;
-  background-attachment: contain;
-  pointer-events: none;
-  overflow: hidden;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
-  border-radius: 10px 10px 300px 300px;
+  border-radius: 0 0 300px 300px;
+  background: black;
 }
 
 .nereust4_con > * {
@@ -93,55 +75,48 @@
 }
 
 .nereust4_incon {
-  position: relative;
   overflow: hidden;
-  border-radius: 10px 10px 300px 300px;
-  padding: 0 20px 350px;
+  border-radius: 0 0 300px 300px;
+  padding: 10px 20px 420px;
   width: 100%;
   box-sizing: border-box;
-  background: rgba(0,0,0,0.8);
+  background: linear-gradient(to bottom, rgb(0, 0, 0), #142b43, #050505);
   height: auto;
-  box-shadow: 0 0 10px 10px rgba(77, 219, 255, 0.2);
   text-align: justify;
-  font-family: 'Amarante';
+  font-family: "Goudy Bookletter 1911", serif;
   font-size: 12px;
-  color: #ebebeb;
-  line-height: 1.2;
-  border: 1px solid #000000;
+  color: #e6e6e6;
+  line-height: 1.3;
+  border: 2px solid #6692c0;
+  box-shadow: inset 0 0 10px black;
 }
 
 .nereust4_incon speak {
   color: #ffffff;
 	font-family: 'Amarante';
-  font-size: 14px;
+  font-size: 12px;
   color: transparent;
   text-align: center;
-  background: linear-gradient(to bottom, #53dcf1, #21d3ff);
+  background: linear-gradient(to bottom, #68d5ff, #009fff);
   -webkit-background-clip: text;
   background-clip: text;
   text-shadow: none;
   line-height: 1;
-  filter: drop-shadow(0 0 3px rgba(0,0,0,0.8));
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
 }
 
 .nereust4_speech {
   display: block;
   position: relative;
-  margin: 10px auto -20px;
+  margin: 0 auto -20px;
   text-align: center;
 }
 
 .nereust4_speech speak {
   display: block;
-  font-family: 'nereust4';
-  color: transparent;
-  background: linear-gradient(to bottom, #53dcf1, #21d3ff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  text-shadow: none;
+  font-family: 'nereust2';
   font-size: 40px;
   line-height: 1.1;
-  filter: drop-shadow(0 0 3px rgba(0,0,0,0.8));
 }
 
 .nereust4_speech::before {
@@ -152,31 +127,37 @@
   width: 100%;
   height: 1.1px;
   margin: 0px auto 0;
-  background: linear-gradient(to right, transparent, #09d0eb, transparent);
+  background: linear-gradient(to right, transparent, #2ea5df, transparent);
 }
 
 @media (max-width: 1200px) {
 
-  .nereust4 {
-    filter: none;
-  }
+.nereust4 {
+  filter: none;
+  margin: 10px auto;
+}
 
-  .nereust4_con::before {
-    display: none;
-  }
+.nereust4::before {
+  display: none;
+}
 
 .nereust4_incon {
-  min-height: 10px;
+  padding:10px;
 }
 
 .nereust4 credit {
   position: relative;
   inset:auto;
-transform:none;
+  color: rgb(76, 76, 76);
+  transform:none;
+}
+
+.nereust4_img {
+  display:none;
 }
 
 .nereust4_bor, .nereust4_con, .nereust4_con::before, .nereust4_incon {
-	border-radius:0;
+  border-radius: 0;
 }
 
 }
