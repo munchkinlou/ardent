@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@font-face {
+  font-family: 'rengoku';
+  src: url('VikingNormal-36VL.otf') format('truetype');
+}
+
+/*
+
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
+
+  font-family: "Amarante", serif;
+  font-weight: 400;
+
+  font-family: "rengoku", serif;
+  font-weight: 400;
+
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400; 
+
+*/
+
+.rengokut3_content, .rengokut3 {
+	position: relative;
+  width: 420px;
+  margin: 120px auto 10px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+}
+
+.rengokut3_content credit, .rengokut3 credit {
+  display:block;
+  text-align:center;
+  font-size:10px;
+  margin: 5px auto 0;
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
+}
+
+.rengokut3_img {
+  position: absolute;
+  top: -115px;
+  left: -117px;
+  width: 148%;
+  height: 522px;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Rengoku/IMG_1862.png?updatedAt=1762967017482') no-repeat bottom;
+  background-size: contain; 
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0 0 2px rgb(155, 76, 76)) drop-shadow(0 0 10px rgba(138, 68, 17, 0.8));
+  transform: rotate(-2deg);
+}
+
+.rengokut3_bor {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom, #230705, #000000);
+  padding: 5px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  box-shadow: 0 0 10px black;
+  overflow:hidden;
+  border-radius: 400px 400px 10px 10px;
+}
+
+.rengokut3_con {
+  position: relative;
+  width: 100%;
+  padding: 15px 10px 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  pointer-events: none;
+  margin: 0 auto;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #4D0C0E, #0A0810);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 400px 400px 20px 20px;
+}
+
+.rengokut3_con speech {
+  position: absolute;
+  bottom: 34px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-right: 10px;
+  font-family: 'rengoku';
+  font-weight: bold;
+  text-shadow: none;
+  font-size: 40px;
+  color: transparent;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #efca50, transparent) 1;
+  padding: 20px 0 0;
+  background: linear-gradient(to bottom, #e96f36, #efca50);
+  -webkit-background-clip: text;
+  background-clip: text;
+  line-height: 1;
+  filter: drop-shadow(0 0 3px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
+  z-index:10;
+}
+
+.rengokut3_con speech > br {
+  font-size:0;
+}
+
+.rengokut3_con > * {
+  position: relative;
+  z-index: 2;
+}
+
+.rengokut3_incon {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 2px solid #E96C42;
+  padding: 390px 20px 80px;
+  width: 100%;
+  min-height:320px;
+  box-sizing: border-box;
+  background: linear-gradient(to top, #42141b, black);
+  height: auto;
+  box-shadow: 0 0 10px #FDDF6E, inset 0 0 10px black;
+  text-align: justify;
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400; 
+  font-size: 11px;
+  color: #dddddd;
+  line-height: 1.2;
+  border-radius: 400px 400px 20px 20px;
+}
+
+.rengokut3_incon speak {
+  color: transparent;
+  background: linear-gradient(to bottom, #e96f36, #efca50);
+  -webkit-background-clip: text;
+  background-clip: text;
+	font-family: 'Amarante';
+  font-size: 12px;
+  font-weight: bold;
+  text-shadow: none !important;
+  line-height: 0.9;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
+}
+
+
+
+@media (max-width: 1200px) {
+
+  .rengokut3_content, .rengokut3 {
+    filter: none;
+    margin: 0 auto;
+  }
+
+  .rengokut3_img {
+    display: none;
+  }  
+  
+  .rengokut3_con::before {
+    display: none;
+  }
+
+  .rengokut3_incon, .rengokut3_con {
+    padding: 10px;
+  }  
+  
+  .rengokut3_con speech {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    display: block;
+    text-align: center;
+    transform: none;
+  }
+.rengokut3_content credit {
+  margin: 0 auto;
+}
+
+.rengokut3_incon {
+  min-height:10px;
+}
+
+}
+
