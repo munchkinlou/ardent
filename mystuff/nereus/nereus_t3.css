@@ -7,7 +7,7 @@
 
 .nereust3 {
 	position: relative;
-  width: 500px;
+  width: 600px;
   margin: 20px auto 40px;
   position: relative;
   overflow: visible;
@@ -45,7 +45,7 @@
 .nereust3_con {
   position: relative;
   width: 100%;
-  padding: 20px 20px 370px;
+  padding: 20px 20px 220px;
   box-sizing: border-box;
   margin: 0 auto;
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
@@ -65,7 +65,7 @@
   inset:0;
 
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
-  background: linear-gradient(to top, rgba(0,0,0,0) 390px, #121A21 560px, #030515);
+  background: linear-gradient(to top, rgba(0,0,0,0) 500px, #121A21 700px, #030515);
 
   z-index:1;
 }
@@ -78,7 +78,7 @@
 .nereust3_incon {
   position: relative;
   overflow: hidden;
-  padding: 10px 20px 60px;
+  padding: 10px 20px 300px;
   width: 100%;
   box-sizing: border-box;
   text-align: justify;
@@ -105,7 +105,7 @@ background: linear-gradient(to top, rgba(18,26,33,0), #121A21);
 .nereust3_speech {
   display: block;
   position: absolute;
-  bottom:382px;
+  bottom:464px;
   left:50%;
   text-align: center;
   width: 50%;
