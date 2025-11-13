@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
 
 /*
   font-family: "Love Light", cursive;
   font-weight: 400;
+
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
 
   font-family: "Amarante", serif;
   font-weight: 400;
@@ -32,9 +36,8 @@
   width: 100%;
   display:block;
   text-align:center;
-  font-family: arial;
-  text-transform: uppercase;
-  font-size: 11px;
+  font-size: 12px;
+  font-family: "Unica One", sans-serif;
   font-weight: bold;
   z-index: 10;
 }
