@@ -100,12 +100,12 @@
   padding: 5px 15px 340px;
   width: 100%;
   box-sizing: border-box;
-  background: linear-gradient(to bottom, #aba096, #52493dc9);
+  background: linear-gradient(to bottom, #aba096, #9d907fe8);
   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.8);
   text-align: justify;
   font-family: "Winky Rough", sans-serif;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 12.5px;
   color: #fff8f1;
   line-height: 1.2;
 }
@@ -117,7 +117,7 @@
   height:10px;
 
   border-top: 1.1px solid;
-  border-image: linear-gradient(to right, transparent, white, transparent) 1;
+  border-image: linear-gradient(to right, transparent, #fde0bb, transparent) 1;
 }
 
 .alucardt6_incon speak, .alucardt6_incon car {
