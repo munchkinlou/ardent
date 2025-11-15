@@ -1,35 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
 
+/*
+  font-family: "Love Light", cursive;
+  font-weight: 400;
+
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
+
+  font-family: "Amarante", serif;
+  font-weight: 400;
+
+  font-family: "Winky Rough", sans-serif;
+  font-weight: 400;
+*/
 
 .andyc {
   display:block;
   text-align:center;
-  font-size:10px;
-  margin: 0 auto;
-  text-transform: uppercase;
-  font-family:arial;
+  font-size:12px;
+  margin: 0 auto 10px;
+  font-family: "Unica One", sans-serif;
   font-weight: bold;
 }
 
 .astariont1_content {
 	position: relative;
   width: 400px;
-  margin: 10px auto 10px;
+  margin: 10px auto 5px;
   position: relative;
   overflow: visible;
   padding: 0;
   background:transparent;
   box-sizing: border-box;
-  filter: drop-shadow(0 8px 10px rgba(0,0,0,0.75));
 }
 
 .astariont1_img {
   position: absolute;
-  bottom: 10px;
-  left: -85px;
+  bottom: 6px;
+  left: -92px;
   width: 100%;
-  height: 150px;
+  height: 152px;
   background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Astarion/AstarionbyPinkyPoodle.png?updatedAt=1755814326655') no-repeat center top;
   background-size: contain; 
   z-index: 5;
@@ -44,6 +57,7 @@
   border-radius: 10px;
   box-sizing: border-box;
   margin: 0 auto;
+  box-shadow: 0 0 5px black;
 }
 
 .astariont1_con {
@@ -82,26 +96,27 @@
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  padding: 20px 30px 50px;
+  padding: 10px 20px 50px;
   width: 100%;
   box-sizing: border-box;
   background: rgba(0,0,0,0.8);
   height: auto;
   box-shadow: 0 0 10px 10px rgba(122, 122, 122, 0.2);
   text-align: justify;
-  font-family: 'Amarante';
+  font-family: "Winky Rough", sans-serif;
+  font-weight: 400;
   font-size: 12px;
   color: #ffffff;
   line-height: 1.2;
 }
 
-.astariont1_incon star, .astariont1_incon speak {
+.astariont1_incon star {
   color: #DBBA9C;
 	font-family: 'Amarante';
   font-size: 14px;
   font-weight: bold;
-  text-shadow: 1px 1px 2px #000000;
   line-height: 0.9;
+  drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8))
 }
 
 .astariont1_speech {
@@ -112,10 +127,10 @@
   font-family: 'Love Light';
   font-weight: bold;
   color: #DBBA9C;
-  text-shadow: 1px 1px 2px #0a0906;
   font-size: 50px;
   text-align: right;
   line-height: 1;
+  drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8))
 }
 
 .astariont1_speech::before {
