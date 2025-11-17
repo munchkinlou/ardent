@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@font-face {
+  font-family: 'redwake';
+  src: url('BloodseekerDemo-DxW1.ttf') format('truetype');
+}
+
+
+/* 
+  font-family: "Unica One", sans-serif;
+  font-weight: 400;
+
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 400;
+
+  font-family: "Amarante", serif;
+  font-weight: 400;
+
+  font-family: "Love Light", cursive;
+  font-weight: 400;
+
+  font-family: "redwake", sans-serif;
+  font-weight: 400;
+*/
+
+.evawokt1 {
+	position: relative;
+  width: 450px;
+  margin: 20px auto 100px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+}
+
+
+.evawokt1 credit {
+  position: absolute;
+  width: 100%;
+  display: block;
+  font-family: "Unica One", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  bottom: -18px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.evawokt1_img {
+  position: absolute;
+  bottom: -55px;
+  left: -185px;
+  width: 179%;
+  height: 428px;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Evanesce/Missy_sketchyfbs_2508_transp.png') no-repeat bottom;
+    background-size: auto;
+  background-size: contain;
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0 0 2px rgba(250, 253, 147, 0.9)) drop-shadow(0 0 2px rgba(0, 0, 0, 0.9));
+}
+
+.evawokt1_bor {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom,#B5B048,#62591E);
+  padding: 2px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  overflow:hidden;
+  border-radius: 10px 10px 300px 300px;
+}
+
+.evawokt1_con {
+  position: relative;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  pointer-events: none;
+  margin: 0 auto;
+
+}
+
+.evawokt1_con::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  background: white url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/starrynight.jpg?updatedAt=1753495763500') repeat-y;
+  background-size:100%;
+  background-position:bottom;
+  background-attachment:fixed;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.9);
+  filter: hue-rotate(-140deg) brightness(1.2) saturate(0.5);
+  border-radius: 10px 10px 300px 300px;
+}
+
+.evawokt1_con > * {
+  position: relative;
+  z-index: 2;
+}
+
+.evawokt1_incon {
+  position: relative;
+  overflow: hidden;
+  padding: 5px 15px 380px;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #121213d9, #2c2440b5, #0000005E);
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.8);
+  text-align: justify;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  color: #E8DAEE;
+  line-height: 1.2;
+  border-radius: 10px 10px 300px 300px;  
+}
+
+.evawokt1_incon d {
+  display:block;
+  margin:0 auto;
+  width:100%;
+  height:10px;
+
+  border-top: 1.1px solid;
+  border-image: linear-gradient(to right, transparent, #caeca9, transparent) 1;
+}
+
+.evawokt1_incon eva, .evawokt1_incon red {
+  font-family: "Amarante", serif;
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+  text-shadow: none;
+  line-height: 0.9;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
+}
+
+.evawokt1_speech {
+  display: block;
+  position: absolute;
+  bottom: 285px;
+  left: 16px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 0.8;
+  padding-top: 10px;
+}
+
+.evawokt1_speech eva, .evawokt1_speech red {
+  font-family: "Love Light", cursive;
+  font-weight: 400;
+  text-shadow: none;
+  font-size: 41px;
+  line-height: 1.1;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
+}
+
+.evawokt1_speech red {
+  display:block;
+  font-family: "redwake", sans-serif;
+  font-size: 24px;
+  padding-left:100px;
+  padding-top: 10px;
+  margin-top: -10px;
+}
+
+
+.evawokt1_incon eva, .evawokt1_speech eva {
+  color: transparent;
+  background: linear-gradient(to bottom, #B18EFF,#A19AF5);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.evawokt1_incon red, .evawokt1_speech red {
+  color: transparent;
+  background: linear-gradient(to bottom, #D2FF6E,#D8FF6E);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+@media (max-width: 1200px) {
+
+  .evawokt1 {
+    filter: none;
+    margin: 10px auto;
+  }
+
+  .evawokt1_bor, .evawokt1_con, .evawokt1_incon {
+    border-radius:0;
+  }
+  
+  .evawokt1_con::before {
+    display: none;
+  }
+
+.evawokt1 credit {
+  position: relative;
+  inset:auto;
+  display:block;
+  text-align: center;
+  transform:none;
+}
+
+.evawokt1_speech {
+  position: relative;
+  inset:auto;
+  padding:0;
+}
+
+.evawokt1_img {
+  display: none;
+}
+.evawokt1_incon {
+  padding: 10px;
+}
+
+}
+
