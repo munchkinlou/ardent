@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
+/*
+  font-family: "Love Light", cursive;
+  font-weight: 400;
+
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
+
+  font-family: "Amarante", serif;
+  font-weight: 400;
+
+  font-family: "Winky Rough", sans-serif;
+  font-weight: 400;
+*/
+
+.alucardt7 {
+	position: relative;
+  width: 500px;
+  margin: 20px auto 40px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+}
+
+
+.alucardt7 credit {
+  position: absolute;
+  bottom: -25px;
+  right: 0;
+  width: 100%;
+  display:block;
+  text-align:center;
+  font-size: 12px;
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.alucardt7_bor {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom, #e6e8c9, #c1efd1 90%);
+  padding: 1px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  overflow:hidden;
+  
+  border-radius: 300px 300px 0 0;
+
+  box-shadow: 0px 0px 10px rgba(244, 226, 226, 0.8);
+}
+
+.alucardt7_con {
+  position: relative;
+  width: 100%;
+  padding: 550px 20px 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+
+  background: #77736A url('https://ik.imagekit.io/arl60/Ardent/personal/Alucard/artbymark.png') no-repeat;
+  background-size: 100%;
+  background-position: 100% -10px;
+  background-attachment: local;
+  
+  border-radius: 300px 300px 0 0;
+}
+
+.alucardt7_con::before {
+  position:absolute;
+  content:'';
+  width:100%;
+  height:100%;
+  inset:0;
+
+  box-shadow: inset 0 0 5px rgb(237, 212, 186);
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 580px, #847E71 700px, #C7C2B5);
+
+  z-index:1;
+  
+  border-radius: 300px 300px 0 0;
+}
+
+.alucardt7_con > * {
+  position: relative;
+  z-index: 2;
+}
+
+.alucardt7_incon {
+  position: relative;
+  overflow: hidden;
+  padding: 10px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, rgba(0,0,0,0), #888178);
+  text-align: justify;
+  font-family: "Winky Rough", sans-serif;
+  font-weight: 400;
+  font-size: 12.5px;
+  color: #ffece7;
+  line-height: 1.2;
+  border: 1.4px solid;
+  border-image: linear-gradient(to bottom, rgba(0,0,0,0), #fff8bf) 1;
+  border-top:none;
+  text-shadow: 0 0 2px black;
+}
+
+.alucardt7_incon speak, .alucardt7_incon car  {
+  font-family: "Amarante", serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  text-shadow: none;
+  line-height: 0.9;
+  filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.34)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
+}
+
+.alucardt7_speech {
+  display: block;
+  position: relative;
+  margin: 5px 0 -25px;
+  padding: 0;
+  text-align: center;
+}
+
+.alucardt7_speech speak, .alucardt7_speech car {
+  display: inline;
+  font-family: "Love Light", cursive;
+  font-weight: 400;
+  text-shadow: none;
+  font-size: 39px;
+  line-height: 1.1;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
+}
+
+.alucardt7_speech car {
+  display: block;
+  font-size: 26px;
+  text-transform: lowercase;
+  padding-left: 62px;
+  margin-top: -14px;
+}
+
+.alucardt7_incon speak, .alucardt7_speech speak {
+  color: transparent;
+  background: linear-gradient(to bottom, #64bf99, #63e1d0);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.alucardt7_incon car, .alucardt7_speech car {
+  color: transparent;
+  background: linear-gradient(to bottom, #eeae65, #f0790a);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.alucardt7_speech::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 100%;
+  height: 1.5px;
+  margin: 0 auto;
+  background: linear-gradient(to right, transparent, rgba(255, 241, 186, 0.5), transparent);
+}
+
+@media (max-width: 1200px) {
+
+  .alucardt7 {
+    margin: 0 auto;
+  }  
+  
+.alucardt7_con {
+  padding: 0;
+  background:none;
+}
+
+  .alucardt7_bor, .alucardt7_con, .alucardt7_incon {
+    border-radius:0;
+  }
+  .alucardt7_con::before {
+    display: none;
+  }
+
+  .alucardt7_speech {
+  margin: 0px auto -30px;
+    padding:0;
+}
+
+
+.alucardt7 credit {
+  position: relative;
+  inset:auto;
+  display:block;
+  transform: none;
+  margin-top:10px;
+}
+
+}
+
