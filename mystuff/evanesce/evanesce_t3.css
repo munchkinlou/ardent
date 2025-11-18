@@ -19,8 +19,8 @@
 
 .evanescet3 {
 	position: relative;
-  width: 380px;
-  margin: 80px auto 20px;
+  width: 420px;
+  margin: 90px auto 20px;
   position: relative;
   overflow: visible;
   padding: 0;
@@ -45,10 +45,10 @@
 
 .evanescet3_img {
   position: absolute;
-  top: -88px;
-  left: -116px;
+  top: -99px;
+  left: -136px;
   width: 165%;
-  height: 450px;
+  height: 461px;
   background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Evanesce/IMG_2024.png') no-repeat bottom;
     background-size: auto;
   background-size: contain;
