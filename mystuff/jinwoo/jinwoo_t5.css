@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+/* 
+  font-family: "Love Light", cursive;
+  font-weight: 400;
+
+  font-family: "Unica One", sans-serif;
+
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;
+
+  font-family: "Amarante", serif;
+  font-weight: 400;
+*/
+
+.jinwoot5 {
+	position: relative;
+  width: 450px;
+  margin: 20px auto 70px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+}
+
+
+.jinwoot5 credit {
+  position: absolute;
+  width: 100%;
+  display:block;
+
+  font-family: "Unica One", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+
+  bottom:61px;
+  left:236px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transform: rotate(90deg);
+}
+
+.jinwoot5_img {
+  position: absolute;
+  bottom: -66px;
+  left: -101px;
+  width: 171%;
+  height: 538px;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Jinwoo/babyjin.png') no-repeat top;
+  background-size: contain;
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0 0 2px rgb(0, 0, 0)) drop-shadow(0 0 2px rgba(0, 0, 0, 0.9));
+}
+
+.jinwoot5_bor {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom, #FFC200, #E06A00, #ffe686);
+  padding: 2px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  overflow:hidden;
+  border-radius: 10px 10px 300px 300px;
+}
+
+.jinwoot5_con {
+  position: relative;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  pointer-events: none;
+  margin: 0 auto;
+  border-radius: 10px 10px 300px 300px;
+  
+}
+
+.jinwoot5_con::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/2632725_8741.jpg?updatedAt=1760754138078') no-repeat;
+  background-size:cover;
+  background-position:bottom;
+  background-attachment:fixed;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.9);
+  filter: saturate(0.4);
+  border-radius: 10px 10px 300px 300px;
+
+}
+
+.jinwoot5_con > * {
+  position: relative;
+  z-index: 2;
+}
+
+.jinwoot5_incon {
+  position: relative;
+  overflow: hidden;
+  padding: 5px 15px 450px;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #050718, #1E1229BA);
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.8);
+  text-align: justify;
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;
+  font-size:12px;
+  color: #BDC1C4;
+  line-height: 1.2;
+  border-radius: 10px 10px 300px 300px;
+
+}
+
+.jinwoot5_incon d {
+  display:block;
+  margin:0 auto;
+  width:100%;
+  height:10px;
+
+  border-top: 1.1px solid;
+  border-image: linear-gradient(to right, transparent, #f1cba3, transparent) 1;
+}
+
+.jinwoot5_incon speak {
+  font-family: "Amarante", serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  text-shadow: none;
+  line-height: 0.9;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
+}
+
+.jinwoot5_speech {
+  display: block;
+  position:absolute;
+  bottom:363px;
+  left:42px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 0.8;
+  padding-top: 10px;
+}
+
+.jinwoot5_speech speak {
+  font-family: "Love Light", cursive;
+  font-weight: 400;
+  text-shadow: none;
+  font-size: 52px;
+  line-height: 1.1;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
+}
+
+.jinwoot5_incon speak, .jinwoot5_speech speak {
+  color: transparent;
+  background: linear-gradient(to top, #D9A268,#FFDB8D);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+@media (max-width: 1200px) {
+
+  .jinwoot5 {
+    filter: none;
+    margin: 10px auto;
+  }
+  
+  .jinwoot5_bor, .jinwoot5_con, .jinwoot5_con::before, .jinwoot5_incon {
+    border-radius:0;
+  }
+
+  .jinwoot5_con::before {
+    display: none;
+  }
+
+.jinwoot5 credit {
+  position: relative;
+  inset:auto;
+  display:block;
+  text-align: center;
+  transform:none;
+}
+
+.jinwoot5_speech {
+  position: relative;
+  inset:auto;
+  padding:0;
+  margin: -10px auto;
+}
+
+.jinwoot5_img {
+  display: none;
+}
+.jinwoot5_incon {
+  padding: 10px;
+}
+
+}
