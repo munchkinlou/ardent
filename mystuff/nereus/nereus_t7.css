@@ -60,7 +60,7 @@
   background-size: contain; 
   z-index: 5;
   pointer-events: none;
-  filter: drop-shadow(0 0 4px black) drop-shadow(0 0 10px #e0eff757);
+  filter: drop-shadow(0 0 4px black) drop-shadow(0 0 30px #e0eff757);
 }
 
 .nereust7_bor {
@@ -169,6 +169,10 @@
     text-align: center;
     padding:0;
   }
+
+  .nereust7_con::before {
+    display:none;
+}
 
   .nereust7 credit {
   display:block;
