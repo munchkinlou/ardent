@@ -28,7 +28,7 @@
 
 .kjartant8 {
 	position: relative;
-  width: 450px;
+  width: 480px;
   margin: 60px auto 30px;
   position: relative;
   overflow: visible;
@@ -55,8 +55,8 @@
 
 .kjartant8_img {
   position: absolute;
-  top: -61px;
-  left: -121px;
+  top: -56px;
+  left: -128px;
   width: 147%;
   height: 550px;
   background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Kjartan/Andy_-_Kjartan_bust.png?updatedAt=1762889927677') no-repeat center top;
@@ -69,7 +69,7 @@
 .kjartant8_bor {
   position: relative;
   width: 100%;
-  background: linear-gradient(to bottom, #a4623b, #602f16);
+  background: linear-gradient(to bottom, #181717, #602f16);
   padding: 2px;
   box-sizing: border-box;
   margin: 0 auto;
@@ -101,6 +101,7 @@
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.9);
   border-radius: 30px;
   border-radius: 300px 300px 0 0;
+  filter: grayscale(0.8);
 }
 
 .kjartant8_con > * {
@@ -110,10 +111,10 @@
 
 .kjartant8_incon {
   overflow: hidden;
-  padding: 460px 15px 0;
+  padding: 460px 20px 0;
   width: 100%;
   box-sizing: border-box;
-  background: linear-gradient(to bottom, #0c0202, #562514, #000);
+  background: linear-gradient(to bottom, #1e1a17, #423a32, #141414);
   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.8);
   text-align: justify;
   font-family: "Didact Gothic", sans-serif;
@@ -150,7 +151,7 @@
 .kjartant8_speech {
   display: block;
   position: relative;
-  margin: 10px auto 0px;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -171,11 +172,11 @@
   content: '';
   position: absolute;
   top: 0;
-  left: 10px;
+  left: 0;
   width: 100%;
   height: 1.1px;
   margin: 0px auto 0;
-  background: linear-gradient(to right, transparent, #FAF880, transparent);
+  background: linear-gradient(to right, transparent, #FAA880, transparent);
 }
 
 @media (max-width: 1200px) {
