@@ -57,7 +57,7 @@
   left: -112px;
   width: 141%;
   height: 328px;
-  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Nereus/IMG_0389.png') no-repeat center top;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Nereus/IMG_0389.png?updatedAt=1762897853661') no-repeat center top;
   background-size: contain; 
   z-index: 5;
   pointer-events: none;
@@ -166,7 +166,7 @@
     filter: none;
   }
 
-  .nereust1_content::before {
+  .nereust1_con::before {
     display: none;
   }
 
@@ -174,5 +174,13 @@
     text-align: center;
     padding:0;
   }
+
+.nereust1_content credit {
+  display:block;
+  position:relative;
+  inset:auto;
+  text-align:center;
+  transform:none;
+}
 
 }
