@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@font-face {
+  font-family: 'Kjartan1';
+  src: url('VikingNormal-36VL.otf') format('truetype');
+}
+
+/*
+
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
+
+  font-family: "Amarante", serif;
+  font-weight: 400;
+
+  font-family: "Kjartan1", serif;
+  font-weight: 400;
+
+  font-family: 'Eagle Lake', serif;
+  font-weight: 400;
+
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400; 
+
+*/
+
+
+.rengokut4_bor {
+    position:relative;
+  margin: 20px auto 50px;
+  padding: 3px;
+  width: 700px;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 10px black;
+  background: linear-gradient(to bottom, #5C2B12, #000);
+}
+
+.rengokut4_bor credit {
+  position: absolute;
+  bottom: -25px;
+  right: 0;
+  left:0;
+  width: 100%;
+  display:block;
+  text-align:center;
+  font-size: 11px;
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.rengokut4_con {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  padding: 880px 20px 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #2A3354 url('https://ik.imagekit.io/arl60/Ardent/personal/Rengoku/comm._nov25.andy.CLIENT.png?updatedAt=1763648713356') no-repeat top;
+  background-size: 110%;
+  background-position: -30px -20px;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.8);
+
+}
+
+.rengokut4_con::after {
+  content: '';
+  width:100%;
+  height:100%;
+  position: absolute;
+  inset:0;
+  background: linear-gradient(to bottom, transparent 750px, #111114 1000px, #04090B);
+  pointer-events: none;
+  box-shadow: inset 0 0 20px #000;
+}
+
+.rengokut4_incon {
+  position: relative;
+  z-index: 6;
+  padding: 50px 20px 0;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: visible;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 15%, #1c1c20);
+  border: 2px solid;
+  border-image: linear-gradient(to bottom,transparent, #CF5C41, #ED9B44) 1;
+  border-top: none;
+
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400; 
+  font-size: 11px;
+  color: #fff;
+  text-align: justify;
+  line-height:1.2;
+}
+
+
+.rengokut4_incon speak {
+	font-family: 'Amarante';
+  font-size: 12px;
+  line-height:1;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
+}
+
+.rengokut4_incon speak {
+  color: transparent;
+  background: linear-gradient(to bottom, #F8CF56, #DA793F);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.rengokut4_speech::before, .rengokut4_spch::before {
+  content: '';
+  display: block;
+  height: 1.1px;
+  line-height: normal;
+  margin: 0 auto;
+  width:100%;
+  background: linear-gradient(to right, transparent 10%, #E28966, #FFC046, #E28966, transparent 90%);
+}
+
+.rengokut4_spch {
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Amarante';
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+.rengokut4_spch speak {
+  display: block;
+  margin: 0 auto -20px;
+  font-family: 'Kjartan1';
+  font-size:30px;
+}
+
+@media (max-width: 1200px) {
+  .rengokut4_infade,
+  .rengokut4_con::after {
+    display: none;
+    padding: 0;
+  }
+
+  .rengokut4_incon {
+    filter:none;
+    padding:10px;
+    color:black;
+  }
+
+  .rengokut4_con {
+    padding:0;
+    background:none;
+  }
+  
+.rengokut4_bor credit {
+  position: relative;
+  inset:auto;
+}
+}
