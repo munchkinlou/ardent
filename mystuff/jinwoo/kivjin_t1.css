@@ -107,7 +107,7 @@
   padding: 450px 15px 80px;
   width: 100%;
   box-sizing: border-box;
-  background: linear-gradient(to bottom, #17110cc9, #27212CE3);
+  background: linear-gradient(to bottom, #110c17de, #382F2FFA);
   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.8);
   text-align: justify;
   font-family: "Winky Rough", sans-serif;
@@ -125,7 +125,7 @@
   height:10px;
 
   border-top: 1.1px solid;
-  border-image: linear-gradient(to right, transparent, rgb(240, 229, 215), transparent) 1;
+  border-image: linear-gradient(to right, transparent, rgb(248, 202, 145), transparent) 1;
 }
 
 .kivjint1_incon kiv, .kivjint1_incon jin {
