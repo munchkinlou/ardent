@@ -8,7 +8,7 @@
 .odettet1 {
 	position: relative;
   width: 500px;
-  margin: 360px auto 30px;
+  margin: 100px auto 30px;
   position: relative;
   overflow: visible;
   padding: 0;
@@ -70,10 +70,10 @@
 
 .odettet1_img {
   position: absolute;
-  top: -200px;
-  right: 0px;
-  width: 190%;
-  height: 500px;
+	top: 134px;
+	left: 98px;
+	width: 118%;
+	height: 90%;
 
   z-index: 5;
   pointer-events: none;
