@@ -36,10 +36,10 @@
 .odettet1 t {
   position: absolute;
   display:block;
-  top: 260px;
-  left:-100px;
+  top: 234px;
+  left:-73px;
 
-  width:100%;
+  width:93%;
   height:auto;
 
   font-family: 'odettet1', cursive;
@@ -54,18 +54,6 @@
   filter:drop-shadow(0 0 2px rgba(0,0,0,0.5)) drop-shadow(0 0 5px rgba(0,0,0,0.5));
 
   z-index:10;
-}
-
-.odettet1 t::before{
-  content:'';
-  position:absolute;
-  bottom:13px;
-  left:44%;
-  transform: translateX(-50%);
-
-  width:50%;
-  height:1.1px;
-
 }
 
 .odettet1_img {
@@ -83,8 +71,8 @@
 .odettet1_img::after {
   content:'';
   position: absolute;
-  top: 76px;
-  left: 322px;
+  top: 67px;
+  left: 301px;
   width: 67%;
   height: 106%;
   z-index:1;
