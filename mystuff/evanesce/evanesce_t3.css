@@ -19,8 +19,8 @@
 
 .evanescet3 {
 	position: relative;
-  width: 420px;
-  margin: 90px auto 20px;
+  width: 450px;
+  margin: 110px auto 20px;
   position: relative;
   overflow: visible;
   padding: 0;
@@ -45,16 +45,16 @@
 
 .evanescet3_img {
   position: absolute;
-  top: -99px;
-  left: -136px;
-  width: 165%;
-  height: 461px;
-  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Evanesce/IMG_2024.png') no-repeat bottom;
+  top: -115px;
+  left: -80px;
+  width: 142%;
+  height: 653px;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Evanesce/IMG_2031.png') no-repeat bottom;
     background-size: auto;
   background-size: contain;
   z-index: 5;
   pointer-events: none;
-  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 2px rgba(0, 0, 0, 0.9));
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 2px rgba(139, 207, 129, 0.9));
 }
 
 .evanescet3_bor {
@@ -107,10 +107,10 @@
 .evanescet3_incon {
   position: relative;
   overflow: hidden;
-  padding: 330px 15px 50px;
+  padding: 500px 15px 50px;
   width: 100%;
   box-sizing: border-box;
-  background: linear-gradient(to bottom, #104648d9, #1e2e5db5, #0000005E);
+  background: linear-gradient(to bottom, transparent, #104648a6, #1e2e5db5);
   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.8);
   text-align: justify;
   font-family: "Winky Rough", sans-serif;
@@ -144,8 +144,8 @@
 .evanescet3_speech {
   display: block;
   position: absolute;
-  bottom: -10px;
-  left: 124px;
+  bottom: -4px;
+  left: 141px;
   margin: 0 auto;
   text-align: center;
   line-height: 0.8;
