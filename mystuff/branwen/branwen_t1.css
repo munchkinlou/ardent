@@ -18,7 +18,7 @@
 
 .branwent1 {
 	position: relative;
-  width: 500px;
+  width: 420px;
   margin: 20px auto 50px;
   position: relative;
   overflow: visible;
@@ -38,8 +38,8 @@
   font-size: 11px;
   font-weight: bold;
 
-  bottom:189px;
-  left:259px;
+  bottom:113px;
+  left:219px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,10 +48,10 @@
 
 .branwent1_img {
   position: absolute;
-  bottom: -56px;
-  left: -158px;
-  width: 174%;
-  height: 458px;
+  bottom: -71px;
+  left: -160px;
+  width: 189%;
+  height: 508px;
   background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Branwen/IMG_1943.png?updatedAt=1761973729343') no-repeat bottom;
   background-size: contain;
   z-index: 5;
@@ -140,8 +140,8 @@
 .branwent1_speech {
   display: block;
   position:absolute;
-  bottom:192px;
-  left:217px;
+  bottom:203px;
+  left:157px;
   margin: 0 auto;
   text-align: center;
   line-height: 0.8;
