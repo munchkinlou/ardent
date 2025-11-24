@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap');
+
+/*
+    font-family: "Lavishly Yours", cursive;
+    font-weight: 400;
+
+    font-family: "WindSong", cursive;
+    font-weight: 400;
+
+    font-family: "Island Moments", cursive;
+    font-weight: 400;
+
+    font-family: "Cormorant Upright", serif;
+    font-weight: 400;
+*/
+
+nav {
+    background: rgba(30, 34, 53, 0.64) !important;
+    box-shadow: 0 0 10px rgba(17, 23, 44, 0.9), 0 0 10px rgba(3, 3, 6, 0.5);
+}
+
+nav a {
+    font-family: "Cormorant Upright", serif;
+    font-weight: 400;
+    color: #ffffff !important;
+    text-transform: capitalize !important;
+    font-size: 16px;
+    transition: color 0.2s ease, background 0.2s ease;
+}
+
+nav a:hover {
+    color: #BF7582 !important;
+    transition: color 0.2s ease, background 0.2s ease;
+}
+
+#content {
+    background: transparent !important;
+}
+
+h1 {
+    position: relative;
+    margin: -50px auto -30px -20px !important;
+    font-size: 0px;
+    z-index: 1;
+}
+
+h1::before {
+    content: var(--toptitle);
+    filter: drop-shadow(2px 2px 0.5px #000000);
+    color: white;
+    font-family: "Lavishly Yours", cursive;
+    font-weight: 400;
+    text-transform: capitalize !important;
+    font-size: 100px;
+    line-height: 1.2;
+    background: linear-gradient(to bottom, #ffc8ec, #aa5b6a );
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none !important;
+}
+
+
+h1 i {
+	font-style: normal !important;
+}
+
+.tabnav,
+.navbar_header,
+.navbar_collapse {
+	background: linear-gradient(to right, transparent 30%, rgba(110, 74, 117, 0.53) 100%);
+    backdrop-filter: blur(2px);
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    padding: 8px 2px 0;
+    border-radius: 4px;
+    height: 35px;
+    font-family: "Island Moments", cursive;
+    font-weight: 400;
+    font-size: 16px !important;
+    text-transform: capitalize !important;
+    overflow: visible;
+}
+
+.tabnav a,
+.navbar_header a,
+.navbar_collapse a {
+    color: #ffffff !important;
+	transition: color 0.2s ease, background 0.2s ease;
+}
+
+.tabnav a:hover,
+.navbar_header a:hover,
+.navbar_collapse a:hover {
+    transform: scale(1.05) !important;
+    color: #edb4dc !important;
+    transition: color 0.3s ease, background 0.3s ease, transform 0.3s ease;
+}
+
+.tabnav a.active {
+    color: #edb4dc !important;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.7) !important;
+    transition: color 0.3s ease, background 0.3s ease, transform 0.3s ease;
+}
+
+.tab {
+    border-image: linear-gradient(to right, #fff0, #b5d4ef, transparent) 1;
+}
+
+
+.profav {
+    filter: drop-shadow(0 0 5px rgb(212, 120, 159)) drop-shadow(0 0 2px rgb(175, 205, 232));
+    width: 300px !important;
+    margin: 10px !important;
+}
+
+.profav img {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.blocky {
+    position: relative;
+    margin: 10px auto 15px !important;
+
+    backdrop-filter: blur(2px);
+    border: 2px solid #d5e9f5;
+    border-radius: 15px/50px;
+    box-shadow:
+        0 0 10px rgba(176, 212, 230, 0.5),
+        0 0 10px rgba(144, 180, 198, 0.5),
+        inset 0 0 5px rgba(0, 0, 0, 0.9);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+
+    padding: 15px 50px 30px;
+
+    font-family: "Cormorant Upright", serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+
+    overflow: hidden;
+    z-index: 1;
+}
+
+.blocky u {
+	text-decoration: none !important;
+}
+
+
+.blocky > span {
+    filter: drop-shadow(2px 2px 0.5px rgba(0, 0, 0, 0.6));
+    font-family: "WindSong", cursive;
+    font-weight: 400;
+    text-shadow: none !important;
+    font-size: 16px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    padding: 2px 0;
+    color: #edb4dc;
+    text-transform: capitalize;
+    background: linear-gradient(to right, transparent, rgba(139, 151, 199, 0.4), transparent);
+    border-radius: 0 0 10px 10px;
+}
+  
+.blocky a {
+    position: relative;
+    z-index: 3;
+    font-family: arial;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    color: #BF7582!important;
+    transition: color 0.2s ease;
+}
+
+  .blocky a:hover {
+    color: #ffffff !important;
+  }
+  
+  .blocky a,
+  .blocky a:visited,
+  .blocky a:hover,
+  .blocky a u,
+  .blocky span[style*="text-decoration: underline;"] {
+    text-decoration: none !important;
+  }
+  
+.thead {
+    padding: 5px;
+    font-family: "Lavishly Yours", cursive;
+    font-weight: 400;
+    font-size: 30px;
+	text-align: center;
+    text-transform: capitalize !important;
+    padding: 10px 0;
+    color: #BF7582;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5) !important;
+    border-radius: 15px/50px;
+    box-shadow:
+        0 0 10px rgba(176, 212, 230, 0.5),
+        0 0 10px rgba(144, 180, 198, 0.5),
+        inset 0 0 5px #d5e9f5;
+}
+
+.thead b {
+    font-weight: 100 !important;
+}
+
+.sip_tbl {
+    margin-top:5px;
+    width: 99% !important;
+}
+
+td {
+    text-align:center;
+}
+
+.sip_tbl_head,
+.sip_tbl_th,
+.sip_tbl_td {
+	background: rgba(36, 28, 54, 0.52);
+	color: #ffffff !important;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+}
+
+.infoapp, .infoper {
+    width: 100%;;
+    margin: 0 auto;
+    height: auto;
+    cursor: pointer;
+    position: relative;
+}
+
+.infoapp_img {
+    width: 100%;
+    height: 500px !important;
+    cursor: pointer;
+    background: url('https://ik.imagekit.io/arl60/Ardent/shop/Bird/Atreyu/Atreyu-disaster.jpg?updatedAt=1762134735309');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.6s ease;
+    border-radius: 20px;
+    border: 1px solid black;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+}
+
+.infoapp_img.flipped {
+    background: url('https://ik.imagekit.io/arl60/Ardent/shop/Bird/Atreyu/AtreyuCatEye.png?updatedAt=1762134741557') no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: rgba(36, 28, 54, 0.52);
+    border-radius: 20px;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+}
+
+.infoper_img {
+    margin: 0 auto;
+    width: 100%;
+    height: 500px !important;
+    cursor: pointer;
+    background: url('https://ik.imagekit.io/arl60/Ardent/shop/Bird/Atreyu/Atreyu-Resin.png?updatedAt=1762134743413');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.6s ease;
+    border-radius: 20px;
+    border: 1px solid black;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+}
+
+
+.infoapp subtitle, .infoper subtitle, .misc_box subtitle {
+    margin: 0 auto;
+    font-family: "Lavishly Yours", cursive;
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+    color: #f0d5d5;
+    text-shadow: 0px 0px 4px rgba(0,0,0,0.7), 0px 0px 6px rgba(0,0,0,0.5);
+}
+
+.infoapp subtitle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.infoper subtitle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.info_box {
+    position: relative;
+
+    background: rgba(36, 28, 54, 0.52);
+
+    backdrop-filter: blur(2px);
+    border: 2px solid #d5e9f5;
+    border-radius: 15px/50px;
+    box-shadow:
+        0 0 10px rgba(176, 212, 230, 0.5),
+        0 0 10px rgba(144, 180, 198, 0.5),
+        inset 0 0 5px rgba(0, 0, 0, 0.9);
+
+    padding: 25px 0;
+
+    overflow: hidden;
+    z-index: 1;
+}
+
+.info_box p {
+    font-family: "Cormorant Upright", serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: justify;
+    overflow-y:auto;
+    height:600px;
+    padding: 0 25px;
+
+    scrollbar-color: rgba(201, 186, 233, 0.4) transparent;
+    scrollbar-width: thin; 
+}
+
+.info_box p::-webkit-scrollbar {
+  width: 12px;
+}
+
+.info_box p::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.info_box p::-webkit-scrollbar-thumb {
+  background: rgba(201, 186, 233, 0.4);
+  border-radius: 6px;
+}
+
+.info_box p::-webkit-scrollbar-thumb:hover {
+  background: rgba(201, 186, 233, 0.4);
+}
+
+.infoapp_img submessage {
+    display: block;
+    text-align: center;
+    filter: drop-shadow(2px 2px 0.5px rgba(0, 0, 0, 0.6));
+    font-family: "Cormorant Upright", serif;
+    font-weight: 400;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8) !important;
+    font-size: 20px;
+    padding: 2px 0;
+    color: #fff;
+    text-transform: lowercase;
+    background: linear-gradient(to right, transparent, rgba(223, 183, 202, 0.9), transparent);
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.infoapp lyrics, .infoper lyrics, .misc_box submessage {
+    display: block;
+    text-align: center;
+    filter: drop-shadow(2px 2px 0.5px rgba(0, 0, 0, 0.6));
+    font-family: "Lavishly Yours", cursive;
+    font-weight: 400;
+    text-shadow: none !important;
+    font-size: 40px;
+    padding: 2px 0;
+    color: #f8c0da;
+    text-transform: lowercase;
+    background: linear-gradient(to right, transparent, rgba(201, 186, 233, 0.4), transparent);
+    border-radius: 10px;
+}
+
+.misc_box submessage {
+    font-size:20px;
+}
+
+.misc_row {
+	display: flex;
+	justify-content: center;
+	gap: 5px;
+	align-items: center;
+    margin: 0 auto -10px;
+    width: 100%;
+}
+
+.misc_box {
+	flex: 0 1 50%;
+	width: 100%;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: stretch;
+    gap: 10px;
+}
+
+.misc_info {
+	width: 100%;
+	backdrop-filter: blur(2px);
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+    border: 2px solid #d5e9f5;
+    border-radius: 15px/50px;
+    padding: 25px 0;
+    font-family: "Cormorant Garamond", cursive;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    overflow: visible;
+    z-index: 1;
+    box-shadow:
+        0 0 10px rgba(176, 212, 230, 0.5),
+        0 0 10px rgba(144, 180, 198, 0.5),
+        inset 0 0 5px rgba(0, 0, 0, 0.9);
+    background: rgba(36, 28, 54, 0.52);
+}
+
+.misc_img {
+    width: auto;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.misc_info_item_fullwidth {
+	width: 100%;
+	padding: 5px;
+	box-sizing: border-box;
+	display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.misc_info_item_fullwidth .compendium_content {
+    backdrop-filter: blur(2px);
+	overflow-x: auto;
+	overflow-y: hidden;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	gap: 10px;
+	align-items: center;
+	padding: 20px 15px;
+    background: rgba(36, 28, 54, 0.52);
+    border: 2px solid #d5e9f5;
+    border-radius: 10px;
+    box-shadow:
+        0 0 10px rgba(176, 212, 230, 0.5),
+        0 0 10px rgba(144, 180, 198, 0.5),
+        inset 0 0 5px rgba(0, 0, 0, 0.9);
+	height: 760px;
+    scrollbar-color: rgba(201, 186, 233, 0.4) transparent;
+    scrollbar-width: thin; 
+}
+
+.compendium_content::-webkit-scrollbar {
+  width: 12px;
+}
+
+.compendium_content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.compendium_content::-webkit-scrollbar-thumb {
+  background: rgba(201, 186, 233, 0.4);
+  border-radius: 6px;
+}
+
+.misc_info_item_fullwidth .compendium_content > .artcompendium_img_wrap {
+	flex: 0 0 auto;
+}
+
+.misc_info_item_fullwidth .compendium_content img {
+	height: 100%;
+	width: auto;
+	border-radius: 8px;
+	flex: 0 0 auto;
+	object-fit: cover;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+    border-radius: 20px;
+}
+
+.artcompendium_img_wrap {
+	position: relative;
+	display: flex;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.misc_artcompendium {
+	width: 100%;
+	display: block;
+}
+
+.artcompendium_img_wrap:hover .artcompendium_credit,
+.artcompendium_img_wrap:focus-within .artcompendium_credit {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.misc_info p {
+    font-family: "Cormorant Upright", serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    overflow-y:auto;
+    padding: 0 25px; 
+}
+
+
+.corner_img {
+    position: absolute;
+    width: 120px;
+    height: auto;
+    pointer-events: none;
+    z-index: 10;
+    filter: drop-shadow(0 0 2px rgb(0, 0, 0));
+}
+
+@media (max-width: 1200px) {
+
+	.profav { display: none }
+
+    .corner_img {
+        display: none;
+    }
+
+    .blocky, .misc_con {
+        flex-direction:column;
+    }
+
+    .info_img, .misc_img {
+        height: auto !important;
+    }
+
+    .info_con {
+        margin: 0 auto 20px !important;
+        width: 95% !important;
+    }
+
+	.misc_info_item_fullwidth {
+		grid-column: 1 / -1;
+	}
+	.misc_row {
+		flex-direction: column;
+		align-items: center;
+	}
+	.misc_box {
+		max-width: 100%;
+		width: 95%;
+	}
+}
