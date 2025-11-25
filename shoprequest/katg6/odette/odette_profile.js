@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-
     document.querySelectorAll('.blocky span').forEach(span => {
         const text = span.textContent.toLowerCase();
         if (text.includes('personality') || text.includes('appearance') || text.includes('misc')) {
@@ -15,7 +14,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 blockyParent.style.boxShadow = 'none';
                 blockyParent.style.overflow = 'visible';
             }
-            if (text.includes('appearance')) {
+            if (text.includes('appearance') || text.includes('personality')) {
+                const flexParent = span.closest('.flex');
+                if (flexParent) {
+                    flexParent.classList.add('flex_v');
+                }
                 if (blockyParent) {
                     blockyParent.style.overflow = 'visible';
                 }
