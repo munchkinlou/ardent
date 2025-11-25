@@ -112,8 +112,7 @@ h1 i {
 
 
 .profav {
-    filter: drop-shadow(0 0 5px rgb(212, 120, 159)) drop-shadow(0 0 2px rgb(175, 205, 232));
-    width: 300px !important;
+    width: 250px !important;
     margin: 10px !important;
 }
 
@@ -121,6 +120,8 @@ h1 i {
 	width: 100%;
 	height: 100%;
 	display: block;
+    border-radius: 0;
+    filter: drop-shadow(0 0 5px rgb(212, 120, 159)) drop-shadow(0 0 2px rgb(175, 205, 232));
 }
 
 .blocky {
@@ -129,7 +130,7 @@ h1 i {
 
     backdrop-filter: blur(2px);
     border: 2px solid #d5e9f5;
-    border-radius: 15px/50px;
+    border-radius: 25px/50px;
     box-shadow:
         0 0 10px rgba(176, 212, 230, 0.5),
         0 0 10px rgba(144, 180, 198, 0.5),
@@ -242,37 +243,33 @@ td {
     position: relative;
 }
 
-.infoapp_img {
+.infoapp_img, .infoper_img {
     width: 100%;
-    height: 500px !important;
+    height: 950px !important;
     cursor: pointer;
+}
+
+.infoapp_img::before, .infoper_img::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    inset:0;
+    
     background: url('https://ik.imagekit.io/arl60/Ardent/shop/KatG6/Odette/odette2.png?updatedAt=1764016982284');
-    background-size: contain;
+    background-size:contain;
     background-position: bottom;
     background-repeat: no-repeat;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    transition: background 0.6s ease;
-    border-radius: 20px;
-    border: 1px solid black;
-    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+    
+    filter: drop-shadow(0 0 30px #4f7da696);
 }
 
-.infoper_img {
-    margin: 0 auto;
-    width: 100%;
-    height: 500px !important;
-    cursor: pointer;
+.infoper_img::before {
     background: url('https://ik.imagekit.io/arl60/Ardent/shop/KatG6/Odette/odette-right.png?updatedAt=1764016968876');
-    background-size: contain;
-    background-position: center;
+    background-size:contain;
+    background-position: bottom;
     background-repeat: no-repeat;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    transition: background 0.6s ease;
-    border-radius: 20px;
-    border: 1px solid black;
-    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
 }
-
 
 .infoapp subtitle, .infoper subtitle, .misc_box subtitle {
     margin: 0 auto;
@@ -284,18 +281,11 @@ td {
     text-shadow: 0px 0px 4px rgba(0,0,0,0.7), 0px 0px 6px rgba(0,0,0,0.5);
 }
 
-.infoapp subtitle {
+.infoapp subtitle, .infoper subtitle {
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
-}
-
-.infoper subtitle {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
 }
 
 .info_box {
@@ -315,6 +305,8 @@ td {
 
     overflow: hidden;
     z-index: 1;
+    
+    margin-top:10px;
 }
 
 .info_box p {
@@ -323,7 +315,7 @@ td {
     font-size: 16px;
     text-align: justify;
     overflow-y:auto;
-    height:600px;
+    height:300px;
     padding: 0 25px;
 
     scrollbar-color: rgba(201, 186, 233, 0.4) transparent;
@@ -347,36 +339,6 @@ td {
   background: rgba(201, 186, 233, 0.4);
 }
 
-.infoapp_img submessage {
-    display: block;
-    text-align: center;
-    filter: drop-shadow(2px 2px 0.5px rgba(0, 0, 0, 0.6));
-    font-family: "Cormorant Upright", serif;
-    font-weight: 400;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8) !important;
-    font-size: 20px;
-    padding: 2px 0;
-    color: #fff;
-    text-transform: lowercase;
-    background: linear-gradient(to right, transparent, rgba(223, 183, 202, 0.9), transparent);
-    border-radius: 10px;
-    margin: 20px 0;
-}
-
-.infoapp lyrics, .infoper lyrics, .misc_box submessage {
-    display: block;
-    text-align: center;
-    filter: drop-shadow(2px 2px 0.5px rgba(0, 0, 0, 0.6));
-    font-family: "Lavishly Yours", cursive;
-    font-weight: 400;
-    text-shadow: none !important;
-    font-size: 40px;
-    padding: 2px 0;
-    color: #f8c0da;
-    text-transform: lowercase;
-    background: linear-gradient(to right, transparent, rgba(201, 186, 233, 0.4), transparent);
-    border-radius: 10px;
-}
 
 .misc_box submessage {
     font-size:20px;
@@ -520,11 +482,11 @@ td {
 
 .corner_img {
     position: absolute;
-    width: 120px;
+    width: 200px;
     height: auto;
     pointer-events: none;
     z-index: 10;
-    filter: drop-shadow(0 0 2px rgb(0, 0, 0));
+    filter: drop-shadow(0 0 2px rgb(110, 178, 211));
 }
 
 @media (max-width: 1200px) {
