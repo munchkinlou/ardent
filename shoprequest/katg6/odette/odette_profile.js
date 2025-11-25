@@ -22,22 +22,4 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
-
-
-    const infoApp = document.querySelector('.infoapp');
-    const infoper = document.querySelector('.infoper');
-    
-    if (infoApp) {
-        const infoAppImg = infoApp.querySelector('.infoapp_img');
-        infoApp.addEventListener('click', function(e) {
-            infoAppImg.classList.toggle('flipped');
-        });
-    }
-    
-    if (infoper) {
-        const infoperImg = infoper.querySelector('.infoper_img');
-        infoper.addEventListener('click', function(e) {
-            infoperImg.classList.toggle('flipped');
-        });
-    }
 });
