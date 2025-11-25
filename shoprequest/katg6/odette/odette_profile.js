@@ -21,4 +21,4 @@ document.querySelectorAll('.blocky span').forEach(span => {
     }
   }
 });
-}
+});
