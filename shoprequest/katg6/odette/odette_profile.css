@@ -1,38 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Island+Moments&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
 
 /*
-    font-family: "Lavishly Yours", cursive;
+    font-family: "UnifrakturMaguntia", cursive;
     font-weight: 400;
 
-    font-family: "WindSong", cursive;
+    font-family: "Germania One", system-ui;
     font-weight: 400;
 
-    font-family: "Island Moments", cursive;
-    font-weight: 400;
-
-    font-family: "Cormorant Upright", serif;
+    font-family: "Crimson Text", serif;
     font-weight: 400;
 */
 
 nav {
-    background: rgba(30, 34, 53, 0.64) !important;
-    box-shadow: 0 0 10px rgba(17, 23, 44, 0.9), 0 0 10px rgba(3, 3, 6, 0.5);
+    background: rgba(46,58,74, 0.6) !important;
+    box-shadow: 0 0 10px rgba(210,168,178, 0.5), 0 0 10px rgba(174, 189, 193, 0.5);
 }
 
 nav a {
-    font-family: "Cormorant Upright", serif;
-    font-weight: 400;
+    transition: color 0.2s ease, background 0.2s ease;
     color: #ffffff !important;
-    text-transform: capitalize !important;
-    font-size: 16px;
     transition: color 0.2s ease, background 0.2s ease;
 }
 
 nav a:hover {
-    color: #BF7582 !important;
+    color: #ff8f00 !important;
     transition: color 0.2s ease, background 0.2s ease;
 }
 
@@ -41,22 +33,28 @@ nav a:hover {
 }
 
 h1 {
-    position: relative;
-    margin: -50px auto -30px -20px !important;
-    font-size: 0px;
+    position:relative;
+    margin: -30px auto -20px -20px !important;
+    font-size:0px;
     z-index: 1;
 }
 
 h1::before {
-    content: var(--toptitle);
+    content:var(--toptitle);    
+    
     filter: drop-shadow(2px 2px 0.5px #000000);
     color: white;
-    font-family: "Lavishly Yours", cursive;
+
+    font-family: "UnifrakturMaguntia", cursive;
     font-weight: 400;
     text-transform: capitalize !important;
-    font-size: 100px;
+    font-size: 80px;
     line-height: 1.2;
-    background: linear-gradient(to bottom, #ffc8ec, #aa5b6a );
+
+    background: linear-gradient(to bottom,
+        #f9efd2, #7ba0c6
+    );
+
     background-size: 100%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -72,16 +70,12 @@ h1 i {
 .tabnav,
 .navbar_header,
 .navbar_collapse {
-	background: linear-gradient(to right, transparent 30%, rgba(110, 74, 117, 0.53) 100%);
+	background: linear-gradient(to right, transparent 30%, rgba(46,58,74, 0.6) 100%);
     backdrop-filter: blur(2px);
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
     padding: 8px 2px 0;
     border-radius: 4px;
     height: 35px;
-    font-family: "Island Moments", cursive;
-    font-weight: 400;
-    font-size: 16px !important;
-    text-transform: capitalize !important;
     overflow: visible;
 }
 
@@ -96,12 +90,12 @@ h1 i {
 .navbar_header a:hover,
 .navbar_collapse a:hover {
     transform: scale(1.05) !important;
-    color: #edb4dc !important;
+    color: #ff8f00 !important;
     transition: color 0.3s ease, background 0.3s ease, transform 0.3s ease;
 }
 
 .tabnav a.active {
-    color: #edb4dc !important;
+    color: #ff8f00 !important;
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.7) !important;
     transition: color 0.3s ease, background 0.3s ease, transform 0.3s ease;
 }
@@ -112,15 +106,19 @@ h1 i {
 
 
 .profav {
-    filter: drop-shadow(0 0 5px rgb(212, 120, 159)) drop-shadow(0 0 2px rgb(175, 205, 232));
-    width: 300px !important;
-    margin: 10px !important;
+    filter:
+        drop-shadow(0 0 5px rgb(255, 255, 255))
+        drop-shadow(0 0 2px rgb(175, 205, 232));
+    width: 280px !important;
+    margin: 10px 30px 10px 0 !important;
 }
 
 .profav img {
 	width: 100%;
 	height: 100%;
+	object-fit: cover;
 	display: block;
+	object-position: right;
 }
 
 .blocky {
@@ -129,7 +127,7 @@ h1 i {
 
     backdrop-filter: blur(2px);
     border: 2px solid #d5e9f5;
-    border-radius: 15px/50px;
+    border-radius: 0 100px;
     box-shadow:
         0 0 10px rgba(176, 212, 230, 0.5),
         0 0 10px rgba(144, 180, 198, 0.5),
@@ -138,11 +136,10 @@ h1 i {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction:column;
 
     padding: 15px 50px 30px;
 
-    font-family: "Cormorant Upright", serif;
+    font-family: "Crimson Text", serif;
     font-weight: 400;
     font-size: 16px;
     text-align: center;
@@ -158,7 +155,7 @@ h1 i {
 
 .blocky > span {
     filter: drop-shadow(2px 2px 0.5px rgba(0, 0, 0, 0.6));
-    font-family: "WindSong", cursive;
+    font-family: "Germania One", system-ui;
     font-weight: 400;
     text-shadow: none !important;
     font-size: 16px;
@@ -167,7 +164,7 @@ h1 i {
     bottom: 0;
     z-index: 0;
     padding: 2px 0;
-    color: #edb4dc;
+    color: #9c9ebb;
     text-transform: capitalize;
     background: linear-gradient(to right, transparent, rgba(139, 151, 199, 0.4), transparent);
     border-radius: 0 0 10px 10px;
@@ -180,7 +177,7 @@ h1 i {
     text-transform: uppercase;
     font-size: 12px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    color: #BF7582!important;
+    color: #DA8137!important;
     transition: color 0.2s ease;
 }
 
@@ -197,20 +194,19 @@ h1 i {
   }
   
 .thead {
-    padding: 5px;
-    font-family: "Lavishly Yours", cursive;
+    font-family: "Germania One", system-ui;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 18px;
 	text-align: center;
     text-transform: capitalize !important;
     padding: 10px 0;
-    color: #BF7582;
+    color: #d4e6f1;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5) !important;
-    border-radius: 15px/50px;
+    border-radius: 0 100px 0 0;
     box-shadow:
         0 0 10px rgba(176, 212, 230, 0.5),
         0 0 10px rgba(144, 180, 198, 0.5),
-        inset 0 0 5px #d5e9f5;
+        inset 0 0 5px rgba(0, 0, 0, 0.9);
 }
 
 .thead b {
@@ -219,7 +215,6 @@ h1 i {
 
 .sip_tbl {
     margin-top:5px;
-    width: 99% !important;
 }
 
 td {
@@ -229,311 +224,162 @@ td {
 .sip_tbl_head,
 .sip_tbl_th,
 .sip_tbl_td {
-	background: rgba(36, 28, 54, 0.52);
+	background: rgba(17, 23, 31, 0.8);
 	color: #ffffff !important;
 	text-shadow: 2px 2px 4px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
 }
 
-.infoapp, .infoper {
-    width: 100%;;
-    margin: 0 auto;
-    height: auto;
-    cursor: pointer;
+.flex_v {
+    flex-direction: column !important;
+    overflow:visible !important;
+}
+
+.flex_v .blocky:first-child {
+    margin-bottom: 0 !important;
+    padding: 0px;
+    margin-top: 20px !important;
+    border-radius: 0 100px 0 0;
+}
+
+.flex_v .blocky:nth-child(2) {
+  border-radius: 0;
+  margin-bottom: 10px !important;
+}
+
+.info_img {
+    margin: 0 0 0 20px !important;
+    height: 700px;
+    width: 50%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.info_con {
     position: relative;
+    margin: 30px 30px 30px 0;
+    height:auto;
+width:50% !important;
 }
 
-.infoapp_img {
-    width: 100%;
-    height: 500px !important;
-    cursor: pointer;
-    background: url('https://ik.imagekit.io/arl60/Ardent/shop/Bird/Atreyu/Atreyu-disaster.jpg?updatedAt=1762134735309');
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    transition: background 0.6s ease;
-    border-radius: 20px;
-    border: 1px solid black;
-    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
-}
+.info_con h2 {
+    color: white !important;
+    margin: 20px 0 30px;
 
-.infoapp_img.flipped {
-    background: url('https://ik.imagekit.io/arl60/Ardent/shop/Bird/Atreyu/AtreyuCatEye.png?updatedAt=1762134741557') no-repeat;
-    background-size: contain;
-    background-position: center;
-    background-color: rgba(36, 28, 54, 0.52);
-    border-radius: 20px;
-    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
-}
-
-.infoper_img {
-    margin: 0 auto;
-    width: 100%;
-    height: 500px !important;
-    cursor: pointer;
-    background: url('https://ik.imagekit.io/arl60/Ardent/shop/Bird/Atreyu/Atreyu-Resin.png?updatedAt=1762134743413');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    transition: background 0.6s ease;
-    border-radius: 20px;
-    border: 1px solid black;
-    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
-}
-
-
-.infoapp subtitle, .infoper subtitle, .misc_box subtitle {
-    margin: 0 auto;
-    font-family: "Lavishly Yours", cursive;
+    font-family: "UnifrakturMaguntia", cursive;
     font-weight: 400;
+
     font-size: 50px;
-    text-align: center;
-    color: #f0d5d5;
-    text-shadow: 0px 0px 4px rgba(0,0,0,0.7), 0px 0px 6px rgba(0,0,0,0.5);
-}
 
-.infoapp subtitle {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
+    background: linear-gradient(to bottom,
+        #f9efd2, #7ba0c6
+    );
 
-.infoper subtitle {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-}
-
-.info_box {
-    position: relative;
-
-    background: rgba(36, 28, 54, 0.52);
-
-    backdrop-filter: blur(2px);
-    border: 2px solid #d5e9f5;
-    border-radius: 15px/50px;
-    box-shadow:
-        0 0 10px rgba(176, 212, 230, 0.5),
-        0 0 10px rgba(144, 180, 198, 0.5),
-        inset 0 0 5px rgba(0, 0, 0, 0.9);
-
-    padding: 25px 0;
-
-    overflow: hidden;
-    z-index: 1;
-}
-
-.info_box p {
-    font-family: "Cormorant Upright", serif;
-    font-weight: 400;
-    font-size: 16px;
-    text-align: justify;
-    overflow-y:auto;
-    height:600px;
-    padding: 0 25px;
-
-    scrollbar-color: rgba(201, 186, 233, 0.4) transparent;
-    scrollbar-width: thin; 
-}
-
-.info_box p::-webkit-scrollbar {
-  width: 12px;
-}
-
-.info_box p::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.info_box p::-webkit-scrollbar-thumb {
-  background: rgba(201, 186, 233, 0.4);
-  border-radius: 6px;
-}
-
-.info_box p::-webkit-scrollbar-thumb:hover {
-  background: rgba(201, 186, 233, 0.4);
-}
-
-.infoapp_img submessage {
-    display: block;
-    text-align: center;
-    filter: drop-shadow(2px 2px 0.5px rgba(0, 0, 0, 0.6));
-    font-family: "Cormorant Upright", serif;
-    font-weight: 400;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8) !important;
-    font-size: 20px;
-    padding: 2px 0;
-    color: #fff;
-    text-transform: lowercase;
-    background: linear-gradient(to right, transparent, rgba(223, 183, 202, 0.9), transparent);
-    border-radius: 10px;
-    margin: 20px 0;
-}
-
-.infoapp lyrics, .infoper lyrics, .misc_box submessage {
-    display: block;
-    text-align: center;
-    filter: drop-shadow(2px 2px 0.5px rgba(0, 0, 0, 0.6));
-    font-family: "Lavishly Yours", cursive;
-    font-weight: 400;
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-shadow: none !important;
-    font-size: 40px;
-    padding: 2px 0;
-    color: #f8c0da;
-    text-transform: lowercase;
-    background: linear-gradient(to right, transparent, rgba(201, 186, 233, 0.4), transparent);
-    border-radius: 10px;
 }
 
-.misc_box submessage {
-    font-size:20px;
+.info_incon {
+    padding:10px;
+
+    background:transparent;
+
+    border: 2px solid;
+    border-image: linear-gradient(to var(--incondir), transparent,#79a6d6) 1;
+
+    color:#ffffff;
 }
 
-.misc_row {
-	display: flex;
-	justify-content: center;
-	gap: 5px;
-	align-items: center;
-    margin: 0 auto -10px;
-    width: 100%;
-}
-
-.misc_box {
-	flex: 0 1 50%;
-	width: 100%;
-	padding: 0;
-	display: flex;
-	flex-direction: column;
-	align-items: stretch;
-	justify-content: stretch;
-    gap: 10px;
-}
-
-.misc_info {
-	width: 100%;
-	backdrop-filter: blur(2px);
-	text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
-    border: 2px solid #d5e9f5;
-    border-radius: 15px/50px;
-    padding: 25px 0;
-    font-family: "Cormorant Garamond", cursive;
+.info_con strong {
+    color: #DA8137 !important;
+    display: block;
+    font-family: "Germania One", system-ui;
+    font-weight: 400;
+    text-transform: uppercase;
     font-size: 18px;
-    text-align: center;
-    position: relative;
-    overflow: visible;
-    z-index: 1;
-    box-shadow:
-        0 0 10px rgba(176, 212, 230, 0.5),
-        0 0 10px rgba(144, 180, 198, 0.5),
-        inset 0 0 5px rgba(0, 0, 0, 0.9);
-    background: rgba(36, 28, 54, 0.52);
+}
+
+.misc_con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap:10px;
+}
+
+.misc_con2 {
+    width:100%;
+    margin-top:2%;
 }
 
 .misc_img {
-    width: auto;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+    object-fit: contain;
+    height:500px;
+    width: clamp(300px, 50vw, 800px);
+    transition: opacity 2s ease-in-out;
+    opacity: 1;
 }
 
-.misc_info_item_fullwidth {
-	width: 100%;
-	padding: 5px;
-	box-sizing: border-box;
-	display: flex;
-    flex-direction: column;
-    overflow: hidden;
+.misc_img.fade-out {
+  opacity: 0;
+}
+
+.misc_incon {
+    background:rgba(255, 255, 255, 0);
+    min-width:200px;
+    width:100%;
+    max-width: 200px;
+}
+
+.misc_con2 .misc_incon {
     margin: 0 auto;
+    width: 100%;
+    flex-shrink: 0;
+    min-width:0;
 }
 
-.misc_info_item_fullwidth .compendium_content {
-    backdrop-filter: blur(2px);
-	overflow-x: auto;
-	overflow-y: hidden;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	gap: 10px;
-	align-items: center;
-	padding: 20px 15px;
-    background: rgba(36, 28, 54, 0.52);
-    border: 2px solid #d5e9f5;
-    border-radius: 10px;
-    box-shadow:
-        0 0 10px rgba(176, 212, 230, 0.5),
-        0 0 10px rgba(144, 180, 198, 0.5),
-        inset 0 0 5px rgba(0, 0, 0, 0.9);
-	height: 760px;
-    scrollbar-color: rgba(201, 186, 233, 0.4) transparent;
-    scrollbar-width: thin; 
+.misc_con2 .misc_incon {
+    background:rgba(255, 255, 255, 0);
+    width:100%;
+    min-width:200px;
+    max-width: 650px;
 }
 
-.compendium_content::-webkit-scrollbar {
-  width: 12px;
-}
+.misc_incon subtitle {
+    display: block;
+    position:relative;
 
-.compendium_content::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.compendium_content::-webkit-scrollbar-thumb {
-  background: rgba(201, 186, 233, 0.4);
-  border-radius: 6px;
-}
-
-.misc_info_item_fullwidth .compendium_content > .artcompendium_img_wrap {
-	flex: 0 0 auto;
-}
-
-.misc_info_item_fullwidth .compendium_content img {
-	height: 100%;
-	width: auto;
-	border-radius: 8px;
-	flex: 0 0 auto;
-	object-fit: cover;
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
-    border-radius: 20px;
-}
-
-.artcompendium_img_wrap {
-	position: relative;
-	display: flex;
-	height: 100%;
-	align-items: center;
-	justify-content: center;
-}
-
-.misc_artcompendium {
-	width: 100%;
-	display: block;
-}
-
-.artcompendium_img_wrap:hover .artcompendium_credit,
-.artcompendium_img_wrap:focus-within .artcompendium_credit {
-	opacity: 1;
-	pointer-events: auto;
-}
-
-.misc_info p {
-    font-family: "Cormorant Upright", serif;
+    font-family: "Germania One", system-ui;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 15px;
+    color:#DA8137;
+    line-height: 1.2;
     text-align: center;
-    overflow-y:auto;
-    padding: 0 25px; 
-}
 
+    margin: 10px 0;
+    padding-top:5px;
+
+    border-top: 1.5px solid;
+    border-image: linear-gradient(
+        to left,
+        transparent,
+        #7ba0c6,
+        transparent
+    ) 1;
+}
 
 .corner_img {
     position: absolute;
-    width: 120px;
+    width: 100px;
     height: auto;
     pointer-events: none;
     z-index: 10;
-    filter: drop-shadow(0 0 2px rgb(0, 0, 0));
+    filter: drop-shadow(0 0 6px rgb(0, 0, 0));
+    top: -200px;
+    right: -10px;
+    transform: scalex(-1);
 }
 
 @media (max-width: 1200px) {
@@ -556,16 +402,17 @@ td {
         margin: 0 auto 20px !important;
         width: 95% !important;
     }
+}
 
-	.misc_info_item_fullwidth {
-		grid-column: 1 / -1;
-	}
-	.misc_row {
-		flex-direction: column;
-		align-items: center;
-	}
-	.misc_box {
-		max-width: 100%;
-		width: 95%;
-	}
+
+
+h1 {
+    --toptitle: 'Citadel';
+}
+
+.profav img {
+    content: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/740ee9a0-4bd5-4423-997f-d7fcdb1799c8/dkbljv4-ac69e9d0-ed8d-4d21-9b83-f45b898dc983.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi83NDBlZTlhMC00YmQ1LTQ0MjMtOTk3Zi1kN2ZjZGIxNzk5YzgvZGtibGp2NC1hYzY5ZTlkMC1lZDhkLTRkMjEtOWI4My1mNDViODk4ZGM5ODMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.3W4_vLKj9liLNptsdJygg4nYFo9jVss0NgtHKmfWTi8');
+
+/*contain for background-less pngs, cover for images with bgs */
+	object-fit: cover !important;
 }
