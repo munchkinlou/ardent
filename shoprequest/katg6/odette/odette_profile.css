@@ -246,8 +246,8 @@ td {
     width: 100%;
     height: 500px !important;
     cursor: pointer;
-    background: url('https://ik.imagekit.io/arl60/Ardent/shop/Bird/Atreyu/Atreyu-disaster.jpg?updatedAt=1762134735309');
-    background-size: cover;
+    background: url('https://ik.imagekit.io/arl60/Ardent/shop/KatG6/Odette/odette2.png?updatedAt=1764016982284');
+    background-size: contain;
     background-position: bottom;
     background-repeat: no-repeat;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -257,22 +257,13 @@ td {
     filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
 }
 
-.infoapp_img.flipped {
-    background: url('https://ik.imagekit.io/arl60/Ardent/shop/Bird/Atreyu/AtreyuCatEye.png?updatedAt=1762134741557') no-repeat;
-    background-size: contain;
-    background-position: center;
-    background-color: rgba(36, 28, 54, 0.52);
-    border-radius: 20px;
-    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
-}
-
 .infoper_img {
     margin: 0 auto;
     width: 100%;
     height: 500px !important;
     cursor: pointer;
-    background: url('https://ik.imagekit.io/arl60/Ardent/shop/Bird/Atreyu/Atreyu-Resin.png?updatedAt=1762134743413');
-    background-size: cover;
+    background: url('https://ik.imagekit.io/arl60/Ardent/shop/KatG6/Odette/odette-right.png?updatedAt=1764016968876');
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
