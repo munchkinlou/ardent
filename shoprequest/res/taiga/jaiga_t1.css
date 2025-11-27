@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
+/* 
+  font-family: "Unica One", sans-serif;
+  font-weight: 400;
+
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 400;
+
+  font-family: "Amarante", serif;
+  font-weight: 400;
+
+  font-family: "Love Light", cursive;
+  font-weight: 400;
+*/
+
+.jaigat1 {
+	position: relative;
+  width: 450px;
+  margin: 20px auto 620px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+}
+
+
+.jaigat1 credit {
+  position: absolute;
+  width: 100%;
+  display: block;
+  font-family: "Unica One", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  bottom: -374px;
+  left: 229px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(90deg);
+}
+
+.jaigat1_img {
+  position: absolute;
+  bottom: -644px;
+  left: -34.7px;
+  width: 524.9px;
+  height: 647px;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/shop/Resin/Taiga/JaigaShaded.png?updatedAt=1764173771398') no-repeat bottom;
+    background-size: auto;
+  background-size: 100%;
+  z-index: 5;
+  pointer-events: none;
+  /*! filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 2px rgba(139, 207, 129, 0.9)); */
+  transform: rotate(-0.3deg);
+}
+
+.jaigat1_bor {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  padding: 1.6px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  /*! box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); */
+  overflow:hidden;
+}
+
+.jaigat1_con {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  pointer-events: none;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.jaigat1_con::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  background: black
+    url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/alexander-mils-kK61Vghj5BA-unsplash.jpg?updatedAt=1764017239542') no-repeat;
+  background-size:cover;
+  background-position:bottom;
+  background-attachment:fixed;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.9);
+  filter: 
+    brightness(0.7)
+    saturate(0.4) 
+    grayscale(0.2) 
+    hue-rotate(20deg);
+  /*! border: 10px solid black; */
+}
+
+.jaigat1_con > * {
+  position: relative;
+  z-index: 2;
+}
+
+.jaigat1_incon {
+  position: relative;
+  overflow: hidden;
+  padding: 5px 15px 0;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient( to bottom, #152230B5, #5D92E866);
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.8);
+  text-align: justify;
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #E8DAEE;
+  line-height: 1.2;
+  border: 10px solid #06090C;
+}
+
+.jaigat1_incon d {
+  display:block;
+  margin:0 auto;
+  width:100%;
+  height:10px;
+
+  border-top: 1.1px solid;
+  border-image: linear-gradient(to right, transparent, #B9E2FF, transparent) 1;
+}
+
+.jaigat1_incon tai, .jaigat1_incon jay {
+  font-family: "Amarante", serif;
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+  text-shadow: none;
+  line-height: 0.9;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,1));
+}
+
+.jaigat1_incon tai {
+  color: transparent;
+  background: linear-gradient(to bottom, #FF1818,#CA0F0F);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: none;
+}
+
+.jaigat1_incon jay {
+  color: transparent;
+  background: linear-gradient(to bottom, #82D970,#A2BC5D);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: none;
+}
+
+
+.jaigat1_speech {
+  font-family: "Love Light", cursive;
+  font-weight: 400;
+  display: block;
+  position: relative;
+  inset: 0;
+  margin: -20px auto -10px -30px;
+  text-align: center;
+  line-height: 0.8;
+  padding-top: 0;
+  font-size:30px;
+}
+
+.jaigat1_speech tai, .jaigat1_speech jay {
+  font-family: "Love Light", cursive;
+  font-size: 42px;
+  line-height: 1.1;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
+}
+
+@media (max-width: 1200px)  {
+.jaigat1 {
+    margin: 0 auto;
+  }
+  
+.jaigat1_img {
+    display: none;
+  }
+  
+.jaigat1 credit {
+    position: relative;
+    inset:auto;
+    transform: none;
+    justify-content: center;
+}
+
+}
+
+
+
