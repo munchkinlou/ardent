@@ -207,6 +207,10 @@
     color: white;
 }
 
+.cassiedel_incon1 > br {
+    display: none;
+}
+
 .cassiedel_incon1 text {
     position: relative;
     z-index: 10;
