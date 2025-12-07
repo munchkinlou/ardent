@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@font-face {
+    font-family: "kamajit1";
+    src: url('KingsAndPirates-p7EAK.ttf') format('truetype');
+}
+
+/*
+  font-family: "kamajit1", cursive;
+  font-weight: 400;
+
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
+
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 400;
+
+*/
+
+.kamajit1 {
+	position: relative;
+  width: 800px;
+  margin: 20px auto 40px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+}
+
+
+.kamajit1 credit {
+  position: absolute;
+  bottom: -25px;
+  right: 0;
+  width: 100%;
+  display:block;
+  text-align:center;
+  font-size: 12px;
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.kamajit1_bor {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom,
+    #730A50,
+    #0D0414);
+  padding: 3px;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+.kamajit1_con {
+  position: relative;
+  width: 100%;
+  padding: 680px 20px 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+
+  background: #400C29 url('https://ik.imagekit.io/arl60/Ardent/shop/Missy/Kamaji/Missy_3.png') no-repeat;
+  background-size: 100%;
+  background-position: top;
+  background-attachment: local;
+}
+
+.kamajit1_con::before {
+  position:absolute;
+  content:'';
+  width:100%;
+  height:100%;
+  inset:0;
+
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+  background: linear-gradient( to bottom, rgba(0,0,0,0) 600px, #511332 780px, #0E0105);
+
+  z-index:1;
+}
+
+.kamajit1_con > * {
+  position: relative;
+  z-index: 2;
+}
+
+.kamajit1_incon {
+  position: relative;
+  overflow: hidden;
+  padding: 60px 20px 10px;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, rgba(0,0,0,0),
+    #0E0105));
+  text-align: justify;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 400;
+  font-size: 12.5px;
+  color: #ffece7;
+  line-height: 1.2;
+  border: 1px solid;
+  border-image: linear-gradient(to bottom,
+    rgba(0,0,0,0),
+    #FFA5FF,
+    #FE78FF) 1;
+  border-top:none;
+}
+
+.kamajit1_incon speak {
+  font-size: 14px;
+  text-align: center;
+  text-shadow: none;
+  line-height: 0.9;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
+}
+
+.kamajit1_speech {
+  display: block;
+  position: relative;
+  margin: 5px 0 -10px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.kamajit1_speech speak {
+    display: block;
+    font-family: "kamajit1", cursive;
+    font-weight: 400;
+    text-shadow: none;
+    font-size: 40px;
+    line-height: 1.5;
+    filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
+    transition: transform 1.1s ease;
+}
+
+.kamajit1_incon:hover speak {
+    transform: scale(1.1);
+}
+
+.kamajit1_incon speak, .kamajit1_speech speak {
+  color: transparent;
+  background: linear-gradient(to bottom, #18C3EC, #CCF5FF);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.kamajit1_speech::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 100%;
+  height: 1.1px;
+  margin: 0 auto;
+  background: linear-gradient(to right,
+    transparent,
+    #FFA5FF,
+    #FE78FF,
+    #FFA5FF,
+    transparent);
+}
+
+@media (max-width: 1200px) {
+
+.kamajit1_con {
+  padding: 0;
+  background:none;
+}
+
+  .kamajit1_con::before {
+    display: none;
+  }
+
+  .kamajit1_speech {
+  margin: 0 auto -30px;
+}
+
+
+.kamajit1 credit {
+  position: relative;
+  inset:auto;
+  display:block;
+  transform: none;
+  margin-top:10px;
+}
+
+}
+
