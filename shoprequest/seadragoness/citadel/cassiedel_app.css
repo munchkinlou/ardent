@@ -226,15 +226,12 @@
 
 .cassiedel info {
     position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    display: block;
     text-align: center;
     font-family: "Forum", serif;
     font-weight: 400;
     flex: 1; 
-    padding: 30px 10px 10px;
+    padding: 0px 20px 10px;
     border-radius: 20px/100px;
     border: solid #86809e 4px;
     box-shadow:
@@ -250,16 +247,14 @@
     z-index: 1;
 }
 
-.cassiedel info > br {
-    margin:5px;
-}
 
 .cassiedel info img {
-    width: 250px;
+    float: left;
+    width: 300px;
     height: auto;
-    object-fit: cover;
-    object-position: top;
-    padding: 0 10px;
+    object-fit: contain;
+    object-position: bottom;
+    padding: 10px;
     transition: transform 1.1s ease;
     animation: glow 6s ease-in-out infinite;
 }
