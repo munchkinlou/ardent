@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carattere&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
+/* 
+  font-family: "Unica One", sans-serif;
+  font-weight: 400;
+
+  font-family: "Crimson Pro", serif;
+  font-weight: 400;
+
+  font-family: "Newsreader", serif;
+  font-weight: 400;
+
+  font-family: "Carattere", cursive;
+  font-weight: 400;
+*/
+
+.alchemyt1 {
+	position: relative;
+  width: 420px;
+  margin: 20px auto 100px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+}
+
+
+.alchemyt1 credit {
+  position: absolute;
+  width: 100%;
+  display: block;
+  font-family: "Unica One", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  font-weight: bold;
+  bottom: -20px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@keyframes alchemyy1_glow {
+    0% { filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 2px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 10px rgba(171, 36, 106, 0.9)); }
+    33% { filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 2px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 10px rgba(127, 119, 231, 0.9)); }
+    66% { filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 2px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 10px rgba(82, 54, 122, 0.9)); }
+    100% { filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 2px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 10px rgba(171, 36, 106, 0.9)); }
+}
+
+.alchemyt1 alchemy {
+    position: absolute;
+    bottom: -104px;
+    left: auto;
+    right: auto;
+    width: 100%;
+    height: 431px;
+    background: transparent url('https://ik.imagekit.io/arl60/Ardent/shop/Teegan/Alchemy/dkxwn0v-543d019d-faa1-4297-9fbb-9971318f08ae.png?updatedAt=1765144966877') no-repeat bottom;
+    background-size: contain;
+    z-index: 5;
+    pointer-events: none;
+    animation: alchemyy1_glow 6s ease-in-out infinite;
+}
+
+.alchemyt1 bor {
+  display: block;
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom,
+    #8b1a1ad0,
+    #8b4a1ac0,
+    #6b6b1ab0,
+    #1a6b2aa0,
+    #1a4a8b90,
+    #4a1a8b80,
+    #000000F0
+  );
+  padding: 2px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  overflow:hidden;
+}
+
+.alchemyt1 con {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  pointer-events: none;
+  margin: 0 auto;
+}
+
+.alchemyt1 con::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  background: black url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/photo-1589560486062-db6aa7947af0.jpg?updatedAt=1754332106581') repeat-y;
+  background-size:100%;
+  background-position:bottom;
+  background-attachment:fixed;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.9);
+  filter: hue-rotate(40deg);
+}
+
+.alchemyt1 con > * {
+  position: relative;
+  z-index: 2;
+}
+
+.alchemyt1 incon {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  padding: 5px 15px 310px;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #4a0a1ced, #4a2a0ad6, #3a3a0abd, #0a3a1aa3, #0a2a4aa6, #2a0a4aad, #000 );
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.8);
+  text-align: justify;
+  font-family: "Crimson Pro", serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #E8DAEE;
+  line-height: 1.2;
+  border-radius:20px;
+}
+
+.alchemyt1 incon d {
+  display:block;
+  margin:0 auto;
+  width:100%;
+  height:10px;
+
+  border-top: 1.1px solid;
+  border-image: linear-gradient(to right, transparent, #7F77E7, transparent) 1;
+}
+
+.alchemyt1 incon speak {
+  font-family: "Newsreader", serif;
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+  text-shadow: none;
+  line-height: 0.9;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
+}
+
+.alchemyt1 speech {
+  display: block;
+  position: absolute;
+  bottom: 251px;
+  left: 127px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 0.8;
+  padding-top: 10px;
+}
+
+.alchemyt1 speech speak {
+  font-family: "Carattere", cursive;
+  font-weight: 400;
+  text-shadow: none;
+  font-size: 42px;
+  line-height: 1.1;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
+}
+
+.alchemyt1 incon speak, .alchemyt1 speech speak {
+  color: transparent;
+  background: linear-gradient(to right, #B1F980,#C8522D, #e54343, #c553c5);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+@media (max-width: 1200px) {
+
+}
+
