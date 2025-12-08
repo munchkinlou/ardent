@@ -152,14 +152,15 @@
   display: block;
   position: absolute;
   bottom: 241px;
-  left: 127px;
+  left: 46%;
+  transform: translateX(-50%);
   margin: 0 auto;
   text-align: center;
   line-height: 0.8;
   padding-top: 10px;
 }
 
-.alchemyt1 speech speak {
+.alchemyt1 speech b {
   font-family: "Carattere", cursive;
   font-weight: 400;
   text-shadow: none;
@@ -168,7 +169,7 @@
   filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
 }
 
-.alchemyt1 incon speak, .alchemyt1 speech speak {
+.alchemyt1 incon b, .alchemyt1 speech b {
   color: transparent;
   background: linear-gradient(to right, #B1F980,#C8522D, #e54343, #c553c5);
   -webkit-background-clip: text;
