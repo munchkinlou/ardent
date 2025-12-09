@@ -337,7 +337,6 @@
     width: 100%;
 }
 
-
 .icegarde_tabs {
     position: relative;
     width: 100%;
@@ -348,6 +347,11 @@
     justify-content: space-between;
 }
 
+.icegarde_tabs > br {
+    display: none;
+}
+
+
 .icegarde_contentbox input[type="radio"] {
     display: none;
     appearance: none;
@@ -356,6 +360,10 @@
     position: absolute;
     opacity: 0;
     pointer-events: none;
+}
+
+.icegarde_contentbox > br {
+    display: none;
 }
 
 .icegarde_tabs a {
