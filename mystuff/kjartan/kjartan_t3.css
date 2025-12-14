@@ -169,6 +169,12 @@
   min-height:10px;
 }
 
+.kjartant3_bor credit {
+  position: relative;
+  inset: auto;
+  display:block;
+}
+
 }
 
 /* OLD SHIT */
