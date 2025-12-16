@@ -152,7 +152,7 @@
   color: #60e9f3;
 }
 
-.kjartant12_speech spa {
+.kjartant12_speech spa, .kjartant12_speech spa {
   color: #e68160;
 }
 
@@ -177,7 +177,7 @@
   font-size:33px;
   line-height: 1.1;
   filter: drop-shadow(0 0 3px rgba(0,0,0,0.8));
-  margin-bottom:-30px;
+  margin-bottom: -5px;
 }
 
 .kjartant12_speech nor {
