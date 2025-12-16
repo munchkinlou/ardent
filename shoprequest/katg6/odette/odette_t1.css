@@ -228,6 +228,7 @@
 .odettet1 t {
   position: relative;
   inset:auto;
+	display: none;
 }
 
 .odettet1_bor, .odettet1_con, .odettet1_incon, .odettet1_con::before {
@@ -236,6 +237,10 @@
 
 .odettet1_incon {
   padding:10px;
+}
+
+.odettet1_con video {
+	display: none;
 }
 
 
