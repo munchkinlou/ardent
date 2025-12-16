@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@font-face {
+  font-family: 'Kjartan1';
+  src: url('VikingNormal-36VL.otf') format('truetype');
+}
+
+/*
+
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
+
+  font-family: "Amarante", serif;
+  font-weight: 400;
+
+  font-family: "Kjartan1", serif;
+  font-weight: 400;
+
+  font-family: 'Eagle Lake', serif;
+  font-weight: 400;
+
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400; 
+
+*/
+
+.kjartant12 {
+	position: relative;
+  width: 450px;
+  margin: 20px auto 220px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+  filter: drop-shadow(0 8px 10px rgba(0,0,0,0.75));
+}
+
+.kjartant12 credit {
+  position: absolute;
+  bottom: 286px;
+  right: -237px;
+  width: 100%;
+  display:block;
+  text-align:right;
+  font-size: 11px;
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
+  z-index: 10;
+  transform: rotate(-270deg);
+}
+
+
+.kjartant12_img {
+  position: absolute;
+  bottom: -119px;
+  left: -182px;
+  width: 192%;
+  height: 593px;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Kjartan/IMG_2078.png') no-repeat center bottom;
+  background-size: contain; 
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.75));
+}
+
+.kjartant12_bor {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom, #202020, #000);
+  padding: 3px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.kjartant12_con {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  pointer-events: none;
+  margin: 0 auto;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.kjartant12_con::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://ik.imagekit.io/arl60/Ardent/personal/Kjartan/mist.jpg?updatedAt=1753534365590') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  pointer-events: none;
+  overflow: hidden;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  filter: grayscale(0.6);
+}
+
+.kjartant12_con > * {
+  position: relative;
+  z-index: 2;
+}
+
+.kjartant12_incon {
+  position: relative;
+  overflow: hidden;
+  padding: 10px 20px 420px;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, rgba(43, 43, 43, 0.8), #000000ed);
+  height: auto;
+  box-shadow: inset 0 0 10px black, 0 0 10px 10px rgba(122, 122, 122, 0.2);
+  text-align: justify;
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;  
+  font-size: 12px;
+  color: #ffffff;
+  line-height: 1.2;
+  border: 1.5px solid #000000;
+}
+
+.kjartant12_incon d {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  height: 1.1px;
+  background: linear-gradient(to right, transparent, #ffc375, transparent);
+}
+
+.kjartant12_incon speak, .kjartant12_incon nor, .kjartant12_incon spa {
+	font-family: 'Amarante';
+  font-size: 12px;
+  text-align: center;
+  text-shadow: none;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
+}
+
+.kjartant12_incon speak {
+  color: transparent;
+  background: linear-gradient(to bottom, #FAF880, #EA9250);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.kjartant12_incon nor, .kjartant12_speech nor {
+
+  color: #60e9f3;
+}
+
+.kjartant12_speech spa {
+  color: #e68160;
+}
+
+.kjartant12_speech {
+  display: block;
+  position: absolute;
+  bottom: 339px;
+  left: 118px;
+  z-index: 10;
+  padding: 0;
+  text-align:center;
+}
+
+.kjartant12_speech speak {
+  display: block;
+  font-family: 'Kjartan1';
+  color: transparent;
+  background: linear-gradient(to bottom, #FFDC75, #EA9250);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: none;
+  font-size:33px;
+  line-height: 1.1;
+  filter: drop-shadow(0 0 3px rgba(0,0,0,0.8));
+  margin-bottom:-30px;
+}
+
+.kjartant12_speech nor {
+  font-family: 'Eagle Lake', serif;
+  font-weight: 400;
+  font-size:18px;
+}
+
+@media (max-width: 1200px) {
+
+  .kjartant12 {
+    filter: none;
+    margin: 0 auto;
+  }
+
+  .kjartant12_con::before {
+    display: none;
+  }
+
+.kjartant12_incon {
+  min-height: 10px;
+  padding: 10px;
+}
+
+.kjartant12 credit {
+  position:relative;
+  inset: auto;
+  display:block;
+  text-align:center;
+  transform: none;
+}
+  
+.kjartant12_img {
+  display: none;
+}
+  
+  .kjartant12_speech {
+    position: relative;
+    inset: auto;
+    padding: 0;
+}
+
+}
