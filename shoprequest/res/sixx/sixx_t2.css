@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@font-face {
+  font-family: 'Qaskin Sixx';
+  src: url('QaskinBlackPersonalUse-5wLG.ttf');
+}
+
+
+/* 
+  font-family: "Unica One", sans-serif;
+  font-weight: 400;
+
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;
+
+  font-family: "Amarante", serif;
+  font-weight: 400;
+
+  font-family: "Qaskin Sixx", cursive;
+  font-weight: 400;
+*/
+
+.sixxt2 {
+	position: relative;
+  width: 450px;
+  margin: 250px auto 20px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+}
+
+
+.sixxt2 credit {
+  position: absolute;
+  width: 100%;
+  display: block;
+  font-family: "Unica One", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  bottom: -18px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sixxt2_img {
+  position: absolute;
+  top: -246px;
+  left: -82px;
+  width: 136%;
+  height: 603px;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/shop/Resin/Sixx/sixx.png') no-repeat bottom;
+    background-size: auto;
+  background-size: contain;
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 2px rgba(0, 0, 0, 0.9));
+}
+
+.sixxt2_bor {
+  position: relative;
+  width: 100%;
+  background: black;
+  padding: 3px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  overflow:hidden;
+  
+  border-radius: 400px 400px 0 0;
+}
+
+.sixxt2_con {
+  position: relative;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  pointer-events: none;
+  margin: 0 auto;
+  
+  border-radius: 300px 300px 0 0;
+
+}
+
+.sixxt2_con::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  background: white url('https://images.unsplash.com/photo-1464457312035-3d7d0e0c058e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat;
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.9);
+  
+    border-radius: 300px 300px 0 0;
+
+}
+
+.sixxt2_con > * {
+  position: relative;
+  z-index: 2;
+}
+
+.sixxt2_incon {
+  position: relative;
+  overflow: hidden;
+  padding: 320px 15px 60px;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #606161, #51575C, #000000f2);
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2), inset 0 0 10px rgb(0, 0, 0);
+  text-align: justify;
+  font-family: "Winky Rough", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #E8DAEE;
+  line-height: 1.2;
+  border-radius: 300px 300px 0 0;
+}
+
+.sixxt2_incon d {
+  display:block;
+  margin:0 auto;
+  width:100%;
+  height:10px;
+
+  border-top: 1.1px solid;
+  border-image: linear-gradient(to right, transparent, #D1BD6B, transparent) 1;
+}
+
+.sixxt2_incon speak {
+  font-family: "Amarante", serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  text-shadow: none;
+  line-height: 0.9;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
+}
+
+.sixxt2_speech {
+  display: block;
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  text-align: center;
+  line-height: 0.8;
+  padding-top: 10px;
+}
+
+.sixxt2_speech speak {
+  font-family: "Qaskin Sixx", cursive;
+  font-weight: 400;
+  text-shadow: none;
+  font-size: 42px;
+  line-height: 1.1;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
+}
+
+.sixxt2_incon speak, .sixxt2_speech speak {
+  color: transparent;
+  background: linear-gradient(to bottom, #aac1de,#32C6CD);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+@media (max-width: 1200px) {
+
+  .sixxt2 {
+    filter: none;
+    margin: 10px auto;
+  }
+
+  .sixxt2_bor, .sixxt2_con, .sixxt2_incon {
+    border-radius:0;
+  }
+  
+  .sixxt2_con::before {
+    display: none;
+  }
+
+.sixxt2 credit {
+  position: relative;
+  inset:auto;
+  display:block;
+  text-align: center;
+  transform:none;
+}
+
+.sixxt2_speech {
+  position: relative;
+  inset:auto;
+  transform: none;
+  padding:0;
+}
+
+.sixxt2_img {
+  display: none;
+}
+.sixxt2_incon {
+  padding: 10px;
+}
+
+}
+
