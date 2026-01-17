@@ -112,7 +112,7 @@
   box-shadow: inset 0 0 10px black;
   color: #f8e3dc;
   font-family: 'Comfortaa';
-	font-size:10px;
+	font-size:12px;
 	line-height:1.4;
 	text-align:center;
   
@@ -121,7 +121,7 @@
 .overkillt1_incon speak {
   color: transparent;
   font-family: 'Comfortaa';
-  font-size: 13px;
+  font-size: 15px;
   color: transparent;
   background: linear-gradient(to bottom, #FF0006, #ff5d60);
   -webkit-background-clip: text;
