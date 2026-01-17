@@ -95,7 +95,7 @@
   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.8);
   text-align: center;
   font-family: "Comfortaa", sans-serif;
-  font-size: 10px;
+  font-size: 12px;
   color: #eaeaea;
   line-height: 1.2;
   border: 2px solid;
@@ -105,7 +105,7 @@
 .overkillt2_incon speak {
   color: #FFDC75;
   font-family: "Comfortaa", sans-serif;
-  font-size: 11px;
+  font-size: 13px;
   color: transparent;
   text-align: center;
   background: linear-gradient(to bottom, rgb(246, 41, 41), #f00);
