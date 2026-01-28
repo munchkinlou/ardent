@@ -1,24 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Island+Moments&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 /*
-    font-family: "Lavishly Yours", cursive;
-    font-weight: 400;
-
-    font-family: "WindSong", cursive;
-    font-weight: 400;
-
-    font-family: "Island Moments", cursive;
+    font-family: "Gwendolyn", cursive;
     font-weight: 400;
 
     font-family: "Cormorant Upright", serif;
     font-weight: 400;
 
-      font-family: "Croissant One", serif;
-      font-weight: 400;
+    font-family: "Croissant One", serif;
+    font-weight: 400;
+
+    font-family: "Spectral", serif;
+    font-weight: 400;
 */
 
 nav {
@@ -55,7 +51,7 @@ h1::before {
     content: var(--toptitle);
     filter: drop-shadow(2px 2px 0.5px #000000);
     color: white;
-    font-family: "Lavishly Yours", cursive;
+    font-family: "Gwendolyn", cursive;
     font-weight: 400;
     text-transform: capitalize !important;
     font-size: 100px;
@@ -82,7 +78,7 @@ h1 i {
     padding: 8px 2px 0;
     border-radius: 4px;
     height: 35px;
-    font-family: "Island Moments", cursive;
+    font-family: "Spectral", serif;
     font-weight: 400;
     font-size: 16px !important;
     text-transform: capitalize !important;
@@ -203,9 +199,9 @@ h1 i {
   
 .thead {
     padding: 5px;
-    font-family: "Lavishly Yours", cursive;
+    font-family: "Gwendolyn", cursive;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 35px;
 	text-align: center;
     text-transform: capitalize !important;
     padding: 10px 0;
