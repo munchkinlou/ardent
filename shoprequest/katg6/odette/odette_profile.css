@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Island+Moments&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
 
 /*
     font-family: "Lavishly Yours", cursive;
@@ -15,6 +16,9 @@
 
     font-family: "Cormorant Upright", serif;
     font-weight: 400;
+
+      font-family: "Croissant One", serif;
+      font-weight: 400;
 */
 
 nav {
@@ -126,14 +130,14 @@ h1 i {
 
 .blocky {
     position: relative;
-    margin: 10px auto 15px !important;
+    margin: 10px 3px 15px !important;
 
     backdrop-filter: blur(2px);
     border: 2px solid #d5e9f5;
-    border-radius: 25px/50px;
+    border-radius: 5px 10px 10px 5px;
     box-shadow:
-        0 0 10px rgba(176, 212, 230, 0.5),
-        0 0 10px rgba(144, 180, 198, 0.5),
+        0 0 5px rgba(176, 212, 230, 0.5),
+        0 0 5px rgba(144, 180, 198, 0.5),
         inset 0 0 5px rgba(0, 0, 0, 0.9);
 
     display: flex;
@@ -159,7 +163,7 @@ h1 i {
 
 .blocky > span {
     filter: drop-shadow(2px 2px 0.5px rgba(0, 0, 0, 0.6));
-    font-family: "WindSong", cursive;
+    font-family: "Croissant One", serif;
     font-weight: 400;
     text-shadow: none !important;
     font-size: 16px;
@@ -168,8 +172,8 @@ h1 i {
     bottom: 0;
     z-index: 0;
     padding: 2px 0;
-    color: #edb4dc;
-    text-transform: capitalize;
+    color: #80beff;
+    text-transform: lowercase;
     background: linear-gradient(to right, transparent, rgba(139, 151, 199, 0.4), transparent);
     border-radius: 0 0 10px 10px;
 }
