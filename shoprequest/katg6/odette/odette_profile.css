@@ -98,7 +98,7 @@ h1 i {
 .navbar_header a:hover,
 .navbar_collapse a:hover {
     transform: scale(1.05) !important;
-    color: #edb4dc !important;
+    color: #65e5f6 !important;
     transition: color 0.3s ease, background 0.3s ease, transform 0.3s ease;
 }
 
