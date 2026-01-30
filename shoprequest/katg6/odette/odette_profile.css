@@ -115,7 +115,7 @@ h1 i {
 
 .profav {
     width: 250px !important;
-    margin: 10px !important;
+    margin: 10px 10px 10px 2px !important;
 }
 
 .profav img {
@@ -159,18 +159,18 @@ h1 i {
 
 .blocky > span {
     filter: drop-shadow(2px 2px 0.5px rgba(0, 0, 0, 0.6));
-    font-family: "Croissant One", serif;
+    font-family: "Cormorant Upright", serif;
     font-weight: 400;
     text-shadow: none !important;
-    font-size: 16px;
+    font-size: 18px;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 0;
     padding: 2px 0;
-    color: #80beff;
+    color: #d5fdff;
     text-transform: lowercase;
-    background: linear-gradient(to right, transparent, rgba(139, 151, 199, 0.4), transparent);
+    background: linear-gradient(to right, transparent, rgba(106, 142, 226, 0.4), transparent);
     border-radius: 0 0 10px 10px;
 }
   
@@ -229,7 +229,7 @@ td {
 .sip_tbl_head,
 .sip_tbl_th,
 .sip_tbl_td {
-	background: rgba(11, 16, 31, 0.84);
+	background: rgba(11, 13, 20, 0.9);
 	color: #ffffff !important;
 	text-shadow: 2px 2px 4px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
 }
