@@ -263,11 +263,24 @@ td {
     -webkit-text-fill-color: transparent;
     text-shadow: none !important;
     width: 100%;
+    padding: 0 0 10px;
     
     border-bottom: 1px solid;
-    border-image: linear-gradient(to right, transparent, white, transparent) 1;
+    border-image: linear-gradient(to right, transparent, #daf1ff, transparent) 1;
+}
 
-    margin-bottom: 20px;
+.blocky h3 {
+    width; 100%;
+    background: linear-gradient(to right, transparent, rgba(106, 142, 226, 0.4), transparent);
+    padding: 10px 100px !important;;
+    font-size: 20px;
+    font-style: italic;
+    margin-top: -5px;
+    text-transform: lowercase;
+}
+
+.blocky info {
+   text-align:justify;
 }
 
 .corner_img {
