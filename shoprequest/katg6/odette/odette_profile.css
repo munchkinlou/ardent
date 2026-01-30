@@ -132,7 +132,7 @@ h1 i {
 
     backdrop-filter: blur(2px);
     border: 1px solid;
-    border-image: linear-gradient(40deg, white, #413e3e) 1;
+    border-image: linear-gradient(170deg, white, #413e3e) 1;
     box-shadow:
         0 0 10px black, inset 0 0 5px rgba(0, 0, 0, 0.9);
     
@@ -245,6 +245,29 @@ td {
     font-family: "Spectral", serif;
     font-weight: 400;
     font-size: 14px;
+}
+
+.blocky img {
+    filter: drop-shadow(0 0 5px black) drop-shadow(0 0 30px #579feb42);
+    margin: 10px 0;
+}
+
+.blocky h2 {
+    font-family: "Gwendolyn", cursive;
+    font-weight: 400;
+    font-size: 50px;
+    background: linear-gradient(to bottom, #89d7e4, #3b7fba );
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none !important;
+    width: 100%;
+    
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to right, transparent, white, transparent) 1;
+
+    margin-bottom: 20px;
 }
 
 .corner_img {
