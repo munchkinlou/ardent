@@ -5,23 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
             span.style.display = 'none';
             const blockyParent = span.closest('.blocky');
             if (blockyParent) {
-                blockyParent.style.border = 'none';
-                blockyParent.style.padding = '0 5px';
-                blockyParent.style.margin = '0';
-                blockyParent.style.background = 'none';
-                blockyParent.style.backgroundColor = 'transparent';
-                blockyParent.style.borderRadius = '0';
-                blockyParent.style.boxShadow = 'none';
-                blockyParent.style.overflow = 'visible';
-            }
-            if (text.includes('appearance') || text.includes('personality')) {
-                const flexParent = span.closest('.flex');
-                if (flexParent) {
-                    flexParent.classList.add('flex_v');
-                }
-                if (blockyParent) {
-                    blockyParent.style.overflow = 'visible';
-                }
+                blockyParent.style.borderRadius = '10px';
+                blockyParent.style.setProperty('margin', '10px 3px', 'important');
             }
         }
     });
