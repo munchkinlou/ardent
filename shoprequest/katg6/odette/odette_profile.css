@@ -145,7 +145,7 @@ h1 i {
 
     font-family: "Cormorant Upright", serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
 
     overflow: hidden;
@@ -280,6 +280,8 @@ td {
 }
 
 .blocky info {
+    margin-top: 20px;
+    margin-bottom: 10px;
    text-align:justify;
 }
 
