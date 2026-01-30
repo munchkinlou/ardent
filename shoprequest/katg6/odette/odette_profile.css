@@ -270,7 +270,7 @@ td {
 }
 
 .blocky h3 {
-    width; 100%;
+    width: 100%;
     background: linear-gradient(to right, transparent, rgba(106, 142, 226, 0.4), transparent);
     padding: 10px 100px !important;;
     font-size: 20px;
