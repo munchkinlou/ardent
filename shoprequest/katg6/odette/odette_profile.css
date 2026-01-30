@@ -292,7 +292,7 @@ td {
     justify-content: center;
     gap: 10px;
     width: 100%;
-    flex-wrap: wrap;
+    flex-wrap: no-wrap;
 }
 
 .misc_text {
@@ -302,8 +302,6 @@ td {
     color: white;
     font-family: 'Ysabeau Infant', serif;
     text-align: center;
-    min-width: 250px;
-    max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -324,7 +322,14 @@ td {
 
 .misc_text p {
     text-align: center;
+    min-width: 300px;
+    max-width: 100%;
 }
+
+.misc_text h2 {
+    margin-bottom: 20px;
+}
+
 .corner_img {
     position: absolute;
     width: 200px;
@@ -340,6 +345,16 @@ td {
 
     .corner_img {
         display: none;
+    }
+    
+    .misc_stack {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    .misc_text {
+        flex: 1 1 100%;
+        min-width: unset;
     }
 
 }
