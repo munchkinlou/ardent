@@ -56,7 +56,7 @@ h1::before {
     text-transform: capitalize !important;
     font-size: 100px;
     line-height: 1.2;
-    background: linear-gradient(to bottom, #ffc8ec, #aa5b6a );
+    background: linear-gradient(to bottom, #89d7e4, #3b7fba );
     background-size: 100%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -72,7 +72,7 @@ h1 i {
 .tabnav,
 .navbar_header,
 .navbar_collapse {
-	background: linear-gradient(to right, transparent 30%, rgba(110, 74, 117, 0.53) 100%);
+	background: linear-gradient(to right, transparent 30%, rgba(86, 161, 190, 0.53) 100%);
     backdrop-filter: blur(2px);
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
     padding: 8px 2px 0;
@@ -181,7 +181,7 @@ h1 i {
     text-transform: uppercase;
     font-size: 12px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    color: #BF7582!important;
+    color: #C3B6FF !important;
     transition: color 0.2s ease;
 }
 
