@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@font-face {
+    font-family: 'WickedBrush';
+    src: url('WickedBrush-YzmMv.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 400;
+
+  font-family: 'WickedBrush', sans-serif;
+  font-weight: 400;
+*/
+
+.aesont1 {
+	position: relative;
+  width: 500px;
+  margin: 20px auto 80px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+}
+
+
+.aesont1 credit {
+  position: absolute;
+  width: 100%;
+  display: block;
+  font-family: "Unica One", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  font-weight: bold;
+  bottom: -64px;
+  left: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /*! transform: rotate(270deg); */
+}
+
+.aesont1_img {
+  position: absolute;
+  bottom: -55px;
+  left: -171px;
+  width: 167%;
+  height: 611px;
+  background: transparent
+    url('https://ik.imagekit.io/arl60/Ardent/shop/Missy/Aeson/Sx7ucXVA.png') no-repeat bottom;
+  background-size: auto;
+  background-size: contain;
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 2px rgba(0, 0, 0, 0.9));
+}
+
+.aesont1_bor {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.aesont1_con {
+  position: relative;
+  width: 100%;
+  padding: 15px 15px 0;
+  box-sizing: border-box;
+  pointer-events: none;
+  margin: 0 auto;
+}
+
+.aesont1_con::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  background: white url('https://ik.imagekit.io/arl60/Ardent/shop/Missy/Aeson/AesonIllustration2.png') repeat-y;
+  background-size:100%;
+  background-position:bottom;
+  background-attachment:fixed;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.9);
+  filter: blur(5px);
+}
+
+.aesont1_con > * {
+  position: relative;
+  z-index: 2;
+}
+
+.aesont1_incon {
+  position: relative;
+  overflow: hidden;
+  padding: 10px 15px 505px;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #151c27ed, #0B0D12E0);
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  color: #E8DAEE;
+  line-height: 1.2;
+  border-radius:10px;
+}
+
+.aesont1_incon d {
+  display:block;
+  margin:0 auto;
+  width:100%;
+  height:10px;
+
+  border-top: 1.1px solid;
+  border-image: linear-gradient(to right, transparent, #45DCDC, transparent) 1;
+}
+
+.aesont1_incon speak {
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+  text-shadow: none;
+  line-height: 0.9;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
+}
+
+.aesont1_speech {
+  display: block;
+  position: absolute;
+  bottom: 396px;
+  left: 195px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 0.8;
+  padding-top: 10px;
+}
+
+.aesont1_speech speak {
+  font-family: 'WickedBrush', sans-serif;
+  font-weight: 400;
+  text-shadow: none;
+  font-size: 66px;
+  line-height: 1.1;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
+}
+
+.aesont1_incon speak, .aesont1_speech speak {
+  color: transparent;
+  background: linear-gradient(to bottom, #45DCDC,#9AE9E9);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/*
+@media (max-width: 1200px) {
+
+  .aesont1 {
+    filter: none;
+    margin: 10px auto;
+  }
+
+  .aesont1_con::before {
+    display: none;
+  }
+
+.aesont1 credit {
+  position: relative;
+  inset:auto;
+  display:block;
+  text-align: center;
+  transform:none;
+}
+
+.aesont1_speech {
+  position: relative;
+  inset:auto;
+  padding:0;
+}
+
+.aesont1_img {
+  display: none;
+}
+.aesont1_incon {
+  padding: 10px;
+}
+
+}
+
