@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 @font-face {
-    font-family: 'rouget1';
+    font-family: 'rouget2';
     src: url('MonsterChiller-WywOE.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
 /*
-  font-family: "rouget1", cursive;
+  font-family: "rouget2", cursive;
   font-weight: 400;
 
   font-family: "Unica One", sans-serif;
@@ -19,7 +19,7 @@
 
 */
 
-.rouget1 {
+.rouget2 {
 	position: relative;
   width: 800px;
   margin: 20px auto 40px;
@@ -30,21 +30,21 @@
   box-sizing: border-box;
 }
 
-.rouget1 t {
+.rouget2 t {
   position: absolute;
   top:422px;
   left:196px;
   z-index:10;
   
   color: white;
-  font-family: "rouget1", cursive;
+  font-family: "rouget2", cursive;
   font-weight: 400;
   font-size: 74px;
   
   filter:drop-shadow(0 0 10px black);
 }
 
-.rouget1 credit {
+.rouget2 credit {
   position: absolute;
   bottom: -25px;
   right: 0;
@@ -57,7 +57,7 @@
   z-index: 10;
 }
 
-.rouget1_bor {
+.rouget2_bor {
   position: relative;
   width: 100%;
   background: linear-gradient(to bottom, #03A63C, #044019, #03A63C);
@@ -68,7 +68,7 @@
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
 }
 
-.rouget1_con {
+.rouget2_con {
   position: relative;
   width: 100%;
   padding: 480px 25px 20px 27px;
@@ -82,7 +82,7 @@
   background-attachment: local;
 }
 
-.rouget1_con::before {
+.rouget2_con::before {
   position:absolute;
   content:'';
   width:100%;
@@ -95,12 +95,12 @@
   z-index:1;
 }
 
-.rouget1_con > * {
+.rouget2_con > * {
   position: relative;
   z-index: 2;
 }
 
-.rouget1_incon {
+.rouget2_incon {
     position: relative;
     overflow: hidden;
     padding: 30px 20px 10px;
@@ -118,7 +118,7 @@
         linear-gradient(#a8b49e, #9daa92) 0 0 / 1px 101.5px no-repeat, linear-gradient(#a8b49e, #a8b49e) 0 0 / 101.5px 1px no-repeat, linear-gradient(#a8b49e, #a8b49e) 100% 0 / 1px 101.5px no-repeat, linear-gradient(#a8b49e, #a8b49e) 100% 0 / 101.5px 1px no-repeat, linear-gradient(#9daa92, #9daa92) 0 100% / 1px 101.5px no-repeat, linear-gradient(#9daa92, #9daa92) 0 100% / 101.5px 1px no-repeat, linear-gradient(#9daa92, #9daa92) 100% 100% / 1px 101.5px no-repeat, linear-gradient(#9daa92, #9daa92) 100% 100% / 101.5px 1px no-repeat, linear-gradient(to bottom, rgba(0,0,0,0), #161923);
 }
 
-.rouget1_incon speak {
+.rouget2_incon speak {
   font-size: 14px;
   text-align: center;
   text-shadow: none;
@@ -126,7 +126,7 @@
   filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
 }
 
-.rouget1_speech {
+.rouget2_speech {
   display: block;
   position: relative;
   margin: -10px 0 -20px;
@@ -134,7 +134,7 @@
   text-align: center;
 }
 
-.rouget1_speech::before {
+.rouget2_speech::before {
   content: '';
   position: absolute;
   top:0;
@@ -146,7 +146,7 @@
   background: #9daa92;
 }
 
-.rouget1_speech speak {
+.rouget2_speech speak {
     display: block;
     font-family: "Comfortaa", cursive;
     font-weight: 400;
@@ -157,11 +157,11 @@
     transition: transform 1.1s ease;
 }
 
-.rouget1_incon:hover speak {
+.rouget2_incon:hover speak {
     transform: scale(1.1);
 }
 
-.rouget1 t, .rouget1_incon speak, .rouget1_speech speak {
+.rouget2 t, .rouget2_incon speak, .rouget2_speech speak {
   color: transparent;
   background: linear-gradient(to bottom, #97FC93, #32EB73);
   -webkit-background-clip: text;
@@ -171,25 +171,25 @@
 
 @media (max-width: 1200px) {
 
-.rouget1 t {
+.rouget2 t {
   display: none;
 }
   
-.rouget1_con {
+.rouget2_con {
   padding: 0;
   background:none;
 }
 
-  .rouget1_con::before {
+  .rouget2_con::before {
     display: none;
   }
 
-  .rouget1_speech {
+  .rouget2_speech {
   margin: 0 auto -30px;
 }
 
 
-.rouget1 credit {
+.rouget2 credit {
   position: relative;
   inset:auto;
   display:block;
