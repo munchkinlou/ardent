@@ -175,7 +175,6 @@
   background-clip: text;
 }
 
-/*
 @media (max-width: 1200px) {
 
   .aesont2 {
@@ -208,5 +207,13 @@
   padding: 10px;
 }
 
+  .aesont2_bor, .aesont2_con, .aesont2_incon, .aesont2_con::before {
+    border-radius: 0;
+  }
+  
+  .aesont2 t {
+    display: none;
+  }
+  
 }
 
