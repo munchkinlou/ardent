@@ -75,7 +75,7 @@
   position: relative;
   display: block;
   width: 100%;
-  padding: 20px 35px 0;
+  padding: 10px 35px 0;
   box-sizing: border-box;
   border-radius: 0 20px;
   background: black;
@@ -113,14 +113,14 @@
 .wyvernt1 speech .mycode_b {
   color: #40D2FF;
   font-size: 16px;
+  text-shadow: 0 0 2px black, 0 0 1px black;
 }
 
 .wyvernt1 speech b, .wyvernt1 speech .mycode_b {
     font-family: "Mr Bedfort", cursive;
     font-weight: 400 !important;
-    font-size: 25px;
+    font-size: 30px;
     line-height: 1.1;
-    filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
 }
 
 .wyvernt1 star1,
@@ -166,4 +166,45 @@
   font-size:12px;
   font-weight: bold;
   font-family: "Unica One", arial;
+}
+
+@media (max-width: 1200px) {
+  .wyvernt1 bor {
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+  
+  .wyvernt1 con {
+    padding: 0;
+    border-radius: 0;
+    background: none;
+  }
+  
+  .wyvernt1 con::before {
+    display: none
+  }
+  
+  .wyvernt1 inbor {
+    padding: 0;
+    border-radius: 0;
+    background:none;
+    box-shadow: none;
+    animation: none;
+  }
+  
+  .wyvernt1 incon {
+    padding: 0;
+    border-radius: 0;
+    background: none;
+    color: inherit;
+  }
+  
+  .wyvernt1 credit {
+    position: relative;
+    inset: auto;
+    transform: none;
+  }
+
 }
