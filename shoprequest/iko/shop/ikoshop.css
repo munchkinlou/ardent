@@ -18,9 +18,9 @@
     
     background: linear-gradient(to bottom, #667773, #4a6058, #33403b);
     border: 5px solid #afb991;
-    border-radius: 20px;
+    border-radius: 40px;
     box-shadow: inset 0 0 10px #2a2f1f, 0 0 5px black;
-    padding: 10px 15px 0;  
+    padding: 10px 20px 10px;  
 }
 
 .ikoshop credit {
@@ -96,7 +96,7 @@
 }
 
 
-.ikoshop > br {
+.ikoshop > br, .ikoshop > div > br {
     display:none;
 }
 
@@ -112,7 +112,7 @@
 }
 
 .ikoshop h1 {
-    margin: -30px 0 0;
+    margin: 10px auto 0;
     padding-right:120px;
     font-family:'OD', sans-serif;
     text-align: center;
@@ -122,10 +122,11 @@
     background: linear-gradient(to bottom, #91eb26, #6a964d);
     -webkit-background-clip: text;
     background-clip: text;
+    text-transform: capitalize;
 }
 
 .ikoshop h2 {
-    margin: -130px 0 -20px;
+    margin: -65px 0 -10px;
     padding-left: 182px;
     font-family: "Send Flowers", cursive;
     font-weight: 400;
