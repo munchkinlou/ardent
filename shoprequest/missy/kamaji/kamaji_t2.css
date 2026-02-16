@@ -79,10 +79,10 @@
 
 .kamajit2_img {
   position: absolute;
-  bottom: -61px;
-  left: -16px;
-  width: 115%;
-  height: 717px;
+  bottom: -51px;
+  left: 17px;
+  width: 101%;
+  height: 620px;
   background: transparent url('https://ik.imagekit.io/arl60/Ardent/shop/Missy/Kamaji/SLXxrrog.png') no-repeat center center;
   background-size: contain;
   z-index: 5;
@@ -154,7 +154,7 @@
 .kamajit2_incon {
   position: relative;
   z-index: 6;
-  padding: 200px 25px 570px;
+  padding: 200px 25px 500px;
   width: 100%;
   min-height: 400px;
   box-sizing: border-box;
