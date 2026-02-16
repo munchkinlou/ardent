@@ -111,9 +111,9 @@
 .wyvernt1 incon .mycode_b,
 .wyvernt1 speech b,
 .wyvernt1 speech .mycode_b {
-  color: #40D2FF;
+  color: #40D2FF !important;
   font-size: 16px;
-  text-shadow: 0 0 2px black, 0 0 1px black;
+  text-shadow: 0 0 2px black, 0 0 1px black !important;
 }
 
 .wyvernt1 speech b, .wyvernt1 speech .mycode_b {
