@@ -1,160 +1,237 @@
-@import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mr+Bedfort&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
 
-.rowant1 {
+.wyvernt1 {
   position: relative;
   width: 640px;
-  margin: 100px auto 20px;
+  margin: 20px auto;
 }
 
-.rowant1 rowan {
-    display: block;
-    position: absolute;
-    top: -58px;
-    left: -71px;
-    width: 122%;
-    height: 511px;
-    z-index: 1;
-    background: transparent url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Seadragoness/Rowan/CloudBackground.png?updatedAt=1748143764422') no-repeat;
-    background-size: contain;
-    pointer-events: none;
-    filter: drop-shadow(0 0 10px #000000a8);
-}
-
-.rowant1 rowan::after {
-    content: '';
-    position: absolute;
-    top: -14px;
-    left: 51px;
-    width: 100%;
-    height: 101%;
-    background: transparent url('https://i.imgur.com/JIOxxNv.png') no-repeat;
-    background-position: center;
-    background-size: contain;
-    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.6));
-    z-index: 1;
-}
-
-.rowant1 bor {
+.wyvernt1 bor {
   display:block;
-  box-sizing: border-box;
   padding: 1.5px;
-  width: 640px;
-  margin: 0 auto;
+  border-radius: 0 40px;
   background: linear-gradient(to bottom,
-    rgba(255, 255, 255, 0.9),
+    rgba(8, 32, 64, 0.8),
     rgba(64, 210, 255, 0.8),
-    rgba(8, 32, 64, 0.9));
-  box-shadow:
-    0 0 50px rgba(255,255,255, 0.5);
-  border-radius: 350px 350px 0 0;
-}
-
-.rowant1 con {
-  position: relative;
+    rgba(8, 32, 64, 0.8));
   box-sizing: border-box;
-  display:block;
-  width: 100%;
-  padding: 380px 80px 50px;
-  background: linear-gradient(to bottom, #ffffff 0%, #5A9DC9 40%, #0e1a26 100%);
-  background-size: 100%;
-  border-radius: 350px 350px 0 0;
+  box-shadow:
+  10px 10px 10px rgba(0, 0, 0, 0.85),
+  10px 10px 30px rgba(0, 0, 0, 0.5);
+  overflow:hidden;
 }
 
-.rowant1 incon {
+.wyvernt1 con {
+  position: relative;
+  display:block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 380px 30px 30px;
+  border-radius: 0 40px;
+  background: black url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/740ee9a0-4bd5-4423-997f-d7fcdb1799c8/djuznk7-e9529e7b-8b95-4139-a583-adac4bb662af.png/v1/fill/w_1064,h_751,q_70,strp/patron_reward__may25__seadragoness_client_1_noglow_by_seadragoness_djuznk7-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTA0IiwicGF0aCI6IlwvZlwvNzQwZWU5YTAtNGJkNS00NDIzLTk5N2YtZDdmY2RiMTc5OWM4XC9kanV6bms3LWU5NTI5ZTdiLThiOTUtNDEzOS1hNTgzLWFkYWM0YmI2NjJhZi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.mCcYFk8UBVs2HMMlaVtXF7yn4YJT5fS4Ru-_90ExumY') no-repeat top;
+  background-size: 100%;
+  z-index: 1;
+}
+
+.wyvernt1 con::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: transparent url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Seadragoness/Wyvern/wyvernt1_feathers.png?updatedAt=1748663975054') no-repeat top;
+  background-size: 100%;
+  animation: wyvernt1_fglow 6s ease-in-out infinite;
+  opacity: 0;
+ 
+  pointer-events: none;
+}
+
+@keyframes wyvernt1_fglow {
+  0%, 100% {
+    opacity: 0;
+    filter: drop-shadow(0 0 6px rgba(62, 205, 255, 0.5));
+  }
+  50% {
+    opacity: 1;
+    filter: drop-shadow(0 0 6px rgba(62, 205, 255, 0.5)) drop-shadow(0 0 4px rgba(55, 190, 205, 0.4));
+  }
+}
+
+.wyvernt1 con::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent 300px, black 450px);
+}
+
+.wyvernt1 inbor {
   position: relative;
   display: block;
-  padding: 50px 50px 0;
-  border-radius: 20%;
-  border: 1px groove rgba(85, 184, 220,1);
-  background: rgba(0,0,0,0.6);
-  backdrop-filter: blur(3px);
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1.5px;
+  border-radius: 0 20px;
+  background: linear-gradient(to bottom,
+    rgba(8, 32, 64, 0.8),
+    rgba(64, 210, 255, 0.8),
+    rgba(8, 32, 64, 0.8));
   box-shadow:
-  4px 4px 6px rgba(0, 0, 0, 0.6),
-  8px 8px 20px rgba(0, 0, 0, 0.3);
+    0 0 2px rgba(62, 205, 255, 0.5),
+    0 0 6px rgba(62, 205, 255, 0.5);
+  animation: wyvernt1_glow 6s ease-in-out infinite;
+}
+
+@keyframes wyvernt1_glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 2px white) drop-shadow(0 0 6px rgba(55, 190, 205, 0.6));
+  }
+  50% {
+    filter: drop-shadow(0 0 2px white) drop-shadow(0 0 10px rgba(55, 190, 205, 0.9));
+  }
+}
+
+.wyvernt1 incon {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 10px 35px 0;
+  box-sizing: border-box;
+  border-radius: 0 20px;
+  background: black;
   
-  color: white;
-  font-family: Delius;
-  font-size: 14px;
-  line-height: 1.2;
-  text-align: justify;
+	color: white;
+	font-family: 'quicksand';
+	font-size:14px;
+	line-height:1.2;
+	text-align:justify;
 }
 
-.rowant1 speech {
-  display: inherit;
-  margin-top: 5px;
-  padding: 0 0 25px;
-  text-align: center;
-  border-top: 1.1px solid;
-  border-image: linear-gradient(to right, transparent, white, transparent) 1;
+.wyvernt1 speech {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    position: relative;
+    
+    text-align: center;
+    font-family: 'Mr Bedfort';
+    font-size: 30px;
+    border-top: 1.5px solid;
+    border-image: linear-gradient(to right, transparent, white, transparent) 1;
+    padding-top: 20px;
+    padding-bottom: 15px;
 }
 
-.rowant1 speech > br {
-  margin-top: -5px;
+.wyvernt1 speech br {
+    display: none;
 }
 
-.rowant1 incon b,
-.rowant1 incon .mycode_b,
-.rowant1 speech b,
-.rowant1 speech .mycode_b {
+.wyvernt1 incon b,
+.wyvernt1 incon .mycode_b,
+.wyvernt1 speech b,
+.wyvernt1 speech .mycode_b {
   color: #40D2FF !important;
   font-size: 16px;
   text-shadow: 0 0 2px black, 0 0 1px black !important;
 }
 
-.rowant1 speech b, .rowant1 speech .mycode_b {
-  font-family: Rochester;
-  font-size: 30px;
-  line-height: 1.1;
+.wyvernt1 speech b, .wyvernt1 speech .mycode_b {
+    font-family: "Mr Bedfort", cursive;
+    font-weight: 400 !important;
+    font-size: 30px;
+    line-height: 1.1;
 }
 
-.rowant1 credit {
-  position: relative;
-  margin-top: 5px;
+.wyvernt1 star1,
+.wyvernt1 star2 {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Seadragoness/Wyvern/white-star.png?updatedAt=1748067614988');
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0 0 3px white);
+    opacity: 0;
+    animation: wyvernt1_blinkFade 6s ease-in-out infinite;
+    vertical-align: middle;
+}
+
+.wyvernt1 star1 {
+  animation-delay: 0s;
+}
+
+.wyvernt1 star2 {
+  animation-delay: 2s;
+}
+
+@keyframes wyvernt1_blinkFade {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.wyvernt1 credit {
+  position: absolute;
+  bottom: 61px;
+  left:-43px;
+  transform: rotate(270deg);
   display:block;
+  margin: 0 auto;
   text-align:center;
+  text-transform:uppercase;
   font-size:12px;
   font-weight: bold;
   font-family: "Unica One", arial;
 }
 
 @media (max-width: 1200px) {
-  .rowant1 rowan, .rowant1 rowan::after {
-      display: none;
-  }
-  
-  .rowant1 incon {
-    display: block;
+  .wyvernt1 bor {
     padding: 0;
     border-radius: 0;
-    border: none;
-    background: none;
-    backdrop-filter: none;
+    background: transparent;
     box-shadow: none;
-
+  }
+  
+  .wyvernt1 con {
+    padding: 0;
+    border-radius: 0;
+    background: none;
+  }
+  
+  .wyvernt1 con::before {
+    display: none
+  }
+  
+  .wyvernt1 inbor {
+    padding: 0;
+    border-radius: 0;
+    background:none;
+    box-shadow: none;
+    animation: none;
+  }
+  
+  .wyvernt1 incon {
+    padding: 0;
+    border-radius: 0;
+    background: none;
     color: inherit;
   }
   
-  .rowant1 con {
+  .wyvernt1 credit {
     position: relative;
-    box-sizing: border-box;
-    display:block;
-    width: 100%;
-    padding: 0;
-    background: none;
-    border-radius: 0;
-  }
-  
-  .rowant1 bor {
-    display:block;
-    box-sizing: border-box;
-    padding: 0;
-    background: none;
-    box-shadow:none;
-    border-radius: 0;
-    width: 100%;
+    inset: auto;
+    transform: none;
   }
 
 }
-
