@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Mr+Bedfort&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
+.wyvernt1 {
+  position: relative;
+  width: 640px;
+  margin: 20px auto;
+}
+
+.wyvernt1 bor {
+  display:block;
+  padding: 1.5px;
+  border-radius: 0 40px;
+  background: linear-gradient(to bottom,
+    rgba(8, 32, 64, 0.8),
+    rgba(64, 210, 255, 0.8),
+    rgba(8, 32, 64, 0.8));
+  box-sizing: border-box;
+  box-shadow:
+  10px 10px 10px rgba(0, 0, 0, 0.85),
+  10px 10px 30px rgba(0, 0, 0, 0.5);
+  overflow:hidden;
+}
+
+.wyvernt1 con {
+  position: relative;
+  display:block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 380px 30px 30px;
+  border-radius: 0 40px;
+  background: black url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/740ee9a0-4bd5-4423-997f-d7fcdb1799c8/djuznk7-e9529e7b-8b95-4139-a583-adac4bb662af.png/v1/fill/w_1064,h_751,q_70,strp/patron_reward__may25__seadragoness_client_1_noglow_by_seadragoness_djuznk7-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTA0IiwicGF0aCI6IlwvZlwvNzQwZWU5YTAtNGJkNS00NDIzLTk5N2YtZDdmY2RiMTc5OWM4XC9kanV6bms3LWU5NTI5ZTdiLThiOTUtNDEzOS1hNTgzLWFkYWM0YmI2NjJhZi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.mCcYFk8UBVs2HMMlaVtXF7yn4YJT5fS4Ru-_90ExumY') no-repeat top;
+  background-size: 100%;
+  z-index: 1;
+}
+
+.wyvernt1 con::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent 300px, black 450px);
+}
+
+.wyvernt1 inbor {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1.5px;
+  border-radius: 0 20px;
+  background: linear-gradient(to bottom,
+    rgba(8, 32, 64, 0.8),
+    rgba(64, 210, 255, 0.8),
+    rgba(8, 32, 64, 0.8));
+  box-shadow:
+    0 0 2px rgba(62, 205, 255, 0.5),
+    0 0 6px rgba(62, 205, 255, 0.5);
+  animation: wyvernt1_glow 6s ease-in-out infinite;
+}
+
+@keyframes wyvernt1_glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 2px white) drop-shadow(0 0 6px rgba(55, 190, 205, 0.6));
+  }
+  50% {
+    filter: drop-shadow(0 0 2px white) drop-shadow(0 0 10px rgba(55, 190, 205, 0.9));
+  }
+}
+
+.wyvernt1 incon {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 20px 35px 0;
+  box-sizing: border-box;
+  border-radius: 0 20px;
+  background: black;
+  
+	color: white;
+	font-family: 'quicksand';
+	font-size:14px;
+	line-height:1.2;
+	text-align:justify;
+}
+
+.wyvernt1 speech {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    position: relative;
+    
+    text-align: center;
+    font-family: 'Mr Bedfort';
+    font-size: 30px;
+    border-top: 1.5px solid;
+    border-image: linear-gradient(to right, transparent, white, transparent) 1;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.wyvernt1 speech br {
+    display: none;
+}
+
+.wyvernt1 incon b,
+.wyvernt1 incon .mycode_b,
+.wyvernt1 speech b,
+.wyvernt1 speech .mycode_b {
+  color: #40D2FF;
+  font-size: 16px;
+}
+
+.wyvernt1 speech b, .wyvernt1 speech .mycode_b {
+    font-family: "Mr Bedfort", cursive;
+    font-weight: 400 !important;
+    font-size: 25px;
+    line-height: 1.1;
+    filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
+}
+
+.wyvernt1 star1,
+.wyvernt1 star2 {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('https://ik.imagekit.io/arl59/Ardent/Shop%20Requests/Seadragoness/Wyvern/white-star.png?updatedAt=1748067614988');
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0 0 3px white);
+    opacity: 0;
+    animation: wyvernt1_blinkFade 6s ease-in-out infinite;
+    vertical-align: middle;
+}
+
+.wyvernt1 star1 {
+  animation-delay: 0s;
+}
+
+.wyvernt1 star2 {
+  animation-delay: 2s;
+}
+
+@keyframes wyvernt1_blinkFade {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.wyvernt1 credit {
+  position: absolute;
+  bottom: 61px;
+  left:-43px;
+  transform: rotate(270deg);
+  display:block;
+  margin: 0 auto;
+  text-align:center;
+  text-transform:uppercase;
+  font-size:12px;
+  font-weight: bold;
+  font-family: "Unica One", arial;
+}
