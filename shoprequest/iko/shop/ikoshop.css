@@ -19,7 +19,7 @@
     border: 5px solid #afb991;
     border-radius: 20px;
     box-shadow: inset 0 0 10px #2a2f1f, 0 0 5px black;
-    padding: 10px 20px 0px;  
+    padding: 10px 25px 0px;  
 }
 
 .ikoshop credit {
@@ -109,7 +109,7 @@
 }
 
 .ikoshop h1 {
-    margin: 10px auto 0;
+    margin: 20px auto 0;
     padding-right:120px;
     font-family:'OD', sans-serif;
     text-align: center;
@@ -151,12 +151,14 @@
 .ikoshop f::after {
     content: '';
     width: 48%;
-    height: 2px;
+    height: 1.1px;
     background: #b1dd87;
 }
 
-.ikoshop f span {
+.ikoshop f img {
+    height: 70px;
     display: inline-block;
+    filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(50deg) brightness(0.8);
     animation: froghop 2s ease-in-out infinite;
 }
 
