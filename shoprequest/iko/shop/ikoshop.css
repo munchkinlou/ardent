@@ -238,7 +238,7 @@ br + .ikoshop input {
 
     border-radius: 0 0 20px 20px;
     border: 5px solid #ddffb5;
-    padding: 10px 20px 0;
+    padding: 0 10px;
     
     font-family: "Delius", cursive;
     font-weight: 600;
@@ -252,12 +252,16 @@ br + .ikoshop input {
     background-size: 200% 200%;
 }
 
+.ikoshop info > br {
+    margin-top: -15px;
+}
+
 .ikoshop info samples {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
+    margin: 10px 0 0;
     justify-content: center;
-    gap: 1px;
-    margin-top: 30px;
+    gap: 10px;
+    padding: 0 0 20px;
     position: relative;
     width: 100%;
     border-top: 5px double #b7eeb3;
@@ -266,7 +270,7 @@ br + .ikoshop input {
 .ikoshop info img {
     filter: drop-shadow(0 0 2px black);
     transition: transform 0.4s ease;
-    margin: 5px 0;
+    margin: 0;
 }
 
 .ikoshop info img:hover {
@@ -284,3 +288,4 @@ br + .ikoshop input {
     max-height: 1500px !important;
     opacity: 1 !important;
 }
+
