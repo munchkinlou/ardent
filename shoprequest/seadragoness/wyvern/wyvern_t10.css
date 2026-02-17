@@ -45,6 +45,7 @@
     z-index: 1;
 }
 
+
 .wyvernt10 con::before {
     content: '';
     position: absolute;
@@ -54,7 +55,7 @@
     height: 100%;
     background: url('https://ik.imagekit.io/arl60/Ardent/shop/Seadragoness/Wyvern/Gliding_wyvern.png?updatedAt=1769814067317');
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: 50% 0%;
     background-size: 100%;
     pointer-events: none;
     transition: background-image 0s 0.2s, background-position 0s 0.2s;
@@ -230,7 +231,7 @@
 
 .wyvernt10:has(input:checked) con::before {
     background-image: url('https://ik.imagekit.io/arl60/Ardent/shop/Seadragoness/Wyvern/bonk.png?updatedAt=1771297316570');
-    background-position: bottom;
+    background-position: 50% 100%;
     background-repeat: no-repeat;
     background-size: 90%;
     animation: wyvernt10_imgwiggle 6s ease-in-out infinite;
