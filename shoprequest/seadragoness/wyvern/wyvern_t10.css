@@ -83,7 +83,7 @@
 .wyvernt10 incon {
     position: relative;
     display: block;
-    padding: 15px 30px 10px;
+    padding: 0px 30px 10px;
     box-shadow: inset 0 0 10px black;
     
     background: linear-gradient(to bottom, #002D5E, #081731);
@@ -251,6 +251,8 @@
 .wyvernt10 input:checked ~ bor con::before {
     background-image: url('https://ik.imagekit.io/arl60/Ardent/shop/Seadragoness/Wyvern/bonk.png?updatedAt=1771297316570');
     background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 90%;
     animation: wyvernt10_imgwiggle 6s ease-in-out infinite;
     transform-origin: bottom center;
     filter:drop-shadow(0 0 5px #390707);
@@ -337,12 +339,24 @@
         padding: 0;
         transition: none;
     }
+    
+    .wyvernt10 input:checked ~ bor con {
+        padding: 0;
+    }
+
 
     .wyvernt10 con::before {
         animation: none;
         background: none;
-    }    
+    }
     
+    .wyvernt10 input:checked ~ bor con::before {
+        background-image: none;
+        padding: 0;
+        animation: none;
+        filter: none;
+    }
+
     .wyvernt10 bnr {
         display: none;
     }
