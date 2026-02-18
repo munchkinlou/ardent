@@ -27,9 +27,9 @@
 
 .alchemyt2 alchemy {
     position: absolute;
-    bottom: -89px;
+    bottom: -66px;
     top: auto;
-    left: 41px;
+    left: 35px;
     right: auto;
     width: 101%;
     height: 449px;
@@ -76,6 +76,9 @@
   
   z-index: 10;
   text-align: left;
+  
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8))
+    drop-shadow(0 0 10px rgba(0,0,0,0.8));
 }
 
 
@@ -115,7 +118,7 @@
   display: block;
   position: relative;
   overflow: hidden;
-  padding: 15px 20px 320px;
+  padding: 5px 20px 320px;
   width: 100%;
   box-sizing: border-box;
   background: linear-gradient(to bottom, #292323, #222E18, #152836);  text-align: justify;
@@ -170,12 +173,7 @@
 .alchemyt2 speech .mycode_b,
 .alchemyt2 bor t {
     color: transparent !important;;
-    background: linear-gradient(to left, #fc5ae3, #efef7e, #7de77d);
-    -webkit-background-clip: text;
-    background-clip: text;
+    background: linear-gradient(to left, #fc5ae3, #efef7e, #7de77d) !important;;
+    -webkit-background-clip: text !important;;
+    background-clip: text !important;
 }
-
-@media (max-width: 1200px) {
-
-}
-
