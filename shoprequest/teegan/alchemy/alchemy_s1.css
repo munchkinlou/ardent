@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carattere&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
+/* 
+  font-family: "Unica One", sans-serif;
+  font-weight: 400;
+
+  font-family: "Crimson Pro", serif;
+  font-weight: 400;
+
+  font-family: "Newsreader", serif;
+  font-weight: 400;
+
+  font-family: "Carattere", cursive;
+  font-weight: 400;
+*/
+
+
+.alchemys1 {
+  max-width: 600px;
+  width: 100%;
+  margin: 200px auto 10px;
+  position: relative;
+  overflow: visible;
+}
+
+.alchemys1 ban {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 140px;
+  border: 1.4px solid;
+  border-radius: 20px;
+  
+  background:linear-gradient(to right, orange, red, #56efe8, #56e956);
+  box-shadow: 0 0 5px rgba(0,0,0,0.6);
+  filter: none;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: visible;
+  
+  padding: 2px;
+}
+
+.alchemys1 con {
+  position: relative;
+  background: black;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  
+  border-radius: inherit;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  padding: 20px 0;
+}
+
+.alchemys1 con::before {
+  border-radius: inherit;
+  content: "";
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  background: url('21935015_6498043.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+  border-radius: inherit;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 1);
+  filter: saturate(0.3);
+}
+
+.alchemys1 incon {
+  position: relative;
+  border-radius: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1.5px solid;
+  border-image: linear-gradient(to right, transparent, #74d374, #e03887, transparent) 1;
+  box-sizing: border-box;
+  overflow: hidden;
+  backdrop-filter: blur(1px);
+}
+
+.alchemys1 sig_img {
+  position: absolute;
+  top: -112%;
+  left: 52%;
+  transform: translateX(-50%);
+  margin-right: 0;
+  width: 100%;
+  height: 140%;
+  z-index: 2;
+  background: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d4c64f54-d40d-4085-b0fb-50444fde2d42/dkxwn0m-38d35ca3-df58-4f37-a40d-c78b75e11bde.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi9kNGM2NGY1NC1kNDBkLTQwODUtYjBmYi01MDQ0NGZkZTJkNDIvZGt4d24wbS0zOGQzNWNhMy1kZjU4LTRmMzctYTQwZC1jNzhiNzVlMTFiZGUuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.FRhh4h7CnOm29dwd8a2ng_v01uYrwZcvtt2B-GNq2Es');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 1px #80c2bc);
+}
+
+.alchemys1 p {
+  color: #ffffff;
+  font-size: clamp(10px, 1.5vw, 12px);
+  font-family: "Newsreader", serif;
+  font-weight: 400;
+  text-shadow: 0 0 8px #000, 0 0 2px #000000,0 0 2px #000000;
+  text-align: center;
+  line-height: 1.2;
+  padding: 5px 0 0;
+  margin: 0 auto;
+}
+
+.alchemys1 p > br {
+  font-size: 5px;
+}
+
+.alchemys1 w {
+    display: block;
+    font-family: "unica one", arial;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #ff4a4a;
+    animation: alchemys1_pulse 3s ease-in-out infinite;
+}
+
+@keyframes alchemys1_pulse {
+    0%, 100% { text-shadow: 0 0 2px rgba(255, 74, 74, 0.3); }
+    50% { text-shadow: 0 0 8px rgba(255, 74, 74, 0.8), 0 0 15px rgba(255, 0, 0, 0.4); }
+}
+
+.alchemys1 i {
+  font-size: 11px;
+  font-family: "Crimson Pro", serif;
+  font-weight: 400;
+}
+
+
+@media (max-width: 600px) {
+  .alchemys1 {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    padding: 0 4vw;
+    margin: 100px auto 0;
+  }
+
+}
