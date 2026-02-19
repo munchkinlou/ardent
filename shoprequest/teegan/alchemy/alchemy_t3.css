@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carattere&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
+/* 
+  font-family: "Unica One", sans-serif;
+  font-weight: 400;
+
+  font-family: "Crimson Pro", serif;
+  font-weight: 400;
+
+  font-family: "Newsreader", serif;
+  font-weight: 400;
+
+  font-family: "Carattere", cursive;
+  font-weight: 400;
+*/
+
+.alchemyt3 {
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+}
+
+.alchemyt3 alchemy {
+    position: absolute;
+    bottom: -85px;
+    top: auto;
+    left: 21px;
+    right: auto;
+    width: 101%;
+    height: 502px;
+    background: transparent url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d4c64f54-d40d-4085-b0fb-50444fde2d42/dkxwn0q-f58349a2-7b18-4e33-b85c-4c6c84133056.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi9kNGM2NGY1NC1kNDBkLTQwODUtYjBmYi01MDQ0NGZkZTJkNDIvZGt4d24wcS1mNTgzNDlhMi03YjE4LTRlMzMtYjg1Yy00YzZjODQxMzMwNTYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.GPZim7lC3qWS6Zf7VQkvFmF0iKPJXw0pS6YT1XVfX5A') no-repeat bottom;
+    background-size: contain;
+    z-index: 5;
+    pointer-events: none;
+    animation: alchemyt3_glow 6s ease-in-out infinite;
+    background-position: center;
+}
+
+@keyframes alchemyt3_glow {
+    0% { filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.7)) drop-shadow(0 0 5px rgba(255, 154, 177, 0.6)); }
+    33% { filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.7)) drop-shadow(0 0 5px rgba(162, 196, 255, 0.6)); }
+    66% { filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.7)) drop-shadow(0 0 5px rgba(234, 172, 255, 0.6)); }
+    100% { filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.7)) drop-shadow(0 0 5px rgba(255, 154, 177, 0.6)); }
+}
+
+.alchemyt3 bor {
+  width: 420px;
+  margin: 10px auto 80px;
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  filter:drop-shadow(0 0 1px black);
+  overflow:visible;
+  background: linear-gradient(to bottom, #e44999, #00dbff, #3bbe3b);
+  padding: 2px;
+  border-radius: 50px;
+}
+
+.alchemyt3 bor t {
+  display: block;
+  position: absolute;
+  bottom: 262px;
+  left: 53px;
+  padding-left: 15px;
+  padding-right: 5px;
+  
+  color: white;
+  font-family: "Carattere", cursive;
+  font-weight: 400;
+  font-size: 50px;
+  
+  z-index: 10;
+  text-align: left;
+  
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8))
+    drop-shadow(0 0 10px rgba(0,0,0,0.8));
+}
+
+
+.alchemyt3 bor credit {
+  position: absolute;
+  width: 100%;
+  display: block;
+  font-family: "Unica One", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  font-weight: bold;
+  bottom: -19px;
+  left: -27px;
+  text-align:right;
+}
+
+.alchemyt3 con {
+  display: block;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  pointer-events: none;
+  margin: 0 auto;
+  padding: 10px;
+  background: linear-gradient(to bottom, #23204B, #2E4352);
+  border-radius: 50px;
+}
+
+.alchemyt3 con > * {
+  position: relative;
+  z-index: 2;
+}
+
+.alchemyt3 incon {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  padding: 15px 22px 360px;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #252252,#081d0c);  text-align: justify;
+  box-shadow: inset 0 0 10px black;
+  border-radius: 40px;
+  font-family: "Crimson Pro", serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #E8DAEE;
+  line-height: 1.2;
+}
+
+.alchemyt3 incon d {
+  display: block;
+  margin: 0 auto 0;
+  width: 80%;
+  height: 1.1px;
+  
+  background: linear-gradient(to right, transparent, white, transparent);
+}
+
+.alchemyt3 incon b, .alchemyt3 incon .mycode_b  {
+    font-family: "Newsreader", serif;
+    font-weight: 400 !important;
+    font-size: 13px;
+    text-align: center;
+    text-shadow: none;
+    line-height: 0.9;
+    filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
+}
+
+.alchemyt3 speech {
+    display: block;
+    position: relative;
+    margin: -10px auto 0;
+    text-align: center;
+    line-height: 0.8;
+    padding-top: 10px;
+    z-index: 11;
+}
+
+.alchemyt3 speech b, .alchemyt3 speech .mycode_b {
+    text-shadow: none;
+    line-height: 1.1;
+    font-size: 15px;
+    filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
+}
+
+.alchemyt3 incon b,
+.alchemyt3 incon .mycode_b,
+.alchemyt3 speech b,
+.alchemyt3 speech .mycode_b,
+.alchemyt3 bor t {
+    color: transparent !important;;
+    background: linear-gradient(to right, #ff1ef1, #a471ff) !important;;
+    -webkit-background-clip: text !important;;
+    background-clip: text !important;
+}
