@@ -53,6 +53,7 @@
   background-size: contain;
   
   filter:drop-shadow(0 0 2px black);
+  pointer-events: none;
 }
 
 .kavitat1 kavita::after{
@@ -68,6 +69,7 @@
   background-size: contain;
   
   filter: drop-shadow(0 0 2px rgba(243, 199, 141, 0.9));
+  pointer-events: none;
 }
 
 .kavitat1 bor {
@@ -99,6 +101,7 @@
   background-size:cover;
   background-attachment:fixed;
   filter: saturate(0.6);
+  pointer-events: none;
 }
 
 .kavitat1_con > * {
@@ -216,4 +219,3 @@
   }
   
 }
-
