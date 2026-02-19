@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
+.kavitat1 {
+	position: relative;
+  width: 450px;
+  margin: 30px auto 100px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+}
+
+
+.kavitat1 credit {
+  position: absolute;
+  width: 100%;
+  display:block;
+
+  font-family: "Unica One", arial;
+  text-transform: lowercase;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: right;
+  
+  bottom:220px;
+  right: -237px;
+  transform: rotate(90deg);
+}
+
+.kavitat1 kavita {
+  position: absolute;
+  bottom: 73px;
+  left: -38px;
+  width: 111%;
+  height: 104px;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.kavitat1 kavita::before {
+  content: '';
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 200px;
+  
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/shop/assets/bush.png')
+    no-repeat bottom;
+  background-size: contain;
+  
+  filter:drop-shadow(0 0 2px black);
+}
+
+.kavitat1 kavita::after{
+  content: '';
+  position: absolute;
+  bottom: -164px;
+  left: -47px;
+  width: 125%;
+  height: 429px;
+  
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/euphemia/kavita/fiend.png?updatedAt=1771503881777')
+    no-repeat center;
+  background-size: contain;
+  
+  filter: drop-shadow(0 0 2px rgba(243, 199, 141, 0.9));
+}
+
+.kavitat1 bor {
+  position: relative;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.kavitat1 con {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  pointer-events: none;
+  margin: 0 auto;
+  box-shadow: 2px 2px 5px black;
+}
+
+.kavitat1 con::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  background:url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/20177377_6234378.jpg?updatedAt=1771504866732')
+    no-repeat left;
+  background-size:cover;
+  background-attachment:fixed;
+  filter: saturate(0.6);
+}
+
+.kavitat1_con > * {
+  position: relative;
+  z-index: 2;
+}
+
+.kavitat1 incon {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 15px 25px 310px;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #532872e0,#080405);
+  height: auto;
+  box-shadow: 0 0 10px rgba(13, 48, 12, 0.88), inset 0 0 10px rgba(0, 0, 0, 0.8);
+  text-align: justify;
+  font-family: "Rethink Sans", sans-serif;
+  font-size: 13px;
+  color: #eaeaea;
+  line-height: 1.2;
+  border: 2px solid;
+  border-image: linear-gradient(to bottom, #EF76D2, #F5B47A, #000) 1;
+}
+
+.kavitat1 incon b {
+  font-size: 16px;
+  text-align: center;
+  line-height: 0.9;
+  filter: drop-shadow(0 0 3px rgba(0,0,0,0.8));
+}
+
+.kavitat1 incon d {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  height: 1px;
+  background: linear-gradient(to right,
+  transparent, gold, transparent);
+}
+
+.kavitat1 speech {
+  display: block;
+  position: absolute;
+  margin: 0 auto;
+  text-align: center;
+  bottom:181px;
+  right:49px;
+  z-index:10;
+}
+
+.kavitat1 speech b {
+  display: inline;
+  font-family: "Mea Culpa", cursive;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 68px;
+  line-height: 1.1;
+}
+
+.kavitat1 incon b, .kavitat1 speech b,
+.kavitat1 incon .mycode_b, .kavitat1 speech .mycode_b {
+  color: transparent !important;
+  background: linear-gradient(to bottom, #f0d060, #c8922a) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  text-shadow: none;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
+}
+
+@media (max-width: 1200px) {
+  
+  .kavitat1 {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .kavitat1 kavita, .kavitat1::before, .kavitat1::after,
+  .kavitat1 con::before {
+    display:none;
+  }
+
+  .kavitat1 bor {
+    padding: 0;
+  }
+  
+  .kavitat1 con {
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .kavitat1 incon {
+    border: none;
+    box-shadow: none;
+    background: none;
+    padding: 0 10px 10px;
+  }
+  
+  .kavitat1 speech {
+    position: relative;
+    inset: auto;
+  }
+  
+  .kavitat1 speech b {
+    font-size: 40px;
+  }
+
+  .kavitat1 credit {
+    text-align: center;
+    inset: auto;
+    transform: none;
+    margin-top: -15px;
+  }
+  
+}
+
