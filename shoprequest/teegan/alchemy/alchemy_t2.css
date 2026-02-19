@@ -104,7 +104,7 @@
   box-sizing: border-box;
   pointer-events: none;
   margin: 0 auto;
-  padding: 5px;
+  padding: 10px;
   background: linear-gradient(to bottom, #dedea4, #76b876, #a57d35);
   border-radius: 20px/50px;
 }
@@ -118,7 +118,7 @@
   display: block;
   position: relative;
   overflow: hidden;
-  padding: 5px 20px 320px;
+  padding: 0px 20px 320px;
   width: 100%;
   box-sizing: border-box;
   background: linear-gradient(to bottom, #292323, #222E18, #152836);  text-align: justify;
