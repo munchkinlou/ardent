@@ -110,7 +110,7 @@
   position: relative;
   display: block;
   overflow: hidden;
-  padding: 15px 25px 310px;
+  padding: 0px 25px 310px;
   width: 100%;
   box-sizing: border-box;
   background: linear-gradient(to bottom, #532872e0,#080405);
