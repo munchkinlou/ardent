@@ -30,7 +30,6 @@
   position: relative;
   margin: 0 auto;
   width: 100%;
-  height: 140px;
   border: 1.4px solid;
   border-radius: 20px;
   
@@ -38,10 +37,10 @@
   box-shadow: 0 0 5px rgba(0,0,0,0.6);
   filter: none;
   z-index: 1;
+  
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  overflow: visible;
   
   padding: 2px;
 }
@@ -50,7 +49,6 @@
   position: relative;
   background: black;
   width: 100%;
-  height: 100%;
   box-sizing: border-box;
   
   border-radius: inherit;
@@ -68,14 +66,14 @@
   position: absolute;
   inset: 0;
   height: 100%;
-  background: url('21935015_6498043.jpg');
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/21935015_6498043.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   z-index: 0;
   border-radius: inherit;
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 1);
-  filter: saturate(0.3);
+  filter: saturate(0.3) brightness(0.6);
 }
 
 .alchemys1 incon {
@@ -97,7 +95,6 @@
   top: -112%;
   left: 52%;
   transform: translateX(-50%);
-  margin-right: 0;
   width: 100%;
   height: 140%;
   z-index: 2;
@@ -116,8 +113,9 @@
   text-shadow: 0 0 8px #000, 0 0 2px #000000,0 0 2px #000000;
   text-align: center;
   line-height: 1.2;
-  padding: 5px 0 0;
+  padding: 5px 5px 10px;
   margin: 0 auto;
+  font-size:15px;
 }
 
 .alchemys1 p > br {
@@ -128,7 +126,7 @@
     display: block;
     font-family: "unica one", arial;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 16px;
     color: #ff4a4a;
     animation: alchemys1_pulse 3s ease-in-out infinite;
 }
@@ -139,19 +137,63 @@
 }
 
 .alchemys1 i {
-  font-size: 11px;
+  font-size: 15px;
   font-family: "Crimson Pro", serif;
   font-weight: 400;
 }
 
 
 @media (max-width: 600px) {
+  
   .alchemys1 {
     width: 100%;
     min-width: 0;
     max-width: 100%;
     padding: 0 4vw;
-    margin: 100px auto 0;
+    margin: 10px auto;
   }
+  
+  .alchemys1 sig_img {
+    position: relative;
+    inset: auto;
+    display: block;
+    transform: none;
+    width: 100%;
+    height: 150px;
+  }  
+
+  .alchemys1 ban {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+
+    background:linear-gradient(to right, orange, red, #56efe8, #56e956);
+    box-shadow: 0 0 5px rgba(0,0,0,0.6);
+    filter: none;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 2px;
+  }  
+  
+.alchemys1 con {
+    position: relative;
+    background: black;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+
+    border-radius: inherit;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 20px 0;
+  }
+ 
 
 }
