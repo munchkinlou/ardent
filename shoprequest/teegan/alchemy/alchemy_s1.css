@@ -159,7 +159,7 @@
     display: block;
     transform: none;
     width: 100%;
-    height: 150px;
+    aspect-ratio: 16/9;
   }  
 
   .alchemys1 ban {
