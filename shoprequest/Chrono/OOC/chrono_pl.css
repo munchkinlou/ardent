@@ -105,6 +105,10 @@
     opacity: 1;
 }
 
+.chrono_pl info > div > br {
+    display: none;
+}
+
 .chrono_pl table {
     width: 100%;
     box-sizing: border-box;
@@ -151,4 +155,12 @@
     
     font-family: "Unica One", arial;
     font-size: 12px;
+}
+
+
+@media (max-width: 1200px) {
+    .chrono_pl {
+        width: 100% !important;
+    }
+
 }
