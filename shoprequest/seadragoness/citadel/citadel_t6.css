@@ -81,14 +81,16 @@
     --maxheight: 340px;
     height: var(--maxheight);
     box-sizing: border-box;
+    margin: 0 auto !important;
     gap: 5px;
 }
 
 .citadelt6 bor > *:first-child {
-    flex: 1.5;
+    flex: 0 0 40%;
 }
+
 .citadelt6 bor > *:last-child {
-    flex: 2;
+    flex: 0 0 58%;
 }
 
 .citadelt6 con {
@@ -116,8 +118,8 @@
 
 .citadelt6 incon {
     display: block;
-    padding: 10px 18px 0px 25px;
-    height: calc(var(--maxheight) - 59px);
+    padding: 0px 18px 0px 30px;
+    height: calc(var(--maxheight) - 56px);
     overflow-y: auto;
     
     font-family: 'Bellefair', serif;
@@ -149,15 +151,17 @@
 .citadelt6 speech {
     display: block;
     text-align: center;
+    padding: 10px 0;
     
     color: white;
+    font-size: 18px;
     
     border-top: 1px solid;
     border-image: linear-gradient(to right, transparent, white, transparent) 1;
 }
 
 .citadelt6 speech > br {
-    font-size: 10px;
+    display: none;
 }
 
 .citadelt6 b, .citadelt6 .mycode_b {
@@ -188,6 +192,8 @@
         --maxwidth: 450px;
         max-width: var(--maxwidth);
         width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
     }    
     
     .citadelt6 bor {
