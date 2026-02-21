@@ -198,13 +198,24 @@
     border-radius: 0 20px 20px 0 / 0 50px 50px 0;
     border-left: 15px double #acdd71;
     border-bottom: 10px solid #acdd71;
-    box-shadow: -5px 5px 10px rgba(5, 17, 14, 0.93), inset 0 0 3px #3b5236;
+    box-shadow: -4px 4px 5px rgba(5, 17, 14, 0.33),
+        inset 0 0 3px #3b5236;
     
     color: #cbfdb5;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 
         0 0 1px rgba(0,0,0,0.9);
+    
+    transition: filter 0.3s ease, box-shadow 0.3s ease, transform 0.15s ease;
 }
 
+.ikoshop label:hover {
+    filter: brightness(1.2);
+    transform: translateX(1px);
+}
+
+.ikoshop label:active {
+    transform: scale(0.99);
+}
 
 .ikoshop c {
     font-family:'OD', sans-serif;
@@ -237,7 +248,7 @@ br + .ikoshop input {
 
     border-radius: 0 0 10px 10px;
     border: 5px solid #ddffb5;
-    padding: 0 10px;
+    padding: 0 20px;
     
     font-family: "Delius", cursive;
     font-weight: 600;
