@@ -161,5 +161,19 @@
     .chrono_pl {
         width: 100% !important;
     }
+    
+    .chrono_pl bor {
+        border: none;
+        filter: none;
+    }
+
+    .chrono_pl con {
+        padding: 0;
+        box-shadow: none;
+    }
+    
+    .chrono_pl table {
+        width: 100% !important;
+    }
 
 }
