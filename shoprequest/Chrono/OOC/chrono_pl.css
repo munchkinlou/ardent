@@ -53,7 +53,7 @@
     display: flex;
     align-items: center;
     background: var(--buttoncolor);
-    padding: 5px 0 4px 10px;
+    padding: 8px 0 6px 10px;
     cursor: pointer;
 
     border-left: 8px solid;
@@ -80,6 +80,10 @@
     margin-right: 8px;
     transform: rotate(-90deg);
     transition: transform 0.3s ease;
+}
+
+.chrono_pl label > br {
+    display: none;
 }
 
 .chrono_pl div:has(input:checked) label::before {
