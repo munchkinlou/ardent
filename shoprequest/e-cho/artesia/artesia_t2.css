@@ -185,11 +185,11 @@
         #ffffff 50%,
         #6B8A9A 70%,
         #6B8A9A 100%
-    ) !important;
-    background-size: 400% 400% !important;
-    -webkit-background-clip: text !important;
-    background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
+    );
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     animation: artesiat2_shimmer 8s ease-in-out infinite;
 }
 
