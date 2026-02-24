@@ -158,6 +158,7 @@
     
     border-top: 1px solid;
     border-image: linear-gradient(to right, transparent, white, transparent) 1;
+    box-shadow: 0 -10px 30px black;
 }
 
 .citadelt6 speech > br {
