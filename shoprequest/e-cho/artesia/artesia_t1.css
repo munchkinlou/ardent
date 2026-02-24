@@ -243,6 +243,10 @@
 
   }
 
+.artesiat1 t {
+    display: none;
+}
+  
   .artesiat1 bor {
     display: block;
     box-sizing: border-box;
