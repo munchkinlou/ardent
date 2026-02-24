@@ -91,19 +91,20 @@
 }
 
 .artesiat1 incon {
-  display: block;
+  display: flex;
+  flex-direction: column;
   position: relative;
   box-sizing: border-box;
   background: linear-gradient(to bottom, #151518, #252529, #252529);
   
-  padding: 5px 19px 35px 14px;
+  padding: 5px 19px 0 14px;
   
   color: #dedede;
   text-align: justify;
   font-family: "Cormorant Garamond", serif;
   line-height: 1.1;
   
-  max-height: 290px;
+  height: 290px;
   overflow-y: auto;
   
   font-size: 12px;
@@ -129,16 +130,11 @@
   direction: rtl;
 }
 
-.artesiat1 p {
-  display: block;
-  position: relative;
-}
-
-.artesiat1 p::before {
+.artesiat1 incon::before {
   content: '';
   position: absolute;
-  top: 5px;
-  left: 50%;
+  top: 10px;
+  left: 49%;
   transform: translateX(-50%);
   height: 100%;
   width: 80%;
@@ -151,22 +147,27 @@
   
 }
 
-.artesiat1 p::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 100%;
-  width: 80%;
-  
-  background: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/2.png?updatedAt=1761259622322')
-    no-repeat bottom;
-  background-size: contain;
-
-  filter: brightness(2.5) drop-shadow(1px 1px 1px black);
-  
+.artesiat1 incon::after {
+    content: '';
+    display: block;
+    flex-shrink: 0;
+    height: 30px;
+    width: 90%;
+    margin: auto auto 0;
+    order: 1;
+    
+    background: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/2.png?updatedAt=1761259622322')
+        no-repeat bottom;
+    background-size: contain;
+    filter: brightness(2.5) drop-shadow(1px 1px 1px black);
 }
+
+.artesiat1 p {
+  display: block;
+  position: relative;
+  margin-bottom: -20px;
+}
+
 
 .artesiat1 incon > * {
   direction: ltr;
@@ -197,19 +198,18 @@
 }
 
 .artesiat1 speech {
-  display: block;
-  position: absolute;
+    display: block;
+    flex-shrink: 0;
+    order: 2;
   
-  bottom: -33px;
-  left: 0;
-
-  width: 100%;
-  padding: 0;
-  
-  color: white;
-  text-align: center;
-
-  font-family: 'Plasticbagh', sans-serif;
+    width: 100%;
+    padding: 10px 0 15px;
+    
+    color: white;
+    text-align: center;
+    
+    font-family: 'Plasticbagh', sans-serif;
+    direction: ltr;
 }
 
 .artesiat1 speech b {
@@ -236,7 +236,8 @@
   
   .artesiat1 {
     position: relative;
-    margin: 10px auto 5px;
+    left: 50%;
+    transform: translateX(-50%);
     max-width: 260px;
     width: 100%;
 
@@ -261,6 +262,11 @@
     box-shadow: none;
     padding:0;
 
+  }
+  
+  .artesiat1 incon {
+    height: auto;
+    overflow-y: visible;
   }
   
   .artesiat1 credit {
