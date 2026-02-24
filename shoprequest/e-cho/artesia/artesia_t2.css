@@ -89,10 +89,10 @@
 .artesiat2 incon {
   position: relative;
   display: block;
-  padding: 35px 25px 235px;
+  padding: 15px 25px 235px;
   width: 100%;
   box-sizing: border-box;
-  background: linear-gradient(to bottom, #7291ABAB, #0e0e14fa);
+  background: linear-gradient(to bottom, #7391ABE3, #0e0e14fa);
   height: auto;
   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.8);
   text-align: justify;
@@ -101,6 +101,7 @@
   color: #eaf9fb;
   line-height: 1.2;
   border: 2px solid;
+  text-shadow: 1px 1px 1px black;
   border-image: linear-gradient(to bottom,
     #A2B3C1, #5A788C) 1;
 }
@@ -202,6 +203,8 @@
 
   .artesiat2 {
     margin: 0 auto;
+    max-width: 450px;
+    width: 100%;
     left: 50%;
     transform:translateX(-50%);
   }
@@ -219,7 +222,7 @@
   }
   
   .artesiat2 incon {
-    padding: 20px;
+    padding: 10px 20px 20px;
   }
   
   .artesiat2 incon::before {
@@ -252,4 +255,3 @@
   }
 
 }
-
