@@ -191,9 +191,9 @@
     -webkit-mask-repeat: no-repeat;
 }
 
-.artesiat1 b {
+.artesiat1 b, .artesiat1 .mycode_b {
   font-size: 13px;
-  color: white;
+  color: white !important;
   filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));
 }
 
