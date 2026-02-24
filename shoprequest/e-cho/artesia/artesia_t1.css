@@ -1,0 +1,272 @@
+@import url('https://fonts.cdnfonts.com/css/ethena-emporium-script');
+@import url('https://fonts.cdnfonts.com/css/plasticbagh');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
+
+/*
+  font-family: 'Ethena Emporium Script', sans-serif;
+  font-family: 'Ethena Emporium Serif', sans-serif;
+  font-family: 'Plasticbagh', sans-serif;
+  font-family: "Cormorant Garamond", serif;
+*/
+
+.artesiat1 {
+  position: relative;
+  margin: 10px auto 5px;
+  width: 800px;
+ 
+}
+
+.artesiat1 bor {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid white;
+  padding: 4px;
+  
+  border-image: linear-gradient(to bottom, #8490A5, #A9C3D5, #8490A5) 1;
+  
+  filter: drop-shadow(1px 1px 1px #00000054) drop-shadow(0 0 1px #000000ad); 
+}
+
+.artesiat1 con {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  
+  background: black url('https://images2.imgbox.com/7b/4c/07NM1xeC_o.png')
+    no-repeat;
+  background-position: 168px 70%;
+  background-size: 80%;
+  
+  border: 1px solid black;
+  box-shadow: 0 0 1px black, inset 0 0 10px black;
+  
+  padding: 20px 520px 20px 20px;
+
+}
+
+.artesiat1 t {
+    display: block;
+    position: absolute;
+    top: 26px;
+    right: 61px;
+    
+    font-family: 'Ethena Emporium Script', sans-serif;
+    font-size: 52px;
+    
+    background: linear-gradient(
+        -45deg,
+        #ffffff50 0%,
+        #ffffff50 30%,
+        #ffffffcc 50%,
+        #ffffff50 70%,
+        #ffffff50 100%
+    );
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: artesiat1_shimmer 8s ease-in-out infinite;
+}
+
+@keyframes artesiat1_shimmer {
+    0%, 100% { background-position: 100% 0%; }
+    50% { background-position: 0% 100%; }
+}
+
+.artesiat1 g {
+  display: block;
+  filter: drop-shadow(0 0 10px #ccd9da45);
+}
+
+.artesiat1 inbor {
+  display: block;
+  box-sizing: border-box;
+  
+  background: linear-gradient(to bottom,
+    #3F4652, #6F8A9D);
+
+  padding: 1.1px;
+}
+
+.artesiat1 incon {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #151518, #252529, #252529);
+  
+  padding: 5px 19px 35px 14px;
+  
+  color: #dedede;
+  text-align: justify;
+  font-family: "Cormorant Garamond", serif;
+  line-height: 1.1;
+  
+  max-height: 290px;
+  overflow-y: auto;
+  
+  font-size: 12px;
+  
+  --scrollbar-thumb: #717D86;
+  --scrollbar-track: transparent;
+  --scrollbar-width: 6px;
+
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+
+  &::-webkit-scrollbar {
+    width: var(--scrollbar-width);
+  }
+  &::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 3px;
+  }  
+
+  direction: rtl;
+}
+
+.artesiat1 p {
+  display: block;
+  position: relative;
+}
+
+.artesiat1 p::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 80%;
+  
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/2.png?updatedAt=1761259622322')
+    no-repeat top;
+  background-size: contain;
+
+  filter: brightness(2) drop-shadow(1px 1px 1px black);
+  
+}
+
+.artesiat1 p::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 80%;
+  
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/2.png?updatedAt=1761259622322')
+    no-repeat bottom;
+  background-size: contain;
+
+  filter: brightness(2.5) drop-shadow(1px 1px 1px black);
+  
+}
+
+.artesiat1 incon > * {
+  direction: ltr;
+  margin-top: 0px;
+}
+
+.artesiat1 inbor, .artesiat1 incon {
+    mask: 
+        radial-gradient(ellipse 25px 20px at 0 0, transparent 24px, rgba(0, 0, 0, 0.4) 24.5px, black 25px) 0 0,
+        radial-gradient(ellipse 25px 20px at 100% 0, transparent 24px, rgba(0, 0, 0, 0.4) 24.5px, black 25px) 100% 0,
+        radial-gradient(ellipse 25px 20px at 100% 100%, transparent 24px, rgba(0, 0, 0, 0.4) 24.5px, black 25px) 100% 100%,
+        radial-gradient(ellipse 25px 20px at 0 100%, transparent 24px, rgba(0, 0, 0, 0.4) 24.5px, black 25px) 0 100%;
+    -webkit-mask: 
+        radial-gradient(ellipse 25px 20px at 0 0, transparent 24px, rgba(0, 0, 0, 0.4) 24.5px, black 25px) 0 0,
+        radial-gradient(ellipse 25px 20px at 100% 0, transparent 24px, rgba(0, 0, 0, 0.4) 24.5px, black 25px) 100% 0,
+        radial-gradient(ellipse 25px 20px at 100% 100%, transparent 24px, rgba(0, 0, 0, 0.4) 24.5px, black 25px) 100% 100%,
+        radial-gradient(ellipse 25px 20px at 0 100%, transparent 24px, rgba(0, 0, 0, 0.4) 24.5px, black 25px) 0 100%;
+    mask-size: 51% 51%;
+    -webkit-mask-size: 51% 51%;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+}
+
+.artesiat1 b {
+  font-size: 13px;
+  color: white;
+  filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));
+}
+
+.artesiat1 speech {
+  display: block;
+  position: absolute;
+  
+  bottom: -33px;
+  left: 0;
+
+  width: 100%;
+  padding: 0;
+  
+  color: white;
+  text-align: center;
+
+  font-family: 'Plasticbagh', sans-serif;
+}
+
+.artesiat1 speech b {
+  display: block;
+  padding: 5px 0 0;
+  font-size: 16px;
+}
+
+.artesiat1 speech > br {
+  display: none;
+}
+
+.artesiat1 credit {
+  display: block;
+  padding-top: 3px;
+  padding-right: 2px;
+  text-align: right;
+  font-family: "Unica One", arial;
+  font-size: 10px;
+}
+
+
+@media (max-width: 1200px) {
+  
+  .artesiat1 {
+    position: relative;
+    margin: 10px auto 5px;
+    max-width: 260px;
+    width: 100%;
+
+  }
+
+  .artesiat1 bor {
+    display: block;
+    box-sizing: border-box;
+    border: none;
+    padding: 0;
+    filter: drop-shadow(1px 1px 1px #00000054) drop-shadow(0 0 1px #000000ad); 
+  }
+
+  .artesiat1 con {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+
+    background: none;
+
+    border:none;
+    box-shadow: none;
+    padding:0;
+
+  }
+  
+  .artesiat1 credit {
+    padding-right: 0;
+    text-align: center;
+  }
+
+
+}
