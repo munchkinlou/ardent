@@ -170,7 +170,7 @@
     drop-shadow(1px 1px 1px rgba(0,0,0,0.8));
 }
 
-.artesiat2 speech b {
+.artesiat2 speech b, .artesiat2 .mycode_b  {
     font-family: 'Ethena Emporium Script', sans-serif;
     color: transparent;
     font-size: 65px;
@@ -185,11 +185,11 @@
         #ffffff 50%,
         #6B8A9A 70%,
         #6B8A9A 100%
-    );
-    background-size: 400% 400%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    ) !important;
+    background-size: 400% 400% !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
     animation: artesiat2_shimmer 8s ease-in-out infinite;
 }
 
