@@ -1,0 +1,255 @@
+@import url('https://fonts.cdnfonts.com/css/ethena-emporium-script');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap');
+
+/*
+  font-family: 'Ethena Emporium Script', sans-serif;
+  font-family: 'Ethena Emporium Serif', sans-serif;
+  font-family: "Cormorant Garamond", serif;
+  font-family: "Domine", serif;
+*/
+
+.artesiat2 {
+	position: relative;
+  width: 400px;
+  margin: 20px auto 100px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  background:transparent;
+  box-sizing: border-box;
+}
+
+.artesiat2 credit {
+  position: absolute;
+  bottom: -62px;
+  right: -210px;
+  width: 100%;
+  display:block;
+  text-align:left;
+  font-family: "Unica One", arial;
+  font-size: 11px;
+  font-weight: bold;
+  z-index: 10;
+  transform: rotate(-270deg);
+}
+
+.artesiat2 art {
+  position: absolute;
+  bottom: -78px;
+  left: -97px;
+  width: 164%;
+  height: 352px;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/e-cho/artesia/2026.01.11_-_blank_bg.png?updatedAt=1771951806000') no-repeat center bottom;
+  background-size: contain; 
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.93))
+    drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.93));
+}
+
+.artesiat2 bor {
+  position: relative;
+  display:block;
+  width: 100%;
+  border: 3px solid;
+  border-image: linear-gradient(to bottom,
+    #2A2A2D, #000000) 1;
+  box-sizing: border-box;
+  margin: 0 auto;
+  filter: drop-shadow(1px 1px 1px black);
+}
+
+.artesiat2 con {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 15px 15px 0;
+  box-sizing: border-box;
+  pointer-events: none;
+  margin: 0 auto;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to bottom, #1B1717, #181413);
+}
+
+.artesiat2 con::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  background:url('https://ik.imagekit.io/arl60/Ardent/shop/e-cho/artesia/07NM1xeC_o.png?updatedAt=1771951815004')
+    no-repeat bottom;
+  background-size:cover;
+  background-attachment:fixed;
+  box-shadow: 0 0 2px black, inset 0 0 10px black;
+}
+
+.artesiat2 incon {
+  position: relative;
+  display: block;
+  padding: 35px 25px 235px;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #7291ABAB, #0e0e14fa);
+  height: auto;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.8);
+  text-align: justify;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 13px;
+  color: #eaf9fb;
+  line-height: 1.2;
+  border: 2px solid;
+  border-image: linear-gradient(to bottom,
+    #A2B3C1, #5A788C) 1;
+}
+
+.artesiat2 incon::before {
+  content: '';
+  position: absolute;
+  top:16px;
+  left:50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 60%;
+
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/2.png?updatedAt=1761259622322')
+  no-repeat top;
+  background-size: contain;
+  
+  filter: drop-shadow(1px 1px 1px black)
+    brightness(10);
+  opacity: 0.5;
+}
+
+.artesiat2 incon::after {
+  content: '';
+  position: absolute;
+  top:-217px;
+  left:50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 60%;
+
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/2.png?updatedAt=1761259622322')
+  no-repeat bottom;
+  background-size: contain;
+  
+  filter: drop-shadow(1px 1px 1px black)
+    brightness(10);
+  opacity: 0.5;
+}
+
+
+.artesiat2 b {
+  color: #FFDC75;
+  font-family: "Domine", serif;
+  font-size: 13px;
+  text-align: center;
+
+  color: transparent;
+  background: linear-gradient(to bottom, #C1E2F1, white);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: none;
+  
+  filter: drop-shadow(0 0 3px rgba(0,0,0,0.8));
+}
+
+.artesiat2 speech {
+  display: flex;
+  position: absolute;
+  bottom: 126px;
+  right: 148px;
+  text-align: center;
+  z-index: 10;
+  width: 50px;
+  filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.8))
+    drop-shadow(1px 1px 1px rgba(0,0,0,0.8));
+}
+
+.artesiat2 speech b {
+    font-family: 'Ethena Emporium Script', sans-serif;
+    color: transparent;
+    font-size: 65px;
+    line-height: 0.5;
+    font-weight: 400;
+    padding: 20px 20px 0;
+    
+    background: linear-gradient(
+        -45deg,
+        #6B8A9A 0%,
+        #6B8A9A 30%,
+        #ffffff 50%,
+        #6B8A9A 70%,
+        #6B8A9A 100%
+    );
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: artesiat2_shimmer 8s ease-in-out infinite;
+}
+
+@keyframes artesiat2_shimmer {
+    0%, 100% { background-position: 100% 0%; }
+    50% { background-position: 0% 100%; }
+}
+
+
+@media (max-width: 1200px) {
+
+  .artesiat2 {
+    margin: 0 auto;
+    left: 50%;
+    transform:translateX(-50%);
+  }
+  
+  .artesiat2 bor {
+    margin-bottom: 30px;
+  }
+  
+  .artesiat2 art {
+    display: none;
+  }
+
+  .artesiat2 con {
+    padding: 10px;
+  }
+  
+  .artesiat2 incon {
+    padding: 20px;
+  }
+  
+  .artesiat2 incon::before {
+    top: 10px;
+  }
+  
+  .artesiat2 incon::after {
+    top: -10px;
+  }
+  
+  .artesiat2 speech {
+    display: block;
+    position: absolute;
+    bottom: 13px;
+    right: -3px;
+    text-align: center;
+    z-index: 10;
+    width: 100%;
+    filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.8))
+      drop-shadow(1px 1px 1px rgba(0,0,0,0.8));
+  }
+
+  .artesiat2 credit {
+    position: relative;
+    inset: 0;
+    top: -9px;
+    width: 100%;
+    text-align: center;
+    transform: none;
+  }
+
+}
+
