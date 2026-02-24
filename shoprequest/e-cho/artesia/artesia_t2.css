@@ -143,7 +143,7 @@
 }
 
 
-.artesiat2 b {
+.artesiat2 b, .artesiat2 .mycode_b {
   color: #FFDC75;
   font-family: "Domine", serif;
   font-size: 13px;
@@ -170,7 +170,7 @@
     drop-shadow(1px 1px 1px rgba(0,0,0,0.8));
 }
 
-.artesiat2 speech b, .artesiat2 .mycode_b  {
+.artesiat2 speech b {
     font-family: 'Ethena Emporium Script', sans-serif;
     color: transparent;
     font-size: 65px;
