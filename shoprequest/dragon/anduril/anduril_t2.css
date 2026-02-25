@@ -114,6 +114,10 @@
   filter: drop-shadow(0px 1px 1px #000000db);
 }
 
+.andurilt2 incon > br:first-of-type {
+    display: none;
+}
+
 .andurilt2 incon br {
   display: inline;
 }
