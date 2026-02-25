@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@font-face {
+  font-family: 'andurilt1';
+  src: url('Aurahives-pg5EK.otf');
+}
+/*
+  font-family: "Merienda", cursive;
+  font-family: "Quicksand", sans-serif;
+*/
+
+.andurilt2 {
+  position: relative;
+  width: 800px;
+  margin: 10px auto 20px;
+}
+
+.andurilt2 * {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.andurilt2 bor {
+  border: 2px solid;
+  border-image: linear-gradient(to bottom, #92bcea, #9696ea, #88a468) 1;
+  padding: 5px;
+  filter: drop-shadow(1px 1px 1px black);
+}
+
+.andurilt2 con {
+  background: black;
+  
+  border: 2px solid;
+  border-image: linear-gradient(to bottom, #425375de, #3b3156de) 1;
+
+  overflow: hidden;
+  
+  box-shadow: 0px 0px 1px black;
+  
+  padding: 10px 10px 10px 540px;
+}
+
+.andurilt2 con::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/Dragon/Anduril/narutochicken.png')
+    no-repeat;
+  background-position: -110px -25px;
+  background-size: 115%;
+  
+  box-shadow: inset 0 0 1px #160f44f7, inset 0 0 1px #160f44f7aliceblue;
+  
+  pointer-events: none;
+  z-index: 0;
+}
+
+.andurilt2 inbor {
+  border: 1.5px solid #7694AD;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 1px 1px 2px black;
+}
+
+.andurilt2 incon {
+  background: linear-gradient(to bottom, #607296de, #3b3156de);
+  padding: 0px 8px 0 15px;
+  
+  height: 353px;
+  overflow-y: auto;
+  
+  text-align: justify;
+  font-family: "Quicksand", sans-serif;
+  font-size: 10px;
+  text-shadow: 0.6px 0px 1px black;
+  color: white;
+  
+  box-shadow: inset 0 0 10px #1d122de8;
+  
+  --scrollbar-thumb: #AFB6CA;
+  --scrollbar-track: transparent;
+  --scrollbar-width: 6px;
+
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+
+  &::-webkit-scrollbar {
+    width: var(--scrollbar-width);
+  }
+  &::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 3px;
+  }  
+
+}
+
+.andurilt2 b, .andurilt2 .mycode_b {
+  display: inline;
+  font-size: 11px;
+  color: transparent !important;
+  background: linear-gradient(to bottom, #FEBF62, #F16616) !important;;
+  -webkit-background-clip: text !important;;
+  background-clip: text !important;
+    text-shadow: none !important;
+  filter: drop-shadow(0px 1px 1px #000000db);
+}
+
+.andurilt2 incon br {
+  display: inline;
+}
+
+.andurilt2 speech {
+  background: linear-gradient(to right, #607296, #3b3156);
+  text-align: center;
+  padding: 2px 0 0;
+  border-top: 1px solid #7694AD;
+}
+
+.andurilt2 speech b, .andurilt2 .mycode_b {
+  font-family: 'andurilt1', cursive;
+  letter-spacing: 1.6px;
+  font-size: 13px;
+}
+
+.andurilt2 credit {
+    position: absolute;
+    bottom: -17px;
+    left: 5px;
+    width: 100%;
+    text-align: left;
+    
+    font-family: "Unica One", arial;
+    font-weight: bold;
+    font-size: 11px;  
+}
+
+@media (max-width: 1200px) {
+  .andurilt2 {
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .andurilt2 bor {
+    padding: 0;
+    background: none;
+  }
+  
+  .andurilt2 con {
+    padding: 8px;
+  }
+  
+  .andurilt2 con::before {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .andurilt2 incon {
+    height: auto;
+    overflow: visible;
+    padding: 0 10px;
+  }
+  
+  .andurilt2 credit {
+    bottom: -16px;
+    text-align: center;
+  }
+  
+}
