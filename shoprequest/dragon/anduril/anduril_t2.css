@@ -125,7 +125,7 @@
   border-top: 1px solid #7694AD;
 }
 
-.andurilt2 speech b, .andurilt2 .mycode_b {
+.andurilt2 speech b, .andurilt2 speech .mycode_b {
   font-family: 'andurilt1', cursive;
   letter-spacing: 1.6px;
   font-size: 13px;
