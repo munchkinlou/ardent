@@ -147,10 +147,13 @@
     font-size: 11px;  
 }
 
+
 @media (max-width: 1200px) {
   .andurilt2 {
     max-width: 400px;
     width: 100%;
+    left:50%;
+    transform: translateX(-50%);
   }
   
   .andurilt2 bor {
@@ -165,7 +168,7 @@
   .andurilt2 con::before {
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: local;
   }
   
   .andurilt2 incon {
