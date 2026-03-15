@@ -14,7 +14,7 @@
 
 .rhiannont1 {
   position: relative;
-  margin: 40px auto 100px;
+  margin: 40px auto 60px;
   width: 400px;
 }
 
@@ -98,6 +98,7 @@
   padding: 4px;
   
   border-radius: 10px 10px 300px 300px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.6);
 }
 
 .rhiannont1 con {
@@ -148,6 +149,10 @@
   box-shadow: inset 0 0 10px black;
   overflow: hidden;
   text-shadow: 1px 1px 1px #0006;
+}
+
+.rhiannont1 incon br:first-of-type {
+  display: none;
 }
 
 .rhiannont1 incon:before {
@@ -213,7 +218,7 @@
   }
   
   .rhiannont1 speech {
-    bottom: 0px;
+    bottom: -6px;
     left: 50%;
     transform: translateX(-50%);
   }
