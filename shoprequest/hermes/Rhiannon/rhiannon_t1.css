@@ -171,13 +171,15 @@
 
 .rhiannont1 speech {
   position: absolute;
-  bottom:269px;
-  left: 160px;
+  bottom:328px;
+  left: 155px;
   text-align: center;
-  
+}
+
+.rhiannont1 speech rhia {
   font-family: "Puppies Play", cursive;
   font-weight: 400;
-  font-size: 74px;
+  font-size: 74px;  
 }
 
 @media (max-width: 1200px) {
@@ -211,10 +213,11 @@
   }
   
   .rhiannont1 speech {
-    bottom: -65px;
+    bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
   }
+  
   .rhiannont1 credit {
     bottom: -20px;
     right: auto;
