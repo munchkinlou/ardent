@@ -15,7 +15,7 @@
 .rhiannont1 {
   position: relative;
   margin: 40px auto 80px;
-  width: 400px;
+  width: 450px;
 }
 
 .rhiannont1 credit {
@@ -145,7 +145,8 @@
   font-family: "Poiret One", sans-serif;
   font-weight: 400;
   
-  font-size: 12px;
+  font-size: 14px;
+  line-height: 1.3;
   
   box-shadow: inset 0 0 10px black;
   overflow: hidden;
@@ -172,14 +173,14 @@
   color: #0c0202;
   font-family: "Swanky and Moo Moo", cursive;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1;
 }
 
 .rhiannont1 speech {
   position: absolute;
-  bottom:328px;
-  left: 155px;
+  bottom:331px;
+  left: 178px;
   text-align: center;
 }
 
