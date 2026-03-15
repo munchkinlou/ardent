@@ -14,7 +14,7 @@
 
 .rhiannont1 {
   position: relative;
-  margin: 40px auto 60px;
+  margin: 40px auto 80px;
   width: 400px;
 }
 
@@ -44,6 +44,7 @@
   
   z-index: 1;
   filter: drop-shadow(1px 1px 2px black);
+  pointer-events: none;
 }
 
 .rhiannont1 s1, .rhiannont1 s2 {
@@ -164,6 +165,7 @@
   width: 90%;
   height: 1px;
   border-bottom: 5px dotted #72624e;
+  pointer-events: none;
 }
 
 .rhiannont1 rhia {
