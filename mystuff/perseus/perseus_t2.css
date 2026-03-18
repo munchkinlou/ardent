@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@font-face {
+  font-family: 'perseus';
+  src: url('VikingNormal-36VL.otf') format('truetype');
+}
+
+/*
+
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
+
+  font-family: "Amarante", serif;
+  font-weight: 400;
+
+  font-family: "perseus", serif;
+  font-weight: 400;
+
+  font-family: 'Eagle Lake', serif;
+  font-weight: 400;
+
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400; 
+
+*/
+
+.perseust2 {
+	position: relative;
+  width: 800px;
+  margin: 20px auto 325px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.perseust2 credit {
+  position:absolute;
+  bottom:-22px;
+  left:150px;
+  text-align:left;
+  font-size:10px;
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
+}
+
+.perseust2 perseus {
+  position: absolute;
+  bottom: -376px;
+  left: -350px;
+  width: 200%;
+  height: 1057px;
+  background: url('https://ik.imagekit.io/arl60/Ardent/personal/Perseus/IMG_5308%202.png?updatedAt=1773695645679')
+    no-repeat center;
+  background-size: contain; 
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(1px 1px 2px rgb(0, 0, 0));
+}
+
+
+.perseust2 * {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.perseust2 bor {
+  width: 500px;
+  background: linear-gradient(to bottom, #070e14, #80c8d5);
+  padding: 3px;
+  margin: 0 auto;
+  box-shadow: 0px 5px 10px black;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.perseust2 con {
+  border-radius: inherit;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  pointer-events: none;
+  margin: 0 auto;
+}
+
+.perseust2 con::before {
+  border-radius: inherit;
+  content:'';
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  background: url('https://ik.imagekit.io/arl60/Ardent/personal/Backgrounds/ethereal_4k.png');
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.9);
+  filter:grayscale(0.3);
+}
+
+.perseust2 inbor {
+  background: linear-gradient(to top, #0e1721, #a2a0e9);
+  padding: 1px;
+  border-radius: inherit;
+}
+
+.perseust2 incon {
+  padding: 30px 20px 625px;
+  width: 100%;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, rgb(14, 23, 33), #0f1c29);
+  height: auto;
+  box-shadow: inset 0 0 10px rgb(0, 0, 0);
+  text-align: justify;
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;
+  font-size:13px;
+  color: #dddddd;
+  line-height: 1.2;
+  overflow: hidden;
+}
+
+.perseust2 incon:before {
+  position: absolute;
+  content: '';
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 50px;
+  
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/1155601_OR9Z4R1.png')
+    no-repeat center;
+  background-size: contain;
+  
+  pointer-events: none;
+  
+  filter:brightness(4) sepia(10) hue-rotate(160deg)
+        drop-shadow(1px 1px 1px black);
+  opacity: 0.8;
+  z-index: 5;
+}
+
+.perseust2 incon:after {
+  position: absolute;
+  content: '';
+  bottom: 669px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 50px;
+  
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/1155601_OR9Z4R1.png')
+    no-repeat center;
+  background-size: contain;
+  
+  pointer-events: none;
+  
+  filter:brightness(4) sepia(10) hue-rotate(160deg)
+    drop-shadow(1px 1px 1px black);
+  opacity: 0.8;
+  z-index: 5;
+}
+
+
+.perseust2 incon br {
+  display: inline;
+}
+
+.perseust2 incon speak {
+  display: inline;
+  color: #a2a0e9;
+	font-family: 'Amarante';
+  font-size: 12px;
+  font-weight: bold;
+  text-shadow: 0px 0px 2px #000000;
+  line-height: 0.9;
+}
+
+.perseust2 speech {
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto -10px;
+  font-size:30px;
+  color: #6171d2;
+  text-shadow: 1px 1px 2px #0a0906;
+  text-align: center;
+  line-height: 1;
+}
+
+.perseust2 speech speak {
+  font-family: 'perseus';
+  font-weight: bold;
+  font-size: 25px;
+}
+
+
+
+@media (max-width: 1200px) {
+  
+  .perseust2 {
+    max-width: 450px;
+    width: 100%;
+    margin: 0;
+    left: 50%;
+    transform:translateX(-50%);
+  }
+  
+  .perseust2 credit {
+    position:relative;
+    inset:0;
+    margin: 10px auto 5px;
+    text-align:center;
+    transform:none;
+  }
+  
+  .perseust2 perseus {
+    display: none;
+  }
+  
+  .perseust2 bor, .perseust2 con, .perseust2 inbor, .perseust2 incon {
+    border-radius: 0;
+  }
+  
+  .perseust2 con {
+    padding: 15px;
+  }
+  
+  .perseust2 incon {
+    padding: 0 20px 3px;
+  }
+  
+  .perseust2 incon:before {
+    display: none;
+  }
+  
+  .perseust2 incon:after {
+    bottom:45px;
+  }
+  
+  .perseust2 speech {
+    margin: 0 auto -13px;
+  }
+  
+  
+}
