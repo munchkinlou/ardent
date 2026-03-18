@@ -224,6 +224,7 @@
   
   .perseust1 bor, .perseust1 con, .perseust1 inbor, .perseust1 incon {
     border-radius: 0;
+	width:100%;
   }
   
   .perseust1 con {
