@@ -223,6 +223,7 @@
   
   .perseust2 bor, .perseust2 con, .perseust2 inbor, .perseust2 incon {
     border-radius: 0;
+	width: 100%;
   }
   
   .perseust2 con {
