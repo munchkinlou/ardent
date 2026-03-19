@@ -60,14 +60,10 @@
   filter: drop-shadow(1px 1px 2px rgb(0, 0, 0));
 }
 
-
-.perseust2 * {
+.perseust2 bor {
   display: block;
   position: relative;
   box-sizing: border-box;
-}
-
-.perseust2 bor {
   width: 500px;
   background: linear-gradient(to bottom, #070e14, #80c8d5);
   padding: 3px;
@@ -78,6 +74,9 @@
 }
 
 .perseust2 con {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
   border-radius: inherit;
   width: 100%;
   padding: 20px;
@@ -108,6 +107,9 @@
 }
 
 .perseust2 incon {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
   padding: 27px 20px 620px;
   width: 100%;
   border-radius: inherit;
