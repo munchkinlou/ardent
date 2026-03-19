@@ -101,6 +101,9 @@
 }
 
 .perseust2 inbor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
   background: linear-gradient(to top, #0e1721, #a2a0e9);
   padding: 1px;
   border-radius: inherit;
