@@ -105,7 +105,7 @@
   display: flex;
   flex-direction: column;
   
-  padding: 40px 18px 10px 30px;
+  padding: 25px 18px 10px 30px;
   margin-right: 5px;
   
   text-align: justify;
@@ -181,24 +181,13 @@
   z-index: 5;
 }
 
-
-
-.perseust3 p {
-
-  margin: 0px;
-  
-
-}
-
-.perseust3 p br {
+.perseust3 txt br {
   display: inline;
 }
 
-
-.perseust3 incon p br:nth-last-of-type(-n+2) {
+.perseust3 incon txt br:nth-last-of-type(-n+2) {
   display: none;
 }
-
 
 .perseust3 incon speak {
   display: inline;
@@ -300,7 +289,7 @@
   }
   
   .perseust3 incon {
-    padding: 45px 20px 3px;
+    padding: 20px 20px 3px;
     height: auto;
   }
   
