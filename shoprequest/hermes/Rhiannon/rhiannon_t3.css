@@ -196,11 +196,15 @@
   position: relative;
   display: block;
   text-align: center;
-  margin: 0 auto -20px;
+  margin: 0 auto 10px;
   width: 90%;
   
   border-top: 2px solid black;
   padding-top: 6px;
+}
+
+.rhiannont3 speech br {
+  display: none;
 }
 
 .rhiannont3 speech rhia {
