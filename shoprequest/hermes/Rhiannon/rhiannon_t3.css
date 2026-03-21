@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Swanky+and+Moo+Moo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Puppies+Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
+/*
+  font-family: "Swanky and Moo Moo", cursive;
+  font-weight: 400;
+  font-family: "Poiret One", sans-serif;
+  font-weight: 400;
+  font-family: "Puppies Play", cursive;
+  font-weight: 400;
+*/
+
+.rhiannont3 {
+  position: relative;
+  margin: 40px auto 80px;
+  width: 520px;
+}
+
+.rhiannont3 credit {
+  position: absolute;
+  bottom: -20px;
+  right: 4px;
+  width: 100%;
+  text-align: right;
+  
+  font-family: "Unica One", arial;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.rhiannont3 rhiannon {
+  position: absolute;
+  top: -126px;
+  right: -86px;
+  
+  background: url('https://images2.imgbox.com/05/01/y4T3ducf_o.png')
+    no-repeat bottom;
+  background-size: contain;
+  
+  width: 133%;
+  height: 585px;
+  
+  z-index: 1;
+  filter: drop-shadow(1px 1px 2px #000000b2) drop-shadow(2px 2px 5px #000000ab);
+  pointer-events: none;
+}
+
+.rhiannont3 s1, .rhiannont3 s2 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: 10;
+  filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.6))
+    grayscale(0.7) sepia(1) brightness(1.5)
+    saturate(1.3) hue-rotate(160deg);
+}
+
+.rhiannont3 s1 {
+  top: -43px;
+  right: 88px;
+  background-image: url('https://ik.imagekit.io/arl60/Ardent/shop/Hermes/Rhiannon/heart1.png');
+  animation: rhia_heartbeat 2.5s steps(1, end) infinite;
+}
+
+.rhiannont3 s2 {
+  bottom: -21px;
+  left: -39px;
+  background-image: url('https://ik.imagekit.io/arl60/Ardent/shop/Hermes/Rhiannon/heart2.png');
+  animation: rhia_bobble 3s steps(1, end) infinite;
+}
+
+@keyframes rhia_heartbeat {
+  0%   { transform: scale(1); }
+  12%  { transform: scale(0.9); }
+  28%  { transform: scale(1.1); }
+  48%  { transform: scale(0.96); }
+  57%  { transform: scale(1.04); }
+  73%  { transform: scale(1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes rhia_bobble {
+  0%   { transform: rotate(0deg) scale(1); }
+  22%  { transform: rotate(-7deg) scale(1.02); }
+  38%  { transform: rotate(2deg) scale(0.99); }
+  63%  { transform: rotate(9deg) scale(1.04); }
+  79%  { transform: rotate(-1deg) scale(1); }
+  100% { transform: rotate(0deg) scale(1); }
+}
+
+.rhiannont3 bor {
+  display: block;
+  background: linear-gradient(to top, #feedde,#c0b6ac);
+  
+  border-radius:10px;
+  padding: 8px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.47);
+}
+
+.rhiannont3 con {
+  display: block;
+  position: relative;
+  
+  background: white;
+  border-radius: inherit;
+  
+  padding: 50px 20px 20px;
+  overflow: hidden;
+}
+
+.rhiannont3 con:before {
+  content: '';
+  position: absolute;
+  inset:0;
+  width: 100%;
+  height: 100%;
+  
+  background: 
+    url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/63058442_9548547(1).jpg') 
+    no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  
+  filter: saturate(1);
+  
+  pointer-events: none;
+}
+
+.rhiannont3 inbor {
+  position: relative;
+  display: block;
+  border-radius: 300px 300px 10px 10px;
+  padding: 5px;
+  
+  background: linear-gradient(to bottom, #ffedde, #b7d2e5);
+}
+
+.rhiannont3 incon {
+  position: relative;
+  display: block;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, #d3c8c2, #d7cbc6);
+  padding: 430px 25px 0;
+  
+  color: #000;
+  text-align: justify;
+  font-family: "Poiret One", sans-serif;
+  font-weight: 400;
+  
+  font-size: 15px;
+  
+  box-shadow: inset 0 0 15px #2c1813c4;
+  overflow: hidden;
+  text-shadow: 1px 1px 1px #0006;
+}
+
+.rhiannont3 incon br:first-of-type {
+  display: none;
+}
+
+.rhiannont3 incon:before {
+  content: '';
+  position: absolute;
+  top:360px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 100px;
+  
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/4187050_2225554.png')
+    no-repeat center;
+  background-size: contain;
+  
+  filter: brightness(0.1) sepia(1)
+    drop-shadow(1px 1px 2px rgba(0,0,0,0.3));
+  
+  opacity: 0.8;
+  
+  pointer-events: none;
+}
+
+.rhiannont3 rhia {
+  color: #0c0202;
+  font-family: "Swanky and Moo Moo", cursive;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.rhiannont3 speech {
+  position: relative;
+  display: block;
+  text-align: center;
+  margin: 0 auto -20px;
+  width: 90%;
+  
+  border-top: 2px solid black;
+  padding-top: 6px;
+}
+
+.rhiannont3 speech rhia {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Puppies Play", cursive;
+  font-weight: 400;
+  font-size: 70px;
+  border-top: 2.5px solid black;
+}
+
+@media (max-width: 1200px) {
+  
+  .rhiannont3 rhiannon {
+    display: none;
+  }
+  
+  .rhiannont3 {
+    max-width: 450px;
+    width: 100%;
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .rhiannont3 s1 {
+    top: -43px;
+    right: -22px;
+  }
+
+  .rhiannont3 bor {
+    margin: 30px 0;
+    box-shadow: none;
+  }
+  
+  .rhiannont3 bor, .rhiannont3 con, .rhiannont3 inbor, .rhiannont3 incon {
+    border-radius: 0;
+  }
+  
+  .rhiannont3 incon {
+    padding: 10px 20px;
+  }
+  
+  .rhiannont3 incon:before {
+    display: none;
+  }
+  
+  .rhiannont3 speech {
+    margin: 0 auto -30px;
+  }
+  
+  .rhiannont3 speech rhia {
+    font-size: 70px;
+  }
+  
+  .rhiannont3 credit {
+    bottom: -20px;
+    right: auto;
+    text-align: center;
+  }
+  
+  .rhiannont3 s2 {
+    bottom: -22px;
+    left: -30px;
+  }
+
+}
