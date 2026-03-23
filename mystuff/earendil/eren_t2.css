@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
+/*
+
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
+
+  font-family: "Amarante", serif;
+  font-weight: 400;
+
+  font-family: "Love Light", cursive;
+  font-weight: 400;
+
+  font-family: "Love Light", cursive;
+  font-weight: 400;
+
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400; 
+
+*/
+
+.erent2 {
+	position: relative;
+  width: 800px;
+  margin: 250px auto 20px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.erent2 t {
+  position: absolute;
+  top: 337px;
+  left: 189px;
+  
+  padding: 0 10px;
+  
+  font-family: "Love Light", cursive;
+  font-weight: 400;
+  font-size: 61px;
+  
+  color: transparent;
+  background: linear-gradient(to bottom, #FAF880, #EA9250);
+  -webkit-background-clip: text;
+  background-clip: text;
+  
+  filter: drop-shadow(1px 1px 2px black)
+    drop-shadow(1px 1px 1px black);
+  
+  z-index: 10;
+}
+
+.erent2 credit {
+  position:absolute;
+  bottom:-16px;
+  left:35px;
+  text-align:left;
+  font-size:10px;
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
+}
+
+.erent2 eren {
+  position: absolute;
+  top: -261px;
+  left: -76px;
+  width: 132%;
+  height: 725px;
+  background: url('https://ik.imagekit.io/arl60/Ardent/personal/Eren/IMG_2367.png?updatedAt=1773893274844')
+    no-repeat center;
+  background-size: contain; 
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(1px 1px 5px rgb(0, 0, 0));
+}
+
+.erent2 bor, .erent2 con, .erent2 inbor, .erent2 incon {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.erent2 bor {
+  width: 450px;
+  background: linear-gradient(to bottom, #271881, #3e0e54);
+  padding: 3px;
+  margin: 0 auto 0 30px;
+  border-radius: 300px 300px 0 0;
+  overflow: hidden;
+}
+
+.erent2 con {
+  border-radius: inherit;
+  width: 100%;
+  padding: 20px 15px;
+  box-sizing: border-box;
+  pointer-events: none;
+  margin: 0 auto;
+  
+  overflow: hidden;
+}
+
+.erent2 con::before {
+  border-radius: inherit;
+  content:'';
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/2632725_8741.jpg?updatedAt=1760754138078');
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.9);
+  
+}
+
+.erent2 inbor {
+  background: linear-gradient(to top, #d4a05d, #a46730, #d4a05d);
+  padding: 2px;
+  border-radius: inherit;
+}
+
+.erent2 incon {
+
+  padding: 170px 20px 0;
+  
+  width: 100%;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, rgb(46, 14, 60), #0b0918);
+  height: auto;
+  box-shadow: inset 0 0 10px rgb(0, 0, 0);
+  text-align: justify;
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;
+  font-size:13px;
+  color: #dddddd;
+  line-height: 1.4;
+  
+}
+
+.erent2 incon:before {
+  position: absolute;
+  content: '';
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 50px;
+
+  background: linear-gradient( 90deg, #c28837, #bb833c, #ffc61b, #bb833c, #b67837 );
+
+  -webkit-mask-image: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/1155601_OR9Z4R1.png');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  mask-image: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/1155601_OR9Z4R1.png');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+
+  pointer-events: none;
+  z-index: 5;
+}
+
+.erent2 incon:after {
+  position: absolute;
+  content: '';
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 50px;
+  
+  background: linear-gradient( 90deg, #c28837, #bb833c, #ffc61b, #bb833c, #b67837 );
+
+  -webkit-mask-image: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/1155601_OR9Z4R1.png');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  mask-image: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/1155601_OR9Z4R1.png');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 60%;
+
+  pointer-events: none;
+  z-index: 5;
+}
+
+
+.erent2 incon br {
+  display: inline;
+}
+
+.erent2 incon speak {
+	font-family: 'Amarante';
+  font-size: 16px;
+  font-weight: 400;
+  text-shadow: 0px 0px 2px #000000;
+  line-height: 0.9;
+}
+
+.erent2 speech {
+  display: inline-block;
+  width: 100%;
+  margin: -30px auto 0px;
+  font-size:30px;
+  color: #6171d2;
+  text-shadow: 1px 1px 2px #0a0906;
+  text-align: center;
+  line-height: 1;
+}
+
+.erent2 speech speak {
+  font-family: "Love Light", cursive;
+  font-weight: 400;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+
+.erent2 speak {
+  color: transparent;
+  background: linear-gradient(to bottom, #FAF880, #EA9250);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: none !important;
+}
+
+
+@media (max-width: 1200px) {
+  
+  .erent2 {
+    max-width: 450px;
+    width: 100%;
+    margin: 0;
+    left: 50%;
+    transform:translateX(-50%);
+  }
+  
+  .erent2 credit {
+    position:relative;
+    display: block;
+    inset:0;
+    width: 100%;
+    margin: auto;
+    text-align:center;
+    transform:none;
+  }
+  
+  .erent2 eren {
+    display: none;
+  }
+  
+  .erent2 t {
+    display: none;
+  }
+  
+  .erent2 bor, .erent2 con, .erent2 inbor, .erent2 incon {
+    border-radius: 0;
+    width: 100%;
+    margin: auto;
+  }
+  
+  
+  .erent2 con {
+    padding: 15px;
+  }
+  
+  .erent2 incon {
+    padding: 0 20px 0px;
+  }
+  
+  .erent2 incon:before {
+    display: none;
+  }
+  
+  .erent2 incon:after {
+    bottom:65px;
+  }
+  
+  .erent2 speech {
+    margin: -30px auto -5px;
+  }
+  
+}
