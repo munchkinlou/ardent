@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
+/*
+
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
+
+  font-family: "Amarante", serif;
+  font-weight: 400;
+
+  font-family: "Love Light", cursive;
+  font-weight: 400;
+
+  font-family: "Love Light", cursive;
+  font-weight: 400;
+
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400; 
+
+*/
+
+.erent1 {
+	position: relative;
+  width: 800px;
+  margin: 100px auto 20px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.erent1 t {
+  position: absolute;
+  top: 337px;
+  left: 189px;
+  
+  padding: 0 10px;
+  
+  font-family: "Love Light", cursive;
+  font-weight: 400;
+  font-size: 61px;
+  
+  color: transparent;
+  background: linear-gradient(to bottom, #FAF880, #EA9250);
+  -webkit-background-clip: text;
+  background-clip: text;
+  
+  filter: drop-shadow(1px 1px 2px black)
+    drop-shadow(1px 1px 1px black);
+  
+  z-index: 10;
+}
+
+.erent1 credit {
+  position:absolute;
+  bottom:167px;
+  left:627px;
+  text-align:left;
+  font-size:10px;
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
+  
+  transform: rotate(90deg);
+}
+
+.erent1 eren {
+  position: absolute;
+  top: -163px;
+  left: -111px;
+  width: 132%;
+  height: 759px;
+  background: url('https://ik.imagekit.io/arl60/Ardent/personal/Eren/11_25%20design%201%20no%20bg.png')
+    no-repeat center;
+  background-size: contain; 
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(1px 1px 5px rgb(0, 0, 0))
+    drop-shadow(1px 1px 2px black)
+    drop-shadow(1px 1px 100px #cb9a207a);
+}
+
+.erent1 bor, .erent1 con, .erent1 inbor, .erent1 incon {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.erent1 bor {
+  width: 500px;
+  background: linear-gradient(to bottom, #271881, #3e0e54);
+  padding: 3px;
+  margin: 0 auto;
+  border-radius: 0;
+  overflow: hidden;
+  
+  clip-path: polygon(
+    50% 1px,
+    100% 165px,
+    100% calc(100% - 140px),
+    50% 100%,
+    0% calc(100% - 140px),
+    0% 165px
+  );
+}
+
+.erent1 con {
+  border-radius: inherit;
+  width: 100%;
+  padding: 20px 15px;
+  box-sizing: border-box;
+  pointer-events: none;
+  margin: 0 auto;
+  
+  clip-path: polygon(
+    50% 1px,
+    100% 165px,
+    100% calc(100% - 140px),
+    50% 100%,
+    0% calc(100% - 140px),
+    0% 165px
+  );
+  
+  overflow: hidden;
+}
+
+.erent1 con::before {
+  border-radius: inherit;
+  content:'';
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/2632725_8741.jpg?updatedAt=1760754138078');
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.9);
+  
+}
+
+.erent1 inbor {
+  background: linear-gradient(to top, #d4a05d, #a46730, #d4a05d);
+  padding: 2px;
+  border-radius: inherit;
+  
+  clip-path: polygon(
+    50% 1px,
+    100% 150px,
+    100% calc(100% - 130px),
+    50% 100%,
+    0% calc(100% - 130px),
+    0% 150px
+  );
+}
+
+.erent1 incon {
+
+  padding: 450px 20px 0;
+  width: 100%;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, rgb(46, 14, 60), #0b0918);
+  height: auto;
+  box-shadow: inset 0 0 10px rgb(0, 0, 0);
+  text-align: justify;
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;
+  font-size:13px;
+  color: #dddddd;
+  line-height: 1.4;
+ 
+  clip-path: polygon(
+    50% 1px,
+    100% 150px,
+    100% calc(100% - 130px),
+    50% 100%,
+    0% calc(100% - 130px),
+    0% 150px
+  );
+  
+}
+
+.erent1 incon:before {
+  position: absolute;
+  content: '';
+  top: 430px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 50px;
+
+  background: linear-gradient( 90deg, #c28837, #bb833c, #ffc61b, #bb833c, #b67837 );
+
+  -webkit-mask-image: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/1155601_OR9Z4R1.png');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  mask-image: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/1155601_OR9Z4R1.png');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+
+  pointer-events: none;
+  z-index: 5;
+}
+
+.erent1 incon:after {
+  position: absolute;
+  content: '';
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 50px;
+  
+  background: linear-gradient( 90deg, #c28837, #bb833c, #ffc61b, #bb833c, #b67837 );
+
+  -webkit-mask-image: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/1155601_OR9Z4R1.png');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  mask-image: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/1155601_OR9Z4R1.png');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 60%;
+
+  pointer-events: none;
+  z-index: 5;
+}
+
+
+.erent1 incon br {
+  display: inline;
+}
+
+.erent1 incon speak {
+	font-family: 'Amarante';
+  font-size: 16px;
+  font-weight: 400;
+  text-shadow: 0px 0px 2px #000000;
+  line-height: 0.9;
+}
+
+.erent1 speech {
+  display: inline-block;
+  width: 100%;
+  margin: -10px auto 20px;
+  font-size:30px;
+  color: #6171d2;
+  text-shadow: 1px 1px 2px #0a0906;
+  text-align: center;
+  line-height: 1;
+}
+
+.erent1 speech speak {
+  font-family: "Love Light", cursive;
+  font-weight: 400;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+
+.erent1 speak {
+  color: transparent;
+  background: linear-gradient(to bottom, #FAF880, #EA9250);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: none !important;
+}
+
+
+@media (max-width: 1200px) {
+  
+  .erent1 {
+    max-width: 450px;
+    width: 100%;
+    margin: 0;
+    left: 50%;
+    transform:translateX(-50%);
+  }
+  
+  .erent1 credit {
+    position:relative;
+    display: block;
+    inset:0;
+    width: 100%;
+    margin: auto;
+    text-align:center;
+    transform:none;
+  }
+  
+  .erent1 eren {
+    display: none;
+  }
+  
+  .erent1 t {
+    display: none;
+  }
+  
+  .erent1 bor, .erent1 con, .erent1 inbor, .erent1 incon {
+    border-radius: 0;
+    clip-path: none;
+    width: 100%;
+  }
+  
+  .erent1 con {
+    padding: 15px;
+  }
+  
+  .erent1 incon {
+    padding: 0 20px 0px;
+  }
+  
+  .erent1 incon:before {
+    display: none;
+  }
+  
+  .erent1 incon:after {
+    bottom:65px;
+  }
+  
+  .erent1 speech {
+    margin: -30px auto -5px;
+  }
+  
+}
