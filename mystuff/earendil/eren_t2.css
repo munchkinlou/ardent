@@ -126,7 +126,7 @@
 
 .erent2 incon {
 
-  padding: 170px 20px 0;
+  padding: 170px 30px 0;
   
   width: 100%;
   border-radius: inherit;
@@ -267,11 +267,11 @@
   
   
   .erent2 con {
-    padding: 15px;
+    padding: 10px;
   }
   
   .erent2 incon {
-    padding: 0 20px 0px;
+    padding: 0 15px 0px;
   }
   
   .erent2 incon:before {
