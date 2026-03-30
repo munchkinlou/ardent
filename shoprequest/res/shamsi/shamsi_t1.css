@@ -164,12 +164,16 @@
 .shamsit1 speech {
   display: inline-block;
   width: 100%;
-  margin: -10px auto -10px -5px;
+  margin: 30px auto 20px;
   font-size:30px;
   color: #6171d2;
   text-shadow: 1px 1px 2px #0a0906;
   text-align: center;
   line-height: 1;
+}
+
+.shamsit1 speech br {
+  display: none;
 }
 
 .shamsit1 speech speak {
@@ -217,14 +221,7 @@
   }
   
   .shamsit1 speech {
-    display: inline-block;
-    width: 100%;
-    margin: -10px auto -20px;
-    font-size:30px;
-    color: #6171d2;
-    text-shadow: 1px 1px 2px #0a0906;
-    text-align: center;
-    line-height: 1;
+    margin: 20px auto 10px;
   }
 
 
