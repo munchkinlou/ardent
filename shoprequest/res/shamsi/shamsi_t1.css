@@ -164,7 +164,7 @@
 .shamsit1 speech {
   display: inline-block;
   width: 100%;
-  margin: 30px auto 20px;
+  margin: 30px auto 20px -5px;
   font-size:30px;
   color: #6171d2;
   text-shadow: 1px 1px 2px #0a0906;
@@ -221,7 +221,7 @@
   }
   
   .shamsit1 speech {
-    margin: 20px auto 10px;
+    margin: 20px auto 10px -5px;
   }
 
 
