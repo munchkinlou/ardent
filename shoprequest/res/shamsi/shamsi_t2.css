@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+
+/*
+
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
+
+  font-family: "Amarante", serif;
+  font-weight: 400;
+
+  font-family: "Fleur De Leah", cursive;
+  font-weight: 400;
+
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400; 
+
+*/
+
+.shamsit2 {
+	position: relative;
+  width: 800px;
+  margin: 70px auto 30px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.shamsit2 credit {
+  position:absolute;
+  bottom: -17px;
+  right: 170px;
+  font-size:10px;
+  margin: 10px 10px 0 auto;
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
+}
+
+.shamsit2 shamsi {
+  position: absolute;
+  top: -97px;
+  left: 94px;
+  width: 585px;
+  height: 595px;
+  margin: 0 auto;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/Resin/shamsi/ShamsiOokamina.png?updatedAt=1774846362868')
+    no-repeat left;
+  background-size: contain; 
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(1px 1px 2px rgb(0, 0, 0));
+  
+}
+
+.shamsit2 bor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 450px;
+  padding: 5px;
+  margin: 0 auto;
+  
+  border: 3px solid;
+  border-image: linear-gradient(to bottom, #d58147, #7c1e0c) 1;
+  
+  border-radius: 0;
+  overflow: hidden;
+  
+  filter: drop-shadow(1px 1px 2px black);
+}
+
+.shamsit2 con {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: inherit;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  pointer-events: none;
+  margin: 0 auto;
+}
+
+.shamsit2 con::before {
+  border-radius: inherit;
+  content:'';
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  background: url('https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+}
+
+.shamsit2 inbor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #b47916, #be7c1a);
+  padding: 2px;
+  border-radius: 250px 250px 0 0;
+}
+
+.shamsit2 incon {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: inherit;
+  padding: 420px 25px 0px;
+  width: 100%;
+  background: linear-gradient(to bottom, rgb(107, 45, 17), #36140c);
+  height: auto;
+  box-shadow: inset 0 0 10px rgb(36, 13, 7);
+  text-align: justify;
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;
+  font-size:13px;
+  color: #dddddd;
+  line-height: 1.2;
+   
+}
+
+
+.shamsit2 incon:after {
+  position: absolute;
+  content: '';
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 29px;
+  
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/2378399_323869-P9DO7B-875.png')
+    no-repeat center;
+  background-size: contain;
+  
+  pointer-events: none;
+  
+  filter:brightness(10)
+    drop-shadow(1px 1px 1px black);
+  opacity: 0.8;
+  z-index: 5;
+}
+
+
+.shamsit2 incon br {
+  display: inline;
+}
+
+.shamsit2 incon speak {
+  display: inline;
+  color: #ffc94a;
+	font-family: 'Amarante';
+  font-size: 14px;
+  font-weight: 400;
+  text-shadow: 0px 0px 2px #000000;
+  line-height: 0.9;
+}
+
+.shamsit2 speech {
+  display: inline-block;
+  width: 100%;
+  margin: 30px auto 20px -5px;
+  font-size:30px;
+  color: #6171d2;
+  text-shadow: 1px 1px 2px #0a0906;
+  text-align: center;
+  line-height: 1;
+}
+
+.shamsit2 speech br {
+  display: none;
+}
+
+.shamsit2 speech speak {
+  font-family: "Fleur De Leah", cursive;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 1.5;
+}
+
+
+
+@media (max-width: 1200px) {
+  
+  .shamsit2 {
+    width: 100%;
+    margin: 0;
+  }
+
+  .shamsit2 bor {
+    max-width: 450px;
+    width: 100%;
+  }
+  .shamsit2 con {
+    padding: 10px;
+  }
+  
+  .shamsit2 shamsi {
+    display: none;
+  }
+  
+  .shamsit2 inbor {
+    border-radius: 0;
+  }
+  
+  .shamsit2 incon {
+    padding: 10px;
+  }
+  
+  .shamsit2 incon br:first-child {
+    display: none;
+  }
+
+  .shamsit2 credit {
+    display: block;
+    position:relative;
+    inset: auto;
+    margin: 5px auto 0;
+    text-align: center;
+  }
+  
+  .shamsit2 speech {
+    margin: 20px auto 10px -5px;
+  }
+
+}
