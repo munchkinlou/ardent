@@ -106,6 +106,7 @@
   text-align: justify;
   line-height: 1.2;
   text-shadow: 1px 1px 1px black;
+  box-shadow: inset 0 0 10px black;
   
   border: 5px solid white;
   border-image: linear-gradient(145deg, #182b84, #000109, #182b84) 1;
@@ -164,7 +165,6 @@
 }
 
 
-/*
 @media (max-width: 1200px){
   
   .bluebellt3 {
@@ -174,6 +174,9 @@
     left: 50%;
     transform: translateX(-50%);
     filter: none;
+    background: none;
+    padding: 0;
+    box-shadow: none;
   }
 
   .bluebellt3 bor {
@@ -183,41 +186,34 @@
   
   .bluebellt3 con {
     background: none;
-    padding:5px;
+    padding:0px;
+  }
+  
+  .bluebellt3 con video {
+    display: none;
   }
   
   .bluebellt3 incon {
-    padding: 80px 20px 50px;
-    background: linear-gradient(to top,#6947bd,#352363);
+    padding: 10px 25px 0;
     font-size: 12px;
+    border: none;
   }
   
   .bluebellt3 incon:before{
-    top:50px;
+    bottom:75px;
   }
   
   .bluebellt3 speech {
     z-index: 10;
-    margin: 0 auto -30px;
+    margin: -15px auto;
   }
   
   .bluebellt3 credit {
     position: relative;
     inset: 0;
-    margin: -20px auto 0;
+    margin: auto;
     display:block;
     transform: none;
-  }
-
-  .bluebellt3 inbor, .bluebellt3 incon {
-    mask: 
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -35 100 140' preserveAspectRatio='none'%3E%3Cpath d='M 0 100 H 100 V 18 Q 90 18, 90 0 H 80 C 65 -35, 35 -35, 20 0 H 10 Q 10 18, 0 18 Z' fill='black'/%3E%3C/svg%3E") top / 100% 250px no-repeat,
-      linear-gradient(black, black) 0 200px / 100% calc(100% - 400px) no-repeat,
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 140' preserveAspectRatio='none'%3E%3Cpath d='M 0 0 H 100 V 82 Q 90 82, 90 100 H 80 C 65 135, 35 135, 20 100 H 10 Q 10 82, 0 82 Z' fill='black'/%3E%3C/svg%3E") bottom / 100% 250px no-repeat;
-    -webkit-mask: 
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -35 100 140' preserveAspectRatio='none'%3E%3Cpath d='M 0 100 H 100 V 18 Q 90 18, 90 0 H 80 C 65 -35, 35 -35, 20 0 H 10 Q 10 18, 0 18 Z' fill='black'/%3E%3C/svg%3E") top / 100% 250px no-repeat,
-      linear-gradient(black, black) 0 200px / 100% calc(100% - 400px) no-repeat,
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 140' preserveAspectRatio='none'%3E%3Cpath d='M 0 0 H 100 V 82 Q 90 82, 90 100 H 80 C 65 135, 35 135, 20 100 H 10 Q 10 82, 0 82 Z' fill='black'/%3E%3C/svg%3E") bottom / 100% 250px no-repeat;
   }
 
 }
