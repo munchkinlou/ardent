@@ -238,11 +238,16 @@
 
   .rhiannont3 bor {
     margin: 30px 0;
+    padding: 2px;
     box-shadow: none;
   }
   
   .rhiannont3 bor, .rhiannont3 con, .rhiannont3 inbor, .rhiannont3 incon {
     border-radius: 0;
+  }
+  
+  .rhiannont3 con {
+    padding: 8px;
   }
   
   .rhiannont3 incon {
@@ -254,7 +259,7 @@
   }
   
   .rhiannont3 speech {
-    margin: 0 auto -30px;
+    margin: auto;
   }
   
   .rhiannont3 speech rhia {
