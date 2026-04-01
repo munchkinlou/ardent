@@ -36,16 +36,15 @@
 
 .bluebellt3 credit {
   position: absolute;
-  top: 71px;
-  right: -112px;
-  width: 200px;
+  inset: auto;
+  margin-top: 5px;
+  width: 100%;
   display:block;
   text-align:center;
   font-size: 11px;
   font-family: "Unica One", sans-serif;
   font-weight: bold;
   z-index: 10;
-  transform: rotate(90deg);
 }
 
 .bluebellt3 bor {
@@ -210,10 +209,8 @@
   
   .bluebellt3 credit {
     position: relative;
-    inset: 0;
     margin: auto;
     display:block;
-    transform: none;
   }
 
 }
