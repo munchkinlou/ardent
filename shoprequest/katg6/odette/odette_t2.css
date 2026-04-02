@@ -41,17 +41,17 @@
 
 .odettet2 ode {
   position: absolute;
-  top: -199px;
-  left: 31px;
-  width: 533px;
-  height: 646px;
+  top: -223px;
+  left: 8px;
+  width: 634px;
+  height: 688px;
   margin: 0 auto;
   background: url('https://ik.imagekit.io/arl60/Ardent/shop/KatG6/Odette/IMG_2351%202.png?updatedAt=1769634906789')
     no-repeat left;
   background-size: contain; 
   z-index: 5;
   pointer-events: none;
-  filter: drop-shadow(1px 1px 60px rgba(23, 33, 84, 0.38)) drop-shadow(1px 1px 2px #2f4688c4);
+  filter: drop-shadow(1px 1px 60px rgba(86, 61, 204, 0.23)) drop-shadow(1px 1px 2px #8099e175);
   
 }
 
@@ -111,7 +111,7 @@
   position: relative;
   box-sizing: border-box;
   border-radius: inherit;
-  padding: 400px 25px 0px;
+  padding: 430px 25px 0px;
   width: 100%;
   background: linear-gradient(to bottom, rgb(18, 32, 49) 250px, #0b0b21);
   height: auto;
@@ -162,11 +162,11 @@
 }
 
 .odettet2 incon:before {
-  top: 392px;
+  top: 425px;
   height: 20px;
 }
 .odettet2 incon:after {
-  bottom: 75px;
+  bottom: 70px;
   height: 16px;
 }
 
