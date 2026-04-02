@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Milonga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
+
+/*
+
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
+
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+
+  font-family: "Milonga", serif;
+  font-weight: 400;
+
+  font-family: "Lavishly Yours", cursive;
+  font-weight: 400;
+
+*/
+
+.odettet2 {
+	position: relative;
+  width: 600px;
+  margin: 160px auto 30px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.odettet2 credit {
+  position:absolute;
+  bottom: -17px;
+  right: 454px;
+  font-size:10px;
+  margin: 10px 10px 0 auto;
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
+}
+
+.odettet2 ode {
+  position: absolute;
+  top: -199px;
+  left: 31px;
+  width: 533px;
+  height: 646px;
+  margin: 0 auto;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/KatG6/Odette/IMG_2351%202.png?updatedAt=1769634906789')
+    no-repeat left;
+  background-size: contain; 
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(1px 1px 60px rgba(23, 33, 84, 0.38)) drop-shadow(1px 1px 2px #2f4688c4);
+  
+}
+
+.odettet2 bor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 450px;
+  padding: 2px;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, #5937a2, #000);
+  border-radius: 250px 250px 0 0;
+  overflow: hidden;
+  
+  box-shadow: 2px 2px 3px black, 1px 1px 2px black;
+}
+
+.odettet2 con {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: inherit;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  pointer-events: none;
+  margin: 0 auto;
+}
+
+
+.odettet2 con::before {
+  border-radius: inherit;
+  content:'';
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/starrynight.jpg?updatedAt=1753495763500');
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+  filter: brightness(3) hue-rotate(30deg) saturate(0.4);
+}
+
+.odettet2 inbor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #5e7fc5, #0c1733);
+  padding: 2px;
+  border-radius: inherit;
+  box-shadow: 2px 2px 3px black, 0 0 3px black;
+}
+
+.odettet2 incon {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: inherit;
+  padding: 400px 25px 0px;
+  width: 100%;
+  background: linear-gradient(to bottom, rgb(18, 32, 49) 250px, #0b0b21);
+  height: auto;
+  box-shadow: inset 0 0 10px rgb(10, 10, 40);
+  text-align: justify;
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-size:14px;
+  color: #aac7ce;
+  line-height: 1.2;
+  overflow: hidden;
+   
+}
+
+.odettet2 incon video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 450px;
+  object-fit: none;
+  object-position: center;
+  opacity: 1;
+  mask: linear-gradient(to top, transparent, black 40%);
+  -webkit-mask: linear-gradient(to top, transparent, black 40%);
+}
+
+.odettet2 incon:before, .odettet2 incon:after {
+  position: absolute;
+  content: '';
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+
+  background: linear-gradient( 90deg, #27254d, #7e93b7, #27254d);
+
+  -webkit-mask-image: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/2.png?updatedAt=1761259622322');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  mask-image: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/2.png?updatedAt=1761259622322');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+
+  pointer-events: none;
+  z-index: 5;
+}
+
+.odettet2 incon:before {
+  top: 392px;
+  height: 20px;
+}
+.odettet2 incon:after {
+  bottom: 75px;
+  height: 16px;
+}
+
+
+.odettet2 incon br {
+  display: inline;
+}
+
+.odettet2 incon speak {
+  display: inline;
+  color: #5c8cff;
+  font-family: "Milonga", serif;
+  font-weight: 400;
+  font-size: 15px;
+  text-shadow: none;
+  line-height: 1.1;
+  
+  color: transparent;
+  background: linear-gradient(to bottom, #7EC9FF, #7389FD);
+  -webkit-background-clip: text;
+  background-clip: text;
+
+}
+
+.odettet2 speech {
+  display: inline-block;
+  width: 100%;
+  margin: 30px auto 20px -8px;
+  text-align: center;
+  line-height: 1;
+}
+
+.odettet2 speech br {
+  display: none;
+}
+
+.odettet2 speech speak {
+  font-family: "Lavishly Yours", cursive;
+  font-weight: 400;
+  font-size: 32px;
+  letter-spacing: 2.2;
+}
+
+
+
+@media (max-width: 1200px) {
+  
+  .odettet2 {
+    width: 100%;
+    margin: 0;
+  }
+
+  .odettet2 bor {
+    max-width: 450px;
+    width: 100%;
+    border-radius: 0;
+  }
+  .odettet2 con {
+    padding: 10px;
+  }
+  
+  .odettet2 ode {
+    display: none;
+  }
+  
+  .odettet2 inbor {
+    border-radius: 0;
+  }
+  
+  .odettet2 incon {
+    padding: 0 15px 10px;
+  }
+  
+  .odettet2 incon video {
+    display: none;
+  }
+  
+  .odettet2 incon:before {
+    display: none;
+  }
+  
+  .odettet2 incon:after {
+    bottom: 65px;
+  }
+  
+  .odettet2 incon br:first-child {
+    display: none;
+  }
+
+  .odettet2 credit {
+    display: block;
+    position:relative;
+    inset: auto;
+    margin: 5px auto 0;
+    text-align: center;
+  }
+  
+  .odettet2 speech {
+    margin: 20px auto 10px -5px;
+  }
+
+}
