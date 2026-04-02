@@ -194,7 +194,7 @@
 .odettet2 speech {
   display: inline-block;
   width: 100%;
-  margin: 30px auto 20px -8px;
+	margin: 30px auto 20px 2px;
   text-align: center;
   line-height: 1;
 }
