@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Puppies+Play&display=swap');
+
+/*
+
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
+
+  font-family: "Bad Script", cursive;
+  font-weight: 400;
+
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400; 
+
+  font-family: "Puppies Play", cursive;
+  font-weight: 400;
+
+*/
+
+
+.bluebellt4 {
+  position:relative;
+  margin: 0px auto 60px;
+  padding: 2px;
+  width: 800px;
+  box-sizing: border-box;
+  filter: drop-shadow(2px 2px 3px #000000ed);
+}
+
+.bluebellt4 bb {
+  position: absolute;
+  cursor: pointer;
+  bottom: -63px;
+  left: 35px;
+  z-index: 10;
+  width: 100%;
+  height: 462px;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/Hermes/Bluebell/PmWc4jPC_o.png')
+    no-repeat center;
+  background-size: contain;
+  filter: drop-shadow(1px 1px 2px black)
+    drop-shadow(1px 1px 1px black);
+  transition: transform 1.3s ease;
+}
+
+.bluebellt4 bb:hover {
+  transform: scale(1.05);
+}
+
+@keyframes wiggle {
+  0%, 65% { transform: rotate(0deg); }
+  72% { transform: rotate(1deg); }
+  76% { transform: rotate(-0.7deg); }
+  80% { transform: rotate(0.5deg); }
+  84% { transform: rotate(-0.3deg); }
+  88% { transform: rotate(0.15deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.bluebellt4 bb2 {
+  position: absolute;
+  pointer-events: none;
+  top: 5px;
+  left: 312px;
+  z-index: 10;
+  width: 160px;
+  height: 160px;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/Hermes/Bluebell/bluebell2.png?updatedAt=1754596811902')
+    no-repeat center;
+  background-size: contain;
+  filter: drop-shadow(0px 0px 1px black);
+  transform-origin: top right;
+  animation: wiggle 8s ease-in-out infinite;
+  will-change: transform;
+}
+
+.bluebellt4 credit {
+  position: absolute;
+  bottom: 135px;
+  left: 65px;
+  width: 100px;
+  display:block;
+  text-align:center;
+  font-size: 11px;
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
+  z-index: 10;
+  transform: rotate(270deg);
+}
+
+
+.bluebellt4 bor {
+  margin: auto;
+  width: 550px;
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  padding: 5px;
+  background: linear-gradient(to bottom, #7c8cab, #2f3a4f);
+}
+
+.bluebellt4 con {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  z-index: 0;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/bluebells.jpg?updatedAt=1754596839045') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bluebellt4 inbor {
+  z-index: 10;
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #fbc040, #fecf6e, #fdc144);
+  padding: 3px;
+}
+
+.bluebellt4 incon {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  z-index: 6;
+  padding: 120px 35px 220px;
+  width: 100%;
+  overflow: visible;
+  background: linear-gradient(to bottom, #121b29,#445576);
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  text-align: justify;
+  line-height: 1.2;
+  text-shadow: 1px 1px 1px black;
+  
+  box-shadow: inset 0 0 10px black;
+}
+
+.bluebellt4 incon:before {
+  position: absolute;
+  content: '';
+  bottom: 332px;
+  left: 51%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 31px;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/325260-P9JJSQ-20(2).png?updatedAt=1775081495735');
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+  filter: drop-shadow(1px 1px 1px black)
+    hue-rotate(50deg);
+}
+
+.bluebellt4 incon bluebell {
+  text-shadow: none;
+  font-family: "Bad Script", cursive;
+  font-weight: 400;
+  font-size: 18px;
+  line-height:1;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8))
+    drop-shadow(0 0 1px rgba(0,0,0,0.8));
+  color: transparent;
+  background: linear-gradient(to bottom, #baed56, #73de3e);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.bluebellt4 speech {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+.bluebellt4 speech bluebell {
+  display: block;
+  margin: -10px auto 20px;
+  font-family: "Puppies Play", cursive;
+  font-weight: 400;
+  font-size:52px;
+}
+
+.bluebellt4 bor, .bluebellt4 con {
+  mask: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -35 100 140' preserveAspectRatio='none'%3E%3Cpath d='M 0 100 H 100 V 18 Q 90 18, 90 0 H 80 C 65 -35, 35 -35, 20 0 H 10 Q 10 18, 0 18 Z' fill='black'/%3E%3C/svg%3E") top / 100% 250px no-repeat,
+    linear-gradient(black, black) 0 200px / 100% calc(100% - 400px) no-repeat,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 140' preserveAspectRatio='none'%3E%3Cpath d='M 0 0 H 100 V 82 Q 90 82, 90 100 H 80 C 65 135, 35 135, 20 100 H 10 Q 10 82, 0 82 Z' fill='black'/%3E%3C/svg%3E") bottom / 100% 250px no-repeat;
+  -webkit-mask: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -35 100 140' preserveAspectRatio='none'%3E%3Cpath d='M 0 100 H 100 V 18 Q 90 18, 90 0 H 80 C 65 -35, 35 -35, 20 0 H 10 Q 10 18, 0 18 Z' fill='black'/%3E%3C/svg%3E") top / 100% 250px no-repeat,
+    linear-gradient(black, black) 0 200px / 100% calc(100% - 400px) no-repeat,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 140' preserveAspectRatio='none'%3E%3Cpath d='M 0 0 H 100 V 82 Q 90 82, 90 100 H 80 C 65 135, 35 135, 20 100 H 10 Q 10 82, 0 82 Z' fill='black'/%3E%3C/svg%3E") bottom / 100% 250px no-repeat;
+}
+
+.bluebellt4 inbor, .bluebellt4 incon{
+    mask: 
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -35 100 140' preserveAspectRatio='none'%3E%3Cpath d='M 0 100 H 100 V 18 Q 90 18, 90 0 H 80 C 65 -35, 35 -35, 20 0 H 10 Q 10 18, 0 18 Z' fill='black'/%3E%3C/svg%3E") top / 100% 250px no-repeat,
+      linear-gradient(black, black) 0 200px / 100% calc(100% - 400px) no-repeat,
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 140' preserveAspectRatio='none'%3E%3Cpath d='M 0 0 H 100 V 82 Q 90 82, 90 100 H 80 C 65 135, 35 135, 20 100 H 10 Q 10 82, 0 82 Z' fill='black'/%3E%3C/svg%3E") bottom / 100% 250px no-repeat;
+    -webkit-mask: 
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -35 100 140' preserveAspectRatio='none'%3E%3Cpath d='M 0 100 H 100 V 18 Q 90 18, 90 0 H 80 C 65 -35, 35 -35, 20 0 H 10 Q 10 18, 0 18 Z' fill='black'/%3E%3C/svg%3E") top / 100% 250px no-repeat,
+      linear-gradient(black, black) 0 200px / 100% calc(100% - 400px) no-repeat,
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 140' preserveAspectRatio='none'%3E%3Cpath d='M 0 0 H 100 V 82 Q 90 82, 90 100 H 80 C 65 135, 35 135, 20 100 H 10 Q 10 82, 0 82 Z' fill='black'/%3E%3C/svg%3E") bottom / 100% 250px no-repeat;
+}
+
+
+@media (max-width: 1200px){
+  
+  .bluebellt4 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    filter: none;
+    left: 50%;
+    transform:translateX(-50%);
+  }
+  
+  .bluebellt4 bb,
+  .bluebellt4 bb2 {
+    display: none;
+  }
+  
+  .bluebellt4 bor {
+    max-width: 450px;
+    width: 100%;
+    background: #2f3a4f;
+  }
+  
+  .bluebellt4 con {
+    padding: 8px;
+    background: #7c8cab;
+  }
+  
+  .bluebellt4 incon {
+    padding: 90px 25px 0;
+  }
+  
+  .bluebellt4 incon:before {
+    bottom: 110px;
+  }
+  
+  .bluebellt4 credit {
+    position: relative;
+    inset: auto;
+    margin-top: -20px;
+    width: 100%;
+    display:block;
+    text-align:center;
+    transform: none;
+  }
+
+
+}
