@@ -137,6 +137,7 @@
   opacity: 1;
   mask: linear-gradient(to top, transparent, black 40%);
   -webkit-mask: linear-gradient(to top, transparent, black 40%);
+	pointer-events:none;
 }
 
 .odettet2 incon:before, .odettet2 incon:after {
