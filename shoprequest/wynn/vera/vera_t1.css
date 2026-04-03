@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+
+/*
+
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
+
+  font-family: "Twinkle Star", cursive;
+  font-weight: 400;
+
+  font-family: "Fleur De Leah", cursive;
+  font-weight: 400;
+
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400; 
+
+*/
+
+.verat1 {
+	position: relative;
+  width: 600px;
+  margin: 120px auto 30px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.verat1 credit {
+  position:absolute;
+  bottom: -17px;
+  left: 93px;
+  font-size:10px;
+  margin: 10px 10px 0 auto;
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
+}
+
+.verat1 vera {
+  position: absolute;
+  top: -110px;
+  left: 63px;
+  width: 438px;
+  height: 481px;
+  margin: 0 auto;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/Wynn/Vera/plush.png?updatedAt=1775157705121')
+    no-repeat left;
+  background-size: contain; 
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(1px 1px 2px rgb(0, 0, 0));
+  
+}
+
+.verat1 bor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 420px;
+  padding: 2px;
+  margin: 0 auto;
+  
+  background: linear-gradient(to bottom, #18222d, #5d6678);
+  
+  border-radius: 250px 250px 0 0;
+  overflow: hidden;
+  
+  filter: drop-shadow(1px 1px 2px black);
+}
+
+.verat1 con {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: inherit;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  pointer-events: none;
+  margin: 0 auto;
+}
+
+.verat1 con::before {
+  border-radius: inherit;
+  content:'';
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/21449237_6484339.jpg?updatedAt=1760308548505');
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+  filter:hue-rotate(30deg) saturate(0.6);
+}
+
+.verat1 inbor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #fbfaf1, #8c9fbf);
+  padding: 3px;
+  border-radius: inherit;
+}
+
+.verat1 incon {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: inherit;
+  padding: 370px 30px 0px;
+  width: 100%;
+  background: linear-gradient(to bottom, rgb(78, 97, 123), #1c2338);
+  height: auto;
+  box-shadow: inset 0 0 10px rgb(6, 8, 12);
+  text-align: justify;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size:12px;
+  color: #dddddd;
+  line-height: 1.2;
+   
+}
+
+
+.verat1 incon:before {
+  position: absolute;
+  content: '';
+  top: 355px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 35px;
+
+  background: linear-gradient(90deg, #889ebd, #b7c9e8, #8b9fbf);
+
+  -webkit-mask-image: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/1155601_OR9Z4R1%202.png');
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-image: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/1155601_OR9Z4R1%202.png');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+
+  pointer-events: none;
+  filter: drop-shadow(1px 1px 1px black);
+  opacity: 1;
+  z-index: 5;
+}
+
+.verat1 incon:after {
+  position: absolute;
+  content: '';
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  height: 3px;
+  
+  border: 1.5px solid;
+  border-left: none;
+  border-right: none;
+  border-image: linear-gradient(90deg, #889ebd, #b7c9e8, #8b9fbf) 1;
+  opacity: 0.8;
+}
+
+.verat1 incon br {
+  display: inline;
+}
+
+.verat1 incon b, .verat1 incon .mycode_b {
+  display: inline;
+  font-family: "Twinkle Star", cursive;
+  font-weight: 400;
+  font-size: 16px;
+  text-shadow: none;
+  line-height: 1;
+  color: transparent !important;;
+  background: linear-gradient(to bottom, #52ff7e, #0ec355) !important;;
+  -webkit-background-clip: text !important;;
+  background-clip: text !important;;
+}
+
+.verat1 speech {
+  display: inline-block;
+  width: 100%;
+  margin: 30px auto 20px;
+  text-align: center;
+  line-height: 1;
+}
+
+.verat1 speech br {
+  display: none;
+}
+
+.verat1 speech b, .verat1 speech .mycode_b {
+  font-family: "Twinkle Star", cursive;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 1.5;
+}
+
+
+@media (max-width: 1200px) {
+  
+  .verat1 {
+    width: 100%;
+    margin: 0;
+    left: 50%;
+    transform:translateX(-50%);
+  }
+
+  .verat1 bor {
+    max-width: 450px;
+    width: 100%;
+    border-radius: 0;
+  }
+  .verat1 con {
+    padding: 10px;
+  }
+  
+  .verat1 vera {
+    display: none;
+  }
+  
+  .verat1 incon {
+    padding: 10px 15px;
+  }
+  
+  .verat1 incon:before {
+    top: auto;
+    bottom: 48px;
+    height: 26px;
+  }
+  
+  .verat1 incon:after {
+    display: none;
+  }
+  
+  .verat1 incon br:first-child {
+    display: none;
+  }
+
+  .verat1 credit {
+    display: block;
+    position:relative;
+    inset: auto;
+    margin: 5px auto 0;
+    text-align: center;
+  }
+  
+  .verat1 speech {
+    margin: 30px auto 10px;
+  }
+
+}
