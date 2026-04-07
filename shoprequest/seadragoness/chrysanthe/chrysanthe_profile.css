@@ -14,6 +14,7 @@ body {
 }
 
 h1 {
+    margin: -15px 0 !important;
     filter: drop-shadow(2px 2px 0.5px #3d2312);
     color: white;
     position: relative;
@@ -44,6 +45,7 @@ h1 i {
 }
 
 h2 {
+    position: relative;
     filter: drop-shadow(2px 2px 0.5px #3d2312);
     color: white;
     background: linear-gradient(90deg,
@@ -62,6 +64,42 @@ h2 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+h1::after {
+  content: ''; 
+  position: absolute;
+  top: -56px;
+  left: 99%; 
+  width: 148px;
+  height: 108px;
+  z-index:-1; 
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/Seadragoness/Chrysanthe/patron_reward._mar_26._seadragoness._prt1.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: drop-shadow(1px 1px 1px black);
+}
+
+
+.blocky:has(.profile-master) {
+    position: relative;
+}
+
+.blocky:has(.profile-master)::after {
+  content: ''; 
+  position: absolute;
+  top: -99px;
+  left: 49%; 
+  width: 159px;
+  height: 180px;
+  z-index:-1; 
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/Seadragoness/Chrysanthe/tiny.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: drop-shadow(1px 1px 1px black);
+}
+
 
 nav {
     background: rgba(25,30,37,0.8) !important;
@@ -139,7 +177,7 @@ nav a:hover {
 }
 
 .blocky {
-	font-size: 14px;
+	font-size: 14px !important;
 	text-align: center;
 	backdrop-filter: blur(2px);
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), 0 5px 10px rgba(0, 0, 0, 0.5);
@@ -149,9 +187,9 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    padding: 15px 10px 25px;
+    align-content: flex-start;
     flex-wrap: wrap;
+    padding: 20px 10px 26px;
     font-family: "Ysabeau Infant", sans-serif;
     font-size: 18px; 
 }
@@ -239,8 +277,8 @@ nav a:hover {
 }
 
 .info_appwrap {
-    position: relative;
-    display: inline-block;
+    position: relative !important;
+    margin: 20px 0;
 }
 
 .info_appimg {
@@ -283,13 +321,21 @@ nav a:hover {
 
 .hover_appimg {
     position: absolute;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: auto;
     opacity: 0;
     z-index: 2;
     transition: opacity 1.2s cubic-bezier(0.77, 0, 0.175, 1), filter 1.6s cubic-bezier(0.77, 0, 0.175, 1);
     display: block;
 }
 
+.hover_appimg img {
+    width: 120%;
+    height: 100%;
+    object-fit: cover;
+}
 
 .info_appwrap:hover .base_appimg {
      opacity: 0;
@@ -307,7 +353,7 @@ nav a:hover {
     box-sizing: border-box;
     text-align: center;
     font-family: 'Bailenson', sans-serif !important;
-    font-size: 50px;
+    font-size: 45px;
     color: #ebc779;
     width: 100%;
     line-height: 1.2;
@@ -414,6 +460,23 @@ nav a:hover {
         2px 2px 0.5px #3d2312;
 }
 
+.subforums {
+    gap: 5px !important;
+    padding: 5px 0 !important;
+}
+
+.subforums a {
+    background: none !important;
+    text-transform: capitalize !important;
+    font-family: "Ysabeau Infant", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    border-bottom: 2px solid #865a30;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+
 @media (max-width: 1200px) {
     .profav, .info_appq {
         display: none;
@@ -424,4 +487,14 @@ nav a:hover {
         height: auto;
         margin: 0 auto;
     }
+    
+     h1::after {
+      display: none;
+    }
+
+    .blocky:has(.profile-master)::after {
+     display: none;
+    }
+
+    
 }
