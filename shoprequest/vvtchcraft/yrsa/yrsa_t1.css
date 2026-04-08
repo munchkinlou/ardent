@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@font-face {
+  font-family: 'norse';
+  src: url('https://munchkinlou.github.io/ardent/mystuff/kjartan/VikingNormal-36VL.otf') format('truetype');
+}
+
+/*
+
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
+
+  font-family: "Amarante", serif;
+  font-weight: 400;
+
+  font-family: "norse", serif;
+  font-weight: 400;
+
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400; 
+
+*/
+
+.yrsat1 {
+	position: relative;
+  width: 600px;
+  margin: 20px auto 40px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.yrsat1 credit {
+  position:absolute;
+  bottom: -17px;
+  right: 44px;
+  font-size:10px;
+  margin: 10px 10px 0 auto;
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
+}
+
+.yrsat1 yrsa {
+  position: absolute;
+  bottom: -87px;
+  left: -31px;
+  width: 649px;
+  height: 597px;
+  margin: 0 auto;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/vvtcraft/yrsa/yrsa_edit_by_tooel_dl9md9o-fullview.png')
+    no-repeat left;
+  background-size: contain; 
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(1px 1px 2px rgb(0, 0, 0))
+    drop-shadow(1px 1px 2px rgb(0, 0, 0));
+  
+}
+
+.yrsat1 bor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 500px;
+  padding: 8px;
+  margin: 0 auto;
+  
+  border: 3px solid;
+  border-image: linear-gradient(to bottom, #1c1c1c, #8e8e85) 1;
+  
+  border-radius: 0;
+  overflow: hidden;
+  
+  filter: drop-shadow(1px 1px 2px black);
+}
+
+.yrsat1 con {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: inherit;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  pointer-events: none;
+  margin: 0 auto;
+}
+
+.yrsat1 con::before {
+  border-radius: inherit;
+  content:'';
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  background: url('https://images.unsplash.com/photo-1767715761416-655ace4bd084?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+}
+
+.yrsat1 inbor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #acaa9b, #abaa9b);
+  padding: 3px;
+  border-radius: inherit;
+  box-shadow: 1px 1px 5px black;
+}
+
+.yrsat1 incon {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: inherit;
+  padding: 0 30px 310px;
+  width: 100%;
+  background: linear-gradient(to bottom, rgb(15, 13, 17), #2f3233);
+  height: auto;
+  box-shadow: inset 0 0 10px rgb(6, 8, 12);
+  text-align: justify;
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;
+  font-size:13px;
+  color: #dddddd;
+  line-height: 1.2;
+   
+}
+
+.yrsat1 incon:after {
+  position: absolute;
+  content: '';
+  bottom: 420px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 89%;
+  height: 3px;
+  
+  border: 1.5px solid;
+  border-left: none;
+  border-right: none;
+  border-image: linear-gradient(90deg, #813f0a, #f8b96a, #813f0a) 1;
+  opacity: 0.8;
+}
+
+.yrsat1 incon br {
+  display: inline;
+}
+
+.yrsat1 incon speak, .yrsat1 incon nor {
+  display: inline;
+  font-family: "Amarante", serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-shadow: none;
+  line-height: 1;
+  color: transparent !important;;
+  background: linear-gradient(to bottom, #ffb758, #c16519) !important;;
+  -webkit-background-clip: text !important;;
+  background-clip: text !important;;
+}
+
+.yrsat1 incon nor {
+  color: transparent !important;;
+  background: linear-gradient(to bottom, #a3f9ff, #32ebf9) !important;;
+  -webkit-background-clip: text !important;;
+  background-clip: text !important;;
+}
+
+
+.yrsat1 speech {
+  display: inline-block;
+  width: 100%;
+  margin: 30px auto 20px;
+  text-align: center;
+  line-height: 1;
+}
+
+.yrsat1 speech br {
+  display: none;
+}
+
+.yrsat1 speech speak {
+  display: block;
+  font-family: "norse", serif;
+  font-weight: 400;
+  font-size: 49px;
+  letter-spacing: 1.5;
+}
+
+.yrsat1 speech nor {
+  display: block;
+  font-size: 20px;
+  letter-spacing: 1.5;
+}
+
+
+@media (max-width: 1200px) {
+  
+  .yrsat1 {
+    width: 100%;
+    margin: 0;
+    left: 50%;
+    transform:translateX(-50%);
+  }
+
+  .yrsat1 bor {
+    max-width: 450px;
+    width: 100%;
+    border-radius: 0;
+    border: none;
+    padding: 0;
+  }
+  .yrsat1 con {
+    padding: 0px;
+  }
+  
+  .yrsat1 con:before {
+    display: none;
+  }
+  
+  .yrsat1 yrsa {
+    display: none;
+  }
+  
+  .yrsat1 incon {
+    padding: 10px 20px;
+  }
+  
+  
+  .yrsat1 incon:after {
+    bottom: 110px;
+  }
+  
+  .yrsat1 incon br:first-child {
+    display: none;
+  }
+
+  .yrsat1 credit {
+    display: block;
+    position:relative;
+    inset: auto;
+    margin: 5px auto 0;
+    text-align: center;
+  }
+  
+  .yrsat1 speech {
+    margin: 30px auto 10px;
+  }
+
+}
