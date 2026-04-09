@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
 
 /*
   font-family: "Love Light", cursive;
@@ -22,33 +23,30 @@
   padding: 0;
   background:transparent;
   box-sizing: border-box;
+  width: 800px;
 }
 
 
 .astariont3 credit {
   position: absolute;
-  width: 100%;
   display:block;
 
-  font-family: arial;
-  text-transform: uppercase;
-  font-size: 11px;
+  font-family: "Unica One", arial;
+  text-transform: lowercase;
+  font-size: 12px;
   font-weight: bold;
 
   bottom:-20px;
-  left:10px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  right:191px;
 }
 
 .astariont3_img {
   position: absolute;
-  bottom: -179px;
-  left: -160px;
-  width: 159%;
-  height: 476px;
-  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Astarion/munchkinlou%20f.png?updatedAt=1762797831915') no-repeat bottom;
+  bottom: -207px;
+  left: 11px;
+  width: 107%;
+  height: 780px;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Astarion/Wolf_Lines_7%202.png?updatedAt=1775710325665') no-repeat bottom;
     background-size: auto;
   background-size: contain;
   z-index: 5;
@@ -58,12 +56,12 @@
 
 .astariont3_bor {
   position: relative;
-  width: 100%;
-  background: linear-gradient(to bottom, #F5B07D,#FFEFA0,#F5B07D);
+  width: 420px;
+  background: linear-gradient(to bottom, #fddd7f,black);
   padding: 2px;
   box-sizing: border-box;
-  margin: 0 auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  margin: 0 100px 0 auto;
+  box-shadow: 1px 1px 2px black;
   overflow:hidden;
 }
 
@@ -98,10 +96,10 @@
 .astariont3_incon {
   position: relative;
   overflow: hidden;
-  padding: 5px 15px 260px;
+  padding: 5px 15px 330px;
   width: 100%;
   box-sizing: border-box;
-  background: linear-gradient(to bottom, #232131, #18181C5E);
+  background: linear-gradient(to bottom, #2f2f2f, #0a0e137d);
   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.8);
   text-align: justify;
   font-family: "Winky Rough", sans-serif;
@@ -110,16 +108,7 @@
   color: #fff8f1;
   line-height: 1.2;
   border-radius:20px;
-}
-
-.astariont3_incon d {
-  display:block;
-  margin:0 auto;
-  width:100%;
-  height:10px;
-
-  border-top: 1.1px solid;
-  border-image: linear-gradient(to right, transparent, #F5B07D,#FFEFA0,#F5B07D, transparent) 1;
+  min-height: 460px;
 }
 
 .astariont3_incon speak {
@@ -135,19 +124,26 @@
 .astariont3_speech {
   display: block;
   position:absolute;
-  bottom: 157px;
-  left: 67px;
+  bottom: 226px;
+  left: 50%;
+  transform:translateX(-50%);
+  width: 100%;
+  padding-right: 20px;
   margin: 0 auto;
   text-align: center;
   line-height: 0.8;
-  padding-top: 10px;
+  padding-top: 20px;
+  
+  border-top: 1.1px solid;
+  border-image: linear-gradient(to right, transparent, #FFD778, transparent) 1;
+
 }
 
 .astariont3_speech speak {
   font-family: "Love Light", cursive;
   font-weight: 400;
   text-shadow: none;
-  font-size: 60px;
+  font-size: 50px;
   line-height: 1.1;
   filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
 }
@@ -169,6 +165,10 @@
   .astariont3_con::before {
     display: none;
   }
+  
+  .astariont3_incon {
+    min-height: 0;
+  }
 
 .astariont3 credit {
   position: relative;
@@ -178,9 +178,11 @@
 }
 
 .astariont3_speech {
-  position: relative;
-  inset:auto;
-  padding:0;
+  display: block;
+  position:relative;
+  inset: auto;
+  transform:none;
+  padding-right: 0p;
 }
 
 .astariont3_img {
