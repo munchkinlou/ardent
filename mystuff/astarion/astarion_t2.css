@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
 
 /*
   font-family: "Love Light", cursive;
@@ -15,7 +16,7 @@
 
 .astariont2 {
 	position: relative;
-  width: 500px;
+  width: 600px;
   margin: 20px auto 40px;
   position: relative;
   overflow: visible;
@@ -32,9 +33,9 @@
   width: 100%;
   display:block;
   text-align:center;
-  font-family: arial;
-  text-transform: uppercase;
-  font-size: 11px;
+  font-family: "Unica One", arial;
+  text-transform: lowercase;
+  font-size: 12px;
   font-weight: bold;
   z-index: 10;
 }
@@ -42,24 +43,24 @@
 .astariont2_bor {
   position: relative;
   width: 100%;
-  background: linear-gradient(to bottom, #D7C099, black);
-  padding: 3px;
+  background: linear-gradient(to bottom, #DCC988, #af8640);
+  padding: 2px;
   box-sizing: border-box;
   margin: 0 auto;
   border-radius: 400px 400px 0 0;
   overflow:hidden;
 
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.67);
 }
 
 .astariont2_con {
   position: relative;
   width: 100%;
-  padding: 500px 20px 20px;
+  padding: 250px 20px 20px;
   box-sizing: border-box;
   margin: 0 auto;
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
-  background: linear-gradient(to bottom, black 600px, #1c0101);
+  background: linear-gradient(to bottom, black 100px, #1c0101);
   border-radius: 400px 400px 0 0;
 
 }
@@ -73,13 +74,36 @@
   border-radius: 400px 400px 0 0;
 
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
-  background: url('https://ik.imagekit.io/arl60/Ardent/personal/Astarion/AstarionbyEdith.png?updatedAt=1755814301623') no-repeat;
-  background-size: 130%;
+  background: url('https://ik.imagekit.io/arl60/Ardent/personal/Backgrounds/ethereal_4k.png?updatedAt=1773769905517') no-repeat;
+  background-size: 200%;
   background-position: -60px 0px;
   background-attachment: local;
+  
+  filter: saturate(0.8) hue-rotate(20deg);
+  
+  pointer-events: none;
 
   z-index:1;
 }
+
+.astariont2_con::after {
+  position:absolute;
+  content:'';
+  width:100%;
+  height:100%;
+  inset:0;
+  border-radius: 400px 400px 0 0;
+
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+  background: linear-gradient(to bottom, transparent 400px, #0a0d24 560px);
+  
+  filter: saturate(0.8) hue-rotate(20deg);
+  
+  pointer-events: none;
+
+  z-index:1;
+}
+
 
 .astariont2_con > * {
   position: relative;
@@ -89,10 +113,10 @@
 .astariont2_incon {
   position: relative;
   overflow: hidden;
-  padding: 10px 20px;
+  padding: 60px 20px 10px;
   width: 100%;
   box-sizing: border-box;
-  background: linear-gradient(to bottom, rgba(0,0,0,0), #300101);
+  background: linear-gradient(to bottom, rgba(0,0,0,0), #10152a);
   text-align: justify;
   font-family: "Winky Rough", sans-serif;
   font-weight: 400;
@@ -100,7 +124,7 @@
   color: #ffece7;
   line-height: 1.2;
   border: 1px solid;
-  border-image: linear-gradient(to bottom, rgba(0,0,0,0), #A7633C, #FFFFE9) 1;
+  border-image: linear-gradient(to bottom, rgba(0,0,0,0), #2A7EB8, #8FE7F9) 1;
   border-top:none;
 }
 
@@ -157,7 +181,7 @@
   background:none;
 }
 
-  .astariont2_con::before {
+  .astariont2_con::before, .astariont2_con::after {
     display: none;
   }
 
@@ -178,4 +202,3 @@
 }
 
 }
-
