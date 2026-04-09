@@ -43,7 +43,7 @@
   left: -92px;
   width: 100%;
   height: 152px;
-  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Astarion/AstarionbyPinkyPoodle.png?updatedAt=1755814326655') no-repeat center top;
+  background: transparent url('') no-repeat center top;
   background-size: contain; 
   z-index: 5;
   pointer-events: none;
@@ -96,7 +96,7 @@
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  padding: 10px 20px 50px;
+  padding: 10px 20px 0;
   width: 100%;
   box-sizing: border-box;
   background: rgba(0,0,0,0.8);
@@ -122,13 +122,13 @@
 .astariont1_speech {
   display: block;
   position: relative;
-  margin: -20px 0 -70px 0;
-  padding-right: 15px;
+  margin: -10px auto -30px;
   font-family: 'Love Light';
   font-weight: bold;
   color: #DBBA9C;
   font-size: 50px;
-  text-align: right;
+  text-align: center;
+  padding-left: 20px;
   line-height: 1;
   drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8))
 }
@@ -162,4 +162,3 @@
   }
 
 }
-
