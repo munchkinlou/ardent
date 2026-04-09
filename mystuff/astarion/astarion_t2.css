@@ -158,7 +158,7 @@
 
 .astariont2_incon speak, .astariont2_speech speak {
   color: transparent;
-  background: linear-gradient(to bottom, #FFFFE9, #A7633C);
+  background: linear-gradient(to bottom, #FFFFE9, #E8C355);
   -webkit-background-clip: text;
   background-clip: text;
 }
@@ -171,7 +171,7 @@
   width: 100%;
   height: 1.1px;
   margin: 0px auto 0;
-  background: linear-gradient(to right, transparent, #FFFFE9, transparent);
+  background: linear-gradient(to right, transparent, #5ABEFA, transparent);
 }
 
 @media (max-width: 1200px) {
