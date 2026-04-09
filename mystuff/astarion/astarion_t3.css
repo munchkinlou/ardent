@@ -85,7 +85,7 @@
   background-position:bottom;
   background-attachment:fixed;
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.9);
-  filter: grayscale(0.7);
+  filter: grayscale(0.4);
 }
 
 .astariont3_con > * {
@@ -99,7 +99,7 @@
   padding: 5px 15px 330px;
   width: 100%;
   box-sizing: border-box;
-  background: linear-gradient(to bottom, #2f2f2f, #0a0e137d);
+  background: linear-gradient(to bottom, #172b46c4, #0a1a2d00);
   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.8);
   text-align: justify;
   font-family: "Winky Rough", sans-serif;
@@ -132,7 +132,7 @@
   margin: 0 auto;
   text-align: center;
   line-height: 0.8;
-  padding-top: 20px;
+  padding-top: 10px;
   
   border-top: 1.1px solid;
   border-image: linear-gradient(to right, transparent, #FFD778, transparent) 1;
@@ -193,4 +193,3 @@
 }
 
 }
-
