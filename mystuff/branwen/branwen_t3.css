@@ -166,7 +166,7 @@
   background: linear-gradient(to bottom, #996646,#311d0e);
   font-family: "Didact Gothic", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 15px;
   color: #ffe9cc;
   text-align: justify;
   line-height: 1.2;
@@ -195,8 +195,8 @@
   bottom: 164px;
   left: 50%;
   transform: translateX(-50%);
-  width: 83%;
-  height: 3px;
+  width: 84%;
+  height: 6px;
   z-index: 6;
   
   border: 1.5px solid;
