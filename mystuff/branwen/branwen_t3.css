@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
+/*
+  font-family: "Unica One", sans-serif;
+
+  font-family: "Love Light", cursive;
+  font-weight: 400;
+
+  font-family: "Amarante", serif;
+  font-weight: 400;
+
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;
+*/
+
+.branwent3 {
+  position:relative;
+  margin: 80px auto 20px;
+  padding: 2px;
+  width: 800px;
+  box-sizing: border-box;
+  filter: drop-shadow(2px 2px 3px #000000ed);
+  /*! background: white; */
+}
+
+.branwent3 branwen {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 511px;
+
+  top: -23px;
+  --pos: -25px;
+  left: var(--pos);
+  background: var(--outfit)
+    no-repeat center;
+  background-size: contain;
+  filter: drop-shadow(1px 1px 2px black)
+    drop-shadow(1px 1px 1px black);
+  transition: transform 1.3s ease;
+}
+
+.branwent3 branwen[id="base" i] {
+    --outfit: url('https://ik.imagekit.io/arl60/Ardent/personal/Branwen/ref_right.png?updatedAt=1775852284578');
+}
+
+.branwent3 branwen[id="base2" i] {
+    --outfit: url('https://ik.imagekit.io/arl60/Ardent/personal/Branwen/ref_left.png?updatedAt=1775852284424');
+    --pos: 30px;
+}
+
+.branwent3 branwen[id="formal" i] {
+    --outfit: url('https://ik.imagekit.io/arl60/Ardent/personal/Branwen/Andybranwengreenjewels.png?updatedAt=1775839549091');
+}
+
+.branwent3 branwen[id="flowers" i] {
+    --outfit: url('https://ik.imagekit.io/arl60/Ardent/personal/Branwen/Crownpetals_Andybranwenrightside.png?updatedAt=1775856776128');
+}
+
+.branwent3 branwen[id="leaves" i] {
+    --outfit: url('https://ik.imagekit.io/arl60/Ardent/personal/Branwen/LeafsAndybranwenrightside.png?updatedAt=1775856795661');
+}
+
+.branwent3 branwen[id="plush" i] {
+    --outfit: url('https://ik.imagekit.io/arl60/Ardent/personal/Branwen/plashie.png?updatedAt=1775856804598');
+    --pos: 34px;
+}
+
+
+.branwent3 credit {
+  position: absolute;
+  bottom: 135px;
+  left: 65px;
+  width: 100px;
+  display:block;
+  text-align:center;
+  font-size: 11px;
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
+  z-index: 10;
+  transform: rotate(270deg);
+}
+
+
+.branwent3 bor {
+  margin: auto;
+  width: 550px;
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  padding: 3px;
+  background: linear-gradient(90deg, #20160c, #1d150c);
+}
+
+.branwent3 con {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  z-index: 0;
+  width: 100%;
+  padding: 20px;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #462d1d, #140e09);
+
+  --brandiv-top: 480px;
+  --brandiv-left: 50%;
+  --brandiv-w: 86%;
+  --brandiv-h: 64px;
+  --brandiv-img: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/2378399_323869-P9DO7B-875.png?updatedAt=1774888565684');
+  --brandiv-grad: linear-gradient(90deg, #f5e4a0, #ffd866, #fff3d0, #ffd866, #f5e4a0);
+}
+
+.branwent3 con:after {
+  position: absolute;
+  content: '';
+  top: var(--brandiv-top);
+  left: var(--brandiv-left);
+  transform: translateX(-50%);
+  width: var(--brandiv-w);
+  height: var(--brandiv-h);
+  background: var(--brandiv-img) top / contain no-repeat;
+  filter: drop-shadow(1px 1px 2px black);
+  z-index: 4;
+  pointer-events: none;
+}
+
+.branwent3 con:before {
+  position: absolute;
+  content: '';
+  top: var(--brandiv-top);
+  left: var(--brandiv-left);
+  transform: translateX(-50%);
+  width: var(--brandiv-w);
+  height: var(--brandiv-h);
+  background: var(--brandiv-grad);
+  -webkit-mask: var(--brandiv-img) top / contain no-repeat;
+  mask: var(--brandiv-img) top / contain no-repeat;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.branwent3 con sh {
+  position: relative;
+  filter: drop-shadow(0px 0px 5px black);
+}
+
+.branwent3 inbor {
+  z-index: 10;
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #f5e4a0, #ffd866, #fff3d0, #ffd866, #f5e4a0);
+  padding: 3px;
+}
+
+.branwent3 incon {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  padding:510px 40px 170px;
+  width: 100%;
+  overflow: visible;
+  background: linear-gradient(to bottom, #996646,#311d0e);
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffe9cc;
+  text-align: justify;
+  line-height: 1.2;
+  text-shadow: 1px 1px 1px black;
+  
+  box-shadow: inset 0 0 10px black;
+ }
+
+.branwent3 incon:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('https://ik.imagekit.io/arl60/Ardent/personal/Branwen/filibg.png?updatedAt=1775870643706')
+    no-repeat top;
+  background-size: 200%;
+  filter: brightness(0.8) hue-rotate(-50deg);
+  opacity: 0.5;
+  -webkit-mask: linear-gradient(to bottom, black 300px, transparent 500px);
+  mask: linear-gradient(to bottom, black 200px, transparent 800px);
+  pointer-events: none;
+}
+
+.branwent3 incon:after {
+  position: absolute;
+  content: '';
+  bottom: 164px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 83%;
+  height: 3px;
+  z-index: 6;
+  
+  border: 1.5px solid;
+  border-left: none;
+  border-right: none;
+  border-image: linear-gradient(90deg, #f5e4a0, #ffd866, #fff3d0, #ffd866, #f5e4a0) 1; 
+  opacity: 0.8;
+  filter: drop-shadow(1px 1px 1px black);
+  pointer-events: none;
+}
+
+
+.branwent3 incon speak, .branwent3 incon car {
+  font-family: "Amarante", serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  text-shadow: none;
+  line-height: 1.1;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
+}
+
+.branwent3 speech {
+  display: block;
+  position:absolute;
+  bottom:41px;
+  left:120px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 0.8;
+  padding-top: 10px;
+}
+
+.branwent3 speech speak, .branwent3 speech car {
+  font-family: "Love Light", cursive;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.1;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.8)) drop-shadow(0 0 1px rgba(0,0,0,0.8));
+}
+
+.branwent3 speech car {
+  display: block;
+  font-size: 40px;
+  text-transform: lowercase;
+  padding-left: 90px;
+  margin-top: -26px;
+}
+
+.branwent3 incon speak {
+  color: transparent;
+  background: linear-gradient(to bottom, #4beaaf, #30ea98);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.branwent3 incon car {
+  color: transparent;
+  background: linear-gradient(to bottom, #ffbc75, #ffae46);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.branwent3 bor, .branwent3 con {
+  --branwent3-top: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -35 100 140' preserveAspectRatio='none'%3E%3Cpath d='M 0 100 H 100 V 18 Q 90 18, 90 0 H 80 C 65 -35, 35 -35, 20 0 H 10 Q 10 18, 0 18 Z' fill='black'/%3E%3C/svg%3E");
+  --branwent3-bot: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 140' preserveAspectRatio='none'%3E%3Cpath d='M 0 0 H 100 V 82 Q 90 82, 90 100 H 80 C 65 135, 35 135, 20 100 H 10 Q 10 82, 0 82 Z' fill='black'/%3E%3C/svg%3E");
+  --branwent3-mid: linear-gradient(black, black);
+  mask: var(--branwent3-top) top / 100% 240px no-repeat, var(--branwent3-mid) 0 200px / 100% calc(100% - 400px) no-repeat, var(--branwent3-bot) bottom / 100% 250px no-repeat;
+  -webkit-mask: var(--branwent3-top) top / 100% 240px no-repeat, var(--branwent3-mid) 0 200px / 100% calc(100% - 400px) no-repeat, var(--branwent3-bot) bottom / 100% 250px no-repeat;
+}
+
+.branwent3 inbor, .branwent3 incon{
+    mask: 
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -35 100 140' preserveAspectRatio='none'%3E%3Cpath d='M 0 100 H 100 V 18 Q 90 18, 90 0 H 80 C 65 -35, 35 -35, 20 0 H 10 Q 10 18, 0 18 Z' fill='black'/%3E%3C/svg%3E") top / 100% 250px no-repeat,
+      linear-gradient(black, black) 0 200px / 100% calc(100% - 400px) no-repeat,
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 140' preserveAspectRatio='none'%3E%3Cpath d='M 0 0 H 100 V 82 Q 90 82, 90 100 H 80 C 65 135, 35 135, 20 100 H 10 Q 10 82, 0 82 Z' fill='black'/%3E%3C/svg%3E") bottom / 100% 250px no-repeat;
+    -webkit-mask: 
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -35 100 140' preserveAspectRatio='none'%3E%3Cpath d='M 0 100 H 100 V 18 Q 90 18, 90 0 H 80 C 65 -35, 35 -35, 20 0 H 10 Q 10 18, 0 18 Z' fill='black'/%3E%3C/svg%3E") top / 100% 250px no-repeat,
+      linear-gradient(black, black) 0 200px / 100% calc(100% - 400px) no-repeat,
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 140' preserveAspectRatio='none'%3E%3Cpath d='M 0 0 H 100 V 82 Q 90 82, 90 100 H 80 C 65 135, 35 135, 20 100 H 10 Q 10 82, 0 82 Z' fill='black'/%3E%3C/svg%3E") bottom / 100% 250px no-repeat;
+}
+
+
+@media (max-width: 1200px){
+  
+  .branwent3 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    filter: none;
+    left: 50%;
+    transform:translateX(-50%);
+  }
+  
+  .branwent3 branwen {
+    display: none;
+  }
+  
+  .branwent3 bor {
+    max-width: 450px;
+    width: 100%;
+  }
+  
+  .branwent3 con {
+    padding: 8px;
+  }
+  
+  .branwent3 con:before, .branwent3 con:after {
+    top: 60px;
+  }
+  
+  .branwent3 incon {
+    padding: 100px 25px 170px;
+  }
+  
+  .branwent3 incon:before {
+    display: none;
+  }
+  
+  .branwent3 incon:after {
+    bottom: 160px;
+    width: 90%;
+  }
+  
+  .branwent3 speech {
+    left: 85px;
+  }
+  
+  .branwent3 credit {
+    position: relative;
+    inset: auto;
+    margin-top: -20px;
+    width: 100%;
+    display:block;
+    text-align:center;
+    transform: none;
+  }
+
+}
