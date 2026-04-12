@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap');
-@font-face {
-    font-family: 'Bailenson';
-    src: url('Bailenson-4B0ep.otf') format('truetype');
-  }
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap');
+
+/*
+  font-family: "Cormorant Upright", serif;
+  font-weight: 400;
+*/
 
 body {
 	position: relative;
@@ -20,7 +20,6 @@ body:after {
 h1 {
     margin: 0 !important;
     filter: drop-shadow(2px 2px 0.5px #3d2312);
-    color: white;
     position: relative;
     z-index: 1;
     font-family: "Bailenson", sans-serif;
@@ -101,6 +100,10 @@ nav {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
     border-radius: 0 0 20px 20px;
     margin: 0 10px;
+    font-family: "Cormorant Upright", serif;
+    font-weight: 400;
+    font-size: 15px !important;
+    text-transform: lowercase;
 }
 
 nav a {
@@ -134,7 +137,11 @@ nav a:hover {
 	border: 2px solid;
     border-image: linear-gradient(to right, transparent, 60%, #73322b) 1;
     border-radius: 10px;
-    padding: 10px 0;
+    padding: 10px 10px 10px 0;
+    font-family: "Cormorant Upright", serif;
+    font-weight: 400;
+    font-size: 20px !important;
+    text-transform: lowercase;
 }
 
 .tabnav a,
@@ -175,7 +182,7 @@ nav a:hover {
 
 .blocky {
     position: relative;
-    padding: 20px 10px 30px;
+    padding: 20px 30px 30px;
     
     background: linear-gradient(145deg, #000000e0, #15051ede);
     border-radius: 80px 0;
