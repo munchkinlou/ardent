@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap');
 
 /*
   font-family: "Cormorant Upright", serif;
+  font-weight: 400;
+
+  font-family: "Lovers Quarrel", cursive;
   font-weight: 400;
 */
 
@@ -17,14 +21,23 @@ body:after {
     filter: saturate(0.8) brightness(0.8);
 }
 
+#content {
+    position: relative;
+}
+
 h1 {
+    position: absolute !important;
     margin: 0 !important;
+    top: 15px;
+    left: 80px;
+    overflow: visible;
     filter: drop-shadow(2px 2px 0.5px #3d2312);
     position: relative;
     z-index: 1;
-    font-family: "Bailenson", sans-serif;
+    font-family: "Lovers Quarrel", cursive;
+    font-weight: 400;
     text-transform: capitalize !important;
-    font-size: 43px;
+    font-size: 120px;
     background: linear-gradient(145deg,
         #E040A0 0%,
         #3DC76D 12%,
@@ -130,30 +143,28 @@ nav a:hover {
     transition: color 0.2s ease, background 0.2s ease;
 }
 
-.tabnav,
-.navbar_header,
-.navbar_collapse {
+.tabnav {
 	background: linear-gradient(to right, transparent 100px, rgb(85, 30, 21) 60%);
 	border: 3px solid;
     border-image: linear-gradient(to right, transparent, 60%, #6d3114) 1;
-    border-radius: 10px;
+    border-left: none;
+    
     padding: 10px 10px 10px 0;
+    
     font-family: "Cormorant Upright", serif;
     font-weight: 400;
     font-size: 22px !important;
     text-transform: lowercase;
     box-shadow: inset 0 0 10px #240404cf;
+    
+    margin-bottom: -10px;
 }
 
-.tabnav a,
-.navbar_header a,
-.navbar_collapse a {
+.tabnav a {
 	transition: color 0.2s ease, background 0.2s ease;
 }
 
-.tabnav a:hover,
-.navbar_header a:hover,
-.navbar_collapse a:hover {
+.tabnav a:hover {
     color: #fdc11b !important;
     transition: color 0.2s ease, background 0.2s ease;
 }
@@ -179,6 +190,10 @@ nav a:hover {
 	object-position: center;
     padding: 10px;
     filter: drop-shadow(1px 1px 10px #5dc14191);
+}
+
+.tab {
+    border: none;
 }
 
 .blocky {
@@ -443,6 +458,13 @@ nav a:hover {
 }
 
 @media (max-width: 1200px) {
+    
+    h1 {
+        position: relative !important;
+        top: 0;
+        left: 0;
+    }
+    
     .profav, .info_appq {
         display: none;
     }
