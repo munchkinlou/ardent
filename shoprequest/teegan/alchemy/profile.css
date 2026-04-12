@@ -18,7 +18,7 @@ body:after {
 }
 
 h1 {
-    margin: -15px 0 !important;
+    margin: 0 !important;
     filter: drop-shadow(2px 2px 0.5px #3d2312);
     color: white;
     position: relative;
@@ -27,15 +27,15 @@ h1 {
     text-transform: capitalize !important;
     font-size: 43px;
     background: linear-gradient(90deg,
-        #F7C358 0%,
-        #FFF6D1 12%,
-        #E1B65B 25%,
-        #DDAF55 38%,
-        #FFF6D1 50%,
-        #E1B65B 62%,
-        #DDAF55 75%,
-        #FFF6D1 88%,
-        #F7C358 100%
+        #E040A0 0%,
+        #3DC76D 12%,
+        #F5922A 25%,
+        #3DC76D 38%,
+        #E040A0 50%,
+        #3DC76D 62%,
+        #F5922A 75%,
+        #3DC76D 88%,
+        #E040A0 100%
     );
     background-size: 400% 400%;
     background-clip: text;
