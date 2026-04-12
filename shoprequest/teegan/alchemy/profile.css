@@ -14,7 +14,7 @@ body {
 }
 
 body:after {
-    filter: saturate(0.6);
+    filter: saturate(0.8) brightness(0.8);
 }
 
 h1 {
@@ -102,7 +102,7 @@ nav {
     margin: 0 10px;
     font-family: "Cormorant Upright", serif;
     font-weight: 400;
-    font-size: 15px !important;
+    font-size: 16px !important;
     text-transform: lowercase;
 }
 
@@ -133,15 +133,16 @@ nav a:hover {
 .tabnav,
 .navbar_header,
 .navbar_collapse {
-	background: linear-gradient(to right, transparent 100px, rgb(18, 4, 23));
-	border: 2px solid;
-    border-image: linear-gradient(to right, transparent, 60%, #73322b) 1;
+	background: linear-gradient(to right, transparent 100px, rgb(85, 30, 21) 60%);
+	border: 3px solid;
+    border-image: linear-gradient(to right, transparent, 60%, #6d3114) 1;
     border-radius: 10px;
     padding: 10px 10px 10px 0;
     font-family: "Cormorant Upright", serif;
     font-weight: 400;
-    font-size: 20px !important;
+    font-size: 22px !important;
     text-transform: lowercase;
+    box-shadow: inset 0 0 10px #240404cf;
 }
 
 .tabnav a,
