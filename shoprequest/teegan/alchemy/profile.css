@@ -70,6 +70,9 @@ h1 i {
 
 h2 {
     position: relative;
+    font-family: "Lovers Quarrel", cursive;
+    font-weight: 400;
+    font-size: 50px;
     filter: drop-shadow(2px 2px 0.5px #3d2312);
     color: white;
     background: linear-gradient(90deg,
@@ -251,8 +254,18 @@ nav a:hover {
     left: 0;
     bottom: 2px;
     z-index: 0; 
-    color: #4d70a8;
-    background: linear-gradient(to right, #635729, #D3AE56, #6d4815);
+    color: transparent;
+    background: linear-gradient(90deg,
+    #F7C358 0%,
+    #FFF6D1 12%,
+    #E1B65B 25%,
+    #DDAF55 38%,
+    #FFF6D1 50%,
+    #E1B65B 62%,
+    #DDAF55 75%,
+    #FFF6D1 88%,
+    #F7C358 100%
+    );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -266,7 +279,7 @@ nav a:hover {
 	text-transform: uppercase;
     font-size: 12px;
 	font-weight: bold;
-	color: #FF9243 !important;
+	color: #FF97DC !important;
 	transition: color 0.2s ease;
 }
 
@@ -283,22 +296,58 @@ nav a:hover {
 }
 
 .thead {
-    background: linear-gradient(145deg, #000000e0, #15051ede);
-    font-family: 'Bailenson', sans-serif;
-    font-size: 35px;
+    position: relative;
+    background: transparent;
+    font-family: "Lovers Quarrel", cursive;
+    font-weight: 400;
+    font-size: 50px;
 	text-shadow: none !important;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), 0 5px 10px rgba(0, 0, 0, 0.5);
 	text-align: center;
     text-transform: capitalize !important;
-    border-radius: 80px 0;
     border: 6px double rgb(115, 50, 43);
     padding: 0;
     color: #ebc779;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
+
+}
+
+.thead:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left:0;
+    z-index: 1;
+    
+    background: linear-gradient(145deg, #000000e0, #15051ede);
+    
 }
 
 .thead b {
     font-weight: 200 !important;
+}
+
+.thead strong {
+    position: relative;
+    z-index: 10;
+    color: white;
+    background: linear-gradient(90deg,
+    #F7C358 0%,
+    #FFF6D1 12%,
+    #E1B65B 25%,
+    #DDAF55 38%,
+    #FFF6D1 50%,
+    #E1B65B 62%,
+    #DDAF55 75%,
+    #FFF6D1 88%,
+    #F7C358 100%
+    );
+    background-size: 400% 400%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .sip_tbl_head,
