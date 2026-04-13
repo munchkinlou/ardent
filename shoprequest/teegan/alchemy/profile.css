@@ -466,6 +466,12 @@ nav a:hover {
     filter: drop-shadow(1px 1px 10px #e29ce49c);
 }
 
+.skull {
+    filter:drop-shadow(0 0 50px #ff4e3b);
+    margin: 50px 0 20px;
+    height: 8%;
+}
+
 .blocky d {
     display: block;
     height: 6px;
