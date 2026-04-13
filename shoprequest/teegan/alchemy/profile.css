@@ -587,6 +587,60 @@ nav a:hover {
     object-fit: contain;
 }
 
+.blocky pl {
+    display: block;
+    margin: 0px 0 40px;
+}
+
+.blocky pl a {
+    margin: 0 !important;
+    overflow: visible;
+    filter: drop-shadow(2px 2px 0.5px #3d2312);
+    font-family: "Lovers Quarrel", cursive !important;
+    font-weight: 400;
+    text-transform: capitalize !important;
+    font-size: 80px !important;
+    background: linear-gradient(145deg,
+        #E040A0 0%,
+        #3DC76D 12%,
+        #F5922A 25%,
+        #3DC76D 38%,
+        #E040A0 50%,
+        #3DC76D 62%,
+        #F5922A 75%,
+        #3DC76D 88%,
+        #E040A0 100%
+    );
+    background-size: 400% 400%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none !important;
+}
+
+.stack h3 {
+    font-family: "Lovers Quarrel", cursive;
+    font-weight: 400;
+    font-size: 45px;
+    filter: drop-shadow(2px 2px 0.5px #3d2312);
+    color: white;
+    background: linear-gradient(90deg,
+    #F7C358 0%,
+    #FFF6D1 12%,
+    #E1B65B 25%,
+    #DDAF55 38%,
+    #FFF6D1 50%,
+    #E1B65B 62%,
+    #DDAF55 75%,
+    #FFF6D1 88%,
+    #F7C358 100%
+    );
+    background-size: 400% 400%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 @media (max-width: 1200px) {
     
     h1 {
@@ -594,23 +648,5 @@ nav a:hover {
         top: 0;
         left: 0;
     }
-    
-    .profav, .info_appq {
-        display: none;
-    }
 
-    .info_perimg {
-        width: 100%;
-        height: auto;
-        margin: 0 auto;
-    }
-    
-     h1::after {
-      display: none;
-    }
-
-    .blocky:has(.profile-master)::after {
-     display: none;
-    }
-    
 }
