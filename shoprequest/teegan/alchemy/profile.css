@@ -565,6 +565,7 @@ nav a:hover {
 }
 
 .stack {
+    position: relative;
     margin: 20px 0;
     width: 100%;
     display: flex;
@@ -583,13 +584,13 @@ nav a:hover {
 
 
 .stack .mimg {
-    height: 300px;
+    max-height: 400px;
     object-fit: contain;
 }
 
 .blocky pl {
     display: block;
-    margin: 0px 0 40px;
+    margin: 0px 0 -50px;
 }
 
 .blocky pl a {
@@ -618,7 +619,7 @@ nav a:hover {
     text-shadow: none !important;
 }
 
-.stack h3 {
+minfo h3 {
     font-family: "Lovers Quarrel", cursive;
     font-weight: 400;
     font-size: 45px;
@@ -641,12 +642,33 @@ nav a:hover {
     -webkit-text-fill-color: transparent;
 }
 
+.blocky p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
 @media (max-width: 1200px) {
     
     h1 {
         position: relative !important;
         top: 0;
         left: 0;
+    }
+    
+    .stack {
+        position: relative;
+        margin: 20px 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .profav {
+        display: none;
+    }
+
+    .blocky:has(.profile-master)::after {
+        display: none;  
     }
 
 }
