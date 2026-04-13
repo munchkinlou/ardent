@@ -70,7 +70,7 @@ h2 {
     position: relative;
     font-family: "Lovers Quarrel", cursive;
     font-weight: 400;
-    font-size: 50px;
+    font-size: 40px;
     filter: drop-shadow(2px 2px 0.5px #3d2312);
     color: white;
     background: linear-gradient(90deg,
@@ -468,7 +468,7 @@ nav a:hover {
 
 .skull {
     filter:drop-shadow(0 0 50px #ff4e3b);
-    margin: 50px 0 20px;
+    margin: 50px 0 40px;
     height: 8%;
 }
 
@@ -492,6 +492,10 @@ nav a:hover {
     font-size: 14px;
     font-weight: 400;
     padding: 0 10px;
+}
+
+.info > h2 {
+    margin-top: -10px;
 }
 
 .compendium {
