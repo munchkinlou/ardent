@@ -139,16 +139,19 @@ nav a:hover {
 }
 
 .dropdown-menu {
-	background: rgba(231, 231, 231, 0.6) !important;
-	color: rgb(255, 255, 255) !important;
+    background: black;
+    border-radius: 20px;
+    color: white !important;
 }
 
 .dropdown-menu a {
-    color: #2e2e2e !important;
+    color: white !important;
+    text-transform: capitalize;
+    font-size: 16px;
 }
 
 .dropdown-menu a:hover {
-    color: #4890B1 !important;
+    color: gold !important;
     transition: color 0.2s ease, background 0.2s ease;
 }
 
