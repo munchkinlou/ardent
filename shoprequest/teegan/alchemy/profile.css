@@ -494,6 +494,60 @@ nav a:hover {
     padding: 0 10px;
 }
 
+.compendium {
+    margin: 20px 0;
+    height: 500px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 20px;
+    background: linear-gradient(to bottom, #280929, #0e020c);
+    
+    box-shadow: inset 0 0 10px black;
+
+    border: 2px solid;
+    border-image: linear-gradient(145deg, 
+        #E040A0,
+        #3DC76D,
+        #F5922A,
+        #3DC76D,
+        #E040A0) 1;
+    
+    --scrollbar-thumb: #425B74;
+    --scrollbar-track: transparent;
+    --scrollbar-width: 6px;
+
+    scrollbar-width: thin;
+    scrollbar-color: #C5A64A #be992800;
+
+    &::-webkit-scrollbar {
+        width: var(--scrollbar-width);
+    }
+    &::-webkit-scrollbar-track {
+        background: var(--scrollbar-track);
+    }
+    &::-webkit-scrollbar-thumb {
+        background: var(--scrollbar-thumb);
+        border-radius: 3px;
+    } 
+}
+.compendium imgcon {
+    display: flex;
+    height: 100%;
+    width: 500px;
+    gap: 30px;
+}
+.compendium imgcon div {
+    height: 100%;
+    flex-shrink: 0;
+}
+.compendium imgcon div img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+    filter: drop-shadow(1px 1px 5px black);
+}
+
 @media (max-width: 1200px) {
     
     h1 {
