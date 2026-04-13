@@ -233,8 +233,16 @@ nav a:hover {
     top: 0;
 }
 
-.blocky:has(.info) > span {
+.blocky:has(.info) > span, .blocky:has(.stack) > span {
     display: none;
+}
+
+.blocky:has(.info) a, .blocky:has(.stack) a {
+    top: 0;
+    font-family: "Engagement", cursive;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 25px;
 }
 
 .blocky:has(.subforums) {
@@ -556,6 +564,29 @@ nav a:hover {
     filter: drop-shadow(1px 1px 5px black);
 }
 
+.stack {
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+}
+.stack > * {
+    flex: 1;
+    flex-shrink: 0;
+}
+
+.stack minfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 40px;
+}
+
+
+.stack .mimg {
+    height: 300px;
+    object-fit: contain;
+}
+
 @media (max-width: 1200px) {
     
     h1 {
@@ -581,6 +612,5 @@ nav a:hover {
     .blocky:has(.profile-master)::after {
      display: none;
     }
-
     
 }
