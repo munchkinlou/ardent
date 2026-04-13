@@ -70,7 +70,6 @@ h2 {
     position: relative;
     font-family: "Lovers Quarrel", cursive;
     font-weight: 400;
-    font-size: 40px;
     filter: drop-shadow(2px 2px 0.5px #3d2312);
     color: white;
     background: linear-gradient(90deg,
@@ -468,7 +467,7 @@ nav a:hover {
 
 .skull {
     filter:drop-shadow(0 0 50px #ff4e3b);
-    margin: 50px 0 40px;
+    margin: 50px 0 20px;
     height: 8%;
 }
 
@@ -487,6 +486,11 @@ nav a:hover {
     filter: drop-shadow(1px 1px 2px black);
 }
 
+.blocky h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
 .info {
     text-align: center;
     font-size: 14px;
@@ -494,8 +498,8 @@ nav a:hover {
     padding: 0 10px;
 }
 
-.info > h2 {
-    margin-top: -10px;
+.blocky .info > h2 {
+    font-size: 40px;
 }
 
 .compendium {
