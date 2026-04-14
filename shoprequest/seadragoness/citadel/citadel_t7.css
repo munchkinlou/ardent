@@ -70,7 +70,7 @@
 .citadelt7 c2 {
   display: block;
   position: absolute;
-  top: 30px;
+  top: 32px;
   left: 200px;
   width: 340px;
   height: 500px;
@@ -237,7 +237,12 @@
   position: relative;
   font-family: 'Germania One';
   text-align: center;
-  margin: 0 auto -30px;
+  margin: 0 auto -10px;
+  padding-top: 20px;
+}
+
+.citadelt7 speech br {
+  display: none;
 }
 
 .citadelt7 speech::before {
@@ -285,6 +290,7 @@
   .citadelt7 {
     width: 100%;
     margin: 0;
+    filter: none;
   }
   
   .citadelt7 bor {
