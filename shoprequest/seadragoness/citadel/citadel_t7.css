@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+
+
+.citadelt7 {
+  width: 600px;
+
+  margin: 60px auto 50px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  box-sizing: border-box;
+  filter: drop-shadow(1px 1px 3px rgb(0, 0, 0));
+}
+
+.citadelt7 credit {
+  position: absolute;
+  bottom: 200px;
+  left: 8px;
+  width: 100px;
+  display: block;
+  text-align: left;
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
+  z-index: 10;
+  transform: rotate(-90deg);
+}
+
+.citadelt7 citadel {
+  position: absolute;
+  top: -86px;
+  left: -52px;
+  width: 130%;
+  height: 533px;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/shop/Seadragoness/Citadel/greenpath.gif?updatedAt=1776132582202')
+    no-repeat center;
+  background-size: contain;
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0 0 100px #7c8cb18a);
+}
+
+.citadelt7 c1 {
+  display: block;
+  position: absolute;
+  top: 30px;
+  right: 200px;
+  width: 340px;
+  height: 500px;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom,
+    #FFF6D1,
+    #E1B65B,
+    #DDAF55,
+    #FFF6D1
+  );
+  clip-path: polygon(
+    50% 0%,
+    100% 135px,
+    100% calc(100% - 150px),
+    50% 100%,
+    0% calc(100% - 150px),
+    0% 135px
+  );
+  padding: 8px 5px 5px;
+}
+
+.citadelt7 c2 {
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: 200px;
+  width: 340px;
+  height: 500px;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom,
+    #FFF6D1,
+    #E1B65B,
+    #DDAF55,
+    #FFF6D1
+  );
+  clip-path: polygon(
+    50% 0%,
+    100% 135px,
+    100% calc(100% - 150px),
+    50% 100%,
+    0% calc(100% - 150px),
+    0% 135px
+  );
+  padding: 8px 5px 5px;
+}
+
+
+.citadelt7 bor {
+  display: block;
+  position: relative;
+  width: 460px;
+  margin: auto;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom,
+    #FFF6D1,
+    #E1B65B,
+    #DDAF55,
+    #FFF6D1
+  );
+  clip-path: polygon(
+    50% 0%,
+    100% 180px,
+    100% calc(100% - 150px),
+    50% 100%,
+    0% calc(100% - 150px),
+    0% 180px
+  );
+  padding: 8px 5px 5px;
+}
+
+.citadelt7 con {
+  display: block;
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom, #2C3E69, #324b5f);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  clip-path: polygon(
+    50% 0%,
+    100% 175px,
+    100% calc(100% - 150px),
+    50% 100%,
+    0% calc(100% - 150px),
+    0% 175px
+  );
+  padding-top: 50px;
+  padding-bottom: 200px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  pointer-events: none;
+
+  padding: 20px 15px;
+  
+  box-shadow: inset 0 0 5px black;
+}
+
+.citadelt7 sh {
+  position: relative;
+  display: block;
+  
+  filter: drop-shadow(2px 2px 4px #000000b0);
+}
+
+.citadelt7 inbor {
+  display: block;
+  position: relative;
+  z-index: 6;
+  margin: 0 auto;
+  padding: 2.2px;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient;
+  clip-path: polygon(
+    50% 0%,
+    100% 165px,
+    100% calc(100% - 140px),
+    50% 100%,
+    0% calc(100% - 140px),
+    0% 165px
+  );
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.85));
+}
+
+.citadelt7 incon {
+  display: block;
+  position: relative;
+  z-index: 6;
+  padding: 440px 25px 80px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: visible;
+  background: linear-gradient(to bottom, #142035, #040712);
+  clip-path: polygon(
+    50% 0%,
+    100% 163px,
+    100% calc(100% - 140px),
+    50% 100%,
+    0% calc(100% - 140px),
+    0% 163px
+  );
+
+  text-align: justify;
+  font-family: 'Bellefair';
+  font-size: 18px;
+  color: #deeeff;
+  line-height: 1.2;
+}
+
+.citadelt7 incon:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/moutainssnow.png?updatedAt=1758327675986')
+    no-repeat top;
+  background-size: 100%;
+  filter: ;
+  opacity: 0.5;
+  -webkit-mask: linear-gradient(to bottom, black 300px, transparent 400px);
+  mask: linear-gradient(to bottom, black 200px, transparent 400px);
+  pointer-events: none;
+}
+
+.citadelt7 incon::after {
+  content: '';
+  position: absolute;
+  top: 390px;
+  left: 50%;
+  transform:translateX(-50%);
+  
+  height: 100px;
+  width: 70%;
+  
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/313480-P8XMAL-891.png')
+    no-repeat center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+  pointer-events: none;
+  z-index: 10;
+  
+  opacity: 0.4;
+  filter: invert(1) drop-shadow(1px 1px 2px black);
+}
+
+.citadelt7 speech {
+  display: block;
+  position: relative;
+  font-family: 'Germania One';
+  text-align: center;
+  margin: 0 auto -30px;
+}
+
+.citadelt7 speech::before {
+  content:'';
+  position:absolute;
+  top:0;
+  left:50%;
+  transform: translateX(-50%);
+
+  width:50%;
+  height:1.2px;
+
+  background: linear-gradient(to right, transparent, #9F9A7C, transparent);
+}
+
+
+.citadelt7 b, .citadelt7 .mycode_b {
+  font-size: 19px;
+  font-family: 'Germania One';
+  font-weight: 400;
+  color: #FECF5F !important;
+}
+
+.citadelt7 speech b, .citadelt7 speech .mycode_b {
+  font-size: 28px;
+}
+
+
+@media (max-width: 1200px) {
+
+  .citadelt7 c1,
+  .citadelt7 c2,
+  .citadelt7 citadel,
+  .citadelt7 incon:after, 
+  .citadelt7 incon:before {
+    display: none;
+  }
+  
+  .citadelt7 incon {
+    
+    padding: 130px 20px 80px;
+    
+  }
+  
+  .citadelt7 {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .citadelt7 bor {
+    margin: 0;
+    left: 50%;
+    transform:translateX(-50%);
+    max-width: 450px;
+    width: 100%;
+  }
+  
+  .citadelt7 con {
+    padding: 8px 6px;
+  }
+  
+  .citadelt7 credit {
+    position: relative;
+    inset: auto;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    transform: none;
+  }
+  
+  
+}
