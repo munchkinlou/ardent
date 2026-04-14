@@ -29,6 +29,7 @@ body:after {
 
 #content {
     position: relative;
+    background: none;
 }
 
 h1 {
