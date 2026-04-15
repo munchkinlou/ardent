@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+/*
+
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
+
+
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+
+  font-family: "MonteCarlo", cursive;
+  font-weight: 400;
+
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 400;
+*/
+
+.faelynnt1 {
+	position: relative;
+  width: 800px;
+  margin: 70px auto 30px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.faelynnt1 credit {
+  position:absolute;
+  bottom: -17px;
+  right: 170px;
+  font-size:10px;
+  margin: 10px 10px 0 auto;
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
+}
+
+.faelynnt1 fae {
+  position: absolute;
+  top: -80px;
+  left: 91px;
+  width: 610px;
+  height: 595px;
+  margin: 0 auto;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/minxy/Faelynn/IMG_8263.png')
+    no-repeat center;
+  background-size: contain; 
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(1px 1px 2px rgb(0, 0, 0));
+  
+}
+
+.faelynnt1 bor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 450px;
+  padding: 5px;
+  margin: 0 auto;
+  
+  border: 3px solid;
+  border-image: linear-gradient(to bottom, #f2eeec, #dec0b5) 1;
+  
+  border-radius: 0;
+  overflow: hidden;
+  
+  filter: drop-shadow(1px 1px 2px black);
+}
+
+.faelynnt1 con {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: inherit;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background: white;
+}
+
+.faelynnt1 con::before {
+  border-radius: inherit;
+  content:'';
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  background: url('https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+  
+  filter: hue-rotate(-50deg) saturate(0.4);
+}
+
+.faelynnt1 inbor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #cba7a7, #f3efec);
+  padding: 2px;
+  border-radius: 250px 250px 0 0;
+}
+
+.faelynnt1 incon {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: inherit;
+  padding: 522px 10px 20px;
+  width: 100%;
+  background: linear-gradient(to bottom, rgb(255, 255, 255), #dcc0ca);
+  height: auto;
+  box-shadow: inset 0 0 10px rgb(36, 13, 7);
+  text-align: justify;
+  text-shadow: 1px 1px 2px #ac869d;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size:13px;
+  color: #594048;
+  line-height: 1.2;
+}
+
+.faelynnt1 incon t {
+  position: relative;
+  display: block;
+  height: 200px;
+  clip-path: inset(0 round 10px);
+  overflow-y: auto;
+  cursor: pointer;
+  z-index: 10;
+  
+  padding: 20px 10px 10px 15px;
+  
+  border-radius: 10px;
+  
+  box-shadow: inset 0 0 10px #603c484d;
+  
+  --scrollbar-thumb: #AE7C83;
+  --scrollbar-track: transparent;
+  --scrollbar-width: 6px;
+
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+
+  &::-webkit-scrollbar {
+    width: var(--scrollbar-width);
+  }
+  &::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 3px;
+  }
+  
+}
+
+.faelynnt1 incon t br:nth-of-type(-n+2) {
+  display: none;
+}
+
+.faelynnt1 con:after {
+  position: absolute;
+  content: '';
+  top: 490px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 70px;
+  
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/moondividerstars.png') no-repeat center;
+  background-size: contain;
+  
+  pointer-events: none;
+  
+  filter:brightness(10) drop-shadow(0px 0px 1px #7b4f6e9c) drop-shadow(0px 0px 1px #86446c);
+  opacity: 1;
+  z-index: 5;
+}
+
+.faelynnt1 incon br {
+  display: inline;
+}
+
+.faelynnt1 incon speak {
+  display: inline;
+  color: #a39eff;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-shadow: none;
+  line-height: 0.9;
+  color: transparent;
+  background: linear-gradient(to bottom, #9d99e8, #393466);
+  -webkit-background-clip: text;
+  background-clip: text;
+  filter: drop-shadow(1px 1px 1px #e3a5ffbd) drop-shadow(0px 0px 1px #2a319b9c);
+}
+
+.faelynnt1 speech {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 5px auto 0;
+  padding-top: 10px;
+  font-size:30px;
+  color: #6171d2;
+  text-shadow: 1px 1px 2px #0a0906;
+  text-align: center;
+  line-height: 1;
+  
+  border-top: 4px solid #57354114;
+  filter:drop-shadow(0 0 1px #af80b1db);
+  
+  /*! border-radius: 20px; */
+}
+
+.faelynnt1 speech br {
+  display: none;
+}
+
+.faelynnt1 speech speak {
+  font-family: "MonteCarlo", cursive;
+  font-weight: bold;
+  padding: 0 5px;
+  font-size: 30px;
+  letter-spacing: 1.5;
+  filter: none;
+}
+
+
+@media (max-width: 1200px) {
+  
+  .faelynnt1 {
+    width: 100%;
+    margin: 0;
+  }
+
+  .faelynnt1 bor {
+    max-width: 450px;
+    width: 100%;
+    padding: 0;
+    filter: none;
+  }
+  .faelynnt1 con {
+    padding: 2px;
+  }
+  
+  .faelynnt1 con:before {
+    display: none;
+  }
+  
+  .faelynnt1 fae {
+    display: none;
+  }
+  
+  .faelynnt1 inbor {
+    border-radius: 0;
+  }
+  
+  .faelynnt1 incon {
+    padding: 20px 20px 1px;
+  }
+  
+  .faelynnt1 incon t {
+    overflow-y: auto;
+    height: auto;
+    box-shadow: none;
+    padding: 0;
+  }
+  
+  .faelynnt1 incon br:first-child {
+    display: none;
+  }
+
+  .faelynnt1 credit {
+    display: block;
+    position:relative;
+    inset: auto;
+    margin: 5px auto 0;
+    text-align: center;
+  }
+  
+  .faelynnt1 speech {
+    margin: 0px auto 20px -5px;
+  }
+
+}
