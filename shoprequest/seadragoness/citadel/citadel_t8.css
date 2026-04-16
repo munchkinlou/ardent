@@ -202,12 +202,7 @@
   position: relative;
   font-family: 'Germania One';
   text-align: center;
-  margin: 10px auto -20px;
-  padding-top: 30px;
-}
-
-.citadelt8 speech br {
-  display: none;
+  margin: 0 auto -30px;
 }
 
 .citadelt8 speech::before {
@@ -227,7 +222,7 @@
 .citadelt8 b, .citadelt8 .mycode_b {
   font-size: 19px;
   font-family: 'Germania One';
-  font-weight: 400;
+  font-weight: 400 !important;
   color: #FABC54 !important;
 }
 
