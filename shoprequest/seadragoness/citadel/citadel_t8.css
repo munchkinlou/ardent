@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
+.citadelt8 {
+  width: 800px;
+
+  margin: 30px auto 40px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  box-sizing: border-box;
+  filter: drop-shadow(1px 1px 3px rgb(0, 0, 0));
+}
+
+.citadelt8 credit {
+  position: absolute;
+  bottom: 181px;
+  left: 61px;
+  width: 100px;
+  display: block;
+  text-align: left;
+  font-family: "Unica One", arial;
+  text-transform: lowercase;
+  font-size: 14px;
+  font-weight: 400;
+  z-index: 10;
+  transform: rotate(-90deg);
+}
+
+.citadelt8 citadel {
+  position: absolute;
+  top: -17px;
+  left: -8px;
+  width: 108%;
+  height: 544px;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/shop/Seadragoness/Citadel/citadelsnow.png?updatedAt=1776274405430')
+    no-repeat center;
+  background-size: contain;
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0 0 100px #7c8cb18a);
+}
+
+.citadelt8 c1 {
+  display: block;
+  position: absolute;
+  bottom: 36px;
+  right: 126px;
+  width: 354px;
+  height: calc(100% - 80px);
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #CAD2E0, #95B5E2, #dce8f7);
+  clip-path: polygon(
+    50% 0%,
+    100% 120px,
+    100% calc(100% - 105px),
+    50% 100%,
+    0% calc(100% - 105px),
+    0% 120px);
+  padding: 8px 5px 5px;
+}
+
+.citadelt8 c2 {
+  display: block;
+  position: absolute;
+  bottom: 36px;
+  left: 125px;
+  width: 354px;
+  height: calc(100% - 80px);
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #CAD2E0, #95B5E2, #dce8f7);
+  clip-path: polygon(
+    50% 0%,
+    100% 120px,
+    100% calc(100% - 105px),
+    50% 100%,
+    0% calc(100% - 105px),
+    0% 120px);
+  padding: 8px 5px 5px;
+}
+
+
+.citadelt8 bor {
+  display: block;
+  position: relative;
+  width: 526px;
+  margin: auto;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #FFF, #FFF );
+  clip-path: polygon(
+    50% 0%,
+    100% 180px,
+    100% calc(100% - 150px),
+    50% 100%,
+    0% calc(100% - 150px),
+    0% 180px
+  );
+  padding: 5px 2px 3px;
+}
+
+.citadelt8 con {
+  display: block;
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom, #5395B2, #a0a0a0);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  clip-path: polygon(
+    50% 0%,
+    100% 175px,
+    100% calc(100% - 150px),
+    50% 100%,
+    0% calc(100% - 150px),
+    0% 175px
+  );
+  padding-top: 50px;
+  padding-bottom: 200px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  pointer-events: none;
+
+  padding: 20px 15px;
+  
+  box-shadow: inset 0 0 5px black;
+}
+
+.citadelt8 sh, .citadelt8 cs {
+  position: relative;
+  display: block;
+  
+  filter: drop-shadow(0 0 3px #000000b0);
+}
+
+.citadelt8 inbor {
+  display: block;
+  position: relative;
+  z-index: 6;
+  margin: 0 auto;
+  padding: 2.2px;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient;
+  clip-path: polygon(
+    50% 0%,
+    100% 165px,
+    100% calc(100% - 140px),
+    50% 100%,
+    0% calc(100% - 140px),
+    0% 165px
+  );
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.85));
+}
+
+.citadelt8 incon {
+  display: block;
+  position: relative;
+  z-index: 6;
+  padding: 445px 25px 80px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: visible;
+  background: linear-gradient(to bottom, #142035, #040712);
+  clip-path: polygon(
+    50% 0%,
+    100% 163px,
+    100% calc(100% - 140px),
+    50% 100%,
+    0% calc(100% - 140px),
+    0% 163px
+  );
+
+  text-align: justify;
+  font-family: 'Bellefair';
+  font-size: 18px;
+  color: #deeeff;
+  line-height: 1.2;
+  z-index: 10;
+}
+
+.citadelt8 incon video {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  object-fit: none;
+  object-position: center;
+  opacity: 0.3;
+  mask: linear-gradient(to top, transparent, black 40%);
+  -webkit-mask: linear-gradient(to top, transparent, black 40%);
+  z-index: -1;
+  filter: sepia(1) hue-rotate(170deg);
+  transform: scaleX(-1);
+  pointer-events: none;
+}
+
+
+.citadelt8 speech {
+  display: block;
+  position: relative;
+  font-family: 'Germania One';
+  text-align: center;
+  margin: 0 auto -30px;
+}
+
+.citadelt8 speech::before {
+  content:'';
+  position:absolute;
+  top:0;
+  left:50%;
+  transform: translateX(-50%);
+
+  width:50%;
+  height:1.2px;
+
+  background: linear-gradient(to right, transparent, #FEE656, transparent);
+}
+
+
+.citadelt8 b, .citadelt8 .mycode_b {
+  font-size: 19px;
+  font-family: 'Germania One';
+  font-weight: 400;
+  color: #FABC54 !important;
+}
+
+.citadelt8 speech b, .citadelt8 speech .mycode_b {
+  font-size: 28px;
+}
+
+
+@media (max-width: 1200px) {
+
+  .citadelt8 c1,
+  .citadelt8 c2,
+  .citadelt8 citadel,
+  .citadelt8 incon:after, 
+  .citadelt8 incon:before {
+    display: none;
+  }
+  
+  .citadelt8 incon {
+    
+    padding: 130px 20px 80px;
+    
+  }
+  
+  .citadelt8 {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .citadelt8 bor {
+    margin: 0;
+    left: 50%;
+    transform:translateX(-50%);
+    max-width: 450px;
+    width: 100%;
+  }
+  
+  .citadelt8 con {
+    padding: 12px 6px 8px;
+  }
+  
+  .citadelt8 credit {
+    position: relative;
+    inset: auto;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    transform: none;
+  }
+  
+  .citadelt8 video {
+    display: none;
+  }
+  
+}
