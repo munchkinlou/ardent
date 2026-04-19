@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
+.citadelt9 {
+  width: 800px;
+
+  margin: 30px auto 40px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.citadelt9 credit {
+  position: absolute;
+  bottom: -18px;
+  left: 5px;
+  width: 100px;
+  display: block;
+  text-align: left;
+  font-family: "Unica One", arial;
+  text-transform: lowercase;
+  font-size: 12px;
+  font-weight: 400;
+  z-index: 10;
+}
+
+.citadelt9 citadel {
+  position: absolute;
+  top: -17px;
+  left: -8px;
+  width: 108%;
+  height: 544px;
+  background: transparent url('')
+    no-repeat center;
+  background-size: contain;
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0 0 100px #7c8cb18a);
+}
+
+
+.citadelt9 bor {
+  display: block;
+  position: relative;
+  width: 800px;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 2px;
+  background: linear-gradient(to top left in oklab, #9cc090, #8ba56a, #828493, #395163);
+  box-shadow: 1px 1px 3px #000000a6;
+}
+
+.citadelt9 con {
+  display: block;
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom, #5395B2, #a0a0a0);
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  padding: 50px 45px 0 450px;
+  overflow: hidden;
+  
+  height: 480px;
+  
+  --cit9img: url('https://ik.imagekit.io/arl60/Ardent/shop/Seadragoness/Citadel/cittadelarmada.png?updatedAt=1776274406034');
+  
+}
+
+
+.citadelt9 con:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  
+  background: var(--cit9img) no-repeat top;
+  background-size: cover;
+  
+  box-shadow: inset 0 0 20px #0c193bc2;
+}
+
+.citadelt9 con:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  pointer-events: none;
+  background: radial-gradient(circle at 30px 30px,
+    rgba(255, 220, 150, 0.9) 0%,
+    rgba(255, 180, 80, 0.55) 20%,
+    rgba(255, 160, 60, 0.25) 45%,
+    transparent 70%);
+  mix-blend-mode: screen;
+  animation: citadelt9_lantern 4s ease-in-out infinite alternate;
+}
+
+@keyframes citadelt9_lantern {
+  0%, 100% { opacity: 0.95; }
+  23%      { opacity: 1; }
+  41%      { opacity: 0.82; }
+  67%      { opacity: 1; }
+  84%      { opacity: 0.88; }
+}
+
+.citadelt9 inbor {
+  display: block;
+  position: relative;
+  padding: 5px 5px 7px;
+  border: 1.5px solid;
+  border-image: linear-gradient(to bottom, white, #b8c99f) 1;
+  
+  filter: drop-shadow(1px 1px 1px #06061ec4);
+}
+
+.citadelt9 incon {
+  display: block;
+  position: relative;
+  z-index: 6;
+  box-sizing: border-box;
+  padding: 20px 3px 35px 6px;
+  width: 100%;
+  box-sizing: border-box;
+  
+  background: linear-gradient(to bottom, #345779a1, #141d35d4);
+  
+  text-align: justify;
+  font-family: 'Bellefair';
+  font-size: 15px;
+  color: #deeeff;
+  line-height: 1.2;
+  z-index: 10;
+  text-shadow: 1px 1px 1px black;
+
+  box-shadow: inset 0 0 5px #081412;
+  
+}
+
+.citadelt9 incon t br:nth-of-type(-n+2) {
+  display: none;
+}
+
+.citadelt9 incon t {
+  display: block;
+  height: 340px;
+  padding: 0 15px 0 15px;
+  overflow-y: auto;
+  
+  --scrollbar-thumb: #76AB9C;
+  --scrollbar-track: transparent;
+  --scrollbar-width: 6px;
+
+  scrollbar-width: thin;
+  scrollbar-color: #76AB9C var(--scrollbar-track);
+
+  &::-webkit-scrollbar {
+    width: var(--scrollbar-width);
+  }
+  &::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 3px;
+  }
+}
+
+.citadelt9 speech {
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 27px;
+  right: 51px;
+  font-family: 'Germania One';
+  text-align: center;
+  margin: auto;
+  width: 288.5px;
+  
+  padding: 2px 0 3px;
+  
+  z-index: 10;
+  
+  text-shadow: 1px 1px 1px black,
+    1px 1px 1px black;
+  
+  border: #233255 2px solid;
+  
+  background: #17285eb8;
+}
+
+.citadelt9 speech:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  
+  background: var(--cit9img);
+  background-size: 200%;
+  background-position: -280px -50px;
+  padding: 0;
+  opacity: 0.4;
+}
+
+.citadelt9 speech br {
+  display: none;
+}
+
+.citadelt9 b, .citadelt9 .mycode_b {
+  font-size: 15px;
+  font-family: 'Germania One';
+  font-weight: 400 !important;
+  color: #EEC053 !important;
+}
+
+.citadelt9 speech b, .citadelt9 speech .mycode_b {
+  font-size: 28px;
+  position: relative;
+}
+
+
+@media (max-width: 1200px) {
+
+  .citadelt9 {
+    margin: 0;
+    width: 100%;
+  }
+  
+  .citadelt9 bor {
+    max-width: 450px;
+    width: 100%;
+    box-shadow: none;
+  }
+  
+  .citadelt9 con:before,
+  .citadelt9 con:after,
+  .citadelt9 speech:before {
+    display: none;
+  }
+  
+  .citadelt9 con {
+    padding: 0;
+    height: auto;
+  }
+  
+  .citadelt9 incon {
+    padding: 20px 5px 0;
+    font-size: 16px;
+  }
+  
+  .citadelt9 incon t {
+    height: auto;
+    overflow-y: visible;
+  }
+  
+  .citadelt9 speech {
+    width: 100%;
+    position: relative;
+    inset: auto;
+    
+    background: #1b253b;
+  }
+  
+  .citadelt9 credit {
+    position: relative;
+    inset: 0;
+    width: 100%;
+    margin-top: 5px;
+    display: block;
+    text-align: center;
+  }
+
+
+}
