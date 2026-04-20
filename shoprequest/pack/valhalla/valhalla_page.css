@@ -151,21 +151,20 @@ header .title {
     padding: 0 0 20px !important;
     margin: 0 auto;
 }
-        /*FORMER LEADERS
-.packwrap > div:nth-of-type(4)  {
-    background: rgba(39,0,79, 0.6) !important;
+ /* FORMER LEADERS */
+.packwrap > div:nth-of-type(5)  {
+    background-color: rgba(9, 0, 20,0.6) !important;
 	text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
     border: 1px solid #ff9430;
     overflow: visible;
     z-index: 1;
     box-shadow: 0 0 10px rgba(54, 180, 252, 0.8);
-    padding: 0 0 20px !important;
+    padding: 15px 0 20px !important;
     margin: 10px auto;
     z-index: 1;
 }
-*/
 
-.packwrap > div.flex.fill:nth-of-type(4) h2,  .packwrap > div:nth-of-type(5) h2 {
+#content > div h2 {
     font-family: "Italianno", cursive;
     font-weight: 400;
     font-style: normal;
@@ -217,7 +216,7 @@ header .title {
 /* .packwrap > div.flex.fill:nth-of-type(4) */
 /* #content > div.flex.fill:nth-of-type(2) */
 
-.packwrap > div.flex.fill:nth-of-type(5) {
+#content > div.flex.fill:nth-of-type(2) {
 
     margin: 15px auto 0;
     padding: 0;
@@ -434,7 +433,7 @@ text-decoration: none !important;
 /* #content
     .packwrap */
 
-.packwrap> h2 {
+#content > h2 {
     background-color: rgba(0, 0, 0, 0.6) !important;
     background-image: url('https://ik.imagekit.io/arl60/Ardent/shop/BrienaSkysong/Valhalla/space-8335254.jpg?updatedAt=1754854137343') !important;
     background-repeat: no-repeat !important;
@@ -454,7 +453,7 @@ text-decoration: none !important;
     padding: 5px;
 }
 
-.packwrap > ul {
+#content > ul {
     background-color: rgba(9, 0, 20,0.8) !important;
     box-sizing: border-box;
 	text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
@@ -465,13 +464,31 @@ text-decoration: none !important;
     box-shadow: 0 0 10px rgba(54, 180, 252, 0.8);
 }
 
-.packwrap > ul:first-of-type {
+#content > ul:first-of-type {
     max-height: 300px;
     overflow-y: auto;
     border: 1px solid #ff9430;
+    
+  --scrollbar-thumb: #5A4066;
+  --scrollbar-track: transparent;
+  --scrollbar-width: 6px;
+
+  scrollbar-width: thin;
+  scrollbar-color: #5A4066 var(--scrollbar-track);
+
+  &::-webkit-scrollbar {
+    width: var(--scrollbar-width);
+  }
+  &::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 3px;
+  } 
 }
 
-.packwrap > ul:first-of-type > li {
+#content > ul:first-of-type > li {
     list-style: none;
     line-height:1;
     text-align:justify;
@@ -483,7 +500,7 @@ text-decoration: none !important;
     box-shadow: 0 0 10px #47008E;
 }
 
-.packwrap > ul:first-of-type > li b {
+#content > ul:first-of-type > li b {
 display:block;
   font-family: "Italianno", cursive;
   font-size:25px;
@@ -492,7 +509,7 @@ display:block;
   margin: 0 auto 5px;
 }
 
-.packwrap > ul:first-of-type > li a {
+#content > ul:first-of-type > li a {
     text-decoration: none;
     font-family: arial;
     font-size:12px;
@@ -501,18 +518,28 @@ display:block;
     transition: color 0.5s ease;
 }
 
-.packwrap > ul:first-of-type > li a:hover {
+#content > ul:first-of-type > li a:hover {
     color: rgb(255, 162, 0) !important;
     transition: color 0.5s ease;
     letter-spacing: 0px;
 }
 
-.packwrap > ul:first-of-type > li span {
+#content > ul:first-of-type > li span {
     text-decoration: none !important;
 }
 
 
-.packwrap > ul:nth-of-type(2) li {
+#content > ul:nth-of-type(2) {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#content > ul:nth-of-type(2) > li {
+  flex: 0 0 calc(100% / 3);
+  box-sizing: border-box;
+}
+
+#content > ul:nth-of-type(2) li {
   list-style: none;
   text-align:center;
   font-size:14px;
@@ -520,33 +547,33 @@ display:block;
   margin: 0 auto 5px;
 }
 
-.packwrap > ul:nth-of-type(2) li i {
+#content > ul:nth-of-type(2) li i {
     font-size: 20px;
     margin-right:5px;
 }
 
-.packwrap > ul:nth-of-type(2) li b {
+#content > ul:nth-of-type(2) li b {
   font-family: "Italianno", cursive;
   font-size:35px;
   line-height: 1;
 }
 
-.packwrap > ul:nth-of-type(2) li b::after {
+#content > ul:nth-of-type(2) li b::after {
   content: "\A";
   white-space: pre;
 }
 
-.packwrap > ul:nth-of-type(2) li a {
+#content > ul:nth-of-type(2) li a {
     display: inlne-block;
     transition: transform 0.3s ease, letter-spacing 0.3s ease;
 }
 
-.packwrap > ul:nth-of-type(2) li a:hover {
+#content > ul:nth-of-type(2) li a:hover {
     transform: scale(2.5) !important;
     letter-spacing: 1.5px;
 }
 
-.packwrap > ul:nth-of-type(2) li > .pack {
+#content > ul:nth-of-type(2) li > .pack {
     line-height:1;
     text-align:justify;
     padding: 20px;
@@ -554,11 +581,10 @@ display:block;
     background-color: rgba(9, 0, 20,0.3);
     border-radius:  10px;
     --packcolor: white;
-    border: 1.5px solid var(--packcolor);
-    box-shadow: 0 0 10px var(--packcolor);
+    border-left: 5px solid var(--packcolor);
 }
 
-.packwrap details .thead {
+#content details .thead {
     background: rgba(9, 0, 20,0.8) !important;
     box-sizing: border-box;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
@@ -569,16 +595,17 @@ display:block;
     border-radius: 10px;
 }
 
-.packwrap details {
+#content details {
     position:relative;
     overflow: visible;
     margin: 0 auto;
 }
 
 .rank{
-text-align:justify;
+text-align:center;
   padding: 15px;
   margin: 10px;
+  line-height: 1;
   background-color: rgba(9, 0, 20, 0.9);
   border-radius: 5px;
   border: 1.5px solid rgb(136, 181, 206);
