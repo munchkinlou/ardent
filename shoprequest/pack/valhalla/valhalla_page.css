@@ -164,7 +164,7 @@ header .title {
     z-index: 1;
 }
 
-#content > div h2 {
+.packwrap > div h2 {
     font-family: "Italianno", cursive;
     font-weight: 400;
     font-style: normal;
@@ -234,7 +234,7 @@ header .title {
     */
 }
 
-#content > .packwrap > div.flex.fill:nth-of-type(5) > div:nth-of-type(1) h2, .packwrap > div.flex.fill:nth-of-type(5) > div:nth-of-type(2) h2 {
+#content > div.flex.fill:nth-of-type(2) > div:nth-of-type(1) h2, .userhtml h2 {
     background-color: rgba(0, 0, 0, 0.6) !important;
     background-image: url('https://ik.imagekit.io/arl60/Ardent/shop/BrienaSkysong/Valhalla/space-8335254.jpg?updatedAt=1754854137343') !important;
     background-repeat: no-repeat !important;
@@ -249,10 +249,10 @@ header .title {
     font-weight: 400;
     font-style: normal;
     text-align:center;
-    font-size: 50px;
+    font-size: 48px !important;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 4px 4px 12px rgba(0,0,0,0.5);
     margin: 0 auto;
-    padding: 5px;
+    padding: 10px 10px 5px;
     width: 95%;
 }
 
