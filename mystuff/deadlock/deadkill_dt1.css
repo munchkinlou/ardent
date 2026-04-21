@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@font-face {
+  font-family: "Heatizen";
+  src: url("https://munchkinlou.github.io/ardent/shoprequest/missy/overkill/Heatizen-EaVBj.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "A Charming Font Expanded";
+  src: url("https://munchkinlou.github.io/ardent/mystuff/deadlock/ACharmingFontExpanded-ZEpB.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*
+
+  font-family: "Heatizen", serif;
+  font-weight: 400;
+
+  font-family: "A Charming Font Expanded", serif;
+  font-weight: 400;
+
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 400;
+
+*/
+
+.deadkill_dt1 {
+  width: 800px;
+
+  margin: 20px auto 40px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 0px 3px rgb(0, 0, 0));
+}
+
+.deadkill_dt1 credit {
+  position: absolute;
+  bottom: 277px;
+  right: 76px;
+  width: 100px;
+  display: block;
+  text-align: left;
+  font-family: "Unica One", arial;
+  text-transform: lowercase;
+  font-size: 14px;
+  font-weight: 400;
+  z-index: 10;
+  transform: rotate(-270deg);
+}
+
+.deadkill_dt1 deadkill {
+  position: absolute;
+  bottom: -36px;
+  left: -63px;
+  width: 112%;
+  height: 745px;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Deadlock/z_mfqLsQ.png')
+    no-repeat center;
+  background-size: contain;
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0 0 5px #000);
+}
+
+.deadkill_dt1 bor {
+  display: block;
+  position: relative;
+  width: 526px;
+  margin: auto;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #540a0c, #2e0505 );
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% calc(100% - 180px),
+    50% 100%,
+    0% calc(100% - 180px)
+  );
+  padding: 5px 4px 3px;
+}
+
+
+.deadkill_dt1 t {
+  position: absolute;
+  top: 24px;
+  left: 5px;
+  
+  font-family: "Heatizen", serif;
+  font-weight: 400;
+  line-height: 1;
+  font-size: 89px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  
+  color: transparent;
+  background: linear-gradient(to bottom, #1b232a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  
+  filter: 
+    drop-shadow(0 -1px 0px rgba(12, 11, 11, 0.73)) drop-shadow(0 1px 3px rgb(17, 24, 32));
+  text-shadow: none;
+  
+  z-index: -1;
+}
+
+
+.deadkill_dt1 con {
+  display: block;
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom, #022A26, #8d9b8b);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% calc(100% - 180px),
+    50% 100%,
+    0% calc(100% - 180px)
+  ); 
+  padding-top: 50px;
+  padding-bottom: 200px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  pointer-events: none;
+
+  padding: 20px 15px;
+  
+  box-shadow: inset 0 0 5px black;
+}
+
+.deadkill_dt1 sh, .deadkill_dt1 cs {
+  position: relative;
+  display: block;
+  
+  filter: drop-shadow(0 0 3px #000000b0);
+}
+
+.deadkill_dt1 inbor {
+  display: block;
+  position: relative;
+  z-index: 6;
+  margin: 0 auto;
+  padding: 2.2px;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #386956, #eee5b3);
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% calc(100% - 180px),
+    50% 100%,
+    0% calc(100% - 180px)
+  ); 
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.85));
+}
+
+.deadkill_dt1 incon {
+  display: block;
+  position: relative;
+  z-index: 6;
+  padding: 140px 25px 640px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: visible;
+  background: linear-gradient(to bottom, #151b23, #0d0e0a);
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% calc(100% - 180px),
+    50% 100%,
+    0% calc(100% - 180px)
+  ); 
+
+  text-align: center;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #deeeff;
+  line-height: 1.2;
+}
+
+.deadkill_dt1 incon br:nth-of-type(-n+2) {
+  display: none;
+}
+
+
+.deadkill_dt1 speech {
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  margin: 40px auto -30px;
+}
+
+.deadkill_dt1 speech::before {
+  content:'';
+  position:absolute;
+  top:-25px;
+  left:50%;
+  transform: translateX(-50%);
+
+  width:50%;
+  height:1.1px;
+
+  background: linear-gradient(to right, transparent, #F5EFD0, transparent);
+}
+
+
+.deadkill_dt1 loki {
+  font-size: 14px;
+  font-weight: 400 !important;
+  color: transparent;
+  background: linear-gradient(to bottom, #60ffec, #13c8b2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: none;
+}
+
+.deadkill_dt1 okill {
+  font-size: 15px;
+  font-weight: 400 !important;
+  color: transparent;
+  background: linear-gradient(to bottom, #ff3b3b, #ff2525);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: none;
+}
+
+
+.deadkill_dt1 speech loki {
+  position: absolute;
+  bottom: -53px;
+  left: 93px;
+  font-size: 16px;
+  font-size: 68px;
+  font-family: "A Charming Font Expanded", serif;
+  font-weight: 400;
+  z-index: 2;
+  
+  filter: drop-shadow(0 0 2px black);
+}
+
+.deadkill_dt1 speech okill {
+  position: absolute;
+  bottom: -97px;
+  right: 86px;
+  font-size: 79px;
+  font-family: "Heatizen", serif;
+  font-weight: 400;
+  z-index: 1;
+  
+  filter: drop-shadow(0 0 2px black);
+}
+
+
+@media (max-width: 1200px) {
+  
+  .deadkill_dt1 {
+    margin: 0;
+    width: 100%;
+    filter: none;
+  }
+  
+  .deadkill_dt1 bor {
+    max-width: 450px;
+    width: 100%;
+    background: #e2d8c5;
+    padding: 1px;
+  }
+  
+  .deadkill_dt1 con {
+    background: #081208;
+  }
+  
+  .deadkill_dt1 deadkill {
+    display: none;
+  }
+  
+  .deadkill_dt1 bor t {
+    display: none;
+    
+  }
+  
+  .deadkill_dt1 bor, .deadkill_dt1 con,
+  .deadkill_dt1 inbor, .deadkill_dt1 incon {
+    clip-path: none;
+  }
+  
+  .deadkill_dt1 incon {
+    padding: 5px 5px 80px;
+    background: none;
+  }
+  
+  .deadkill_dt1 inbor {
+    background: none;
+  }
+  
+  .deadkill_dt1 speech {
+    position: relative;
+    margin: 20px auto 0;
+  }
+  
+  .deadkill_dt1 speech:before {
+    top: -20px;
+  }
+  
+  .deadkill_dt1 credit {
+    position: relative;
+    inset: 0;
+    width: 100%;
+    margin-top: 5px;
+    text-align: center;
+    display: block;
+    transform: none;
+  }
+
+  
+}
