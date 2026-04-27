@@ -24,30 +24,30 @@
 
 .rengokut2_content, .rengokut2 {
 	position: relative;
-  width: 420px;
-  margin: 50px auto 40px clamp(10px, 9vw, 150px);
+  width: 800px;
+  margin: 50px auto 40px;
   position: relative;
   overflow: visible;
   padding: 0;
-  background:transparent;
   box-sizing: border-box;
 }
 
 .rengokut2_content credit, .rengokut2 credit {
   display:block;
-  text-align:center;
+  text-align:left;
   font-size:10px;
-  margin: 5px auto 0;
+  margin: 3px 0 0;
   font-family: "Unica One", sans-serif;
   font-weight: bold;
+  padding-left: 50px;
 }
 
 .rengokut2_img {
   position: absolute;
   bottom: -51px;
-  left: 333px;
-  width: 137%;
-  height: 554px;
+  left: 316px;
+  width: 68%;
+  height: 542px;
   background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Rengoku/RengokuShaded2.png?updatedAt=1758297026977') no-repeat bottom;
   background-size: contain; 
   z-index: 5;
@@ -57,12 +57,12 @@
 
 .rengokut2_bor {
   position: relative;
-  width: 100%;
+  width: 350px;
   background: linear-gradient(#862c2c, #ff9f24,#904213);
   padding: 2px;
   border-radius: 10px;
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 0 auto 0 40px;
   box-shadow: 0 0 10px black;
   overflow:hidden;
 }
@@ -172,8 +172,10 @@
     text-align: center;
     transform: none;
   }
-.rengokut2_content credit {
+.rengokut2_content credit, .rengokut2 credit {
   margin: 0 auto;
+  text-align: center;
+  padding: 0;
 }
 
 .rengokut2_incon {
@@ -181,4 +183,3 @@
 }
 
 }
-
