@@ -31,6 +31,7 @@ nav {
 	max-width: 1200px;
 	width: 100%;
 	padding: 3%;
+	color: white;
 }
 a { color: lightblue !important}
 h1 {
@@ -39,5 +40,4 @@ h1 {
 .profav { display:none;}
 .blocky {
 	background: transparent;
-	color: white;
 }
