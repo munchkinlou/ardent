@@ -7,7 +7,33 @@ body {
 	background-attachment: fixed;
 	background-position: center center;
 }
-
 body:after {
-    filter: saturate(0.8) brightness(0.8);
+	background: url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/starrynight.jpg?updatedAt=1753495763500');
+	background-repeat: repeat-y;
+	background-size: cover;
+	background-attachment: fixed;
+	filter: saturate(0.1) brightness(0.8);
+}
+nav {
+	background: black !important;
+	backdrop-filter: blur(2px);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+	border-radius: 0 0 20px 20px;
+	margin: 0 10px;
+	font-weight: 400;
+	font-size: 16px !important;
+	text-transform: lowercase;
+}
+#content {
+	background: black;
+	border: 1px solid gold;
+}
+.profav img {
+	content: url('https://ik.imagekit.io/arl60/Ardent/personal/Astarion/avatar.png');
+  object-fit:contain;
+	width: 200px;
+	height: 300px;
+}
+.blocky {
+	background: transparent;
 }
