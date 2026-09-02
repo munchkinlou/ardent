@@ -26,14 +26,18 @@ nav {
 }
 #content {
 	background: black;
-	border: 1px solid gold;
+	border: 1px solid lightblue;
+	margin: 0 auto 6%;
+	max-width: 1200px;
+	width: 100%;
+	padding: 3%;
 }
-.profav img {
-	content: url('https://ik.imagekit.io/arl60/Ardent/personal/Astarion/avatar.png');
-  object-fit:contain;
-	width: 200px;
-	height: 300px;
+a { color: lightblue !important}
+h1 {
+	color: white;
 }
+.profav { display:none;}
 .blocky {
 	background: transparent;
+	color: white;
 }
