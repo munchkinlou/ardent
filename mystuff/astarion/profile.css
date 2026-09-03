@@ -38,6 +38,7 @@ a { color: lightblue !important}
 h1 {
 	color: white;
 }
+h2 { color:grey;}
 .profav { display:none;}
 .blocky {
 	background: transparent;
