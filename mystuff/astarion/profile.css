@@ -130,15 +130,12 @@ info {
 info img {
 	object-position: center;
 	object-fit: 100%;
+	filter:
+		drop-shadow(0 0 2px black)
+		drop-shadow(0 0 2px black);
 }
 info:has(img) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 0 0 30px;
-	margin: 40px;
-	filter: drop-shadow(0 0 2px black)
-		drop-shadow(0 0 2px black);
+
 }
 
 .subforums {
