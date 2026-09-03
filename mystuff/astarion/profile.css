@@ -19,17 +19,16 @@ body:after {
 }
 header {background:none;}
 nav {
-	background: #131313 !important;
+	background: black !important;
 	backdrop-filter: blur(2px);
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-	border-radius: 0;
+	border-radius: 0 0 20px 20px;
 	margin: 0 10px;
 	font-weight: 400;
 	font-size: 12px !important;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 }
-nav a {text-shadow:0 0 2px black;}
 #content {
 	background: linear-gradient(to bottom, #1c1c1c, black);
 	margin: 0 auto 6%;
@@ -79,10 +78,15 @@ h2 { color:grey;}
 .profav { display:none;}
 .blocky {
 	background: transparent;
-	padding: 30px 0 7px;
+	padding: 20px 0 7px;
 	text-align: center;
 	font-size: 16px;
 	text-shadow: 0 1px 5px black, 0 0 2px black;
+}
+.blocky a {
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 2px;
 }
 .blocky>span {
 	text-transform: lowercase;
@@ -98,18 +102,78 @@ h2 { color:grey;}
   font-family: "Didact Gothic", sans-serif;
 	text-shadow: 0 0 2px black;
   color: grey;}
-.blocky a {
-	text-transform: uppercase;
+.blocky:has(info) {
+  background: none;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+	text-align: justify;
 	font-size: 13px;
-	letter-spacing: 2px;
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.blocky u {text-decoration: none;}
-.blocky u > b {font-weight: 400;}
+.blocky:has(info) > span { display: none; }
+.info {display: block;}
+info { 
+	display: block;
+	padding: 20px;
+}
+info img {
+	object-position: center;
+	object-fit: 100%;
+}
+info:has(img) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 0 30px;
+	margin: 40px;
+	filter: drop-shadow(0 0 2px black)
+		drop-shadow(0 0 2px black);
+}
 
-a { color: grey !important}
-.tabnav a,
-.blocky a {color: #ffc280 !important;}
-h1{
+.subforums {
+	background: none;
+}
+.subforums a { background: none;}
+.subforums a i {display: none;}
+.board { padding: 0 0 20px;}
+.thead {
+	background: transparent;
+	text-align: center;
+  font-family: "Amarante", serif;
+	text-transform: capitalize;
+	font-size:24px;
+	border-bottom: 1px solid grey;
+}
+.thead strong {
+	font-weight: 400;
+	color: white;
+}
+.sip_tbl_td {
+	background:transparent;
+	color: grey;
+	text-align: justify;
+}
+.sip_tbl_th {
+	padding-top:10px;
+	background: transparent;
+}
+td {
+	padding-top:10px;
+}
+
+a{ color: grey !important}
+.tabnav a, .blocky a {
+	color: #ffc280 !important;
+}
+h1,
+info:has(img) {
   border: 1px solid;
   border-image: linear-gradient(to right, #F5B07D,#FFEFA0,#F5B07D) 1;
 }
