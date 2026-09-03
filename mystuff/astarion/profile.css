@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 
 body {
 	position: relative;
@@ -33,21 +35,23 @@ nav {
 	padding: 3%;
 	color: white;
 	box-shadow: 0 0 10px black, inset 0 0 10px black;
+  font-family: "Didact Gothic", sans-serif;
 }
 a { color: lightblue !important}
 h1 { position: relative;
 	float:none !important;
-	margin: 0 auto 5% !important;
-	z-index: 10;
+	margin: auto !important;
+	z-index: 1;
 	display: block;
 	width: 100%;
 	color: white;
 	text-align: center;
 	padding: 30px 0;
 	text-transform: capitalize;
-	font-size: 50px;
+	font-size: 80px;
 	box-shadow: 0 0 10px black;
-}
+  font-family: "WindSong", cursive;
+  filter:drop-shadow(1px 1px 2px black);}
 h1:before { content: '';
   position: absolute;
   inset: 0;
@@ -55,11 +59,24 @@ h1:before { content: '';
   background: url('https://ik.imagekit.io/arl60/Ardent/personal/Branwen/filibg.png?updatedAt=1775870643706?tr=w-1000')
     center no-repeat;
   background-size: cover;
-  opacity: 1;
+  opacity: 0.7;
   filter: saturate(0)
     hue-rotate(-20deg)
     brightness(1);
   pointer-events:none;}
+.tabnav{
+	position: relative;
+	z-index: 1;
+	margin: 20px 0 0;
+	text-align: center;
+	letter-spacing: 3px;
+	font-weight: 400;
+	font-size: 12px !important;
+}
+.tabnav a {
+	color: #68daff !important;
+}
+
 h2 { color:grey;}
 .profav { display:none;}
 .blocky {
