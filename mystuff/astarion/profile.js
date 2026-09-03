@@ -1,5 +1,5 @@
 (function () {
-  const targets = ['appearance','personality'];
+  const targets = ['appearance','personality', 'misc'];
   const styles = {
     background: 'none',
     backgroundColor: 'transparent',
@@ -8,6 +8,8 @@
     boxShadow: 'none',
     padding: '0',
     margin: '0',
+    textAlign: 'justify',
+    fontSize: '12px',
     overflow: 'visible'
   };
   const run = () => {
