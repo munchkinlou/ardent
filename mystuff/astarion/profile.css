@@ -19,16 +19,17 @@ body:after {
 }
 header {background:none;}
 nav {
-	background: black !important;
+	background: #131313 !important;
 	backdrop-filter: blur(2px);
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-	border-radius: 0 0 20px 20px;
+	border-radius: 0;
 	margin: 0 10px;
 	font-weight: 400;
 	font-size: 12px !important;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 }
+nav a {text-shadow:0 0 2px black;}
 #content {
 	background: linear-gradient(to bottom, #1c1c1c, black);
 	margin: 0 auto 6%;
@@ -102,6 +103,8 @@ h2 { color:grey;}
 	font-size: 13px;
 	letter-spacing: 2px;
 }
+.blocky u {text-decoration: none;}
+.blocky u > b {font-weight: 400;}
 
 a { color: grey !important}
 .tabnav a,
