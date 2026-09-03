@@ -5,10 +5,6 @@
 
 body {
 	position: relative;
-	background-repeat: repeat-y;
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center center;
 }
 body:after {
 	background: url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/starrynight.jpg?updatedAt=1753495763500');
@@ -133,7 +129,7 @@ info img {
 }
 info:has(img) {
   padding: 0 0 0 30px;
-	margin: 40px;
+	margin: 50px 20px 20px 15px;
 	filter: drop-shadow(0 0 2px black)
 		drop-shadow(0 0 2px black);
 }
