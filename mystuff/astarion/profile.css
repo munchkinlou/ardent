@@ -35,7 +35,7 @@ nav {
 	width: 100%;
 	padding: 3%;
 	color: white;
-	box-shadow: 0 0 10px black, inset 0 0 10px black;
+	box-shadow: inset 0 0 20px #000000a3;
   font-family: "Didact Gothic", sans-serif;
 }
 a { color: lightblue !important}
@@ -82,6 +82,10 @@ h2 { color:grey;}
 .profav { display:none;}
 .blocky {
 	background: transparent;
+	padding: 30px 0 7px;
+	text-align: center;
+	font-size: 16px;
+	text-shadow: 0 1px 5px black, 0 0 2px black;
 }
 .blocky>span {
 	text-transform: lowercase;
@@ -100,8 +104,8 @@ h2 { color:grey;}
 
 
 /*borders*/
-h1,
-#content {
+
+h1{
   border: 1px solid;
   border-image: linear-gradient(to right, #F5B07D,#FFEFA0,#F5B07D) 1;
 }
