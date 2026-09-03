@@ -169,7 +169,7 @@ info[misc] {
   border-image: linear-gradient(to right, transparent, #F5B07D,#FFEFA0,#F5B07D, transparent) 1;
 }
 info[misc] > box {
-  flex: 0 1 calc(33.333% - 14px);
+  flex: 0 1 calc(50% - 10px);
   min-width: 180px;
   box-sizing: border-box;
 }
