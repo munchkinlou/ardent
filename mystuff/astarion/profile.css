@@ -1,6 +1,5 @@
 
 
-
 body {
 	position: relative;
 	background-repeat: repeat-y;
@@ -27,20 +26,50 @@ nav {
 	text-transform: lowercase;
 }
 #content {
-	background: black;
-	border: 1px solid lightblue;
+	background: linear-gradient(to bottom, #1c1c1c, black);
 	margin: 0 auto 6%;
 	max-width: 1200px;
 	width: 100%;
 	padding: 3%;
 	color: white;
+	box-shadow: 0 0 10px black, inset 0 0 10px black;
 }
 a { color: lightblue !important}
-h1 {
+h1 { position: relative;
+	float:none !important;
+	margin: 0 auto 5% !important;
+	z-index: 10;
+	display: block;
+	width: 100%;
 	color: white;
+	text-align: center;
+	padding: 30px 0;
+	text-transform: capitalize;
+	font-size: 50px;
+	box-shadow: 0 0 10px black;
 }
+h1:before { content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: url('https://ik.imagekit.io/arl60/Ardent/personal/Branwen/filibg.png?updatedAt=1775870643706?tr=w-1000')
+    center no-repeat;
+  background-size: cover;
+  opacity: 1;
+  filter: saturate(0)
+    hue-rotate(-20deg)
+    brightness(1);
+  pointer-events:none;}
 h2 { color:grey;}
 .profav { display:none;}
 .blocky {
 	background: transparent;
+}
+
+
+/*borders*/
+h1,
+#content {
+  border: 1px solid;
+  border-image: linear-gradient(to right, #F5B07D,#FFEFA0,#F5B07D) 1;
 }
