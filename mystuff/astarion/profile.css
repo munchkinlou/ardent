@@ -15,6 +15,7 @@ body:after {
 	background-attachment: fixed;
 	filter: saturate(0.1) brightness(0.8);
 }
+header {background:none;}
 nav {
 	background: black !important;
 	backdrop-filter: blur(2px);
