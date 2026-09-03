@@ -29,9 +29,6 @@ nav {
 	letter-spacing: 2px;
 	text-transform: uppercase;
 }
-nav a {
-	color: grey !important;
-}
 #content {
 	background: linear-gradient(to bottom, #1c1c1c, black);
 	margin: 0 auto 6%;
@@ -42,7 +39,6 @@ nav a {
 	box-shadow: inset 0 0 20px #000000a3;
   font-family: "Didact Gothic", sans-serif;
 }
-a { color: lightblue !important}
 h1 { position: relative;
 	float:none !important;
 	margin: auto !important;
@@ -78,10 +74,6 @@ h1:before { content: '';
 	font-weight: 400;
 	font-size: 12px !important;
 }
-.tabnav a {
-	color: #ffc280 !important;
-}
-
 h2 { color:grey;}
 .profav { display:none;}
 .blocky {
@@ -105,10 +97,15 @@ h2 { color:grey;}
   font-family: "Didact Gothic", sans-serif;
 	text-shadow: 0 0 2px black;
   color: grey;}
+.blocky a {
+	text-transform: uppercase;
+	font-size: 13px;
+	letter-spacing: 2px;
+}
 
-
-/*borders*/
-
+a { color: grey !important}
+.tabnav a,
+.blocky a {color: #ffc280 !important;}
 h1{
   border: 1px solid;
   border-image: linear-gradient(to right, #F5B07D,#FFEFA0,#F5B07D) 1;
