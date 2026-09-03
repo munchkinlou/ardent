@@ -162,6 +162,7 @@ info[misc] {
   flex-wrap: wrap;
 	padding: 0 15px 30px;
 	margin-bottom: -50px;
+	width: 100%;
   gap: 20px;
   justify-content: center;
   align-items: flex-start;
@@ -172,6 +173,65 @@ info[misc] > box {
   flex: 0 1 calc(50% - 10px);
   min-width: 180px;
   box-sizing: border-box;
+}
+info[misc] images {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 20px 20px 0;
+}
+info[misc] images > * {
+  position: relative;
+  height: 78px;
+  border-radius: 2px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  filter: saturate(.85) contrast(1.05);
+}
+info[misc] images > *::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, #000000b8 0%, transparent 55%);
+}
+info[misc] images > *::before {
+  content: attr(n);
+  position: absolute;
+  left: 8px;
+  bottom: 6px;
+  z-index: 2;
+  font-size: 7.5px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #F5B07D;
+  text-shadow: 0 1px 3px #000;
+}
+info[misc] images > * > a {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  z-index: 3;
+  padding: 2px 6px;
+  border-radius: 2px;
+  font-size: 7px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #ffffff8f;
+  text-decoration: none;
+  background: #000000a1;
+  border: 1px solid #ffffff1f;
+  opacity: .55;
+  transition: opacity .18s ease, color .18s ease;
+}
+info[misc] images > *:hover > a { opacity: 1; color: #fff; }
+info[misc] c1 {
+  background-image: url('https://ik.imagekit.io/arl60/Ardent/personal/other/snowleopard.jpg');
+  background-position: center 30%;
+}
+info[misc] c2 {
+  background-image: url('…owl.jpg');
+  background-position: 60% center;
 }
 
 .subforums {
