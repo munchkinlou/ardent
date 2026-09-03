@@ -1,4 +1,5 @@
 
+
 @import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 
@@ -82,6 +83,19 @@ h2 { color:grey;}
 .blocky {
 	background: transparent;
 }
+.blocky>span {
+	text-transform: lowercase;
+	position: absolute;
+	bottom:-5px;
+	left: 50%;
+	transform:translateX(-50%);
+	text-align: center;
+	line-height: 1; 
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+  font-family: "Didact Gothic", sans-serif;
+	text-shadow: 0 0 2px black;}
 
 
 /*borders*/
