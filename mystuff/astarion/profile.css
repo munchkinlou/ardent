@@ -25,8 +25,12 @@ nav {
 	border-radius: 0 0 20px 20px;
 	margin: 0 10px;
 	font-weight: 400;
-	font-size: 16px !important;
-	text-transform: lowercase;
+	font-size: 12px !important;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+nav a {
+	color: grey !important;
 }
 #content {
 	background: linear-gradient(to bottom, #1c1c1c, black);
@@ -75,7 +79,7 @@ h1:before { content: '';
 	font-size: 12px !important;
 }
 .tabnav a {
-	color: #68daff !important;
+	color: #ffc280 !important;
 }
 
 h2 { color:grey;}
