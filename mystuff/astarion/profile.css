@@ -168,6 +168,10 @@ td {
 	padding-top:10px;
 }
 
+select, input {
+	background: transparent;
+}
+
 a{ color: grey !important}
 .tabnav a, .blocky a {
 	color: #ffc280 !important;
