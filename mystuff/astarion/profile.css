@@ -157,6 +157,22 @@ info:has(img) {
 	filter: drop-shadow(0 0 2px black)
 		drop-shadow(0 0 2px black);
 }
+info[misc] {
+  display: flex;
+  flex-wrap: wrap;
+	padding: 0 15px 30px;
+	margin-bottom: -50px;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+	border-bottom: 1px solid;
+  border-image: linear-gradient(to right, transparent, #F5B07D,#FFEFA0,#F5B07D, transparent) 1;
+}
+info[misc] > box {
+  flex: 0 1 calc(33.333% - 14px);
+  min-width: 180px;
+  box-sizing: border-box;
+}
 
 .subforums {
 	background: none;
