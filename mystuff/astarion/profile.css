@@ -380,13 +380,35 @@ history {
   gap: 20px;
   box-sizing: border-box;
 }
-
 history > * {
   flex: 1 1 50%;
   width: 50%;
 }
-
-
+history box {
+  padding: 0 20px;
+  text-align: justify;
+}
+history h3 {
+  font-family: "Didact Gothic", sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 2px;
+  color:#a6a6a6;
+  text-shadow: 0 0 2px black;
+  text-align: center;
+}
+history h3 i {
+  display: block;
+  font-size: 12px;
+  font-style: normal;
+  opacity: .6;
+}
+history details summary {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  color:#bca476;
+}
 .board { margin: 0 0 -30px; 
   padding: 0px 0 55px;
   border-top: 1px solid;
