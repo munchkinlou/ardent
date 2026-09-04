@@ -481,7 +481,10 @@ info[fam] h3, info[fam] h4 {
 info[fam] h3 { margin: 18px 0 6px; }
 info[fam] > h3:first-child { margin-top: 0; }
 
-p[mother], p[father], p[parent] { text-align: center; }
+p[parent] { text-align: center;
+  display: block;
+}
+
 p[current] { text-align: center; }
 p[former] {
   color: grey;
@@ -535,19 +538,6 @@ info[fam] dd:has(~ dt)::before {
   bottom: 0;
   border-left: var(--tw) solid var(--tree);
 }
-
-info[fam] p[mother]::after,
-info[fam] p[father]::after,
-info[fam] p[parent]::after {
-  display: inline-block;
-  width: 1em;
-  margin-left: 6px;
-  font-size: 11px;
-  opacity: .55;
-}
-info[fam] p[mother]::after { content: '\2640\FE0E'; }
-info[fam] p[father]::after { content: '\2642\FE0E'; }
-info[fam] p[parent]::after { content: '\26B2\FE0E'; }
 
 info [female]::after,
 info [male]::after,
