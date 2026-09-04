@@ -448,6 +448,13 @@ tbody:has(.rpgsk_agent_lines) .thead {
   text-shadow: 0 0 2px black;
 }
 
+.blocky:has(info[fam]){
+  margin:30px 10px 10px;
+  box-shadow: 0 0 10px black;
+  padding: 10px 10px 20px;
+}
+.blocky:has(info[app]){margin:0;}
+
 info[fam] {
   display: block;
   --tree: #ffffff2e;
@@ -455,12 +462,35 @@ info[fam] {
   --elbow: 10px;
   --gap: 16px;
 }
-
+info[fam] h3{
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+info[fam] h4{
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+}
+info[fam] h3, info[fam] h4 {
+  text-shadow: 0 0 2px black, 0 0 1px black;
+  color: #f6d0b4;
+}
 info[fam] h3 { margin: 18px 0 6px; }
 info[fam] > h3:first-child { margin-top: 0; }
 
+p[mother], p[father], p[parent] { text-align: center; }
+p[current] { text-align: center; }
+p[former] {
+  color: grey;
+  text-align: right;
+  padding-right: 5px;
+}
+
 info[fam] ul { list-style: none; margin: 0; padding-left: var(--gap); }
-info[fam] dl { margin: 0; }
+info[fam] dl { margin: 0; padding-left: 20px; }
 info[fam] dd > ul { padding-left: 0; }
 
 info[fam] li,
@@ -477,20 +507,17 @@ info[fam] dt::before {
   position: absolute;
   left: 0;
   top: 0;
-  width: var(--elbow);
-  height: .8em;
-  border-left: var(--tw) solid var(--tree);
-  border-bottom: var(--tw) solid var(--tree);
-}
-
-info[fam] li:not(:last-child)::after,
-info[fam] dt::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: .8em;
   bottom: 0;
+  width: var(--elbow);
   border-left: var(--tw) solid var(--tree);
+  background: linear-gradient(var(--tree), var(--tree)) 0 .8em / 100% var(--tw) no-repeat;
+}
+info[fam] li:last-child::before,
+info[fam] dt:last-of-type::before {
+  bottom: auto;
+  height: .8em;
+  background: none;
+  border-bottom: var(--tw) solid var(--tree);
 }
 
 info[fam] dd {
@@ -509,6 +536,30 @@ info[fam] dd:has(~ dt)::before {
   border-left: var(--tw) solid var(--tree);
 }
 
+info[fam] p[mother]::after,
+info[fam] p[father]::after,
+info[fam] p[parent]::after {
+  display: inline-block;
+  width: 1em;
+  margin-left: 6px;
+  font-size: 11px;
+  opacity: .55;
+}
+info[fam] p[mother]::after { content: '\2640\FE0E'; }
+info[fam] p[father]::after { content: '\2642\FE0E'; }
+info[fam] p[parent]::after { content: '\26B2\FE0E'; }
+
+info [female]::after,
+info [male]::after,
+info [nb]::after {
+  margin-left: 6px;
+  font-size: 10px;
+  opacity: .5;
+  font-variant-emoji: text;
+}
+info [female]::after { content: '\2640\FE0E'; }
+info [male]::after   { content: '\2642\FE0E'; }
+info [nb]::after     { content: '\26B2\FE0E'; }
 
 
 
@@ -637,7 +688,8 @@ select, input {
   letter-spacing: 1.3px;
 }
 .subforums a {padding: 0 5px;}
-h1, info:has(img) {
+h1, info:has(img),
+.blocky:has(info[fam]){
   border: 1px solid;
   border-image: linear-gradient(to right, #F5B07D,#FFEFA0,#F5B07D) 1;
 }
