@@ -29,6 +29,7 @@ html {
 
 body {
 	position: relative;
+  background: black;
 }
 body:after {
 	background: url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/starrynight.jpg?updatedAt=1753495763500');
