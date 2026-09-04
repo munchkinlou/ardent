@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
 
 :root {
   --sb: #7a7a7a;
@@ -12,14 +12,17 @@ html {
   scrollbar-width: thin;
   scrollbar-color: var(--sb) var(--sb-track);
 }
-::-webkit-scrollbar { width: 10px; height: 10px; }
-::-webkit-scrollbar-track { background: var(--sb-track); }
+::-webkit-scrollbar { 
+	width: 10px; height: 10px; }
+::-webkit-scrollbar-track { 
+	background: var(--sb-track); }
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(to bottom, var(--sb), color-mix(in srgb, var(--sb) 65%, black));
-  border-radius: 5px;
-  border: 2px solid var(--sb-track);
+  border: 1px solid var(--sb-track);
 }
-::-webkit-scrollbar-thumb:hover { background: color-mix(in srgb, var(--sb) 60%, white); }
+::-webkit-scrollbar-thumb:hover { 
+	background: color-mix(in srgb, var(--sb) 60%, white); }
+
 body {
 	position: relative;
 }
@@ -97,11 +100,11 @@ h1:before { content: '';
 	font-size: 12px !important;
 }
 h2 { color:grey;}
-.tab { border-color:#8686864f; }
+.tab { border-color:#8686864f; padding-top:30px!important}
 .profav { display:none;}
 .blocky {
 	background: transparent;
-	padding: 20px 0 7px;
+	padding: 10px 0 20px;
 	text-align: center;
 	font-size: 16px;
 	text-shadow: 0 1px 5px black, 0 0 2px black;
@@ -114,6 +117,7 @@ h2 { color:grey;}
 .blocky u {text-decoration: none;}
 .blocky u > b {font-weight:400;}
 .blocky>span {
+	position: relative;
 	text-transform: lowercase;
 	position: absolute;
 	bottom:-5px;
@@ -127,6 +131,22 @@ h2 { color:grey;}
   font-family: "Didact Gothic", sans-serif;
 	text-shadow: 0 0 2px black;
   color: grey;}
+.blocky > span:before {
+	content: '';
+	position: absolute;
+	top:-15px;
+	left: 50%;
+	transform:translateX(-50%);
+	width: 100px;
+	height: 14px;
+	background: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/1155601_OR9Z4R1.png?updatedAt=1773783029296')
+		no-repeat center;
+	background-size: contain;
+	z-index: 10;
+	filter:brightness(10);
+	opacity: 0.4;
+	pointer-events: none;
+}
 .blocky:has(info) {
   background: none;
   background-color: transparent;
@@ -141,6 +161,9 @@ h2 { color:grey;}
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.blocky:has(info) > a {
+	
 }
 .blocky:has(info) > span { display: none; }
 .info {display: block;}
@@ -161,9 +184,9 @@ info:has(img) {
 info[misc] {
   display: flex;
   flex-wrap: wrap;
-	padding: 0 15px 30px;
-	margin-bottom: -100px;
-	width: 100%;
+  padding: 0 15px 30px;
+  margin-bottom: -100px;
+  width: 100%;
   gap: 20px;
   justify-content: center;
   align-items: flex-start;
@@ -183,28 +206,50 @@ info[misc] images > * {
   position: relative;
   height: 78px;
   border-radius: 2px;
-  overflow: hidden;
   background-size: cover;
   background-position: center;
   filter: saturate(.85) contrast(1.05);
 }
 info[misc] images > *::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, #000000b8 0%, transparent 55%);
-}
-info[misc] images > *::before {
   content: attr(n);
   position: absolute;
-  left: 8px;
-  bottom: 6px;
+  inset: 0;
   z-index: 2;
+  display: flex;
+  align-items: flex-end;
+  box-sizing: border-box;
+  padding: 6px 8px;
+  border-radius: inherit;
+  background: linear-gradient(to top, #000000b8 0%, transparent 55%);
   font-size: 7.5px;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #F5B07D;
   text-shadow: 0 1px 3px #000;
+}
+info[misc] images > *::before {
+  content: '';
+  position: absolute;
+  z-index: 20;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%) scale(.94);
+  width: 600px;
+  height: 300px;
+  background-image: inherit;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #0b0b0b;
+  border: 1px solid #F5B07D5c;
+  box-shadow: 0 8px 26px #000c;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .18s ease, transform .18s ease;
+}
+info[misc] images > *:hover::before {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
 }
 info[misc] images > * > a {
   position: absolute;
@@ -233,15 +278,15 @@ info[misc] c2 {
   background-position: 60% center;
 }
 
-.board { margin-top: -30px; padding: 0 0 20px;}
-
+.board { margin: -30px 0 -20px; padding: 0 0 20px;}
+.spacer {display:none;}
 .subforums {
 	background: none;
 	border-top:1px solid;
   border-color:#8686864f;
-	padding: 20px 0 0;
+	padding: 30px 0 0;
+	gap: 0px !important;
 }
-.subforums a { background: none;}
 .subforums a i {display: none;}
 
 #content > p {font-size:0;}
@@ -282,18 +327,24 @@ td {
 	text-align: left;
 	padding: 0;
 }
-
-
 select, input {
 	background: transparent;
 }
-
-
 .tabnav a, .blocky a {
 	color: #ffc280 !important;
 }
-h1,
-info:has(img) {
+.subforums a,
+.blocky:has(info) a { 
+	background: none;
+  text-transform: capitalize;
+  font-family: "Cormorant Garamond", serif;
+  font-size:15px;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1.3px;
+}
+.subforums a {padding: 0 5px;}
+h1, info:has(img) {
   border: 1px solid;
   border-image: linear-gradient(to right, #F5B07D,#FFEFA0,#F5B07D) 1;
 }
