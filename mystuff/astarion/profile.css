@@ -1,8 +1,11 @@
-
 @import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+/*
+  DO NOT USE WITHOUT ANDY'S PERMISSION.
+*/
 
 :root {
   --sb: #7a7a7a;
@@ -163,6 +166,10 @@ h2 { color:grey;}
 	opacity: 0.4;
 	pointer-events: none;
 }
+/*
+  DO NOT USE WITHOUT ANDY'S PERMISSION.
+*/
+
 .blocky:has(info) {
   background: none;
   background-color: transparent;
@@ -339,6 +346,10 @@ info[misc] images > *:hover::before {
   opacity: 1;
   transform: translateX(-50%) scale(1);
 }
+/*
+  DO NOT USE WITHOUT ANDY'S PERMISSION.
+*/
+
 info[misc] images > * > a {
   position: absolute;
   right: 6px;
@@ -455,6 +466,10 @@ h2,
   border-bottom: 1px solid #8080806e;
   padding-bottom: 5px;
 }
+/*
+  DO NOT USE WITHOUT ANDY'S PERMISSION.
+*/
+
 h2,
 #content > table:nth-of-type(1) .thead strong,
 #content > table:nth-of-type(2) .thead strong {
@@ -484,6 +499,18 @@ h1, info:has(img) {
   border: 1px solid;
   border-image: linear-gradient(to right, #F5B07D,#FFEFA0,#F5B07D) 1;
 }
+a, .subforums a,
+.blocky a,
+.tabnav a {
+  display: inline-block !important;
+  transition: transform 0.3s ease !important;
+}
+a:hover, .subforums a:hover,
+.blocky a:hover,
+.tabnav a:hover {
+  transform: scale(1.1) !important;
+  text-shadow: none;
+}
 @media (max-width: 1200px){
   info:has(img) u {
     position: relative;
@@ -497,3 +524,6 @@ h1, info:has(img) {
     flex-direction: column;
   }
 }
+/*
+  DO NOT USE WITHOUT ANDY'S PERMISSION.
+*/
