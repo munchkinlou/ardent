@@ -483,14 +483,20 @@ info[fam] > h3:first-child { margin-top: 0; }
 
 p[parent] { text-align: center;
   display: block;
+  text-shadow: 0 0 2px black, 0 0 5px black;
 }
 
 p[current] { text-align: center; }
 p[former] {
+  padding-top:3px;
   color: grey;
   text-align: right;
-  padding-right: 5px;
+  font-style: italic;
 }
+p[former] sub {
+  padding-right:13px;
+}
+p[current] i, p[former] i {display: none;}
 
 info[fam] ul { list-style: none; margin: 0; padding-left: var(--gap); }
 info[fam] dl { margin: 0; padding-left: 20px; }
