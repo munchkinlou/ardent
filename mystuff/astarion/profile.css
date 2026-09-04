@@ -214,14 +214,19 @@ info[misc] {
   margin-bottom: -100px;
   width: 100%;
   gap: 20px;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
 }
-info[misc] > box {
+dl {margin:0;}
+info[misc] box {
+  display: flex;
+  gap: 40px;
+}
+info[misc] box > dl {
   flex: 0 1 calc(50% - 10px);
   min-width: 180px;
   box-sizing: border-box;
 }
+
 info[misc] images {
   display: flex;
   flex-direction: column;
@@ -295,16 +300,11 @@ info[misc] images > * > a {
   transition: opacity .18s ease, color .18s ease;
 }
 info[misc] images > *:hover > a { opacity: 1; color: #fff; }
-info[misc] c1 {
-  background-image: url('https://ik.imagekit.io/arl60/Ardent/personal/other/snowleopard.jpg');
-  background-position: center 30%;
-}
-info[misc] c2 {
-  background-image: url('…owl.jpg');
-  background-position: 60% center;
+info[misc] c {
+  background-image: var(--cimg, none);
 }
 
-.board { margin: -30px 0 -20px; padding: 0 0 20px;}
+.board { margin: 0; padding: 0 0 20px;}
 .spacer {display:none;}
 .subforums {
 	background: none;
@@ -324,9 +324,9 @@ info[misc] c2 {
 .thead {
 	background: transparent;
 	text-align: center;
-  font-family: "Amarante", serif;
-	text-transform: capitalize;
-	font-size:24px;
+  font-family: "Didact Gothic", sans-serif;
+	text-transform: uppercase;
+	font-size:15px;
 	border-bottom: 1px solid grey;
 }
 .thead strong {
@@ -355,6 +355,7 @@ h2,
 	border:none;
 	text-align: left;
 	padding: 0;
+  text-transform: capitalize;
   border-bottom: 1px solid #8080806e;
   padding-bottom: 5px;
 }
