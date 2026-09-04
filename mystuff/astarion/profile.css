@@ -349,7 +349,6 @@ info[misc] images > *:hover::before {
 /*
   DO NOT USE WITHOUT ANDY'S PERMISSION.
 */
-
 info[misc] images > * > a {
   position: absolute;
   right: 6px;
@@ -371,6 +370,21 @@ info[misc] images > *:hover > a { opacity: 1; color: #fff; }
 info[misc] c {
   background-image: var(--cimg, none);
 }
+.flex.fill:has(history) {
+  display:block;
+}
+history {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+history > * {
+  flex: 1 1 50%;
+  width: 50%;
+}
+
 
 .board { margin: 0 0 -30px; 
   padding: 0px 0 55px;
