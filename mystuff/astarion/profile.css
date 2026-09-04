@@ -424,8 +424,6 @@ code {
   text-shadow: 0 0 2px black, 0 0 5px black;
 }
 .rpgsk_agent_lines br {display:inline !important;}
-
-
 .blocky:has(.rpgsk_skill_head){
   text-align: left;
 }
@@ -437,7 +435,6 @@ tbody:has(.rpgsk_agent_lines) .thead {
   display: block;
   margin: -10px 0 -40px;
 }
-
 .rpgsk_skill_head {
   background: transparent;
   text-transform: uppercase !important;
@@ -450,6 +447,72 @@ tbody:has(.rpgsk_agent_lines) .thead {
   color: #e9cc9f !important;
   text-shadow: 0 0 2px black;
 }
+
+info[fam] {
+  display: block;
+  --tree: #ffffff2e;
+  --tw: 1px;
+  --elbow: 10px;
+  --gap: 16px;
+}
+
+info[fam] h3 { margin: 18px 0 6px; }
+info[fam] > h3:first-child { margin-top: 0; }
+
+info[fam] ul { list-style: none; margin: 0; padding-left: var(--gap); }
+info[fam] dl { margin: 0; }
+info[fam] dd > ul { padding-left: 0; }
+
+info[fam] li,
+info[fam] dt {
+  position: relative;
+  margin: 0;
+  padding-left: calc(var(--elbow) + 6px);
+  line-height: 1.6;
+}
+
+info[fam] li::before,
+info[fam] dt::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: var(--elbow);
+  height: .8em;
+  border-left: var(--tw) solid var(--tree);
+  border-bottom: var(--tw) solid var(--tree);
+}
+
+info[fam] li:not(:last-child)::after,
+info[fam] dt::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: .8em;
+  bottom: 0;
+  border-left: var(--tw) solid var(--tree);
+}
+
+info[fam] dd {
+  position: relative;
+  margin: 0;
+  padding-left: var(--gap);
+  padding-bottom: 10px;
+}
+info[fam] dd:last-of-type { padding-bottom: 0; }
+info[fam] dd:has(~ dt)::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border-left: var(--tw) solid var(--tree);
+}
+
+
+
+
+
 
 .board { margin: 0 0 -30px; 
   padding: 0px 0 55px;
