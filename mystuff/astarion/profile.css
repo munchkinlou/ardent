@@ -90,13 +90,14 @@ h1:before { content: '';
 .tabnav{
 	position: relative;
 	z-index: 1;
-	margin: 20px 0 0;
+	margin: 10px 0 -10px;
 	text-align: center;
 	letter-spacing: 3px;
 	font-weight: 400;
 	font-size: 12px !important;
 }
 h2 { color:grey;}
+.tab { border-color:#8686864f; }
 .profav { display:none;}
 .blocky {
 	background: transparent;
@@ -161,13 +162,11 @@ info[misc] {
   display: flex;
   flex-wrap: wrap;
 	padding: 0 15px 30px;
-	margin-bottom: -50px;
+	margin-bottom: -100px;
 	width: 100%;
   gap: 20px;
   justify-content: center;
   align-items: flex-start;
-	border-bottom: 1px solid;
-  border-image: linear-gradient(to right, transparent, #F5B07D,#FFEFA0,#F5B07D, transparent) 1;
 }
 info[misc] > box {
   flex: 0 1 calc(50% - 10px);
@@ -234,16 +233,22 @@ info[misc] c2 {
   background-position: 60% center;
 }
 
+.board { margin-top: -30px; padding: 0 0 20px;}
+
 .subforums {
 	background: none;
+	border-top:1px solid;
+  border-color:#8686864f;
+	padding: 20px 0 0;
 }
 .subforums a { background: none;}
 .subforums a i {display: none;}
-.board { padding: 0 0 20px;}
 
 #content > p {font-size:0;}
 #content > table:nth-of-type(1),
-#content > table:nth-of-type(2) { flex: 1 1 calc(50% - 20px); }
+#content > table:nth-of-type(2) {
+	flex: 1 1 calc(50% - 20px);
+}
 
 .thead {
 	background: transparent;
@@ -269,6 +274,15 @@ info[misc] c2 {
 td {
 	padding-top:10px;
 }
+
+#content > table:nth-of-type(1) .thead,
+#content > table:nth-of-type(2) .thead {
+	font-family: redressed;
+	border:none;
+	text-align: left;
+	padding: 0;
+}
+
 
 select, input {
 	background: transparent;
