@@ -98,6 +98,18 @@ h1:before {
     brightness(1);
   pointer-events:none;
 }
+h1:after { content: '\00A9 andy';
+  position: absolute;
+  right: 12px;
+  bottom: 8px;
+  z-index: 2;
+  font-family: Verdana, sans-serif;
+  font-size: 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #5f5f5f;
+  text-shadow: 0 1px 2px #000;
+  pointer-events: none;}
 .tabnav{
 	position: relative;
 	z-index: 1;
@@ -205,7 +217,7 @@ info:has(img)::before {
   pointer-events:none;
 }
 info[main] > p {
-
+  text-shadow: 0 0 1px black;
 }
 info[misc] {
   display: flex;
@@ -315,13 +327,13 @@ info[misc] c {
 }
 
 .board { margin: 0 0 -30px; 
-  padding: 0px 0 80px;
+  padding: 0px 0 55px;
   border-top: 1px solid;
   border-image: linear-gradient(to right, transparent, #F5B07D,#FFEFA0,#F5B07D, transparent) 1;
 	}
 .blocky.board span {
   display: block;
-  margin:0 0 55px !important;
+  margin:0 0 30px !important;
 }
 .spacer {display:none;}
 .subforums {
@@ -336,7 +348,10 @@ info[misc] c {
 #content > table:nth-of-type(2) {
 	flex: 1 1 calc(50% - 20px);
 }
-
+.sip_tbl {
+  box-shadow: 0 5px 20px #00000059;
+  margin: 10px 0 20px;
+}
 .thead {
 	background: transparent;
 	text-align: center;
@@ -347,7 +362,8 @@ info[misc] c {
 }
 .thead strong {
 	font-weight: 400;
-	color: white;
+	color: #7d7d7d;
+  text-shadow: 0 0 2px black, 0 0 5px black;
 }
 .sip_tbl_td {
 	background:transparent;
@@ -355,12 +371,40 @@ info[misc] c {
 	text-align: justify;
 }
 .sip_tbl_th {
-	padding-top:10px;
+	padding:10px;
 	background: transparent;
+  border-bottom:1px solid #8080801f;
 }
 td {
 	padding-top:10px;
 }
+.sip_tbl_td:nth-child(1) { 
+  width: 20px; text-align: center;
+  padding: 0 10px;
+  filter: drop-shadow(1px 1px 2px black);}
+.sip_tbl_td > img {
+  object-fit: contain;
+  opacity: 0.6;
+}
+.sip_tbl_td:nth-child(2) { 
+  font-weight: bold;
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size:11px;
+  padding: 0 5px;
+}
+.sip_tbl_td:nth-child(3) { 
+  text-align: left;
+  padding: 5px 10px;
+  opacity: 0.7;
+  text-transform: lowercase;
+  font-style: italic;
+  width: 50%;
+}
+.sip_tbl_td:nth-child(4),
+.sip_tbl_td:nth-child(5) { 
+  text-align: center; }
 
 h2,
 #content > table:nth-of-type(1) .thead,
@@ -384,6 +428,8 @@ h2,
 }
 select, input {
 	background: transparent;
+  box-shadow: 0 0 5px #00000045;
+  border-radius: 8px;
 }
 .tabnav a, .blocky a {
 	color: #ffc280 !important;
