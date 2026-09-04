@@ -414,6 +414,43 @@ code {
   font-size:10px;
   height: 100%;
 }
+.rpgsk_agent_lines {
+  margin-top:20px;
+  background: transparent;
+  color: #ffedb8;
+  letter-spacing: 1.4px;
+  font-size:23px;
+  font-family: "Allura", cursive;
+  text-shadow: 0 0 2px black, 0 0 5px black;
+}
+.rpgsk_agent_lines br {display:inline !important;}
+
+
+.blocky:has(.rpgsk_skill_head){
+  text-align: left;
+}
+table:has(.rpgsk_skill_head){
+  margin-bottom:-80px;
+}
+tbody:has(.rpgsk_agent_lines) .thead {
+  border: none !important;
+  display: block;
+  margin: -10px 0 -40px;
+}
+
+.rpgsk_skill_head {
+  background: transparent;
+  text-transform: uppercase !important;
+  font-size: 13px;
+  border-left: 3px solid;
+  border-bottom: 2px solid;
+  border-color: grey;
+  padding: 0 0 5px 10px;
+  margin: 20px 0 10px;
+  color: #e9cc9f !important;
+  text-shadow: 0 0 2px black;
+}
+
 .board { margin: 0 0 -30px; 
   padding: 0px 0 55px;
   border-top: 1px solid;
@@ -553,6 +590,19 @@ a:hover, .subforums a:hover,
   transform: scale(1.1) !important;
   text-shadow: none;
 }
+.rpgsk_mem_prof_skill_descr a {
+  text-transform: lowercase;
+  color: #b1b1b1 !important;
+  letter-spacing: 1px;
+  transition: color 0.3s ease !important;
+}
+
+.rpgsk_mem_prof_skill_descr a:hover {
+  font-style: italic;
+  color: #ffc280 !important;
+  transform: none !important;
+}
+
 
 @media (max-width: 1200px){
   info:has(img) u {
