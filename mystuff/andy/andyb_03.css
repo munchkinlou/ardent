@@ -1,43 +1,1015 @@
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 
+/*
+  DO NOT USE WITHOUT ANDY'S PERMISSION.
+*/
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--grey) var(--srf2);
+}
+::-webkit-scrollbar { 
+	width: 10px; height: 10px; }
+::-webkit-scrollbar-track { 
+	background: var(--srf2); }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, var(--grey), color-mix(in oklab, var(--grey) 65%, black));
+  border: 1px solid var(--srf2);
+}
+::-webkit-scrollbar-thumb:hover { 
+	background: color-mix(in oklab, var(--grey) 60%, white); }
 
 body {
 	position: relative;
-	background-repeat: repeat-y;
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center center;
+  background: black;
 }
 body:after {
-	background: url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/starrynight.jpg?updatedAt=1753495763500');
+	background: var(--bg);
 	background-repeat: repeat-y;
 	background-size: cover;
 	background-attachment: fixed;
 	filter: saturate(0.1) brightness(0.8);
 }
+header {background:none;}
 nav {
-	background: black !important;
+	background: var(--srf) !important;
 	backdrop-filter: blur(2px);
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-	border-radius: 0 0 20px 20px;
-	margin: 0 10px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+	margin: 0 20px;
 	font-weight: 400;
-	font-size: 16px !important;
-	text-transform: lowercase;
+	font-size: 12px !important;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.dropdown-menu {
+	background: color-mix(in srgb, var(--srf2) 88%, transparent);
 }
 #content {
-	background: black;
-	border: 1px solid lightblue;
+	background: linear-gradient(to bottom, var(--srf), var(--srf2), var(--srf));
 	margin: 0 auto 6%;
 	max-width: 1200px;
 	width: 100%;
-	padding: 3%;
+	padding: 2% 3% 3%;
 	color: white;
+	box-shadow: inset 0 0 20px #000000a3;
+  font-family: var(--f4);
+	border: 5px double var(--bor);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
-a { color: lightblue !important}
-h1 {
+#content > * { flex: 1 1 100%; }
+a{ color: var(--grey) !important}
+h1 { position: relative;
+	float:none !important;
+	margin: auto !important;
+	z-index: 1;
+	display: block;
+	width: 100%;
 	color: white;
+  background: #00000042;
+	text-align: center;
+	padding: 30px 0;
+	text-transform: capitalize;
+	font-size: 80px;
+	box-shadow: 0 0 10px black;
+  font-family: var(--f1);
+  filter:drop-shadow(1px 1px 2px black);}
+h1:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--tex) center no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+  filter: saturate(0)
+    hue-rotate(-20deg)
+    brightness(1);
+  pointer-events:none;
 }
+h1:after { content: var(--credit);
+  position: absolute;
+  right: 12px;
+  bottom: 8px;
+  z-index: 2;
+  font-family: Verdana, sans-serif;
+  font-size: 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: color-mix(in oklab, var(--grey) 70%, black);
+  text-shadow: 0 1px 2px #000;
+  pointer-events: none;}
+.tabnav{
+	position: relative;
+	z-index: 1;
+	margin: 10px 0 -10px;
+	text-align: center;
+	letter-spacing: 3px;
+	font-weight: 400;
+	font-size: 12px !important;
+}
+.tab { border-color: color-mix(in oklab, var(--grey) 31%, transparent); padding-top:30px!important}
 .profav { display:none;}
 .blocky {
 	background: transparent;
+	padding: 10px 0 20px;
+	text-align: center;
+	font-size: 16px;
+	text-shadow: 0 1px 5px black, 0 0 2px black;
+}
+.blocky a {
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 2px;
+}
+.blocky u {text-decoration: none;}
+.blocky u > b {font-weight:400;}
+.blocky>span {
+	position: absolute;
+	bottom:-5px;
+	left: 50%;
+	transform:translateX(-50%);
+	text-align: center;
+	line-height: 1; 
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+  font-family: var(--f4);
+	text-shadow: 0 0 2px black;
+  color: var(--grey);}
+.blocky > span:before {
+	content: '';
+	position: absolute;
+	top:-15px;
+	left: 50%;
+	transform:translateX(-50%);
+	width: 100px;
+	height: 14px;
+	background: var(--statb) no-repeat center;
+	background-size: contain;
+	z-index: 10;
+	filter:brightness(10);
+	opacity: 0.4;
+	pointer-events: none;
+}
+/*
+  DO NOT USE WITHOUT ANDY'S PERMISSION.
+*/
+
+.blocky:has(info) {
+  background: none;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+	text-align: justify;
+	font-size: 13px;
+  margin-top: 60px;
+}
+.blocky:has(info) > span { display: none; }
+.info {display: block;}
+info { 
+	display: block;
+	padding: 20px;
+}
+info img {
+	object-position: center;
+	object-fit: cover;
+}
+info:has(img) {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  height: 100%;
+  padding: 0 20px;
+  margin: 20px;
+  filter:
+    drop-shadow(0 0 2px black)
+    drop-shadow(0 0 2px black);
+  background: #0000001a;
+  z-index: 0;
+}
+info:has(img) u {
+  position: absolute;
+  bottom:5px;
+  left:13px;
+  text-align: left;
+  text-transform: lowercase;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  color: var(--grey);
+}
+info:has(img) box {
+  text-align: center;
+}
+info:has(img) h2 {
+  position: relative;
+  border:none;
+  padding-bottom:30px;
+}
+info:has(img) h2:before {
+  content: '';
+  position: absolute;
+  top: 37px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 24px;
+  z-index: 10;
+  opacity: .8;
+  pointer-events: none;
+  background:
+    linear-gradient(100deg, transparent 38%, color-mix(in oklab, var(--acc) 12%, white) 50%, transparent 62%),
+    linear-gradient(to right,
+      color-mix(in oklab, var(--acc) 62%, black),
+      color-mix(in oklab, var(--acc) 45%, white),
+      var(--acc));
+  background-size: 220% 100%, 100% 100%;
+  background-repeat: no-repeat;
+  -webkit-mask: var(--apb) center / contain no-repeat;
+  mask: var(--apb) center / contain no-repeat;
+}
+info:has(img)::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--tex) center no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+  filter: saturate(0)
+    hue-rotate(-20deg)
+    brightness(1);
+  pointer-events:none;
+}
+info[main] > p {
+  text-shadow: 0 0 1px black;
+}
+info[misc] {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 15px 30px;
+  margin-bottom: -100px;
+  width: 100%;
+  gap: 20px;
+  flex-direction: column;
+}
+info[misc] dl{margin:0; padding:0px;}
+info[misc] dt {
+  font-size:12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 0 0 2px black;
+  padding-top:10px;
+}
+info[misc] h2 {
+  margin: 5px 0 10px;
+}
+info[misc] box {
+  display: flex;
+  gap: 40px;
+}
+info[misc] box > dl {
+  flex: 0 1 calc(50% - 10px);
+  min-width: 180px;
+  box-sizing: border-box;
+}
+
+info[misc] images {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 20px 20px 0;
+}
+info[misc] images > * {
+  position: relative;
+  height: 78px;
+  border-radius: 2px;
+  background-size: cover;
+  background-position: center;
+  filter: saturate(.85) contrast(1.05);
+}
+info[misc] images > *::after {
+  content: attr(n);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: flex-end;
+  box-sizing: border-box;
+  padding: 6px 8px;
+  border-radius: inherit;
+  background: linear-gradient(to top, #000000b8 0%, transparent 55%);
+  font-size: 7.5px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--acc);
+  text-shadow: 0 1px 3px #000;
+}
+info[misc] images > *::before {
+  content: '';
+  position: absolute;
+  z-index: 20;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%) scale(.94);
+  width: 600px;
+  height: 300px;
+  background-image: inherit;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #0b0b0b;
+  border: 1px solid color-mix(in oklab, var(--acc) 36%, transparent);
+  box-shadow: 0 8px 26px #000c;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .18s ease, transform .18s ease;
+}
+info[misc] images > *:hover::before {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+/*
+  DO NOT USE WITHOUT ANDY'S PERMISSION.
+*/
+info[misc] images > * > a {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  z-index: 3;
+  padding: 2px 6px;
+  border-radius: 2px;
+  font-size: 7px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #ffffff8f;
+  text-decoration: none;
+  background: #000000a1;
+  border: 1px solid #ffffff1f;
+  opacity: .55;
+  transition: opacity .18s ease, color .18s ease;
+}
+info[misc] images > *:hover > a { opacity: 1; color: #fff; }
+info[misc] c {
+  background-image: var(--cimg, none);
+}
+.flex.fill:has(history) {
+  display:block;
+  margin-bottom:-60px;
+}
+history {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  box-sizing: border-box;
+}
+history > * {
+  flex: 1 1 50%;
+  width: 50%;
+}
+history box {
+  padding: 0 20px;
+  text-align: justify;
+}
+history h3 {
+  font-family: var(--f4);
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: color-mix(in oklab, var(--grey) 80%, white);
+  text-shadow: 0 0 2px black;
+  text-align: center;
+}
+history h3 i {
+  display: block;
+  font-size: 12px;
+  font-style: normal;
+  opacity: .6;
+}
+history details summary {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  color: var(--acc);
+}
+code {
+  background: var(--srf2);
+  font-size:10px;
+  height: 100%;
+}
+
+.rpgsk_agent_lines {
+  margin-top:20px;
+  background: transparent;
+  color: var(--acc);
+  letter-spacing: 1.4px;
+  font-size:20px;
+  font-family: var(--f3);
+  text-shadow: 0 0 2px black, 0 0 5px black;
+}
+.rpgsk_agent_lines br {display:inline !important;}
+.blocky:has(.rpgsk_skill_head){
+  text-align: left;
+}
+table:has(.rpgsk_skill_head){
+  margin-bottom:-130px;
+}
+tbody:has(.rpgsk_agent_lines) .thead {
+  border: none !important;
+  display: block;
+  margin: -10px 0 -40px;
+}
+.rpgsk_skill_head {
+  background: transparent;
+  text-transform: uppercase !important;
+  font-size: 13px;
+  border-left: 3px solid;
+  border-bottom: 2px solid;
+  border-color: var(--grey);
+  padding: 0 0 5px 10px;
+  margin: 20px 0 10px;
+  color: var(--acc) !important;
+  text-shadow: 0 0 2px black;
+}
+
+.tab:has(.blocky info[fam]) > h2 {
+  display: block;
+  font-size: 0;
+  letter-spacing: 0;
+  margin-bottom:-15px;
+}
+.tab:has(.blocky info[fam]) > h2::before {
+  content: 'Family';
+  font-size: 45px;
+  letter-spacing: 2px;
+}
+.blocky:has(info[fam]){
+  margin:30px 10px 10px;
+  box-shadow: 0 0 10px black;
+  padding: 10px 10px 20px;
+}
+.blocky:has(info[app]){margin:0;}
+
+info[fam] {
+  display: block;
+  --tree: #ffffff2e;
+  --tw: 1px;
+  --elbow: 10px;
+  --gap: 16px;
+}
+info[fam] h3, info[rel] h3 {
+  text-align: center;
+  font-family: var(--f3);
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+info[fam] h4{
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+}
+info[fam] h3, info[fam] h4, info[rel] h3 {
+  text-shadow: 0 0 2px black, 0 0 1px black;
+  color: var(--acc);
+}
+info[fam] h3 { margin: 18px 0 6px; }
+info[fam] > h3:first-child { margin-top: 0; }
+
+p[parent] { text-align: center;
+  display: block;
+  text-shadow: 0 0 2px black, 0 0 5px black;
+}
+
+p[current] { text-align: center; }
+p[former] {
+  padding-top:3px;
+  color: var(--grey);
+  text-align: right;
+  font-style: italic;
+}
+p[former] sub {
+  padding-right:13px;
+}
+p[current] i, p[former] i {display: none;}
+p[none], li[none], dt[none]{
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--grey);
+  padding-bottom:30px;
+}
+p[none] {text-align: center}
+
+info[fam] ul { list-style: none; margin: 0; padding-left: var(--gap); }
+info[fam] dl { margin: 0; padding-left: 20px; }
+info[fam] dd > ul { padding-left: 0; }
+
+info[fam] li,
+info[fam] dt {
+  position: relative;
+  margin: 0;
+  padding-left: calc(var(--elbow) + 6px);
+  line-height: 1.6;
+}
+
+info[fam] li::before,
+info[fam] dt::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: var(--elbow);
+  border-left: var(--tw) solid var(--tree);
+  background: linear-gradient(var(--tree), var(--tree)) 0 .8em / 100% var(--tw) no-repeat;
+}
+info[fam] li:last-child::before,
+info[fam] dt:last-of-type::before {
+  bottom: auto;
+  height: .8em;
+  background: none;
+  border-bottom: var(--tw) solid var(--tree);
+}
+
+info[fam] dd {
+  position: relative;
+  margin: 0;
+  padding-left: var(--gap);
+  padding-bottom: 10px;
+}
+info[fam] dd:last-of-type { padding-bottom: 0; }
+info[fam] dd:has(~ dt)::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border-left: var(--tw) solid var(--tree);
+}
+
+info [female]::after,
+info [male]::after,
+info [nb]::after {
+  margin-left: 6px;
+  font-size: 10px;
+  opacity: .5;
+  font-variant-emoji: text;
+}
+info [female]::after { content: '\2640\FE0E'; }
+info [male]::after   { content: '\2642\FE0E'; }
+info [nb]::after     { content: '\26B2\FE0E'; }
+
+.blocky:has(info[fam]) {
+  position: relative;
+  z-index: 0;
+}
+
+.blocky:has(info[fam])::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: auto 0 0 auto;
+  width: 100%;
+  height: 100%;
+  background-image: var(--ph, none);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: .03;
+  filter: grayscale(1) 
+    drop-shadow(0 0 10px black)
+    drop-shadow(0 0 10px black);
+  pointer-events: none;
+}
+
+.blocky:has(info[fam][lying])::before {
+  --ph: url('https://ik.imagekit.io/arl60/Ardent/personal/other/f2u_base___lying__psd__by_srinyx_dhbozr4.png');
+  background-size: contain;
+  background-position: calc(100% - 10px) calc(100% - 10px);
+  transform:scaleX(-1);
+}
+.blocky:has(info[fam][sitting])::before {
+  --ph: url('https://ik.imagekit.io/arl60/Ardent/personal/other/f2u_base___sitting__psd__by_srinyx_dhbp0in.png');
+}
+.blocky:has(info[fam][family])::before {
+  --ph: url('https://ik.imagekit.io/arl60/Ardent/personal/other/f2u_base___naptime__psd__by_srinyx_dhbp4xm_2.png');
+  background-size: 90%;
+  background-position: calc(100% - 20px) calc(100% - 20px);
+}
+.blocky:has(info[fam][running])::before {
+  --ph: url('https://ik.imagekit.io/arl60/Ardent/personal/other/f2u_base___funrun__psd__by_srinyx_dhbp5uz.png?updatedAt=1788564660942');
+  background-size: contain;
+  background-position: 100% 100%;
+  transform:scaleX(-1);
+}
+
+approval[hostile]  { --n:  8; --c: 255  71  61; --sl: "Hostile"; }
+approval[wary]     { --n: 28; --c: 226 146  66; --sl: "Wary"; }
+approval[neutral]  { --n: 45; --c: 160 180 200; --sl: "Neutral"; }
+approval[friendly] { --n: 64; --c: 138 200 240; --sl: "Friendly"; }
+approval[trusted]  { --n: 82; --c: 122 214 170; --sl: "Trusted"; }
+approval[loyal]    { --n: 97; --c: 255 208 110; --sl: "Loyal"; }
+approval[attracted]  { --rl: " \2764\FE0E  Attracted";  --rc: 255 168 198; }
+approval[interested] { --rl: " \2726\FE0E  Interested"; --rc: 250 140 186; }
+approval[content]    { --rl: " \2764\FE0E  Content";    --rc: 246 112 176; }
+approval[enamoured]  { --rl: " \2764\FE0E  Enamoured";  --rc: 240  86 166; }
+approval[devoted]    { --rl: " \2764\FE0E  Devoted";    --rc: 232  46 154; }
+
+.blocky:has(info[rel]) { margin: -10px 0 -100px; }
+
+info[rel] {
+  display: grid;
+  grid-template-columns: repeat(var(--cols), minmax(0, 1fr));
+  column-gap: 22px;
+  --cols: 3;
+  --n: 0;
+  --c: 160 180 200;
+  --rc: 160 180 200;
+  --track: #ffffff1f;
+  --bar-w: 54px;
+}
+info[rel] h3 {
+  grid-column: 1 / -1;
+  margin: 0 0 30px;
+  border-bottom: 1px solid color-mix(in oklab, var(--grey) 43%, transparent);
+  padding: 0 0 20px;
+}
+info[rel] h3[many]::after {
+  content: '\2318 F  /  Ctrl F to find a character easier \2764';
+  display: block;
+  margin-top: 10px;
+  font-family: Verdana, sans-serif;
+  font-size: 8px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  text-transform: none;
+  text-shadow: none;
+  opacity: .4;
+}
+info[rel][c1] { --cols: 1; }
+info[rel][c2] { --cols: 2; }
+info[rel][c3] { --cols: 3; }
+
+info[rel] details {
+  transition: background .15s ease;
+  box-shadow: 0 0 5px #0003;
+  margin-bottom: 15px;
+  border: 2px solid color-mix(in srgb, var(--bor) 67%, transparent);
+}
+info[rel] details[open] { background: #ffffff0d; }
+
+info[rel] summary {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  grid-template-areas:
+    "arrow name approval"
+    "arrow role role";
+  align-items: center;
+  column-gap: 10px;
+  row-gap: 1px;
+  padding: 8px 6px;
+  cursor: pointer;
+  list-style: none;
+  outline: none;
+  transition: background .15s ease;
+}
+info[rel] summary::-webkit-details-marker { display: none; }
+info[rel] summary:hover { background: #ffffff0a; }
+info[rel] summary::before {
+  content: '\25B8';
+  grid-area: arrow;
+  align-self: center;
+  font-size: 8px;
+  opacity: .45;
+}
+info[rel] details[open] summary::before { content: '\25BE'; }
+
+info[rel] summary b {
+  grid-area: name;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  text-align: left;
+}
+info[rel] summary em {
+  grid-area: role;
+  font-style: normal;
+  font-size: 9px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: .5;
+}
+
+info[rel] approval {
+  grid-area: approval;
+  justify-self: end;
+  display: block;
+  text-align: right;
+  font-size: 9px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: rgb(var(--c));
+}
+info[rel] approval r { color: rgb(var(--rc)); }
+info[rel] approval::after {
+  content: '';
+  display: block;
+  width: var(--bar-w);
+  height: 4px;
+  margin: 5px 0 0 auto;
+  border-radius: 2px;
+  background: linear-gradient(to right,
+    rgb(var(--c)) 0 calc(var(--n) * 1%),
+    var(--track) calc(var(--n) * 1%) 100%);
+}
+
+info[rel] details:has(dead) {
+  filter: grayscale(1);
+  opacity: .4;
+  transition: opacity .15s ease, filter .15s ease;
+}
+info[rel] details:has(dead):hover,
+info[rel] details:has(dead)[open] { opacity: .75; }
+info[rel] details:has(dead) summary b { font-style: italic; }
+info[rel] dead {
+  margin-left: 5px;
+  font-style: normal;
+  font-size: 10px;
+  letter-spacing: 0;
+  opacity: .8;
+}
+
+info[rel] details p {
+  margin: 0;
+  padding: 10px 20px 12px;
+  font-size: 11px;
+  line-height: 1.5;
+}
+info[rel] details sub {
+  display: block;
+  margin-top: 12px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: .4;
+  text-align:right;
+}
+
+info[rel] > sub {
+  grid-column: 1 / -1;
+  display: block;
+  margin-top: 14px;
+  text-align: right;
+}
+info[rel] > sub a { 
+  color: inherit;
+  text-decoration: none;
+  margin:-20px -20px 0 0;}
+info[rel] > sub a::before {
+  content: 'lineart by ' attr(n);
+  font-size: 8px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: .4;
+}
+info[rel] > sub a:hover::before { opacity: 1; }
+
+
+
+.board { margin: 0 0 -30px; 
+  padding: 0px 0 55px;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, var(--acc), color-mix(in oklab, var(--acc) 45%, white), var(--acc), transparent) 1;
+	}
+.blocky.board span {
+  display: block;
+  margin:0 0 30px !important;
+}
+.spacer {display:none;}
+.subforums {
+	background: none;
+	padding: 30px 0 0;
+	gap: 0px !important;
+}
+.subforums a i {display: none;}
+
+#content > p {font-size:0;}
+#content > table:nth-of-type(1),
+#content > table:nth-of-type(2) {
+	flex: 1 1 calc(50% - 20px);
+}
+.sip_tbl {
+  box-shadow: 0 5px 20px #00000059;
+  margin: 10px 0 20px;
+}
+.thead {
+	background: transparent;
+	text-align: center;
+  font-family: var(--f4);
+	text-transform: uppercase;
+	font-size:15px;
+  border-bottom: 1px solid color-mix(in oklab, var(--grey) 33%, transparent);
+}
+.thead strong {
+	font-weight: 400;
+	color: var(--grey);
+  text-shadow: 0 0 2px black, 0 0 5px black;
+}
+.sip_tbl_td {
+	background:transparent;
+	color: var(--grey);
+	text-align: justify;
+}
+.sip_tbl_th {
+	padding:10px;
+	background: transparent;
+  border-bottom: 1px solid color-mix(in oklab, var(--grey) 12%, transparent);
+}
+td {
+	padding-top:10px;
+}
+.sip_tbl_td:nth-child(1) { 
+  width: 20px; text-align: center;
+  padding: 0 10px;
+  filter: drop-shadow(1px 1px 2px black);}
+.sip_tbl_td > img {
+  object-fit: contain;
+  opacity: 0.6;
+}
+.sip_tbl_td:nth-child(2) { 
+  font-weight: bold;
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size:11px;
+  padding: 0 5px;
+}
+.sip_tbl_td:nth-child(3) { 
+  text-align: left;
+  padding: 5px 10px;
+  opacity: 0.7;
+  text-transform: lowercase;
+  font-style: italic;
+  width: 50%;
+}
+.sip_tbl_td:nth-child(4),
+.sip_tbl_td:nth-child(5) { 
+  text-align: center; }
+
+h2,
+#content > table:nth-of-type(1) .thead,
+#content > table:nth-of-type(2) .thead {
+  display: block;
+  font-family: var(--f2);
+  font-size: 32px;
+  text-align: center !important;
+	border:none;
+	padding: 0;
+  text-transform: capitalize;
+  border-bottom: 1px solid color-mix(in oklab, var(--grey) 43%, transparent);
+  padding-bottom: 5px;
+}
+#content > table:nth-of-type(1) .thead,
+#content > table:nth-of-type(2) .thead,
+.tab:has(.flex.fill div code) > h2,
+.tab:has(> table.tfixed)> h2 {
+  font-family: var(--f3);
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.tab:has(.flex.fill div code) > h2,
+.tab:has(> table.tfixed) > h2 {
+  text-align: left !important;
+}
+.tab:has(> table.tfixed) > h2{margin-top:-40px;}
+
+/*
+  DO NOT USE WITHOUT ANDY'S PERMISSION.
+*/
+
+h2,
+#content > table:nth-of-type(1) .thead strong,
+#content > table:nth-of-type(2) .thead strong {
+  color: var(--acc) !important;
+  text-shadow: 0 0 2px black;
+}
+select, input {
+	background: transparent;
+  box-shadow: 0 0 5px #00000045;
+  border-radius: 8px;
+}
+.tabnav a, .blocky a {
+	color: var(--acc) !important;
+}
+.subforums a,
+.blocky:has(info) a { 
+	background: none;
+  text-transform: capitalize;
+  font-family: var(--f3);
+  font-size:15px;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1.3px;
+}
+.subforums a {padding: 0 5px;}
+h1, info:has(img),
+.blocky:has(info[fam]){
+  border: 1px solid;
+  border-image: linear-gradient(to right, var(--acc), color-mix(in oklab, var(--acc) 45%, white), var(--acc)) 1;
+}
+a, .subforums a,
+.blocky a,
+.tabnav a {
+  display: inline-block !important;
+  transition: transform 0.3s ease !important;
+}
+a:hover, .subforums a:hover,
+.blocky a:hover,
+.tabnav a:hover {
+  transform: scale(1.1) !important;
+  text-shadow: none;
+}
+.rpgsk_mem_prof_skill_descr a {
+  text-transform: lowercase;
+  color: color-mix(in oklab, var(--grey) 75%, white) !important;
+  letter-spacing: 1px;
+  transition: color 0.3s ease !important;
+}
+
+.rpgsk_mem_prof_skill_descr a:hover {
+  font-style: italic;
+  color: var(--acc) !important;
+  transform: none !important;
+}
+
+#content:has(.tab .blocky info[fam],
+             .rpgsk_agent_lines,
+             a[href*="awards.php"]) > table:nth-of-type(-n+2) {
+  display: none;
+}
+.tab:has(> table.tfixed) { margin-bottom: -30px; }
+.tab:has(.rpgsk_agent_lines) { padding:5px 0 0 !important; }
+.tab:has(> table.tfixed), 
+.tab:has(history) {border:none;}
+.tab:has(history){ margin-top: -20px!important; }
+
+@media (max-width: 1200px){
+  info:has(img) u {
+    position: relative;
+    inset:0;
+    padding-bottom:20px;
+  }
+  info[misc] images > *:hover::before {display: none;}
+  info[rel],
+  info[rel][c3] { --cols: 2; }
+}
+@media (max-width: 800px) {
+  info[misc] box, history {
+    flex-direction: column;
+  }
+   history > * {
+    width: 100%;
+  }
+  info[rel],
+  info[rel][c2],
+  info[rel][c3] { --cols: 1; }
+}
+
+/*
+  DO NOT USE WITHOUT ANDY'S PERMISSION.
+*/
+
+:root {
+  --acc: #F5B07D;
+  --grey: #8b8b8b;
+  --srf: #1c1c1c;
+  --srf2: #111;
+  --bor: #252525;
+
+  --tex: url('https://ik.imagekit.io/arl60/Ardent/personal/Branwen/filibg.png?updatedAt=1775870643706&tr=w-1000');
+  --bg: url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/starrynight.jpg?updatedAt=1753495763500');
+  --apb: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/2.png?updatedAt=1761259622322');
+  --statb: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/1155601_OR9Z4R1.png?updatedAt=1773783029296');
+
+  --f1: "WindSong", cursive;
+  --f2: "Allura", cursive;
+  --f3: "Cormorant Garamond", serif;
+  --f4: "Didact Gothic", sans-serif;
+
+  --credit: '\00A9 andy \2666  bg freepik';
 }
