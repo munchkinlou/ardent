@@ -597,7 +597,7 @@ info [nb]::after     { content: '\26B2\FE0E'; }
 .blocky:has(info[fam][lying])::before {
   --ph: url('https://ik.imagekit.io/arl60/Ardent/personal/other/f2u_base___lying__psd__by_srinyx_dhbozr4.png');
   background-size: contain;
-  background-position: calc(100% - 10px) calc(100% - 10px);
+  background-position: 100% 70%;
   transform:scaleX(-1);
 }
 .blocky:has(info[fam][sitting])::before {
@@ -605,13 +605,13 @@ info [nb]::after     { content: '\26B2\FE0E'; }
 }
 .blocky:has(info[fam][family])::before {
   --ph: url('https://ik.imagekit.io/arl60/Ardent/personal/other/f2u_base___naptime__psd__by_srinyx_dhbp4xm_2.png');
-  background-size: 90%;
-  background-position: calc(100% - 20px) calc(100% - 20px);
+  background-size: 100%;
+  background-position: 100% 70%;
 }
 .blocky:has(info[fam][running])::before {
   --ph: url('https://ik.imagekit.io/arl60/Ardent/personal/other/f2u_base___funrun__psd__by_srinyx_dhbp5uz.png?updatedAt=1788564660942');
   background-size: contain;
-  background-position: 100% 100%;
+  background-position: 100% 70%;
   transform:scaleX(-1);
 }
 
