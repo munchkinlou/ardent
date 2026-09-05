@@ -664,7 +664,9 @@ info[rel][c3] { --cols: 3; }
 
 info[rel] details {
   transition: background .15s ease;
+  box-shadow: 0 0 5px #0003;
   margin-bottom: 15px;
+  border: 2px solid color-mix(in srgb, var(--bor) 67%, transparent);
 }
 info[rel] details[open] { background: #ffffff0d; }
 
@@ -682,9 +684,6 @@ info[rel] summary {
   list-style: none;
   outline: none;
   transition: background .15s ease;
-  box-shadow: 0 0 5px #0003;
-  border: 2px solid color-mix(in srgb, var(--bor) 67%, transparent);
-
 }
 info[rel] summary::-webkit-details-marker { display: none; }
 info[rel] summary:hover { background: #ffffff0a; }
@@ -795,7 +794,7 @@ info[rel] > sub a:hover::before { opacity: 1; }
 .board { margin: 0 0 -30px; 
   padding: 0px 0 55px;
   border-top: 1px solid;
-  border-image: linear-gradient(to right, transparent, var(--acc), color-mix(in oklab, var(--acc) 45%, white), var(--acc), transparent) 1;
+  border-image: linear-gradient(to right, transparent, var(--frame), transparent) 1;
 	}
 .blocky.board span {
   display: block;
@@ -932,7 +931,7 @@ select, input {
 h1, info:has(img),
 .blocky:has(info[fam]){
   border: 1px solid;
-  border-image: linear-gradient(to right, var(--acc), color-mix(in oklab, var(--acc) 45%, white), var(--acc)) 1;
+  border-image: linear-gradient(to right, var(--frame)) 1;
 }
 a, .subforums a,
 .blocky a,
@@ -996,12 +995,14 @@ a:hover, .subforums a:hover,
   DO NOT USE WITHOUT ANDY'S PERMISSION.
 */
 
+
 :root {
   --acc: #F5B07D;
   --grey: #8b8b8b;
   --srf: #1c1c1c;
   --srf2: #111;
   --bor: #252525;
+  --frame: #F5B07D, #FFEFA0, #F5B07D;
 
   --tex1: url('https://ik.imagekit.io/arl60/Ardent/personal/Branwen/filibg.png?updatedAt=1775870643706&tr=w-1000g');
   --tex2: url('https://ik.imagekit.io/arl60/Ardent/personal/Branwen/filibg.png?updatedAt=1775870643706&tr=w-1000');
