@@ -373,6 +373,7 @@ info[misc] c {
 }
 .flex.fill:has(history) {
   display:block;
+  margin-bottom:-60px;
 }
 history {
   display: flex;
@@ -414,13 +415,14 @@ code {
   font-size:10px;
   height: 100%;
 }
+
 .rpgsk_agent_lines {
   margin-top:20px;
   background: transparent;
   color: #ffedb8;
   letter-spacing: 1.4px;
-  font-size:23px;
-  font-family: "Allura", cursive;
+  font-size:20px;
+  font-family: "Cormorant Garamond", serif;
   text-shadow: 0 0 2px black, 0 0 5px black;
 }
 .rpgsk_agent_lines br {display:inline !important;}
@@ -428,7 +430,7 @@ code {
   text-align: left;
 }
 table:has(.rpgsk_skill_head){
-  margin-bottom:-80px;
+  margin-bottom:-130px;
 }
 tbody:has(.rpgsk_agent_lines) .thead {
   border: none !important;
@@ -794,6 +796,8 @@ info[rel] > sub a::before {
 }
 info[rel] > sub a:hover::before { opacity: 1; }
 
+
+
 .board { margin: 0 0 -30px; 
   padding: 0px 0 55px;
   border-top: 1px solid;
@@ -889,12 +893,20 @@ h2,
   padding-bottom: 5px;
 }
 #content > table:nth-of-type(1) .thead,
-#content > table:nth-of-type(2) .thead {
+#content > table:nth-of-type(2) .thead,
+.tab:has(.flex.fill div code) > h2,
+.tab:has(> table.tfixed)> h2 {
   font-family: "Cormorant Garamond", serif;
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+.tab:has(.flex.fill div code) > h2,
+.tab:has(> table.tfixed) > h2 {
+  text-align: left !important;
+}
+.tab:has(> table.tfixed) > h2{margin-top:-40px;}
+.tab:has(> table.tfixed) {border:none;}
 /*
   DO NOT USE WITHOUT ANDY'S PERMISSION.
 */
@@ -955,9 +967,12 @@ a:hover, .subforums a:hover,
 }
 
 #content:has(.tab .blocky info[fam],
-.rpgsk_agent_lines) > table:nth-of-type(-n+2) {
+             .rpgsk_agent_lines,
+             a[href*="awards.php"]) > table:nth-of-type(-n+2) {
   display: none;
 }
+.tab:has(> table.tfixed) { margin-bottom: -30px; }
+.tab:has(.rpgsk_agent_lines) { padding:5px 0 0 !important; }
 
 @media (max-width: 1200px){
   info:has(img) u {
@@ -966,12 +981,18 @@ a:hover, .subforums a:hover,
     padding-bottom:20px;
   }
   info[misc] images > *:hover::before {display: none;}
+  info[rel],
+  info[rel][c3] { --cols: 2; }
 }
 @media (max-width: 800px) {
   info[misc] box {
     flex-direction: column;
   }
+  info[rel],
+  info[rel][c2],
+  info[rel][c3] { --cols: 1; }
 }
+
 /*
   DO NOT USE WITHOUT ANDY'S PERMISSION.
 */
