@@ -907,7 +907,7 @@ h2,
   text-align: left !important;
 }
 .tab:has(> table.tfixed) > h2{margin-top:-40px;}
-.tab:has(> table.tfixed) {border:none;}
+
 /*
   DO NOT USE WITHOUT ANDY'S PERMISSION.
 */
@@ -974,6 +974,9 @@ a:hover, .subforums a:hover,
 }
 .tab:has(> table.tfixed) { margin-bottom: -30px; }
 .tab:has(.rpgsk_agent_lines) { padding:5px 0 0 !important; }
+.tab:has(> table.tfixed), 
+.tab:has(history) {border:none;}
+.tab:has(history){ margin-top: -20px!important; }
 
 @media (max-width: 1200px){
   info:has(img) u {
