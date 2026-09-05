@@ -971,6 +971,9 @@ a:hover, .subforums a:hover,
 .tab:has(history){ margin-top: -20px!important; }
 
 @media (max-width: 1200px){
+  nav {
+    margin: auto;
+  }
   info:has(img) u {
     position: relative;
     inset:0;
