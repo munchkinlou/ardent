@@ -1148,6 +1148,12 @@ a:hover, .subforums a:hover,
 .tab:has(history) {border:none;}
 .tab:has(history){ margin-top: -20px!important; }
 
+.flex.fill.profinfo:not(:has(info)) {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
 @media (max-width: 1200px){
   nav {
     margin: auto;
@@ -1162,6 +1168,7 @@ a:hover, .subforums a:hover,
   info[rel][c3] { --cols: 2; }
 }
 @media (max-width: 800px) {
+  .flex.fill.profinfo:not(:has(info)) { grid-template-columns: repeat(2, 1fr); }
   info[misc] box, history {
     flex-direction: column;
   }
