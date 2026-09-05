@@ -98,7 +98,7 @@ h1:before {
     brightness(1);
   pointer-events:none;
 }
-h1:after { content: '\00A9 andy';
+h1:after { content: '\00A9 andy \2666  bg freepik';
   position: absolute;
   right: 12px;
   bottom: 8px;
