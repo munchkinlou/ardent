@@ -448,6 +448,17 @@ tbody:has(.rpgsk_agent_lines) .thead {
   text-shadow: 0 0 2px black;
 }
 
+.tab:has(.blocky info[fam]) > h2 {
+  display: block;
+  font-size: 0;
+  letter-spacing: 0;
+  margin-bottom:-15px;
+}
+.tab:has(.blocky info[fam]) > h2::before {
+  content: 'Family';
+  font-size: 45px;
+  letter-spacing: 2px;
+}
 .blocky:has(info[fam]){
   margin:30px 10px 10px;
   box-shadow: 0 0 10px black;
@@ -462,7 +473,7 @@ info[fam] {
   --elbow: 10px;
   --gap: 16px;
 }
-info[fam] h3{
+info[fam] h3, info[rel] h3 {
   text-align: center;
   font-family: "Cormorant Garamond", serif;
   font-size: 20px;
@@ -474,7 +485,7 @@ info[fam] h4{
   font-size: 15px;
   letter-spacing: 1.5px;
 }
-info[fam] h3, info[fam] h4 {
+info[fam] h3, info[fam] h4, info[rel] h3 {
   text-shadow: 0 0 2px black, 0 0 1px black;
   color: #f6d0b4;
 }
@@ -610,19 +621,178 @@ info [nb]::after     { content: '\26B2\FE0E'; }
   transform:scaleX(-1);
 }
 
-info sub a::before {
-  content: 'linearts credit';
+approval[hostile]  { --n:  8; --c: 255  71  61; --sl: "Hostile"; }
+approval[wary]     { --n: 28; --c: 226 146  66; --sl: "Wary"; }
+approval[neutral]  { --n: 45; --c: 160 180 200; --sl: "Neutral"; }
+approval[friendly] { --n: 64; --c: 138 200 240; --sl: "Friendly"; }
+approval[trusted]  { --n: 82; --c: 122 214 170; --sl: "Trusted"; }
+approval[loyal]    { --n: 97; --c: 255 208 110; --sl: "Loyal"; }
+approval[attracted]  { --rl: " \2764\FE0E  Attracted";  --rc: 255 168 198; }
+approval[interested] { --rl: " \2726\FE0E  Interested"; --rc: 250 140 186; }
+approval[content]    { --rl: " \2764\FE0E  Content";    --rc: 246 112 176; }
+approval[enamoured]  { --rl: " \2764\FE0E  Enamoured";  --rc: 240  86 166; }
+approval[devoted]    { --rl: " \2764\FE0E  Devoted";    --rc: 232  46 154; }
+
+.blocky:has(info[rel]) { margin: -10px 0 -100px; }
+
+info[rel] {
+  display: grid;
+  grid-template-columns: repeat(var(--cols), minmax(0, 1fr));
+  column-gap: 22px;
+  --cols: 3;
+  --n: 0;
+  --c: 160 180 200;
+  --rc: 160 180 200;
+  --track: #ffffff1f;
+  --bar-w: 54px;
+}
+info[rel] h3 {
+  grid-column: 1 / -1;
+  margin: 0 0 30px;
+  border-bottom:1px solid #8080806e;
+  padding: 0 0 20px;
+}
+info[rel] h3[many]::after {
+  content: '\2318 F  /  Ctrl F to find a character easier \2764';
+  display: block;
+  margin-top: 10px;
+  font-family: Verdana, sans-serif;
   font-size: 8px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  text-transform: none;
+  text-shadow: none;
+  opacity: .4;
+}
+info[rel][c1] { --cols: 1; }
+info[rel][c2] { --cols: 2; }
+info[rel][c3] { --cols: 3; }
+
+info[rel] details {
+  transition: background .15s ease;
+  box-shadow: 0 0 5px #0003;
+  margin-bottom: 15px;
+  border: 2px solid #1f1f1fab;
+}
+info[rel] details[open] { background: #ffffff0d; }
+
+info[rel] summary {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  grid-template-areas:
+    "arrow name approval"
+    "arrow role role";
+  align-items: center;
+  column-gap: 10px;
+  row-gap: 1px;
+  padding: 8px 6px;
+  cursor: pointer;
+  list-style: none;
+  outline: none;
+  transition: background .15s ease;
+}
+info[rel] summary::-webkit-details-marker { display: none; }
+info[rel] summary:hover { background: #ffffff0a; }
+info[rel] summary::before {
+  content: '\25B8';
+  grid-area: arrow;
+  align-self: center;
+  font-size: 8px;
+  opacity: .45;
+}
+info[rel] details[open] summary::before { content: '\25BE'; }
+
+info[rel] summary b {
+  grid-area: name;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  text-align: left;
+}
+info[rel] summary em {
+  grid-area: role;
+  font-style: normal;
+  font-size: 9px;
   letter-spacing: 1px;
   text-transform: uppercase;
   opacity: .5;
 }
-info sub a { text-decoration: none; color: inherit; }
-info sub a:hover::before { opacity: 1; }
 
+info[rel] approval {
+  grid-area: approval;
+  justify-self: end;
+  display: block;
+  text-align: right;
+  font-size: 9px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: rgb(var(--c));
+}
+info[rel] approval r { color: rgb(var(--rc)); }
+info[rel] approval::after {
+  content: '';
+  display: block;
+  width: var(--bar-w);
+  height: 4px;
+  margin: 5px 0 0 auto;
+  border-radius: 2px;
+  background: linear-gradient(to right,
+    rgb(var(--c)) 0 calc(var(--n) * 1%),
+    var(--track) calc(var(--n) * 1%) 100%);
+}
 
+info[rel] details:has(dead) {
+  filter: grayscale(1);
+  opacity: .4;
+  transition: opacity .15s ease, filter .15s ease;
+}
+info[rel] details:has(dead):hover,
+info[rel] details:has(dead)[open] { opacity: .75; }
+info[rel] details:has(dead) summary b { font-style: italic; }
+info[rel] dead {
+  margin-left: 5px;
+  font-style: normal;
+  font-size: 10px;
+  letter-spacing: 0;
+  opacity: .8;
+}
 
+info[rel] details p {
+  margin: 0;
+  padding: 0 6px 12px 24px;
+  font-size: 11px;
+  line-height: 1.5;
+}
+info[rel] details sub {
+  display: block;
+  margin-top: 6px;
+  font-size: 8px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: .4;
+}
 
+info[rel] > sub {
+  grid-column: 1 / -1;
+  display: block;
+  margin-top: 14px;
+  text-align: right;
+}
+info[rel] > sub a { 
+  color: inherit;
+  text-decoration: none;
+  margin:-20px -20px 0 0;}
+info[rel] > sub a::before {
+  content: 'lineart by ' attr(n);
+  font-size: 8px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: .4;
+}
+info[rel] > sub a:hover::before { opacity: 1; }
 
 .board { margin: 0 0 -30px; 
   padding: 0px 0 55px;
@@ -718,6 +888,13 @@ h2,
   border-bottom: 1px solid #8080806e;
   padding-bottom: 5px;
 }
+#content > table:nth-of-type(1) .thead,
+#content > table:nth-of-type(2) .thead {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 /*
   DO NOT USE WITHOUT ANDY'S PERMISSION.
 */
@@ -777,6 +954,10 @@ a:hover, .subforums a:hover,
   transform: none !important;
 }
 
+#content:has(.tab .blocky info[fam],
+.rpgsk_agent_lines) > table:nth-of-type(-n+2) {
+  display: none;
+}
 
 @media (max-width: 1200px){
   info:has(img) u {
