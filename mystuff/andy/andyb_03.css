@@ -1168,6 +1168,10 @@ a:hover, .subforums a:hover,
   info[rel][c3] { --cols: 2; }
 }
 @media (max-width: 800px) {
+  gallery, [gopen] { display: none !important; }
+  info:has(g > input:checked) > img,
+  info:has(g > input:checked) > h2,
+  info:has(g > input:checked) > box { visibility: visible; }
   .flex.fill.profinfo:not(:has(info)) { grid-template-columns: repeat(2, 1fr); }
   info[misc] box, history {
     flex-direction: column;
