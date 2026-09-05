@@ -497,6 +497,14 @@ p[former] sub {
   padding-right:13px;
 }
 p[current] i, p[former] i {display: none;}
+p[none], li[none], dt[none]{
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: grey;
+  padding-bottom:30px;
+}
+p[none] {text-align: center}
 
 info[fam] ul { list-style: none; margin: 0; padding-left: var(--gap); }
 info[fam] dl { margin: 0; padding-left: 20px; }
@@ -556,6 +564,61 @@ info [nb]::after {
 info [female]::after { content: '\2640\FE0E'; }
 info [male]::after   { content: '\2642\FE0E'; }
 info [nb]::after     { content: '\26B2\FE0E'; }
+
+.blocky:has(info[fam]) {
+  position: relative;
+  z-index: 0;
+}
+
+.blocky:has(info[fam])::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: auto 0 0 auto;
+  width: 100%;
+  height: 100%;
+  background-image: var(--ph, none);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: .03;
+  filter: grayscale(1) 
+    drop-shadow(0 0 10px black)
+    drop-shadow(0 0 10px black);
+  pointer-events: none;
+}
+
+.blocky:has(info[fam][lying])::before {
+  --ph: url('https://ik.imagekit.io/arl60/Ardent/personal/other/f2u_base___lying__psd__by_srinyx_dhbozr4.png');
+  background-size: contain;
+  background-position: calc(100% - 10px) calc(100% - 10px);
+  transform:scaleX(-1);
+}
+.blocky:has(info[fam][sitting])::before {
+  --ph: url('https://ik.imagekit.io/arl60/Ardent/personal/other/f2u_base___sitting__psd__by_srinyx_dhbp0in.png');
+
+}
+.blocky:has(info[fam][family])::before {
+  --ph: url('https://ik.imagekit.io/arl60/Ardent/personal/other/f2u_base___naptime__psd__by_srinyx_dhbp4xm_2.png');
+  background-size: 90%;
+  background-position: calc(100% - 20px) calc(100% - 20px);
+}
+.blocky:has(info[fam][running])::before {
+  --ph: url('https://ik.imagekit.io/arl60/Ardent/personal/other/f2u_base___funrun__psd__by_srinyx_dhbp5uz.png?updatedAt=1788564660942');
+  background-size: contain;
+  background-position: 100% 100%;
+  transform:scaleX(-1);
+}
+
+info sub a::before {
+  content: 'linearts credit';
+  font-size: 8px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: .5;
+}
+info sub a { text-decoration: none; color: inherit; }
+info sub a:hover::before { opacity: 1; }
 
 
 
