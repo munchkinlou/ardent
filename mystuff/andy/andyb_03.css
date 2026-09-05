@@ -664,9 +664,7 @@ info[rel][c3] { --cols: 3; }
 
 info[rel] details {
   transition: background .15s ease;
-  box-shadow: 0 0 5px #0003;
   margin-bottom: 15px;
-  border: 2px solid color-mix(in srgb, var(--bor) 67%, transparent);
 }
 info[rel] details[open] { background: #ffffff0d; }
 
@@ -684,6 +682,9 @@ info[rel] summary {
   list-style: none;
   outline: none;
   transition: background .15s ease;
+  box-shadow: 0 0 5px #0003;
+  border: 2px solid color-mix(in srgb, var(--bor) 67%, transparent);
+
 }
 info[rel] summary::-webkit-details-marker { display: none; }
 info[rel] summary:hover { background: #ffffff0a; }
