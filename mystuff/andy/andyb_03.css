@@ -794,8 +794,8 @@ info[rel] > sub a:hover::before { opacity: 1; }
 .board { margin: 0 0 -30px; 
   padding: 0px 0 55px;
   border-top: 1px solid;
-  border-image: linear-gradient(to right, transparent, var(--frame), transparent) 1;
-	}
+  border-image: linear-gradient(to right, transparent, var(--frame1), var(--frame2), var(--frame1), transparent) 1;
+}
 .blocky.board span {
   display: block;
   margin:0 0 30px !important;
@@ -931,7 +931,7 @@ select, input {
 h1, info:has(img),
 .blocky:has(info[fam]){
   border: 1px solid;
-  border-image: linear-gradient(to right, var(--frame)) 1;
+  border-image: linear-gradient(to right, var(--frame1), var(--frame2), var(--frame1)) 1;
 }
 a, .subforums a,
 .blocky a,
@@ -1002,7 +1002,8 @@ a:hover, .subforums a:hover,
   --srf: #1c1c1c;
   --srf2: #111;
   --bor: #252525;
-  --frame: #F5B07D, #FFEFA0, #F5B07D;
+  --frame1: #F5B07D;
+  --frame2: #FFEFA0;
 
   --tex1: url('https://ik.imagekit.io/arl60/Ardent/personal/Branwen/filibg.png?updatedAt=1775870643706&tr=w-1000g');
   --tex2: url('https://ik.imagekit.io/arl60/Ardent/personal/Branwen/filibg.png?updatedAt=1775870643706&tr=w-1000');
