@@ -764,17 +764,18 @@ info[rel] dead {
 
 info[rel] details p {
   margin: 0;
-  padding: 0 6px 12px 24px;
+  padding: 10px 20px 12px;
   font-size: 11px;
   line-height: 1.5;
 }
 info[rel] details sub {
   display: block;
-  margin-top: 6px;
-  font-size: 8px;
+  margin-top: 12px;
+  font-size: 10px;
   letter-spacing: 1px;
   text-transform: uppercase;
   opacity: .4;
+  text-align:right;
 }
 
 info[rel] > sub {
