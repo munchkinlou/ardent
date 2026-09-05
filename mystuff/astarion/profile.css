@@ -989,8 +989,11 @@ a:hover, .subforums a:hover,
   info[rel][c3] { --cols: 2; }
 }
 @media (max-width: 800px) {
-  info[misc] box {
+  info[misc] box, history {
     flex-direction: column;
+  }
+   history > * {
+    width: 100%;
   }
   info[rel],
   info[rel][c2],
