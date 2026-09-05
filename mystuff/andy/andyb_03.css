@@ -84,7 +84,7 @@ h1:before {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: var(--tex) center no-repeat;
+  background: var(--tex1) center no-repeat;
   background-size: cover;
   opacity: 0.3;
   filter: saturate(0)
@@ -243,7 +243,7 @@ info:has(img)::before {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: var(--tex) center no-repeat;
+  background: var(--tex2, var(--tex1)) center no-repeat;
   background-size: cover;
   opacity: 0.1;
   filter: saturate(0)
@@ -1001,7 +1001,8 @@ a:hover, .subforums a:hover,
   --srf2: #111;
   --bor: #252525;
 
-  --tex: url('https://ik.imagekit.io/arl60/Ardent/personal/Branwen/filibg.png?updatedAt=1775870643706&tr=w-1000');
+  --tex1: url('https://ik.imagekit.io/arl60/Ardent/personal/Branwen/filibg.png?updatedAt=1775870643706&tr=w-1000g');
+  --tex2: url('https://ik.imagekit.io/arl60/Ardent/personal/Branwen/filibg.png?updatedAt=1775870643706&tr=w-1000');
   --bg: url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/starrynight.jpg?updatedAt=1753495763500');
   --apb: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/2.png?updatedAt=1761259622322');
   --statb: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/1155601_OR9Z4R1.png?updatedAt=1773783029296');
