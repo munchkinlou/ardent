@@ -191,7 +191,7 @@ info:has(img) {
   justify-content: center;
   align-items: stretch;
   height: 100%;
-  padding: 0 20px;
+  padding: 0;
   margin: 20px;
   filter:
     drop-shadow(0 0 2px black)
@@ -216,6 +216,7 @@ info:has(img) h2 {
   position: relative;
   border:none;
   padding-bottom:30px;
+  margin:0;
 }
 info:has(img) h2:before {
   content: '';
