@@ -501,12 +501,12 @@ info[misc] images > *::before {
   bottom: calc(100% + 10px);
   left: 50%;
   transform: translateX(-50%) scale(.94);
-  width: 600px;
-  height: 300px;
+  width: var(--pvw, 600px);
+  height: var(--pvh, 300px);
   background-image: inherit;
-  background-size: cover;
+  background-size: var(--pvfit, cover);
+  background-position: var(--pvpos, center);
   background-repeat: no-repeat;
-  background-position: center;
   background-color: #0b0b0b;
   border: 1px solid color-mix(in oklab, var(--acc) 36%, transparent);
   box-shadow: 0 8px 26px #000c;
