@@ -486,8 +486,8 @@ info[misc] images > *::after {
   align-items: flex-end;
   box-sizing: border-box;
   padding: 6px 8px;
-  border-radius: inherit;
-  background: linear-gradient(to top, #000000b8 0%, transparent 55%);
+  box-shadow: 0 0 10px #0000005c;
+  border-radius: 10px;
   font-size: 7.5px;
   letter-spacing: 2px;
   text-transform: uppercase;
