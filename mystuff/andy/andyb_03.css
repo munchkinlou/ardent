@@ -1016,9 +1016,10 @@ info[rel] > sub a:hover::before { opacity: 1; }
 	text-align: justify;
 }
 .sip_tbl_th {
+	color: var(--grey);
 	padding:10px;
 	background: transparent;
-  border-bottom: 1px solid color-mix(in oklab, var(--grey) 12%, transparent);
+	border-bottom: 1px solid color-mix(in oklab, var(--grey) 12%, transparent);
 }
 td {
 	padding-top:10px;
