@@ -1161,7 +1161,8 @@ a:hover, .subforums a:hover,
   info:has(img) u {
     position: relative;
     inset:0;
-    padding-bottom:20px;
+    padding: 20px 20px 10px;
+    display: block;
   }
   info[misc] images > *:hover::before {display: none;}
   info[rel],
