@@ -599,6 +599,7 @@ code {
   background: var(--srf2);
   font-size:10px;
   height: 100%;
+  color: var(--grey);
 }
 
 .rpgsk_agent_lines {
