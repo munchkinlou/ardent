@@ -508,7 +508,7 @@ info[misc] images > *::before {
   background-size: var(--pvfit, cover);
   background-position: var(--pvpos, center);
   background-repeat: no-repeat;
-  background-color: #282834;
+  background-color: var(--pvbg);
   border: 1px solid color-mix(in oklab, var(--acc) 36%, transparent);
   box-shadow: 0 8px 26px #000c;
   opacity: 0;
