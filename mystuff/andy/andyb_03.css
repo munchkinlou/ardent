@@ -997,11 +997,35 @@ info[rel] > sub a:hover::before { opacity: 1; }
 }
 .subforums a i {display: none;}
 
-#content > p {font-size:0;}
-#content > table:nth-of-type(1),
-#content > table:nth-of-type(2) {
-	flex: 1 1 calc(50% - 20px);
+#content > p { font-size: 0; }
+
+#content > table:nth-of-type(-n+2) {
+  flex: 1 1 calc(50% - 20px);
+  min-width: 0;
 }
+#content > table:nth-of-type(-n+2) tr {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+#content > table:nth-of-type(-n+2) tr:first-child { margin-top: 15px; }
+
+#content > table:nth-of-type(-n+2) tr:nth-child(2) td {
+  width: 50%;
+  padding-right: 20px;
+  text-transform: uppercase;
+  color: var(--grey);
+}
+#content > table:nth-of-type(-n+2) tr:nth-child(2) td:nth-child(1) {
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+#content > table:nth-of-type(-n+2) tr:nth-child(2) td:nth-child(2) {
+  font-size: 10px;
+  text-align: right;
+}
+#content > table:nth-of-type(-n+2) tr:nth-child(2) a { color: var(--acc) !important; }
+
 .sip_tbl {
   box-shadow: 0 5px 20px #00000059;
   margin: 10px 0 20px;
