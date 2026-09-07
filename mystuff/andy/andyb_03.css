@@ -1104,7 +1104,7 @@ td {
   opacity: 0.7;
   text-transform: lowercase;
   font-style: italic;
-  width: 50%;
+  width: auto;
 }
 .sip_tbl_td:nth-child(4),
 .sip_tbl_td:nth-child(5) { 
