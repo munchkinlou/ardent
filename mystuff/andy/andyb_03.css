@@ -467,7 +467,6 @@ info[misc] images {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  background-color: #c2b3ab;
   margin: 20px 20px 0;
 }
 info[misc] images > * {
@@ -508,7 +507,7 @@ info[misc] images > *::before {
   background-size: var(--pvfit, cover);
   background-position: var(--pvpos, center);
   background-repeat: no-repeat;
-  background-color: var(--pvbg, black);
+  background-color: #282834;
   border: 1px solid color-mix(in oklab, var(--acc) 36%, transparent);
   box-shadow: 0 8px 26px #000c;
   opacity: 0;
@@ -541,6 +540,7 @@ info[misc] images > * > a {
 }
 info[misc] images > *:hover > a { opacity: 1; color: #fff; }
 info[misc] c {
+  background-color: var(--pvbg, black);
   background-image: var(--cimg, none);
 }
 .flex.fill:has(history) {
@@ -1224,6 +1224,7 @@ a:hover, .subforums a:hover,
 /*
   DO NOT USE WITHOUT ANDY'S PERMISSION.
 */
+
 
 
 :root {
