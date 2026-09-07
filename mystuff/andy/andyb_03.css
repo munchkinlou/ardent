@@ -158,6 +158,13 @@ h1:after { content: var(--credit);
 	opacity: 0.4;
 	pointer-events: none;
 }
+.profinfo .blocky:has(> a[href*="showthread.php"]) > span { font-size: 0; }
+.profinfo .blocky:has(> a[href*="showthread.php"]) > span::before {
+  content: 'vault';
+  font-size: 10px;
+  padding-top:20px;
+  margin-top:-15px;
+}
 /*
   DO NOT USE WITHOUT ANDY'S PERMISSION.
 */
@@ -346,6 +353,9 @@ g > label {
   padding: 4px 8px;
   cursor: pointer;
 }
+/*
+  DO NOT USE WITHOUT ANDY'S PERMISSION.
+*/
 g > label:first-of-type { grid-area: prev; justify-self: end; }
 g > label:last-of-type  { grid-area: next; justify-self: start; flex-direction: row-reverse; }
 g > label::before {
@@ -463,7 +473,9 @@ info[misc] box > dl {
   min-width: 180px;
   box-sizing: border-box;
 }
-
+/*
+  DO NOT USE WITHOUT ANDY'S PERMISSION.
+*/
 info[misc] images {
   display: flex;
   flex-direction: column;
@@ -622,7 +634,9 @@ tbody:has(.rpgsk_agent_lines) .thead {
   color: var(--acc) !important;
   text-shadow: 0 0 2px black;
 }
-
+/*
+  DO NOT USE WITHOUT ANDY'S PERMISSION.
+*/
 .tab:has(.blocky info[fam]) > h2 {
   display: block;
   font-size: 0;
@@ -671,7 +685,9 @@ p[parent] { text-align: center;
   display: block;
   text-shadow: 0 0 2px black, 0 0 5px black;
 }
-
+/*
+  DO NOT USE WITHOUT ANDY'S PERMISSION.
+*/
 p[current] { text-align: center; }
 p[former] {
   padding-top:3px;
@@ -738,7 +754,9 @@ info[fam] dd:has(~ dt)::before {
   bottom: 0;
   border-left: var(--tw) solid var(--tree);
 }
-
+/*
+  DO NOT USE WITHOUT ANDY'S PERMISSION.
+*/
 info [female]::after,
 info [male]::after,
 info [nb]::after {
@@ -815,7 +833,9 @@ approval[interested] { --rl: " \2726\FE0E  Interested"; --rc: 250 140 186; }
 approval[content]    { --rl: " \2764\FE0E  Content";    --rc: 246 112 176; }
 approval[enamoured]  { --rl: " \2764\FE0E  Enamoured";  --rc: 240  86 166; }
 approval[devoted]    { --rl: " \2764\FE0E  Devoted";    --rc: 232  46 154; }
-
+/*
+  DO NOT USE WITHOUT ANDY'S PERMISSION.
+*/
 .blocky:has(info[rel]) { margin: -10px 0 -100px; }
 
 info[rel] {
@@ -927,7 +947,9 @@ info[rel] approval::after {
     rgb(var(--c)) 0 calc(var(--n) * 1%),
     var(--track) calc(var(--n) * 1%) 100%);
 }
-
+/*
+  DO NOT USE WITHOUT ANDY'S PERMISSION.
+*/
 info[rel] details:has(dead) {
   filter: grayscale(1);
   opacity: .4;
@@ -978,7 +1000,9 @@ info[rel] > sub a::before {
   opacity: .4;
 }
 info[rel] > sub a:hover::before { opacity: 1; }
-
+/*
+  DO NOT USE WITHOUT ANDY'S PERMISSION.
+*/
 
 
 .board { margin: 0 0 -30px; 
@@ -1190,7 +1214,9 @@ a:hover, .subforums a:hover,
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
-
+/*
+  DO NOT USE WITHOUT ANDY'S PERMISSION.
+*/
 @media (max-width: 1200px){
   nav {
     margin: auto;
