@@ -1174,9 +1174,10 @@ a:hover, .subforums a:hover,
 
 #content:has(.tab .blocky info[fam],
              .rpgsk_agent_lines,
-             a[href*="awards.php"]) > table:nth-of-type(-n+2) {
+             .tab > table) > table:nth-of-type(-n+2) {
   display: none;
 }
+
 .tab:has(> table.tfixed) { margin-bottom: -30px; }
 .tab:has(.rpgsk_agent_lines) { padding:5px 0 0 !important; }
 .tab:has(> table.tfixed), 
