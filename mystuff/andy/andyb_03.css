@@ -117,7 +117,7 @@ h1:after { content: var(--credit);
 .tab { border-color: color-mix(in oklab, var(--grey) 31%, transparent); padding-top:30px!important}
 .profav { display:none;}
 .blocky {
-	background: transparent;
+	background: color-mix(in srgb, var(--srf2) 60%, transparent);;
 	padding: 10px 5px 35px;
 	text-align: center;
 	font-size: 16px;
@@ -135,7 +135,7 @@ h1:after { content: var(--credit);
   white-space: nowrap;
   font-size: var(--fs, 16px);
 }
-.blocky:has(.subforums){box-shadow:none; border-bottom:none;}
+.blocky:has(.subforums){box-shadow:none; border-bottom:none;background:none;}
 .blocky:has(.rpgsk_mem_prof_skill_row){border:none; box-shadow:none;}
 .blocky a {
 	text-transform: uppercase;
