@@ -1229,6 +1229,7 @@ a:hover, .subforums a:hover,
   gap: 20px;
   margin: 0;
 }
+.rpgsk_specialty_icon {width:30px; height: 30px; filter: drop-shadow(0 0 2px black);}
 /*
   DO NOT USE WITHOUT ANDY'S PERMISSION.
 */
