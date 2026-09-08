@@ -118,7 +118,7 @@ h1:after { content: var(--credit);
 .profav { display:none;}
 .blocky {
 	background: transparent;
-	padding: 10px 0 30px;
+	padding: 10px 5px 35px;
 	text-align: center;
 	font-size: 16px;
 	text-shadow: 0 1px 5px black, 0 0 2px black;
@@ -126,17 +126,27 @@ h1:after { content: var(--credit);
   border: 1px solid;
   border-image: linear-gradient(to right, var(--frame1),var(--frame2),var(--frame1)) 1;
 }
+.blocky:not(:has(info, history, fam)) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profinfowrap > .profinfo:first-child > .blocky:first-child {
+  white-space: nowrap;
+  font-size: var(--fs, 16px);
+}
 .blocky:has(.subforums){box-shadow:none; border-bottom:none;}
 .blocky a {
 	text-transform: uppercase;
 	font-size: 12px;
 	letter-spacing: 2px;
+  padding-top:5px;
 }
 .blocky u {text-decoration: none;}
 .blocky u > b {font-weight:400;}
 .blocky>span {
 	position: absolute;
-	bottom:5px;
+	bottom:10px;
 	left: 50%;
 	transform:translateX(-50%);
 	text-align: center;
@@ -1273,6 +1283,7 @@ a:hover, .subforums a:hover,
   --f2: "Allura", cursive;
   --f3: "Cormorant Garamond", serif;
   --f4: "Didact Gothic", sans-serif;
+  --fs: 14px;
 
   --credit: '\00A9 andy \2666  bg freepik';
 }
