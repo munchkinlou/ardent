@@ -699,24 +699,28 @@ p[parent] { text-align: center;
   DO NOT USE WITHOUT ANDY'S PERMISSION.
 */
 p[current] { text-align: center; }
+p[current] sub {
+  display: block;
+}
+p[current] i {display: none;}
 p[former] {
   padding-top:3px;
   color: var(--grey);
   text-align: right;
   font-style: italic;
 }
-p[former] sub {
-  padding-right:13px;
-}
-p[current] i, p[former] i {display: none;}
-p[none], li[none], dt[none]{
+current] i, p[former] i {display: none;}
+p[none], li[none], dt[none], p sub {
   text-align: left;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: var(--grey);
   padding-bottom:30px;
 }
-p[none] {text-align: center}
+p[none], p sub {text-align: center}
+p sub {
+  padding-top:6px;
+}
 
 info[fam] ul { list-style: none; margin: 0; padding-left: var(--gap); }
 info[fam] dl { margin: 0; padding-left: 20px; }
@@ -1266,7 +1270,6 @@ a:hover, .subforums a:hover,
 /*
   DO NOT USE WITHOUT ANDY'S PERMISSION.
 */
-
 
 
 :root {
