@@ -126,7 +126,7 @@ h1:after { content: var(--credit);
   border: 1px solid;
   border-image: linear-gradient(to right, var(--frame1),var(--frame2),var(--frame1)) 1;
 }
-.blocky:not(:has(info, history, fam, .rpgsk_mem_prof_skill_row)) {
+.blocky:not(:has(info, history, fam, .rpgsk_mem_prof_skill_row, .subforums)) {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1016,7 +1016,7 @@ info[rel] > sub a:hover::before { opacity: 1; }
 
 
 .board { margin: 0 0 -30px; 
-  padding: 0px 0 55px;
+  padding: 0px 0 70px;
   border-top: 1px solid;
   border-image: linear-gradient(to right, transparent, var(--frame1), var(--frame2), var(--frame1), transparent) 1;
 }
