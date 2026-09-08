@@ -126,7 +126,7 @@ h1:after { content: var(--credit);
   border: 1px solid;
   border-image: linear-gradient(to right, var(--frame1),var(--frame2),var(--frame1)) 1;
 }
-.blocky:not(:has(info, history, fam)) {
+.blocky:not(:has(info, history, fam, .rpgsk_mem_prof_skill_row)) {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,6 +136,7 @@ h1:after { content: var(--credit);
   font-size: var(--fs, 16px);
 }
 .blocky:has(.subforums){box-shadow:none; border-bottom:none;}
+.blocky:has(.rpgsk_mem_prof_skill_row){border:none; box-shadow:none;}
 .blocky a {
 	text-transform: uppercase;
 	font-size: 12px;
