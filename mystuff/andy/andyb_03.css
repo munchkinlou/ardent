@@ -136,7 +136,7 @@ h1:after { content: var(--credit);
   font-size: var(--fs, 16px);
 }
 .blocky:has(.subforums){box-shadow:none; border-bottom:none;background:none;}
-.blocky:has(.rpgsk_mem_prof_skill_row){border:none; box-shadow:none;}
+.blocky:has(.rpgsk_mem_prof_skill_row){background: none;border:none; box-shadow:none;}
 .blocky a {
 	text-transform: uppercase;
 	font-size: 12px;
