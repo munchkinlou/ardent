@@ -1217,9 +1217,9 @@ a[dc] {
   text-align: left;
   left: 0;
   bottom: -2.5%;
-  font: 10px var(--f4) !important;
-  letter-spacing: 4px !important;
-  text-transform: uppercase !important;
+  font: 8px var(--f4) !important;
+  letter-spacing: 3px !important;
+  text-transform: lowercase !important;
   color: var(--grey) !important;
   text-shadow: none !important;
   transition: color 0.3s ease !important;
