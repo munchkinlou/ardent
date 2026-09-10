@@ -1232,7 +1232,7 @@ a[dc]:hover {
 
 a[float] {
   position: fixed;
-  bottom: 18px;
+  bottom: 50px;
   right: 8px;
   z-index: 10;
 }
@@ -1240,6 +1240,9 @@ a[float] img {
   display: block;
   width: 150px;
   animation: float 3s ease-in-out infinite;
+}
+a[float]:hover {
+  transform:none !important;
 }
 @keyframes float {
   50% { transform: translateY(15px); }
