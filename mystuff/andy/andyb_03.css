@@ -834,6 +834,15 @@ info[fam]:has(box) {
 info[fam]:has(box) > :not(box) { flex: 0 0 100%; }
 info[fam] box > h4:first-child { margin-top: 10px; }
 info[fam] a { color: white !important; font-family: var(--f4) !important; }
+info[fam] h4 {position: relative;}
+info[fam] h4 > sub {
+  position: absolute;
+  top: -10px;
+  left:50%;
+  transform:translateX(-50%);
+  width: 100%;
+  color:var(--grey);
+}
 
 approval[hostile]  { --n:  8; --c: 255  71  61; --sl: "Hostile"; }
 approval[wary]     { --n: 28; --c: 226 146  66; --sl: "Wary"; }
