@@ -449,7 +449,6 @@ g:has(> input:checked) + g {
   animation: none;
 }
 
-
 info[main] > p {
   text-shadow: 0 0 1px black;
 }
@@ -1204,6 +1203,23 @@ a:hover, .subforums a:hover,
   letter-spacing: 1px;
   transition: color 0.3s ease !important;
 }
+a[dc] {
+  position: absolute;
+  text-align: left;
+  left: 0;
+  bottom: -2.5%;
+  font: 10px var(--f4) !important;
+  letter-spacing: 4px !important;
+  text-transform: uppercase !important;
+  color: var(--grey) !important;
+  text-shadow: none !important;
+  transition: color 0.3s ease !important;
+}
+a[dc]::before { content: 'design by ' attr(n); }
+a[dc]:hover {
+  transform: none !important;
+  color: var(--acc) !important;
+}
 
 .rpgsk_mem_prof_skill_descr a:hover {
   font-style: italic;
@@ -1246,6 +1262,7 @@ a:hover, .subforums a:hover,
   info[misc] images > *:hover::before {display: none;}
   info[rel],
   info[rel][c3] { --cols: 2; }
+  a[dc]{bottom:-3.5%;}
 }
 @media (max-width: 800px) {
   gallery, [gopen] { display: none !important; }
@@ -1266,6 +1283,7 @@ a:hover, .subforums a:hover,
     white-space: normal;
     font-size: 16px;
   }
+  a[dc]{bottom:-5%;}
 }
 
 /*
