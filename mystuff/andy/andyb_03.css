@@ -1230,6 +1230,21 @@ a[dc]:hover {
   color: var(--acc) !important;
 }
 
+a[float] {
+  position: fixed;
+  bottom: 18px;
+  right: 8px;
+  z-index: 10;
+}
+a[float] img {
+  display: block;
+  width: 150px;
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  50% { transform: translateY(15px); }
+}
+
 .rpgsk_mem_prof_skill_descr a:hover {
   font-style: italic;
   color: var(--acc) !important;
@@ -1293,6 +1308,7 @@ a[dc]:hover {
     font-size: 16px;
   }
   a[dc]{bottom:-5%;}
+  a[float] img {width: 100px;}
 }
 
 /*
