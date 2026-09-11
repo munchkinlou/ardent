@@ -35,6 +35,7 @@ body:after {
 	background-attachment: fixed;
 }
 header {background:none;}
+a { color: var(--acc) !important;}
 nav {
 	background: var(--srf) !important;
 	backdrop-filter: blur(2px);
