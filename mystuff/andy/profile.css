@@ -121,6 +121,8 @@ h1>span{text-decoration: none !important;}
 	margin:0 0 10px!important;
 	border: 2px solid;
 	letter-spacing: 1.3px;
+	text-align: center;
+	padding:20px 20px 10px;
 	box-shadow: inset 0 0 10px #312b4294;;
 	border-image: linear-gradient(to right, var(--frame1), var(--frame2), var(--frame1)) 1;
 }
@@ -134,7 +136,7 @@ h1>span{text-decoration: none !important;}
 	text-transform: uppercase;
 	font-size:10px;
 	text-align:center;
-	padding: 0 40px;
+	padding: 0 25px;
 }
 .profile.flex > div:nth-of-type(2) > div:first-of-type > div i { 
 	font-style: normal;
@@ -201,15 +203,16 @@ info[split] box a {
 .player_profile > .flex:nth-of-type(4) > .full.profinfowrap > .flex.fill.profinfo > div > span
 {
 	font-size:0;
-	padding: 10px 20px 25px;
+	letter-spacing: 0;
+	padding: 23px 20px 13px;
 }
 .player_profile > .flex:nth-of-type(3) > .full.profinfowrap > .flex.fill.profinfo > div > span:before,
 .player_profile > .flex:nth-of-type(4) > .full.profinfowrap > .flex.fill.profinfo > div > span:before{
 	position: absolute;
-	right: .3em;
-	bottom:.3em;
-	width: 500px;
-	text-align: right;
+	top: .3em;
+	left:0;
+	width: 100%;
+	letter-spacing: 0;
 	font-size:15px;	
 	padding: 0;
 }
@@ -258,6 +261,7 @@ info[split] box a {
 	letter-spacing: 1.5px;
 	color: var(--acc);
 	text-shadow: 0 0 2px black;
+	text-align: center;
 	left:0;
 	top:0;
 }
@@ -426,6 +430,8 @@ tr:nth-child(odd) .sip_tbl_td { background: color-mix(in srgb, var(--srf3) 88%, 
 .flex {margin: 0 !important;}
 .clear, .spacer {display:none;}
 .profile.flex > div:nth-of-type(2) > div > .tborder {border:none !important;}
+.blocky:has(info) > span {display: none;}
+
 @media (max-width: 800px) {
   info[split] { flex-direction: column; }
   info[split] > box { flex: 0 0 auto; width: 100%; }
@@ -449,7 +455,7 @@ tr:nth-child(odd) .sip_tbl_td { background: color-mix(in srgb, var(--srf3) 88%, 
 :root {
   --acc: #E1BEFF;
   --grey: white;
-  --srf: #3a2a5fa1;
+  --srf: #382a5fc7;
   --srf2: #2b498fe5;
 	--srf3: #3f3e7ed1;
   --bor: #252525;
