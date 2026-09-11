@@ -69,9 +69,8 @@ nav {
 
 h1{
 	position: absolute;
-	top:70px;
-	left:50%;
-	transform:translateX(-50%);
+	top:-690px;
+	left:125%;
   font-family: var(--f1);
 	text-transform: capitalize;
 	font-size: 140px;
@@ -129,6 +128,7 @@ h1>span{text-decoration: none !important;}
 }
 .profile.flex > div:nth-of-type(2) { align-self: stretch; }
 .profile.flex > div:nth-of-type(2) {
+	position: relative;
 	border-radius: 10px;
 	margin: 0 !important;
 	padding: 30px 10px 10px;
@@ -221,10 +221,10 @@ info[split] box a:hover {
 .player_profile > .flex:nth-of-type(3) > .full.profinfowrap > .flex.fill.profinfo > div > span:before,
 .player_profile > .flex:nth-of-type(4) > .full.profinfowrap > .flex.fill.profinfo > div > span:before{
 	position: absolute;
-	top: .3em;
+	top: 0;
 	left:0;
 	width: 100%;
-	letter-spacing: 0;
+	letter-spacing: 2px;
 	font-size:15px;	
 	padding: 0;
 }
@@ -279,7 +279,7 @@ info[split] box a:hover {
 }
 .blocky.board {
 	position: relative;
-	padding: 130px 100px 40px;
+	padding: 130px 10% 40px;
 	overflow: hidden;
 }
 .blocky.board:before {
@@ -454,10 +454,30 @@ tr:nth-child(odd) .sip_tbl_td { background: color-mix(in srgb, var(--srf3) 88%, 
 .clear, .spacer {display:none;}
 .profile.flex > div:nth-of-type(2) > div > .tborder {border:none !important;}
 .blocky:has(info) > span {display: none;}
+corner {
+  position: fixed;
+  display: block;
+  bottom: 3%;
+  right: 2%;
+  height: 150px;
+  width: 150px;
+  z-index: 10;
+  background: var(--cimg) center / contain no-repeat;
+  animation: corner 3s ease-in-out infinite;
+}
+@keyframes corner {
+  50% { transform: translateY(15px); }
+}
 
+@media (max-width: 1200px) {
+	h1{left: 110%;}
+}
 @media (max-width: 800px) {
+	h1 {left: 20%;}
   info[split] { flex-direction: column; }
   info[split] > box { flex: 0 0 auto; width: 100%; }
+	.profile.flex > div:nth-of-type(1) { flex: 0 0 100%; }
+	.profile.flex > div:nth-of-type(2) { flex: 0 0 100%; }
 }
 
 /* ALUCARD */  a[href$="uid=6063"] { --cimg: url('https://ik.imagekit.io/arl60/Ardent/personal/Andy/alucard.png?updatedAt=1759861633323'); }
@@ -514,4 +534,6 @@ tr:nth-child(odd) .sip_tbl_td { background: color-mix(in srgb, var(--srf3) 88%, 
 
   --rm: "Andy's Roster";
 	--rmc: "12 active characters";
+	
+	--cimg: url('https://ik.imagekit.io/arl60/Ardent/personal/Andy/LouComputer.png?updatedAt=1758330467435');
 }
