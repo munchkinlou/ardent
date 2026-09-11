@@ -25,7 +25,7 @@ html {
 
 body {
 	position: relative;
-  background: black;
+  background: white;
 }
 body:after {
 	background: var(--bg);
@@ -88,13 +88,14 @@ h1>span{text-decoration: none !important;}
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  gap: 20px;
+  gap: 10px;
+	margin-bottom:10px !important;
 }
 .profile.flex > br.clear,
 .profile.flex > .spacer { display: none; }
 
 .profile.flex > div:nth-of-type(1) { flex: 0 0 100%; }
-.profile.flex > div:nth-of-type(2) { flex: 0 0 20%; }
+.profile.flex > div:nth-of-type(2) { flex: 0 0 25%; }
 .profile.flex > .profinfo { flex: 1 1 0; min-width: 0; }
 .profile.flex > div:nth-of-type(1) img {display:none;}
 .profile.flex > div:nth-of-type(1) {
@@ -122,21 +123,21 @@ h1>span{text-decoration: none !important;}
 	border: 2px solid;
 	letter-spacing: 1.3px;
 	text-align: center;
-	padding:20px 20px 10px;
+	padding:25px 20px 10px;
 	box-shadow: inset 0 0 10px #312b4294;;
 	border-image: linear-gradient(to right, var(--frame1), var(--frame2), var(--frame1)) 1;
 }
 .profile.flex > div:nth-of-type(2) { align-self: stretch; }
 .profile.flex > div:nth-of-type(2) {
 	border-radius: 10px;
-	margin: 12px 0 20px !important;
-	padding: 20px;
+	margin: 0 !important;
+	padding: 30px 10px 10px;
 }
 .profile.flex > div:nth-of-type(2) > div:first-of-type > div { 
 	text-transform: uppercase;
 	font-size:10px;
 	text-align:center;
-	padding: 0 25px;
+	padding: 0 60px;
 }
 .profile.flex > div:nth-of-type(2) > div:first-of-type > div i { 
 	font-style: normal;
@@ -170,8 +171,10 @@ h1>span{text-decoration: none !important;}
 @keyframes float {
   50% { transform: translateY(5px) scalex(-1); }
 }
+.flex.fill.profinfo:has(info) > p {display:none;}
 .blocky:has(info){
 	padding: 40px 30px;
+	margin: 0 !important;
 }
 info[split] {
   display: flex;
@@ -182,7 +185,7 @@ info[split] > box {
   flex: 0 0 140px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 13px;
 }
 info[split] > p {
   flex: 1 1 0;
@@ -194,9 +197,18 @@ info[split] box a {
   text-align: center;
   padding: 8px;
   border: 1px solid;
+	text-transform: uppercase;
+	font-size: 10px;
+	letter-spacing: 2px;
+	box-shadow: 0 0 10px #2b1d5294;
+	background: var(--srf);
   border-image: linear-gradient(to right, var(--frame1), var(--frame2), var(--frame1)) 1;
+  transition: transform .3s ease;
 }
-
+info[split] box a:hover {
+	transform: scale(1.1);
+  transition: transform .3s ease;
+}
 .player_profile > .flex:nth-of-type(3) > .full.profinfowrap > .flex.fill.profinfo > div,
 .player_profile > .flex:nth-of-type(4) > .full.profinfowrap > .flex.fill.profinfo > div,
 .player_profile > .flex:nth-of-type(3) > .full.profinfowrap > .flex.fill.profinfo > div > span,
@@ -263,11 +275,22 @@ info[split] box a {
 	text-shadow: 0 0 2px black;
 	text-align: center;
 	left:0;
-	top:0;
+	top:5px;
 }
 .blocky.board {
+	position: relative;
 	padding: 130px 100px 40px;
 	overflow: hidden;
+}
+.blocky.board:before {
+	content: var(--rmc);
+	position: absolute;
+	bottom: 10px;
+	right: 8px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font: 12px var(--f4);
+	color: var(--grey);
 }
 .blocky.board > span {
 	top:0;
@@ -490,4 +513,5 @@ tr:nth-child(odd) .sip_tbl_td { background: color-mix(in srgb, var(--srf3) 88%, 
 	--a5: "my characters have their routines and favoured locations described in their profiles. if in the same pack it can be assumed ours have met.";
 
   --rm: "Andy's Roster";
+	--rmc: "12 active characters";
 }
