@@ -467,6 +467,7 @@ corner {
   width: 150px;
   z-index: 10;
   background: var(--cimg) center / contain no-repeat;
+  pointer-events:none;
   animation: corner 3s ease-in-out infinite;
 }
 @keyframes corner {
