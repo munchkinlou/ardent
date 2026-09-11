@@ -477,7 +477,15 @@ corner {
 	h1{left: 110%;}
 }
 @media (max-width: 800px) {
-	h1 {left: 20%;}
+	h1 {
+		top: -55%;left: 50%; 
+		transform:translatex(-50%);
+	  font-size:100px;
+	}
+	.profile.flex > div:nth-of-type(1) {
+		height: 500px;
+		margin: -50px 0 0;
+	}
   info[split] { flex-direction: column; }
   info[split] > box { flex: 0 0 auto; width: 100%; }
 	.profile.flex > div:nth-of-type(1) { flex: 0 0 100%; }
@@ -508,7 +516,7 @@ corner {
   --bg: url('https://ik.imagekit.io/arl60/Ardent/personal/Backgrounds/stardust_4k.png');
 	--acbg: url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/2632725_8741.jpg?updatedAt=1760754138078&tr=w-1000');
 	--tbg: url('https://ik.imagekit.io/arl60/Ardent/personal/Backgrounds/SNOWFALL%20LOOP.gif');
-  --arbg: url('https://ik.imagekit.io/arl60/Ardent/personal/Backgrounds/8259423.png');
+  --arbg: url('https://ik.imagekit.io/arl60/Ardent/personal/Backgrounds/snow.png');
 	
   --f1: "WindSong", cursive;
   --f2: "Allura", cursive;
