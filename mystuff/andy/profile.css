@@ -296,7 +296,7 @@ info[split] box a:hover {
 .blocky.board > span {
 	top:0;
 	bottom: auto;
-	background: none;
+	background: var(--srf);
 	width: 100%;
 	left: 50%;
 	transform:translateX(-50%);
@@ -381,6 +381,8 @@ a[href*="member.php?action=profile"]:hover {
   padding: 25px 0 10px;
   border-bottom: 2px solid color-mix(in srgb, var(--acc) 25%, transparent);
   box-shadow: 0 5px 10px #231e4891;
+	background: var(--srf);
+	z-index: 1;
 }
 tr > td {
   padding: 0 20px 20px;
@@ -447,7 +449,7 @@ tr:nth-child(odd) .sip_tbl_td { background: color-mix(in srgb, var(--srf3) 88%, 
 	opacity: .25;
 	z-index: -1;
 	background: var(--arbg);
-	background-size:70%;
+	background-size:cover;
 	background-position: 50% 20%;
 	filter: drop-shadow(0 0 3px black);
 }
@@ -479,7 +481,15 @@ corner {
   info[split] > box { flex: 0 0 auto; width: 100%; }
 	.profile.flex > div:nth-of-type(1) { flex: 0 0 100%; }
 	.profile.flex > div:nth-of-type(2) { flex: 0 0 100%; }
+	.blocky.board {padding-top:20%;}
 }
+@media (max-width: 800px) {
+	.blocky.board > span:after {
+		font-size:35px;
+		letter-spacing: 1.3px;
+	}
+}
+
 
 /* NAME &tr=w-1000 */ a[href$="uid="] { background-image: url('URL'); }
 
