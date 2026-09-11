@@ -480,19 +480,6 @@ corner {
 	.profile.flex > div:nth-of-type(2) { flex: 0 0 100%; }
 }
 
-/* ALUCARD */  a[href$="uid=6063"] { --cimg: url('https://ik.imagekit.io/arl60/Ardent/personal/Andy/alucard.png?updatedAt=1759861633323'); }
-/* ASTARION */ a[href$="uid=6021"] { --cimg: url('https://ik.imagekit.io/arl60/Ardent/personal/Andy/Astarion2.png?updatedAt=1788643097555'); }
-/* BRANWEN */  a[href$="uid=6406"] { --cimg: url('https://ik.imagekit.io/arl60/Ardent/personal/Andy/Branwen.png?updatedAt=1761980395639'); }
-/* DEADLOCK */ a[href$="uid=6182"] { --cimg: url('https://ik.imagekit.io/arl60/Ardent/personal/Andy/Deadlock.png?updatedAt=1761980419214'); }
-/* ETIENNE */  a[href$="uid=6318"] { --cimg: url('https://ik.imagekit.io/arl60/Ardent/personal/Andy/etienne.png?updatedAt=1789053995680'); }
-/* EVANESCE */ a[href$="uid=6073"] { --cimg: url('https://ik.imagekit.io/arl60/Ardent/personal/Andy/Evanesce.png?updatedAt=1757743092270'); }
-/* JINWOO */   a[href$="uid=6086"] { --cimg: url('https://ik.imagekit.io/arl60/Ardent/personal/Andy/Jinwoo.png?updatedAt=1761980494077'); }
-/* EREN */     a[href$="uid=6263"] { --cimg: url('https://ik.imagekit.io/arl60/Ardent/personal/Andy/Eren.png?updatedAt=1772494097189'); }
-/* KJARTAN */  a[href$="uid=5973"] { --cimg: url('https://ik.imagekit.io/arl60/Ardent/personal/Andy/Kjartan.png?updatedAt=1757743070600'); }
-/* NEREUS */   a[href$="uid=6069"] { --cimg: url('https://ik.imagekit.io/arl60/Ardent/personal/Andy/Nereus.png?updatedAt=1757743102883'); }
-/* PERSEUS */  a[href$="uid=6299"] { --cimg: url('https://ik.imagekit.io/arl60/Ardent/personal/Andy/Perseus.png?updatedAt=1772494080996'); }
-/* RENGOKU */  a[href$="uid=6099"] { --cimg: url('https://ik.imagekit.io/arl60/Ardent/personal/Andy/Rengoku.png?updatedAt=1757743117537'); }
-
 /* NAME &tr=w-1000 */ a[href$="uid="] { background-image: url('URL'); }
 
 :root {
