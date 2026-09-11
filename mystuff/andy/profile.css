@@ -70,7 +70,7 @@ nav {
 
 h1{
 	position: absolute;
-	top:-690px;
+	top:-790px;
 	left:125%;
   font-family: var(--f1);
 	text-transform: capitalize;
@@ -108,7 +108,7 @@ h1>span{text-decoration: none !important;}
 	background-repeat: no-repeat;
 	margin-bottom:0;
 	pointer-events:none;
-	margin:10px 0 0;
+	margin:10px 0 100px;
 }
 .flex.fill.profinfo:has(d){
 	flex-direction: row;
