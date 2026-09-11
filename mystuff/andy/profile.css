@@ -107,6 +107,7 @@ h1>span{text-decoration: none !important;}
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin-bottom:0;
+	pointer-events:none;
 }
 .flex.fill.profinfo:has(d){
 	flex-direction: row;
