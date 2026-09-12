@@ -242,7 +242,13 @@
 }
 .ab02 inv details[open] sh,
 .ab02 comp details[open] sh { display: block; }
+.ab02 br {display:none;}
 
+
+@media (max-width: 800px) {
+  .ab02 inv,
+  .ab02 comp { display:none;}
+}
 @media (max-width: 600px) {
   .ab02 {
     min-height: 0;
@@ -256,27 +262,5 @@
   .ab_astarion02 stats abpop {
     width:100%;
     max-width: 180px;
-  }
-  .ab02 inv,
-  .ab02 comp {
-    position: static;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 8px 10px 0 0;
-  }
-  .ab02 inv summary  { width: 34px; height: 34px; }
-  .ab02 comp summary { width: 40px; height: 40px; }
-
-  .ab02 inv sh,
-  .ab02 comp sh {
-    position: static;
-    transform: none;
-    margin-top: 8px;
-  }
-  .ab02 inv abpop,
-  .ab02 comp abpop {
-    width: auto;
-    min-width: 0;
-    max-width: none;
   }
 }
