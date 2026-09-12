@@ -242,7 +242,11 @@
 }
 .ab02 inv details[open] sh,
 .ab02 comp details[open] sh { display: block; }
-.ab02 br {display:none;}
+.ab02 relations > br:first-of-type,
+.ab02 cond > br:first-of-type,
+.ab02 > br,
+.ab02 stats > br,
+.ab02 nm br {display: none;}
 
 
 @media (max-width: 800px) {
