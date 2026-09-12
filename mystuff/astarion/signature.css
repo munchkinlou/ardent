@@ -5,7 +5,7 @@
   
 }
 .ab_astarion02 img {top:-18px;left:20px;}
-.ab_astarion02 bn, .ab_astarion02 stats abpop
+.ab_astarion02 bn, .ab_astarion02 abpop
 { border: 1px solid;
   border-image: linear-gradient(to right, #F5B07D,#FFEFA0,#F5B07D) 1;}
 .ab_astarion02 bn:before { content: '';
@@ -65,7 +65,7 @@
 .ab_astarion02 relations[taken]  { color: #ffb24e; }
 .ab_astarion02 cond, .ab_astarion02 relations
 { font-size: 14px;}
-.ab_astarion02 stats abpop {
+.ab_astarion02 abpop {
   width:200px;
   box-shadow: none;
   background: linear-gradient(to bottom, #212121, black);
