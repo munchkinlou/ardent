@@ -281,9 +281,11 @@ info[split] box a:hover {
 	top:5px;
 }
 .blocky.board {
+	background: var(--srf3);
 	position: relative;
 	padding: 130px 10% 40px;
 	overflow: hidden;
+	z-index: 1;
 }
 .blocky.board:after {
 	content: var(--rmc);
@@ -299,7 +301,7 @@ info[split] box a:hover {
 	content: '';
 	position: absolute;
 	inset: 0;
-	z-index: 2;
+	z-index: 1;
 	pointer-events: none;
 	width: 100%;
 	height: 100%;
