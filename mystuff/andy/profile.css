@@ -296,16 +296,17 @@ info[split] box a:hover {
 	letter-spacing: 2px;
 	font: 12px var(--f4);
 	color: var(--grey);
+	z-index: 2;
 }
 .blocky.board:before{
 	content: '';
 	position: absolute;
 	inset: 0;
-	z-index: 1;
+	z-index: 0;
 	pointer-events: none;
 	width: 100%;
 	height: 100%;
-	opacity: 0.2;
+	opacity: 0.15;
 	background:var(--tbg);
 	background-size: cover;
 	pointer-events: none;
