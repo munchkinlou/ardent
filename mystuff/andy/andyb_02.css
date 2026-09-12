@@ -12,6 +12,7 @@
   position: relative;
   box-sizing: border-box;
   max-width: 480px;
+  width: 100%;
   margin: 10px auto;
   min-height: 104px;
   font-family: "Didact Gothic", sans-serif;
@@ -68,7 +69,7 @@
   flex-wrap: wrap;
   justify-content: flex-end;
   margin-top:6px;
-  margin-right:12%;
+  margin-right:4%;
   gap: 4px 14px;
 }
 .ab02 plots b {
@@ -188,17 +189,94 @@
   font-size:8px;
   letter-spacing: 1.5px;
   margin-right:3px;}
+
+.ab02 inv,
+.ab02 comp {
+  position: absolute;
+  top: 52px;
+  z-index: 20;
+}
+.ab02 inv  { left: -50px; top:40px; }
+.ab02 comp { right: -60px; top: 40px; }
+
+.ab02 inv summary {  width: 50px; height: 50px; }
+.ab02 comp summary {  width: 60px; height: 60px; }
+.ab02 inv summary,
+.ab02 comp summary {
+  display: block;
+  list-style: none;
+  cursor: pointer;
+  outline: none;
+  background: center / contain no-repeat;
+  transition: transform .15s ease;
+}
+.ab02 inv summary::-webkit-details-marker,
+.ab02 comp summary::-webkit-details-marker { display: none; }
+.ab02 inv summary  { background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/74e7fe4d-2b9d-4917-8771-2bab16b1a31f/dckyix7-b01fdaca-c1cd-4c02-9091-0f07f8a7a5b8.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi83NGU3ZmU0ZC0yYjlkLTQ5MTctODc3MS0yYmFiMTZiMWEzMWYvZGNreWl4Ny1iMDFmZGFjYS1jMWNkLTRjMDItOTA5MS0wZjA3ZjhhN2E1YjguZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.HMRc7HDu5noaMu93x5aoow9Oy4CnFSPLZpTFdhQaaME'); }
+.ab02 comp summary { background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0bedb362-1325-47fe-8fb8-8a1224de0221/dfmcs8a-7da21d91-5463-46c0-bed5-d8a93968f58e.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8wYmVkYjM2Mi0xMzI1LTQ3ZmUtOGZiOC04YTEyMjRkZTAyMjEvZGZtY3M4YS03ZGEyMWQ5MS01NDYzLTQ2YzAtYmVkNS1kOGE5Mzk2OGY1OGUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.YNPd0acSPyUMUX4mEMuOno_6r1s5dxjL114WJwTmA-0'); }
+.ab02 inv summary:hover,
+.ab02 comp summary:hover { transform: scale(1.1); }
+.ab02 comp summary {
+  animation: abfloat 1.3s ease-in-out infinite;
+  filter: drop-shadow(0 0 1px white) drop-shadow(0 0 0.5px white);
+}
+@keyframes abfloat {
+  50% { transform: translateY(2px); }
+}
+.ab02 inv sh,
+.ab02 comp sh {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 30;
+  filter: drop-shadow(0 0 2px black);
+}
+.ab02 inv sh  { left:  calc(100% + 12px); }
+.ab02 comp sh { right: calc(100% + 12px); }
+.ab02 inv abpop,
+.ab02 comp abpop {
+  width: max-content;
+  min-width: 200px;
+  max-width: min(400px, 70vw);
+}
+.ab02 inv details[open] sh,
+.ab02 comp details[open] sh { display: block; }
+
 @media (max-width: 600px) {
   .ab02 {
     min-height: 0;
-    padding: 12px 4px 12px 140px;
+    padding: 0;
   }
-  .ab02 img { left: -14px; width: 150px; }
+  .ab02 nm {text-align: left; padding-left:5%;}
+  .ab02 plots {margin:5px auto auto;}
   .ab02 say { font-size: 12px; }
-  .ab02 o,
-  .ab02 stat,
-  .ab02 inv,
-  .ab02 item,
-  .ab02 summary { color: inherit; }
   .ab02 o[no] { opacity: .45; }
+
+  .ab_astarion02 stats abpop {
+    width:100%;
+    max-width: 180px;
+  }
+  .ab02 inv,
+  .ab02 comp {
+    position: static;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 8px 10px 0 0;
+  }
+  .ab02 inv summary  { width: 34px; height: 34px; }
+  .ab02 comp summary { width: 40px; height: 40px; }
+
+  .ab02 inv sh,
+  .ab02 comp sh {
+    position: static;
+    transform: none;
+    margin-top: 8px;
+  }
+  .ab02 inv abpop,
+  .ab02 comp abpop {
+    width: auto;
+    min-width: 0;
+    max-width: none;
+  }
 }
