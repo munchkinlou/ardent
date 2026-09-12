@@ -1241,6 +1241,7 @@ a[float] {
 a[float] img {
   display: block;
   width: 100px;
+  pointer-events:none;
 }
 a[float]:hover {
   transform:none !important;
