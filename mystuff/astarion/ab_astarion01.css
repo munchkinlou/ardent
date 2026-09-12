@@ -183,7 +183,7 @@
   text-shadow: none;
 }
 .ab_astarion01 credit art {display:inline-block; padding-left:10px;}
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
   .ab_astarion01, .ab_astarion01 inbor {filter:none;}
   .ab_astarion01 con:after,
   .ab_astarion01 quote {display:none;}
