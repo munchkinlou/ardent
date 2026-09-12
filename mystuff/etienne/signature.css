@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+.ab_etienne02 {
+  
+}
+.ab_etienne02 img {top:-18px;left:20px;}
+.ab_etienne02 bn, .ab_etienne02 abpop
+{ border: 1px solid;
+  border-image: linear-gradient(to right, #821D44,#9C3F63,#821D44) 1;}
+.ab_etienne02 bn:before { content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: url('https://ik.imagekit.io/arl60/Ardent/personal/Branwen/filibg.png?updatedAt=1775870643706?tr=w-450')
+    center no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  filter: saturate(0.5)
+    hue-rotate(-100deg)
+    brightness(1);
+  pointer-events:none;}
+.ab_etienne02 nm { top: 3px; left: 1px;
+  filter: drop-shadow(1px 1px 1px black);}
+.ab_etienne02 fn {
+  font-weight: 400;
+  font-family: "WindSong", cursive;
+  background: linear-gradient( -45deg, #A74B6F 0%, #F7C1F6 30%, #BF83B6 50%, #CA6B90 70%, #9F4169 100% );
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: abasta02_shimmer 8s ease-in-out infinite;
+}
+@keyframes abasta02_shimmer {
+    0%, 100% { background-position: 100% 0%; }
+    50% { background-position: 0% 100%; }
+}
+.ab_etienne02 ln {
+  margin:-13px -33px 0 0;
+  font-size:8px;}
+.ab_etienne02 li i {
+  color: #b4b4b4;
+}
+.ab_etienne02 cond, .ab_etienne02 relations {
+  border:none;
+  border-bottom: 2px double #e4b86bc9;
+  border-radius:5px;
+  padding: 0 0 0 2px;
+  font-family: "Allura", cursive;
+  text-transform: capitalize;
+  font-size: 12px;
+  letter-spacing:1.2px;
+}
+.ab_etienne02 cond         { color: #63e2b2; }
+.ab_etienne02 cond[hurt]   { color: #ff5d43; }
+.ab_etienne02 relations         { color: #c7ffff; }
+.ab_etienne02 relations[taken]  { color: #ffb24e; }
+.ab_etienne02 cond, .ab_etienne02 relations
+{ font-size: 14px;}
+.ab_etienne02 abpop {
+  width:200px;
+  box-shadow: none;
+  background: linear-gradient(to bottom, #212121, black);
+}
