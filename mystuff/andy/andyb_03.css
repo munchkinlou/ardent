@@ -1116,7 +1116,7 @@ td {
 }
 .sip_tbl_td:nth-child(2) { 
   font-weight: bold;
-  white-space: nowrap;
+  white-space: wrap;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   font-size:11px;
@@ -1241,7 +1241,6 @@ a[float] {
 a[float] img {
   display: block;
   width: 100px;
-  pointer-events:none;
 }
 a[float]:hover {
   transform:none !important;
@@ -1311,6 +1310,7 @@ a[float]:hover {
   }
   a[dc]{bottom:-5%;}
   a[float] img {width: 100px;}
+  .sip_tbl_td:nth-child(1) img{ width: 20px !important;}
 }
 
 /*
