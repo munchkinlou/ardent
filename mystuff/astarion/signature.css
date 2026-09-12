@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 
-.ab_astarion02 {
+.ab02.ab_astarion02 {
   
 }
-.ab_astarion02 img {top:-18px;left:20px;}
-.ab_astarion02 bn, .ab_astarion02 abpop
+.ab02.ab_astarion02 img {top:-18px;left:20px;}
+.ab02.ab_astarion02 bn, .ab02.ab_astarion02 stats abpop
 { border: 1px solid;
   border-image: linear-gradient(to right, #F5B07D,#FFEFA0,#F5B07D) 1;}
-.ab_astarion02 bn:before { content: '';
+.ab02.ab_astarion02 bn:before { content: '';
   position: absolute;
   inset: 0;
   z-index: -1;
@@ -20,9 +20,9 @@
     hue-rotate(-20deg)
     brightness(1);
   pointer-events:none;}
-.ab_astarion02 nm { top: 3px; left: 1px;
+.ab02.ab_astarion02 nm { top: 3px; left: 1px;
   filter: drop-shadow(1px 1px 1px black);}
-.ab_astarion02 fn {
+.ab02.ab_astarion02 fn {
   font-weight: 400;
   font-family: "WindSong", cursive;
   background: linear-gradient(
@@ -43,13 +43,13 @@
     0%, 100% { background-position: 100% 0%; }
     50% { background-position: 0% 100%; }
 }
-.ab_astarion02 ln {
+.ab02.ab_astarion02 ln {
   margin:-13px -22px 0 0;
   font-size:8px;}
-.ab_astarion02 li i {
+.ab02.ab_astarion02 li i {
   color: #b4b4b4;
 }
-.ab_astarion02 cond, .ab_astarion02 relations {
+.ab02.ab_astarion02 cond, .ab02.ab_astarion02 relations {
   border:none;
   border-bottom: 2px double #e4b86bc9;
   border-radius:5px;
@@ -59,13 +59,13 @@
   font-size: 12px;
   letter-spacing:1.2px;
 }
-.ab_astarion02 cond         { color: #63e2b2; }
-.ab_astarion02 cond[hurt]   { color: #ff5d43; }
-.ab_astarion02 relations         { color: #c7ffff; }
-.ab_astarion02 relations[taken]  { color: #ffb24e; }
-.ab_astarion02 cond, .ab_astarion02 relations
+.ab02.ab_astarion02 cond         { color: #63e2b2; }
+.ab02.ab_astarion02 cond[hurt]   { color: #ff5d43; }
+.ab02.ab_astarion02 relations         { color: #c7ffff; }
+.ab02.ab_astarion02 relations[taken]  { color: #ffb24e; }
+.ab02.ab_astarion02 cond, .ab02.ab_astarion02 relations
 { font-size: 14px;}
-.ab_astarion02 abpop {
+.ab02.ab_astarion02 stats abpop {
   width:200px;
   box-shadow: none;
   background: linear-gradient(to bottom, #212121, black);
