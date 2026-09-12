@@ -472,10 +472,6 @@ corner {
   z-index: 10;
   background: var(--cimg) center / contain no-repeat;
   pointer-events:none;
-  animation: corner 3s ease-in-out infinite;
-}
-@keyframes corner {
-  50% { transform: translateY(15px); }
 }
 
 @media (max-width: 1200px) {
