@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+/*
+  font-family: "Amarante", serif;
+  font-family: "Didact Gothic", sans-serif;
+  font-family: "Unica One", sans-serif;
+  font-family: "Bad Script", cursive;
+*/
+.ab02 {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 480px;
+  margin: 10px auto;
+  min-height: 104px;
+  font-family: "Didact Gothic", sans-serif;
+  color: inherit;
+  padding-bottom:10px;
+}
+.ab02 msg {
+  display: block;
+  font-size:11px;
+  text-align: center;
+  padding: 10px 0;
+  letter-spacing: 1.2px;
+  text-transform: lowercase;
+}
+.ab02 img {
+  position: absolute;
+  top: -19px;
+  left: 26px;
+  z-index: 10;
+  height: 100px;
+  width: 100px;
+  pointer-events: none;
+}
+.ab02 bn {
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 64px;
+  background: black;
+  box-shadow: 1px 1px 3px black;
+}
+.ab02 nm {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  color: white;
+  font-size: 35px;
+  text-align: center;
+}
+.ab02 ln {
+  display: block;
+  font-size: 8px;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Didact Gothic", sans-serif;
+  margin: -6px 0 0; }
+.ab02 plots {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-top:6px;
+  margin-right:12%;
+  gap: 4px 14px;
+}
+.ab02 plots b {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  text-transform: lowercase;
+}
+.ab02 plots b:before {
+  content: "\2666";
+  margin-right: 4px;
+  font-size: 7px;
+  vertical-align: 1px;
+  text-shadow: 0px 0px 1px black;
+}
+.ab02 plots b[no] { 
+  opacity:0.4; font-weight:400;
+  text-decoration: line-through;}
+.ab02 stats {
+  position: absolute;
+  right: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  display: flex;
+  flex-direction:row;
+  align-items: stretch;
+  gap: 0px;
+}
+
+.ab02 cond, .ab02 relations {
+  font-size: 8px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: right;
+}
+.ab02 cond         { color: #ffffff; }
+.ab02 cond[hurt]   { color: #ff5d43; }
+.ab02 relations         { color: #8fd3b6; }
+.ab02 relations[taken]  { color: #ffb24e; }
+
+.ab02 stats summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  list-style: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0 2px 0 6px;
+  border-radius: 2px;
+  transition: background .15s ease, border-color .15s ease;
+}
+.ab02 stats summary::after { content: "\25BE"; margin-left: 10px; font-size: 7px; opacity: .7; }
+
+.ab02 stats summary::-webkit-details-marker { display: none; }
+.ab02 stats summary::after { 
+  content: " \25BE"; margin-left: 3px; 
+  font-size: 7px; opacity: .7;
+  color: white;}
+
+.ab02 stats summary:hover {
+  background: #ffffff24;
+}
+.ab02 stats details[open] summary {
+  background: #ffffff2b;
+}
+.ab02 stats details[open] summary::after { content: " \25B4"; }
+
+.ab02 stats sh {
+  display: none;
+  position: absolute;
+  right: calc(100% + 12px);
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 30;
+  filter: drop-shadow(0px 0px 2px black);
+}
+
+.ab02 details[open] sh { display: block; }
+
+.ab02 abpop {
+  display: block;
+  box-sizing: border-box;
+  width: 210px;
+  padding: 14px 16px;
+  background:black;
+  color: white;
+  text-align: left;
+  text-transform: none;
+  letter-spacing: 1.2px;
+}
+.ab02 abpop ul { margin: 0;
+  padding-left: 0px;
+  list-style: none;}
+.ab02 abpop li {
+  font-size: 11px;
+  line-height: 1.3;
+  margin-top: 4px; }
+
+.ab02 abpop li:first-child { margin-top: 0; }
+.ab02 abpop li + li {
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px solid #ffffff1f;
+}
+.ab02 abpop a { color: pink; text-decoration: none; }
+.ab02 date
+{ display: block; margin-top: 2px;
+  font-size: 7.5px; letter-spacing: 2px;
+  text-transform: uppercase; color: #ffffff8a; }
+.ab02 li sick  { color: purple; }
+.ab02 li wound { color: orange; }
+.ab02 li i { color: grey;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size:8px;
+  letter-spacing: 1.5px;
+  margin-right:3px;}
+@media (max-width: 600px) {
+  .ab02 {
+    min-height: 0;
+    padding: 12px 4px 12px 140px;
+  }
+  .ab02 img { left: -14px; width: 150px; }
+  .ab02 say { font-size: 12px; }
+  .ab02 o,
+  .ab02 stat,
+  .ab02 inv,
+  .ab02 item,
+  .ab02 summary { color: inherit; }
+  .ab02 o[no] { opacity: .45; }
+}
