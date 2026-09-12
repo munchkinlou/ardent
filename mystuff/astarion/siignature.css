@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+.ab_astarion02 {
+  
+}
+.ab_astarion02 img {top:-18px;left:20px;}
+.ab_astarion02 bn, .ab_astarion02 stats abpop
+{ border: 1px solid;
+  border-image: linear-gradient(to right, #F5B07D,#FFEFA0,#F5B07D) 1;}
+.ab_astarion02 bn:before { content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: url('https://ik.imagekit.io/arl60/Ardent/personal/Branwen/filibg.png?updatedAt=1775870643706?tr=w-450')
+    center no-repeat;
+  background-size: cover;
+  opacity: 0.4;
+  filter: saturate(0)
+    hue-rotate(-20deg)
+    brightness(1);
+  pointer-events:none;}
+.ab_astarion02 nm { top: 3px; left: 1px;
+  filter: drop-shadow(1px 1px 1px black);}
+.ab_astarion02 fn {
+  font-weight: 400;
+  font-family: "WindSong", cursive;
+  background: linear-gradient(
+      -45deg,
+      #C9973F 0%,
+      #C9973F 30%,
+      #FFF6D8 50%,
+      #C9973F 70%,
+      #C9973F 100%
+  );
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: abasta02_shimmer 8s ease-in-out infinite;
+}
+@keyframes abasta02_shimmer {
+    0%, 100% { background-position: 100% 0%; }
+    50% { background-position: 0% 100%; }
+}
+.ab_astarion02 ln {
+  margin:-13px -22px 0 0;
+  font-size:8px;}
+.ab_astarion02 li i {
+  color: #b4b4b4;
+}
+.ab_astarion02 cond, .ab_astarion02 relations {
+  border:none;
+  border-bottom: 2px double #e4b86bc9;
+  border-radius:5px;
+  padding: 0 0 0 2px;
+  font-family: "Allura", cursive;
+  text-transform: capitalize;
+  font-size: 12px;
+  letter-spacing:1.2px;
+}
+.ab_astarion02 cond         { color: #63e2b2; }
+.ab_astarion02 cond[hurt]   { color: #ff5d43; }
+.ab_astarion02 relations         { color: #c7ffff; }
+.ab_astarion02 relations[taken]  { color: #ffb24e; }
+.ab_astarion02 cond, .ab_astarion02 relations
+{ font-size: 14px;}
+.ab_astarion02 stats abpop {
+  width:200px;
+  box-shadow: none;
+  background: linear-gradient(to bottom, #212121, black);
+}
