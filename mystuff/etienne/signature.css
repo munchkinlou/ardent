@@ -63,3 +63,6 @@
   box-shadow: none;
   background: linear-gradient(to bottom, #212121, black);
 }
+.ab_etienne02 comp summary{
+  filter:hue-rotate(-100deg) saturate(0.4) drop-shadow(0 0 1px white) drop-shadow(0 0 0.5px white);
+}
