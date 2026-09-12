@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
+.ab_etienne01 {
+  --who: "Ètienne";
+  filter:drop-shadow(0px 2px 3px black);
+}
+
+.ab_etienne01 quote {
+  position: absolute;
+  z-index: 10;
+  bottom: 90px;
+  left:0;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+.ab_etienne01 quote {
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 12px;
+  line-height: 1.6;
+  letter-spacing: 1.2px;
+  text-transform: lowercase;
+  color: #ffe6fb;
+  padding: 0;
+}
+.ab_etienne01 q1, .ab_etienne01 q2,
+.ab_etienne01 q3, .ab_etienne01 q4,
+.ab_etienne01 q5 {
+  display:block;
+}
+.ab_etienne01 q1 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: .9;
+  letter-spacing: 2px;
+  color: #ffd0d7;
+  text-shadow: 0 2px 14px #c9973f4d;
+  padding:0 20px 6px 0;
+}
+.ab_etienne01 q2 {
+  color: #b671a8;
+  margin-top:-10px;
+  padding: 0 0 0 90px;
+}
+.ab_etienne01 q3 {
+  font-family: "Allura", cursive;
+  font-size: 20px;
+  margin-top:-16px;
+  padding: 0 190px 0 0;
+}
+.ab_etienne01 q4 {
+  color: white;
+  font-family: "Windsong", cursive;
+  font-size: 20px;
+  margin-top:-20px;
+  padding: 0 0 0 110px;
+}
+.ab_etienne01 q5 {
+  font-family: "Cormorant Garamond", serif;
+  font-size:15px;
+  letter-spacing: 2px;
+  margin-top:-10px;
+  padding: 0 70px 0 0;
+  text-shadow: 0 2px 14px #bd47bb4d;
+}
+.ab_etienne01 quote:before, .ab_etienne01 quote:after {
+  position: absolute;
+  content:'';
+  opacity: 0.2;
+  width:100%;
+  filter: hue-rotate(-100deg) drop-shadow(1px 2px 2px black);
+  pointer-events: none;
+}
+.ab_etienne01 quote:before{
+  bottom:-9px;
+  left:-99px;
+  height: 88px;
+  background:url('https://ik.imagekit.io/arl60/Ardent/personal/Astarion/roses.png?updatedAt=1788220447085')
+    center no-repeat;
+  background-size: contain;
+}
+
+.ab_etienne01 quote:after{
+  bottom:38px;
+  left:113px;
+  height: 64px;
+  background:url('https://ik.imagekit.io/arl60/Ardent/personal/Astarion/roses2.png?updatedAt=1788223921675')
+    center no-repeat;
+  background-size: contain;
+  transform:rotate(212deg);
+}
+.ab_etienne01 quote by {
+  display: block;
+  margin-top: 0px;
+  padding-left:80px;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 6px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #c592caa8;
+  text-shadow: 2px 2px 2px black;
+}
+
+.ab_etienne01 cart {
+  background-image: url('https://ik.imagekit.io/arl60/Ardent/personal/Gambit/ref.png?updatedAt=1777058604235');
+}
+.ab_etienne01 cart {
+  top: -82px;
+  left: -83px;
+  width: 615px;
+  height: 547px;
+  filter: drop-shadow(1px 2px 2px black);}
+.ab_etienne01 bor {
+  background: none;
+  background: linear-gradient(to bottom, #5E0726,#E67EA6,#5E0726);
+  padding: 2px;
+}
+.ab_etienne01 con { padding: 15.5px;
+  --divi: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/2.png?updatedAt=1761259622322');
+}
+.ab_etienne01 con:before {
+    background:
+    url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/photo-1589560486062-db6aa7947af0.jpg?updatedAt=1754332106581')
+    black
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.ab_etienne01 con:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  filter: hue-rotate(-30deg) saturate(0.3);
+  pointer-events: none;
+}
+.ab_etienne01 con:after {
+  content: '';
+  position: absolute;
+  top: 406px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 28px;
+  z-index: 10;
+  pointer-events: none;
+  background: var(--divi);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: sepia(1) saturate(2) hue-rotate(-100deg) brightness(3) drop-shadow(1px 1px 2px #00000087) drop-shadow(1px 1px 2px #0000009e);
+
+}
+.ab_etienne01 inbor { 
+  background: none; padding: 5;
+  filter: drop-shadow(0px 0px 3px black);}
+.ab_etienne01 incon {
+  background: linear-gradient(to bottom, #311b2a 50%, #220916cc);
+  box-shadow: inset 0 0 10px black;
+  padding: 410px 20px 150px;
+}
+.ab_etienne01 stats,
+.ab_etienne01 log { border-image: linear-gradient(to right, transparent, #511d33,#84273D,#511d33, transparent) 1; }
+.ab_etienne01 bor, .ab_etienne01 con,
+.ab_etienne01 inbor, .ab_etienne01 incon {
+    mask: 
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -35 100 140' preserveAspectRatio='none'%3E%3Cpath d='M 0 100 H 100 V 18 Q 90 18, 90 0 H 80 C 65 -35, 35 -35, 20 0 H 10 Q 10 18, 0 18 Z' fill='black'/%3E%3C/svg%3E") top / 100% 250px no-repeat,
+      linear-gradient(black, black) 0 200px / 100% calc(100% - 400px) no-repeat,
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 140' preserveAspectRatio='none'%3E%3Cpath d='M 0 0 H 100 V 82 Q 90 82, 90 100 H 80 C 65 135, 35 135, 20 100 H 10 Q 10 82, 0 82 Z' fill='black'/%3E%3C/svg%3E") bottom / 100% 250px no-repeat;
+    -webkit-mask: 
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -35 100 140' preserveAspectRatio='none'%3E%3Cpath d='M 0 100 H 100 V 18 Q 90 18, 90 0 H 80 C 65 -35, 35 -35, 20 0 H 10 Q 10 18, 0 18 Z' fill='black'/%3E%3C/svg%3E") top / 100% 250px no-repeat,
+      linear-gradient(black, black) 0 200px / 100% calc(100% - 400px) no-repeat,
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 140' preserveAspectRatio='none'%3E%3Cpath d='M 0 0 H 100 V 82 Q 90 82, 90 100 H 80 C 65 135, 35 135, 20 100 H 10 Q 10 82, 0 82 Z' fill='black'/%3E%3C/svg%3E") bottom / 100% 250px no-repeat;
+}
+.ab_etienne01 credit {
+  margin: 0;
+  position: absolute;
+  right:249px;
+  width: 100%;
+  bottom: 336px;
+  transform:rotate(-90deg);
+  text-align: left;
+  text-shadow: none;
+}
+.ab_etienne01 credit art {display:inline-block; padding-left:10px;}
+@media (max-width: 1200px) {
+  .ab_etienne01, .ab_etienne01 inbor {filter:none;}
+  .ab_etienne01 con:after,
+  .ab_etienne01 quote {display:none;}
+  .ab_etienne01 bor, .ab_etienne01 con,
+  .ab_etienne01 inbor, .ab_etienne01 incon {
+    mask:none; -webkit-mask: none;}
+}
