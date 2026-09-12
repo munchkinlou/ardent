@@ -1234,20 +1234,16 @@ a[dc]:hover {
 
 a[float] {
   position: fixed;
-  bottom: 50px;
-  right: 8px;
+  bottom: 5%;
+  right: 2%;
   z-index: 10;
 }
 a[float] img {
   display: block;
-  width: 150px;
-  animation: float 3s ease-in-out infinite;
+  width: 100px;
 }
 a[float]:hover {
   transform:none !important;
-}
-@keyframes float {
-  50% { transform: translateY(15px); }
 }
 
 .rpgsk_mem_prof_skill_descr a:hover {
