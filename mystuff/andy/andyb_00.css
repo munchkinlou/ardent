@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+.ab00 cue {
+  --glow: 122 214 170;
+  display: block;
+  margin: 5px 0 -5px 22px;
+  padding: 3px 0 3px 12px;
+  border-left: 3px solid rgb(var(--glow) / .80);
+  font-family: "Didact Gothic", sans-serif;
+  font-style: italic;
+  font-size: 12px;
+  letter-spacing: .5px;
+  line-height: 1.4;
+  text-align: left;
+  color: #b3c6d4;
+}
+.ab00 cue[rem]::after {
+  content: var(--who, "They") " " var(--msg, "will remember that.");
+  display: block;
+  margin-top: 5px;
+  font-style: normal;
+  font-size: 8px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgb(var(--glow) / .8);
+}
+.ab00 cue[down]    { --glow: 226 146  66; }
+.ab00 cue[yellow]  { --glow: 255 206  84; }
+.ab00 cue[amber]   { --glow: 242 168  45; }
+.ab00 cue[orange]  { --glow: 245 124  48; }
+.ab00 cue[red]     { --glow: 255  61  45; }
+.ab00 cue[rust]    { --glow: 198  88  62; }
+.ab00 cue[rose]    { --glow: 214 132 152; }
+.ab00 cue[pink]    { --glow: 240 127 159; }
+.ab00 cue[magenta] { --glow: 232  46 154; }
+.ab00 cue[lilac]   { --glow: 196 140 255; }
+.ab00 cue[purple]  { --glow: 154 120 255; }
+.ab00 cue[blue]    { --glow: 125 211 252; }
+.ab00 cue[navy]    { --glow:  96 130 182; }
+.ab00 cue[teal]    { --glow:  56 196 190; }
+.ab00 cue[green]   { --glow: 106 205 128; }
+.ab00 cue[venom]   { --glow: 160 214  60; }
+.ab00 cue[grey]    { --glow: 150 190 205; }
+.ab00 cue[ash]     { --glow: 176 166 156; }
+
+.ab00 roll {
+  --c: 150 190 205;
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: grid;
+  place-items: center;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 17px;
+  line-height: 1;
+  color: rgb(var(--c));
+  text-shadow: 0 0 10px rgb(var(--c) / .5);
+}
+.ab00 roll::before,
+.ab00 roll::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  clip-path: polygon(50% 0, 94% 26%, 94% 74%, 50% 100%, 6% 74%, 6% 26%);
+}
+.ab00 roll::before {
+  z-index: -2;
+  background: rgb(var(--c));
+  filter: drop-shadow(0 0 8px rgb(var(--c) / .55));
+}
+.ab00 roll::after {
+  z-index: -1;
+  inset: 2px;
+  background: #1d1d1d;
+}
+.ab00 roll[pass]   { --c: 122 214 170; }
+.ab00 roll[fail]   { --c: 226 146  66; }
+.ab00 roll[crit]   { --c: 255 208 110; }
+.ab00 roll[fumble] { --c: 255  71  61; }
+.ab00 roll[crit]::before,
+.ab00 roll[fumble]::before { filter: drop-shadow(0 0 16px rgb(var(--c) / .85)); }
+
+.ab00 details {
+  position: relative;
+  width: 46px;
+  height: 50px;
+  margin: auto;
+  pointer-events: auto;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.ab00 details summary {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 50px;
+  cursor: pointer;
+  list-style: none;
+  pointer-events: auto;
+  font-family: "Didact Gothic", sans-serif;
+}
+.ab00 details summary::-webkit-details-marker { display: none; }
+.ab00 details summary::before {
+  content: "?";
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  clip-path: polygon(50% 0, 94% 26%, 94% 74%, 50% 100%, 6% 74%, 6% 26%);
+  background: #ffffff1f;
+  font-size: 15px;
+  color: #ffffff59;
+  transition: opacity .3s ease, background .25s ease, color .25s ease;
+}
+.ab00 details summary::after {
+  content: var(--roll, "ardy, what say you?");
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 7px;
+  font-size: 8px;
+  font-style: italic;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #ffffff59;
+  font-weight: bold;
+  transition: color .25s ease;
+}
+.ab00 details summary:hover::before { background: #ffffff33; color: #ffffffb3; }
+.ab00 details summary:hover::after  { color: #ffffff99; }
+.ab00 details[open] summary::before { opacity: 0; }
+.ab00 details[open] summary::after {
+  content: var(--rolled, "ardy has spoken");
+  animation: ab00r .45s .3s backwards ease;
+}
+.ab00 details[open] roll { animation: ab00rd .6s cubic-bezier(.2,.85,.3,1); }
+.ab00 details br { display: none !important; }
+@keyframes ab00rd {
+  0%   { opacity: 0; transform: scale(.25) rotate(-170deg); }
+  50%  { opacity: 1; transform: scale(1.2) rotate(16deg); }
+  72%  { transform: scale(.93) rotate(-6deg); }
+  88%  { transform: scale(1.03) rotate(2deg); }
+  100% { transform: scale(1) rotate(0); }
+}
+@keyframes ab00r { from { opacity: 0; transform: translateX(-50%) translateY(-4px); } }
+
+.ab00 log {
+  display: grid;
+  gap: 6px;
+  margin-top: 14px;
+  padding-top: 6px;
+  border-top: 1px solid #ffffff1c;
+  font-family: "Didact Gothic", sans-serif;
+  letter-spacing: .5px;
+  text-align: left;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.ab00 log br { display: none !important; }
+.ab00 dev {
+  display: block;
+  padding: 8px 0;
+  font-size: 11px;
+  font-style: italic;
+  line-height: 1.4;
+  text-align: center;
+  color: white;
+}
+.ab00 dev br { display: block !important; height: 0; margin-top: 3px; }
+.ab00 log approval ~ skill:first-of-type {
+  padding-top: 7px;
+  border-top: 1px solid #ffffff1c;
+}
+.ab00 approval,
+.ab00 skill {
+  display: grid;
+  align-items: center;
+  gap: 0 10px;
+  font-family: "Didact Gothic", sans-serif;
+}
+.ab00 approval::after,
+.ab00 skill::after { white-space: nowrap; }
+.ab00 approval {
+  --n: 45;
+  --c: 160 180 200;
+  grid-template-columns: minmax(0, 1fr) 132px 88px;
+  padding: 5px 0 2px;
+  border-top: 1px solid #ffffff1c;
+  font-size: 10px;
+  letter-spacing: 1.4px;
+  color: #dceaf3;
+}
+.ab00 approval::before {
+  content: "";
+  order: 2;
+  height: 3px;
+  border-radius: 2px;
+  box-shadow: 0 0 6px rgb(var(--rc, var(--c)) / .45);
+  background: linear-gradient(to right, rgb(var(--c)),
+    rgb(var(--rc, var(--c))) calc(var(--n) * 1%), #ffffff24 0);
+}
+.ab00 approval::after {
+  content: var(--sl, "") var(--rl, "");
+  order: 1;
+  justify-self: end;
+  font-size: 9px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: linear-gradient(to right, rgb(var(--c)), rgb(var(--rc, var(--c))));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.ab00 approval[hostile]  { --n:  8; --c: 255  71  61; --sl: "Hostile"; }
+.ab00 approval[wary]     { --n: 28; --c: 226 146  66; --sl: "Wary"; }
+.ab00 approval[neutral]  { --n: 45; --c: 160 180 200; --sl: "Neutral"; }
+.ab00 approval[friendly] { --n: 64; --c: 138 200 240; --sl: "Friendly"; }
+.ab00 approval[trusted]  { --n: 82; --c: 122 214 170; --sl: "Trusted"; }
+.ab00 approval[loyal]    { --n: 97; --c: 255 208 110; --sl: "Loyal"; }
+.ab00 approval[attracted]  { --rl: " \2726\FE0E  Attracted";  --rc: 255 168 198; }
+.ab00 approval[interested] { --rl: " \2726\FE0E  Interested"; --rc: 250 140 186; }
+.ab00 approval[content]    { --rl: " \2764\FE0E  Content";    --rc: 246 112 176; }
+.ab00 approval[enamoured]  { --rl: " \2764\FE0E  Enamoured";  --rc: 240  86 166; }
+.ab00 approval[devoted]    { --rl: " \2764\FE0E  Devoted";    --rc: 232  46 154; }
+
+.ab00 skill {
+  --n: 0;
+  --max: 3;
+  grid-template-columns: minmax(0, 1fr) auto;
+  counter-reset: n var(--n) m var(--max);
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #9fbccd;
+}
+.ab00 skill::after {
+  content: counter(n) "/" counter(m);
+  font-size: 9px;
+  letter-spacing: .12em;
+  color: #7f9dae;
+}
+.ab00 skill[done],
+.ab00 skill[done]::after { color: #ffd670; }
+.ab01 incon > br:first-child + br + cue { margin-top: 10px; }
+
+@media (max-width: 600px) {
+  .ab00 details summary::after { color: inherit; opacity: .55; }
+  .ab00 approval {
+    grid-template-columns: 1fr;
+    gap: 3px 0;
+    text-align: center;
+    color: inherit !important;
+  }
+  .ab00 approval::after {
+    justify-self: center;
+    filter: drop-shadow(1px 1px #0000009e);
+  }
+  .ab00 approval::before {
+    width: 100%;
+    max-width: 200px;
+    margin: auto;
+    box-shadow: 1px 1px 2px #0000009e;
+  }
+  .ab00 log,
+  .ab00 approval,
+  .ab00 log approval ~ skill:first-of-type { border-color: #fff9; }
+  .ab00 cue {
+    margin: 0 0 -5px;
+    padding: 3px 10px 3px 6px;
+    border-radius: 0 0 5px 0;
+    background: linear-gradient(to bottom, #0d0d0d, #292929);
+    box-shadow: 2px 2px 2px #0000009e;
+    text-align: center;
+  }
+  .ab00 cue[rem]::after { font-size: 7px; }
+}
