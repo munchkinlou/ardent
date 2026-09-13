@@ -51,6 +51,14 @@
   font-size: 12px;
   letter-spacing:1.2px;
 }
+.ab02.ab_evanesce02 msg {
+  padding: 20px 0;
+}
+.ab02.ab_evanesce02 plots{
+  margin-right:1%;
+}
+.ab02.ab_evanesce02 inv  { left: -50px; top:70px; }
+.ab02.ab_evanesce02 comp { right: -60px; top: 70px; }
 .ab02.ab_evanesce02 cond         { color: #63e2b2; }
 .ab02.ab_evanesce02 cond[hurt]   { color: #ff5d43; }
 .ab02.ab_evanesce02 relations         { color: #c7ffff; }
