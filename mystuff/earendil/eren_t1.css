@@ -246,13 +246,16 @@
 .erent1 speech {
   display: inline-block;
   width: 100%;
-  margin: -10px auto 20px;
+  margin: 20px auto 60px;
+  padding:0;
   font-size:30px;
   color: #6171d2;
   text-shadow: 1px 1px 2px #0a0906;
   text-align: center;
   line-height: 1;
 }
+
+.erent1 speech br {display: none;}
 
 .erent1 speech speak {
   font-family: "Love Light", cursive;
