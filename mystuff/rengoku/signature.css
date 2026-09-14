@@ -71,7 +71,7 @@
   background: linear-gradient(to bottom, #212121, black);
 }
 .ab02.ab_rengoku02 inv summary{
-  filter:hue-rotate(-50deg) saturate(2);
+  filter:hue-rotate(20deg) saturate(10);
 }
 .ab02.ab_rengoku02 comp summary{
   filter:hue-rotate(0deg) saturate(1) brightness(1) drop-shadow(0 0 1px white) drop-shadow(0 0 0.5px white);
