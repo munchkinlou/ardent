@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@font-face {
+  font-family: 'Viking';
+  src: url('https://munchkinlou.github.io/ardent/mystuff/kjartan/VikingNormal-36VL.otf') format('truetype');
+  font-display: swap;
+}
+
+
+.ab02.ab_rengoku02 {
+  
+}
+.ab02.ab_rengoku02 img {top:-18px;left:20px;}
+.ab02.ab_rengoku02 bn, .ab02.ab_rengoku02 abpop
+{ border: 1px solid;
+  border-image: linear-gradient(to right, #b88c5e,#FFA126,#b88c5e) 1;}
+.ab02.ab_rengoku02 bn:before { content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: url('https://images.unsplash.com/photo-1618681317438-a8dd7da06cd4?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')
+    center no-repeat;
+  background-position: 50% 30%;
+  background-size: cover;
+  opacity: 0.6;
+  filter: saturate(0.6)
+    brightness(1);
+  pointer-events:none;}
+.ab02.ab_rengoku02 nm { top: 13px; left: -5px;
+  filter: drop-shadow(1px 1px 1px black);}
+.ab02.ab_rengoku02 fn {
+  font-size:30px;
+  padding: 0 20px;
+  font-weight: 400;
+  font-family: "Viking", cursive;
+  background: linear-gradient( -45deg, #FFB659 0%, #FFBC75 30%, #ff8b36 50%, #f48f45 70%, #FFBB91 100% );
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: abasta02_shimmer 8s ease-in-out infinite;
+}
+@keyframes abasta02_shimmer {
+    0%, 100% { background-position: 100% 0%; }
+    50% { background-position: 0% 100%; }
+}
+.ab02.ab_rengoku02 ln {
+  margin:-5px 0 0 0;
+  font-size:8px;}
+.ab02.ab_rengoku02 li i {
+  color: #b4b4b4;
+}
+.ab02.ab_rengoku02 cond, .ab02.ab_rengoku02 relations {
+  border:none;
+  border-bottom: 2px double #e4b86bc9;
+  border-radius:5px;
+  padding: 0 0 0 2px;
+  font-family: "Allura", cursive;
+  text-transform: capitalize;
+  font-size: 12px;
+  letter-spacing:1.2px;
+}
+.ab02.ab_rengoku02 cond         { color: #63e2b2; }
+.ab02.ab_rengoku02 cond[hurt]   { color: #ff5d43; }
+.ab02.ab_rengoku02 relations         { color: #c7ffff; }
+.ab02.ab_rengoku02 relations[taken]  { color: #ffb24e; }
+.ab02.ab_rengoku02 cond, .ab02.ab_rengoku02 relations
+{ font-size: 14px;}
+.ab02.ab_rengoku02 abpop {
+  width:200px;
+  box-shadow: none;
+  background: linear-gradient(to bottom, #212121, black);
+}
+.ab02.ab_rengoku02 inv summary{
+  filter:hue-rotate(-50deg) saturate(2);
+}
+.ab02.ab_rengoku02 comp summary{
+  filter:hue-rotate(0deg) saturate(1) brightness(1) drop-shadow(0 0 1px white) drop-shadow(0 0 0.5px white);
+}
