@@ -82,7 +82,7 @@
   display: block;
   position: relative;
   width: 100%;
-  background: linear-gradient(to bottom, #380707, #060101);
+  background: linear-gradient(to bottom, #2e0a0a, #090101);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -138,7 +138,7 @@
   width: 100%;
   box-sizing: border-box;
   overflow: visible;
-  background: linear-gradient(to bottom, #65202e, #1e070f);
+  background: linear-gradient(to bottom, #180b05, #3a0719);
   clip-path: polygon(
     0% 0%,
     100% 0%,
