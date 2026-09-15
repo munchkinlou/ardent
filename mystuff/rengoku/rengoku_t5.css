@@ -221,6 +221,14 @@
   filter: drop-shadow(0 0 2px black);
 }
 
+.ab00.rengokut5 log {
+  width: 90%;
+  margin: 14px auto 0;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #c98c2c, transparent) 1;
+}
+
+
 @media (max-width: 1200px) {
   
   .rengokut5 {
