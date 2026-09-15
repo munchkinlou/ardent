@@ -21,9 +21,10 @@
     center no-repeat;
   background-position: 50% 30%;
   background-size: cover;
-  opacity: 0.6;
-  filter: saturate(0.6)
-    brightness(1);
+  opacity: 0.8;
+  filter: hue-rotate(-20deg)
+    saturate(0.6)
+    brightness(0.8);
   pointer-events:none;}
 .ab02.ab_rengoku02 nm { top: 10px; left: -5px;
   filter: drop-shadow(1px 1px 1px black);}
