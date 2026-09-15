@@ -244,6 +244,7 @@
   .rengokut5 incon:before {
     display: none;
   }
+  .rengokut5 sh {filter:none;}
   
   .rengokut5 bor, .rengokut5 con,
   .rengokut5 inbor, .rengokut5 incon {
