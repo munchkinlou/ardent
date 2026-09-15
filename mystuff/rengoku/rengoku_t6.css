@@ -263,7 +263,11 @@
     background: none;
     box-shadow: none;
   }
-  
+  .rengokut6 bor, .rengokut6 con,
+  .rengokut6 inbor, .rengokut6 incon {
+    border-radius: 0;
+  }
+
   .rengokut6 speech {
     position: relative;
     margin: 20px auto 0;
