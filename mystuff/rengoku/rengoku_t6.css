@@ -34,7 +34,7 @@
 
 .rengokut6 credit {
   position: absolute;
-  bottom: 250px;
+  bottom: 97px;
   right: 76px;
   width: 100px;
   display: block;
@@ -50,10 +50,10 @@
 .rengokut6 goku {
   position: absolute;
   bottom: -118px;
-  left: -41px;
+  left: 36px;
   width: 112%;
-  height: 745px;
-  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Rengoku/dude1.png?updatedAt=1759421649381')
+  height: 824px;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Rengoku/Andy_04.png?updatedAt=1788647331218')
     no-repeat center;
   background-size: contain;
   z-index: 5;
@@ -118,7 +118,7 @@
   display: block;
   position: relative;
   z-index: 6;
-  padding: 200px 25px 530px;
+  padding: 200px 25px 610px;
   width: 100%;
   box-sizing: border-box;
   overflow: visible;
@@ -204,10 +204,10 @@
 
 .rengokut6 speech b {
   position: absolute;
-  bottom: -141px;
-  left: 253px;
+  bottom: -163px;
+  left: 210px;
   font-size: 16px;
-  font-size: 86px;
+  font-size: 109px;
   font-family: "A Charming Font Expanded", serif;
   font-weight: 400;
   z-index: 2;
