@@ -655,7 +655,7 @@ tbody:has(.rpgsk_agent_lines) .thead {
   margin-bottom:-15px;
 }
 .tab:has(.blocky info[fam]) > h2::before {
-  content: 'Family';
+  content: 'Lineage';
   font-size: 45px;
   letter-spacing: 2px;
 }
