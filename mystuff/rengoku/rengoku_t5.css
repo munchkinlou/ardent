@@ -197,14 +197,14 @@
 }
 
 
-.rengokut5 b {
+.rengokut5 b, .rengokut5 .mycode_b {
   font-family: "Amarante", serif;
   font-size: 16px;
   font-weight: 400 !important;
-  color: transparent;
-  background: linear-gradient(to bottom, #edab8a, #e9bf41);
-  -webkit-background-clip: text;
-  background-clip: text;
+  color: transparent !important;
+  background: linear-gradient(to bottom, #edab8a, #e9bf41) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
   text-shadow: none;
 }
 
@@ -232,21 +232,17 @@
   .rengokut5 bor {
     max-width: 450px;
     width: 100%;
-    background: #e2d8c5;
-    padding: 1px;
+    background: none;
+    padding: 0;
   }
   
   .rengokut5 con {
     background: #081208;
   }
   
-  .rengokut5 deadkill {
+  .rengokut5 goku,
+  .rengokut5 incon:before {
     display: none;
-  }
-  
-  .rengokut5 bor t {
-    display: none;
-    
   }
   
   .rengokut5 bor, .rengokut5 con,
@@ -255,21 +251,33 @@
   }
   
   .rengokut5 incon {
-    padding: 5px 5px 80px;
+    padding: 5px 5px 0px;
     background: none;
   }
   
-  .rengokut5 inbor {
+  .rengokut5 inbor,
+  .rengokut5 con {
     background: none;
+    box-shadow: none;
   }
   
   .rengokut5 speech {
     position: relative;
     margin: 20px auto 0;
+    filter:none;
   }
   
   .rengokut5 speech:before {
-    top: -20px;
+    top: 0px;
+  }
+  
+  .rengokut5 speech b {
+    display: block;
+    position: relative;
+    inset:0;
+    padding:5px 0;
+    font-size: 100px;
+    margin-top:-5px;
   }
   
   .rengokut5 credit {
