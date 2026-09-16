@@ -121,6 +121,7 @@
   z-index: -2;
   background: linear-gradient(to bottom, rgb(89, 14, 14), #130208);
   box-shadow: inset 0 0 10px rgb(36, 13, 7);
+  pointer-events: none;
 }
 .rengokut8 incon:before {
   content: '';
@@ -130,6 +131,7 @@
   background: url('https://ik.imagekit.io/arl60/Ardent/personal/Rengoku/fire.png?updatedAt=1755231359185') bottom / 100% no-repeat;
   opacity: .1;
   filter: saturate(1.4) brightness(1.2) drop-shadow(0 0 2px black);
+  pointer-events: none;
 }
 .rengokut8 incon b, .rengokut8 .mycode_b {
   display: inline;
