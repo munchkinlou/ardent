@@ -262,12 +262,14 @@
   .rengokut5 incon {
     padding: 5px 5px 0px;
     background: none;
+    color: inherit;
   }
   
   .rengokut5 inbor,
   .rengokut5 con {
     background: none;
     box-shadow: none;
+    filter:none;
   }
   
   .rengokut5 speech {
@@ -279,15 +281,14 @@
   .rengokut5 speech:before {
     top: 0px;
   }
-  
-  .rengokut5 speech b {
-    display: block;
-    position: relative;
-    inset:0;
-    padding:5px 0;
-    font-size: 100px;
-    margin-top:-5px;
-  }
+  .rengokut5 b, .rengokut5 .mycode_b {
+    color: inherit !important;
+    background: none !important;
+    -webkit-background-clip: none;
+    background-clip: none;
+    text-shadow: none;
+}
+  .rengokut5 speech b {display:none; }
   
   .rengokut5 credit {
     position: relative;
@@ -298,6 +299,13 @@
     display: block;
     transform: none;
   }
-
+  .ab00.rengokut5 log dev,
+  .ab00.rengokut5 log approval,
+  .ab00.rengokut5 log skill,
+  .ab00.rengokut5 cue,
+  .ab00.rengokut5 details summary::after{
+    color: inherit;
+ }
   
+
 }
