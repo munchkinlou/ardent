@@ -41,7 +41,7 @@
 .rengokut9 goku {
   position: absolute;
   z-index: 10;
-  right: -37px;
+  right: -82px;
   top: -104px;
   width: 475px;
   height: 479px;
@@ -58,7 +58,7 @@
   display: block;
   position: relative;
   box-sizing: border-box;
-  width: 450px;
+  width: 495px;
   margin: 0 auto 0 0;
   border-radius: 0;
   overflow: hidden;
