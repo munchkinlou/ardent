@@ -243,7 +243,8 @@
   }
   
   .rengokut6 goku,
-  .rengokut6 incon:before {
+  .rengokut6 incon:before,
+  .rengokut6 incon:after {
     display: none;
   }
   .rengokut6 sh {filter:none;}
