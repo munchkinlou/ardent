@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+
+/*
+
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
+
+  font-family: "Amarante", serif;
+  font-weight: 400;
+
+  font-family: "Fleur De Leah", cursive;
+  font-weight: 400;
+
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400; 
+
+*/
+
+.rengokut8 {
+	position: relative;
+  width: 700px;
+  margin: 50px auto 30px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.rengokut8 credit {
+  position:absolute;
+  bottom: -15px;
+  right: -8px;
+  font-size:10px;
+  margin: 10px 10px 0 auto;
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
+}
+.rengokut8 goku {
+  position: relative;
+  float: right;
+  width: 300px;
+  height: 300px;
+  margin: -10px -35px 5px 20px;
+  border-radius: 50%;
+  pointer-events: none;
+  shape-outside: circle(51%) border-box;
+  border: 10px solid black;
+  shape-margin: 10px;
+  filter:drop-shadow(0 0 2px black) drop-shadow(0 0 2px black);
+}
+.rengokut8 goku:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: linear-gradient(to bottom,black,#731212);
+}
+.rengokut8 goku:after{
+  content: '';
+  position: absolute;
+  top:-14px;
+  right:-34px;
+  width:108%;
+  height: 122%;
+  background:url('https://ik.imagekit.io/arl60/Ardent/personal/Rengoku/loo.png?updatedAt=1759801734570');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter:drop-shadow(0 0 2px black);
+  pointer-events: none;
+}
+
+.rengokut8 bor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 0;
+  overflow: hidden;
+  filter: drop-shadow(1px 1px 2px black);
+}
+.rengokut8 con {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: inherit;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  pointer-events: none;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, #181818, #000);
+}
+.rengokut8 incon {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 25px 5px 20px;
+  width: 100%;
+  min-height: 310px;
+  background: none;
+  box-shadow: 2px 2px 5px black;
+  text-align: justify;
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #dddddd;
+  line-height: 1.2;
+  z-index: 10;
+  border: 2px solid;
+  border-image: linear-gradient(to bottom, #591e15, #6a1820) 1;
+}
+.rengokut8 incon:after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background: linear-gradient(to bottom, rgb(89, 14, 14), #130208);
+  box-shadow: inset 0 0 10px rgb(36, 13, 7);
+}
+.rengokut8 incon:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: url('https://ik.imagekit.io/arl60/Ardent/personal/Rengoku/fire.png?updatedAt=1755231359185') bottom / 100% no-repeat;
+  opacity: .1;
+  filter: saturate(1.4) brightness(1.2) drop-shadow(0 0 2px black);
+}
+.rengokut8 incon b, .rengokut8 .mycode_b {
+  display: inline;
+  color: #ffc94a;
+	font-family: 'Amarante';
+  font-size: 14px;
+  font-weight: 400;
+  text-shadow: 0px 0px 2px #000000;
+  line-height: 0.9;
+}
+.rengokut8 speech,
+.rengokut8 speech br {display: none;}
+
+.ab00.rengokut8 log {
+  width: 80%;
+  margin: 14px auto 0;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #c98c2c, transparent) 1;
+}
+
+@media (max-width: 1200px) {
+  
+  .rengokut8 {
+    width: 100%;
+    margin: 0;
+  }
+
+  .rengokut8 bor {
+    max-width: 450px;
+    width: 100%;
+  }
+  .rengokut8 con {
+    padding: 10px;
+  }
+  
+  .rengokut8 shamsi {
+    display: none;
+  }
+  
+  .rengokut8 incon {
+    padding: 10px;
+  }
+  
+  .rengokut8 incon shamsi + br {
+    display: none;
+  }
+  
+  .rengokut8 credit {
+    display: block;
+    position:relative;
+    inset: auto;
+    margin: 5px auto 0;
+    text-align: center;
+  }
+  
+  .rengokut8 speech {
+    margin: 20px auto 10px -5px;
+  }
+
+
+}
