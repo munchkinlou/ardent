@@ -101,7 +101,7 @@
   box-sizing: border-box;
   padding: 0 25px 5px 20px;
   width: 100%;
-  min-height: 310px;
+  min-height: 285px;
   background: none;
   box-shadow: 2px 2px 5px black;
   text-align: justify;
@@ -165,15 +165,15 @@
     padding: 10px;
   }
   
-  .rengokut8 shamsi {
+  .rengokut8 goku {
     display: none;
   }
   
   .rengokut8 incon {
-    padding: 10px;
+    padding:  5px 15px;
   }
   
-  .rengokut8 incon shamsi + br {
+  .rengokut8 incon > br:first-of-type {
     display: none;
   }
   
