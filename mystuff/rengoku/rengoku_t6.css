@@ -259,14 +259,13 @@
     background: none;
   }
   
-  .rengokut6 inbor,
-  .rengokut6 con {
-    background: none;
-    box-shadow: none;
-  }
   .rengokut6 bor, .rengokut6 con,
   .rengokut6 inbor, .rengokut6 incon {
+    background: none;
+    box-shadow: none;
+    filter:none;
     border-radius: 0;
+    color: inherit;
   }
 
   .rengokut6 speech {
@@ -279,15 +278,14 @@
     top: 0px;
   }
   
-  .rengokut6 speech b {
-    display: block;
-    position: relative;
-    inset:0;
-    padding:5px 0;
-    font-size: 100px;
-    margin-top:-5px;
-  }
-  
+  .rengokut6 speech b {display: none;}
+  .rengokut6 b, .rengokut6 .mycode_b {
+    color: inherit !important;
+    background: none !important;
+    -webkit-background-clip: none;
+    background-clip: none;
+    text-shadow: none;
+}
   .rengokut6 credit {
     position: relative;
     inset: 0;
@@ -297,6 +295,12 @@
     display: block;
     transform: none;
   }
-
+  .ab00.rengokut6 log dev,
+  .ab00.rengokut6 log approval,
+  .ab00.rengokut6 log skill,
+  .ab00.rengokut6 cue,
+  .ab00.rengokut6 details summary::after{
+    color: inherit;
+ }
   
 }
