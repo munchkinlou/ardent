@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@font-face {
+  font-family: "A Charming Font Expanded";
+  src: url("https://munchkinlou.github.io/ardent/mystuff/deadlock/ACharmingFontExpanded-ZEpB.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*
+
+  font-family: "Heatizen", serif;
+  font-weight: 400;
+
+  font-family: "A Charming Font Expanded", serif;
+  font-weight: 400;
+
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 400;
+
+*/
+
+.rengokut7 {
+  width: 600px;
+  margin: 20px auto 45px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 0px 3px rgb(0, 0, 0));
+}
+
+.rengokut7 credit {
+  position: absolute;
+  top: 117px;
+  right: -61px;
+  width: 100px;
+  display: block;
+  text-align: left;
+  font-family: "Unica One", arial;
+  text-transform: lowercase;
+  font-size: 14px;
+  font-weight: 400;
+  z-index: 10;
+  transform: rotate(-270deg);
+}
+
+.rengokut7 bor {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: auto;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #1e0c14, #330b15,#1e0c14 );
+  padding: 5px 4px 3px;
+}
+
+.rengokut7 con {
+  display: block;
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom, #2e0a0a, #090101);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+  padding-bottom: 200px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  pointer-events: none;
+
+  padding: 20px 15px;
+  
+  box-shadow: inset 0 0 5px black;
+}
+
+.rengokut7 con:before{
+  content:'';
+  position: absolute;
+  top:656px;
+  left:50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 200px;
+  z-index: 10;
+  --divi:url('https://ik.imagekit.io/arl60/Ardent/personal/other/43436.png');
+  background:
+    linear-gradient(100deg, transparent 38%, #FBE56B 50%, transparent 62%), linear-gradient(to right, #FF9E54, #EEBE72, #FFD455);
+  background-size: 220% 100%, 100% 100%;
+  background-repeat: no-repeat;
+  -webkit-mask: var(--divi) center / 80% no-repeat;
+  mask: var(--divi) center / 80% no-repeat;
+  animation: gokut7s 5s linear infinite;
+}
+@keyframes gokut7s {
+  from { background-position: -120% 0, 0 0; }
+  to   { background-position:  220% 0, 0 0; }
+}
+
+.rengokut7 sh, .rengokut7 cs {
+  position: relative;
+  display: block;
+  
+  filter: drop-shadow(0 0 3px #000000b0);
+}
+
+.rengokut7 inbor {
+  display: block;
+  position: relative;
+  z-index: 6;
+  margin: 0 auto;
+  padding: 2.2px;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #c58d20, #eee5b3,#a77a22);
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.85));
+}
+
+.rengokut7 incon {
+  display: block;
+  position: relative;
+  z-index: 6;
+  padding: 780px 25px 0px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: visible;
+  background: linear-gradient(to bottom, #0c0b0b 700px,#2a0703);
+  text-align: justify;
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1;
+  color: #deeeff;
+  line-height: 1.2;
+  overflow:hidden;
+}
+
+.rengokut7 incon:before{
+  position: absolute;
+  content: '';
+  inset:0;
+  width:100%;
+  height: 100%;
+  background: url('https://ik.imagekit.io/arl60/Ardent/personal/Rengoku/comm._nov25.andy.CLIENT.png?updatedAt=1763648713356');
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: 85% -100px;
+  -webkit-mask: linear-gradient(to bottom, black 300px, transparent 500px);
+  mask: linear-gradient(to bottom, black 500px, transparent 750px);
+  z-index: -1;
+}
+
+.rengokut7 incon br:nth-of-type(-n+2) {
+  display: none;
+}
+
+
+.rengokut7 speech {
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  margin: 20px auto 20px;
+}
+.rengokut7 speech br {display: none;}
+
+.rengokut7 speech::before {
+  content:'';
+  position:absolute;
+  top:0px;
+  left:50%;
+  transform: translateX(-50%);
+
+  width:80%;
+  height:1.1px;
+
+  background: linear-gradient(to right, transparent, #FFA735, transparent);
+}
+
+
+.rengokut7 b, .rengokut7 .mycode_b {
+  font-family: "Amarante", serif;
+  font-size: 16px;
+  font-weight: 400 !important;
+  color: transparent !important;
+  background: linear-gradient(to bottom, #edab8a, #e9bf41) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  text-shadow: none;
+}
+
+.rengokut7 speech b {
+  display: block;
+  padding: 10px;
+  font-size: 65px;
+  font-family: "A Charming Font Expanded", serif;
+  font-weight: 400;
+  z-index: 2;
+  
+  filter: drop-shadow(0 0 2px black);
+}
+
+.ab00.rengokut7 log {
+  width: 90%;
+  margin: 14px auto 0;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #c98c2c, transparent) 1;
+}
+
+.rengokut7 bor, .rengokut7 inbor,
+.rengokut7 con, .rengokut7 incon{
+  box-sizing: border-box;
+  position: relative;
+  mask: 
+    radial-gradient(ellipse 70px 60px at 0 0, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 0 0,
+    radial-gradient(ellipse 70px 60px at 100% 0, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 100% 0,
+    radial-gradient(ellipse 70px 60px at 100% 100%, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 100% 100%,
+    radial-gradient(ellipse 70px 60px at 0 100%, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 0 100%;
+  -webkit-mask: 
+    radial-gradient(ellipse 70px 60px at 0 0, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 0 0,
+    radial-gradient(ellipse 70px 60px at 100% 0, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 100% 0,
+    radial-gradient(ellipse 70px 60px at 100% 100%, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 100% 100%,
+    radial-gradient(ellipse 70px 60px at 0 100%, transparent 69px, rgba(0, 0, 0, 0.4) 69.5px, black 70px) 0 100%;
+  mask-size: 51% 51%;
+  -webkit-mask-size: 51% 51%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+
+@media (max-width: 1200px) {
+  
+  .rengokut7 {
+    margin: 0;
+    width: 100%;
+    filter: none;
+  }
+  
+  .rengokut7 bor {
+    max-width: 450px;
+    width: 100%;
+    background: none;
+    padding: 0;
+  }
+  
+  .rengokut7 con {
+    background: #081208;
+  }
+  
+  .rengokut7 goku,
+  .rengokut7 incon:before {
+    display: none;
+  }
+  .rengokut7 sh {filter:none;}
+  
+  .rengokut7 bor, .rengokut7 con,
+  .rengokut7 inbor, .rengokut7 incon {
+    clip-path: none;
+  }
+  
+  .rengokut7 incon {
+    padding: 5px 5px 0px;
+    background: none;
+  }
+  
+  .rengokut7 inbor,
+  .rengokut7 con {
+    background: none;
+    box-shadow: none;
+  }
+  
+  .rengokut7 speech {
+    position: relative;
+    margin: 20px auto 0;
+    filter:none;
+  }
+  
+  .rengokut7 speech:before {
+    top: 0px;
+  }
+  
+  .rengokut7 speech b {
+    display: block;
+    position: relative;
+    inset:0;
+    padding:5px 0;
+    font-size: 100px;
+    margin-top:-5px;
+  }
+  
+  .rengokut7 credit {
+    position: relative;
+    inset: 0;
+    width: 100%;
+    margin-top: 5px;
+    text-align: center;
+    display: block;
+    transform: none;
+  }
+
+  
+}
