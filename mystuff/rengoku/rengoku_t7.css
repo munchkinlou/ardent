@@ -223,15 +223,16 @@
     mask:none;
     -webkit-mask:none;
     filter:none;
+    color: inherit;
   }
-  .rengokut7 speech b {
-    display: block;
-    position: relative;
-    inset:0;
-    padding:5px 0;
-    font-size: 100px;
-    margin-top:-5px;
-  }
+  .rengokut7 b, .rengokut7 .mycode_b {
+    color: inherit !important;
+    background: none !important;
+    -webkit-background-clip: none;
+    background-clip: none;
+    text-shadow: none;
+}
+  .rengokut7 speech b {display: none;}
   .rengokut7 credit {
     position: relative;
     inset: 0;
@@ -241,6 +242,11 @@
     display: block;
     transform: none;
   }
+  .ab00.rengokut7 log dev,
+  .ab00.rengokut7 log approval,
+  .ab00.rengokut7 log skill {
+    color: inherit;
+ }
 
   
 }
