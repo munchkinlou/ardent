@@ -9,19 +9,6 @@
   font-display: swap;
 }
 
-/*
-
-  font-family: "Heatizen", serif;
-  font-weight: 400;
-
-  font-family: "A Charming Font Expanded", serif;
-  font-weight: 400;
-
-  font-family: "Comfortaa", sans-serif;
-  font-weight: 400;
-
-*/
-
 .rengokut7 {
   width: 600px;
   margin: 20px auto 45px;
@@ -31,7 +18,6 @@
   box-sizing: border-box;
   filter: drop-shadow(0px 0px 3px rgb(0, 0, 0));
 }
-
 .rengokut7 credit {
   position: absolute;
   top: 117px;
@@ -46,7 +32,6 @@
   z-index: 10;
   transform: rotate(-270deg);
 }
-
 .rengokut7 bor {
   display: block;
   position: relative;
@@ -56,7 +41,6 @@
   background: linear-gradient(to bottom, #1e0c14, #330b15,#1e0c14 );
   padding: 5px 4px 3px;
 }
-
 .rengokut7 con {
   display: block;
   position: relative;
@@ -70,12 +54,9 @@
   box-sizing: border-box;
   margin: 0 auto;
   pointer-events: none;
-
   padding: 20px 15px;
-  
   box-shadow: inset 0 0 5px black;
 }
-
 .rengokut7 con:before{
   content:'';
   position: absolute;
@@ -98,14 +79,12 @@
   from { background-position: -120% 0, 0 0; }
   to   { background-position:  220% 0, 0 0; }
 }
-
 .rengokut7 sh, .rengokut7 cs {
   position: relative;
   display: block;
   
   filter: drop-shadow(0 0 3px #000000b0);
 }
-
 .rengokut7 inbor {
   display: block;
   position: relative;
@@ -117,7 +96,6 @@
   background: linear-gradient(to bottom, #c58d20, #eee5b3,#a77a22);
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.85));
 }
-
 .rengokut7 incon {
   display: block;
   position: relative;
@@ -136,7 +114,6 @@
   line-height: 1.2;
   overflow:hidden;
 }
-
 .rengokut7 incon:before{
   position: absolute;
   content: '';
@@ -151,12 +128,9 @@
   mask: linear-gradient(to bottom, black 500px, transparent 750px);
   z-index: -1;
 }
-
 .rengokut7 incon br:nth-of-type(-n+2) {
   display: none;
 }
-
-
 .rengokut7 speech {
   display: block;
   box-sizing: border-box;
@@ -165,7 +139,6 @@
   margin: 20px auto 20px;
 }
 .rengokut7 speech br {display: none;}
-
 .rengokut7 speech::before {
   content:'';
   position:absolute;
@@ -178,8 +151,6 @@
 
   background: linear-gradient(to right, transparent, #FFA735, transparent);
 }
-
-
 .rengokut7 b, .rengokut7 .mycode_b {
   font-family: "Amarante", serif;
   font-size: 16px;
@@ -190,7 +161,6 @@
   background-clip: text !important;
   text-shadow: none;
 }
-
 .rengokut7 speech b {
   display: block;
   padding: 10px;
@@ -201,14 +171,12 @@
   
   filter: drop-shadow(0 0 2px black);
 }
-
 .ab00.rengokut7 log {
   width: 90%;
   margin: 14px auto 0;
   border-top: 1px solid;
   border-image: linear-gradient(to right, transparent, #c98c2c, transparent) 1;
 }
-
 .rengokut7 bor, .rengokut7 inbor,
 .rengokut7 con, .rengokut7 incon{
   box-sizing: border-box;
@@ -230,56 +198,32 @@
 }
 
 @media (max-width: 1200px) {
-  
   .rengokut7 {
     margin: 0;
     width: 100%;
     filter: none;
   }
-  
   .rengokut7 bor {
     max-width: 450px;
     width: 100%;
     background: none;
     padding: 0;
   }
-  
-  .rengokut7 con {
-    background: #081208;
-  }
-  
+  .rengokut7 con:before,
   .rengokut7 goku,
-  .rengokut7 incon:before {
-    display: none;
-  }
+  .rengokut7 incon:before {display: none;}
   .rengokut7 sh {filter:none;}
-  
-  .rengokut7 bor, .rengokut7 con,
-  .rengokut7 inbor, .rengokut7 incon {
-    clip-path: none;
-  }
-  
   .rengokut7 incon {
     padding: 5px 5px 0px;
-    background: none;
   }
-  
-  .rengokut7 inbor,
-  .rengokut7 con {
+  .rengokut7 bor, .rengokut7 inbor,
+  .rengokut7 con, .rengokut7 incon{
     background: none;
     box-shadow: none;
-  }
-  
-  .rengokut7 speech {
-    position: relative;
-    margin: 20px auto 0;
+    mask:none;
+    -webkit-mask:none;
     filter:none;
   }
-  
-  .rengokut7 speech:before {
-    top: 0px;
-  }
-  
   .rengokut7 speech b {
     display: block;
     position: relative;
@@ -288,7 +232,6 @@
     font-size: 100px;
     margin-top:-5px;
   }
-  
   .rengokut7 credit {
     position: relative;
     inset: 0;
