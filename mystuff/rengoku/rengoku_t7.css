@@ -244,9 +244,11 @@
   }
   .ab00.rengokut7 log dev,
   .ab00.rengokut7 log approval,
-  .ab00.rengokut7 log skill {
+  .ab00.rengokut7 log skill,
+  .ab00.rengokut7 cue,
+  .ab00.rengokut7 details summary::after{
     color: inherit;
  }
-
+  
   
 }
