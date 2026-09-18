@@ -390,6 +390,21 @@
   font-family: "Bad Script", cursive;
   font-size: 10px;
 }
+.ab01 code {
+  width: 100%;
+  background:#2828284d;
+  box-shadow: inset 0 0 10px black;
+  line-height: 0.6;
+  font-family: "Didact Gothic", sans-serif;
+  font-size:10px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  text-transform: lowercase;
+  max-height:max-content;
+  overflow:visible;
+  padding: 20px 10px;
+  user-select: all;
+}
 @media (max-width: 1200px) {
   .ab01 { left: 50%;
     transform: translateX(-50%);
@@ -461,4 +476,9 @@
     transform:none !important;
     margin: 0 !important;
     inset: 0 !important; }
+  .ab01 code{
+    background:none;
+    box-shadow:none;
+    user-select:auto;
+  }
 }
