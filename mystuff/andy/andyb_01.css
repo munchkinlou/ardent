@@ -57,7 +57,7 @@
   text-decoration: none;
   font-weight: bold;
 }
-.ab01 b, .ab01 .mycode_b {
+.ab01 b {
   display: block;
   position: relative;
   --glow: 255 255 255;
@@ -77,7 +77,7 @@
   text-align: right;
   box-shadow: 0 0 var(--blur) var(--spread) rgb(var(--glow) / calc(.15 * var(--k)));
 }
-.ab01 b:after, .ab01 .mycode_b:after {
+.ab01 b:after {
   content: "";
   position: absolute;
   right: 12px;
@@ -86,7 +86,7 @@
   border-bottom: 10px solid var(--bg);
   filter: drop-shadow(0 -3px 4px rgb(var(--glow) / calc(.24 * var(--k))));
 }
-.ab01 b:before, .ab01 .mycode_b:before {
+.ab01 b:before {
   content: var(--m);
   position: absolute;
   top: 50%;
