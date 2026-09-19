@@ -124,7 +124,7 @@
   background-size: 120%;
   background-repeat: no-repeat;
   background-position: 85% -100px;
-  -webkit-mask: linear-gradient(to bottom, black 300px, transparent 500px);
+  -webkit-mask: linear-gradient(to bottom, black 500px, transparent 750px);
   mask: linear-gradient(to bottom, black 500px, transparent 750px);
   z-index: -1;
 }
