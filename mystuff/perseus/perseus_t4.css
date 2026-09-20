@@ -12,10 +12,10 @@
 .perseust4 bor {
   display: block;
   box-sizing: border-box;
-  border: 2px solid white;
+  border: 4px solid white;
   padding: 10px;
   
-  border-image: linear-gradient(to bottom, #8490A5, #A9C3D5, #8490A5) 1;
+  border-image: linear-gradient(to bottom, #5052D6, #27139B, #5052D6) 1;
   
   filter: drop-shadow(1px 1px 1px #00000087) drop-shadow(0 0 1px #000c); 
 }
@@ -68,7 +68,7 @@
   height: 450px;
   overflow-y: auto;
   
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.5px;
   
   --scrollbar-thumb: #717D86;
@@ -143,7 +143,7 @@
   display: block;
   position: relative;
   margin-bottom: -20px;
-  padding-top:10px;
+  padding-top:20px;
 }
 
 
@@ -171,8 +171,8 @@
 
 .perseust4 b, .perseust4 .mycode_b {
   letter-spacing: 0.3;
-  font-size: 12px;
-  color: #b7b1ff;
+  font-size: 13px;
+  color: #b7b1ff !important;
   font-family: "Amarante", serif;
   filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));
 }
@@ -216,15 +216,16 @@
   padding-bottom:10px;
 }
 
-/*
+
 @media (max-width: 1200px) {
   
   .perseust4 {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    max-width: 260px;
+    max-width: 420px;
     width: 100%;
+    filter:none;
 
   }
 
@@ -233,7 +234,7 @@
     box-sizing: border-box;
     border: none;
     padding: 0;
-    filter: drop-shadow(1px 1px 1px #00000054) drop-shadow(0 0 1px #000000ad); 
+    filter: none; 
   }
 
   .perseust4 con {
@@ -245,13 +246,19 @@
 
     border:none;
     box-shadow: none;
-    padding:0;
+    padding:0;|
+    filter:none;
 
   }
+  .perseust4 con:before{display: none;}
   
   .perseust4 incon {
     height: auto;
     overflow-y: visible;
+    font-size:14px;
+  }
+  .perseust4 p{
+    padding: 30px 10px 10px;
   }
   
   .perseust4 credit {
