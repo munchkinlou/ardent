@@ -213,10 +213,14 @@
 
 .perseust4.ab00 log {
   border-image: linear-gradient(to right, transparent, white, transparent) 1;
-  padding-bottom:10px;
+  padding:10px 0;
 }
-
-
+.perseust4.ab00 log > * {
+  width: 90%;
+}
+.perseust4.ab00 log > approval:before{
+  width: 75%;
+}
 @media (max-width: 1200px) {
   
   .perseust4 {
