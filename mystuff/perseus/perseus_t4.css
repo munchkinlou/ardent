@@ -25,7 +25,7 @@
   display: block;
   box-sizing: border-box;
   border: 1px solid black;
-  background: linear-gradient(to left, #479cbc 500px, white);
+  background: linear-gradient(to left, #479cbc 500px, #89b7d2);
   box-shadow: 0 0 1px #000000a1;
   padding: 20px 480px 20px 20px;
 
