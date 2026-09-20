@@ -198,7 +198,7 @@
 }
 .ab01.ab_perseus03 .mycode_b, .ab01.ab_perseus03 s {
   display: inline;
-  color: #a497ff;
+  color: #76ecff;
 	font-family: 'Amarante', sans-serif;
   font-size: 13px;
   font-weight: 400;
@@ -207,7 +207,7 @@
   text-decoration: none;
 }
 .ab01.ab_perseus03 stats,
-.ab01.ab_perseus03 log { border-image: linear-gradient(to right, transparent, #8889D8,#8B92FF,#7069C0, transparent) 1; }
+.ab01.ab_perseus03 log { border-image: linear-gradient(to right, transparent, #67A6B5,#A8E6FF,#67A6B5, transparent) 1; }
 .ab01.ab_perseus03 bor, .ab01.ab_perseus03 con,
 .ab01.ab_perseus03 inbor, .ab01.ab_perseus03 incon {
     mask: 
