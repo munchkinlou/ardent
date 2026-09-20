@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+.missyb01 {
+  margin: 20px auto;
+  position: relative;
+  padding: 0;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 0px 3px rgb(0, 0, 0));
+  
+  width: 600px;
+  --missybi: url('');
+  --borcurve: 20px;
+  --bgthick: 20px;
+  --bgcolour: to bottom, #562747, #342223;
+  --artheight: 800px;
+  --artborthick: 4px;
+  --artbor: to bottom, pink, white, pink;
+  --txtborthick: 3px;
+  --txtbor: to bottom, #fffdd0, white, #fefece;
+  --txtbg: to bottom, #3a3535,#1b1c15;
+}
+.missyb01 credit {
+  position: absolute;
+  top: 59px;
+  right: -61px;
+  width: 100px;
+  display: block;
+  text-align: left;
+  font-family: "Unica One", arial;
+  text-transform: lowercase;
+  font-size: 14px;
+  font-weight: 400;
+  z-index: 10;
+  transform: rotate(-270deg);
+}
+.missyb01 con {
+  display: block;
+  position: relative;
+  width: 100%;
+  background: linear-gradient(var(--bgcolour));
+  box-sizing: border-box;
+  padding: var(--bgthick);
+  box-shadow: inset 0 0 5px #00000096;
+  border-radius: var(--borcurve);
+}
+.missyb01 ab {
+  display: block;
+  box-sizing: border-box;
+  width:100%;
+  height:var(--artheight);
+  margin-bottom:var(--bgthick);
+  border-radius: inherit;
+  padding: var(--artborthick);
+  box-shadow: 0 0 10px #00000094;
+  background: linear-gradient(var(--artbor));
+}
+.missyb01 art{
+  display: block;
+  box-sizing: border-box;
+  width:100%;
+  height:100%;
+  background: var(--missybi);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  border-radius: inherit;
+}
+.missyb01 inbor{
+  display: block;
+  box-shadow: 0 0 10px black;
+  padding: var(--txtborthick);
+  border-radius: inherit;
+  background: linear-gradient(var(--txtbor));
+}
+.missyb01 incon {
+  
+  --speech: #fdffaf;
+  
+  display: block;
+  position: relative;
+  padding: 10px 20px 2px;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(var(--txtbg));
+  text-align: center;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1.2;
+  color: #deeeff;
+  line-height: 1.2;
+  border-radius: inherit;
+  box-shadow: inset 0 0 10px #000000bd;
+}
+
+.missyb01 speech {
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  margin: 10px auto 20px;
+}
+.missyb01 speech br {display: none;}
+.missyb01 speech::before {
+  content:'';
+  position:absolute;
+  top:-10px;
+  left:50%;
+  transform: translateX(-50%);
+
+  width:80%;
+  height:1.1px;
+
+  background: linear-gradient(to right, transparent, var(--speech), transparent);
+}
+.missyb01 b, .missyb01 .mycode_b {
+  font-size: 16px;
+  font-weight: 400 !important;
+  color: var(--speech);
+  text-shadow: none;
+}
+.missyb01 speech br{display: none;}
+.missyb01 speech b {
+  display: block;
+  padding: 10px 0 0;
+  font-size: 20px;
+  font-weight: 400;
+  z-index: 2;
+  filter: drop-shadow(0 0 2px black);
+}
+
+/*
+@media (max-width: 1200px) {
+  .missyb01 {
+    margin: 0;
+    width: 100%;
+    filter: none;
+  }
+  .missyb01 bor {
+    max-width: 450px;
+    width: 100%;
+    background: none;
+    padding: 0;
+  }
+  .missyb01 con:before,
+  .missyb01 goku,
+  .missyb01 incon:before {display: none;}
+  .missyb01 sh {filter:none;}
+  .missyb01 incon {
+    padding: 5px 5px 0px;
+  }
+  .missyb01 bor, .missyb01 inbor,
+  .missyb01 con, .missyb01 incon{
+    background: none;
+    box-shadow: none;
+    mask:none;
+    -webkit-mask:none;
+    filter:none;
+    color: inherit;
+  }
+  .missyb01 b, .missyb01 .mycode_b {
+    color: inherit !important;
+    background: none !important;
+    -webkit-background-clip: none;
+    background-clip: none;
+    text-shadow: none;
+}
+  .missyb01 speech b {display: none;}
+  .missyb01 credit {
+    position: relative;
+    inset: 0;
+    width: 100%;
+    margin-top: 5px;
+    text-align: center;
+    display: block;
+    transform: none;
+  }
+  .ab00.missyb01 log dev,
+  .ab00.missyb01 log approval,
+  .ab00.missyb01 log skill,
+  .ab00.missyb01 cue,
+  .ab00.missyb01 details summary::after{
+    color: inherit;
+ }
+  
+  
+}
