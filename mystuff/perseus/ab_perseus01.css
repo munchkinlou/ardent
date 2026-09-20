@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+.ab01.ab_perseus01 {
+  margin-top:150px;
+  --who: "Astarion";
+  filter:drop-shadow(0px 2px 3px black);
+}
+
+.ab01.ab_perseus01 quote {
+  position: absolute;
+  z-index: 10;
+  bottom: 79px;
+  left: 0;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+.ab01.ab_perseus01 quote {
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 10px;
+  line-height: 1.6;
+  letter-spacing: 1.2px;
+  color: #c9e8ff;
+  padding: 0px 0 8px;
+}
+.ab01.ab_perseus01 q1, .ab01.ab_perseus01 q2,
+.ab01.ab_perseus01 q3, .ab01.ab_perseus01 q4 {
+  display:block;
+}
+.ab01.ab_perseus01 q1 {
+  font-family: "WindSong", cursive;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+  line-height: .9;
+  color: #aab3ff;
+  text-shadow: 0 2px 14px #c9973f4d;
+  padding-right:0;
+}
+.ab01.ab_perseus01 q2 {
+  color: #b9caff;
+  font-size:16px;
+  margin-top:-10px;
+  padding-left:80px;
+}
+.ab01.ab_perseus01 q3 {
+  font-family: "Allura", cursive;
+  font-size: 30px;
+  margin-top:-14px;
+  padding-right:140px;
+}
+.ab01.ab_perseus01 q4 {
+  font-family: "Allura", cursive;
+  color:#baa1f2;
+  font-size:32px;
+  margin-top:-35px;
+  padding-left:38px;
+}
+.ab01.ab_perseus01 quote:before, .ab01.ab_perseus01 quote:after {
+  position: absolute;
+  content:'';
+  opacity: 0.2;
+  width:100%;
+  filter:drop-shadow(1px 2px 2px black) hue-rotate(150deg);
+  pointer-events: none;
+}
+.ab01.ab_perseus01 quote:before{
+  bottom:-4px;
+  left:-90px;
+  height: 88px;
+  background:url('https://ik.imagekit.io/arl60/Ardent/personal/Astarion/roses.png?updatedAt=1788220447085')
+    center no-repeat;
+  background-size: contain;
+}
+
+.ab01.ab_perseus01 quote:after{
+  bottom:20px;
+  left:89px;
+  height: 82px;
+  background:url('https://ik.imagekit.io/arl60/Ardent/personal/Astarion/roses2.png?updatedAt=1788223921675')
+    center no-repeat;
+  background-size: contain;
+  transform:rotate(212deg);
+}
+.ab01.ab_perseus01 quote by {
+  display: block;
+  margin-top: -15px;
+  padding-left:10px;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 6px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #c7c6ffa8;
+  text-shadow: 2px 2px 2px black;
+}
+
+.ab01.ab_perseus01 cart {
+  background-image: url('https://ik.imagekit.io/arl60/Ardent/personal/Perseus/nakey_for_andy.png?updatedAt=1789005719066');
+}
+.ab01.ab_perseus01 cart {
+  top: -146px;
+  left: -85px;
+  width: 629px;
+  height: 865px;
+  filter: drop-shadow(4px 2px 100px #d2dae538) drop-shadow(1px 2px 10px black);}
+.ab01.ab_perseus01 bor {
+  background: none;
+  background: linear-gradient(to bottom, #8085D0,#6855CD,#422555);
+  padding: 2px;
+}
+.ab01.ab_perseus01 con { padding: 15.5px;
+  --divi: url('https://ik.imagekit.io/arl60/Ardent/personal/Perseus/Perseusdividerastro.png?updatedAt=1774278425608');
+}
+.ab01.ab_perseus01 con:before {
+    background:
+    url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/21935015_6498043.jpg?updatedAt=1771535275043')
+    black
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.ab01.ab_perseus01 con:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  filter: hue-rotate(-40deg) saturate(0.5);
+  pointer-events: none;
+}
+.ab01.ab_perseus01 con:after {
+  content: '';
+  position: absolute;
+  top: 680px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 120px;
+  z-index: 10;
+  pointer-events: none;
+  background:
+    linear-gradient(100deg, #9c79dc96 38%, #96F3FC 50%, #3d5fc68c 62%), linear-gradient(to right, #479AB3, #C079CA, #7FD7AA);
+  background-size: 220% 100%, 100% 100%;
+  background-repeat: no-repeat;
+  -webkit-mask: var(--divi) center / contain no-repeat;
+  mask: var(--divi) center / contain no-repeat;
+  animation: abasta01_shimmer 5s linear infinite;
+}
+@keyframes abasta01_shimmer {
+  from { background-position: -120% 0, 0 0; }
+  to   { background-position:  220% 0, 0 0; }
+}
+.ab01.ab_perseus01 inbor { 
+  background: none; padding: 5;
+  filter: drop-shadow(0px 0px 3px black);}
+.ab01.ab_perseus01 incon {
+  background: linear-gradient(to bottom, #071524 50%, #131e31);
+  box-shadow: inset 0 0 10px black;
+  padding: 740px 20px 150px;
+}
+.ab01.ab_perseus01 .mycode_b, .ab01.ab_perseus01 s {
+  display: inline;
+  color: #a497ff;
+	font-family: 'Amarante', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  text-shadow: 0px 0px 2px #000000;
+  line-height: 1;
+  text-decoration: none;
+}
+.ab01.ab_perseus01 stats,
+.ab01.ab_perseus01 log { border-image: linear-gradient(to right, transparent, #8889D8,#8B92FF,#7069C0, transparent) 1; }
+.ab01.ab_perseus01 bor, .ab01.ab_perseus01 con,
+.ab01.ab_perseus01 inbor, .ab01.ab_perseus01 incon {
+    mask: 
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -35 100 140' preserveAspectRatio='none'%3E%3Cpath d='M 0 100 H 100 V 18 Q 90 18, 90 0 H 80 C 65 -35, 35 -35, 20 0 H 10 Q 10 18, 0 18 Z' fill='black'/%3E%3C/svg%3E") top / 100% 250px no-repeat,
+      linear-gradient(black, black) 0 200px / 100% calc(100% - 400px) no-repeat,
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 140' preserveAspectRatio='none'%3E%3Cpath d='M 0 0 H 100 V 82 Q 90 82, 90 100 H 80 C 65 135, 35 135, 20 100 H 10 Q 10 82, 0 82 Z' fill='black'/%3E%3C/svg%3E") bottom / 100% 250px no-repeat;
+    -webkit-mask: 
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -35 100 140' preserveAspectRatio='none'%3E%3Cpath d='M 0 100 H 100 V 18 Q 90 18, 90 0 H 80 C 65 -35, 35 -35, 20 0 H 10 Q 10 18, 0 18 Z' fill='black'/%3E%3C/svg%3E") top / 100% 250px no-repeat,
+      linear-gradient(black, black) 0 200px / 100% calc(100% - 400px) no-repeat,
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 140' preserveAspectRatio='none'%3E%3Cpath d='M 0 0 H 100 V 82 Q 90 82, 90 100 H 80 C 65 135, 35 135, 20 100 H 10 Q 10 82, 0 82 Z' fill='black'/%3E%3C/svg%3E") bottom / 100% 250px no-repeat;
+}
+.ab01.ab_perseus01 credit {
+  margin: 0;
+  position: absolute;
+  right:249px;
+  width: 100%;
+  bottom: 336px;
+  transform:rotate(-90deg);
+  text-align: left;
+  text-shadow: none;
+}
+.ab01.ab_perseus01 credit art {display:inline-block; padding-left:10px;}
+@media (max-width: 1200px) {
+  .ab01.ab_perseus01, .ab01.ab_perseus01 inbor {filter:none;}
+  .ab01.ab_perseus01 con:after,
+  .ab01.ab_perseus01 quote {display:none;}
+  .ab01.ab_perseus01 bor, .ab01.ab_perseus01 con,
+  .ab01.ab_perseus01 inbor, .ab01.ab_perseus01 incon {
+    mask:none; -webkit-mask: none;}
+}
