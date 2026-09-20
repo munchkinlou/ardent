@@ -106,7 +106,7 @@
   filter:drop-shadow(0 0 2px black);
 }
 
-.perseust4 p::before {
+.perseust4 txt::before {
   content: '';
   position: absolute;
   top: 10px;
@@ -139,11 +139,11 @@
     filter: brightness(10) drop-shadow(1px 1px 1px #321e45e5);
 }
 
-.perseust4 p {
+.perseust4 txt {
   display: block;
   position: relative;
   margin-bottom: -20px;
-  padding-top:20px;
+  padding-top:10px;
 }
 
 
