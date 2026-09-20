@@ -117,9 +117,19 @@
   background: url('https://ik.imagekit.io/arl60/Ardent/personal/Perseus/dagger.png?tr=w-400') center / contain no-repeat;
   transform: rotate(-20deg);
   filter: drop-shadow(1px 2px 2px black);
-  animation: seabob 12s linear infinite, seashock 9s linear infinite;
+  animation: percybob 12s linear infinite;
 }
-@keyframes seabob {
+.ab01.ab_perseus03 dg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: inherit;
+  filter: drop-shadow(0 0 20px #e4dcffb3) drop-shadow(0 0 55px #b6a8ff80);
+  opacity: 0;
+  animation: percyshock 9s linear infinite;
+}
+@keyframes percybob {
   0%      { transform: translate(0, 0) rotate(-20deg); }
   8.33%   { transform: translate(3px, -1px) rotate(-19.4deg); }
   16.66%  { transform: translate(5px, -3.5px) rotate(-19deg); }
@@ -134,19 +144,10 @@
   91.66%  { transform: translate(-3px, -1px) rotate(-20.6deg); }
   100%    { transform: translate(0, 0) rotate(-20deg); }
 }
-@keyframes seashock {
-  0%, 82%, 85%, 89%, 100% {
-    filter: drop-shadow(4px 2px 100px #d2dae538) drop-shadow(1px 2px 2px black);
-  }
-  83.5% {
-    filter: drop-shadow(0 0 14px #cfc4ff59) drop-shadow(0 0 40px #a9d6ff40)
-      drop-shadow(4px 2px 100px #d2dae538) drop-shadow(1px 2px 2px black);
-  }
-  87% {
-    filter: drop-shadow(0 0 22px #e4dcff73) drop-shadow(0 0 60px #b6a8ff4d)
-      drop-shadow(0 0 120px #8fc7f233)
-      drop-shadow(4px 2px 100px #d2dae538) drop-shadow(1px 2px 2px black);
-  }
+@keyframes percyshock {
+  0%, 82%, 86%, 90%, 100% { opacity: 0; }
+  84%   { opacity: .45; }
+  88.5% { opacity: 1; }
 }
 .ab01.ab_perseus03 bor {
   background: none;
