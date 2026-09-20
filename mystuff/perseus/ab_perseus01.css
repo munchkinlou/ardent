@@ -10,7 +10,7 @@
 .ab01.ab_perseus01 quote {
   position: absolute;
   z-index: 10;
-  bottom: 79px;
+  bottom: 69px;
   left: 0;
   width: 100%;
   display: block;
@@ -77,7 +77,7 @@
 }
 
 .ab01.ab_perseus01 quote:after{
-  bottom:20px;
+  bottom:13px;
   left:89px;
   height: 82px;
   background:url('https://ik.imagekit.io/arl60/Ardent/personal/Astarion/roses2.png?updatedAt=1788223921675')
