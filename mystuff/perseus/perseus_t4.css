@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+
+.perseust4 {
+  position: relative;
+  margin: 10px auto 5px;
+  width: 800px;
+ 
+}
+
+.perseust4 bor {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid white;
+  padding: 10px;
+  
+  border-image: linear-gradient(to bottom, #8490A5, #A9C3D5, #8490A5) 1;
+  
+  filter: drop-shadow(1px 1px 1px #00000087) drop-shadow(0 0 1px #000c); 
+}
+
+.perseust4 con {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  border: 1px solid black;
+  background: linear-gradient(to left, #479cbc 500px, white);
+  box-shadow: 0 0 1px #000000a1;
+  padding: 20px 480px 20px 20px;
+
+}
+
+.perseust4 con:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #75b9d0 url('https://ik.imagekit.io/arl60/Ardent/personal/Perseus/Iicon.png?updatedAt=1789005635479') 100% 100% / 70% no-repeat;
+  -webkit-mask: linear-gradient(to right, transparent 250px, black 310px);
+          mask: linear-gradient(to right, transparent 250px, black 310px);
+}
+
+.perseust4 g {
+  display: block;
+  filter: drop-shadow(2px 2px 5px #0f0929);
+}
+
+.perseust4 inbor {
+  display: block;
+  background: linear-gradient(to bottom, #9396ff, #6a6af0, #9396ff);
+  padding: 2px;
+}
+
+.perseust4 incon {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+  background: linear-gradient(to top, #112247, #486291);
+  
+  padding: 5px 19px 0 14px;
+  
+  color: #e8f2f6;
+  text-align: justify;
+  font-family: "Didact Gothic", sans-serif;
+  line-height: 1.2;
+  
+  height: 450px;
+  overflow-y: auto;
+  
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  
+  --scrollbar-thumb: #717D86;
+  --scrollbar-track: transparent;
+  --scrollbar-width: 6px;
+
+  scrollbar-width: thin;
+  scrollbar-color: #748AB3 var(--scrollbar-track);
+
+  &::-webkit-scrollbar {
+    width: var(--scrollbar-width);
+  }
+  &::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 3px;
+  }  
+
+  direction: rtl;
+}
+
+.perseust4 incon:before{
+  content: '';
+  position: absolute;
+  inset: 0;
+  width:100%;
+  height:100%;
+  background:url('https://ik.imagekit.io/arl60/Ardent/personal/Backgrounds/snow.png?updatedAt=1789166615226')
+    center;
+  background-size: cover;
+  pointer-events: none;
+  opacity: 0.1;
+  filter:drop-shadow(0 0 2px black);
+}
+
+.perseust4 p::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 49%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 80%;
+  
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/2.png?updatedAt=1761259622322')
+    no-repeat top;
+  background-size: contain;
+  pointer-events: none;
+
+  filter: brightness(10) drop-shadow(1px 1px 1px #000000b5);
+  
+}
+
+.perseust4 incon::after {
+    content: '';
+    display: block;
+    flex-shrink: 0;
+    height: 30px;
+    width: 90%;
+    margin: auto auto 0;
+    order: 1;
+    
+    background: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/2.png?updatedAt=1761259622322')
+        no-repeat bottom;
+    background-size: contain;
+    filter: brightness(10) drop-shadow(1px 1px 1px #321e45e5);
+}
+
+.perseust4 p {
+  display: block;
+  position: relative;
+  margin-bottom: -20px;
+  padding-top:10px;
+}
+
+
+.perseust4 incon > * {
+  direction: ltr;
+  margin-top: 0px;
+}
+
+.perseust4 inbor, .perseust4 incon {
+    mask: 
+        radial-gradient(ellipse 25px 20px at 0 0, transparent 24px, rgba(0, 0, 0, 0.4) 24.5px, black 25px) 0 0,
+        radial-gradient(ellipse 25px 20px at 100% 0, transparent 24px, rgba(0, 0, 0, 0.4) 24.5px, black 25px) 100% 0,
+        radial-gradient(ellipse 25px 20px at 100% 100%, transparent 24px, rgba(0, 0, 0, 0.4) 24.5px, black 25px) 100% 100%,
+        radial-gradient(ellipse 25px 20px at 0 100%, transparent 24px, rgba(0, 0, 0, 0.4) 24.5px, black 25px) 0 100%;
+    -webkit-mask: 
+        radial-gradient(ellipse 25px 20px at 0 0, transparent 24px, rgba(0, 0, 0, 0.4) 24.5px, black 25px) 0 0,
+        radial-gradient(ellipse 25px 20px at 100% 0, transparent 24px, rgba(0, 0, 0, 0.4) 24.5px, black 25px) 100% 0,
+        radial-gradient(ellipse 25px 20px at 100% 100%, transparent 24px, rgba(0, 0, 0, 0.4) 24.5px, black 25px) 100% 100%,
+        radial-gradient(ellipse 25px 20px at 0 100%, transparent 24px, rgba(0, 0, 0, 0.4) 24.5px, black 25px) 0 100%;
+    mask-size: 51% 51%;
+    -webkit-mask-size: 51% 51%;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+}
+
+.perseust4 b, .perseust4 .mycode_b {
+  letter-spacing: 0.3;
+  font-size: 12px;
+  color: #b7b1ff;
+  font-family: "Amarante", serif;
+  filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));
+}
+
+.perseust4 speech {
+    display: block;
+    flex-shrink: 0;
+    order: 2;
+  
+    width: 100%;
+    padding: 10px 0 15px;
+    
+    color: white;
+    text-align: center;
+    
+    font-family: 'Plasticbagh', sans-serif;
+    direction: ltr;
+}
+
+.perseust4 speech b {
+  display: block;
+  padding: 5px 0 0;
+  font-size: 16px;
+}
+
+.perseust4 speech > br {
+  display: none;
+}
+
+.perseust4 credit {
+  display: block;
+  padding-top: 3px;
+  padding-right: 2px;
+  text-align: right;
+  font-family: "Unica One", arial;
+  font-size: 10px;
+}
+
+.perseust4.ab00 log {
+  border-image: linear-gradient(to right, transparent, white, transparent) 1;
+  padding-bottom:10px;
+}
+
+/*
+@media (max-width: 1200px) {
+  
+  .perseust4 {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 260px;
+    width: 100%;
+
+  }
+
+  .perseust4 bor {
+    display: block;
+    box-sizing: border-box;
+    border: none;
+    padding: 0;
+    filter: drop-shadow(1px 1px 1px #00000054) drop-shadow(0 0 1px #000000ad); 
+  }
+
+  .perseust4 con {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+
+    background: none;
+
+    border:none;
+    box-shadow: none;
+    padding:0;
+
+  }
+  
+  .perseust4 incon {
+    height: auto;
+    overflow-y: visible;
+  }
+  
+  .perseust4 credit {
+    padding-right: 0;
+    text-align: center;
+  }
+
+
+}
