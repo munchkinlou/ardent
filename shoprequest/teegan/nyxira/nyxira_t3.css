@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+.nyxirat3 {
+  position: relative;
+  margin: 200px auto 20px;
+  width: 400px;
+}
+
+.nyxirat3 nyx {
+  position: absolute;
+  right: 0;
+  top: 0%;
+  height: 248px;
+  width: 100%;
+  z-index: 10;
+  background: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d4c64f54-d40d-4085-b0fb-50444fde2d42/dmffbcn-75029d6d-5b77-49ed-8eb7-1c42e1d42769.png/v1/fill/w_1280,h_762/nyx_ref4_by_goblin_queen_teegan_dmffbcn-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzYyIiwicGF0aCI6Ii9mL2Q0YzY0ZjU0LWQ0MGQtNDA4NS1iMGZiLTUwNDQ0ZmRlMmQ0Mi9kbWZmYmNuLTc1MDI5ZDZkLTViNzctNDllZC04ZWI3LTFjNDJlMWQ0Mjc2OS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.bqwZXQe9ij5o8ZZaDiAb5xTTXRYqXM6cdcHwTspIM8U')
+    center / contain no-repeat;
+  filter:drop-shadow(0 0 2px black);
+}
+
+.nyxirat3 con {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  box-shadow: 0 0 5px #000000a1;
+  padding: 200px 20px 20px;
+  border-radius: 200px 200px 20px 20px;
+}
+.nyxirat3 con:before{
+  border-radius:inherit;
+  content:''; position: absolute;
+  inset:0; width: 100%; height:100%;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/21935015_6498043.jpg?updatedAt=1771535275043')
+    center / cover;
+  background-attachment:fixed;
+  filter: sepia(1) hue-rotate(160deg) saturate(3) brightness(0.7);
+}
+
+.nyxirat3 g {
+  display: block;
+  filter: drop-shadow(2px 2px 5px #0f0929);
+}
+
+.nyxirat3 inbor {
+  display: block;
+  background: linear-gradient(to bottom, #c19b4f, #ffe58e, #a5883b);
+  padding: 2px;
+}
+
+.nyxirat3 incon {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #1d6083, #0a202b);
+  
+  padding: 60px 19px 0;
+  
+  color: white;
+  text-align: justify;
+  font-family: "Cormorant", serif;
+  font-size: 15px;
+  letter-spacing: 0.1px;
+  line-height: 1.2;
+  text-shadow: 0 0 2px black;
+
+}
+
+.nyxirat3 incon:before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 49%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 100%;
+  
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/div1.png')
+    no-repeat top;
+  background-size: contain;
+  pointer-events: none;
+
+  filter: saturate(3) drop-shadow(1px 1px 1px #000000b5);
+  
+}
+
+.nyxirat3 incon::after {
+  content: '';
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/div2.png')
+    no-repeat bottom;
+  background-size: contain;
+  filter: saturate(3) drop-shadow(1px 1px 1px #321e45e5);
+}
+
+.nyxirat3 inbor, .nyxirat3 incon {
+    mask: 
+        radial-gradient(ellipse 25px 20px at 0 0, transparent 24px, rgba(0, 0, 0, 0.4) 24.5px, black 25px) 0 0,
+        radial-gradient(ellipse 25px 20px at 100% 0, transparent 24px, rgba(0, 0, 0, 0.4) 24.5px, black 25px) 100% 0,
+        radial-gradient(ellipse 25px 20px at 100% 100%, transparent 24px, rgba(0, 0, 0, 0.4) 24.5px, black 25px) 100% 100%,
+        radial-gradient(ellipse 25px 20px at 0 100%, transparent 24px, rgba(0, 0, 0, 0.4) 24.5px, black 25px) 0 100%;
+    -webkit-mask: 
+        radial-gradient(ellipse 25px 20px at 0 0, transparent 24px, rgba(0, 0, 0, 0.4) 24.5px, black 25px) 0 0,
+        radial-gradient(ellipse 25px 20px at 100% 0, transparent 24px, rgba(0, 0, 0, 0.4) 24.5px, black 25px) 100% 0,
+        radial-gradient(ellipse 25px 20px at 100% 100%, transparent 24px, rgba(0, 0, 0, 0.4) 24.5px, black 25px) 100% 100%,
+        radial-gradient(ellipse 25px 20px at 0 100%, transparent 24px, rgba(0, 0, 0, 0.4) 24.5px, black 25px) 0 100%;
+    mask-size: 51% 51%;
+    -webkit-mask-size: 51% 51%;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+}
+
+.nyxirat3 b, .nyxirat3 .mycode_b {
+  letter-spacing: 0.5;
+  font-size: 16px;
+  color: #42ffde !important;
+}
+
+.nyxirat3 speech {
+    display: block;
+    width: 100%;
+    padding: 20px 0 15px;
+    
+    color: white;
+    text-align: center;
+    direction: ltr;
+}
+
+.nyxirat3 speech b {
+  display: block;
+  padding: 10px 0 0;
+  font-size: 20px;
+}
+
+.nyxirat3 speech > br {
+  display: none;
+}
+
+.nyxirat3 credit {
+  display: block;
+  text-align: center;
+  margin-top:10px;
+  font-family: "Unica One", arial;
+  font-size: 10px;
+}
+
+@media (max-width: 1200px) {
+  
+  .nyxirat3 {
+    max-width: 450px;
+    width: 100% !important;
+    left:50%;
+    transform:translatex(-50%);
+  }
+  .nyxirat3 con{
+    margin-top:200px;
+  }
+  .nyxirat3 nyx{ top: -22%;}
+}
+
+@media (max-width: 460px) {
+  
+  .nyxirat3 {
+    max-width: 450px;
+    width: 100% !important;
+    left:50%;
+    transform:translatex(-50%);
+  }
+  .nyxirat3 con{
+    margin-top:200px;
+    padding: 150px 10px 10px;;
+  }
+  .nyxirat3 incon {
+    padding:60px 10px 0;
+    font-size:14px;
+  }
+  .nyxirat3 b, .nyxirat3 .mycode_b {
+    font-size: 14px;
+  }
+  .nyxirat3 nyx {
+    top:-27%;
+  }
+
+}
+@media (max-width: 412px){
+  .nyxirat3 nyx {
+    top:-25%;
+  }  
+}
+@media (max-width: 400px) {
+  .nyxirat3 nyx {
+    top:-20%;
+  }
+}
+@media (max-width: 330px) {
+  .nyxirat3 nyx {
+    top:-18%;
+  }
+}
+@media (max-width: 250px) {
+  .nyxirat3 nyx {
+    top:-12%;
+  }
+  .nyxirat3 con{
+    margin-top:100px;
+    padding: 150px 5px 5px;;
+  }
+}
