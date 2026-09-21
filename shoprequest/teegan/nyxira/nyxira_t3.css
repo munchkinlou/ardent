@@ -2,16 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
 .nyxirat3 {
   position: relative;
-  margin: 200px auto 20px;
+  margin: 120px auto 20px;
   width: 400px;
 }
 
 .nyxirat3 nyx {
   position: absolute;
-  right: 0;
-  top: 0%;
-  height: 248px;
-  width: 100%;
+  right: -6px;
+  top: -12%;
+  height: 400px;
+  width: 130%;
   z-index: 10;
   background: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d4c64f54-d40d-4085-b0fb-50444fde2d42/dmffbcn-75029d6d-5b77-49ed-8eb7-1c42e1d42769.png/v1/fill/w_1280,h_762/nyx_ref4_by_goblin_queen_teegan_dmffbcn-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzYyIiwicGF0aCI6Ii9mL2Q0YzY0ZjU0LWQ0MGQtNDA4NS1iMGZiLTUwNDQ0ZmRlMmQ0Mi9kbWZmYmNuLTc1MDI5ZDZkLTViNzctNDllZC04ZWI3LTFjNDJlMWQ0Mjc2OS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.bqwZXQe9ij5o8ZZaDiAb5xTTXRYqXM6cdcHwTspIM8U')
     center / contain no-repeat;
@@ -158,10 +158,19 @@
   .nyxirat3 con{
     margin-top:200px;
   }
-  .nyxirat3 nyx{ top: -22%;}
+  .nyxirat3 nyx{ top: -14%;}
 }
-
-@media (max-width: 460px) {
+@media (max-width: 800px) {
+  .nyxirat3 nyx{
+    width:100% !important;
+    top:-11%;
+    right:0;
+  }
+  .nyxirat3 con {
+    margin-top:60px;
+  }
+}
+@media (max-width: 500px) {
   
   .nyxirat3 {
     max-width: 450px;
@@ -170,7 +179,6 @@
     transform:translatex(-50%);
   }
   .nyxirat3 con{
-    margin-top:200px;
     padding: 150px 10px 10px;;
   }
   .nyxirat3 incon {
@@ -181,31 +189,18 @@
     font-size: 14px;
   }
   .nyxirat3 nyx {
-    top:-27%;
+    top:-15%;
+    width:100%;
   }
 
 }
-@media (max-width: 412px){
+@media (max-width: 420px){
   .nyxirat3 nyx {
-    top:-25%;
+    top:-13%;
   }  
 }
-@media (max-width: 400px) {
+@media (max-width: 350px){
   .nyxirat3 nyx {
-    top:-20%;
-  }
-}
-@media (max-width: 330px) {
-  .nyxirat3 nyx {
-    top:-18%;
-  }
-}
-@media (max-width: 250px) {
-  .nyxirat3 nyx {
-    top:-12%;
-  }
-  .nyxirat3 con{
-    margin-top:100px;
-    padding: 150px 5px 5px;;
-  }
+    top:-10%;
+  }  
 }
