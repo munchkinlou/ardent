@@ -9,7 +9,7 @@
 .nyxirat1 nyx {
   position: absolute;
   right: 0;
-  top: -18%;
+  top: -20%;
   height: 500px;
   width: 100%;
   z-index: 10;
@@ -153,10 +153,10 @@
     transform:translatex(-50%);
   } 
   .nyxirat1 con{
-    margin-top:100px;
+    margin-top:200px;
   }
-}
 
+}
 @media (max-width: 450px) {
   
   .nyxirat1 {
@@ -170,11 +170,20 @@
     padding: 150px 5px 5px;;
   }
   .nyxirat1 incon {
-    padding: 30px 10px 0 10px;
+    padding:60px 10px 0 10px;
     font-size:12px;
   }
   .nyxirat1 b, .nyxirat1 .mycode_b {
     font-size: 12px;
+  }
+  .nyxirat1 nyx {
+    top:-30%;
+  }
+
+}
+@media (max-width: 400px) {
+  .nyxirat1 nyx {
+    top:-20%;
   }
 
 }
