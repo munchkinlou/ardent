@@ -146,6 +146,20 @@
   font-size: 10px;
 }
 
+@media (max-width: 1200px) {
+  
+  .nyxirat1 {
+    max-width: 450px;
+    width: 100% !important;
+    left:50%;
+    transform:translatex(-50%);
+  }
+  .nyxirat1 con{
+    margin-top:200px;
+  }
+  .nyxirat1 nyx{ top: -22%;}
+}
+
 @media (max-width: 460px) {
   
   .nyxirat1 {
