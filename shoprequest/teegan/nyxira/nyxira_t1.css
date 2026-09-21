@@ -9,7 +9,7 @@
 .nyxirat1 nyx {
   position: absolute;
   right: 0;
-  top: -185px;
+  top: -18%;
   height: 500px;
   width: 100%;
   z-index: 10;
@@ -57,8 +57,10 @@
   color: #d3f3e7;
   text-align: justify;
   font-family: "Cormorant", serif;
-  font-size: 12px;
-  letter-spacing: 0.5px;
+  font-size: 15px;
+  letter-spacing: 0.1px;
+  line-height: 1.2;
+  text-shadow: 0 0 2px black;
 
 }
 
@@ -83,7 +85,7 @@
 .nyxirat1 incon::after {
   content: '';
   position: absolute;
-  bottom: 32px;
+  bottom: 40px;
   left: 0;
   height: 40px;
   width: 100%;
@@ -114,7 +116,6 @@
   letter-spacing: 0.5;
   font-size: 16px;
   color: #e7ff3f !important;
-  filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));
 }
 
 .nyxirat1 speech {
@@ -129,8 +130,8 @@
 
 .nyxirat1 speech b {
   display: block;
-  padding: 5px 0 0;
-  font-size: 16px;
+  padding: 10px 0 0;
+  font-size: 20px;
 }
 
 .nyxirat1 speech > br {
@@ -144,9 +145,35 @@
   font-family: "Unica One", arial;
   font-size: 10px;
 }
-
 @media (max-width: 1200px) {
+   .nyxirat1 {
+    max-width: 450px;
+    width: 100% !important;
+    left:50%;
+    transform:translatex(-50%);
+  } 
+  .nyxirat1 con{
+    margin-top:100px;
+  }
+}
+@media (max-width: 450px) {
   
-
+  .nyxirat1 {
+    max-width: 450px;
+    width: 100% !important;
+    left:50%;
+    transform:translatex(-50%);
+  }
+  .nyxirat1 con{
+    margin-top:100px;
+    padding: 150px 5px 5px;;
+  }
+  .nyxirat1 incon {
+    padding: 30px 10px 0 10px;
+    font-size:12px;
+  }
+  .nyxirat1 b, .nyxirat1 .mycode_b {
+    font-size: 12px;
+  }
 
 }
