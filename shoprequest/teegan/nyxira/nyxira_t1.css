@@ -9,7 +9,7 @@
 .nyxirat1 nyx {
   position: absolute;
   right: 0;
-  top: -20%;
+  top: -190px;
   height: 500px;
   width: 100%;
   z-index: 10;
@@ -157,7 +157,7 @@
   .nyxirat1 con{
     margin-top:200px;
   }
-  .nyxirat1 nyx{ top: -22%;}
+  .nyxirat1 nyx{ top: ;}
 }
 
 @media (max-width: 460px) {
@@ -180,29 +180,18 @@
     font-size: 14px;
   }
   .nyxirat1 nyx {
-    top:-27%;
+    top:-220px;
   }
 
 }
-@media (max-width: 412px){
-  .nyxirat1 nyx {
-    top:-25%;
-  }  
+@media (max-width: 420px){
+  .nyxirat1 nyx { top:-210px;}  
 }
-@media (max-width: 400px) {
-  .nyxirat1 nyx {
-    top:-20%;
-  }
-}
-@media (max-width: 330px) {
-  .nyxirat1 nyx {
-    top:-18%;
-  }
+@media (max-width: 350px) {
+  .nyxirat1 nyx { top:-190px;}  
 }
 @media (max-width: 250px) {
-  .nyxirat1 nyx {
-    top:-12%;
-  }
+  .nyxirat1 nyx { top:-165px;}  
   .nyxirat1 con{
     margin-top:100px;
     padding: 150px 5px 5px;;
