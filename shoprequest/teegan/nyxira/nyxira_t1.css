@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+.nyxirat1 {
+  position: relative;
+  margin: 200px auto 20px;
+  width: 400px;
+}
+
+.nyxirat1 nyx {
+  position: absolute;
+  right: 0;
+  top: -185px;
+  height: 500px;
+  width: 100%;
+  z-index: 10;
+  background: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d4c64f54-d40d-4085-b0fb-50444fde2d42/dmlqx4m-a28fce71-d48b-4a9c-b53f-fd4784a5d64b.png/v1/fill/w_1280,h_1531/nyxie2_by_goblin_queen_teegan_dmlqx4m-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTUzMSIsInBhdGgiOiIvZi9kNGM2NGY1NC1kNDBkLTQwODUtYjBmYi01MDQ0NGZkZTJkNDIvZG1scXg0bS1hMjhmY2U3MS1kNDhiLTRhOWMtYjUzZi1mZDQ3ODRhNWQ2NGIucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.IC0h_QqRjEz2HnXZ5jhmtnXlYvUr3_HSnaIqscngqVc')
+    center / contain no-repeat;
+  filter:drop-shadow(0 0 2px black);
+}
+
+.nyxirat1 con {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  box-shadow: 0 0 5px #000000a1;
+  padding: 200px 20px 20px;
+  border-radius: 200px 200px 20px 20px;
+}
+.nyxirat1 con:before{
+  border-radius:inherit;
+  content:''; position: absolute;
+  inset:0; width: 100%; height:100%;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/21935015_6498043.jpg?updatedAt=1771535275043')
+    center / cover;
+  filter: hue-rotate(-100deg) saturate(0.2);
+}
+
+.nyxirat1 g {
+  display: block;
+  filter: drop-shadow(2px 2px 5px #0f0929);
+}
+
+.nyxirat1 inbor {
+  display: block;
+  background: linear-gradient(to bottom, #c19b4f, #ffe58e, #a5883b);
+  padding: 2px;
+}
+
+.nyxirat1 incon {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #43877e, #447147);
+  
+  padding: 60px 19px 0;
+  
+  color: #d3f3e7;
+  text-align: justify;
+  font-family: "Cormorant", serif;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+
+}
+
+.nyxirat1 incon:before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 49%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 100%;
+  
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/div1.png')
+    no-repeat top;
+  background-size: contain;
+  pointer-events: none;
+
+  filter: saturate(5) drop-shadow(1px 1px 1px #000000b5);
+  
+}
+
+.nyxirat1 incon::after {
+  content: '';
+  position: absolute;
+  bottom: 32px;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/div2.png')
+    no-repeat bottom;
+  background-size: contain;
+  filter: saturate(5) drop-shadow(1px 1px 1px #321e45e5);
+}
+
+.nyxirat1 inbor, .nyxirat1 incon {
+    mask: 
+        radial-gradient(ellipse 25px 20px at 0 0, transparent 24px, rgba(0, 0, 0, 0.4) 24.5px, black 25px) 0 0,
+        radial-gradient(ellipse 25px 20px at 100% 0, transparent 24px, rgba(0, 0, 0, 0.4) 24.5px, black 25px) 100% 0,
+        radial-gradient(ellipse 25px 20px at 100% 100%, transparent 24px, rgba(0, 0, 0, 0.4) 24.5px, black 25px) 100% 100%,
+        radial-gradient(ellipse 25px 20px at 0 100%, transparent 24px, rgba(0, 0, 0, 0.4) 24.5px, black 25px) 0 100%;
+    -webkit-mask: 
+        radial-gradient(ellipse 25px 20px at 0 0, transparent 24px, rgba(0, 0, 0, 0.4) 24.5px, black 25px) 0 0,
+        radial-gradient(ellipse 25px 20px at 100% 0, transparent 24px, rgba(0, 0, 0, 0.4) 24.5px, black 25px) 100% 0,
+        radial-gradient(ellipse 25px 20px at 100% 100%, transparent 24px, rgba(0, 0, 0, 0.4) 24.5px, black 25px) 100% 100%,
+        radial-gradient(ellipse 25px 20px at 0 100%, transparent 24px, rgba(0, 0, 0, 0.4) 24.5px, black 25px) 0 100%;
+    mask-size: 51% 51%;
+    -webkit-mask-size: 51% 51%;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+}
+
+.nyxirat1 b, .nyxirat1 .mycode_b {
+  letter-spacing: 0.5;
+  font-size: 16px;
+  color: #e7ff3f !important;
+  filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));
+}
+
+.nyxirat1 speech {
+    display: block;
+    width: 100%;
+    padding: 20px 0 15px;
+    
+    color: white;
+    text-align: center;
+    direction: ltr;
+}
+
+.nyxirat1 speech b {
+  display: block;
+  padding: 5px 0 0;
+  font-size: 16px;
+}
+
+.nyxirat1 speech > br {
+  display: none;
+}
+
+.nyxirat1 credit {
+  display: block;
+  text-align: center;
+  margin-top:10px;
+  font-family: "Unica One", arial;
+  font-size: 10px;
+}
+
+@media (max-width: 1200px) {
+  
+
+
+}
