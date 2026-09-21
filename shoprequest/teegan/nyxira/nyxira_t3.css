@@ -9,7 +9,7 @@
 .nyxirat3 nyx {
   position: absolute;
   right: -6px;
-  top: -12%;
+  top: -110px;
   height: 400px;
   width: 130%;
   z-index: 10;
@@ -158,7 +158,7 @@
   .nyxirat3 con{
     margin-top:200px;
   }
-  .nyxirat3 nyx{ top: -14%;}
+  .nyxirat3 nyx{ top: -130px;}
 }
 @media (max-width: 800px) {
   .nyxirat3 nyx{
@@ -167,8 +167,7 @@
     right:0;
   }
   .nyxirat3 con {
-    margin-top:60px;
-  }
+    margin-top: ;}
 }
 @media (max-width: 500px) {
   
@@ -189,18 +188,18 @@
     font-size: 14px;
   }
   .nyxirat3 nyx {
-    top:-15%;
+    top: -130px;
     width:100%;
   }
 
 }
 @media (max-width: 420px){
   .nyxirat3 nyx {
-    top:-13%;
+    top: -110px;
   }  
 }
 @media (max-width: 350px){
   .nyxirat3 nyx {
-    top:-10%;
+    top: -100px;
   }  
 }
