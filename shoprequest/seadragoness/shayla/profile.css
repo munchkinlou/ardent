@@ -85,7 +85,7 @@ h1 {
 .flex.fill.profinfo:has(info) > * {
   flex: 0 0 100%;
 }
-.flex:has(.profav) { margin-top:15px; align-items: stretch; }
+.flex:has(.profav) { margin-top:100px; align-items: stretch; }
 .profav {
   width: 250px;
   height:auto;
@@ -539,17 +539,169 @@ code {
   88%   { transform: translate(1px, 1px) scaleX(-1) rotate(90deg); }
 }
 
-@media (max-width:1200px){
-  .profile-master a::before,
-  #content:before {
-    display: none;
+#v2 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+#v2 + label {
+  position: absolute;
+  z-index: 100;
+  top: -470px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 6px 14px;
+  cursor: pointer;
+  background: var(--srf);
+  border: 5px solid white;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  border-radius: 200px 0;
+  font: var(--f2);
+  font-size: 50px;
+  letter-spacing: 10px;
+  text-transform: lowercase;
+  color: var(--ac);
+  -webkit-user-select: none;
+  user-select: none;
+  transition: letter-spacing .8s cubic-bezier(.22,.61,.36,1),
+    border-color .8s ease,
+    box-shadow .8s ease,
+    border-radius .9s cubic-bezier(.22,.61,.36,1);
+}
+#v2 + label::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 55%;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(105deg,
+    transparent 0%,
+    #ffffff0a 30%,
+    #ffffff33 50%,
+    #ffffff0a 70%,
+    transparent 100%);
+  transform: translateX(-180%);
+  animation: v2sweepA 1.1s cubic-bezier(.33,0,.2,1);
+}
+#v2:checked + label::before {
+  animation: v2sweepB 1.1s cubic-bezier(.33,0,.2,1);
+}
+
+@keyframes v2sweepA { to { transform: translateX(280%); } }
+@keyframes v2sweepB { to { transform: translateX(280%); } }
+
+#v2 + label::after {
+  content: 'the calm...';
+  display: inline-block;
+  animation: v2quake 4.5s linear infinite;
+}
+#v2:checked + label::after {
+  content: '...before the storm';
+  animation: none;
+}
+
+@keyframes v2quake {
+  0%, 67%, 81%, 100% { transform: translate(0, 0); text-shadow: none; }
+  68%   { transform: translate(1px, -1px);  text-shadow: 0 0 8px #ffffff80; }
+  69.5% { transform: translate(-2px, 1px);  text-shadow: none; }
+  71%   { transform: translate(1px, 1px);
+          text-shadow: 0 0 12px #ffffffd9, 0 0 30px #b6a8ff73; }
+  72.5% { transform: translate(-1px, -1px); }
+  74%   { transform: translate(2px, 1px);   text-shadow: 0 0 7px #ffffff66; }
+  75.5% { transform: translate(-1px, 0);    text-shadow: none; }
+  77%   { transform: translate(1px, 1px); }
+  78.5% { transform: translate(-1px, -1px); }
+}
+
+#v2 + label:hover {
+  letter-spacing: 7px;
+  border-color: color-mix(in oklab, white 70%, var(--acc));
+  box-shadow: 0 0 24px -10px var(--acc);
+}
+#v2:checked + label { border-radius: 0 200px; }
+
+@keyframes v2sheen {
+  0%, 55%, 100% { transform: translateX(-180%); }
+  80%           { transform: translateX(280%); }
+}
+
+#vbg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  pointer-events: none;
+  filter: saturate(2);
+  transition: opacity .6s ease;
+  -webkit-mask-image:
+    linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%),
+    linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+  -webkit-mask-composite: source-in;
+          mask-image:
+    linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%),
+    linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+          mask-composite: intersect;
+}
+body:has(#v2:checked) #vbg { opacity: 0.4; }
+
+body:has(#v2:checked)::after {
+  filter: sepia(1) hue-rotate(170deg) saturate(2) brightness(0.8);
+}
+html:has(#v2:checked) info:has(box[app]) box img,
+html:has(#v2:checked) info:has(box[pers]) box img {
+  animation: imgshock 9s linear infinite, imgquake 9s linear infinite;
+}
+html:has(#v2:checked) info:has(box[pers]) box img {
+  animation-delay: 4.5s, 4.5s;
+}
+
+@keyframes imgshock {
+  0%, 18%, 22%, 28%, 100% { filter: none; }
+  20% {
+    filter: drop-shadow(0 0 12px #d4f2ff8c) drop-shadow(0 0 30px #6fd0ff4d);
   }
+  25% {
+    filter: drop-shadow(0 0 18px #ffffffbf) drop-shadow(0 0 45px #7fd8ff73)
+      drop-shadow(0 0 80px #2e9dde40);
+  }
+}
+
+@keyframes imgquake {
+  0%, 17%, 27%, 100% { transform: translate(0, 0); }
+  18%   { transform: translate(1px, -1px); }
+  19.5% { transform: translate(-2px, 1px); }
+  21%   { transform: translate(1px, 1px); }
+  22.5% { transform: translate(-1px, -1px); }
+  24%   { transform: translate(2px, 1px); }
+  25.5% { transform: translate(-1px, 0); }
+}
+
+@media (max-width:1200px){
   h1{
     position: relative;
     inset:0;
     text-align: center;
   }
+  .profile-master a::before,
+  #content:before,
+  #content table:nth-of-type(2)::before,
+  #v2 + label {display: none;}
+  .flex:has(.profav) { margin-top:20px; }
+  info {
+    flex-direction: column;
+  }
 }
+
 
 :root {
   --bg: url('https://cdnb.artstation.com/p/assets/images/images/014/669/815/large/tom-lopez-snow.jpg?1544957767');
@@ -574,9 +726,10 @@ code {
   --fch3: white;
   --ac: lightblue;
   
-
+  --vidbg: 1;
 }
 
 html:has(#v2:checked) {
-	
+  --bg: url('https://images.unsplash.com/photo-1537210249814-b9a10a161ae4?q=80&w=3264&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  --avy: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/740ee9a0-4bd5-4423-997f-d7fcdb1799c8/dmt7fvh-3e77eb92-096c-4274-91cc-18df14661aca.png/v1/fill/w_200,h_300,q_80,strp/avy_by_seadragoness_dmt7fvh-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzAwIiwicGF0aCI6Ii9mLzc0MGVlOWEwLTRiZDUtNDQyMy05OTdmLWQ3ZmNkYjE3OTljOC9kbXQ3ZnZoLTNlNzdlYjkyLTA5NmMtNDI3NC05MWNjLTE4ZGYxNDY2MWFjYS5wbmciLCJ3aWR0aCI6Ijw9MjAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.hUJcdrG4RXZK_WrsIcEJk7kKJ6Mq_5Zjmd_OQOheyaM');
 }
