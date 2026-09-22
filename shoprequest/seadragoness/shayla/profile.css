@@ -1,5 +1,3 @@
-/* insert random ahh text to find this thing *//* insert random ahh text to find this thing */
-
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
@@ -540,10 +538,13 @@ code {
 }
 
 #v2 {
-  position: absolute;
-  width: 0;
-  height: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
   opacity: 0;
+  pointer-events: none;
 }
 #v2 + label {
   position: absolute;
@@ -659,21 +660,10 @@ body:has(#v2:checked)::after {
 }
 html:has(#v2:checked) info:has(box[app]) box img,
 html:has(#v2:checked) info:has(box[pers]) box img {
-  animation: imgshock 9s linear infinite, imgquake 9s linear infinite;
+  animation: imgquake 9s linear infinite;
 }
 html:has(#v2:checked) info:has(box[pers]) box img {
   animation-delay: 4.5s, 4.5s;
-}
-
-@keyframes imgshock {
-  0%, 18%, 22%, 28%, 100% { filter: none; }
-  20% {
-    filter: drop-shadow(0 0 12px #d4f2ff8c) drop-shadow(0 0 30px #6fd0ff4d);
-  }
-  25% {
-    filter: drop-shadow(0 0 18px #ffffffbf) drop-shadow(0 0 45px #7fd8ff73)
-      drop-shadow(0 0 80px #2e9dde40);
-  }
 }
 
 @keyframes imgquake {
