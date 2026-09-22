@@ -618,6 +618,7 @@ code {
   animation: none;
 }
 
+
 @keyframes v2quake {
   0%, 67%, 81%, 100% { transform: translate(0, 0); text-shadow: none; }
   68%   { transform: translate(1px, -1px);  text-shadow: 0 0 8px #ffffff80; }
@@ -642,6 +643,14 @@ code {
   0%, 55%, 100% { transform: translateX(-180%); }
   80%           { transform: translateX(280%); }
 }
+
+
+html:has(#v2:checked) info:has(box[app]) h2,
+html:has(#v2:checked) info:has(box[pers]) h2 {
+  animation: none;
+  background-size: 100% 100%;
+}
+
 
 #vbg {
   position: absolute;
