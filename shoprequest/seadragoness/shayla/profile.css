@@ -658,23 +658,6 @@ body:has(#v2:checked) #vbg { opacity: 0.4; }
 body:has(#v2:checked)::after {
   filter: sepia(1) hue-rotate(170deg) saturate(2) brightness(0.8);
 }
-html:has(#v2:checked) info:has(box[app]) box img,
-html:has(#v2:checked) info:has(box[pers]) box img {
-  animation: imgquake 9s linear infinite;
-}
-html:has(#v2:checked) info:has(box[pers]) box img {
-  animation-delay: 4.5s, 4.5s;
-}
-
-@keyframes imgquake {
-  0%, 17%, 27%, 100% { transform: translate(0, 0); }
-  18%   { transform: translate(1px, -1px); }
-  19.5% { transform: translate(-2px, 1px); }
-  21%   { transform: translate(1px, 1px); }
-  22.5% { transform: translate(-1px, -1px); }
-  24%   { transform: translate(2px, 1px); }
-  25.5% { transform: translate(-1px, 0); }
-}
 
 @media (max-width:1200px){
   h1{
