@@ -115,8 +115,18 @@
 
 .nyxirat2 b, .nyxirat2 .mycode_b {
   letter-spacing: 0.5;
-  font-size: 16px;
-  color: #ff85cd !important;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.nyxirat2 incon b,
+.nyxirat2 incon .mycode_b {
+  color: transparent !important;;
+  background: linear-gradient(to right, #EA82FF, #5EFFD9, #de5ebe, #afff82);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: none !important;
+  filter: drop-shadow(0 0 1px #00000085) drop-shadow(0 0 .5px black);
 }
 
 .nyxirat2 speech {
