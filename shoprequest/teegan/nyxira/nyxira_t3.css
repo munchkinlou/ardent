@@ -115,9 +115,20 @@
 
 .nyxirat3 b, .nyxirat3 .mycode_b {
   letter-spacing: 0.5;
-  font-size: 16px;
-  color: #42ffde !important;
+  font-size: 18px;
+  line-height: 1;
 }
+
+.nyxirat3 incon b,
+.nyxirat3 incon .mycode_b {
+  color: transparent !important;;
+  background: linear-gradient(to right, #F2C643, #5EFFD9, #ff489e, #7cff32);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: none !important;
+  filter: drop-shadow(0 0 1px #00000085) drop-shadow(0 0 .5px black);
+}
+
 
 .nyxirat3 speech {
     display: block;
