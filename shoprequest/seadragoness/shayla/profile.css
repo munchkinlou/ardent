@@ -655,8 +655,22 @@ code {
 }
 body:has(#v2:checked) #vbg { opacity: 0.4; }
 
-body:has(#v2:checked)::after {
-  filter: sepia(1) hue-rotate(170deg) saturate(2) brightness(0.8);
+html:has(#v2:checked) info:has(box[app]) box img,
+html:has(#v2:checked) info:has(box[pers]) box img {
+  animation: imgquake 9s linear infinite;
+}
+html:has(#v2:checked) info:has(box[pers]) box img {
+  animation-delay: 4.5s, 4.5s;
+}
+
+@keyframes imgquake {
+  0%, 17%, 27%, 100% { transform: translate(0, 0); }
+  18%   { transform: translate(1px, -1px); }
+  19.5% { transform: translate(-2px, 1px); }
+  21%   { transform: translate(1px, 1px); }
+  22.5% { transform: translate(-1px, -1px); }
+  24%   { transform: translate(2px, 1px); }
+  25.5% { transform: translate(-1px, 0); }
 }
 
 @media (max-width:1200px){
@@ -706,3 +720,8 @@ html:has(#v2:checked) {
   --bg: url('https://images.unsplash.com/photo-1537210249814-b9a10a161ae4?q=80&w=3264&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   --avy: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/740ee9a0-4bd5-4423-997f-d7fcdb1799c8/dmt7fvh-3e77eb92-096c-4274-91cc-18df14661aca.png/v1/fill/w_200,h_300,q_80,strp/avy_by_seadragoness_dmt7fvh-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzAwIiwicGF0aCI6Ii9mLzc0MGVlOWEwLTRiZDUtNDQyMy05OTdmLWQ3ZmNkYjE3OTljOC9kbXQ3ZnZoLTNlNzdlYjkyLTA5NmMtNDI3NC05MWNjLTE4ZGYxNDY2MWFjYS5wbmciLCJ3aWR0aCI6Ijw9MjAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.hUJcdrG4RXZK_WrsIcEJk7kKJ6Mq_5Zjmd_OQOheyaM');
 }
+
+body:has(#v2:checked)::after {
+  filter: sepia(1) hue-rotate(170deg) saturate(2) brightness(0.8);
+}
+
