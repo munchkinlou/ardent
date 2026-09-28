@@ -107,7 +107,7 @@
   text-align: justify;
   font-family: "Karla", sans-serif;
   font-weight: 400;
-  font-size:13px;
+  font-size:14px;
   color: #b7bfcb;
   line-height: 1.2;
 }
@@ -134,7 +134,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: 89%;
-  height: 3px;
+  height: 7px;
   
   border: 1.5px solid;
   border-left: none;
@@ -146,7 +146,7 @@
 .ulchtart2 b, .ulchtart2 .mycode_b {
   font-family: "Cormorant", serif;
   font-weight: 400;
-  font-size: 21px;
+  font-size: 18px;
   text-shadow: none;
   line-height: 1;
   letter-spacing: 0;
@@ -167,56 +167,37 @@
 
 
 @media (max-width: 1200px) {
-  
-  .ulchtart2 {
-    width: 100%;
-    margin: 0;
-    left: 50%;
-    transform:translateX(-50%);
+  .ulchtart2 b:last-of-type,
+  .ulchtart2:before,
+  .ulchtart2 con:before,
+  .ulchtart2 incon:before,
+  .ulchtart2 incon:after,
+  .ulchtart2 ulch {display: none;}
+  .ulchtart2 incon,
+  .ulchtart2 inbor,
+  .ulchtart2 con,
+  .ulchtart2 bor {
+    margin:0;
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    filter: none;
+    color: inherit;
   }
-
   .ulchtart2 bor {
     max-width: 450px;
     width: 100%;
-    border-radius: 0;
-    border: none;
-    padding: 0;
+    margin: auto;
   }
-  .ulchtart2 con {
-    padding: 0px;
-  }
-  
-  .ulchtart2 con:before {
-    display: none;
-  }
-  
-  .ulchtart2 yrsa {
-    display: none;
-  }
-  
-  .ulchtart2 incon {
-    padding: 10px 20px;
-  }
-  
-  
-  .ulchtart2 incon:after {
-    bottom: 110px;
-  }
-  
-  .ulchtart2 incon br:first-child {
-    display: none;
-  }
-
-  .ulchtart2 credit {
-    display: block;
-    position:relative;
-    inset: auto;
-    margin: 5px auto 0;
-    text-align: center;
-  }
-  
-  .ulchtart2 speech {
-    margin: 30px auto 10px;
+  .ulchtart2 b, .ulchtart2 .mycode_b {
+    background: none !important;
+    -webkit-background-clip: border-box !important;
+    background-clip: border-box !important;
+    -webkit-text-fill-color: currentColor !important;
+    color: inherit !important;
+    font-weight: 600;
   }
 
 }
