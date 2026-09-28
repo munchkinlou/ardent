@@ -84,6 +84,7 @@
 .tmp_plot info:has(box) > box:not(:has(img)) {
   flex: 1 1 0;
   min-width: 0;
+  align-self: stretch;
 }
 .tmp_plot box img {
   width: 100%;
