@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+
+.tmp_plot {
+  position: relative;
+  width: 800px;
+  margin: 40px auto;
+  box-sizing: border-box;
+  padding: 40px 38px 30px;
+}
+.tmp_plot:after{
+  content:'template @ andy';
+  position: absolute;
+  width:100%;
+  height:20px;
+  bottom:-30px;
+  text-align: right;
+  margin-lefT:-40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 10px;
+  opacity: 0.8;
+  color:inherit;
+}
+.tmp_plot > br { display: none; }
+
+.tmp_plot h1 {
+  margin: 0;
+  padding: 0 0 4px;
+}
+.tmp_plot sub {
+  display: block;
+  margin: 0;
+}
+.tmp_plot box h2 {
+  text-align: center;
+  margin: 0 0 5px;
+}
+.tmp_plot h3 {
+  text-align: center;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-size: 13px;
+}
+.tmp_plot a {
+  text-decoration:none;
+  transition:transform .3s ease;
+}
+.tmp_plot a:hover {transform:scale(1.05)}
+.tmp_plot a:visited {
+  text-decoration: none;
+}
+.tmp_plot info {
+  display: block;
+  padding: 0 0 22px;
+  margin: 22px 0 0;
+}
+.tmp_plot info:last-of-type { padding-bottom: 0;border-bottom: none; }
+.tmp_plot info:has(box) {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.tmp_plot info:has(box) > box:has(img) {
+  flex: 0 0 38%;
+  max-width: 38%;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+}
+.tmp_plot info:has(box) > box:not(:has(img)) {
+  flex: 1 1 0;
+  min-width: 0;
+}
+.tmp_plot box img {
+  width: 100%;
+  display: block;
+  padding: 5px;
+}
+.tmp_plot form {
+  max-width: 300px;
+  width: 100%;
+  margin: auto;
+  user-select: all;
+  padding: 8px;
+}
+
+@media (max-width: 800px) {
+  .tmp_plot {
+    width: auto;
+    margin: 20px;
+  }
+  .tmp_plot info:has(box) {
+    flex-direction: column;
+  }
+  .tmp_plot info:has(box) > box:has(img),
+  .tmp_plot info:has(box) > box:not(:has(img)) {
+    flex: 0 0 auto;
+    max-width: 100%;
+    width: 100%;
+    align-self: auto;
+  }
+}
