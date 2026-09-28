@@ -90,8 +90,10 @@
   display: block;
   padding: 5px;
 }
-.tmp_plot form {
+.tmp_plot code {
   max-width: 300px;
+  max-height: max-content;
+  overflow-y: visible;
   width: 100%;
   margin: auto;
   user-select: all;
