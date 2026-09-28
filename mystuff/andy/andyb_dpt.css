@@ -29,6 +29,10 @@
   margin: 0;
   padding: 0 0 4px;
   line-height:1;
+  text-transform: none;
+}
+.tmp_plot h2 {
+  font-weight: 600;
 }
 .tmp_plot sub {
   display: block;
