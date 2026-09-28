@@ -46,6 +46,7 @@
   font-size: 13px;
 }
 .tmp_plot a {
+  display:inline-block; 
   text-decoration:none;
   transition:transform .3s ease;
 }
