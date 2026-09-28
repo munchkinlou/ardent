@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+
+.ulchtart2 {
+	position: relative;
+  width: 600px;
+  margin: 20px auto 85px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.ulchtart2:before {
+  content: 'code by andy';
+  position: absolute;
+  bottom:-56px;
+  left:55px;
+  width: 100%;
+  height:50px;
+  text-align: left;
+  font-family: "Unica One", arial;
+  text-transform: lowercase;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+.ulchtart2 ulch {
+  position: absolute;
+  bottom: -123px;
+  left: 103px;
+  width: 505px;
+  height: 621px;
+  margin: 0 auto;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/batbites/ulchtar/image-614.png?updatedAt=1790567975677')
+    no-repeat left;
+  background-size: contain; 
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(1px 1px 2px rgb(0, 0, 0)) drop-shadow(1px 1px 2px rgb(0, 0, 0)) drop-shadow(1px 1px 100px #ffffff3b);
+}
+
+.ulchtart2 bor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 500px;
+  padding: 10px;
+  margin: 0 auto;
+  
+  border: 3px solid darkgrey;
+  border-radius: 300px 300px 0 0;
+  overflow: hidden;
+  
+  filter: drop-shadow(1px 1px 2px black);
+}
+
+.ulchtart2 con {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: inherit;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  pointer-events: none;
+  margin: 0 auto;
+}
+
+.ulchtart2 con::before {
+  border-radius: inherit;
+  content:'';
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/starrynight.jpg?updatedAt=1753495763500');
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+  filter: grayscale(1);
+}
+
+.ulchtart2 inbor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #737a85, #d1d1d3, #737a85);
+  padding: 3px;
+  border-radius: inherit;
+  box-shadow: 1px 1px 5px black;
+}
+
+.ulchtart2 incon {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: inherit;
+  padding: 160px 30px 430px;
+  width: 100%;
+  background: linear-gradient(to bottom, rgb(16, 15, 18), #262f3a);
+  height: auto;
+  box-shadow: inset 0 0 10px rgb(6, 8, 12);
+  text-align: justify;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  font-size:13px;
+  color: #b7bfcb;
+  line-height: 1.2;
+}
+
+.ulchtart2 incon:before {
+  content: '';
+  position: absolute;
+  z-index: 10;
+  top: 51px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: #2e2e2e;
+  -webkit-mask: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/star.png')
+    center / contain no-repeat;
+          mask: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/star.png')
+    center / contain no-repeat;
+}
+
+.ulchtart2 incon:after {
+  position: absolute;
+  content: '';
+  bottom: 447px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 89%;
+  height: 3px;
+  
+  border: 1.5px solid;
+  border-left: none;
+  border-right: none;
+  border-image: linear-gradient(90deg, #808080, #fff, #808080) 1;
+  opacity: 0.8;
+}
+
+.ulchtart2 b, .ulchtart2 .mycode_b {
+  font-family: "Cormorant", serif;
+  font-weight: 400;
+  font-size: 21px;
+  text-shadow: none;
+  line-height: 1;
+  letter-spacing: 0;
+  color: transparent !important;;
+  background: linear-gradient(to bottom, #ff0b00, #e54836) !important;;
+  -webkit-background-clip: text !important;;
+  background-clip: text !important;;
+}
+
+.ulchtart2 b:last-of-type {
+  display: block;
+  position: absolute;
+  bottom: 387px;
+  left: 54px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
+@media (max-width: 1200px) {
+  
+  .ulchtart2 {
+    width: 100%;
+    margin: 0;
+    left: 50%;
+    transform:translateX(-50%);
+  }
+
+  .ulchtart2 bor {
+    max-width: 450px;
+    width: 100%;
+    border-radius: 0;
+    border: none;
+    padding: 0;
+  }
+  .ulchtart2 con {
+    padding: 0px;
+  }
+  
+  .ulchtart2 con:before {
+    display: none;
+  }
+  
+  .ulchtart2 yrsa {
+    display: none;
+  }
+  
+  .ulchtart2 incon {
+    padding: 10px 20px;
+  }
+  
+  
+  .ulchtart2 incon:after {
+    bottom: 110px;
+  }
+  
+  .ulchtart2 incon br:first-child {
+    display: none;
+  }
+
+  .ulchtart2 credit {
+    display: block;
+    position:relative;
+    inset: auto;
+    margin: 5px auto 0;
+    text-align: center;
+  }
+  
+  .ulchtart2 speech {
+    margin: 30px auto 10px;
+  }
+
+}
