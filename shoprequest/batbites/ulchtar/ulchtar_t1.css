@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+
+.ulchtart1 {
+  width: 600px;
+  margin: 20px auto 45px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ulchtart1:before {
+  content: 'code by andy';
+  position: absolute;
+  bottom:-55px;
+  left:0;
+  width: 100%;
+  height:50px;
+  text-align: center;
+  font-family: "Unica One", arial;
+  text-transform: lowercase;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.ulchtart1 con {
+  display: block;
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom, #061225, #0b326c, #04040f);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+  padding-bottom: 200px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  pointer-events: none;
+  padding: 10px;
+  box-shadow: 2px 2px 4px black;
+  
+  --divi: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/2.png?updatedAt=1761259622322') no-repeat center / contain;
+  --dh: 35px;
+}
+.ulchtart1 con:after{
+  content: '';
+  position: absolute;
+  top: 702px;
+  left: 0;
+  width: 100%;
+  height: var(--dh);
+  background: var(--divi);
+  filter: brightness(0) blur(2px);
+  opacity: .4;
+  pointer-events: none;
+  z-index: 9;
+}
+.ulchtart1 con:before{
+  content: '';
+  position: absolute;
+  top: 700px;
+  left: 0;
+  width: 100%;
+  height: var(--dh);
+  background: linear-gradient(to right, #46689c, #e4eeff, #2658a5);
+  -webkit-mask: var(--divi);
+          mask: var(--divi);
+  pointer-events: none;
+  z-index: 10;
+}
+
+.ulchtart1 incon {
+  display: block;
+  position: relative;
+  z-index: 6;
+  padding: 750px 35px 0px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: visible;
+  background: linear-gradient(to bottom, #225681 700px,#020c1e);
+  border: 2px solid;
+  border-image: linear-gradient(to bottom, #020e25 100px, #fff,#5e98c9) 1;
+  border-top: none;
+  box-shadow: 0 0 5px #000000c2;
+  text-shadow: 0 0 1px black, 0 0 1px black;
+  
+  text-align: justify;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+
+}
+
+.ulchtart1 b, .ulchtart1 .mycode_b {
+  font-family: "Cormorant", serif;
+  font-size: 21px;
+  font-weight: 400 !important;
+  color: #ff4343;
+  line-height: 1;
+  letter-spacing: 0;
+  text-shadow: 0 0 1px black;
+}
+
+.ulchtart1 incon:before{
+  position: absolute;
+  content: '';
+  inset:0;
+  width:100%;
+  height: 100%;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/batbites/ulchtar/Ul-3.png?updatedAt=1790567978237');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  -webkit-mask: linear-gradient(to bottom, black 600px, transparent 800px);
+  mask: linear-gradient(to bottom, black 600px, transparent 800px);
+  z-index: -1;
+}
+
+.ulchtart1 incon:after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  backdrop-filter: blur(7px) saturate(1.15);
+  box-shadow: inset 0 0 20px #cef4fd85;
+  -webkit-backdrop-filter: blur(7px) saturate(1.15);
+  -webkit-mask: linear-gradient(to bottom, transparent 600px, black 700px);
+          mask: linear-gradient(to bottom, transparent 600px, black 700px);
+}
+
+.ulchtart1 incon br:nth-of-type(-n+2) {
+  display: none;
+}
+
+.ulchtart1 incon b:last-of-type {
+  display: block;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top:20px;
+}
+
+.ulchtart1 incon b:last-of-type:before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left:50%;
+  transform:translateX(-50%);
+  width: 80%;
+  height: 1.1px;
+  background: linear-gradient(to right, transparent, #d2f9ff, transparent);
+}
+
+
+@media (max-width: 1200px) {
+  .ulchtart1 {
+    margin: 0;
+    max-width: 450px;
+    width: 100%;
+    left:50%;
+    transform: translateX(-50%);
+    padding-top: 20px;
+  }
+  .ulchtart1:before,
+  .ulchtart1 con:before, .ulchtart1 con:after,
+  .ulchtart1 incon:before, .ulchtart1 incon:after {
+    display: none;
+  }
+  .ulchtart1 con,
+  .ulchtart1 incon {
+    padding: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+    color: inherit;
+    text-shadow: none;
+  }
+  .ulchtart1 b, .ulchtart1 .mycode_b {
+    font-weight: 600;
+    color: inherit;
+  }
+    
+}
