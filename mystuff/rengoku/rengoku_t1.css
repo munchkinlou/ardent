@@ -141,7 +141,7 @@
   line-height: 1.2;
 }
 
-.rengokut1_incon speak {
+.rengokut1_incon speak, .rengokut1_incon .mycode_b {
   color: transparent;
   background: linear-gradient(to bottom, #e96f36, #efca50);
   -webkit-background-clip: text;
