@@ -102,8 +102,8 @@
   z-index:10;
 }
 
-.rengokut2_con speech > br {
-  font-size:0;
+.rengokut2_con speech br {
+  display: none;
 }
 
 .rengokut2_con > * {
@@ -130,7 +130,7 @@
   line-height: 1.2;
 }
 
-.rengokut2_incon speak {
+.rengokut2_incon speak, .rengokut2_incon .mycode_b {
   color: transparent;
   background: linear-gradient(to bottom, #e96f36, #efca50);
   -webkit-background-clip: text;
