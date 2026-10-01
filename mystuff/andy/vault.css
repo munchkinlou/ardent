@@ -42,11 +42,21 @@ header .title:before {
 }
 #content h1:first-of-type {display: none;}
 #content {
+  position: relative;
   background: linear-gradient(to bottom, #0f1123d9, #191d3ccf, #0f1123d9);
   border: 8px double #3a2f59;
   box-sizing: border-box;
   margin: 0 auto 150px;
   color: white !important;
+}
+#content:before{
+  position: absolute;
+  top:-30px;
+  right: 0;
+  content:'background @ aenami | code @ andy';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.5;
 }
 .flex:has(.postbit){margin:0 0 -30px;}
 .flex:has(vault[andy]) .member_postbit {
