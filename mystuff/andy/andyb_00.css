@@ -261,6 +261,7 @@
   overflow:visible;
   padding: 20px 10px;
   user-select: all;
+  color: inherit;
 }
 @media (max-width:1200px){
     .ab00 code { user-select:auto;}
