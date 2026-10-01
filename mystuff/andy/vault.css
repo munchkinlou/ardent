@@ -1,1 +1,139 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Didact+Gothic&display=swap');
+
+body {
+  background: black;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 12px;
+}
+
+body:after {
+  background-image: url('https://ik.imagekit.io/arl60/Ardent/personal/Backgrounds/new_year_eve_4k.png?updatedAt=1774151769756');
+}
+nav {
+	background: #2f3255 !important;
+	backdrop-filter: blur(2px);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+	margin: 0 20px;
+	font-weight: 400;
+	font-size: 12px !important;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.dropdown-menu {
+	background: #2c273d;
+}
+a {
+  color: #f2daff !important;
+}
+header {
+  position: relative;
+  background: none;
+}
+header .title {
+  font-size:0;
+  padding: 50px 0;
+}
+header .title:before {
+  content:"Andy's Vault";
+  font-size:100px;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+#content h1:first-of-type {display: none;}
+#content {
+  background: linear-gradient(to bottom, #0f1123d9, #191d3ccf, #0f1123d9);
+  border: 8px double #3a2f59;
+  box-sizing: border-box;
+  margin: 0 auto 150px;
+  color: white !important;
+}
+.flex:has(.postbit){margin:0 0 -30px;}
+.flex:has(vault[andy]) .member_postbit {
+  background: #9c9bc3bd;
+  border-radius: 20px;
+  margin: 0 10px 0 0 !important;
+}
+small { 
+  color: #cfb8f0 !important;
+  text-transform: lowercase;
+  letter-spacing: 2px;
+  font-size: 8px;
+}
+.postwrap:has(vault[andy]) {
+  position: relative;
+  background: #110a23d1;
+  border-radius: 20px;
+  padding: 60px 60px;
+  box-sizing: border-box;
+}
+.tborder {
+  position: relative;
+  background: #110a23d1;
+  border-radius: 20px;
+}
+.thead {
+  background: transparent;
+  font-family: Redressed;
+  text-shadow: none;
+  text-transform: capitalize;
+  font-size: 20px;
+  color: white;
+  padding: 30px 0 10px;
+  text-align: center;
+  opacity: 0.6;
+}
+.tborder:before,
+.postwrap:has(vault[andy]):before {
+  content: '';
+  z-index: 10;
+  position: absolute;
+  inset: 0;
+  border: 70px solid;
+  border-image: url('https://ik.imagekit.io/arl60/Ardent/shop/Morgay/Vaevnir/frame.png?updatedAt=1755025540494') 70 stretch;
+  pointer-events: none;
+  filter: brightness(.40) sepia(1) saturate(1) hue-rotate(-160deg);
+}
+#quickreply_e td {
+  padding: 20px 50px 0;
+}
+#quickreply_e {
+  display: flex;
+  flex-wrap: wrap;
+}
+#quickreply_e > tr {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+}
+#quickreply_e > tr:first-of-type > td:first-of-type { flex: 0 0 22%; }
+#quickreply_e > tr:first-of-type > td:last-of-type { flex: 1 1 0; min-width: 0; }
+#quickreply_e > tr:nth-last-of-type(-n+2) > td {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 20px 0;
+}
+#quickreply_e > tr:nth-last-of-type(2) > td { display: flex; justify-content: flex-end; }
+#quickreply_e > tr:nth-last-of-type(1) > td { display: flex; justify-content: flex-start; }
+#quickreply_e > tr:nth-last-of-type(2) { 
+  text-align: right;
+  flex: 0 0 60%; 
+  max-width: 60%; }
+#quickreply_e > tr:nth-last-of-type(1) { 
+  flex: 0 0 30%;
+  max-width: 30%;
+}
+#quickreply_e button {
+  margin: 5px 0;
+  height: 26px;
+}
+th, .affiliates img, input, select, textarea, code, button, hr { background: #3f3257; color: white; }
+#message {
+  background: #3f3759;
+  border-radius: 20px;
+  box-shadow: 0 0 20px black;
+  color: white;
+}
+input, button, select {border-radius: 10px; padding: 2px 10px;}
