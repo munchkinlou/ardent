@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Didact+Gothic&display=swap');
 
-#off { display: none; }
+#off { opacity:0;}
 #off + label {
   padding: 6px 14px;
   background: #2f3255;
@@ -11,7 +11,7 @@
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
-  width: 100px;
+  width: 200px;
 }
 
 html:not(:has(#off:checked)) {
@@ -37,36 +37,73 @@ html:not(:has(#off:checked)) {
   & a { color: #f2daff !important; }
   & header { position: relative; background: none; }
   & header .title { font-size: 0; padding: 50px 0; }
-  & header .title:before {
-    content: "Andy's Vault";
-    font-size: 100px;
-    color: white;
-    text-align: center;
-    width: 100%;
-  }
-  & #content h1:first-of-type { display: none; }
   & #content {
     position: relative;
-    background: linear-gradient(to bottom, #0f1123d9, #191d3ccf, #0f1123d9);
-    border: 8px double #3a2f59;
+    background:transparent;
     box-sizing: border-box;
     margin: 0 auto 150px;
     color: white !important;
   }
   & #content:before {
     position: absolute;
-    top: -30px;
-    right: 0;
-    content: 'background @ aenami | code @ andy';
+    bottom: -30px;
+    left: 50%;
+    transform:translateX(-50%);
+    content: 'background @ aenami - code @ andy';
     text-transform: uppercase;
     letter-spacing: 2px;
     opacity: 0.5;
   }
+  & #content > h1 { 
+    position: relative;
+    margin: 400px 0 0;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 60px;
+    letter-spacing: 2px;
+    filter: drop-shadow(0 0 5px black);
+    z-index: 10;
+  }
+  & #content > h1:before{
+    content: '';
+    position: absolute;
+    top:-400px;
+    left:0;
+    width:100%;
+    height: 400px;
+    background: url('https://ik.imagekit.io/arl60/Ardent/personal/Andy/loucoffee.png')
+      no-repeat center / contain;
+    z-index: -1;
+  }
+  & #content > h2 {
+    position: relative;
+    width: 500px;
+    margin: -8px auto 80px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font: 20px "Didact Gothic", sans-serif;
+    letter-spacing: 5px;
+    text-shadow: 0 0 1px black, 0 0 1px black;
+    background: linear-gradient(to right, transparent, #454b8c, transparent);
+    z-index: 10;
+  }
+  & #content > h2 em { font-style: normal;}
+  & .float_right,
+    #content .clear {display: none;}
   & .flex:has(.postbit) { margin: 0 0 -30px; }
   & .flex:has(vault[andy]) .member_postbit {
     background: #9c9bc3bd;
     border-radius: 20px;
     margin: 0 10px 0 0 !important;
+  }
+  & .flex:has(vault[andy]) .author_avatar {
+    box-shadow: 2px 4px 2px #0000006b;
+  }
+  & .flex:has(vault[andy]) .author_avatar img {
+    object-fit: cover;
+    width: 100%;
   }
   & small {
     color: #cfb8f0 !important;
@@ -74,6 +111,18 @@ html:not(:has(#off:checked)) {
     letter-spacing: 2px;
     font-size: 8px;
   }
+  & .flex > div > small {
+    position: absolute;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    opacity: 0.4;
+  }
+  & .postbit_multiquote,
+    .postbit_quote,
+    .postbit_find,
+    .postbit_pm,
+    .postbit_email {display:none}
   & .postwrap:has(vault[andy]) {
     position: relative;
     background: #110a23d1;
