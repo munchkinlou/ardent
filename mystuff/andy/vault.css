@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 
 
 #off { opacity:0;}
@@ -13,7 +16,10 @@
   text-align: center;
   cursor: pointer;
   width: 200px;
+  margin: auto;
+  display: block;
 }
+.actual_post br {display: none;}
 
 html:not(:has(#off:checked)) {
   & body {
@@ -61,7 +67,8 @@ html:not(:has(#off:checked)) {
     color: white;
     text-align: center;
     text-transform: capitalize;
-    font-size: 60px;
+    font-size: 80px;
+    font-family: "WindSong", cursive;
     letter-spacing: 2px;
     filter: drop-shadow(0 0 5px black);
     z-index: 10;
@@ -69,11 +76,11 @@ html:not(:has(#off:checked)) {
   & #content > h1:before{
     content: '';
     position: absolute;
-    top:-400px;
+    top:-350px;
     left:0;
     width:100%;
     height: 400px;
-    background: url('https://ik.imagekit.io/arl60/Ardent/personal/Andy/loucoffee.png')
+    background: url('https://ik.imagekit.io/arl60/Ardent/personal/Andy/loucoffee2.png')
       no-repeat center / contain;
     z-index: -1;
   }
@@ -88,15 +95,25 @@ html:not(:has(#off:checked)) {
     letter-spacing: 5px;
     text-shadow: 0 0 1px black, 0 0 1px black;
     background: linear-gradient(to right, transparent, #454b8c, transparent);
-    z-index: 10;
+    z-index: 9;
   }
   & #content > h2 em { font-style: normal;}
   & .float_right,
     #content .clear {display: none;}
   & .flex:has(.postbit) { margin: 0 0 -30px; }
+  & .character_postbit h2,
+    .member_postbit h2 {
+      font-family: "Allura", cursive;
+      font-size: 35px;
+      filter: drop-shadow(0 0 2px #00000075);
+  }
+  & .member_postbit h2 span {
+    text-decoration: none !important;
+  }
   & .flex:has(vault[andy]) .member_postbit {
-    background: #9c9bc3bd;
-    border-radius: 20px;
+    background: #04042b;
+    border: 2px solid;
+    border-image: linear-gradient(to bottom, #522844, #566fba, #3c1e3b) 1;
     margin: 0 10px 0 0 !important;
   }
   & .flex:has(vault[andy]) .author_avatar {
@@ -112,6 +129,7 @@ html:not(:has(#off:checked)) {
     letter-spacing: 2px;
     font-size: 8px;
   }
+  & .flex:has(small){margin:0 !important;}
   & .flex > div > small {
     position: absolute;
     bottom:20px;
@@ -126,10 +144,13 @@ html:not(:has(#off:checked)) {
     .postbit_email {display:none}
   & .postwrap:has(vault[andy]) {
     position: relative;
-    background: #110a23d1;
+    background: #0e0525d9;
     border-radius: 20px;
-    padding: 60px 60px;
+    padding: 40px 60px 60px;
     box-sizing: border-box;
+  }
+  & h2 {
+    
   }
   & .tborder {
     position: relative;
@@ -156,7 +177,7 @@ html:not(:has(#off:checked)) {
     border: 70px solid;
     border-image: url('https://ik.imagekit.io/arl60/Ardent/shop/Morgay/Vaevnir/frame.png?updatedAt=1755025540494') 70 stretch;
     pointer-events: none;
-    filter: brightness(.40) sepia(1) saturate(1) hue-rotate(-160deg);
+    filter: brightness(.25) sepia(1) saturate(2.5) hue-rotate(-100deg);
   }
   & #quickreply_e td { padding: 20px 50px 0; }
   & #quickreply_e { display: flex; flex-wrap: wrap; }
