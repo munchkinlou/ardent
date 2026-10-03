@@ -80,7 +80,7 @@ html:not(:has(#off:checked)) {
     left:0;
     width:100%;
     height: 400px;
-    background: url('https://ik.imagekit.io/arl60/Ardent/personal/Andy/loucoffee2.png')
+    background: url('https://ik.imagekit.io/arl60/Ardent/personal/Andy/Andy2.png?updatedAt=1755463582012')
       no-repeat center / contain;
     z-index: -1;
   }
@@ -88,16 +88,46 @@ html:not(:has(#off:checked)) {
     position: relative;
     width: 500px;
     margin: -8px auto 80px;
+    padding: 0;
     text-align: center;
-    color: white;
+    color: #f2daff;
     text-transform: uppercase;
     font: 20px "Didact Gothic", sans-serif;
     letter-spacing: 5px;
-    text-shadow: 0 0 1px black, 0 0 1px black;
+    text-shadow: 0 0 6px #454b8c, 0 0 1px black;
     background: linear-gradient(to right, transparent, #454b8c, transparent);
+    border-block: 1px solid transparent;
+    border-image: linear-gradient(to right, transparent, #cfb8f0, transparent) 1;
     z-index: 9;
   }
-  & #content > h2 em { font-style: normal;}
+  & #content > h2::before,
+  & #content > h2::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 15px;
+    border: 0 solid #cfb8f0;
+    filter: drop-shadow(0 0 3px #454b8c);
+    pointer-events: none;
+  }
+  & #content > h2::before {
+    top: -3px;
+    left: -3px;
+    border-width: 2px 0 0 1px;
+  }
+  & #content > h2::after {
+    bottom: -3px;
+    right: -3px;
+    border-width: 0 1px 2px 0;
+  }
+  & #content > h2 em {
+    font: 32px "Allura", cursive;
+    text-transform: none;
+    letter-spacing: 5px;
+    color: #cfb8f0;
+    vertical-align: -3px;
+    margin: 0 4px;
+  }
   & .float_right,
     #content br.clear {display: none;}
   & .flex:has(.postbit) { margin: 0 0 -30px; }
