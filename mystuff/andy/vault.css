@@ -99,7 +99,7 @@ html:not(:has(#off:checked)) {
   }
   & #content > h2 em { font-style: normal;}
   & .float_right,
-    #content .clear {display: none;}
+    #content br.clear {display: none;}
   & .flex:has(.postbit) { margin: 0 0 -30px; }
   & .character_postbit h2,
     .member_postbit h2 {
