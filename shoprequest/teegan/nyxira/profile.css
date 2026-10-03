@@ -153,7 +153,6 @@ a {color: #ffca67 !important;}
   pointer-events: none;
   opacity: 1;
 }
-info[pers] img:first-of-type,
 info[app] img:first-of-type {
   margin-bottom:40px;
   height: 450px;
@@ -255,27 +254,29 @@ info[misc] box[wrap] > box {
   flex-direction: column;
   justify-content: center;
 }
-info[misc] box[wrap] > box[gal] {
-  flex: 0 0 40%;
-  max-width: 40%;
-  justify-content: stretch;
-}
-info[misc] box[wrap] > box > dl {
-  margin: 0;
-}
-info[misc] box[gal] gal {
-  padding: 40px;
-  height: 100%;
-}
 gal {
   position: relative;
   display: block;
-  width: 100%;
-  aspect-ratio: 4 / 3;
+  margin: 50px auto 80px;
+  width: 90%;
+  aspect-ratio: 4 / 2.5;
   overflow: hidden;
   border-radius: 10px;
   background: #071626b2;
   box-shadow: inset 0 0 50px #070a19a1;
+  padding: 40px;
+  overflow: visible;
+}
+gal:before {
+  content: 'gallery';
+  position: absolute;
+  top:-30px;
+  left:30px;
+  font-size:50px;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  font-family: "Ruthie", cursive;
+  z-index: 10;
 }
 gal img { display: none; }
 gal img[cur] {
@@ -360,6 +361,7 @@ dd {
 }
 th, .affiliates img, input, select, textarea, code, button, hr { background: #183d5a; color: white; }
 
+gal:before,
 .thead strong,
 info[misc] h3,
 info h2 {
