@@ -325,6 +325,115 @@ dd {
   width: 100%;
   margin-bottom: 10px;
 }
+
+info[history],
+.blocky:has(info[fam]),
+.tab:has(code){
+  display: block;
+  min-height: 150px;
+  padding: 30px 50px;
+  background: linear-gradient(to bottom, #08192bf0, #092f43c4);
+  border: 1px solid;
+  border-image: var(--frame) 1;
+  box-shadow: inset 0 0 10px black,
+    5px 5px 10px black;
+  color: white;
+}
+info[history] p:before {display: none;}
+info[history] { min-height: 200px; }
+
+info[history] p { text-align: center; }
+.flex.fill:has(info[history]) { margin-bottom: 40px; }
+.flex.fill:has(info[history]) div:last-of-type { display: none; }
+
+.tab:has(info[history]) h2,
+.tab:has(info[fam]) h2 {
+  margin: 30px auto 10px;
+  width: 100px;
+  text-align: center;
+  text-shadow: none;
+  font-family: "Gilda Display", serif;
+}
+.tab:has(code) h2 {
+  font-family: "Gilda Display", serif;
+}
+.blocky:has(info[fam]) span {
+  display: block;
+  text-align: right;
+  padding: 0 10px 10px 0;
+}
+.tborder:has(.rpgsk_agent_lines){
+  margin-top: 20px !important;
+  box-shadow: 5px 5px 10px black;
+}
+.rpgsk_agent_lines,
+.rpgsk_empty_agent_lines {
+  display: block;
+  width: 100%;
+  background:none;
+  color:var(--fc);
+}
+.rpgsk_agent_lines {
+  padding: 30px 0 20px;
+  text-transform: uppercase;
+  font: var(--f3);
+  font-size:15px;
+  letter-spacing: 2px;
+}
+.rpgsk_skill_head{
+  background:none;
+  text-align: left;
+  font-size:15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color:white;
+}
+.rpgsk_mem_prof_skill_points {
+  display: inline-block;
+  width:35px;
+  margin: 0 0 0 15px;
+  text-align: center;
+	background: #1a5b5b;
+	border-radius: 5px;
+  padding: 5px;
+	font-size:15px !important;
+}
+.rpgsk_mem_prof_skill_row {
+  text-align: left;
+  margin: 5px 0;
+}
+.rpgsk_mem_prof_skill_row a {
+  text-transform: lowercase !important;
+  font-family: "Gilda Display", serif;
+  color: white !important;
+  letter-spacing: 0 !important;
+  font-size:12px;
+}
+.blocky:has(.rpgsk_skill_head){
+  margin: 0 !important;
+  padding: 0 20px 30px !important;
+}
+.blocky:has(.rpgsk_skill_head){
+	border-radius: 0;
+	background: none;
+	border: none;
+	padding: 30px 50px !important;
+	box-shadow: none;
+}
+.tborder:has(.rpgsk_skill_head) {
+  background: linear-gradient(to bottom, #08192bf0, #092f43c4);
+}
+.blocky:has(.rpgsk_skill_head):before{display: none;}
+.tab:has(code) {
+  margin-top:30px !important;
+  padding: 20px 50px 40px !important;
+}
+code {
+  background:#162c43;
+  box-shadow: 0 0 5px #0000005c;
+  color: white;
+}
+
 .thead {
   background: linear-gradient(to right, #092f43c4, #08192bf0, #092f43c4);
   border: 2px solid #85f2c9;
@@ -359,8 +468,10 @@ dd {
   background: transparent;
   color: white;
 }
-th, .affiliates img, input, select, textarea, code, button, hr { background: #183d5a; color: white; }
-
+th, .affiliates img, input, select, textarea, button, hr { background: #183d5a; color: white; }
+.tab:has(code) h2,
+.tab:has(info[history]) h2,
+.tab:has(info[fam]) h2,
 gal:before,
 .thead strong,
 info[misc] h3,
@@ -370,6 +481,7 @@ info h2 {
   -webkit-background-clip: text;
   background-clip: text;
   filter:drop-shadow(0 0 1px black) drop-shadow(0 0 1px black);
+  text-shadow: none;
 }
 h1,
 .blocky:has(info) span,
