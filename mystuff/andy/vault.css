@@ -2,24 +2,288 @@
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Qwigley&display=swap');
 
+.actual_post br {display: none;}
 
-#off { opacity:0;}
+#off {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
 #off + label {
-  padding: 6px 14px;
-  background: #2f3255;
+  display: block;
+  width: 300px;
+  margin: 0 auto 40px;
+  padding: 16px 20px;
+  background:
+    radial-gradient(ellipse at top, #4a3f7866, transparent 70%),
+    linear-gradient(to right, #241c45, #3f3257 50%, #241c45);
   color: #f2daff;
   border: 1px solid #3a2f59;
-  border-radius: 10px;
-  letter-spacing: 2px;
+  font: 13px/1 "Didact Gothic", sans-serif;
+  letter-spacing: 4px;
   text-transform: uppercase;
   text-align: center;
+  text-shadow: 0 0 6px #cfb8f088;
   cursor: pointer;
-  width: 200px;
-  margin: auto;
-  display: block;
+  transition: all .4s ease;
 }
-.actual_post br {display: none;}
+#off + label::before,
+#off + label::after {
+  content: "✦";
+  color: #cfb8f0;
+  font-size: 11px;
+  text-shadow: 0 0 6px #cfb8f0;
+  transition: color .4s ease, margin .4s ease;
+}
+#off + label::before { margin-right: 14px; }
+#off + label::after { margin-left: 14px; }
+#off + label:hover {
+  border-color: #cfb8f0;
+  transform: translateY(-2px);
+}
+#off + label:hover::before { margin-right: 20px; }
+#off + label:hover::after { margin-left: 20px; }
+#off:focus-visible + label {
+  outline: 1px solid #cfb8f0;
+  outline-offset: 4px;
+}
+#off:checked + label {
+  background:
+    radial-gradient(ellipse at top, #f2daff44, transparent 70%),
+    linear-gradient(to right, #454b8c, #6a4f9e 50%, #454b8c);
+  border-color: #f2daff;
+  color: #fff;
+  text-shadow: 0 0 8px #f2daff;
+  animation: vault-toggle-glow 2s ease-in-out infinite;
+}
+#off:checked + label::before,
+#off:checked + label::after {
+  color: #fff;
+  text-shadow: 0 0 10px #f2daff;
+}
+
+vault[andy] info {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  column-gap: 40px;
+  margin: 50px 40px 40px;
+}
+vault[andy] info #off + label {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: center;
+  translate: 0 90px;
+  width: auto;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+vault[andy] box {
+  display: block;
+  min-width: 0;
+}
+
+vault[andy] box:first-of-type {
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: center;
+  width: 240px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #3a2f59;
+  box-shadow: 0 0 0 6px #110a23a6, 0 0 0 7px #cfb8f055, 0 0 25px #000000a0;
+  position: relative;
+  z-index: 1;
+}
+vault[andy] box img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .6s ease;
+}
+
+vault[andy] box:last-of-type {
+  grid-column: 2;
+  grid-row: 1;
+  position: relative;
+  padding: 30px 20px 20px;
+  background: #281f3f;
+  box-sizing: border-box;
+  isolation: isolate;
+  z-index: 1;
+}
+vault[andy] box:last-of-type::before {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  --vault-line: #cfb8f0;
+  --vault-thick: 2px;
+  background:
+    linear-gradient(var(--vault-line) 0 0) top left / var(--vault-corner) var(--vault-thick),
+    linear-gradient(var(--vault-line) 0 0) top left / var(--vault-thick) var(--vault-corner),
+    linear-gradient(var(--vault-line) 0 0) top right / var(--vault-corner) var(--vault-thick),
+    linear-gradient(var(--vault-line) 0 0) top right / var(--vault-thick) var(--vault-corner),
+    linear-gradient(var(--vault-line) 0 0) bottom left / var(--vault-corner) var(--vault-thick),
+    linear-gradient(var(--vault-line) 0 0) bottom left / var(--vault-thick) var(--vault-corner),
+    linear-gradient(var(--vault-line) 0 0) bottom right / var(--vault-corner) var(--vault-thick),
+    linear-gradient(var(--vault-line) 0 0) bottom right / var(--vault-thick) var(--vault-corner);
+  background-repeat: no-repeat;
+  filter: drop-shadow(0 0 4px #454b8c);
+  animation: vault-corner-float 3s ease-in-out infinite;
+  transition: --vault-corner .7s ease;
+  pointer-events: none;
+  z-index: 2;
+}
+vault[andy] box:last-of-type::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  background: conic-gradient(from var(--vault-spin), transparent 0 65%, #454b8c, #cfb8f0, #f2daff, transparent);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  animation: vault-frame-spin 3s linear infinite;
+  transition: opacity .6s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+vault[andy] q {
+  display: block;
+  position: relative;
+  width: max-content;
+  max-width: 100%;
+  margin: 0 auto;
+  quotes: none;
+  font: italic 50px/1.1 "Qwigley", cursive;
+  color: #f2daff;
+  text-align: center;
+  text-shadow: 0 0 6px #cfb8f066, 0 0 14px #e8a6d955;
+  animation: vault-quote-bob 4s ease-in-out infinite;
+  z-index: 3;
+}
+vault[andy] q::before,
+vault[andy] q::after {
+  position: absolute;
+  font-style: normal;
+  line-height: 1;
+  pointer-events: none;
+  animation: vault-heart-float 3s ease-in infinite;
+}
+vault[andy] q::before {
+  content: "♡";
+  top: 12px;
+  left: -16px;
+  font-size: 18px;
+  color: #f2daff;
+  text-shadow: 0 0 6px #cfb8f0;
+}
+vault[andy] q::after {
+  content: "♥";
+  top: 2px;
+  right: -12px;
+  font-size: 13px;
+  color: #e8a6d9;
+  text-shadow: 0 0 6px #e8a6d9;
+  animation-delay: 1.5s;
+}
+vault[andy] q2 {
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  margin: -4px auto -20px;
+  padding: 0 4px 6px;
+  font: 600 20px/1 "Cormorant Garamond", serif;
+  font-variant: small-caps;
+  letter-spacing: 4px;
+  color: #e8a6d9;
+  text-align: center;
+  text-shadow: 0 0 6px #e8a6d966;
+  background: radial-gradient(circle, #e8a6d9 1px, transparent 1.5px) 0 100% / 6px 2px repeat-x;
+  position: relative;
+  z-index: 3;
+}
+vault[andy] q2::before,
+vault[andy] q2::after {
+  content: "⋆";
+  font-size: 14px;
+  color: #f2daff;
+  text-shadow: 0 0 6px #cfb8f0;
+}
+vault[andy] q2::before { margin-right: 10px; }
+vault[andy] q2::after { margin-left: 10px; }
+
+vault[andy] info p {
+  margin: 40px 10px 10px;
+  text-align: center;
+  font-size: 15px;
+  font-style: italic;
+  color: white;
+}
+
+.postwrap:has(vault[andy]):hover vault[andy] box:last-of-type::before {
+  --vault-corner: 51%;
+  animation-play-state: paused;
+}
+.postwrap:has(vault[andy]):hover vault[andy] box:last-of-type::after {
+  opacity: 1;
+}
+.postwrap:has(vault[andy]):hover vault[andy] q::before,
+.postwrap:has(vault[andy]):hover vault[andy] q::after {
+  animation-duration: 1.8s;
+}
+.postwrap:has(vault[andy]):hover vault[andy] box:has(img) img {
+  transform: scale(1.12);
+}
+
+@media (max-width: 700px) {
+  vault[andy] info {
+    grid-template-columns: 1fr;
+    row-gap: 90px;
+  }
+  vault[andy] box:last-of-type {
+    grid-column: 1;
+    grid-row: 2;
+  }
+}
+
+@property --vault-corner {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 24px;
+}
+@property --vault-spin {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+@keyframes vault-toggle-glow {
+  0%, 100% { box-shadow: 0 0 10px #00000080, 0 0 12px #cfb8f066, inset 0 0 0 4px #454b8c, inset 0 0 0 5px #f2daff88; }
+  50% { box-shadow: 0 0 10px #00000080, 0 0 30px #cfb8f0cc, 0 0 55px #454b8c99, inset 0 0 0 4px #454b8c, inset 0 0 0 5px #f2daffcc; }
+}
+@keyframes vault-corner-float {
+  0%, 100% { inset: -6px; }
+  50% { inset: -12px; }
+}
+@keyframes vault-frame-spin {
+  to { --vault-spin: 360deg; }
+}
+@keyframes vault-quote-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+@keyframes vault-heart-float {
+  0% { transform: translateY(0) scale(.6) rotate(-10deg); opacity: 0; }
+  20% { opacity: 1; }
+  100% { transform: translateY(-30px) scale(1) rotate(10deg); opacity: 0; }
+}
 
 html:not(:has(#off:checked)) {
   & body {
@@ -153,6 +417,15 @@ html:not(:has(#off:checked)) {
     object-fit: cover;
     width: 100%;
   }
+  & .flex:has(vault[andy]) .signature {
+    position: relative;
+    border: none;
+    margin-top: 40px;
+    padding-top: 30px;
+    background:
+      linear-gradient(#3a2f59 0 0) top / 100% 1px no-repeat,
+      radial-gradient(circle, #cfb8f0 1px, transparent 1.5px) 0 5px / 10px 3px repeat-x;
+  }
   & small {
     color: #cfb8f0 !important;
     text-transform: lowercase;
@@ -160,13 +433,6 @@ html:not(:has(#off:checked)) {
     font-size: 8px;
   }
   & .flex:has(small){margin:0 !important;}
-  & .flex > div > small {
-    position: absolute;
-    bottom:20px;
-    left:50%;
-    transform:translateX(-50%);
-    opacity: 0.4;
-  }
   & .postbit_multiquote,
     .postbit_quote,
     .postbit_find,
