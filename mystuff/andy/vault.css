@@ -891,9 +891,12 @@ html:not(:has(#off:checked)) {
     outline-offset: -8px;
     box-shadow: 10px 10px 0 #4d3a7ea1, 0 0 30px #000000a0;
     container-type: inline-size;
+    filter: sepia(1) hue-rotate(-150deg);
+    transition: all 1s ease;
   }
   & .flex:has(vault[plot]):hover {
-    filter: grayscale(0);
+    filter: sepia(0) hue-rotate(0);
+     transition: all 0.5s ease;
   }
   & .character_postbit {width:300px;}
   & .flex:has(vault[plot]) .character_postbit {
