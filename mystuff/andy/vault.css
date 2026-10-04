@@ -1340,7 +1340,7 @@ html:not(:has(#off:checked)) {
   --andyb_v-pos: 25% 25%;
 }
 .flex:has(vault[kjartan]) {
-  --vaultportrait: url('https://ik.imagekit.io/arl60/Ardent/personal/Kjartan/cmm_for_Andy_2.png?updatedAt=1760732656723&tr=w-500') 30% 0 / cover no-repeat;
+  --vaultportrait: url('https://ik.imagekit.io/arl60/Ardent/personal/Kjartan/cmm_for_Andy_2.png?updatedAt=1760732656723&tr=w-1000') 30% 0 / cover no-repeat;
   --vaultavy: url('https://ik.imagekit.io/arl60/Ardent/personal/Kjartan/15.png?updatedAt=1788896247459&tr=w-500') 20% 25% / 200% no-repeat;
   --vaultring: #fed28d;
   --vaultibg: #39241bc4;
