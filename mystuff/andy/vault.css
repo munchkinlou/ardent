@@ -4,7 +4,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Qwigley&display=swap');
 
+.postbit_multiquote,
+.postbit_quote,
+.postbit_find,
+.postbit_pm,
+.postbit_email,
+.edited_post,
 .actual_post br {display: none;}
+
+.flex:has(vault[andy]) {
+  --vault-pbw: 300px;
+  --vault-gap: 10px;
+  --vault-btn-w: 200px;
+  --vault-btn-top: 0px;
+}
+.flex:has(vault[andy]) .member_postbit {
+  flex: 0 0 var(--vault-pbw);
+  width: var(--vault-pbw);
+  box-sizing: border-box;
+  margin: 0 var(--vault-gap) 0 0 !important;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.flex:has(vault[andy]) .member_postbit > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+.flex:has(vault[andy]) .member_postbit > div > :not(.author_avatar) {
+  display: none;
+}
+.postwrap:has(vault[andy]) {
+  position: relative;
+}
+.postwrap:has(vault[andy]) .post_body,
+vault[andy],
+vault[andy] info {
+  position: static;
+}
+
+.flex:has(vault[andy]) .member_postbit .author_avatar {
+  flex: 1;
+  width: 100%;
+  min-height: 300px;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 0;
+  border: 2px solid #3a2f59;
+  box-shadow: 0 0 0 6px #110a23a6, 0 0 0 7px #cfb8f055, 0 0 25px #000000a0;
+  box-sizing: border-box;
+}
+.flex:has(vault[andy]) .member_postbit .author_avatar a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.flex:has(vault[andy]) .member_postbit .author_avatar img {
+  content: url('https://ik.imagekit.io/arl60/Ardent/personal/Andy/louwitch.jpg?tr=w-500');
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .6s ease;
+}
 
 #off {
   position: absolute;
@@ -56,7 +120,6 @@
   border-color: #f2daff;
   color: #fff;
   text-shadow: 0 0 8px #f2daff;
-  animation: vault-toggle-glow 2s ease-in-out infinite;
 }
 #off:checked + label::before,
 #off:checked + label::after {
@@ -64,52 +127,27 @@
   text-shadow: 0 0 10px #f2daff;
 }
 
-vault[andy] info {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  align-items: center;
-  column-gap: 40px;
-  margin: 50px 40px 40px;
-}
-vault[andy] info #off + label {
-  grid-column: 1;
-  grid-row: 1;
-  align-self: center;
-  translate: 0 90px;
-  width: auto;
+vault[andy] #off + label {
+  position: absolute;
+  top: var(--vault-btn-top);
+  left: calc(-1 * (var(--vault-pbw) + var(--vault-gap)) + (var(--vault-pbw) - var(--vault-btn-w)) / 2);
+  translate: 0 -50%;
+  width: var(--vault-btn-w);
   margin: 0;
-  position: relative;
-  z-index: 2;
+  padding: 14px 10px;
+  font-size: 11px;
+  letter-spacing: 3px;
+  box-sizing: border-box;
+  z-index: 20;
+}
+
+vault[andy] info {
+  display: block;
+  margin: 50px 40px 40px;
 }
 vault[andy] box {
   display: block;
   min-width: 0;
-}
-
-vault[andy] box:first-of-type {
-  grid-column: 1;
-  grid-row: 1;
-  justify-self: center;
-  width: 240px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 2px solid #3a2f59;
-  box-shadow: 0 0 0 6px #110a23a6, 0 0 0 7px #cfb8f055, 0 0 25px #000000a0;
-  position: relative;
-  z-index: 1;
-}
-vault[andy] box img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform .6s ease;
-}
-
-vault[andy] box:last-of-type {
-  grid-column: 2;
-  grid-row: 1;
   position: relative;
   padding: 30px 20px 20px;
   background: #281f3f;
@@ -117,7 +155,7 @@ vault[andy] box:last-of-type {
   isolation: isolate;
   z-index: 1;
 }
-vault[andy] box:last-of-type::before {
+vault[andy] box::before {
   content: "";
   position: absolute;
   inset: -6px;
@@ -139,7 +177,7 @@ vault[andy] box:last-of-type::before {
   pointer-events: none;
   z-index: 2;
 }
-vault[andy] box:last-of-type::after {
+vault[andy] box::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -198,9 +236,9 @@ vault[andy] q2 {
   display: block;
   width: max-content;
   max-width: 100%;
-  margin: -4px auto -20px;
+  margin: -4px auto 0;
   padding: 0 4px 6px;
-  font: 600 20px/1 "Cormorant Garamond", serif;
+  font: 600 12px/1 "Cormorant Garamond", serif;
   font-variant: small-caps;
   letter-spacing: 4px;
   color: #e8a6d9;
@@ -219,39 +257,82 @@ vault[andy] q2::after {
 }
 vault[andy] q2::before { margin-right: 10px; }
 vault[andy] q2::after { margin-left: 10px; }
-
-vault[andy] info p {
-  margin: 40px 10px 10px;
+vault[andy] box p {
+  position: relative;
+  margin: 24px 0 0;
+  font: italic 16px/1.5 "Cormorant Garamond", serif;
+  color: #cfb8f0;
   text-align: center;
-  font-size: 15px;
-  font-style: italic;
-  color: white;
+  z-index: 3;
 }
 
-.postwrap:has(vault[andy]):hover vault[andy] box:last-of-type::before {
+vault[andy] dl {
+  margin: 30px 10px 0;
+}
+vault[andy] dl h2 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 24px;
+  font: 600 13px/1 "Cormorant Garamond", serif;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #f2daff;
+  text-shadow: 0 0 6px #cfb8f066;
+}
+vault[andy] dl h2::before,
+vault[andy] dl h2::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: radial-gradient(circle, #cfb8f0 1px, transparent 1.5px) 0 0 / 6px 1px repeat-x;
+}
+vault[andy] dt {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 4px 12px 4px 10px;
+  background: #2f3255;
+  border: 1px solid #3a2f59;
+  border-radius: 20px;
+  font: 9px/1 "Didact Gothic", sans-serif;
+  letter-spacing: 2px;
+  text-transform: lowercase;
+  color: #f2daff;
+  box-shadow: 0 0 8px #00000066;
+  transition: background .4s ease, box-shadow .4s ease;
+}
+vault[andy] dt::before {
+  content: "♡";
+  margin-right: 6px;
+  color: #e8a6d9;
+  transition: color .4s ease;
+}
+vault[andy] dd {
+  margin: 8px 0 0 14px;
+  padding: 2px 0 2px 14px;
+  border-left: 1px dashed #e8a6d966;
+  font: italic 16px/1.5 "Cormorant Garamond", serif;
+  color: #cfb8f0;
+}
+vault[andy] dt:hover {
+  background: #454b8c;
+  box-shadow: 0 0 10px #e8a6d955;
+}
+vault[andy] dt:hover::before {
+  content: "♥";
+  color: #f2b8e4;
+}
+
+.postwrap:has(vault[andy]):hover vault[andy] box::before {
   --vault-corner: 51%;
   animation-play-state: paused;
 }
-.postwrap:has(vault[andy]):hover vault[andy] box:last-of-type::after {
+.postwrap:has(vault[andy]):hover vault[andy] box::after {
   opacity: 1;
 }
 .postwrap:has(vault[andy]):hover vault[andy] q::before,
 .postwrap:has(vault[andy]):hover vault[andy] q::after {
   animation-duration: 1.8s;
-}
-.postwrap:has(vault[andy]):hover vault[andy] box:has(img) img {
-  transform: scale(1.12);
-}
-
-@media (max-width: 700px) {
-  vault[andy] info {
-    grid-template-columns: 1fr;
-    row-gap: 90px;
-  }
-  vault[andy] box:last-of-type {
-    grid-column: 1;
-    grid-row: 2;
-  }
 }
 
 @property --vault-corner {
@@ -263,10 +344,6 @@ vault[andy] info p {
   syntax: "<angle>";
   inherits: false;
   initial-value: 0deg;
-}
-@keyframes vault-toggle-glow {
-  0%, 100% { box-shadow: 0 0 10px #00000080, 0 0 12px #cfb8f066, inset 0 0 0 4px #454b8c, inset 0 0 0 5px #f2daff88; }
-  50% { box-shadow: 0 0 10px #00000080, 0 0 30px #cfb8f0cc, 0 0 55px #454b8c99, inset 0 0 0 4px #454b8c, inset 0 0 0 5px #f2daffcc; }
 }
 @keyframes vault-corner-float {
   0%, 100% { inset: -6px; }
@@ -344,8 +421,9 @@ html:not(:has(#off:checked)) {
     left:0;
     width:100%;
     height: 400px;
-    background: url('https://ik.imagekit.io/arl60/Ardent/personal/Andy/Andy2.png?updatedAt=1755463582012')
+    background: url('https://ik.imagekit.io/arl60/Ardent/personal/Andy/loucoffee2.png?updatedAt=1790961074078?tr=w-500')
       no-repeat center / contain;
+    filter: hue-rotate(-20deg);
     z-index: -1;
   }
   & #content > h2 {
@@ -433,11 +511,6 @@ html:not(:has(#off:checked)) {
     font-size: 8px;
   }
   & .flex:has(small){margin:0 !important;}
-  & .postbit_multiquote,
-    .postbit_quote,
-    .postbit_find,
-    .postbit_pm,
-    .postbit_email {display:none}
   & .postwrap:has(vault[andy]) {
     position: relative;
     background: #0e0525d9;
@@ -445,9 +518,204 @@ html:not(:has(#off:checked)) {
     padding: 40px 60px 60px;
     box-sizing: border-box;
   }
-  & h2 {
-    
+  & .flex:has(vault[plot]) {
+    background: #030227d6;
+    box-shadow: 10px 10px 0 #0f0821a1;
+    filter: grayscale(0);
+    transition: filter .8s ease;
   }
+  & .flex:has(vault[plot]):hover {
+    filter: grayscale(0);
+  }
+  & .character_postbit {width:300px;}
+  & .flex:has(vault[plot]) .character_postbit {
+    position: relative;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  & .flex:has(vault[plot]) .character_postbit:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--vaultportrait);
+    border: 2px solid;
+    border-image: var(--vaultf1) 1;
+    opacity: 0.7;
+    filter: brightness(.75);
+    transition: filter .8s ease, opacity .8s ease;
+    z-index: 0;
+  }
+  & .flex:has(vault[plot]) .character_postbit:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      repeating-linear-gradient(0deg, #ffffff08 0 1px, transparent 1px 3px),
+      linear-gradient(to bottom, transparent 35%, #0e0525cc);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  & .flex:has(vault[plot]) .character_postbit > div {
+    flex: 1;
+    position: relative;
+    box-sizing: border-box;
+    top:0;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 90px 40px 50px;
+    padding: 0 12px 30px;
+    background: var(--vaultibg);
+    border: 1px solid;
+    border-image: var(--vaultf1) 1;
+    outline: 1px dashed #cfb8f033;
+    outline-offset: -7px;
+    backdrop-filter: blur(2px);
+    box-shadow: 6px 6px 0 #954d6863, 0 0 25px #000000a0;
+    z-index: 1;
+  }
+  & .flex:has(vault[plot]) .character_postbit > div::before {
+    content: '';
+    position: absolute;
+    inset: -7px;
+    background:
+      linear-gradient(#cfb8f0 0 0) top left / 18px 2px,
+      linear-gradient(#cfb8f0 0 0) top left / 2px 18px,
+      linear-gradient(#cfb8f0 0 0) bottom right / 18px 2px,
+      linear-gradient(#cfb8f0 0 0) bottom right / 2px 18px;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0 0 4px #454b8c);
+    pointer-events: none;
+  }
+  & .flex:has(vault[plot]) .author_avatar {
+    width: 140px;
+    aspect-ratio: 1;
+    margin: -70px auto 16px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid var(--vaultring, #6745c5);
+    background: var(--vaultavy);
+    box-shadow:
+      0 0 0 5px #17082a,
+      0 0 0 6px color-mix(in srgb, var(--vaultring, #cfb8f0) 40%, transparent),
+      4px 4px 0 6px #954d6863;
+  }
+  & .flex:has(vault[plot]) .author_avatar a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  & .flex:has(vault[plot]) .author_avatar img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  & .flex:has(vault[plot]) .character_postbit h2,
+  & .flex:has(vault[plot]) .character_postbit h2 a,
+  & .flex:has(vault[plot]) .character_postbit h2 a:hover {
+    color: transparent !important;
+    -webkit-text-stroke: 1px #ffffff88;
+    text-decoration: none !important;
+    text-shadow: none !important;
+    transition: none;
+  }
+  & .flex:has(vault[plot]) .character_postbit h2 {
+    position: absolute;
+    top: 0;
+    right: -120px;
+    margin: 0;
+    height: 100%;
+    writing-mode: vertical-rl;
+    font-family: "Cormorant Garamond", serif;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+    font-size: 60px;
+    filter: none;
+    pointer-events: none;
+    -webkit-mask: linear-gradient(to bottom, transparent, #000 15%, #000 85%, transparent);
+    mask: linear-gradient(to bottom, transparent, #000 15%, #000 85%, transparent);
+    z-index: 5;
+  }
+  & .flex:has(vault[plot]) .character_postbit center > small {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6px;
+    font: 7px/1 "Didact Gothic", sans-serif;
+    letter-spacing: 3px;
+  }
+  & .flex:has(vault[plot]) .character_postbit center > small br {
+    display: none;
+  }
+  & .flex:has(vault[plot]) .character_postbit center > small > a,
+  & .flex:has(vault[plot]) .character_postbit center > small > .pbcharacter {    font-size: 7px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  & .flex:has(vault[plot]) .character_postbit center > small > i {
+    flex-basis: 100%;
+    margin: 6px 0 0 !important;
+    font-size: 14px !important;
+  }
+  & .flex:has(vault[plot]) .character_postbit center > .pbcharacter p {
+    font: italic 13px/1.4 "Cormorant Garamond", serif;
+    color: #e8d6f5;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+  }
+  & .flex:has(vault[plot]) .stats {
+    width: 100%;
+    margin: 0 !important;
+    box-sizing: border-box;
+  }
+  & .flex:has(vault[plot]) .stats > div {
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    padding: 5px 0;
+    border-bottom: 1px dotted #cfb8f044;
+    font: 10px/1.3 "Didact Gothic", sans-serif;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+  }
+  & .flex:has(vault[plot]) .stats b {
+    padding: 0;
+    display: block;
+    margin-bottom: 4px;
+    font: 7px/1 "Didact Gothic", sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--vaultst) !important;
+  }
+  & .flex:has(vault[plot]) .stats b + br {
+    display: none;
+  }
+  & .flex:has(vault[plot]) .stats a {
+    text-transform: lowercase;
+    letter-spacing: 2px;
+  }
+  & .flex:has(vault[plot]):hover .character_postbit:before {
+    filter: brightness(.9);
+    opacity: .85;
+  }
+  & .flex:has(vault[plot]) .postwrap {
+    padding: 30px 20px 0 120px;
+  }
+  & .flex:has(vault[plot]) .postwrap > div {
+    box-sizing: border-box;
+    padding: 30px;
+  }
+  & .flex:has(vault[plot]) .postwrap .signature {display: none;}
   & .tborder {
     position: relative;
     background: #110a23d1;
@@ -473,7 +741,7 @@ html:not(:has(#off:checked)) {
     border: 70px solid;
     border-image: url('https://ik.imagekit.io/arl60/Ardent/shop/Morgay/Vaevnir/frame.png?updatedAt=1755025540494') 70 stretch;
     pointer-events: none;
-    filter: brightness(.25) sepia(1) saturate(2.5) hue-rotate(-100deg);
+    filter: brightness(.5) sepia(1) saturate(4.5) hue-rotate(-160deg);
   }
   & #quickreply_e td { padding: 20px 50px 0; }
   & #quickreply_e { display: flex; flex-wrap: wrap; }
@@ -514,4 +782,13 @@ html:not(:has(#off:checked)) {
     color: white;
   }
   & input, & button, & select { border-radius: 10px; padding: 2px 10px; }
+}
+:root {
+  --vaultportrait: url('https://ik.imagekit.io/arl60/Ardent/personal/Alucard/__by_zilkesee_dkobmfi.png?updatedAt=1760249046942&tr=w-500') 60% 0 / cover no-repeat;
+  --vaultavy: url('https://ik.imagekit.io/arl60/Ardent/personal/Alucard/avatar.png?updatedAt=1791066921026')
+    50% 20% / cover no-repeat;
+  --vaultring: #e4c568;
+  --vaultibg: #2e14119e;
+  --vaultst: #e28b46;
+  --vaultf1: linear-gradient(to bottom, #eac07d, #ac7d33, #eac07d);
 }
