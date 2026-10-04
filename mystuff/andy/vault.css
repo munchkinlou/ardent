@@ -773,7 +773,8 @@ html:not(:has(#off:checked)) {
   }
   & #content > h2 {
     position: relative;
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     margin: -8px auto 80px;
     padding: 0;
     text-align: center;
@@ -1100,68 +1101,6 @@ html:not(:has(#off:checked)) {
   & .thead::before { margin-right: 14px; }
   & .thead::after { margin-left: 14px; }
 
-  & #quickreply_e { display: flex; flex-wrap: wrap; }
-  & #quickreply_e td { padding: 20px 50px 0; }
-  & #quickreply_e > tr {
-    display: flex;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  & #quickreply_e > tr:first-of-type > td:first-of-type { flex: 0 0 22%; }
-  & #quickreply_e > tr:first-of-type > td:last-of-type { flex: 1 1 0; min-width: 0; }
-  & #quickreply_e > tr:nth-last-of-type(-n+2) > td {
-    display: flex;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 20px 0;
-  }
-  & #quickreply_e > tr:nth-last-of-type(2) {
-    flex: 0 0 60%;
-    max-width: 60%;
-    text-align: right;
-  }
-  & #quickreply_e > tr:nth-last-of-type(2) > td { justify-content: flex-end; }
-  & #quickreply_e > tr:nth-last-of-type(1) {
-    flex: 0 0 30%;
-    max-width: 30%;
-  }
-  & #quickreply_e > tr:nth-last-of-type(1) > td { justify-content: flex-start; }
-
-  & #quickreply_e #message {
-    border: 1px solid #3a2f59;
-    transition: border-color .4s ease, box-shadow .4s ease;
-  }
-  & #quickreply_e #message:focus {
-    outline: none;
-    border-color: #cfb8f0;
-    box-shadow: 0 0 20px black, 0 0 14px #454b8c;
-  }
-  & #quickreply_e select,
-  & #quickreply_e button,
-  & #quickreply_e input[type="submit"],
-  & #quickreply_e input[type="button"] {
-    height: 30px;
-    margin: 5px 6px;
-    padding: 0 18px;
-    background:
-      radial-gradient(ellipse at top, #4a3f7866, transparent 70%),
-      linear-gradient(to right, #241c45, #3f3257 50%, #241c45);
-    border: 1px solid #3a2f59;
-    border-radius: 20px;
-    font: 9px/1 "Didact Gothic", sans-serif;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: #f2daff;
-    text-shadow: 0 0 6px #cfb8f088;
-    cursor: pointer;
-    transition: all .4s ease;
-  }
-  & #quickreply_e select:hover,
-  & #quickreply_e button:hover,
-  & #quickreply_e input:hover {
-    color: white !important;
-  }
   & th, & .affiliates img, & input, & select, & textarea, & code, & button, & hr {
     background: #3f3257;
     color: white;
@@ -1198,6 +1137,71 @@ html:not(:has(#off:checked)) {
     color: #fff;
   }
   & input, & button, & select { border-radius: 10px; padding: 2px 10px; }
+  
+  @media (min-width: 1200px) {
+    & #quickreply_e { display: flex; flex-wrap: wrap; }
+    & #quickreply_e td { padding: 20px 50px 0; }
+    & #quickreply_e > tr {
+      display: flex;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    & #quickreply_e > tr:first-of-type > td:first-of-type { flex: 0 0 22%; }
+    & #quickreply_e > tr:first-of-type > td:last-of-type { flex: 1 1 0; min-width: 0; }
+    & #quickreply_e > tr:nth-last-of-type(-n+2) > td {
+      display: flex;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0;
+      margin: 20px 0;
+    }
+    & #quickreply_e > tr:nth-last-of-type(2) {
+      flex: 0 0 60%;
+      max-width: 60%;
+      text-align: right;
+    }
+    & #quickreply_e > tr:nth-last-of-type(2) > td { justify-content: flex-end; }
+    & #quickreply_e > tr:nth-last-of-type(1) {
+      flex: 0 0 30%;
+      max-width: 30%;
+    }
+    & #quickreply_e > tr:nth-last-of-type(1) > td { justify-content: flex-start; }
+  }
+
+  & #quickreply_e #message {
+    border: 1px solid #3a2f59;
+    transition: border-color .4s ease, box-shadow .4s ease;
+  }
+  & #quickreply_e #message:focus {
+    outline: none;
+    border-color: #cfb8f0;
+    box-shadow: 0 0 20px black, 0 0 14px #454b8c;
+  }
+  & #quickreply_e select,
+  & #quickreply_e button,
+  & #quickreply_e input[type="submit"],
+  & #quickreply_e input[type="button"] {
+    height: 30px;
+    margin: 5px 6px;
+    padding: 0 18px;
+    background:
+      radial-gradient(ellipse at top, #4a3f7866, transparent 70%),
+      linear-gradient(to right, #241c45, #3f3257 50%, #241c45);
+    border: 1px solid #3a2f59;
+    border-radius: 20px;
+    font: 9px/1 "Didact Gothic", sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #f2daff;
+    text-shadow: 0 0 6px #cfb8f088;
+    cursor: pointer;
+    transition: all .4s ease;
+  }
+  & #quickreply_e select:hover,
+  & #quickreply_e button:hover,
+  & #quickreply_e input:hover {
+    color: white !important;
+  }
   @media (max-width: 1200px) {
     & .character_postbit {
       width: 100%;
@@ -1209,11 +1213,18 @@ html:not(:has(#off:checked)) {
     & .flex:has(vault[plot]) .character_postbit > div {
       margin: 90px 30px 40px;
     }
+    & .tborder:before,
     & .flex:has(vault[plot]) .character_postbit h2 {
       display: none;
     }
     & .flex:has(vault[plot]) .postwrap > div {
       padding: 30px 10px;
+      }
+     & .postwrap:has(vault[andy]) {
+       padding: 30px 5px 50px;
+    }
+    & #content > h1 { 
+      font-size: 60px;
     }
   }
 }
