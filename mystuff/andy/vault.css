@@ -1325,3 +1325,16 @@ html:not(:has(#off:checked)) {
   --andyb_v-zoom: 600%;
   --andyb_v-pos: 78% 16.5%;
 }
+.flex:has(vault[earendil]) {
+  --vaultportrait: url('https://ik.imagekit.io/arl60/Ardent/personal/Backgrounds/nights_like_this_4k.png?updatedAt=1788840255083&tr=w-500') 50% 0 / cover no-repeat;
+  --vaultavy: url('https://ik.imagekit.io/arl60/Ardent/personal/Eren/IMG_2367.png?updatedAt=1773893274844&tr=w-500') 15% 21% / 500% no-repeat;
+  --vaultring: #ffe300;
+  --vaultibg: #270633;
+  --vaultst: #ffc233;
+  --vaultbs: #280837cc;
+  --vaultf1: linear-gradient(to bottom, #eba520, #e7cba0, #c6b318);
+  --vaultname: 9cqw;
+  --andyb_v-img: url('https://ik.imagekit.io/arl60/Ardent/personal/Eren/11_25%20design%201%20no%20bg.png?updatedAt=1773893455198');
+  --andyb_v-zoom: 600%;
+  --andyb_v-pos: 25% 25%;
+}
