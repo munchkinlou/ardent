@@ -398,7 +398,7 @@ html:not(:has(#off:checked)) {
     bottom: -30px;
     left: 50%;
     transform:translateX(-50%);
-    content: 'background @ aenami - code @ andy';
+    content: 'background @ aenami ★ custom code @ andy';
     text-transform: uppercase;
     letter-spacing: 2px;
     opacity: 0.5;
@@ -703,9 +703,8 @@ html:not(:has(#off:checked)) {
     min-width: 0;
     overflow-wrap: anywhere;
     padding: 5px 0;
-    border-bottom: 1px dotted #cfb8f044;
-    font: 10px/1.3 "Didact Gothic", sans-serif;
-    letter-spacing: 2px;
+    font: 8px/1.3 "Didact Gothic", sans-serif;
+    letter-spacing: 1.5px;
     text-transform: lowercase;
   }
   & .flex:has(vault[plot]) .stats b {
@@ -816,6 +815,11 @@ html:not(:has(#off:checked)) {
     text-shadow: 0 0 6px #cfb8f088;
     cursor: pointer;
     transition: all .4s ease;
+  }
+  & #quickreply_e select:hover,
+  & #quickreply_e button:hover,
+  & #quickreply_e input:hover {
+    color: white !important;
   }
   & th, & .affiliates img, & input, & select, & textarea, & code, & button, & hr {
     background: #3f3257;
