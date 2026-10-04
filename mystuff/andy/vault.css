@@ -535,23 +535,6 @@ html:not(:has(#off:checked)) {
     pointer-events: none;
     filter: brightness(.5) sepia(1) saturate(4.5) hue-rotate(-160deg);
   }
-  & .postwrap:has(vault[andy])::after {
-    content: var(--vaultlabel, "✧ andy's archives ✧");
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    translate: -50% 0;
-    padding: 4px 14px;
-    background: #0e0525;
-    border: 1px solid #cfb8f055;
-    font: 7px/1 "Didact Gothic", sans-serif;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    white-space: nowrap;
-    color: #cfb8f0;
-    pointer-events: none;
-    z-index: 11;
-  }
   & .flex:has(vault[plot]) {
     position: relative;
     background:
