@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
@@ -201,7 +200,7 @@ vault[andy] q {
   max-width: 100%;
   margin: 0 auto;
   quotes: none;
-  font: italic 50px/1.1 "Qwigley", cursive;
+  font: italic 55px/1.1 "Qwigley", cursive;
   color: #f2daff;
   text-align: center;
   text-shadow: 0 0 6px #cfb8f066, 0 0 14px #e8a6d955;
@@ -237,9 +236,9 @@ vault[andy] q2 {
   display: block;
   width: max-content;
   max-width: 100%;
-  margin: -4px auto 0;
+  margin: -20px auto 0;
   padding: 0 4px 6px;
-  font: 600 12px/1 "Cormorant Garamond", serif;
+  font: 600 17px/1 "Cormorant Garamond", serif;
   font-variant: small-caps;
   letter-spacing: 4px;
   color: #e8a6d9;
@@ -248,13 +247,6 @@ vault[andy] q2 {
   background: radial-gradient(circle, #e8a6d9 1px, transparent 1.5px) 0 100% / 6px 2px repeat-x;
   position: relative;
   z-index: 3;
-}
-vault[andy] q2::before,
-vault[andy] q2::after {
-  content: "⋆";
-  font-size: 14px;
-  color: #f2daff;
-  text-shadow: 0 0 6px #cfb8f0;
 }
 vault[andy] q2::before { margin-right: 10px; }
 vault[andy] q2::after { margin-left: 10px; }
@@ -334,6 +326,317 @@ vault[andy] dt:hover::before {
 .postwrap:has(vault[andy]):hover vault[andy] q::before,
 .postwrap:has(vault[andy]):hover vault[andy] q::after {
   animation-duration: 1.8s;
+}
+
+
+.andyb_v {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 500px;
+  margin:20px auto 60px;
+  box-sizing: border-box;
+}
+.andyb_v * {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.andyb_v ttl {
+  grid-row: 1;
+  justify-self: center;
+  width: max-content;
+  max-width: 100%;
+  margin: 0 0 24px;
+  padding: 0 6px 8px;
+  font: italic 24px/1.3 "Cormorant Garamond", serif;
+  text-align: center;
+  color: #e6d4f5;
+  background: radial-gradient(circle, #a894c9 1px, transparent 1.5px) 0 100% / 6px 2px repeat-x;
+}
+
+.andyb_v btns {
+  grid-row: 2;
+  display: flex;
+  gap: 10px;
+  margin: 0 0 24px;
+}
+.andyb_v btns input {
+  display: none !important;
+  opacity: 0;
+}
+.andyb_v btns label {
+  flex: 1;
+  cursor: pointer;
+  isolation: isolate;
+}
+.andyb_v btns label::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -12px;
+  width: 26px;
+  height: 26px;
+  translate: 0 -50%;
+  background: #3a2d5b;
+  clip-path: polygon(50% 0, 61% 39%, 100% 50%, 61% 61%, 50% 100%, 39% 61%, 0 50%, 39% 39%);
+  transition: rotate .5s ease, scale .5s ease, background .5s ease;
+  z-index: -1;
+}
+.andyb_v btns tab {
+  padding: 13px 8px;
+  background: #241c45;
+  border: 1px solid #3a2f59;
+  box-shadow: inset 0 0 0 3px #110a23, inset 0 0 0 4px #4d3a7e;
+  font: 10px/1 "Didact Gothic", sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #b6a3d6;
+  transition: all .4s ease;
+}
+.andyb_v btns label:hover::before {
+  rotate: 10deg;
+  background: #4d3a7e;
+}
+.andyb_v btns label:hover tab {
+  border-color: #a894c9;
+  color: #e6d4f5;
+  translate: 0 -2px;
+}
+.andyb_v btns label:has(input:checked)::before,
+.andyb_v:not(:has(btns input:checked)) btns label:first-of-type::before {
+  rotate: 20deg;
+  scale: 1.25;
+  background: #a586d6;
+}
+.andyb_v btns label:has(input:checked) tab,
+.andyb_v:not(:has(btns input:checked)) btns label:first-of-type tab {
+  background: #4d3a7e;
+  border-color: #a894c9;
+  box-shadow: inset 0 0 0 3px #3a2a63, inset 0 0 0 4px #a894c9, 4px 4px 0 #110a23;
+  color: #f2e9fa;
+  translate: 0 -4px;
+}
+
+.andyb_v bor {
+  grid-row: 3;
+  border: 1px solid #b89cff;
+  box-shadow: 8px 8px 0 #2a1f45;
+}
+.andyb_v con {
+  padding: 5px;
+  background: #1a193d;
+  box-shadow: inset 0 0 10px #30154aa3;
+}
+.andyb_v bor::before {
+  content: '';
+  position: absolute;
+  top: 24px;
+  bottom: 24px;
+  left: -30px;
+  width: 30px;
+  background:
+    radial-gradient(circle, #1a193d 3px, transparent 3.5px) center 6px / 100% 28px repeat-y,
+    #492453;
+  outline: 1px solid #a586d6;
+  outline-offset: -4px;
+  box-shadow: 4px 4px 0 #2a1f45;
+  pointer-events: none;
+}
+.andyb_v inbor {
+  border: 2px solid #7863b0;
+}
+.andyb_v incon {
+  display: flow-root;
+  min-height: 300px;
+  padding: 30px 40px 30px 30px;
+  perspective: 1400px;
+  font: 15px/1.75 "Cormorant Garamond", serif;
+  text-align: justify;
+  background: #4d4c8f;
+  color: #ddd0ea;
+}
+
+.andyb_v char {
+  position: absolute;
+  top: -21px;
+  right: -79px;
+  width: var(--andyb_v-w, 90px);
+  height: var(--andyb_v-h, 360px);
+  container-type: size;
+  background:
+    repeating-linear-gradient(45deg, #ffffff0a 0 2px, transparent 2px 7px),
+    #492453;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% calc(100% - 22px), 0 100%);
+  pointer-events: none;
+  z-index: 5;
+}
+.andyb_v char::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100cqh - 56px);
+  height: calc(100cqw - 18px);
+  translate: -50% calc(-50% - 12px);
+  rotate: 90deg;
+  background-image: var(--andyb_v-img);
+  background-size: var(--andyb_v-zoom, cover);
+  background-position: var(--andyb_v-pos, center);
+  background-repeat: no-repeat;
+  outline: 1px solid #a586d6;
+  outline-offset: 3px;
+  filter: saturate(.85);
+}
+.andyb_v char::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  translate: -50% 0;
+  background: #d4b9ff;
+  clip-path: polygon(50% 0, 61% 39%, 100% 50%, 61% 61%, 50% 100%, 39% 61%, 0 50%, 39% 39%);
+  z-index: 2;
+}
+
+.andyb_v page {
+  display: none;
+  transform-origin: center;
+}
+.andyb_v:has(btns label:nth-of-type(1) input:checked) page:nth-of-type(1),
+.andyb_v:has(btns label:nth-of-type(2) input:checked) page:nth-of-type(2),
+.andyb_v:has(btns label:nth-of-type(3) input:checked) page:nth-of-type(3),
+.andyb_v:has(btns label:nth-of-type(4) input:checked) page:nth-of-type(4),
+.andyb_v:not(:has(btns input:checked)) page:nth-of-type(1) {
+  display: block;
+  animation: andyb_v-flip .7s cubic-bezier(.2, .8, .3, 1);
+}
+.andyb_v page br {
+  display: inline;
+}
+.andyb_v page hd + br,
+.andyb_v page hd + br + br,
+.andyb_v page hd + br + br + br,
+.andyb_v page br:last-child,
+.andyb_v page br:nth-last-child(2):has(+ br:last-child) {
+  display: none;
+}
+
+.andyb_v hd {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 20px;
+  font: 600 12px/1 "Cormorant Garamond", serif;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #e6d4f5;
+}
+.andyb_v hd::before,
+.andyb_v hd::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: radial-gradient(circle, #fdbbff 1px, transparent 1.5px) 0 0 / 6px 1px repeat-x;
+}
+.andyb_v cap {
+  float: left;
+  margin: 6px 30px 0 0;
+  font: 48px/.8 "Allura", cursive;
+  color: #a894c9;
+  text-shadow: 3px 3px 0 #2a1f45;
+}
+
+.andyb_v page dl br {
+  display: none;
+}
+.andyb_v page dl {
+  margin: 18px 0 22px;
+}
+.andyb_v page dl:not([list]) {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  column-gap: 16px;
+}
+.andyb_v page dl:not([list]) dt,
+.andyb_v page dl:not([list]) dd {
+  padding: 8px 0;
+  border-bottom: 1px dotted #4d3a7e;
+}
+.andyb_v page dl:not([list]) dt {
+  align-self: stretch;
+  padding-top: 11px;
+  font: 9px/1.4 "Didact Gothic", sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #a894c9;
+}
+.andyb_v page dl:not([list]) dt::before {
+  content: "✦ ";
+  color: #c48aa0;
+}
+.andyb_v page dl:not([list]) dd {
+  margin: 0;
+  font: 15px/1.5 "Cormorant Garamond", serif;
+  text-align: left;
+  color: #ddd0ea;
+}
+.andyb_v page dl[list] dt {
+  display: table;
+  margin: 18px 0 0;
+  padding: 5px 12px 5px 10px;
+  background: #312e57;
+  border: 1px solid #4d3a7e;
+  box-shadow: 3px 3px 0 #44164e;
+  font: 9px/1 "Didact Gothic", sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #e6d4f5;
+}
+.andyb_v page dl[list] dt:first-child {
+  margin-top: 0;
+}
+.andyb_v page dl[list] dt::before {
+  content: "✦ ";
+  color: #c48aa0;
+}
+.andyb_v page dl[list] dd {
+  margin: 8px 5px 0 12px;
+  padding: 2px 0 2px 16px;
+  border-left: 1px dashed #bd8abc;
+  font: 15px/1.6 "Cormorant Garamond", serif;
+  color: #ddd0ea;
+}
+
+@media (max-width: 1200px) {
+  .andyb_v {
+    width: 100%;
+    max-width: 450px;
+    left: 50%;
+    transform:translateX(-50%);
+  }
+  .andyb_v btns {
+    flex-wrap: wrap;
+  }
+  .andyb_v btns label {
+    flex: 1 1 40%;
+  }
+  .andyb_v bor:before,
+  .andyb_v char {
+    display: none;
+  }
+  .andyb_v incon {
+    padding: 20px;
+  }
+}
+
+@keyframes andyb_v-flip {
+  0% { transform: rotateY(-90deg); opacity: 0; }
+  100% { transform: rotateY(0); opacity: 1; }
 }
 
 @property --vault-corner {
@@ -545,12 +848,14 @@ html:not(:has(#off:checked)) {
     outline: 1px dashed #cfb8f02e;
     outline-offset: -8px;
     box-shadow: 10px 10px 0 #4d3a7ea1, 0 0 30px #000000a0;
+    container-type: inline-size;
   }
   & .flex:has(vault[plot]):hover {
     filter: grayscale(0);
   }
   & .character_postbit {width:300px;}
   & .flex:has(vault[plot]) .character_postbit {
+    flex: 0 0 300px;
     position: relative;
     background: transparent;
     display: flex;
@@ -586,7 +891,6 @@ html:not(:has(#off:checked)) {
     position: relative;
     box-sizing: border-box;
     top:0;
-    align-self: stretch;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -644,25 +948,31 @@ html:not(:has(#off:checked)) {
   & .flex:has(vault[plot]) .character_postbit h2 a,
   & .flex:has(vault[plot]) .character_postbit h2 a:hover {
     color: transparent !important;
-    -webkit-text-stroke: 1px #8b8cf7;
+    -webkit-text-stroke: 1px #a9aaff75;
     text-decoration: none !important;
     text-shadow: none !important;
     transition: none;
   }
   & .flex:has(vault[plot]) .character_postbit h2 {
     position: absolute;
-    top: 0;
-    right: -120px;
+    top: -90px;
+    left: calc(100% + 40px);
+    height: calc(100% + 140px);
     margin: 0;
-    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
     writing-mode: vertical-rl;
     font-family: "Cormorant Garamond", serif;
-    letter-spacing: 20px;
+    font-size: var(--vaultname, 90px);
+    line-height: 1;
+    letter-spacing: 10px;
     text-transform: uppercase;
-    font-size: 60px;
     filter: none;
     pointer-events: none;
-    z-index: 5;
+    -webkit-mask: linear-gradient(to bottom, transparent, #000 10%, #000 90%, transparent);
+    mask: linear-gradient(to bottom, transparent, #000 10%, #000 90%, transparent);
+    z-index: 0;
   }
   & .flex:has(vault[plot]) .character_postbit center > small {
     display: flex;
@@ -728,12 +1038,14 @@ html:not(:has(#off:checked)) {
     opacity: .85;
   }
   & .flex:has(vault[plot]) .postwrap {
+    position: relative;
+    z-index: 2;
     background: transparent;
-    padding: 30px 20px 0 120px;
+    padding: 20px 20px 0;
   }
   & .flex:has(vault[plot]) .postwrap > div {
     box-sizing: border-box;
-    padding: 30px;
+    padding: 30px 30px 30px;
   }
   & .flex:has(vault[plot]) .postwrap .signature {display: none;}
   & .tborder {
@@ -858,12 +1170,16 @@ html:not(:has(#off:checked)) {
   }
   & input, & button, & select { border-radius: 10px; padding: 2px 10px; }
 }
-:root {
+
+.flex:has(vault[alucard]) {
   --vaultportrait: url('https://ik.imagekit.io/arl60/Ardent/personal/Alucard/__by_zilkesee_dkobmfi.png?updatedAt=1760249046942&tr=w-500') 60% 0 / cover no-repeat;
-  --vaultavy: url('https://ik.imagekit.io/arl60/Ardent/personal/Alucard/avatar.png?updatedAt=1791066921026')
-    50% 20% / cover no-repeat;
+  --vaultavy: url('https://ik.imagekit.io/arl60/Ardent/personal/Alucard/avatar.png?updatedAt=1791066921026') 50% 20% / cover no-repeat;
   --vaultring: #e4c568;
   --vaultibg: #2e14119e;
   --vaultst: #e28b46;
   --vaultf1: linear-gradient(to bottom, #eac07d, #ac7d33, #eac07d);
+  --vaultname: 9cqw;
+  --andyb_v-img: url('https://ik.imagekit.io/arl60/Ardent/personal/Alucard/alucardref.png?updatedAt=1759791218725');
+  --andyb_v-zoom: 400%;
+  --andyb_v-pos: 70% 22%;
 }
