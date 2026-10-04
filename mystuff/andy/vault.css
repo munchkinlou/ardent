@@ -1286,4 +1286,18 @@ html:not(:has(#off:checked)) {
   --andyb_v-zoom: 600%;
   --andyb_v-pos: 18% 48%;
 }
+.flex:has(vault[evanesce]) {
+  --vaultportrait: url('https://ik.imagekit.io/arl60/Ardent/personal/Backgrounds/nocturnal_reveries_4k.png?updatedAt=1788762606156&tr=w-500') 0 0 / cover no-repeat;
+  --vaultavy: url('https://ik.imagekit.io/arl60/Ardent/personal/Evanesce/Missy_.png?updatedAt=1763403136661&tr=w-500') 32% 60% / 300% no-repeat;
+  --vaultring: #a96cdc;
+  --vaultibg: #081221cf;
+  --vaultst: #50f8f0;
+  --vaultbs: #0e414a9c;
+  --vaultf1: linear-gradient(to bottom, #ab58ff, #1e818b, #1d6222);
+  --vaultname: 15cqw;
+  --andyb_v-img: url('https://ik.imagekit.io/arl60/Ardent/personal/Evanesce/Andy_3.png?updatedAt=1762824520615');
+  --andyb_v-zoom: 280%;
+  --andyb_v-pos: -5% 28%;
+}
+
 
