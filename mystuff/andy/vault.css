@@ -1352,3 +1352,16 @@ html:not(:has(#off:checked)) {
   --andyb_v-zoom: 200%;
   --andyb_v-pos: 30% 40%;
 }
+.flex:has(vault[nereus]) {
+  --vaultportrait: url('https://ik.imagekit.io/arl60/Ardent/personal/Nereus/NereusForest1.png?updatedAt=1759806091132&tr=w-1000') 50% 0 / cover no-repeat;
+  --vaultavy: url('https://ik.imagekit.io/arl60/Ardent/personal/Nereus/NereusAvatarShadedBG.png?updatedAt=1788922070551tr=w-500') 25% 30% / 150% no-repeat;
+  --vaultring: #63d5ee;
+  --vaultibg: #0d1c28ba;
+  --vaultst: #29cdff;
+  --vaultbs: #4f6684cc;
+  --vaultf1: linear-gradient(to bottom, #00c3ff, #3077b5, #54e3ea);
+  --vaultname: 19cqw;
+  --andyb_v-img: url('https://ik.imagekit.io/arl60/Ardent/personal/Nereus/Andy_3.png?updatedAt=1759823244159');
+  --andyb_v-zoom: 300%;
+  --andyb_v-pos: 20% 43%;
+}
