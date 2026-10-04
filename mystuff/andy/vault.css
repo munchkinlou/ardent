@@ -1312,4 +1312,16 @@ html:not(:has(#off:checked)) {
   --andyb_v-zoom: 580%;
   --andyb_v-pos: 95% 25%;
 }
-
+.flex:has(vault[etienne]) {
+  --vaultportrait: url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/photo-1589560486062-db6aa7947af0.jpg?updatedAt=1754332106581&tr=w-500') 50% 0 / cover no-repeat;
+  --vaultavy: url('https://ik.imagekit.io/arl60/Ardent/personal/Gambit/gambit.png?updatedAt=1788810300486&tr=w-500') 36% 35% / 120% no-repeat;
+  --vaultring: #5a1b1b;
+  --vaultibg: #26070fe0;
+  --vaultst: #ff60b2;
+  --vaultbs: #6237419c;
+  --vaultf1: linear-gradient(to bottom, #d746c1, #dc51c6, #b048d5);
+  --vaultname: 18cqw;
+  --andyb_v-img: url('https://ik.imagekit.io/arl60/Ardent/personal/Gambit/ref.png?updatedAt=1777058604235');
+  --andyb_v-zoom: 600%;
+  --andyb_v-pos: 78% 16.5%;
+}
