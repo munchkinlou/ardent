@@ -565,8 +565,8 @@ vault[andy] dt:hover::before {
 }
 .andyb_v cap {
   float: left;
-  margin: 6px 0 0 0;
-  padding: 0 15px 0 5px;
+  margin: 6px 10px 0 0;
+  padding: 0 15px 0;
   font: 48px/.8 "Allura", cursive;
   color: #a894c9;
   text-shadow: 3px 3px 0 #2a1f45;
@@ -945,7 +945,7 @@ html:not(:has(#off:checked)) {
     outline: 1px dashed #cfb8f033;
     outline-offset: -7px;
     backdrop-filter: blur(2px);
-    box-shadow: 6px 6px 0 #954d6863, 0 0 25px #000000a0;
+    box-shadow: 6px 6px 0 var(--vaultbs), 0 0 25px #000000a0;
     z-index: 1;
   }
   & .flex:has(vault[plot]) .author_avatar {
@@ -959,7 +959,7 @@ html:not(:has(#off:checked)) {
     box-shadow:
       0 0 0 5px #17082a,
       0 0 0 6px color-mix(in srgb, var(--vaultring, #cfb8f0) 40%, transparent),
-      4px 4px 0 6px #954d6863;
+      4px 4px 0 6px var(--vaultbs);
   }
   & .flex:has(vault[plot]) .author_avatar a {
     display: block;
@@ -1235,9 +1235,23 @@ html:not(:has(#off:checked)) {
   --vaultring: #e4c568;
   --vaultibg: #2e14119e;
   --vaultst: #e28b46;
+  --vaultbs: #40142b9c;
   --vaultf1: linear-gradient(to bottom, #eac07d, #ac7d33, #eac07d);
   --vaultname: 14cqw;
   --andyb_v-img: url('https://ik.imagekit.io/arl60/Ardent/personal/Alucard/alucardref.png?updatedAt=1759791218725');
   --andyb_v-zoom: 400%;
   --andyb_v-pos: 70% 22%;
+}
+.flex:has(vault[astarion]) {
+  --vaultportrait: url('https://ik.imagekit.io/arl60/Ardent/personal/Backgrounds/ethereal_4k.png?updatedAt=1773769905517&tr=w-500') 0 0 / cover no-repeat;
+  --vaultavy: url('https://ik.imagekit.io/arl60/Ardent/personal/Astarion/avatar.png?updatedAt=1788363441029') 50% 30% / cover no-repeat;
+  --vaultring: #5bd9d9;
+  --vaultibg: #071725;
+  --vaultst: #66c5ea;
+  --vaultbs: #243c6a9c;
+  --vaultf1: linear-gradient(to bottom, #4cb2ca, #253566, #2572b6);
+  --vaultname: 13cqw;
+  --andyb_v-img: url('https://ik.imagekit.io/arl60/Ardent/personal/Astarion/reference.png?updatedAt=1789784159548');
+  --andyb_v-zoom: 500%;
+  --andyb_v-pos: 79% 18%;
 }
