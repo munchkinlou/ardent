@@ -1299,5 +1299,17 @@ html:not(:has(#off:checked)) {
   --andyb_v-zoom: 280%;
   --andyb_v-pos: -5% 28%;
 }
-
+.flex:has(vault[jinwoo]) {
+  --vaultportrait: url('https://ik.imagekit.io/arl60/Ardent/personal/Jinwoo/Andy_2.png?updatedAt=1762826737602&tr=w-500') 70% 0 / cover no-repeat;
+  --vaultavy: url('https://ik.imagekit.io/arl60/Ardent/personal/Jinwoo/73_0_by_nevvvia_toofs.png?updatedAt=1762826104063&tr=w-500') 36% 25% / 300% no-repeat;
+  --vaultring: #b06046;
+  --vaultibg: #1a1936ab;
+  --vaultst: #f4aa75;
+  --vaultbs: #3c3e8c9c;
+  --vaultf1: linear-gradient(to bottom, #af6f2b, #fcd29c, #c2904f);
+  --vaultname: 18cqw;
+  --andyb_v-img: url('https://ik.imagekit.io/arl60/Ardent/personal/Jinwoo/jinwoo_fullbody.png?updatedAt=1762834415772');
+  --andyb_v-zoom: 580%;
+  --andyb_v-pos: 95% 25%;
+}
 
