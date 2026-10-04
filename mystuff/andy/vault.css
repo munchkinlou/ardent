@@ -1273,4 +1273,17 @@ html:not(:has(#off:checked)) {
   --andyb_v-zoom: 500%;
   --andyb_v-pos: 0% 15%;
 }
+.flex:has(vault[deadlock]) {
+  --vaultportrait: url('https://ik.imagekit.io/arl60/Ardent/personal/Deadlock/2151542416.jpg?updatedAt=1762811360740&tr=w-500') 0 0 / cover no-repeat;
+  --vaultavy: url('https://ik.imagekit.io/arl60/Ardent/personal/Deadlock/reference.png?updatedAt=1761441640924') 3.3% 17% / 600% no-repeat;
+  --vaultring: #f41c1c;
+  --vaultibg: #031d1acc;
+  --vaultst: #ff3131;
+  --vaultbs: #0d4e489c;
+  --vaultf1: linear-gradient(to bottom, #ff1800, #8b1e1e, #af4132);
+  --vaultname: 13cqw;
+  --andyb_v-img: url('https://ik.imagekit.io/arl60/Ardent/personal/Deadlock/DxquGwJ.png?updatedAt=1762810379416');
+  --andyb_v-zoom: 600%;
+  --andyb_v-pos: 18% 48%;
+}
 
