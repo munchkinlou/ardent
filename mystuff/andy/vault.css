@@ -1366,3 +1366,16 @@ html:not(:has(#off:checked)) {
   --andyb_v-zoom: 300%;
   --andyb_v-pos: 20% 43%;
 }
+.flex:has(vault[perseus]) {
+  --vaultportrait: url('https://ik.imagekit.io/arl60/Ardent/personal/Perseus/IMG_5308.png?updatedAt=1789847350804&tr=w-1000') 50% 50% / 200% no-repeat;
+  --vaultavy: url('https://ik.imagekit.io/arl60/Ardent/personal/Perseus/nakey_for_andy.png?updatedAt=1789005719066&tr=w-500') 90% 20% / 400% no-repeat;
+  --vaultring: #8a7fff;
+  --vaultibg: #091931c4;
+  --vaultst: #29cdff;
+  --vaultbs: #4f6684cc;
+  --vaultf1: linear-gradient(to bottom, #9b7def, #b79dff, #6e84ff);
+  --vaultname: 19cqw;
+  --andyb_v-img: url('https://ik.imagekit.io/arl60/Ardent/personal/Perseus/Iicon2.png?updatedAt=1789005648649');
+  --andyb_v-zoom: 200%;
+  --andyb_v-pos: 25% 50%;
+}
