@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
+.shaylat2 {
+  position: relative;
+  width: 800px;
+  margin: 20px auto 50px;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: visible;
+  font-family: "Karla", sans-serif;
+}
+.shaylat2:after{
+  content:'code by andy';
+  position: absolute;
+  font-family: "Unica One", sans-serif;
+  text-align: center;
+  width: 100%;
+  margin: 5px 0 0;
+}
+.shaylat2 shay {
+  position: absolute;
+  bottom: -147px;
+  left: -5px;
+  width: 712px;
+  height: 728px;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/Seadragoness/shayla/two.png?updatedAt=1791226358475')
+    no-repeat left / contain;
+  z-index: 10;
+  pointer-events: none;
+  filter: drop-shadow(1px 1px 30px #17215461) drop-shadow(1px 1px 2px #8fe5ffc4);
+}
+.shaylat2 bor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 480px;
+  margin: 0 5px 0 auto;
+  padding: 2px;
+  background: linear-gradient(to bottom, #198187, #000);
+  border-radius: 250px 250px 0 0;
+  overflow: hidden;
+  box-shadow: 2px 2px 3px black, 1px 1px 2px black;
+}
+.shaylat2 con {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: inherit;
+}
+.shaylat2 con::after {
+  content: '';
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 15;
+  width: 70%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #92ceffa6, transparent);
+  pointer-events: none;
+}
+.shaylat2 con::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: url('https://cdna.artstation.com/p/assets/images/images/062/537/418/large/rutger-van-de-steeg-leviathan-own.jpg?1683372435')
+    center / cover no-repeat;
+  filter: saturate(2);
+  pointer-events: none;
+}
+.shaylat2 inbor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  padding: 2px;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, #6cddff, #0c1733);
+  box-shadow: 2px 2px 3px black, 0 0 3px black;
+  overflow: hidden;
+}
+.shaylat2 inbor:before{
+  content: '';
+  position: absolute;
+  bottom:-170px;
+  right: -40px;
+  width: 100%;
+  height: 350px;
+  z-index: 6;
+  transform: rotate(50deg);
+  opacity: 0.12;
+  filter: saturate(3) hue-rotate(50deg) drop-shadow(0 0 2px black) ;
+  background: url('https://ik.imagekit.io/arl60/Ardent/assets/zap3.png')
+    no-repeat center / contain;
+}
+.shaylat2 inbor:after {
+  content: '';
+  position: absolute;
+  inset: 0 10px 10px;
+  z-index: 10;
+  border: 1px solid;
+  border-top: none;
+  border-image: linear-gradient(to top, #3583c3, #3f97ddd1 45%, transparent 70%) 1;
+  pointer-events: none;
+}
+.shaylat2 incon {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 5;
+  width: 100%;
+  padding: 220px 25px 20px;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, #0b1c2c, #203e59);
+  box-shadow: inset 0 0 10px #0a0a28;
+  overflow: hidden;
+  text-align: justify;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: .3px;
+  color: #bed1d6;
+  overflow:hidden;
+  text-shadow: 0 1px 2px #00000080;
+}
+.shaylat2 incon:before{
+  content:'';
+  position: absolute;
+  top: -20px;
+  left: -79px;
+  width:100%;
+  height: 300px;
+  background: url('https://ik.imagekit.io/arl60/Ardent/assets/zap5.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  z-index: 5;
+}
+.shaylat2 incon:after{
+  content:'';
+  position: absolute;
+  top: -20px;
+  left: 106px;
+  width:100%;
+  height: 300px;
+  background: url('https://ik.imagekit.io/arl60/Ardent/assets/zap6.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  z-index: 5;
+}
+.shaylat2 b,
+.shaylat2 .mycode_b {
+  display: inline;
+  font-family: "Cormorant", serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1;
+  color: transparent;
+  background: linear-gradient(to bottom, #B2FFF8, #01B8FF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: none;
+}
+.shaylat2 b:last-of-type {
+  position: absolute;
+  top:120px;
+  left: 50%;
+  z-index: 10;
+  transform: translateX(-50%);
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  padding-bottom:30px;
+  width: 80%;
+  filter: drop-shadow(0 0 2px black) drop-shadow(0 0 2px black);
+}
+.shaylat2 b:last-of-type:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 14px;
+  background: linear-gradient(90deg,#40a3d22b 0 22%,#84a2c3 42% 58%,#5fb4dd2b 78% 100%);
+  clip-path: polygon( 0 48%, 24% 48%, 30% 14%, 36% 72%, 43% 26%, 50% 80%, 57% 22%, 64% 68%, 70% 40%, 100% 40%, 100% 47%, 70% 47%, 64% 78%, 57% 32%, 50% 90%, 43% 36%, 36% 82%, 30% 24%, 24% 55%, 0 55% );
+  filter: drop-shadow(0 0 3px #84d7ff8c);
+}
+.shaylat2 incon:before,
+.shaylat2 incon:after {
+  opacity: 0;
+  animation: shayzapt2 4s linear infinite, shayshaket2 4s linear infinite;
+}
+.shaylat2 incon:after {
+  animation-duration: 5.5s, 5.5s;
+  animation-delay: 1.3s, 1.3s;
+}
+@keyframes shayzapt2 {
+  0%, 10%, 46%, 58%, 100% { opacity: 0; }
+  2% { opacity: .55; }
+  3.5% { opacity: .1; }
+  5% { opacity: .65; }
+  6.5% { opacity: .2; }
+  8% { opacity: .45; }
+  48% { opacity: .5; }
+  50% { opacity: .12; }
+  52% { opacity: .6; }
+  54% { opacity: .25; }
+  56% { opacity: .38; }
+}
+@keyframes shayshaket2 {
+  0%, 10%, 46%, 58%, 100% { transform: translate(0, 0); }
+  2% { transform: translate(-2px, 1px); }
+  3.5% { transform: translate(2px, -1px); }
+  5% { transform: translate(-3px, -2px); }
+  6.5% { transform: translate(2px, 2px); }
+  8% { transform: translate(-1px, 0); }
+  48% { transform: translate(2px, -1px); }
+  50% { transform: translate(-2px, 2px); }
+  52% { transform: translate(3px, 1px); }
+  54% { transform: translate(-2px, -2px); }
+  56% { transform: translate(1px, 0); }
+}
+@media (max-width: 1200px) {
+  .shaylat2 { margin:auto; max-width:450px; }
+  .shaylat2:after {margin: -18px 0 0;}
+  .shaylat2 incon::before,
+  .shaylat2 video,
+  .shaylat2 con:before,
+  .shaylat2 shay { display: none; }
+  .shaylat2 bor { margin: 0 0 20px;border-radius: 0;width: 100%; background: none;box-shadow:none;}
+  .shaylat2 con { padding: 0; }
+  .shaylat2 incon { padding: 0 18px 0; }
+  .shaylat2 incon video { height: 280px; }
+}
