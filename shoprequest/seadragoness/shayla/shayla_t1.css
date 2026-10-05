@@ -145,13 +145,13 @@
 .shaylat1 .mycode_b {
   display: inline;
   font-family: "Cormorant", serif;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 19px;
   line-height: 1;
-  color: transparent;
-  background: linear-gradient(to bottom, #B2FFF8, #01B8FF);
-  -webkit-background-clip: text;
-          background-clip: text;
+  color: transparent !important;
+  background: linear-gradient(to bottom, #B2FFF8, #01B8FF) !important;
+  -webkit-background-clip: text !important;
+          background-clip: text !important;
   text-shadow: none;
 }
 .shaylat1 b:last-of-type {
