@@ -71,6 +71,7 @@
   border-radius: inherit;
   background: url('https://cdna.artstation.com/p/assets/images/images/062/537/418/large/rutger-van-de-steeg-leviathan-own.jpg?1683372435')
     center / cover no-repeat;
+  background-attachment: fixed;
   filter: saturate(2);
   pointer-events: none;
 }
