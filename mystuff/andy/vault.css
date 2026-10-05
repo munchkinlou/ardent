@@ -635,6 +635,7 @@ vault[andy] dt:hover::before {
   border-left: 1px dashed #bd8abc;
   font: 15px/1.6 "Cormorant Garamond", serif;
   color: #ddd0ea;
+  line-height: 1.1;
 }
 .andyb_v edited {
   grid-row: 4;
