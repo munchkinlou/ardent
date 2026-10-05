@@ -1392,3 +1392,16 @@ html:not(:has(#off:checked)) {
   --andyb_v-zoom: 220%;
   --andyb_v-pos: 66% 33%;
 }
+.flex:has(vault[seagull]) {
+  --vaultportrait: url('https://ik.imagekit.io/arl60/Ardent/personal/Backgrounds/guiding_light_UltraHD.png?updatedAt=17893490122908&tr=w-1000') 20% 50% / cover no-repeat;
+  --vaultavy: url('https://ik.imagekit.io/arl60/Ardent/personal/Seagull/Seagull_Lines.png?updatedAt=1789836215196&tr=w-500') 11% 20% / 520% no-repeat;
+  --vaultring: #f9a5ef;
+  --vaultibg: #230c1cc2;
+  --vaultst: #ffa6f5;
+  --vaultbs: #361e0da1;
+  --vaultf1: linear-gradient(to bottom, #f18bff, #fcdeff, #e078e9);
+  --vaultname: 17cqw;
+  --andyb_v-img: url('https://ik.imagekit.io/arl60/Ardent/personal/Seagull/IMG_05862.png?updatedAt=1789836213945');
+  --andyb_v-zoom: 500%;
+  --andyb_v-pos: 23% 14%;
+}
