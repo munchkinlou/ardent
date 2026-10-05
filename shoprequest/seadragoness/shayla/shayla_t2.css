@@ -233,8 +233,10 @@
   56% { transform: translate(1px, 0); }
 }
 @media (max-width: 1200px) {
-  .shaylat2 { margin:auto; max-width:450px; }
+  .shaylat2 { left:50%; transform: translatex(-50%);margin:auto; max-width:450px; }
   .shaylat2:after {margin: -18px 0 0;}
+  .shaylat2 inbor:before,
+  .shaylat2 incon:after,
   .shaylat2 incon::before,
   .shaylat2 video,
   .shaylat2 con:before,
@@ -243,4 +245,8 @@
   .shaylat2 con { padding: 0; }
   .shaylat2 incon { padding: 0 18px 0; }
   .shaylat2 incon video { height: 280px; }
+  .shaylat2 b:last-of-type { 
+    position: relative;
+    inset:0; transform:none;
+    display: block; width: 100%;}
 }
