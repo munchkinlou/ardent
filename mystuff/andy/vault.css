@@ -1379,3 +1379,16 @@ html:not(:has(#off:checked)) {
   --andyb_v-zoom: 200%;
   --andyb_v-pos: 25% 50%;
 }
+.flex:has(vault[rengoku]) {
+  --vaultportrait: url('https://ik.imagekit.io/arl60/Ardent/personal/Rengoku/Dragon_king_.png?updatedAt=1788647351528&tr=w-1000') 10% 50% / 400% no-repeat;
+  --vaultavy: url('https://ik.imagekit.io/arl60/Ardent/personal/Rengoku/Andy_04.png?updatedAt=1788647331218&tr=w-500') 23% 30% / 520% no-repeat;
+  --vaultring: #ffb76a;
+  --vaultibg: #1e0a16b8;
+  --vaultst: #ffa646;
+  --vaultbs: #361e0da1;
+  --vaultf1: linear-gradient(to bottom, #e7a157, #c2473d, #e8a458);
+  --vaultname: 15cqw;
+  --andyb_v-img: url('https://ik.imagekit.io/arl60/Ardent/personal/Rengoku/comm._nov25.andy.CLIENT.png?updatedAt=1763648713356');
+  --andyb_v-zoom: 220%;
+  --andyb_v-pos: 66% 33%;
+}
