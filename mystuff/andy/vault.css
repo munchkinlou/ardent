@@ -1393,7 +1393,7 @@ html:not(:has(#off:checked)) {
   --andyb_v-pos: 66% 33%;
 }
 .flex:has(vault[seagull]) {
-  --vaultportrait: url('https://ik.imagekit.io/arl60/Ardent/personal/Backgrounds/guiding_light_UltraHD.png?updatedAt=17893490122908&tr=w-1000') 20% 50% / cover no-repeat;
+  --vaultportrait: url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/alexander-mils-741cmjIFrh8-unsplash.jpg?updatedAt=1762053435709&tr=w-1000') 10% 50% / cover no-repeat;
   --vaultavy: url('https://ik.imagekit.io/arl60/Ardent/personal/Seagull/Seagull_Lines.png?updatedAt=1789836215196&tr=w-500') 11% 20% / 520% no-repeat;
   --vaultring: #f9a5ef;
   --vaultibg: #230c1cc2;
