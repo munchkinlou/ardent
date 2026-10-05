@@ -114,6 +114,7 @@
   box-sizing: border-box;
   z-index: 5;
   width: 100%;
+  min-height: 500px;
   padding: 220px 25px 20px;
   border-radius: inherit;
   background: linear-gradient(to bottom, #0b1c2c, #203e59);
