@@ -165,7 +165,7 @@
 }
 
 @media (max-width: 1200px) {
-  .shaylat1 { margin:auto; max-width:450px; }
+  .shaylat1 { left:50%; transform:translatex(-50%);margin:auto; max-width:450px; }
   .shaylat1:after {margin: -18px 0 0;}
   .shaylat1 incon::before,
   .shaylat1 video,
