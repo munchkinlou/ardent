@@ -120,6 +120,7 @@
   position: relative;
   box-sizing: border-box;
   border-radius: inherit;
+  min-height: 350px;
   padding: 10px 30px 160px;
   width: 100%;
   background: linear-gradient(to bottom,#274564, #14141e);
