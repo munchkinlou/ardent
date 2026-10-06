@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap');
+
+.shaylat3 {
+  width: 600px;
+  margin: 20px auto 20px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 0px 3px rgb(0, 0, 0));
+  font-family: "Karla", sans-serif;
+}
+.shaylat3:after{
+  content:'code by andy';
+  position: absolute;
+  font-family: "Unica One", sans-serif;
+  text-align: right;
+  width: 100%;
+  top: -107px;
+  left: 317px;
+  transform: rotate(90deg);
+}
+.shaylat3 sh, .shaylat3 cs {
+  position: relative;
+  filter: drop-shadow(0 0 3px #000000b0);
+}
+.shaylat3 bor {
+  display: block;
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom, #c1dfdb, #1a3224);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  margin: 0 auto;
+  pointer-events: none;
+  padding: 15px 10px;
+  box-shadow: inset 0 0 5px black;
+}
+.shaylat3 con {
+  display: block;
+  position: relative;
+  z-index: 6;
+  margin: 0 auto;
+  padding: 2.2px;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #a6ffe2, #bbdcff,#386ea7);
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.85));
+}
+.shaylat3 inbor {
+  display: block;
+  position: relative;
+  z-index: 6;
+  padding: 590px 25px 30px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: visible;
+  background: linear-gradient(to bottom, #dbf7ff 700px,#3f5a73);
+}
+.shaylat3 inbor:before{
+  position: absolute;
+  content: '';
+  inset:0;
+  width:100%;
+  height: 100%;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/Seadragoness/shayla/headshotshayla.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  --maskn: linear-gradient(to bottom, black 650px, transparent 750px);
+  -webkit-mask: var(--maskn);
+  mask: var(--maskn);
+  z-index: -1;
+}
+.shaylat3 incon {
+  display: block;
+  position: relative;
+  z-index: 6;
+  padding: 180px 50px 0;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: visible;
+  background: linear-gradient(to bottom, #102643,#080f1c);
+  text-align: justify;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1;
+  color: #deeeff;
+  line-height: 1.2;
+  overflow:hidden;
+}
+.shaylat3 incon:before {
+  content: '';
+  position: absolute;
+  z-index: 7;
+  top: -30px;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  opacity: 0.7;
+  filter: drop-shadow(0 0 2px black);
+  background: url('https://ik.imagekit.io/arl60/Ardent/personal/Backgrounds/snow.png?updatedAt=1789166615226')
+    bottom / 100% no-repeat;
+  -webkit-mask: linear-gradient(to bottom, black 45%, transparent 100%);
+          mask: linear-gradient(to bottom, black 10%, transparent 100%);
+}
+.shaylat3 incon::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 8;
+  pointer-events: none;
+  --c: #9fd4ff;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 200' preserveAspectRatio='none'%3E%3Cpath d='M 0 37.9 A 70 340 0 0 0 100 37.9' fill='none' stroke='%239fd4ff' stroke-width='1' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E") top / 100% 200px no-repeat,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -35 100 140' preserveAspectRatio='none'%3E%3Cg transform='translate(0,70) scale(1,-1)'%3E%3Cpath d='M 0 18 Q 10 18, 10 0 H 20 C 35 -35, 65 -35, 80 0 H 90 Q 90 18, 100 18' fill='none' stroke='%239fd4ff' stroke-width='1' vector-effect='non-scaling-stroke'/%3E%3C/g%3E%3C/svg%3E") bottom / 100% 250px no-repeat,
+    linear-gradient(var(--c), var(--c)) left 38px / 1px calc(100% - 133px) no-repeat,
+    linear-gradient(var(--c), var(--c)) right 38px / 1px calc(100% - 133px) no-repeat;
+}
+.shaylat3 b, .shaylat3 .mycode_b {
+  font-family: "Cormorant", serif;
+  font-size: 18px;
+  font-weight: 400 !important;
+  color: transparent !important;
+  background: linear-gradient(to bottom, #afd9ff, #44f6ff) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  text-shadow: none;
+}
+.shaylat3 b:last-of-type{
+  display: block;
+  position: relative;
+  z-index: 0;
+  text-align: center;
+  font-family: "Corinthia", cursive;
+  font-size: 60px;
+  margin: 50px 0 20px;
+}
+.shaylat3 b:last-of-type:before{
+  position: absolute;
+  content:'';
+  z-index: 10;
+  bottom: 80px;
+  left:0;
+  width: 100%;
+  height: 40px;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/325260-P9JJSQ-20(2).png?updatedAt=1775081495735');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.shaylat3 bor, .shaylat3 con,
+.shaylat3 inbor {
+    mask: 
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -35 100 140' preserveAspectRatio='none'%3E%3Cpath d='M 0 100 H 100 V 18 Q 90 18, 90 0 H 80 C 65 -35, 35 -35, 20 0 H 10 Q 10 18, 0 18 Z' fill='black'/%3E%3C/svg%3E") top / 100% 250px no-repeat,
+      linear-gradient(black, black) 0 200px / 100% calc(100% - 400px) no-repeat,
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 140' preserveAspectRatio='none'%3E%3Cpath d='M 0 0 H 100 V 82 Q 90 82, 90 100 H 80 C 65 135, 35 135, 20 100 H 10 Q 10 82, 0 82 Z' fill='black'/%3E%3C/svg%3E") bottom / 100% 250px no-repeat;
+    -webkit-mask: 
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -35 100 140' preserveAspectRatio='none'%3E%3Cpath d='M 0 100 H 100 V 18 Q 90 18, 90 0 H 80 C 65 -35, 35 -35, 20 0 H 10 Q 10 18, 0 18 Z' fill='black'/%3E%3C/svg%3E") top / 100% 250px no-repeat,
+      linear-gradient(black, black) 0 200px / 100% calc(100% - 400px) no-repeat,
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 140' preserveAspectRatio='none'%3E%3Cpath d='M 0 0 H 100 V 82 Q 90 82, 90 100 H 80 C 65 135, 35 135, 20 100 H 10 Q 10 82, 0 82 Z' fill='black'/%3E%3C/svg%3E") bottom / 100% 250px no-repeat;
+}
+.shaylat3 incon {
+  --shayt3m1: radial-gradient(ellipse 70% 340px at 50% -200px, transparent 99.5%, black 100%) top / 100% 200px no-repeat;
+  --shayt3m2: linear-gradient(black, black) 0 200px / 100% calc(100% - 430px) no-repeat;
+  --shayt3m3: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -35 100 140' preserveAspectRatio='none'%3E%3Cg transform='translate(0,70) scale(1,-1)'%3E%3Cpath d='M 0 100 H 100 V 18 Q 90 18, 90 0 H 80 C 65 -35, 35 -35, 20 0 H 10 Q 10 18, 0 18 Z' fill='black'/%3E%3C/g%3E%3C/svg%3E") bottom / 100% 250px no-repeat;
+  --shayt3m: var(--shayt3m1), var(--shayt3m2), var(--shayt3m3);
+
+  mask: var(--shayt3m);
+  -webkit-mask: var(--shayt3m);
+}
+@media (max-width: 1200px) {
+  .shaylat3 { max-width: 450px;margin:0;filter: none;left:50%;transform:translateX(-50%);}
+  .shaylat3 sh, .shaylat3 cs {filter:none;}
+  .shaylat3 bor {margin: 0 auto 20px;background: none;width:100%;padding: 0;box-shadow: none;}
+  .shaylat3 bor, .shaylat3 con, .shaylat3 inbor, .shaylat3 incon {mask: none; -webkit-mask: none;}
+  .shaylat3 inbor {display: block;position: relative;padding: 5px;
+    background: linear-gradient(to bottom, #dbf7ff 700px,#3f5a73);}
+  .shaylat3 incon {display: block;padding: 0 25px;}
+  .shaylat3 b:last-of-type{margin: 50px 0 -10px;}
+  .shaylat3:after{
+    position: relative;
+    display: block;
+    text-align: center;
+    inset:0;
+    margin: -12px 0 5px;
+    transform: none;
+  }
+  .shaylat3 incon:before,
+  .shaylat3 incon::after,
+  .shaylat3 inbor:before {display: none;}
+}
