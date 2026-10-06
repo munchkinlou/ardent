@@ -185,14 +185,30 @@
       url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 140' preserveAspectRatio='none'%3E%3Cpath d='M 0 0 H 100 V 82 Q 90 82, 90 100 H 80 C 65 135, 35 135, 20 100 H 10 Q 10 82, 0 82 Z' fill='black'/%3E%3C/svg%3E") bottom / 100% 250px no-repeat;
 }
 @media (max-width: 1200px) {
-  .valfreyjat1 { margin:auto; max-width:450px; }
-  .valfreyjat1:after {margin: -18px 0 0;}
+  .valfreyjat1 {left:50%; transform:translatex(-50%); margin:auto; max-width:450px; }
+  .valfreyjat1:after {margin: -30px 0 0;}
   .valfreyjat1 incon::before,
   .valfreyjat1 video,
   .valfreyjat1 con:before,
-  .valfreyjat1 shay { display: none; }
+  .valfreyjat1 val { display: none; }
   .valfreyjat1 bor { margin: 0 0 20px;border-radius: 0;width: 100%; background: none;box-shadow:none;}
   .valfreyjat1 con { padding: 0; }
-  .valfreyjat1 incon { padding: 0 18px 0; }
-  .valfreyjat1 incon video { height: 280px; }
+  .valfreyjat1 incon { padding: 70px 20px 100px; }
+  .valfreyjat1 incon t {
+    overflow-y: auto;
+    height: auto;
+    box-shadow: none;
+    padding: 0;
+  }
+  .valfreyjat1 incon > b:last-of-type {
+    display: inline-block;
+    width: 100%;
+    margin: 10px auto 10px;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+  }
+  .valfreyjat1 incon::after { bottom: 80px; height: 50px; }
+
 }
