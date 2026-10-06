@@ -93,7 +93,8 @@
 .valfreyjat1 incon t {
   position: relative;
   display: block;
-  height: 400px;
+  min-height: 100px;
+  max-height: 400px;
   clip-path: inset(0 round 10px);
   overflow-y: auto;
   cursor: pointer;
