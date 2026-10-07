@@ -178,10 +178,10 @@
   font-weight: 600;
   font-size: 19px;
   line-height: 1;
-  color: transparent;
-  background: linear-gradient(to bottom, #FFC9F2, #FF83DA);
-  -webkit-background-clip: text;
-          background-clip: text;
+  color: transparent !important;
+  background: linear-gradient(to bottom, #FFC9F2, #FF83DA) !important;
+  -webkit-background-clip: text !important;
+          background-clip: text !important;
   text-shadow: none;
 }
 .theodosiat1 incon > b:last-of-type {
