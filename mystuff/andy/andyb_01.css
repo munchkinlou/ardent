@@ -404,6 +404,7 @@
   overflow:visible;
   padding: 20px 10px;
   user-select: all;
+  color: inherit !important;
 }
 @media (max-width: 1200px) {
   .ab01 { left: 50%;
