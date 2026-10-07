@@ -159,10 +159,10 @@
   font-weight: 600;
   font-size: 19px;
   line-height: 1;
-  color: transparent;
-  background: linear-gradient(to bottom, #CEFFFB, #75C5FF);
-  -webkit-background-clip: text;
-          background-clip: text;
+  color: transparent !important;
+  background: linear-gradient(to bottom, #CEFFFB, #75C5FF)!important;
+  -webkit-background-clip: text !important;
+          background-clip: text !important;
   text-shadow: none;
 }
 .valfreyjat1 incon > b:last-of-type {
@@ -199,7 +199,7 @@
     overflow-y: auto;
     height: auto;
     box-shadow: none;
-    padding: 0;
+    padding: 0px 10px 0 15px;
   }
   .valfreyjat1 incon > b:last-of-type {
     display: inline-block;
@@ -210,6 +210,6 @@
     text-transform: uppercase;
     letter-spacing: 10px;
   }
-  .valfreyjat1 incon::after { bottom: 80px; height: 50px; }
+  .valfreyjat1 incon::after { bottom: 80px; height: 40px; }
 
 }
