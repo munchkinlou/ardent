@@ -156,7 +156,7 @@
   background-clip: text !important;;
 }
 
-.ulchtart2 b:last-of-type {
+.ulchtart2 incon > b:last-of-type {
   display: block;
   position: absolute;
   bottom: 387px;
@@ -167,7 +167,7 @@
 
 
 @media (max-width: 1200px) {
-  .ulchtart2 b:last-of-type,
+  .ulchtart2 incon > b:last-of-type,
   .ulchtart2:before,
   .ulchtart2 con:before,
   .ulchtart2 incon:before,
