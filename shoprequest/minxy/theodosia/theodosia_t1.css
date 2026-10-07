@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
+.theodosiat1 {
+  position: relative;
+  width: 800px;
+  margin: 20px auto 100px;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: visible;
+  font-family: "Karla", sans-serif;
+  filter: drop-shadow(0 0 2px #000000ad);
+}
+.theodosiat1:after{
+  content:'code by andy';
+  position: absolute;
+  font-family: "Unica One", sans-serif;
+  text-align: center;
+  width: 100%;
+  margin: 50px 0 0;
+}
+.theodosiat1 theo {
+  position: absolute;
+  bottom: -194px;
+  left: 50px;
+  width: 712px;
+  height: 792px;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/minxy/theodosia/IMG_0689.png')
+    no-repeat left / contain;
+  z-index: 10;
+  pointer-events: none;
+}
+.theodosiat1 bor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 550px;
+  margin: 0 auto;
+  padding: 2px;
+  background: linear-gradient(to bottom, #acc5ff, #012240);
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: 2px 2px 3px black, 1px 1px 2px black;
+  border-radius: 20px 20px 300px 300px;
+}
+.theodosiat1 con {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px 20px 320px;
+  margin: 0 auto;
+  border-radius: inherit;
+}
+.theodosiat1 con::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/2632725_8741.jpg?updatedAt=1760754138078')
+    center / cover no-repeat;
+  background-attachment: fixed;
+  filter: saturate(0.5) hue-rotate(-20deg);
+  opacity: 1;
+  pointer-events: none;
+}
+.theodosiat1 inbor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  padding: 2px;
+  border-radius: 20px;
+  background: linear-gradient(to bottom, #e3c2ae, #eed2b8);
+  box-shadow: 2px 2px 3px black, 0 0 3px black;
+  overflow:hidden;
+}
+.theodosiat1 inbor:before{
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150%;
+  top: -80px; height: 400px;
+  background: linear-gradient(to bottom, #ffe4f4, #ca7474);
+  -webkit-mask: url('https://ik.imagekit.io/arl60/Ardent/assets/cloudstars.png?updatedAt=1791394568744')
+    center / contain no-repeat;
+          mask: url('https://ik.imagekit.io/arl60/Ardent/assets/cloudstars.png?updatedAt=1791394568744')
+    center / contain no-repeat;
+  pointer-events: none;
+  z-index: 10;
+}
+.theodosiat1 incon {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 130px 25px 100px;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, #224b6f 250px, #010616);
+  box-shadow: inset 0 0 10px #eab7e5;
+  overflow: hidden;
+  text-align: justify;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: .3px;
+  color: #ffdae1;
+}
+.theodosiat1 incon t {
+  position: relative;
+  display: block;
+  height: 400px;
+  clip-path: inset(0 round 10px);
+  overflow-y: auto;
+  cursor: pointer;
+  z-index: 5;
+  padding: 0 15px 20px 20px; 
+  letter-spacing: 0;
+  box-shadow: inset 0 0 10px #603c484d;
+  
+  --scrollbar-thumb: #D2BEB06B;
+  --scrollbar-track: transparent;
+  --scrollbar-width: 6px;
+
+  scrollbar-width: thin;
+  scrollbar-color: #F1BBD266 var(--scrollbar-track);
+
+  &::-webkit-scrollbar {
+    width: var(--scrollbar-width);
+  }
+  &::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 3px;
+  }
+}
+.theodosiat1 incon t br:first-of-type{
+  display: none;
+}
+.theodosiat1 incon video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+  mix-blend-mode: screen;
+  opacity: 0.6;
+  filter: hue-rotate(20deg) saturate(.5);
+  -webkit-mask: linear-gradient(to top, transparent, black 50%);
+          mask: linear-gradient(to top, transparent, black 50%);
+  pointer-events: none;
+}
+.theodosiat1 incon::before{
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background: linear-gradient(to bottom, #fffbfa, #e69ee2);
+  -webkit-mask: url('https://ik.imagekit.io/arl60/Ardent/assets/divi3.png')
+    center / contain no-repeat;
+          mask: url('https://ik.imagekit.io/arl60/Ardent/assets/divi3.png')
+    center / contain no-repeat;
+  pointer-events: none;
+  z-index: 10;
+}
+.theodosiat1 incon::before { bottom: 106px; height: 70px; }
+.theodosiat1 b,
+.theodosiat1 .mycode_b {
+  display: inline;
+  font-family: "Cormorant", serif;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 1;
+  color: transparent;
+  background: linear-gradient(to bottom, #FFC9F2, #FF83DA);
+  -webkit-background-clip: text;
+          background-clip: text;
+  text-shadow: none;
+}
+.theodosiat1 incon > b:last-of-type {
+  display: block;
+  position: absolute;
+  z-index: 11;
+  width: 100%;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+@media (max-width: 1200px) {
+  .theodosiat1 {left:50%; transform:translatex(-50%); margin:0; max-width:450px; }
+  .theodosiat1:after {margin: -20px 0 0;}
+  .theodosiat1 incon::before,
+  .theodosiat1 video,
+  .theodosiat1 con:before,
+  .theodosiat1 theo { display: none; }
+  .theodosiat1 bor { margin: 0 0 20px;border-radius: 0;width: 100%; background: none;box-shadow:none;}
+  .theodosiat1 con { padding: 0; }
+  .theodosiat1 incon { background: #10344e; padding: 70px 20px 10px; }
+  .theodosiat1 incon t {
+    overflow-y: auto;
+    height: auto;
+    box-shadow: none;
+    padding: 40px 10px 0;
+  }
+  .theodosiat1 incon > b:last-of-type {
+    display: inline-block;
+    position: relative;
+    inset:0;
+    transform: none;
+    width: 100%;
+    margin: 10px auto 10px;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+  }
+  .theodosiat1 incon::after { bottom: 80px; height: 50px; }
+
+}
