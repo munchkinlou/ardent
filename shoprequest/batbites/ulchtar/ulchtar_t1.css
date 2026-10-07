@@ -137,7 +137,7 @@
   display: none;
 }
 
-.ulchtart1 incon b:last-of-type {
+.ulchtart1 incon > b:last-of-type {
   display: block;
   position: relative;
   text-align: center;
@@ -147,7 +147,7 @@
   margin-top:20px;
 }
 
-.ulchtart1 incon b:last-of-type:before {
+.ulchtart1 incon > b:last-of-type:before {
   content: '';
   position: absolute;
   top: -20px;
