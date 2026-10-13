@@ -170,9 +170,9 @@
   display: inline;
 }
 
-.perseust5 incon b {
+.perseust5 incon b, .perseust5 incon .mycode_b {
   display: inline;
-  color: #a2a0e9;
+  color: #a2a0e9 !important;
 	font-family: 'Amarante';
   font-size: 16px;
   font-weight: 400;
