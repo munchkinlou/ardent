@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+
+.elyndrat1 {
+	position: relative;
+  width: 800px;
+  margin: 70px auto 30px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+.elyndrat1:after {
+  content: 'code by andy';
+  position:absolute;
+  bottom: -17px;
+  right: 170px;
+  font-size:10px;
+  margin: 10px 10px 0 auto;
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
+}
+
+.elyndrat1 ely {
+  position: absolute;
+  top: 4px;
+  left: 159px;
+  width: 527px;
+  height: 351px;
+  margin: 0 auto;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/e-cho/elyndra/1.png')
+    no-repeat left;
+  background-size: contain; 
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0px 0px 2px rgb(192, 255, 187));
+  
+}
+
+.elyndrat1 bor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 450px;
+  padding: 15px;
+  margin: 0 auto;
+  
+  border: 2px solid;
+  border-image: linear-gradient(to bottom, #dbeed9, #cdd6cc) 1;
+  
+  border-radius: 0;
+  overflow: hidden;
+  
+  filter: drop-shadow(1px 1px 2px black);
+}
+.elyndrat1 bor:before {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  z-index: 1;
+  pointer-events: none;
+  border: 2px solid;
+  border-image: linear-gradient(to bottom, #90a271, #849e64) 1;
+}
+.elyndrat1 con {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: inherit;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  pointer-events: none;
+  margin: 0 auto;
+}
+
+.elyndrat1 con::before {
+  border-radius: inherit;
+  content:'';
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  background: url('https://cdnb.artstation.com/p/assets/images/images/037/525/379/large/blake-rottinger-pic-lol-web.jpg?1620624408');
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+  filter: saturate(1);
+}
+
+.elyndrat1 inbor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #92af7a, #4f614f);
+  padding: 2px;
+  border-radius: 250px 250px 0 0;
+}
+
+.elyndrat1 incon {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: inherit;
+  padding: 300px 25px 0px;
+  width: 100%;
+  background: linear-gradient(to bottom, rgb(65, 40, 40), #410c0f);
+  height: auto;
+  box-shadow: inset 0 0 10px rgb(36, 13, 7);
+  text-align: justify;
+  font-weight: 400;
+  font-size:13px;
+  color: #dddddd;
+  line-height: 1.2;
+   
+}
+
+
+.elyndrat1 incon:after {
+  position: absolute;
+  content: '';
+  bottom: 49px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 29px;
+  
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/2378399_323869-P9DO7B-875.png')
+    no-repeat center;
+  background-size: contain;
+  
+  pointer-events: none;
+  
+  filter:brightness(10)
+    drop-shadow(1px 1px 1px black);
+  opacity: 0.8;
+  z-index: 5;
+}
+
+.elyndrat1 incon b, .elyndrat1 incon .mycode_b {
+  color: #61d45b !important;
+  font-family: "Cormorant", serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-shadow: 0px 0px 2px #000000;
+  line-height: 0.9;
+}
+
+.elyndrat1 incon > b:last-of-type {
+  display: block;
+  width: 100%;
+  margin: 30px auto -10px;
+  font-size:20px;
+  color: #6171d2;
+  text-shadow: 1px 1px 2px #0a0906;
+  text-align: center;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+
+@media (max-width: 1200px) {
+  
+  .elyndrat1 {
+    width: 100%;
+    margin: 0;
+  }
+
+  .elyndrat1 bor {
+    max-width: 450px;
+    width: 100%;
+  }
+  .elyndrat1 con {
+    padding: 10px;
+  }
+  
+  .elyndrat1 ely {
+    display: none;
+  }
+  
+  .elyndrat1 inbor {
+    border-radius: 0;
+  }
+  
+  .elyndrat1 incon {
+    padding: 10px 20px 0;
+  }
+  
+  .elyndrat1 incon br:first-child {
+    display: none;
+  }
+
+  .elyndrat1:after {
+    content: 'code by andy';
+    position:relative;
+    inset: 0;
+    display: block;
+    text-align: center;
+    margin: 10px auto 5px;
+  }
+
+  .elyndrat1 incon > b:last-of-type {
+    display: block;
+    width: 100%;
+    margin: 30px auto -10px;
+    font-size:25px;
+    color: #6171d2;
+    text-shadow: 1px 1px 2px #0a0906;
+    text-align: center;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+
+
+}
