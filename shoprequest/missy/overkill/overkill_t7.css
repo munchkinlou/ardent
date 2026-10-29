@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@font-face {
+  font-family: 'okill' ;
+  src: url(Heatizen-EaVBj.ttf);
+}
+
+.overkillt7 {
+  position: relative;
+  width: 800px;
+  margin: 40px auto 20px;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: visible;
+  font-family: "Comfortaa", sans-serif;
+  filter: drop-shadow(0 0 2px #000000ad);
+}
+.overkillt7:after{
+  content:'code by andy';
+  position: absolute;
+  font-family: "Unica One", sans-serif;
+  text-align: right;
+  width: 216px;
+  right: 6px;
+  bottom: 255px;
+  transform: rotate(90deg);
+}
+.overkillt7 okill {
+  position: absolute;
+  top: -29px;
+  left: 32px;
+  width: 725px;
+  height: 719px;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/Missy/Overkill/mBDpDLPA.png')
+    no-repeat left / contain;
+  z-index: 10;
+  pointer-events: none;
+}
+.overkillt7 bor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 550px;
+  margin: 0 auto;
+  padding: 2px;
+  background: linear-gradient(to bottom, #ff0009, #000,red);
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: 2px 2px 3px black, 1px 1px 2px black;
+}
+.overkillt7 con {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, black 20%, red, black 80%);
+}
+.overkillt7 inbor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  padding: 2px;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, #5b0808, #840707);
+  box-shadow: 2px 2px 3px black, 0 0 3px black;
+}
+.overkillt7 incon {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 600px 25px 120px;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, #2a3429 250px, #060b0a);
+  box-shadow: inset 0 0 10px #ee1313;
+  overflow: hidden;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: .3px;
+  color: #fffadd;
+}
+.overkillt7 incon video {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+  mix-blend-mode: screen;
+  -webkit-mask: linear-gradient(to bottom, transparent, black 50%);
+          mask: linear-gradient(to bottom, transparent, black 50%);
+  pointer-events: none;
+  filter: saturate(0.6);
+  opacity: 0.7;
+}
+.overkillt7 incon::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background: linear-gradient(to bottom, #fffbdb, #d6cfb5);
+  --di: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/2.png?updatedAt=1761259622322');
+  -webkit-mask: var(--di)
+    center / contain no-repeat;
+          mask: var(--di)
+    center / contain no-repeat;
+  pointer-events: none;
+  z-index: 10;
+}
+.overkillt7 incon::after { bottom: 200px; height: 27px; }
+.overkillt7 b,
+.overkillt7 .mycode_b {
+  display: inline;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 1;
+  color: transparent;
+  background: linear-gradient(to bottom, #FF2828, #EC0000);
+  -webkit-background-clip: text;
+          background-clip: text;
+  text-shadow: none;
+}
+.overkillt7 incon > b:last-of-type {
+  display: inline-block;
+  width: 100%;
+  margin: 40px auto -10px;
+  text-align: center;
+  font-size: 54px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: 'okill';
+}
+.overkillt7 bor, .overkillt7 con,
+.overkillt7 inbor, .overkillt7 incon {
+  --tmtop: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -60 100 165' preserveAspectRatio='none'%3E%3Cpath d='M 0 105 H 100 V 18 H 92 Q 92 -2, 78 2 Q 58 -4, 50 -60 Q 42 -4, 22 2 Q 8 -2, 8 18 H 0 Z' fill='black'/%3E%3C/svg%3E");
+  --tmbot: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 165' preserveAspectRatio='none'%3E%3Cpath d='M 0 0 H 100 V 82 H 92 Q 92 102, 78 98 Q 58 104, 50 160 Q 42 104, 22 98 Q 8 102, 8 82 H 0 Z' fill='black'/%3E%3C/svg%3E");
+  --tmask:
+    var(--tmtop) top / 100% 295px no-repeat,
+    linear-gradient(black, black) 0 240px / 100% calc(100% - 480px) no-repeat,
+    var(--tmbot) bottom / 100% 295px no-repeat;
+
+  mask: var(--tmask);
+  -webkit-mask: var(--tmask);
+}
+@media (max-width: 1200px) {
+  .overkillt7 {left:50%; transform:translatex(-50%); margin:auto; max-width:450px; }
+  .overkillt7:after {position: relative; inset:auto;margin: -30px auto 0;}
+  .overkillt7 incon::before,
+  .overkillt7 video,
+  .overkillt7 con:before,
+  .overkillt7 okill { display: none; }
+  .overkillt7 bor { margin: auto;border-radius: 0;width: 100%; background: none;box-shadow:none;}
+  .overkillt7 con { padding: 0; }
+  .overkillt7 incon { padding: 130px 20px 130px; }
+  .overkillt7 incon t {
+    overflow-y: auto;
+    height: auto;
+    box-shadow: none;
+    padding: 0;
+  }
+  .overkillt7 incon > b:last-of-type {
+    display: inline-block;
+    width: 100%;
+    margin: 20px auto -15px;
+    text-align: center;
+    font-size: 31px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+  }
+  .overkillt7 incon::after { bottom: 172px; height: 21px; }
+
+}
