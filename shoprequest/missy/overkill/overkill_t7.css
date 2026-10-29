@@ -165,22 +165,27 @@
   .overkillt7 okill { display: none; }
   .overkillt7 bor { margin: auto;border-radius: 0;width: 100%; background: none;box-shadow:none;}
   .overkillt7 con { padding: 0; }
-  .overkillt7 incon { padding: 130px 20px 130px; }
+  .overkillt7 incon { padding: 0px 20px 0; }
   .overkillt7 incon t {
     overflow-y: auto;
     height: auto;
     box-shadow: none;
     padding: 0;
   }
+  .overkillt7 bor, .overkillt7 con,
+  .overkillt7 inbor, .overkillt7 incon {
+  mask: none;
+  -webkit-mask: none;
+  }
   .overkillt7 incon > b:last-of-type {
     display: inline-block;
     width: 100%;
-    margin: 20px auto -15px;
+    margin: 20px auto 15px;
     text-align: center;
     font-size: 31px;
     text-transform: uppercase;
     letter-spacing: 10px;
   }
-  .overkillt7 incon::after { bottom: 172px; height: 21px; }
+  .overkillt7 incon::after { bottom: 78px; height: 21px; }
 
 }
