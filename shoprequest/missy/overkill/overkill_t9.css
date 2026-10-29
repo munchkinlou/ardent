@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+.overkillt9 {
+  position: relative;
+  width: 800px;
+  margin: 40px auto 20px;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: visible;
+  font-family: "Comfortaa", sans-serif;
+  filter: drop-shadow(0 0 2px #000000ad);
+}
+.overkillt9:after{
+  content:'code by andy';
+  position: absolute;
+  font-family: "Unica One", sans-serif;
+  text-align: right;
+  width: 214px;
+  right: -117px;
+  bottom: 195px;
+  transform: rotate(90deg);
+}
+.overkillt9 bor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2px;
+  background: linear-gradient(to bottom, #6a0e11, #000,#490707);
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: 2px 2px 3px black, 1px 1px 2px black;
+}
+.overkillt9 con {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, #320505 20%, #181e18, black 80%);
+}
+.overkillt9 con::after {
+  content: '';
+  position: absolute;
+  inset: 8px;
+  z-index: 7;
+  pointer-events: none;
+  border: 1px solid #ff2a2a2e;
+}
+.overkillt9 con::before {
+  content: '';
+  position: absolute;
+  inset: 14px;
+  z-index: 8;
+  pointer-events: none;
+  --otop: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -26 100 128' preserveAspectRatio='none'%3E%3Cpath d='M 100 24 Q 94 24 94 12 L 80 12 L 50 -26 L 20 12 L 6 12 Q 6 24 0 24' fill='none' stroke='%23ff2a2a' stroke-width='2' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
+  --obot: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 128' preserveAspectRatio='none'%3E%3Cpath d='M 100 76 Q 94 76 94 88 L 80 88 L 50 126 L 20 88 L 6 88 Q 6 76 0 76' fill='none' stroke='%23ff2a2a' stroke-width='2' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
+  background:
+    var(--otop) top / 100% 230px no-repeat,
+    var(--obot) bottom / 100% 230px no-repeat,
+    linear-gradient(#ff2a2a, #ff2a2a) 0 90px / 2px calc(100% - 183px) no-repeat,
+    linear-gradient(#ff2a2a, #ff2a2a) 100% 90px / 2px calc(100% - 183px) no-repeat;
+  filter: drop-shadow(0 0 4px #ff000073);
+}
+.overkillt9 inbor::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 6;
+  pointer-events: none;
+  border-radius: inherit;
+  box-shadow:
+    inset 0 0 0 1px #ff2a2a4d,
+    inset 0 0 22px #ff000033,
+    inset 0 0 60px #00000080;
+}
+.overkillt9 inbor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  padding: 2px;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, #5b0808, #840707);
+  box-shadow: 2px 2px 3px black, 0 0 3px black;
+}
+.overkillt9 incon {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 660px 50px 0;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, #313830 250px, #020606);
+  box-shadow: inset 0 0 10px #ee1313;
+  overflow: hidden;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: .3px;
+  color: #fff9d4;
+}
+.overkillt9 incon::after {
+  filter: drop-shadow(0 0 4px #ff0000a6) drop-shadow(0 0 1px black);
+}
+.overkillt9 incon:before {
+  position: absolute;
+  content: '';
+  inset: 0;
+  z-index: -1;
+  --cut: 650px;
+  background:
+    linear-gradient(to right, transparent, #d4a08c 18%, #f0e2cd 50%, #d4a08c 82%, transparent) 0 calc(var(--cut) - 5px) / 100% 1px no-repeat,
+    linear-gradient(to right, transparent, #7a1f1a 10%, #b8362d 50%, #7a1f1a 90%, transparent) 0 calc(var(--cut) - 4px) / 100% 3px no-repeat,
+    linear-gradient(to right, transparent, #1a0303 28%, #1a0303 72%, transparent) 0 calc(var(--cut) - 1px) / 100% 1px no-repeat,
+    linear-gradient(to top, #6b1a1640, transparent) 0 calc(var(--cut) - 34px) / 100% 30px no-repeat,
+    url('https://ik.imagekit.io/arl60/Ardent/shop/Missy/Overkill/wTP31Jdg.png?updatedAt=1793229867455') top / 100% no-repeat;
+  --maskn: linear-gradient(black var(--cut), transparent var(--cut));
+  -webkit-mask: var(--maskn);
+          mask: var(--maskn);
+  pointer-events: none;
+}
+.overkillt9 incon video {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+  mix-blend-mode: screen;
+  -webkit-mask: linear-gradient(to bottom, transparent, black 50%);
+          mask: linear-gradient(to bottom, transparent, black 50%);
+  pointer-events: none;
+  filter: saturate(0.1) hue-rotate(140deg);
+  opacity: 0.8;
+}
+.overkillt9 incon::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background:
+    radial-gradient(ellipse 35% 70% at 50% 45%, #d6b98b, #cfd492 40%, transparent 72%), linear-gradient(to bottom, #93d27d, #79977d 50%, #a94a46);
+  mix-blend-mode: screen;
+  --di: url('https://ik.imagekit.io/arl60/Ardent/assets/divi4.png');
+  -webkit-mask: var(--di)
+    center / contain no-repeat;
+          mask: var(--di)
+    center / contain no-repeat;
+  pointer-events: none;
+  z-index: 10;
+}
+.overkillt9 incon::after { bottom: 127px; height: 44px; }
+.overkillt9 b,
+.overkillt9 .mycode_b {
+  display: inline;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 1;
+  color: transparent;
+  background: linear-gradient(to bottom, #FF2828, #EC0000);
+  -webkit-background-clip: text;
+          background-clip: text;
+  text-shadow: none;
+}
+.overkillt9 incon > b:last-of-type {
+  display: inline-block;
+  width: 100%;
+  margin: 40px auto 55px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400 !important;
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  letter-spacing: 10px;
+  font-family: "Cinzel Decorative", serif;
+}
+.overkillt9 bor, .overkillt9 con,
+.overkillt9 inbor, .overkillt9 incon {
+  --tmtop: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -26 100 128' preserveAspectRatio='none'%3E%3Cpath d='M 0 100 H 100 V 24 Q 94 24, 94 12 L 80 12 L 50 -26 L 20 12 L 6 12 Q 6 24, 0 24 Z' fill='black'/%3E%3C/svg%3E");
+  --tmbot: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 128' preserveAspectRatio='none'%3E%3Cpath d='M 0 0 H 100 V 76 Q 94 76, 94 88 L 80 88 L 50 126 L 20 88 L 6 88 Q 6 76, 0 76 Z' fill='black'/%3E%3C/svg%3E");
+  --tmask:
+    var(--tmtop) top / 100% 230px no-repeat,
+    linear-gradient(black, black) 0 185px / 100% calc(100% - 370px) no-repeat,
+    var(--tmbot) bottom / 100% 230px no-repeat;
+
+  mask: var(--tmask);
+  -webkit-mask: var(--tmask);
+}
+@media (max-width: 1200px) {
+  .overkillt9 {left:50%; transform:translatex(-50%); margin:auto; max-width:450px; }
+  .overkillt9:after {
+    display:block;
+    position: relative;
+    inset:auto;
+    width: 100%;
+    transform: none;
+    text-align:center;
+    margin: 0px auto 0;}
+  .overkillt9 incon::before,
+  .overkillt9 video,
+  .overkillt9 con:before,
+  .overkillt9 okill { display: none; }
+  .overkillt9 bor { margin: auto;border-radius: 0;width: 100%; background: none;box-shadow:none;}
+  .overkillt9 con { padding: 0; }
+  .overkillt9 incon { padding: 80px 20px 130px; }
+  .overkillt9 incon t {
+    overflow-y: auto;
+    height: auto;
+    box-shadow: none;
+    padding: 0;
+  }
+  .overkillt9 incon > b:last-of-type {
+    display: inline-block;
+    width: 100%;
+    margin: 20px auto -50px;
+    text-align: center;
+    font-size: 31px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+  }
+  .overkillt9 incon::after { bottom: 138px; height: 21px; }
+
+}
