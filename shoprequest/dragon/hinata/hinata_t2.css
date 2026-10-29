@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+.hinatat2 {
+  position: relative;
+  width: 600px;
+  margin: 40px auto 20px;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: visible;
+  font-family: "Cormorant", serif;
+  filter: drop-shadow(0 0 2px #000000ad);
+}
+.hinatat2:after{
+  content:'code by andy';
+  position: absolute;
+  font-family: "Unica One", sans-serif;
+  text-align: right;
+  width: 214px;
+  right: -117px;
+  top: 73px;
+  transform: rotate(90deg);
+}
+.hinatat2 bor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2px;
+  background: linear-gradient(to bottom, #01c7fd, #113145,#04c5fc);
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: 2px 2px 3px black, 1px 1px 2px black;
+}
+.hinatat2 con {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 14px;
+  margin: 0 auto;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, #091e35 20%, #2a160f);
+}
+.hinatat2 con:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 96%;
+  top: 863px; height: 115px;
+  background:
+    radial-gradient(ellipse 35% 70% at 50% 45%, #3268bc, #4ff 40%, transparent 72%), linear-gradient(to bottom, #91bcd1, #506e94 50%, #6175ae);
+  mix-blend-mode: screen;
+  --di: url('https://ik.imagekit.io/arl60/Ardent/assets/divi5.png');
+  -webkit-mask: var(--di)
+    center / contain no-repeat;
+          mask: var(--di)
+    center / contain no-repeat;
+  pointer-events: none;
+  z-index: 10;
+}
+.hinatat2 inbor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  padding: 2px;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, #35b2ea, #28507b);
+}
+.hinatat2 incon {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 930px 45px 0;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, #131d29 1000px, #050b19);
+  box-shadow: inset 0 0 10px #000;
+  overflow: hidden;
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: .3px;
+  color: #dcf2ff;
+}
+.hinatat2 incon:before {
+  position: absolute;
+  content: '';
+  inset: 0;
+  z-index: -1;
+  background: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0850e243-5970-4164-a7bb-741bd2351866/dk9a8s7-e4f01380-332f-4897-b634-6623f7835f35.png/v1/fit/w_828,h_1354,q_70,strp/hinata_dragon_weigmannor_by_jinxx_black_dk9a8s7-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTgwMCIsInBhdGgiOiIvZi8wODUwZTI0My01OTcwLTQxNjQtYTdiYi03NDFiZDIzNTE4NjYvZGs5YThzNy1lNGYwMTM4MC0zMzJmLTQ4OTctYjYzNC02NjIzZjc4MzVmMzUucG5nIiwid2lkdGgiOiI8PTExMDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.fwaRgqjMN9dlZCDAh0FqkMF0usddTw67ZceHKvNdngc');
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+.hinatat2 incon video {
+  position: absolute;
+  top: 920px;
+  left: -30px;
+  width: 120%;
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
+  mix-blend-mode: screen;
+  filter: saturate(2) brightness(1);
+  opacity: 0.3;
+  -webkit-mask: linear-gradient(to top, transparent, black 50%);
+          mask: linear-gradient(to top, transparent, black 50%);
+  pointer-events: none;
+}
+.hinatat2 incon::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background:
+    radial-gradient(ellipse 35% 70% at 50% 45%, #3268bc, #4ff 40%, transparent 72%), linear-gradient(to bottom, #91bcd1, #506e94 50%, #6175ae);
+  mix-blend-mode: screen;
+  --di: url('https://ik.imagekit.io/arl60/Ardent/assets/divi2.png?updatedAt=1791305290566');
+  -webkit-mask: var(--di)
+    center / contain no-repeat;
+          mask: var(--di)
+    center / contain no-repeat;
+  pointer-events: none;
+  z-index: 10;
+}
+.hinatat2 incon::after { bottom: 107px; height: 41px; }
+.hinatat2 b,
+.hinatat2 .mycode_b {
+  display: inline;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 1;
+  color: transparent;
+  background: linear-gradient(to bottom, #8DFFFF, #60E1FF);
+  -webkit-background-clip: text;
+          background-clip: text;
+  text-shadow: none;
+}
+.hinatat2 incon > b:last-of-type {
+  display: inline-block;
+  width: 100%;
+  margin: 40px auto 50px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400 !important;
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  letter-spacing: 10px;
+  font-family: "Cinzel Decorative", serif;
+}
+.hinatat2 bor, .hinatat2 con,
+.hinatat2 inbor, .hinatat2 incon {
+  --tmtop: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -26 100 128' preserveAspectRatio='none'%3E%3Cpath d='M 0 100 H 100 V 24 Q 94 24, 94 12 L 80 12 L 50 -26 L 20 12 L 6 12 Q 6 24, 0 24 Z' fill='black'/%3E%3C/svg%3E");
+  --tmbot: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 128' preserveAspectRatio='none'%3E%3Cpath d='M 0 0 H 100 V 76 Q 94 76, 94 88 L 80 88 L 50 126 L 20 88 L 6 88 Q 6 76, 0 76 Z' fill='black'/%3E%3C/svg%3E");
+  --tmask:
+    var(--tmtop) top / 100% 230px no-repeat,
+    linear-gradient(black, black) 0 185px / 100% calc(100% - 370px) no-repeat,
+    var(--tmbot) bottom / 100% 230px no-repeat;
+
+  mask: var(--tmask);
+  -webkit-mask: var(--tmask);
+}
+@media (max-width: 1200px) {
+  .hinatat2 {left:50%; transform:translatex(-50%); margin:auto; max-width:450px; }
+  .hinatat2:after {
+    display:block;
+    position: relative;
+    inset:auto;
+    width: 100%;
+    transform: none;
+    text-align:center;
+    margin: 0px auto 0;}
+  .hinatat2 incon::before,
+  .hinatat2 video,
+  .hinatat2 con:before,
+  .hinatat2 okill { display: none; }
+  .hinatat2 bor { margin: auto;border-radius: 0;width: 100%; background: none;box-shadow:none;}
+  .hinatat2 con { padding: 0; }
+  .hinatat2 incon { padding: 60px 20px 0px; }
+  .hinatat2 incon t {
+    overflow-y: auto;
+    height: auto;
+    box-shadow: none;
+    padding: 0;
+  }
+  .hinatat2 incon > b:last-of-type {
+    display: inline-block;
+    width: 100%;
+    margin: 20px auto 50px;
+    text-align: center;
+    font-size: 31px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+  }
+  .hinatat2 incon::after { bottom: 114px; height: 21px; }
+
+}
