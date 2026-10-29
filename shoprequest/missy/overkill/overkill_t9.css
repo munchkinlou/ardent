@@ -169,7 +169,7 @@
   .overkillt9 okill { display: none; }
   .overkillt9 bor { margin: auto;border-radius: 0;width: 100%; background: none;box-shadow:none;}
   .overkillt9 con { padding: 0; }
-  .overkillt9 incon { padding: 80px 20px 130px; }
+  .overkillt9 incon { padding: 20px 20px 0px; }
   .overkillt9 incon t {
     overflow-y: auto;
     height: auto;
@@ -179,12 +179,12 @@
   .overkillt9 incon > b:last-of-type {
     display: inline-block;
     width: 100%;
-    margin: 20px auto -50px;
+    margin: 20px auto 20px;
     text-align: center;
     font-size: 31px;
     text-transform: uppercase;
     letter-spacing: 10px;
   }
-  .overkillt9 incon::after { bottom: 138px; height: 21px; }
+  .overkillt9 incon::after { bottom: 79px; height: 21px; }
 
 }
