@@ -151,7 +151,14 @@
 }
 @media (max-width: 1200px) {
   .overkillt7 {left:50%; transform:translatex(-50%); margin:auto; max-width:450px; }
-  .overkillt7:after {position: relative; inset:auto;margin: -30px auto 0;}
+  .overkillt7:after {
+    display:block;
+    position: relative;
+    inset:auto;
+    width: 100%;
+    transform: none;
+    text-align:center;
+    margin: 0px auto 0;}
   .overkillt7 incon::before,
   .overkillt7 video,
   .overkillt7 con:before,
