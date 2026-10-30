@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+
+.wyvernt11 {
+  position: relative;
+  width: 800px;
+  margin: 40px auto 20px;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: visible;
+  font-family: "Quicksand", sans-serif;
+  filter: drop-shadow(0 0 2px #000000ad);
+}
+.wyvernt11:after{
+  content:'code by andy';
+  position: absolute;
+  font-family: "Unica One", sans-serif;
+  text-align: right;
+  width: 216px;
+  right: -69px;
+  bottom: 177px;
+  transform: rotate(90deg);
+}
+.wyvernt11 wy {
+  position: absolute;
+  top: -32px;
+  left: -118px;
+  width: 954px;
+  height: 755px;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/Seadragoness/Wyvern/Ice_wolf.png')
+    no-repeat left / contain;
+  z-index: 10;
+  filter: drop-shadow(0 0 2px white);
+  pointer-events: none;
+}
+.wyvernt11 bor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 700px;
+  margin: 0 auto;
+  padding: 2px;
+  background: linear-gradient(to bottom, #26518e, #f2efe7,#8b86a4);
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: 2px 2px 3px black, 1px 1px 2px black;
+}
+.wyvernt11 con {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, #ccd4f4 20%, #284075, #b0cdee 80%);
+}
+.wyvernt11 inbor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  padding: 2px;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, #fff, #4b8ed8);
+  box-shadow: 2px 2px 3px black, 0 0 3px black;
+}
+.wyvernt11 incon {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 580px 50px 0;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, #0f173f 250px, #060711);
+  box-shadow: inset 0 0 10px #0d2838;
+  overflow: hidden;
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: .3px;
+  color: #e0e7ff;
+}
+.wyvernt11 incon video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+  mix-blend-mode: screen;
+  filter: hue-rotate(20deg) saturate(.5);
+  -webkit-mask: linear-gradient(to top, transparent, black 50%);
+          mask: linear-gradient(to top, transparent, black 50%);
+  pointer-events: none;
+}
+.wyvernt11 incon::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background: linear-gradient(to bottom, #a1bacf, #99c6ff);
+  --di: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/1155601_OR9Z4R1.png?updatedAt=1773783029296');
+  -webkit-mask: var(--di)
+    center / contain no-repeat;
+          mask: var(--di)
+    center / contain no-repeat;
+  pointer-events: none;
+  z-index: 10;
+}
+.wyvernt11 incon::after { bottom: 153px; height: 58px; }
+.wyvernt11 b,
+.wyvernt11 .mycode_b {
+  display: inline;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 1;
+  color: transparent;
+  background: linear-gradient(to bottom, #7EDBFF, #6FDDFF);
+  -webkit-background-clip: text;
+          background-clip: text;
+  text-shadow: none;
+}
+.wyvernt11 incon > b:last-of-type {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin: 40px auto 50px;
+  text-align: center;
+  font-size: 44px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: "Cinzel Decorative", serif;
+}
+.wyvernt11 incon > b:last-of-type:after {
+  content:'fatalis';
+  display: block;
+  font-size: 20px;
+  margin-top: 5px;
+  letter-spacing: 14px;
+  text-transform: lowercase;
+}
+.wyvernt11 bor, .wyvernt11 con,
+.wyvernt11 inbor, .wyvernt11 incon {
+  --tmtop: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -26 100 128' preserveAspectRatio='none'%3E%3Cpath d='M 0 100 H 100 V -2 Q 70 -2, 50 -26 Q 30 -2, 0 -2 Z' fill='black'/%3E%3C/svg%3E");
+  --tmbot: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 128' preserveAspectRatio='none'%3E%3Cpath d='M 0 0 H 100 V 102 Q 70 102, 50 126 Q 30 102, 0 102 Z' fill='black'/%3E%3C/svg%3E");
+  --tmask:
+    var(--tmtop) top / 100% 295px no-repeat,
+    linear-gradient(black, black) 0 240px / 100% calc(100% - 480px) no-repeat,
+    var(--tmbot) bottom / 100% 295px no-repeat;
+
+  mask: var(--tmask);
+  -webkit-mask: var(--tmask);
+}
+.wyvernt11 con::before {
+  content: '';
+  position: absolute;
+  inset: 20px;
+  z-index: 8;
+  pointer-events: none;
+  background: linear-gradient(to bottom, #a5c4ff, #90faff 40%, #87c0d5);
+  --otop: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -26 100 128' preserveAspectRatio='none'%3E%3Cpath d='M 100 -2 Q 70 -2, 50 -26 Q 30 -2, 0 -2' fill='none' stroke='black' stroke-width='2' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
+  --obot: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 128' preserveAspectRatio='none'%3E%3Cpath d='M 100 102 Q 70 102, 50 126 Q 30 102, 0 102' fill='none' stroke='black' stroke-width='2' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
+  --oml:
+    var(--otop) top / 100% 295px no-repeat,
+    var(--obot) bottom / 100% 295px no-repeat,
+    linear-gradient(black, black) 0 55px / 2px calc(100% - 115px) no-repeat,
+    linear-gradient(black, black) 100% 55px / 2px calc(100% - 115px) no-repeat;
+  -webkit-mask: var(--oml);
+          mask: var(--oml);
+}
+@media (max-width: 1200px) {
+  .wyvernt11 {left:50%; transform:translatex(-50%); margin:auto; max-width:450px; }
+  .wyvernt11:after {
+    display:block;
+    position: relative;
+    inset:auto;
+    width: 100%;
+    transform: none;
+    text-align:center;
+    margin: 0px auto 0;}
+  .wyvernt11 incon::before,
+  .wyvernt11 video,
+  .wyvernt11 con:before,
+  .wyvernt11 wy { display: none; }
+  .wyvernt11 bor { margin: auto;border-radius: 0;width: 100%; background: none;box-shadow:none;}
+  .wyvernt11 con { padding: 0; }
+  .wyvernt11 incon { padding: 0px 20px 0; }
+  .wyvernt11 incon t {
+    overflow-y: auto;
+    height: auto;
+    box-shadow: none;
+    padding: 0;
+  }
+  .wyvernt11 bor, .wyvernt11 con,
+  .wyvernt11 inbor, .wyvernt11 incon {
+  mask: none;
+  -webkit-mask: none;
+  }
+  .wyvernt11 incon > b:last-of-type {
+    display: inline-block;
+    width: 100%;
+    margin: 20px auto 15px;
+    text-align: center;
+    font-size: 31px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+  }
+  .wyvernt11 incon::after { bottom: 98px; height: 36px; }
+
+}
