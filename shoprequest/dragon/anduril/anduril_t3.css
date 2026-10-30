@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metamorphous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+
+.andurilt3 {
+  position: relative;
+  width: 800px;
+  margin: 40px auto 160px;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: visible;
+  font-family: "Cormorant", serif;
+  filter: drop-shadow(0 0 2px #000000ad);
+}
+.andurilt3:after{
+  content:'code by andy';
+  position: absolute;
+  font-family: "Unica One", sans-serif;
+  text-align: right;
+  width: 216px;
+  right: 11px;
+  bottom: -25px;
+}
+.andurilt3 andy {
+  position: absolute;
+  top: -13px;
+  left: 351px;
+  width: 65%;
+  height: 719px;
+  background: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0850e243-5970-4164-a7bb-741bd2351866/dn7a3yi-c5288364-c6b0-4271-add2-0b96669c221e.png/v1/fill/w_1280,h_1896/dragon_06_by_jinxx_black_dn7a3yi-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTg5NiIsInBhdGgiOiIvZi8wODUwZTI0My01OTcwLTQxNjQtYTdiYi03NDFiZDIzNTE4NjYvZG43YTN5aS1jNTI4ODM2NC1jNmIwLTQyNzEtYWRkMi0wYjk2NjY5YzIyMWUucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.iwz1oZOGxLHcvxWG0E3yCOxbdP5N7FiR57ujaPj0iv4')
+    no-repeat left / contain;
+  z-index: 10;
+  pointer-events: none;
+}
+.andurilt3 bor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 400px;
+  margin: 0 auto 0 0;
+  padding: 1px;
+  background: linear-gradient(to bottom, #000, #e46400,#000);
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: 2px 2px 3px black, 1px 1px 2px black;
+  overflow:visible;
+}
+.andurilt3 con {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px 20px 1px;
+  margin: 0 auto;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, #161211, #141518);
+}
+.andurilt3 con video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  filter: saturate(1);
+  opacity: 1;
+}
+.andurilt3 inbor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  padding: 2px;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, #be9f41, #a43928, black);
+  box-shadow: 2px 2px 3px black, 0 0 3px black;
+  margin-bottom: -150px;
+}
+.andurilt3 incon {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 814px;
+  padding: 20px 0 0 25px;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, #632107, #995922);
+  box-shadow: inset 0 0 10px #0f0f0f;
+  overflow: hidden;
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: .3px;
+  color: #fffadd;
+  overflow:hidden;
+}
+.andurilt3 incon t {
+  position: relative;
+  display: block;
+  height: 615px;
+  overflow-y: auto;
+  cursor: pointer;
+  z-index: 5;
+  padding: 0 15px 20px 0; 
+  letter-spacing: 0;
+  
+  --scrollbar-thumb: #8C4F21;
+  --scrollbar-track: transparent;
+  --scrollbar-width: 6px;
+
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+
+  &::-webkit-scrollbar {
+    width: var(--scrollbar-width);
+  }
+  &::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 3px;
+  }
+}
+.andurilt3 incon::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background:
+    radial-gradient(ellipse 35% 70% at 50% 45%, #d6b98b, #cfd492 40%, transparent 72%), linear-gradient(to bottom, #93d27d, #79977d 50%, #a94a46);
+  mix-blend-mode: screen;
+  --di: url('https://ik.imagekit.io/arl60/Ardent/assets/divi9.png');
+  -webkit-mask: var(--di)
+    center / contain no-repeat;
+          mask: var(--di)
+    center / contain no-repeat;
+  pointer-events: none;
+  z-index: 10;
+}
+.andurilt3 incon::after { bottom: 143px; height: 45px; }
+.andurilt3 b,
+.andurilt3 .mycode_b {
+  display: inline;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1;
+  font-family: "Metamorphous", serif;
+  color: transparent;
+  background: linear-gradient(to bottom, #FB8, #FFEE61);
+  -webkit-background-clip: text;
+          background-clip: text;
+  text-shadow: none;
+}
+.andurilt3 incon > b:last-of-type {
+  display: block;
+  position: absolute;
+  bottom: 92px;
+  left: 50%;
+  transform:translateX(-50%);
+  width: 100%;
+  text-align: center;
+  font-size: 38px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: "Cinzel Decorative", serif;
+}
+.andurilt3 inbor, .andurilt3 incon {
+  --tmtop: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -26 100 128' preserveAspectRatio='none'%3E%3Cpath d='M 0 100 H 100 V -26 Q 50 -2, 0 -26 Z' fill='black'/%3E%3C/svg%3E");
+  --tmbot: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 128' preserveAspectRatio='none'%3E%3Cpath d='M 0 0 H 100 V 60 L 50 126 L 0 60 Z' fill='black'/%3E%3C/svg%3E");
+  --tmask:
+    var(--tmtop) top / 100% 230px no-repeat,
+    linear-gradient(black, black) 0 185px / 100% calc(100% - 370px) no-repeat,
+    var(--tmbot) bottom / 100% 230px no-repeat;
+
+  mask: var(--tmask);
+  -webkit-mask: var(--tmask);
+}
+@media (max-width: 1200px) {
+  .andurilt3 { left: 50%; transform: translateX(-50%); margin: auto; max-width: 450px; width: 100%; }
+  .andurilt3:after {
+    display: block;
+    position: relative;
+    inset: auto;
+    width: 100%;
+    transform: none;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .andurilt3 incon::before,
+  .andurilt3 video,
+  .andurilt3 con:before,
+  .andurilt3 andy { display: none; }
+  .andurilt3 bor { margin: auto; border-radius: 0; width: 100%; background: none; box-shadow: none; }
+  .andurilt3 con { padding: 0; background: none; }
+  .andurilt3 inbor { margin-bottom: 0; padding: 0; background: none; box-shadow: none; }
+  .andurilt3 incon {
+    height: auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+  .andurilt3 incon t {
+    height: auto;
+    overflow-y: visible;
+    box-shadow: none;
+    padding: 0;
+    text-align: justify;
+  }
+  .andurilt3 bor, .andurilt3 con,
+  .andurilt3 inbor, .andurilt3 incon {
+    mask: none;
+    -webkit-mask: none;
+  }
+  .andurilt3 incon > b:last-of-type {
+    display: block;
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    width: 100%;
+    margin: 30px auto -20px;
+    text-align: center;
+    font-size: 31px;
+    letter-spacing: 10px;
+  }
+  .andurilt3 incon::after {
+    bottom: 56px;
+    height: 43px;
+  }
+}
