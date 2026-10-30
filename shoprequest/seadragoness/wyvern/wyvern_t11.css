@@ -18,7 +18,7 @@
   font-family: "Unica One", sans-serif;
   text-align: right;
   width: 216px;
-  right: -69px;
+  right: -4px;
   bottom: 177px;
   transform: rotate(90deg);
 }
@@ -38,7 +38,7 @@
   display: block;
   position: relative;
   box-sizing: border-box;
-  width: 700px;
+  width: 560px;
   margin: 0 auto;
   padding: 2px;
   background: linear-gradient(to bottom, #26518e, #f2efe7,#8b86a4);
