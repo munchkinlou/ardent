@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.citadelt10 {
+  position: relative;
+  width: 800px;
+  margin: 40px auto 20px;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: visible;
+  font-family: "Quicksand", sans-serif;
+  filter: drop-shadow(0 0 2px #000000ad);
+}
+.citadelt10:after{
+  content:'code by andy';
+  position: absolute;
+  font-family: "Unica One", sans-serif;
+  text-align: right;
+  width: 216px;
+  right: -119px;
+  bottom: 198px;
+  transform: rotate(90deg);
+}
+.citadelt10 bor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 800px;
+  margin: 0 auto;
+  padding: 2px;
+  background: linear-gradient(to bottom, #000, #241c0f,#000);
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: 2px 2px 3px black, 1px 1px 2px black;
+}
+.citadelt10 con {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, #050505 20%, #181726, #0e0a12 80%);
+}
+.citadelt10 inbor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  padding: 2px;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, #b88d39, #af843d);
+  box-shadow: 2px 2px 3px black, 0 0 3px black;
+}
+.citadelt10 inbor:before {
+  content: '';
+  position: absolute;
+  top: 420px;
+  height: 67px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background: radial-gradient(ellipse 35% 70% at 50% 45%, #fcd95d, #9c7a57 30%, #776248 70%, #8a6029);
+  --di: url('https://ik.imagekit.io/arl60/Ardent/assets/divi4.png?updatedAt=1793236243938');
+  -webkit-mask: var(--di)
+    center / contain no-repeat;
+          mask: var(--di)
+    center / contain no-repeat;
+  pointer-events: none;
+  z-index: 10;
+}
+.citadelt10 incon {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 450px 50px 0;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, #2b1213 250px, #06060d);
+  box-shadow: inset 0 0 10px #0d2838;
+  overflow: hidden;
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: .3px;
+  color: #ffede5;
+}
+.citadelt10 incon:before {
+  position: absolute;
+  content: '';
+  inset: 0;
+  z-index: -1;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/Seadragoness/Citadel/seadragon_by_insomniaclies_dmpap6o2.png');
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+.citadelt10 incon video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+  mix-blend-mode: screen;
+  filter: hue-rotate(20deg) saturate(.5);
+  -webkit-mask: linear-gradient(to top, transparent, black 50%);
+          mask: linear-gradient(to top, transparent, black 50%);
+  pointer-events: none;
+}
+.citadelt10 incon::after {
+  content: '';
+  position: absolute;
+  left: 50.2%;
+  transform: translateX(-50%);
+  width: 100%;
+  background: linear-gradient(to bottom, #ffe685, #a68364);
+  --di: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/divi10.png');
+  -webkit-mask: var(--di)
+    center / contain no-repeat;
+          mask: var(--di)
+    center / contain no-repeat;
+  pointer-events: none;
+  z-index: 10;
+}
+.citadelt10 incon::after { bottom: 140px; height: 43px; }
+.citadelt10 b,
+.citadelt10 .mycode_b {
+  display: inline;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 1;
+  font-family: "Grenze", serif;
+  color: transparent;
+  background: linear-gradient(to bottom, #FFB362, #FFCD98);
+  -webkit-background-clip: text;
+          background-clip: text;
+  text-shadow: none;
+}
+.citadelt10 incon > b:last-of-type {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin: 40px auto 40px;
+  text-align: center;
+  font-size: 44px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: "Cinzel Decorative", serif;
+}
+.citadelt10 incon > b:last-of-type:after {
+  content:'fatalis';
+  display: block;
+  font-size: 20px;
+  margin-top: 5px;
+  letter-spacing: 14px;
+  text-transform: lowercase;
+}
+.citadelt10 bor, .citadelt10 con,
+.citadelt10 inbor, .citadelt10 incon {
+  --tmtop: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -26 100 128' preserveAspectRatio='none'%3E%3Cpath d='M 0 100 H 100 V 24 Q 94 24, 94 12 L 80 12 L 50 -26 L 20 12 L 6 12 Q 6 24, 0 24 Z' fill='black'/%3E%3C/svg%3E");
+  --tmbot: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 128' preserveAspectRatio='none'%3E%3Cpath d='M 0 0 H 100 V 76 Q 94 76, 94 88 L 80 88 L 50 126 L 20 88 L 6 88 Q 6 76, 0 76 Z' fill='black'/%3E%3C/svg%3E");
+  --tmask:
+    var(--tmtop) top / 100% 230px no-repeat,
+    linear-gradient(black, black) 0 185px / 100% calc(100% - 370px) no-repeat,
+    var(--tmbot) bottom / 100% 230px no-repeat;
+
+  mask: var(--tmask);
+  -webkit-mask: var(--tmask);
+}
+.citadelt10 con::before {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  z-index: 8;
+  pointer-events: none;
+  background: linear-gradient(to bottom, #3d2323, #633932 40%, #703e2c);
+  --otop: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -26 100 128' preserveAspectRatio='none'%3E%3Cpath d='M 100 24 Q 94 24, 94 12 L 80 12 L 50 -26 L 20 12 L 6 12 Q 6 24, 0 24' fill='none' stroke='black' stroke-width='2' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
+  --obot: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 128' preserveAspectRatio='none'%3E%3Cpath d='M 100 76 Q 94 76, 94 88 L 80 88 L 50 126 L 20 88 L 6 88 Q 6 76, 0 76' fill='none' stroke='black' stroke-width='2' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
+  --oml:
+    var(--otop) top / 100% 230px no-repeat,
+    var(--obot) bottom / 100% 230px no-repeat,
+    linear-gradient(black, black) 0 90px / 2px calc(100% - 183px) no-repeat,
+    linear-gradient(black, black) 100% 90px / 2px calc(100% - 183px) no-repeat;
+  -webkit-mask: var(--oml);
+          mask: var(--oml);
+}
+@media (max-width: 1200px) {
+  .citadelt10 {left:50%; transform:translatex(-50%); margin:auto; max-width:450px; }
+  .citadelt10:after {
+    display:block;
+    position: relative;
+    inset:auto;
+    width: 100%;
+    transform: none;
+    text-align:center;
+    margin: 0px auto 0;}
+  .citadelt10 inbor:before,
+  .citadelt10 incon::before,
+  .citadelt10 video,
+  .citadelt10 con:before
+  { display: none; }
+  .citadelt10 bor { margin: auto;border-radius: 0;width: 100%; background: none;box-shadow:none;}
+  .citadelt10 con { padding: 0; }
+  .citadelt10 incon { padding: 0px 20px 0; }
+  .citadelt10 incon t {
+    overflow-y: auto;
+    height: auto;
+    box-shadow: none;
+    padding: 0;
+  }
+  .citadelt10 bor, .citadelt10 con,
+  .citadelt10 inbor, .citadelt10 incon {
+  mask: none;
+  -webkit-mask: none;
+  }
+  .citadelt10 incon > b:last-of-type {
+    display: inline-block;
+    width: 100%;
+    margin: 20px auto 15px;
+    text-align: center;
+    font-size: 31px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+  }
+  .citadelt10 incon::after { bottom: 98px; height: 36px; }
+
+}
