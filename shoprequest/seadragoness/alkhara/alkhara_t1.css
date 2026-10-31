@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
+
+.alkharat1 {
+  position: relative;
+  width: 800px;
+  margin: 40px auto 120px;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: visible;
+  font-family: "Quicksand", sans-serif;
+  filter: drop-shadow(0 0 2px #000000ad);
+}
+.alkharat1:after{
+  content:'code by andy';
+  position: absolute;
+  font-family: "Unica One", sans-serif;
+  text-align: right;
+  width: 216px;
+  left: -33px;
+  bottom: -3px;
+  transform: rotate(270deg);
+}
+.alkharat1 al {
+  position: absolute;
+  bottom: -108px;
+  left: -26px;
+  width: 873px;
+  height: 566px;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/Seadragoness/Alkhara/IMG_2867.png?updatedAt=1793386507343')
+    no-repeat left / contain;
+  z-index: 10;
+  filter: drop-shadow(0 0 2px black);
+  pointer-events: none;
+}
+.alkharat1 bor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 600px;
+  margin: 0 auto;
+  padding: 2px;
+  background: linear-gradient(to bottom, #131518, #24272f,#1e1e24);
+  border-radius: 300px 300px 0 0;
+  box-shadow: 2px 2px 3px black, 1px 1px 2px black;
+}
+.alkharat1 bor::before {
+  content: '';
+  position: absolute;
+  inset: -14px;
+  z-index: -1;
+  pointer-events: none;
+  border: 3px solid #211c1e;
+  border-radius: 314px 314px 0 0;
+}
+.alkharat1 con {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, #131518 20%, #1a1b1f, #251f21 80%);
+}
+.alkharat1 inbor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  padding: 2px;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, #a07857, #1d181a);
+  box-shadow: 2px 2px 3px black, 0 0 3px black;
+}
+.alkharat1 incon {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 240px 50px 310px;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, #03110f 250px, #3b4e21);
+  box-shadow: inset 0 0 10px #0d2838;
+  overflow: hidden;
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: .3px;
+  color: #f0e5df;
+}
+.alkharat1 incon::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 460px;
+  z-index: 1;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/sharedmedia/20177377_6234378.jpg?updatedAt=1771504866732') bottom center / cover no-repeat;
+  --maskb: linear-gradient(to bottom, transparent, black 50%);
+  -webkit-mask: var(--maskb);
+          mask: var(--maskb);
+  opacity: 0.3;
+  pointer-events: none;
+}
+.alkharat1 incon video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+  mix-blend-mode: screen;
+  filter: hue-rotate(20deg) saturate(.5);
+  -webkit-mask: linear-gradient(to top, transparent, black 50%);
+          mask: linear-gradient(to top, transparent, black 50%);
+  pointer-events: none;
+}
+.alkharat1 b,
+.alkharat1 .mycode_b {
+  display: inline;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 1;
+  color: transparent;
+  background: linear-gradient(to bottom, #FFC497, #c79167);
+  -webkit-background-clip: text;
+          background-clip: text;
+  text-shadow: none;
+}
+.alkharat1 incon > b:last-of-type {
+  display: block;
+  position: absolute;
+  top: 112px;
+  left: 48%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  font-size: 60px;
+  padding: 20px 0;
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  font-family: "WindSong", cursive;
+}
+.alkharat1 incon > b:last-of-type:after {
+  content:'Kholvain';
+  display: block;
+  font-size: 20px;
+  margin-top: -6px;
+  margin-left: 40px;
+  letter-spacing: 14px;
+  font-family: "Cinzel Decorative", serif;
+  text-transform: lowercase;
+}
+.alkharat1 lf {
+  --i: 0; --x: 12%; --s: 1;
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+}
+.alkharat1 lf:nth-of-type(2) { --i: 1; --x: 68%; --s: -1 }
+.alkharat1 lf:nth-of-type(3) { --i: 2; --x: 35%; --s: -1 }
+.alkharat1 lf:nth-of-type(4) { --i: 3; --x: 86%; --s: 1 }
+.alkharat1 lf::before,
+.alkharat1 lf::after {
+  content: '';
+  position: absolute;
+  background: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/17b8046e-e9f9-45e0-be4d-f66010fc57b0/dmr6bun-bd2f5535-0c17-4665-9750-1936a77e5a89.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8xN2I4MDQ2ZS1lOWY5LTQ1ZTAtYmU0ZC1mNjYwMTBmYzU3YjAvZG1yNmJ1bi1iZDJmNTUzNS0wYzE3LTQ2NjUtOTc1MC0xOTM2YTc3ZTVhODkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.E9L6VsTVBGJuv541gPe0W19TICCDw2D0OjQrijIsMfw') center / contain no-repeat;
+  filter: sepia(1) hue-rotate(160deg);
+}
+.alkharat1 lf::before {
+  --k: var(--i);
+  left: var(--x);
+  top: -40px;
+  width: calc(21px + var(--k) * 3px);
+  height: calc(21px + var(--k) * 3px);
+  animation: alkfall calc(7s + var(--k) * 1.9s) linear calc(var(--k) * -2.4s) infinite;
+}
+.alkharat1 lf::after {
+  --k: calc(var(--i) + 4);
+  left: calc(50% + var(--s) * 58%);
+  top: calc(4px + var(--i) * 17px);
+  width: calc(19px + var(--i) * 4px);
+  height: calc(19px + var(--i) * 4px);
+  animation: alkblow calc(8.3s + var(--k) * 1.1s) linear calc(var(--k) * -3.1s) infinite;
+}
+
+@keyframes alkfall {
+  0%   { opacity: 0; transform: translate(0, 0) rotate(0deg) }
+  8%   { opacity: .8 }
+  25%  { transform: translate(calc(var(--s) * 16px), 76px) rotate(calc(var(--s) * 60deg)) }
+  50%  { transform: translate(calc(var(--s) * -10px), 152px) rotate(calc(var(--s) * 140deg)) }
+  75%  { transform: translate(calc(var(--s) * 18px), 228px) rotate(calc(var(--s) * 225deg)) }
+  86%  { opacity: .6 }
+  100% { opacity: 0; transform: translate(calc(var(--s) * 4px), 302px) rotate(calc(var(--s) * 320deg)) }
+}
+
+@keyframes alkblow {
+  0%   { opacity: 0; transform: translate(0, 0) rotate(0deg) }
+  12%  { opacity: .72 }
+  35%  { transform: translate(calc(var(--s) * -58px), 84px) rotate(calc(var(--s) * 75deg)) }
+  68%  { opacity: .6; transform: translate(calc(var(--s) * -112px), 163px) rotate(calc(var(--s) * 170deg)) }
+  100% { opacity: 0; transform: translate(calc(var(--s) * -168px), 242px) rotate(calc(var(--s) * 290deg)) }
+}
+@media (max-width: 1200px) {
+  .alkharat1 {left:50%; transform:translatex(-50%); margin:auto; max-width:450px; }
+  .alkharat1:after {
+    display:block;
+    position: relative;
+    inset:auto;
+    width: 100%;
+    transform: none;
+    text-align:center;
+    margin: 0px auto 0;}
+  .alkharat1 incon::before,
+  .alkharat1 lf::before,
+  .alkharat1 lf::after,
+  .alkharat1 con:before,
+  .alkharat1 bor::before,
+  .alkharat1 al { display: none; }
+  .alkharat1 bor { margin: auto;border-radius: 0;width: 100%; background: none;box-shadow:none;}
+  .alkharat1 con { padding: 0; }
+  .alkharat1 incon { 
+    background: #241b15;
+    padding: 0px 20px 0; }
+  .alkharat1 incon t {
+    overflow-y: auto;
+    height: auto;
+    box-shadow: none;
+    padding: 0;
+  }
+  .alkharat1 bor, .alkharat1 con,
+  .alkharat1 inbor, .alkharat1 incon {
+  mask: none;
+  -webkit-mask: none;
+  }
+  .alkharat1 incon > b:last-of-type {
+    position: relative;
+    inset: 0;
+    transform: none;
+    width: 100%;
+    margin: 20px auto 0px;
+    text-align: center;
+    font-size: 31px;
+    letter-spacing: 10px;
+  }
+  .alkharat1 incon::after { bottom: 98px; height: 36px; }
+
+}
