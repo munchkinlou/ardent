@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+.astariont5 {
+  position: relative;
+  width: 700px;
+  margin: 40px auto 20px;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: visible;
+  font-family: "Didact Gothic", sans-serif;
+  filter: drop-shadow(0 0 2px #000000ad);
+}
+.astariont5:after{
+  content:'code by andy';
+  position: absolute;
+  font-family: "Unica One", sans-serif;
+  text-align: right;
+  width: 214px;
+  right: -121px;
+  top: -24px;
+  transform: rotate(90deg);
+}
+.astariont5 bor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2px;
+  background: linear-gradient(to bottom, #000, #000,#000);
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: 2px 2px 3px black, 1px 1px 2px black;
+}
+.astariont5 con {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 14px;
+  margin: 0 auto;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, #220706 20%, #020202);
+}
+.astariont5 inbor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  padding: 2px;
+  border-radius: inherit;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #000, #f4cd82);
+}
+.astariont5 inbor:before {
+  content: '';
+  position: absolute;
+  top: 701px;
+  height: 106px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 184%;
+  background: radial-gradient(ellipse 35% 70% at 50% 45%, #c7851f, #bc9c63 30%, #a17422 70%, #673e0a);
+  --di: url('https://ik.imagekit.io/arl60/Ardent/assets/divi4.png?updatedAt=1793236243938');
+  -webkit-mask: var(--di)
+    center / contain no-repeat;
+          mask: var(--di)
+    center / contain no-repeat;
+  pointer-events: none;
+  z-index: 10;
+}
+.astariont5 inbor:after {
+  content: '';
+  bottom: 93px; height: 24px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background:
+    radial-gradient(ellipse 35% 70% at 50% 45%, #fffeb1, #ffd075 40%, transparent 72%), linear-gradient(to bottom, #ffe199, #f6d88f 50%, #ffc18a);
+  mix-blend-mode: screen;
+  --di: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/2.png?updatedAt=1761259622322');
+  -webkit-mask: var(--di)
+    center / contain no-repeat;
+          mask: var(--di)
+    center / contain no-repeat;
+  pointer-events: none;
+  z-index: 10;
+}
+.astariont5 incon {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 770px 45px 0;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, #180d0e 300px, #491313);
+  box-shadow: inset 0 0 10px #000;
+  overflow: hidden;
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: .3px;
+  color: #fffaf2;
+}
+.astariont5 incon:before {
+  position: absolute;
+  content: '';
+  inset: 0;
+  z-index: -1;
+  background: url('https://ik.imagekit.io/arl60/Ardent/personal/Astarion/8-3.png?updatedAt=1793631190730');
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  z-index: 10;
+}
+.astariont5 b,
+.astariont5 .mycode_b {
+  display: inline;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 1;
+  font-family: "Cormorant", serif;
+  color: transparent;
+  background: linear-gradient(to bottom, #FFDF94, #FFE597);
+  -webkit-background-clip: text;
+          background-clip: text;
+  text-shadow: none;
+}
+.astariont5 incon > b:last-of-type {
+  display: inline-block;
+  width: 100%;
+  margin: 40px auto 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400 !important;
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  letter-spacing: 10px;
+  font-family: "Cinzel Decorative", serif;
+}
+@media (max-width: 1200px) {
+  .astariont5 {left:50%; transform:translatex(-50%); margin:auto; max-width:450px; }
+  .astariont5:after {
+    display:block;
+    position: relative;
+    inset:auto;
+    width: 100%;
+    transform: none;
+    text-align:center;
+    margin: 0px auto 0;}
+  .astariont5 inbor:before,
+  .astariont5 incon:before,
+  .astariont5 con:before{ display: none; }
+  .astariont5 bor { margin: auto;border-radius: 0;width: 100%; background: none;box-shadow:none;}
+  .astariont5 con { padding: 0; }
+  .astariont5 incon { padding: 0px 25px 0px; }
+  .astariont5 incon t {
+    overflow-y: auto;
+    height: auto;
+    box-shadow: none;
+    padding: 0;
+  }
+  .astariont5 incon > b:last-of-type {
+    display: inline-block;
+    width: 100%;
+    margin: 20px auto 10px;
+    text-align: center;
+    font-size: 31px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+  }
+  .astariont5 inbor:after { bottom: 75px; height: 21px; }
+
+}
