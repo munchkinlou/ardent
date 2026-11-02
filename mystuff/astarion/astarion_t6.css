@@ -112,10 +112,10 @@
   font-size: 19px;
   line-height: 1;
   font-family: "Cormorant", serif;
-  color: transparent;
-  background: linear-gradient(to bottom, #FFDF94, #FFE597);
-  -webkit-background-clip: text;
-          background-clip: text;
+  color: transparent !important;
+  background: linear-gradient(to bottom, #FFDF94, #FFE597) !important;
+  -webkit-background-clip: text !important;
+          background-clip: text !important;
   text-shadow: none;
 }
 .astariont6 incon > b:last-of-type {
