@@ -24,7 +24,8 @@
   background-size: contain; 
   z-index: 5;
   pointer-events: none;
-  filter: drop-shadow(0 0 2px #0000008c);
+  filter: drop-shadow(0 0 2px #0000008c)
+    contrast(1.1);
   transform: rotate(10deg);
 }
 .astariont6:after{
