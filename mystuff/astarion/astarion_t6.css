@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
+
+.astariont6 {
+  position: relative;
+  width: 800px;
+  margin: 40px auto 80px;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: visible;
+  font-family: "Didact Gothic", sans-serif;
+  filter: drop-shadow(0 0 2px #000000ad);
+}
+.astariont6 star {
+  position: absolute;
+  bottom: -162px;
+  left: 12px;
+  width: 109%;
+  height: 837px;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Astarion/8-3-1.png?updatedAt=1793631187246') no-repeat center top;
+  background-size: contain; 
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0 0 2px #0000008c);
+  transform: rotate(10deg);
+}
+.astariont6:after{
+  content:'code by andy';
+  position: absolute;
+  font-family: "Unica One", sans-serif;
+  text-align: right;
+  width: 214px;
+  right: 7px;
+  bottom: 247px;
+  transform: rotate(90deg);
+}
+.astariont6 bor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 550px;
+  margin: 0 auto;
+  padding: 2px;
+  background: linear-gradient(to bottom, #000, #000,#000);
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: 2px 2px 3px black, 1px 1px 2px black;
+}
+.astariont6 con {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 14px;
+  margin: 0 auto;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, #1b150f 20%, #070b13);
+}
+.astariont6 inbor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  padding: 2px;
+  border-radius: inherit;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #e3b765, #f4cd82);
+}
+.astariont6 inbor:after {
+  content: '';
+  bottom: 589px; height: 38px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background:
+    radial-gradient(ellipse 35% 70% at 50% 45%, #fffeb1, #ffd075 40%, transparent 72%), linear-gradient(to bottom, #ffe199, #f6d88f 50%, #ffc18a);
+  mix-blend-mode: screen;
+  --di: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/2.png?updatedAt=1761259622322');
+  -webkit-mask: var(--di)
+    center / contain no-repeat;
+          mask: var(--di)
+    center / contain no-repeat;
+  pointer-events: none;
+  z-index: 10;
+}
+.astariont6 incon {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 80px 45px 580px;
+  border-radius: inherit;
+  z-index: 9;
+  background: linear-gradient(to bottom, #3a2010 300px, #224e70);
+  box-shadow: inset 0 0 10px #000;
+  overflow: hidden;
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: .3px;
+  color: #fffaf2;
+}
+.astariont6 b,
+.astariont6 .mycode_b {
+  display: inline;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 1;
+  font-family: "Cormorant", serif;
+  color: transparent;
+  background: linear-gradient(to bottom, #FFDF94, #FFE597);
+  -webkit-background-clip: text;
+          background-clip: text;
+  text-shadow: none;
+}
+.astariont6 incon > b:last-of-type {
+  display:block;
+  position: absolute;
+  bottom: 424px;
+  left: -112px;
+  width: 100%;
+  margin: 40px auto 20px;
+  z-index: 11;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 400 !important;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-family: "Cinzel Decorative", serif;
+  font-family: "Lavishly Yours", cursive;
+}
+.astariont6 incon > b:last-of-type:after {
+  content: 'fatalis-Hausakljúfr';
+  display: block;
+  font-size: 10px;
+  font-weight: 400 !important;
+  text-transform: lowercase;
+  font-style: italic;
+  margin-left: 10px;
+  letter-spacing: 4px;
+  font-family: "Cinzel Decorative", serif;
+}
+.astariont6 bor, .astariont6 con,
+.astariont6 inbor, .astariont6 incon {
+    mask: 
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -35 100 140' preserveAspectRatio='none'%3E%3Cpath d='M 0 100 H 100 V 18 Q 90 18, 90 0 H 80 C 65 -35, 35 -35, 20 0 H 10 Q 10 18, 0 18 Z' fill='black'/%3E%3C/svg%3E") top / 100% 250px no-repeat,
+      linear-gradient(black, black) 0 200px / 100% calc(100% - 400px) no-repeat,
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 140' preserveAspectRatio='none'%3E%3Cpath d='M 0 0 H 100 V 82 Q 90 82, 90 100 H 80 C 65 135, 35 135, 20 100 H 10 Q 10 82, 0 82 Z' fill='black'/%3E%3C/svg%3E") bottom / 100% 250px no-repeat;
+    -webkit-mask: 
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -35 100 140' preserveAspectRatio='none'%3E%3Cpath d='M 0 100 H 100 V 18 Q 90 18, 90 0 H 80 C 65 -35, 35 -35, 20 0 H 10 Q 10 18, 0 18 Z' fill='black'/%3E%3C/svg%3E") top / 100% 250px no-repeat,
+      linear-gradient(black, black) 0 200px / 100% calc(100% - 400px) no-repeat,
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 140' preserveAspectRatio='none'%3E%3Cpath d='M 0 0 H 100 V 82 Q 90 82, 90 100 H 80 C 65 135, 35 135, 20 100 H 10 Q 10 82, 0 82 Z' fill='black'/%3E%3C/svg%3E") bottom / 100% 250px no-repeat;
+}
+@media (max-width: 1200px) {
+  .astariont6 {left:50%; transform:translatex(-50%); margin:auto; max-width:450px; }
+  .astariont6:after {
+    display:block;
+    position: relative;
+    inset:auto;
+    width: 100%;
+    transform: none;
+    text-align:center;
+    margin: 0px auto 0;}
+  .astariont6 inbor:before,
+  .astariont6 incon:before,
+  .astariont6 con:before{ display: none; }
+  .astariont6 bor { margin: auto;border-radius: 0;width: 100%; background: none;box-shadow:none;}
+  .astariont6 con { padding: 0; }
+  .astariont6 incon { padding: 0px 25px 0px; }
+  .astariont6 incon t {
+    overflow-y: auto;
+    height: auto;
+    box-shadow: none;
+    padding: 0;
+  }
+  .astariont6 incon > b:last-of-type {
+    display: inline-block;
+    width: 100%;
+    margin: 20px auto 10px;
+    text-align: center;
+    font-size: 31px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+  }
+  .astariont6 inbor:after { bottom: 75px; height: 21px; }
+
+}
