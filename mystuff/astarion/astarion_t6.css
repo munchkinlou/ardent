@@ -16,10 +16,10 @@
 }
 .astariont6 star {
   position: absolute;
-  bottom: -162px;
-  left: 12px;
+  bottom: -174px;
+  left: -15px;
   width: 109%;
-  height: 837px;
+  height: 860px;
   background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Astarion/8-3-1_edit.png') no-repeat center top;
   background-size: contain; 
   z-index: 5;
@@ -33,16 +33,16 @@
   position: absolute;
   font-family: "Unica One", sans-serif;
   text-align: right;
-  width: 214px;
-  right: 7px;
-  bottom: 247px;
+  width: 213px;
+  right: -15px;
+  bottom: 217px;
   transform: rotate(90deg);
 }
 .astariont6 bor {
   display: block;
   position: relative;
   box-sizing: border-box;
-  width: 550px;
+  width: 600px;
   margin: 0 auto;
   padding: 2px;
   background: linear-gradient(to bottom, #000, #000,#000);
@@ -92,7 +92,7 @@
   position: relative;
   box-sizing: border-box;
   width: 100%;
-  padding: 90px 45px 580px;
+  padding: 100px 45px 580px;
   border-radius: inherit;
   z-index: 9;
   background: linear-gradient(to bottom, #2d3949, #020404);
@@ -122,7 +122,7 @@
   display:block;
   position: absolute;
   bottom: 424px;
-  left: -112px;
+  left: -133px;
   width: 100%;
   margin: 40px auto 20px;
   z-index: 11;
@@ -141,7 +141,7 @@
   font-weight: 400 !important;
   text-transform: lowercase;
   font-style: italic;
-  margin-left: 10px;
+  margin-left: 42px;
   letter-spacing: 4px;
   font-family: "Cinzel Decorative", serif;
 }
