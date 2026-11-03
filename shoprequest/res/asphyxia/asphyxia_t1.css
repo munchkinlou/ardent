@@ -92,7 +92,11 @@
   z-index: -1;
   --cut: 540px;
   background:
-    linear-gradient(to right, transparent, #ff0a0a 18%, #f00 50%, #f00 82%, transparent) 0 calc(var(--cut) - 5px) / 100% 1px no-repeat, linear-gradient(to right, transparent, #7a1f1a 10%, #b8362d 50%, #7a1f1a 90%, transparent) 0 calc(var(--cut) - 4px) / 100% 3px no-repeat, linear-gradient(to right, transparent, #1a0303 28%, #1a0303 72%, transparent) 0 calc(var(--cut) - 1px) / 100% 1px no-repeat, linear-gradient(to top, #6b1a1640, transparent) 0 calc(var(--cut) - 34px) / 100% 30px no-repeat, url('https://ik.imagekit.io/arl60/Ardent/shop/Resin/asphyxia/Aura_PSD_YCH_2025%202.png?updatedAt=1793723012398') top / 100% no-repeat;
+    linear-gradient(to right, transparent, #ff0a0a 18%, #f00 50%, #f00 82%, transparent) 0 calc(var(--cut) - 5px) / 100% 1px no-repeat,
+    linear-gradient(to right, transparent, #7a1f1a 10%, #b8362d 50%, #7a1f1a 90%, transparent) 0 calc(var(--cut) - 4px) / 100% 3px no-repeat,
+    linear-gradient(to right, transparent, #1a0303 28%, #1a0303 72%, transparent) 0 calc(var(--cut) - 1px) / 100% 1px no-repeat,
+    linear-gradient(to top, #6b1a1640, transparent) 0 calc(var(--cut) - 34px) / 100% 30px no-repeat,
+    url('https://ik.imagekit.io/arl60/Ardent/shop/Resin/asphyxia/Aura_PSD_YCH_2025%203.png') top / 100% no-repeat;
   --maskn: linear-gradient(black var(--cut), transparent var(--cut));
   -webkit-mask: var(--maskn);
           mask: var(--maskn);
