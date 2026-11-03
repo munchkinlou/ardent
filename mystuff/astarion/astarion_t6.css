@@ -20,12 +20,12 @@
   left: 12px;
   width: 109%;
   height: 837px;
-  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Astarion/8-3-1.png?updatedAt=1793631187246') no-repeat center top;
+  background: transparent url('https://ik.imagekit.io/arl60/Ardent/personal/Astarion/8-3-1_edit.png') no-repeat center top;
   background-size: contain; 
   z-index: 5;
   pointer-events: none;
   filter: drop-shadow(0 0 2px #0000008c)
-    contrast(1.1);
+    brightness(1.1);
   transform: rotate(10deg);
 }
 .astariont6:after{
@@ -58,7 +58,7 @@
   padding: 14px;
   margin: 0 auto;
   border-radius: inherit;
-  background: linear-gradient(to bottom, #1b150f 20%, #070b13);
+  background: linear-gradient(to bottom, #0f1627 20%, #070b13);
 }
 .astariont6 inbor {
   display: block;
@@ -67,7 +67,7 @@
   padding: 2px;
   border-radius: inherit;
   overflow: hidden;
-  background: linear-gradient(to bottom, #e3b765, #f4cd82);
+  background: linear-gradient(to bottom, #7ed4ee, #60a5b6);
 }
 .astariont6 inbor:after {
   content: '';
@@ -77,7 +77,7 @@
   transform: translateX(-50%);
   width: 100%;
   background:
-    radial-gradient(ellipse 35% 70% at 50% 45%, #fffeb1, #ffd075 40%, transparent 72%), linear-gradient(to bottom, #ffe199, #f6d88f 50%, #ffc18a);
+    radial-gradient(ellipse 35% 70% at 50% 45%, #a2e5ff, #8ccee7 40%, transparent 72%), linear-gradient(to bottom, #9fd4e1, #7dc0da 50%, #3d99a2);
   mix-blend-mode: screen;
   --di: url('https://ik.imagekit.io/arl60/Ardent/shop/assets/2.png?updatedAt=1761259622322');
   -webkit-mask: var(--di)
@@ -95,7 +95,7 @@
   padding: 80px 45px 580px;
   border-radius: inherit;
   z-index: 9;
-  background: linear-gradient(to bottom, #503227 300px, #110704);
+  background: linear-gradient(to bottom, #2d3949, #020404);
   box-shadow: inset 0 0 10px #000;
   overflow: hidden;
   text-align: justify;
@@ -103,7 +103,7 @@
   font-weight: 400;
   line-height: 1.45;
   letter-spacing: .3px;
-  color: #fffaf2;
+  color: #b5c2c9;
 }
 .astariont6 b,
 .astariont6 .mycode_b {
@@ -113,7 +113,7 @@
   line-height: 1;
   font-family: "Cormorant", serif;
   color: transparent !important;
-  background: linear-gradient(to bottom, #FFDF94, #FFE597) !important;
+  background: linear-gradient(to bottom, #BBEBFF, #6ABFFF) !important;
   -webkit-background-clip: text !important;
           background-clip: text !important;
   text-shadow: none;
@@ -172,7 +172,7 @@
   .astariont6 con:before{ display: none; }
   .astariont6 bor { margin: auto;border-radius: 0;width: 100%; background: none;box-shadow:none;}
   .astariont6 con { padding: 0; }
-  .astariont6 incon { background: #3a2014; padding: 80px 30px 0px; }
+  .astariont6 incon { background: #181f27; padding: 80px 30px 0px; }
   .astariont6 incon t {
     overflow-y: auto;
     height: auto;
