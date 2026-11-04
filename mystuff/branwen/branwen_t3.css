@@ -30,10 +30,10 @@
   position: absolute;
   z-index: 1;
   width: 100%;
-  height: 511px;
+  height: 385px;
 
-  top: -23px;
-  --pos: -25px;
+  top: 81px;
+  --pos: -5px;
   left: var(--pos);
   background: var(--outfit)
     no-repeat center;
@@ -66,9 +66,8 @@
 
 .branwent3 branwen[id="plush" i] {
     --outfit: url('https://ik.imagekit.io/arl60/Ardent/personal/Branwen/plashie.png?updatedAt=1775856804598');
-    --pos: 34px;
+    --pos: 20px;
 }
-
 
 .branwent3 credit {
   position: absolute;
