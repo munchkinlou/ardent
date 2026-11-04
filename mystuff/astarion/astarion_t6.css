@@ -45,7 +45,7 @@
   width: 600px;
   margin: 0 auto;
   padding: 2px;
-  background: linear-gradient(to bottom, #000, #000,#000);
+  background: linear-gradient(to bottom, #e5eef2, #81a4c0,#e4eef4);
   border-radius: 0;
   overflow: hidden;
   box-shadow: 2px 2px 3px black, 1px 1px 2px black;
@@ -55,10 +55,10 @@
   position: relative;
   box-sizing: border-box;
   width: 100%;
-  padding: 14px;
+  padding: 25px;
   margin: 0 auto;
   border-radius: inherit;
-  background: linear-gradient(to bottom, #0f1627 20%, #070b13);
+  background: linear-gradient(to bottom, #000 20%, #070b13);
 }
 .astariont6 inbor {
   display: block;
@@ -67,7 +67,7 @@
   padding: 2px;
   border-radius: inherit;
   overflow: hidden;
-  background: linear-gradient(to bottom, #7ed4ee, #60a5b6);
+  background: linear-gradient(to bottom, #000, #000);
 }
 .astariont6 inbor:after {
   content: '';
@@ -92,10 +92,10 @@
   position: relative;
   box-sizing: border-box;
   width: 100%;
-  padding: 95px 45px 580px;
+  padding: 85px 45px 580px;
   border-radius: inherit;
   z-index: 9;
-  background: linear-gradient(to bottom, #2d3949, #020404);
+  background: linear-gradient(to bottom, #1a2c46, #020404);
   box-shadow: inset 0 0 10px #000;
   overflow: hidden;
   text-align: justify;
