@@ -134,9 +134,9 @@
   transform: translateX(-50%);
   width: 100%;
   background: linear-gradient(to bottom, #fffbfa, #c3a8a2);
-  -webkit-mask: url('https://ik.imagekit.io/arl60/Ardent/assets/divi7.png')
+  -webkit-mask: url('https://ik.imagekit.io/arl60/Ardent/assets/divi12.png')
     center / contain no-repeat;
-          mask: url('https://ik.imagekit.io/arl60/Ardent/assets/divi7.png')
+          mask: url('https://ik.imagekit.io/arl60/Ardent/assets/divi12.png')
     center / contain no-repeat;
   pointer-events: none;
   z-index: 10;
