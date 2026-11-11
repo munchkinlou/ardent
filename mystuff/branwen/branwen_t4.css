@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+
+.branwent4 {
+	position: relative;
+  width: 850px;
+  margin: 0 auto 0px;
+  position: relative;
+  overflow: visible;
+  padding: 20px 0 0;
+  box-sizing: border-box;
+  font-family: "Didact Gothic", sans-serif;
+  background-image: url('https://ik.imagekit.io/arl60/Ardent/personal/Branwen/Mun3.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 850px;
+  filter: drop-shadow(0 0 1px #000000a3);
+}
+
+.branwent4:after {
+  content: 'code by andy';
+  position:absolute;
+  bottom: 21px;
+  left:50%;
+  transform:translate(-50%);
+  font-size:10px;
+  margin: 10px 10px 0 auto;
+  font-family: "Unica One", sans-serif;
+  font-weight: bold;
+}
+
+.branwent4 bor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 370px;
+  padding: 2;
+  margin: 0px 192px 0 auto;
+  
+  border: 2px solid;
+  border-image: linear-gradient(to bottom, #dbeed9, #cdd6cc) 1;
+  
+  border-radius: 0;
+  
+  filter: drop-shadow(1px 1px 2px black);
+}
+.branwent4 bor:before {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  z-index: 1;
+  pointer-events: none;
+  border: 2px solid;
+  border-image: linear-gradient(to bottom, #90a271, #849e64) 1;
+}
+.branwent4 con {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: inherit;
+  width: 100%;
+  padding: 0px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.branwent4 inbor {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #80501e78, #44290682);
+  padding: 2px;
+  border-radius: 0;
+}
+
+.branwent4 incon {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: inherit;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  box-shadow: inset 0 0 10px rgb(36, 13, 7);
+  text-align: justify;
+  font-weight: 400;
+  font-size:13px;
+  color: #dddddd;
+  line-height: 1.2;
+}
+.branwent4 incon t {
+  position: relative;
+  display: block;
+  height: 310px;
+  overflow-y: auto;
+  cursor: pointer;
+  z-index: 10;
+  padding: 10px 10px 0 20px;
+  margin-bottom: -20px;
+  letter-spacing: 0;
+  
+  --scrollbar-thumb: #AAC091;
+  --scrollbar-track: transparent;
+  --scrollbar-width: 6px;
+
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+
+  &::-webkit-scrollbar {
+    width: var(--scrollbar-width);
+  }
+  &::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 3px;
+  }
+}
+.branwent4 incon t > br:first-of-type{display: none;}
+.branwent4 incon b, .branwent4 incon .mycode_b {
+  color: transparent !important;
+  background: linear-gradient(to bottom, #FFE994, #D8BD52) !important;
+  -webkit-background-clip: text !important;
+          background-clip: text !important;
+  text-shadow: none !important;
+  font-family: "Amarante", serif;
+  font-size: 15px;
+  font-weight: 400;
+  text-shadow: 0px 0px 2px #000000;
+  line-height: 0.9;
+}
+
+.branwent4 incon > b:last-of-type {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  bottom: -385px;
+  left: 72px;
+  width: 100%;
+  font-size:49px;
+  color: #6171d2;
+  font-family: "WindSong", cursive;
+  text-shadow: 1px 1px 2px #0a0906;
+  text-align: center;
+  line-height: 1;
+  text-transform: capitalize;
+  letter-spacing: 0px;
+}
+
+/*
+
+@media (max-width: 1200px) {
+  
+  .branwent4 {
+    width: 100%;
+    margin: 0;
+  }
+
+  .branwent4 bor {s
+    max-width: 450px;
+    width: 100%;
+  }
+  .branwent4 con {
+    padding: 10px;
+  }
+  
+  .branwent4 ely {
+    display: none;
+  }
+  
+  .branwent4 inbor {
+    border-radius: 0;
+  }
+  
+  .branwent4 incon {
+    padding: 10px 20px 0;
+  }
+  
+  .branwent4 incon br:first-child {
+    display: none;
+  }
+
+  .branwent4:after {
+    content: 'code by andy';
+    position:relative;
+    inset: 0;
+    display: block;
+    text-align: center;
+    margin: 10px auto 5px;
+  }
+
+  .branwent4 incon > b:last-of-type {
+    display: block;
+    width: 100%;
+    margin: 30px auto -10px;
+    font-size:25px;
+    color: #6171d2;
+    text-shadow: 1px 1px 2px #0a0906;
+    text-align: center;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+
+
+}
