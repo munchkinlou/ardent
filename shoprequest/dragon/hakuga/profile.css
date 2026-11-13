@@ -186,6 +186,7 @@ info[p] img {margin-top: 10px;}
   margin-top: 30px;
 }
 .blocky:has(info) {
+  position: relative;
   background: transparent;
   margin: 0 10px;
   padding: 0;
@@ -200,12 +201,48 @@ info[p] img {margin-top: 10px;}
   flex: 1;
 }
 .blocky:has(info):not(:has(info[misc])) info box {
+  position: relative;
   flex: 1;
   display: grid;
   align-content: center;
+  padding: 50px 0;
+}
+info[a] t, info[p] t {
+  display: block;
+  text-align: justify;
+  padding: 10px 60px;
+}
+info[a] h3, info[p] h3 {
+  position: relative;
+  font-size: 30px;
+  font-family: 'Hiro', cursive;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 40px;
+  color: transparent !important;
+  background: linear-gradient(to bottom, #EBAFF4, #E7B496) !important;
+  -webkit-background-clip: text !important;
+          background-clip: text !important;
+  text-shadow: none !important;
+}
+info[a] h3:after, info[p] h3:after {
+  content: '';
+  position: absolute;
+  bottom: -36px;
+  height: 37px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background: radial-gradient(ellipse 35% 70% at 50% 45%, #98ceee, #adb0dc 30%, #cfbcf0 70%, #857dab);
+  --di: url('https://ik.imagekit.io/arl60/Ardent/assets/divi2.png?updatedAt=1791305290566');
+  -webkit-mask: var(--di)
+    center / contain no-repeat;
+          mask: var(--di)
+    center / contain no-repeat;
+  pointer-events: none;
+  z-index: 10;
 }
 .blocky:has(info) span {display: none}
-
 info[misc]{
   display: flex;
   justify-content: center;
@@ -265,6 +302,7 @@ box[m] {
   position: relative;
   display: block;
   padding: 20px;
+  text-align: left;
 }
 
 box[m] tabs {
