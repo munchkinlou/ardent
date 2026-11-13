@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+@font-face {
+  font-family: 'Hiro' ;
+  src: url(https://munchkinlou.github.io/ardent/rs/font/HiroMisakeJapaneseGraffiti-5yG0a.otf);
+}
+
+body {
+  background: black;
+  font-family: "Gilda Display", serif;
+  font-size: 13px;
+}
+header {background: none;}
+nav {
+	background: #03193b !important;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+	font-weight: 400;
+  font-size: 15px;
+	letter-spacing: 2px;
+	text-transform: lowercase;
+  box-shadow: 0 5px 25px #00000096;
+}
+.dropdown-menu {
+	background: darkgrey;
+}
+a { color: #ffa352 !important;}
+a:hover {color: pink !important;}
+#content {
+  position: relative;
+  margin: 50px auto 100px;
+  position: relative;
+  padding: 0;
+  background:transparent;
+}
+#content:after {
+  content: 'profile code @ andy';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform:translateX(-50%);
+  color: white;
+  letter-spacing: 5px;
+  text-transform: lowercase;
+  font-size: 15px;
+  opacity: 0.7;
+}
+h1 { 
+  position: relative;
+  float:none !important;
+  margin: auto !important;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  text-align: left;
+  height: 230px;
+  background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0850e243-5970-4164-a7bb-741bd2351866/dn7a2gn-863bf7d3-2e75-4631-aac6-85a9f10a092b.png/v1/fill/w_1280,h_732,q_80,strp/dragon_2_1_by_jinxx_black_dn7a2gn-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzMyIiwicGF0aCI6Ii9mLzA4NTBlMjQzLTU5NzAtNDE2NC1hN2JiLTc0MWJkMjM1MTg2Ni9kbjdhMmduLTg2M2JmN2QzLTJlNzUtNDYzMS1hYWM2LTg1YTlmMTBhMDkyYi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.joHklLzaWEtb04q6AFg0aFXzm37JeImHFn3fRz9ovo8');
+  background-size: cover;
+  background-position: 0 90%;
+  border: 2px solid;
+  border-image: var(--frame2) 1;
+  box-shadow: inset 0 0 10px black;
+  font-size: 0;
+}
+h1:before {
+  content: var(--title);
+  position: absolute;
+  left: 220px;
+  top: 45px;
+  font-size: 110px;
+  font-family: 'Hiro', cursive;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  color: transparent !important;
+  background: linear-gradient(to bottom, #FFF, #9BB8E5) !important;
+  -webkit-background-clip: text !important;
+          background-clip: text !important;
+  text-shadow: none !important;
+  filter: drop-shadow(0 0 4px black);
+}
+h1:after {
+  content: var(--title2);
+  position: absolute;
+  left: 189px;
+  bottom: 45px;
+  font-size: 35px;
+  font-family: "Cormorant", serif;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+  color: transparent !important;
+  background: linear-gradient(to bottom, #BFF4F0, #5DB3F2) !important;
+  -webkit-background-clip: text !important;
+          background-clip: text !important;
+  text-shadow: none !important;
+  filter: drop-shadow(0 0 4px black) drop-shadow(0 0 2px black);
+}
+h2 {
+  text-align: center;
+}
+.tab {
+  margin-top:20px !important;
+  border: none;
+}
+.tabnav {
+  position: relative;
+  font-family: "Cinzel Decorative", serif;
+  background: linear-gradient(to right, #281b2f, #212755, #281b2f);
+  text-align: center;
+  padding: 15px 0;
+  box-shadow: 2px 2px 2px black;
+}
+.tabnav a.active {
+  color: white !important;
+}
+.tabnav a {
+  color: #c9abcf !important;
+}
+.profav {
+  position: relative;
+  width: 250px;
+  height: auto;
+  border: 2px solid;
+  border-image: var(--frame) 1;
+  background: linear-gradient(45deg, #a86d5173, #16177057);
+  overflow: visible;
+}
+.profav:before {
+  content: '';
+  position: absolute;
+  z-index: 10;
+  filter: drop-shadow(0 0 5px #000000c2);
+  pointer-events: none;
+}
+.profav img {display: none;}
+.flex:has(.profav){
+  position: relative;
+  filter: drop-shadow(2px 2px 1px black);  
+}
+.blocky:not(:has(info)), box {
+  position: relative;
+  box-sizing: border-box;
+  padding: 15px 16px 25px;
+  --cut: 11px;
+  background: linear-gradient(to bottom, #2c2b59, #131634);
+  color: #ece4d6;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  clip-path: polygon(var(--cut) 0, 100% 0, 100% calc(100% - var(--cut)), calc(100% - var(--cut)) 100%, 0 100%, 0 var(--cut));
+}
+.blocky:not(:has(info)):before, box:before,
+.tabnav:before, .tab:has(code):before {
+  content: '';
+  position: absolute;
+  inset: 5px;
+  pointer-events: none;
+  border: 1px solid #f2a0798f;
+  clip-path: polygon(6px 0, 100% 0, 100% calc(100% - 6px), calc(100% - 6px) 100%, 0 100%, 0 6px);
+}
+.blocky:has(info){background:transparent;}
+info, box {display: block;}
+info img {
+  box-shadow: 0 0 5px black;
+  border-radius: 10px;
+}
+info[a] img {margin-bottom: 10px;}
+info[p] img {margin-top: 10px;}
+.blocky span {
+  font-family: "Cinzel Decorative", serif;
+  font-size: 10px;
+  bottom: 13px;
+  left:50%;
+  transform:translateX(-50%);
+}
+.flex:has(.profav) .blocky:has(a) {
+  padding-top:20px;
+}
+.blocky a {
+  text-transform: uppercase;
+  font-size:12px;
+  letter-spacing: 2px;
+}
+.blocky u {text-decoration: none;}
+.flex:has(.profav){
+  margin-top:20px;
+}
+.profinfo:has(info){
+  margin-top: 30px;
+}
+.blocky:has(info) {
+  padding: 20px 20px 0;
+}
+.blocky:has(info) span {display: none}
+
+info[misc]{
+  display: flex;
+  justify-content: center;
+}
+info[misc] > * {
+  flex: 0 0 50%;
+}
+gal {
+  position: relative;
+  display: block;
+  margin: 50px auto 80px;
+  width: 90%;
+  aspect-ratio: 4 / 2.5;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #071626b2;
+  box-shadow: inset 0 0 50px #070a19a1;
+  padding: 40px;
+  overflow: visible;
+}
+gal:before {
+  content: 'gallery';
+  position: absolute;
+  top:-30px;
+  left:30px;
+  font-size:50px;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  font-family: "Ruthie", cursive;
+  z-index: 10;
+}
+gal img { display: none; }
+gal img[cur] {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter:drop-shadow(0 0 2px black);
+}
+gal button {
+  position: absolute;
+  bottom:-20px;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: #417895;
+  color: white;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+}
+gal button[prev] { left: 10px; }
+gal button[next] { right: 10px; }
+gal num {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform:translate(-50%);
+  z-index: 2;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #ffffffbf;
+}
+
+
+.flex.fill:has(info[history]) > div:nth-child(2) {display: none;}
+.tborder:has(.rpgsk_agent_lines){
+  margin-top: 20px !important;
+}
+.rpgsk_agent_lines,
+.rpgsk_empty_agent_lines {
+  display: block;
+  width: 100%;
+  background:none;
+	color: grey;
+}
+.rpgsk_agent_lines {
+  padding: 30px 0 20px;
+  text-transform: uppercase;
+  font-size:15px;
+  letter-spacing: 2px;
+}
+.rpgsk_skill_head{
+  background:none;
+  text-align: left;
+  font-size:15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color:white;
+}
+.rpgsk_mem_prof_skill_points {
+  display: inline-block;
+  width:35px;
+  margin: 0 0 0 15px;
+  text-align: center;
+	background: grey;
+	border-radius: 5px;
+  padding: 5px;
+	font-size:15px !important;
+}
+.rpgsk_mem_prof_skill_row {
+  text-align: left;
+  margin: 5px 0;
+}
+.rpgsk_mem_prof_skill_row a {
+  text-transform: lowercase !important;
+  color: white !important;
+  letter-spacing: 0 !important;
+  font-size:12px;
+}
+.blocky:has(.rpgsk_skill_head){
+  margin: 0 !important;
+  padding: 0 20px 30px !important;
+}
+.blocky:has(.rpgsk_skill_head){
+	border-radius: 0;
+	background: none;
+	border: none;
+	padding: 30px 50px !important;
+	box-shadow: none;
+}
+.tborder:has(.rpgsk_skill_head) {
+  background: darkgrey;
+}
+.blocky:has(.rpgsk_skill_head):before{display: none;}
+.tab:has(code) {
+  position: relative;
+  margin-top:30px !important;
+  padding: 0 !important;
+}
+.tab:has(code) h2 {
+  text-align: left;
+}
+.tab:has(code){
+  position: relative;
+  padding: 10px 40px 20px !important;
+  background: linear-gradient(to bottom, #393865, #242758);
+  box-shadow: 0px 0px 10px black;
+  color: white;
+}
+.tab:has(code) h2 {
+  color: transparent !important;
+  background: linear-gradient(to bottom, #DCAAE7, #7779D8) !important;
+  -webkit-background-clip: text !important;
+          background-clip: text !important;
+  text-shadow: none !important;
+  filter: drop-shadow(0 0 4px black);
+  font-family: "Cormorant", serif;
+  letter-spacing: 5px;
+  font-weight: 400;
+  text-transform: uppercase !important;
+  font-size: 23px;
+}
+.tab:has(code) .flex.fill {
+  padding-left: 15px;
+}
+.tab:has(code) .flex.fill > div:nth-child(1) {
+  border-left: 2px solid #c56353;
+  margin: 10px 0 35px;
+  padding: 5px 0 0 10px;
+}
+.tab:has(code) .flex.fill > div:nth-child(1) > br:last-of-type {display: none;}
+code {
+  background:#2b234d;
+  box-shadow: inset 0 0 10px #151324;
+  color: white;
+}
+.thead {
+  background: #242758;
+  text-shadow: none;
+  text-align: center;
+  font-size:20px;
+}
+.thead strong {
+  color: transparent !important;
+  background: linear-gradient(to bottom, #FFE0C5, #FF8A0D) !important;
+  -webkit-background-clip: text !important;
+          background-clip: text !important;
+  text-shadow: none !important;
+  filter: drop-shadow(0 0 4px black);
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+}
+.tborder {
+  background: #1b1d41;
+  color:#d3daef;
+  text-align: center;
+  border: 1px solid #8f5650;
+}
+.blocky.board {
+  border-radius: 0;
+  padding: 20px 20px 35px;
+  margin: -10px 0 -20px;
+}
+.blocky.board a {
+  background: none;
+  margin: 0;
+  font-size: 10px;
+}
+.sip_tbl_th {
+  padding: 10px 0;
+  background:transparent;
+  color: #dea487;
+  border-bottom: 1px solid #a3643e;
+}
+.sip_tbl_td {
+  background: transparent;
+  color: #c9cdef;
+  text-shadow: 0 0 1px black;
+}
+.sip_tbl_td:nth-child(2) { 
+  font-family: "Cinzel Decorative", serif;
+  text-transform: uppercase;
+}
+
+th, .affiliates img, input, select, textarea, button, hr { 
+  background: #2a2e65; color: white; }
+:root {
+  --title: 'Hakuga';
+  --title2: 'The Pearl Prince';
+  --frame: linear-gradient(to bottom, #c6cfd4, #792e28);
+  --frame2: linear-gradient(to right, #b4ebfe, #a36dab);
+}
+body:after{
+  background-image: url('https://cdna.artstation.com/p/assets/images/images/014/948/458/large/tyler-smith-redwoodswolf02.jpg?1546445258');
+  background-size: cover;
+  background-position: center !important;
+}
+.profav:before {
+  width: 123%;
+  height: 511px;
+  top: -109px;
+  left: -32px;
+  background: url('https://ik.imagekit.io/arl60/Ardent/shop/Dragon/Hakuga/headref.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 15;
+}
