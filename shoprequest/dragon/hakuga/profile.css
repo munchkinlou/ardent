@@ -190,6 +190,20 @@ info[p] img {margin-top: 10px;}
   margin: 0 10px;
   padding: 0;
 }
+.blocky:has(info):not(:has(info[misc])) {
+  display: flex;
+  flex-direction: column;
+}
+.blocky:has(info):not(:has(info[misc])) info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.blocky:has(info):not(:has(info[misc])) info box {
+  flex: 1;
+  display: grid;
+  align-content: center;
+}
 .blocky:has(info) span {display: none}
 
 info[misc]{
