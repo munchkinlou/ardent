@@ -605,12 +605,19 @@ h4 {
   text-shadow: 0 0 1px black;
 }
 .sip_tbl_td:nth-child(2) { 
+  font-size: 10px;
   font-family: "Cinzel Decorative", serif;
   text-transform: uppercase;
 }
 
 th, .affiliates img, input, select, textarea, button, hr { 
   background: #2a2e65; color: white; }
+@media (max-width: 1200px){
+  h1 {display: none;}
+  info[misc]{
+    flex-direction: column;
+  }
+}
 :root {
   --title: 'Hakuga';
   --title2: 'The Pearl Prince';
