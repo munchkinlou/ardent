@@ -380,7 +380,8 @@ box[m] pages dl {
   grid-template-columns: auto 1fr;
   column-gap: 18px;
   row-gap: 11px;
-  align-items: baseline;
+  align-self: start;
+  align-content: start;
   margin: 0;
   padding-left: 48px;
   min-width: 0;
