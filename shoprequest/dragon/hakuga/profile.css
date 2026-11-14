@@ -12,7 +12,7 @@ body {
 }
 header {background: none;}
 nav {
-	background: #03193b !important;
+	background: #24264cf7 !important;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
 	font-weight: 400;
   font-size: 15px;
@@ -21,7 +21,7 @@ nav {
   box-shadow: 0 5px 25px #00000096;
 }
 .dropdown-menu {
-	background: darkgrey;
+	background: #15142da6;
 }
 a { color: #ffa352 !important;}
 a:hover {color: pink !important;}
