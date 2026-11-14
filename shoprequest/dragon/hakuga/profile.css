@@ -607,7 +607,7 @@ h4 {
 .sip_tbl_td:nth-child(2) { 
   font-size: 10px;
   font-family: "Cinzel Decorative", serif;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 th, .affiliates img, input, select, textarea, button, hr { 
