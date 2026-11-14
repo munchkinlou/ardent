@@ -448,7 +448,7 @@ box[m] pages dl dd:last-of-type { border-bottom: 0; }
   display: block;
   width: 100%;
   background:none;
-	color: grey;
+	color: #dadada;
 }
 .rpgsk_agent_lines {
   padding: 30px 0 20px;
@@ -496,7 +496,7 @@ box[m] pages dl dd:last-of-type { border-bottom: 0; }
 	box-shadow: none;
 }
 .tborder:has(.rpgsk_skill_head) {
-  background: darkgrey;
+  background: #1c1b38;
 }
 .blocky:has(.rpgsk_skill_head):before{display: none;}
 .tab:has(code) {
