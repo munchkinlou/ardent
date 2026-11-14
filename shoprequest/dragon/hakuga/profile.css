@@ -135,7 +135,8 @@ h2 {
   position: relative;
   filter: drop-shadow(2px 2px 1px black);  
 }
-.blocky:not(:has(info)), box {
+.blocky:not(:has(info)), box, 
+info[fam], info[history] {
   position: relative;
   box-sizing: border-box;
   padding: 15px 16px 25px;
@@ -148,7 +149,8 @@ h2 {
   clip-path: polygon(var(--cut) 0, 100% 0, 100% calc(100% - var(--cut)), calc(100% - var(--cut)) 100%, 0 100%, 0 var(--cut));
 }
 .blocky:not(:has(info)):before, box:before,
-.tabnav:before, .tab:has(code):before {
+.tabnav:before, .tab:has(code):before, 
+info[fam]:before, info[history]:before {
   content: '';
   position: absolute;
   inset: 5px;
@@ -156,6 +158,7 @@ h2 {
   border: 1px solid #f2a0798f;
   clip-path: polygon(6px 0, 100% 0, 100% calc(100% - 6px), calc(100% - 6px) 100%, 0 100%, 0 6px);
 }
+info[fam] {margin: 10px 0;}
 info, box {display: block;}
 info img {
   box-shadow: 0 0 5px black;
@@ -173,7 +176,7 @@ info[p] img {margin-top: 10px;}
 .flex:has(.profav) .blocky:has(a) {
   padding-top:20px;
 }
-.blocky a {
+.flex:has(.profav) .blocky a {
   text-transform: uppercase;
   font-size:12px;
   letter-spacing: 2px;
@@ -191,16 +194,16 @@ info[p] img {margin-top: 10px;}
   margin: 0 10px;
   padding: 0;
 }
-.blocky:has(info):not(:has(info[misc])) {
+.blocky:has(info[a]), .blocky:has(info[p]) {
   display: flex;
   flex-direction: column;
 }
-.blocky:has(info):not(:has(info[misc])) info {
+.blocky:has(info[a]) info, .blocky:has(info[p]) info {
   display: flex;
   flex-direction: column;
   flex: 1;
 }
-.blocky:has(info):not(:has(info[misc])) info box {
+.blocky:has(info[a]) info box, .blocky:has(info[p]) info box {
   position: relative;
   flex: 1;
   display: grid;
@@ -242,7 +245,7 @@ info[a] h3:after, info[p] h3:after {
   pointer-events: none;
   z-index: 10;
 }
-.blocky:has(info) span {display: none}
+.blocky:has(info[a]) span, .blocky:has(info[p]) span {display: none}
 info[misc]{
   display: flex;
   justify-content: center;
@@ -536,6 +539,26 @@ code {
   background:#2b234d;
   box-shadow: inset 0 0 10px #151324;
   color: white;
+}
+.tab:has(info[history]) h2,
+.tab:has(info[fam]) h2{
+  font-size: 80px;
+  color: transparent !important;
+  background: linear-gradient(to bottom, #FFF, #CCDBFF) !important;
+  -webkit-background-clip: text !important;
+          background-clip: text !important;
+  text-shadow: none !important;
+  filter: drop-shadow(0 0 4px black) drop-shadow(0 0 2px black);
+  font-family: 'Hiro', cursive;
+  letter-spacing: 5px;
+}
+h4 {
+  text-align: center;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 30px 0 20px;
+  color: #e9c7a2;
 }
 .thead {
   background: #242758;
